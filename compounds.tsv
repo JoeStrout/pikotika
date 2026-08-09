@@ -1,0 +1,68 @@
+EN	gloss
+cat	home-animal
+pet	home-animal
+pet dog	home-dog
+cow	milk-animal
+goat	small-milk-animal
+sheep	small-milk-animal
+fish	water-animal
+pig	red-white-animal
+pork	red-white-animal-meat
+beef	milk-animal-meat
+lamb	small-milk-animal-meat
+bus	many-person-vehicle
+doctor	heal-person
+window	see-hole
+soup	water-meal
+spice	taste-thing
+smell	air-taste
+grey	stone-color
+brown	earth-color
+pink	red-white
+purple	red-blue
+orange	red-yellow
+cyan	blue-green
+tan	grain-color
+beige	grain-color
+sand	small-stone
+alcohol (usually wine)	fire-water
+wine	plant-child-fire-water
+beer (any grain alcohol)	grain-fire-water
+sake	white-grain-fire-water
+fruit	plant-child
+yellow fruit (usually banana)	yellow-plant-child
+banana	long-yellow-plant-child
+lemon	not-sweet-yellow-plant-child
+nut	hard-plant-child
+peanut	earth-hard-plant-child
+tomato	red-plant-child
+tomato sauce	red-food
+vegetables	green-food
+rice (white rice)	white-grain
+wheat	yellow-grain
+bread	grain-food
+wheat bread	yellow-grain-food
+flat bread	flat-grain-food
+fried rice	oil-white-grain
+fried	fire-oil-make
+gluten-free food	no-yellow-grain-food
+chili pepper	fire-taste-thing
+coffee	black-drink
+tea	plant-water
+spicy	fire-taste
+allergy	body-not-agree
+vegetarian	not-meat-food-person
+password	key-word
+lucky	good-if
+decimal point	part
+company	buy-group
+corporation	buy-group
+firm	buy-group
+coin	metal-money
+porridge	water-grain
+congee	water-grain
+potato	earth-grain
+door handle	door-hand
+turnstile	money-door
+ticket gate	money-door
+mud	water-earth
