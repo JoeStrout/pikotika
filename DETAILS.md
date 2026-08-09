@@ -160,6 +160,58 @@ Other colors are built as compounds:
 
 If you really need to specify a finer shade, you can mix your own color: *black-red-blue* would be understood as a dark purple; *yellow-green* would be a yellowish green (and *green-yellow* would be a greenish yellow!).  But the colors above are standard.
 
+## Telling Time
+
+Clock times are written with digits and a colon, and read with **ora** (hour) standing in for the colon -- exactly as **parte** stands in for the decimal point.
+
+| Written | Read | Meaning |
+|---|---|---|
+| **9:00** | **noks ora** | 9 o'clock |
+| **9:30** | **noks ora tets tekas** | 9:30 |
+| **15:45** | **tekas kins ora wats tekas kins** | 15:45 |
+
+There is no separate word for "minute"; the number after **ora** is understood to be minutes.  Use the 24-hour clock when it matters.  Otherwise, put the part of day in front:
+
+| Pikotise | Han | Meaning |
+|---|---|---|
+| **matin** | 朝 | morning |
+| **mesyo** | 午 | noon, midday |
+| **sore** | 日 | day, daytime |
+| **vesper** | 夕 | evening |
+| **note** | 夜 | night |
+
+So **matin noks ora** is 9 in the morning, and **vesper noks ora** is 9 at night.  For an approximate time, **pikotempo** (小时, *small-time*) is a moment, and **ora** alone is an hour.
+
+To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun seman turan** is "for a week."
+
+## Dates and Days of the Week
+
+Dates run **largest unit first** -- year, month, day.  This is the one order that is unambiguous everywhere, since 03-04 is March 4th in the US and April 3rd almost everywhere else.
+
+| Written | Read | Meaning |
+|---|---|---|
+| **2026-08-09** | **2026 anyo 8 mese 9 sore** | 9 August 2026 |
+| **8-09** | **8 mese 9 sore** | 9 August |
+
+Months have no names: they are simply **1 mese** through **12 mese** (1月 to 12月), the same pattern as Japanese.
+
+The seven weekdays are each named for a heavenly body, using roots the language already had.  The characters match Japanese and Korean exactly.
+
+| Day | Gloss | Pikotise | Han |
+|---|---|---|---|
+| Sunday | *sun-weekday* | **soreverya** | 日曜 |
+| Monday | *month-weekday* | **meseverya** | 月曜 |
+| Tuesday | *fire-weekday* | **vokaverya** | 火曜 |
+| Wednesday | *water-weekday* | **akuverya** | 水曜 |
+| Thursday | *plant-weekday* | **arpoverya** | 木曜 |
+| Friday | *metal-weekday* | **metalverya** | 金曜 |
+| Saturday | *earth-weekday* | **teraverya** | 土曜 |
+
+English gives away the two anchors: Sunday is the sun's day and Monday the moon's, which are **soreverya** and **meseverya**.  Once you see that each day belongs to a heavenly body, the rest follow in the same order every tradition already uses.
+
+To ask which day it is, use **kerverya** (何曜, *what-weekday*).
+
+
 ## Proper Nouns
 
 Proper nouns (names) are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotise phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.

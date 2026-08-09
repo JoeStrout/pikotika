@@ -66,3 +66,10 @@ door handle	door-hand
 turnstile	money-door
 ticket gate	money-door
 mud	water-earth
+Sunday	sun-weekday
+Monday	month-weekday
+Tuesday	fire-weekday
+Wednesday	water-weekday
+Thursday	plant-weekday
+Friday	metal-weekday
+Saturday	earth-weekday

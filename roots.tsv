@@ -64,7 +64,7 @@ water	Nature	water, liquid, fluid, wet	content	aku	水	45	kanji,usage	drink-thin
 fire	Nature	fire, burn, heat, hot, anger (cold = `not-fire`)	content	voka	火	22	kanji	not-cold-power	red-power		core		9	230	0.1035	136		Portuguese *fogo*, Italian *fuoco*	4
 air	Nature	air, wind, breath, gas, sky	content	vento	风	14		not-thing	all-in-thing		core		9	214	0.0280	61		*vento, wind, ventilate*	4
 earth	Nature	ground, land, soil, floor, dirt	content	tera	土	26	kanji	down-thing	go-flat	stone-sand	core	han 土 restored from 地 (legibility at small sizes); 土/工 accepted as a lookalike pair	9	239	0.0306	76		*terra, terrain*	3
-sun	Nature	sun, light, day, bright	content	sore	日	24	kanji	day-fire	up-fire		core		12	232	0.0130	57		*sol, sole, solar*	4
+sun	Nature	sun, light, day, daytime, 24-hour period, bright	content	sore	日	24	kanji	day-fire	up-fire		core	absorbed `day` (ties/昼) 2026-08-09: 日 carries both sun and day, as in Japanese and Chinese; this reverses the earlier day/sun split and lets dates render 9日 rather than 9昼	12	232	0.0130	57		*sol, sole, solar*	4
 plant	Nature	plant, tree, flower, wood	content	arpo	木	16	kanji	not-go-life	earth-life	green-life	core	`vegetable` removed from covers 2026-08-09: vegetables are `green-food` (open_questions #2)	10	231	0.0608	99		*arbor, árbol, arbre*	4
 animal	Nature	animal, beast, creature (generic head)	content	peste	匹	16		go-life	not-person-life		core	narrowed: bird split out earlier; dog/cat/bear/varmint/whale split out now	2	204	0.0162	24		*beast, bestia*	4
 tool	Made things	tool, instrument, device, machine, utensil	content	uter	工	26	kanji	work-thing	make-thing	hand-thing	core		19	226	0.0425	78		*utensil, utile*	3
@@ -150,7 +150,6 @@ like	Feelings	like, enjoy, prefer, be fond of	content	kusta	愛			good-feel	smal
 shame	Feelings	shame, embarrassment, humiliation	content	putor	恥			self-bad-feel	other-see-bad-feel		candidate	`embarrassed` was depth 5	2	213	0.0000	4		Latin pudor	10
 calm	Feelings	calm, relaxed, peaceful, quiet	content	seren	和			not-fear-feel	no-change-feel		candidate	`relaxed` was `not-fear-body-feel`	1	165	0.0159	25		Latin serenus	8
 tired	Feelings	tired, weary, exhausted	content	kansa	疲			sleep-want	no-power-feel	work-after-feel	candidate	travel-critical; no current expression	2	56			R5-principled	Spanish cansado; Latin lassus	10
-day	Time direction	day, daytime, 24-hour period	content	ties	昼			sun-time	morning-and-night		candidate	`sun-time` ×10; splits day from sun	8	208	0.0939	108		Latin dies, Spanish dia	9
 week	Time direction	week, seven-day cycle	content	seman	週			weekday-group	7-day-group		candidate	may retire into `weekday-group` — see weekdays_1.md	0	61	0.0349	36		Spanish semana	11
 morning	Time direction	morning, early day; east (`morning-side`)	content	matin	朝			sun-open-time	day-open-part		candidate	compass: east = where the sun rises	1	201	0.0491	85		French matin; Spanish manana	12
 noon	Time direction	noon, midday	content	mesyo	午			sun-up-time	day-middle-time		candidate	`lunch` was `sun-up-food-time`	0	141	0.0190	21		Italian mezzogiorno, Spanish mediodia	4
@@ -206,3 +205,4 @@ toilet	Made things	toilet, lavatory, restroom, bathroom, WC	content	panyu	便			
 key	Made things	key, lock, to lock or unlock	content	yave	錠			door-open-tool	open-tool	not-open-make-tool	candidate	pairs with `door` and `room` for the hotel-arrival scenario	1	33			R5-principled	Spanish llave, Italian chiave	16
 reason	Grammar and logic	reason, cause, because; why = `what-reason`	function	kas	故			from-thing	before-make-thing		candidate	split from `from`, which was carrying both spatial source and cause; puts why into the what-X paradigm	0	22			R5-principled	Latin *causa*, Spanish *cosa*, French *chose*	9
 buy	Verbs	buy, purchase, sell, trade, commercial exchange	content	kompar	買			money-change	pay-get	money-give-get	candidate	shopping was the weakest domain; covers both directions like `borrow` does	1	30			R3-paraphrase	Spanish comprar; Latin emere	12
+interval	Time direction	interval, duration, span of time, period, for (a length of time)	content	turan	間						core	added 2026-08-09 in the slot freed by `day`; closes the duration gap -- `6 sun turan` "for six days" vs `6 sun` "on the 6th"; head-final, so the span is the head. cf. Japanese 一週間						Latin *durare*, Spanish *durar*, Italian *durata* -- duration	12
