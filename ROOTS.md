@@ -1,6 +1,6 @@
 # Pikotise Roots
 
-207 entries in 19 groups, generated from `roots.tsv`.
+207 entries in 19 groups.
 
 ## Particles (3)
 
@@ -268,7 +268,7 @@
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
-| metal | metal | 金 | metal, iron, gold, refined hard material |
+| metal | metar | 金 | metal, iron, gold, refined hard material |
 | stone | rapis | 岩 | stone, rock, mineral, hard natural material |
 | oil | oren | 油 | oil, fat, grease |
 | salt | sares | 塩 | salt, savory mineral |

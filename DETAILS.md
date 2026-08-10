@@ -184,7 +184,13 @@ So **matin noks ora** is 9 in the morning, and **vesper noks ora** is 9 at night
 
 To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun seman turan** is "for a week."  For smaller intervals, use **parte turan** for minutes, and **pikoparte turan** for seconds.
 
-For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and does not need **turan**).
+For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and does not need **turan**).  Finally, here are some words for referring to 'now' or generically in the past/future.
+
+| Pikotise | Han | Meaning |
+|---|---|---|
+| **tistempo** | 此时 | now |
+| **yertempo** | 前时 | in the past |
+| **tartempo** | 后时 | in the future |
 
 
 ## Dates and Days of the Week
@@ -218,10 +224,26 @@ The seven weekdays are each named for a heavenly body or element, plus **verya**
 | Tuesday | *fire-weekday* | 🔥 fire-day | **vokaverya** | 火曜 |
 | Wednesday | *water-weekday* | 💧 water-day | **akuverya** | 水曜 |
 | Thursday | *plant-weekday* | 🪵 wood-day | **arpoverya** | 木曜 |
-| Friday | *metal-weekday* | 🏆 metal-day | **metalverya** | 金曜 |
+| Friday | *metal-weekday* | 🏆 metal-day | **metarverya** | 金曜 |
 | Saturday | *earth-weekday* | 🌎 earth-day | **teraverya** | 土曜 |
 
 To ask which day it is, use **kerverya** (何曜, *what-weekday*).
+
+Here's how you can refer to days relative to today:
+
+| Pikotise | Han | Meaning |
+|---|---|---|
+| **soreyer** | 日前 | yesterday |
+| **tissore** | 此日 | today |
+| **soretar** | 日后 | tomorrow |
+
+For any other distance, count the days and add **yer** ('ago') or **tar** ('from now') at the end.  Note that this postposed use is what makes it deictic: **2 sore yer** is always two days before *now*, whereas **yersore** is 'the previous day' relative to whatever you were just talking about.
+
+| Pikotise | Han | Meaning |
+|---|---|---|
+| **2 sore yer** | 2日前 | two days ago |
+| **kins sore tar** | 5日后 | five days from now |
+| **tets seman yer** | 3週前 | three weeks ago |
 
 
 ## Proper Nouns
@@ -269,6 +291,21 @@ The category word is optional; you can leave it off and say just **Sumis** when 
 
 ## Inventing Compounds
 
+Making new words in Pikotise is easy, and follows this principle:
+
+> **Pikotise gains vocabulary by collapsing common phrases.**
+
+So, if you don't have a word for something, just describe it -- but if you find yourself using that same phrase a lot, you can remove the spaces, and remove the accent (stress) from all but the last root, and now you have a new compound word.
+
+For example: suppose you're visiting Japan, and have noticed how many of the toilets have fancy features including multi-button digital control panels.  You might refer to these as *electric toilet*, pronounced **VOR-to PAN-yu**.  But if you're going to talk about them much, you can make conversation go a little faster by simply conjoining those words into *electric-toilet*, **vor-to-PAN-yu**.  Note that the combined word has only one accented syllable, always second from the end.
+
+There are only a couple rules to apply when making a compound word:
+
+1. If the original phrase included a TE particle, leave it out.  Example: *yoro te arponino* ('yellow fruit') → **yoroarponino** (yellow fruit, usually banana).
+2. If one of the roots ends in `-ts`, `-ns`, or `-ks`, and the next root starts with a consonant, you will need to insert an `e` between them.  Example: *tets kurva* ('three angles') → **tetsekurva** ('triangle').
+
+Compounds that have caught on and become standard words are collected in [COMPOUNDS.md](COMPOUNDS.md).  Check there before coining something new -- if a compound is already in general use, that's the one to reach for.
+
 
 ## Grammar
 
@@ -306,37 +343,22 @@ Yes/no answers are short.  **si** ('yes') is the language's one interjection; **
 | yes | **Si.** | **Si, vite.** |
 | no | **Non.** | **Non vite.** |
 
-### Time, Tense, and Aspect
+### Time, Aspect, and Mood
 
 Pikotise verbs never change form.  **vite** is see, saw, seen, and seeing, and the work that tenses do in other languages is done by ordinary words instead.
 
-**Time is stated once, then assumed.**  Say when you are talking about at the start, and it holds until you change it -- as in Chinese or Malay.  There is no need to re-mark every verb.
+**Time is stated once, then assumed.**  Say when you are talking about at the start, and it holds until you change it (just like Chinese or Malay).  There is no need to re-mark every verb.
 
 > **Soreyer, eko vite a kanis.**  'Yesterday I saw the dog.'
-
-| Pikotise | Han | Meaning |
-|---|---|---|
-| **soreyer** | 日前 | yesterday |
-| **tissore** | 此日 | today |
-| **soretar** | 日后 | tomorrow |
-| **tistempo** | 此时 | now |
-| **yertempo** / **tartempo** | 前时 / 后时 | in the past / in the future |
-
-For any other distance, count the days and add **yer** ('ago') or **tar** ('from now') at the end.  Note that this postposed use is what makes it deictic: **2 sore yer** is always two days before *now*, whereas **yersore** is 'the previous day' relative to whatever you were just talking about.
-
-| Pikotise | Han | Meaning |
-|---|---|---|
-| **2 sore yer** | 2日前 | two days ago |
-| **kins sore tar** | 5日后 | five days from now |
-| **tets seman yer** | 3週前 | three weeks ago |
+> **Soretar, eko vite a kanis.**  'Tomorrow, I will see the dog.'
 
 **Aspect** -- whether an action is starting, finished, or ongoing -- is marked by one word placed after the predicate:
 
 | Marker | Han | Sense | Example |
 |---|---|---|---|
-| **apa** | 开 | beginning | **eko komi apa** -- I began eating |
-| **vin** | 終 | finished | **eko komi vin** -- I have eaten |
-| **sista** | 止 | still going | **eko komi sista** -- I am still eating |
+| **apa** | 开 | beginning | **eko komi apa** -- I begin/began/will begin eating |
+| **vin** | 終 | finished | **eko komi vin** -- I have/had eaten |
+| **sista** | 止 | still going | **eko komi sista** -- I am/was/will be still eating |
 
 These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is 'I am still here'.
 
@@ -344,7 +366,7 @@ These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is
 
 | Marker | Han | Sense | Example |
 |---|---|---|---|
-| **pos** | 能 | can, is able | **eko pos ire** -- I can go |
-| **kan** | 可 | might, maybe | **tuo kan ri ves** -- you may be right |
-| **mekakere** | 大求 | must, needs to | **eko mekakere ire** -- I must go |
-| **tiven** | 成 | becomes, gets | **eko ri tiven mara** -- I got sick |
+| **pos** | 能 | can, is able | **eko pos ire** -- 'I can go' |
+| **kan** | 可 | might, maybe | **tuo kan ri ves** -- 'you may be right' |
+| **mekakere** | 大求 | must, needs to | **eko mekakere ire** -- 'I must go' |
+| **tiven** | 成 | becomes, gets | **eko ri tiven mara** -- 'I got sick' |

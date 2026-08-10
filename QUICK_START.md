@@ -28,7 +28,7 @@ Here are some examples of the 200 or so base or "root" words in Pikotise:
 | new, young, recent | new | **nova** | 初 | nova, novel |
 | door, gate, entrance | door | **porta** | 門 | portal, import |
 | money, price, payment | money | **moni** | 贝 | money |
-| metal, iron, gold | metal | **metal** | 金 | metal |
+| metal, iron, gold | metal | **metar** | 金 | metal |
 
 The examples above are 5% of the full word set -- you've learned a lot already!
 
@@ -38,12 +38,12 @@ Root words can be used on their own; but what do you do when you need to say som
 
 | Roots | Compound | Han | Meaning |
 |---|---|---|---|
-| metal + money | metalmoni | 金贝 | coin |
+| metal + money | metarmoni | 金贝 | coin |
 | door + hand   | portamanu | 門手 | door handle |
 | money + door  | moniporta | 贝門 | ticket gate, turnstile |
 | water + earth | akutera   | 水土 | mud |
 
-You generally don't need to study these, as their meaning is often obvious, particularly in context.  When you do need to look one up, you'll find that the connection between the root meanings and the compound meanings is close enough that it's easy to remember.
+You generally don't need to study these, as their meaning is often obvious, particularly in context.  When you do need to look one up, you'll find that the connection between the root meanings and the compound meanings is close enough that it's easy to remember.  The full list of standard [compound words](COMPOUNDS.md) is there whenever you want it.
 
 ## Sentence Structure
 

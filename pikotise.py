@@ -148,6 +148,33 @@ DIGIT_WHEN_FREE = {"one": "1"}
 FREE_DIGIT_TO_GLOSS = {v: k for k, v in DIGIT_WHEN_FREE.items()}
 
 
+# Roots ending in `-ts`, `-ns`, `-ks` (the digits 2-9, plus `from out back middle
+# measure but`) carry a cluster that is licensed word-finally, and before a vowel,
+# where it straddles the syllable boundary: `tets`+`omo` -> **tetsomo**.  Before a
+# consonant it needs a linking `e` that belongs to neither root: `tets`+`kurva` ->
+# **tetsekurva**.  The `e` is unambiguous -- no root ends in a plain stop, so the
+# cluster can never be re-split across the join.
+CLUSTERS = ("ts", "ns", "ks")
+VOWELS = "aeiou"
+LINK = "e"
+
+
+def links(prev, nxt):
+    """Does a linking `e` go between these two adjacent root forms?"""
+    return (prev.endswith(CLUSTERS) and prev[-1].isalpha()
+            and nxt[:1].isalpha() and nxt[0] not in VOWELS)
+
+
+def join_latin(pieces):
+    """Concatenate root forms into one solid word, inserting linking `e`."""
+    out = ""
+    for piece in pieces:
+        if out and links(out, piece):
+            out += LINK
+        out += piece
+    return out
+
+
 def parse_gloss(text, t):
     """'water-meal RI have A what' -> [[water, meal], [RI], [have], [A], [what]]"""
     words = []
@@ -185,24 +212,37 @@ def segment(form, t):
     n = len(form)
     best = [None] * (n + 1)
     best[0] = []
+
+    def prior(j, piece):
+        """The segmentation `piece` continues, over a linking `e` if there is one."""
+        if best[j] is not None:
+            return best[j]
+        # form[j-1] is an `e` belonging to neither root: `tets` + e + `kurva`
+        if j and form[j - 1] == LINK and best[j - 1]:
+            prev = best[j - 1][-1]
+            if not isinstance(prev, tuple) and links(t.form_of(prev), piece):
+                return best[j - 1]
+        return None
+
     for i in range(1, n + 1):
         for j in range(i):
-            if best[j] is None:
-                continue
             piece = form[j:i]
+            head = prior(j, piece)
+            if head is None:
+                continue
             gloss = t.form2gloss.get(piece)
             if gloss and not t.is_particle(gloss):
-                best[i] = best[j] + [gloss]
+                best[i] = head + [gloss]
                 break
             # a name inside a compound is only recoverable because the reader
             # knows the name -- so names are part of the segmentation lexicon
             if piece in t.form2name:
-                best[i] = best[j] + [name_token(t.form2name[piece])]
+                best[i] = head + [name_token(t.form2name[piece])]
                 break
             # a multi-digit number keeps its digits inline (see DIGITS)
             if piece.isdigit() and piece not in DIGITS and \
                     (i == len(form) or not form[i].isdigit()):
-                best[i] = best[j] + [num_token(piece)]
+                best[i] = head + [num_token(piece)]
                 break
     return best[n]
 
@@ -336,9 +376,9 @@ def render_latin(words, t):
         if is_punct(w):
             out.append(w)
             continue
-        out.append("".join(
+        out.append(join_latin([
             t.names[g[1].lower()] if is_name(g) else literal(g) if is_num(g)
-            else t.form_of(g) for g in w))
+            else t.form_of(g) for g in w]))
     return " ".join(out)
 
 

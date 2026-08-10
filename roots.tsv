@@ -117,7 +117,7 @@ month	Time direction	month, moon, lunar cycle	content	mese	月		kanji	4-week-gro
 year	Time direction	year, annual cycle	content	anyo	年		kanji	sun-around-time	12-month-group		candidate	kanji 年	1	221	0.0811	127		Spanish ano, Latin annus	6
 evening	Time direction	evening, night, dark part of day; west (`evening-side`)	content	vesper	夕		kanji	sun-down-time	before-night-time		candidate	compass: west = where the sun sets	0	175	0.0228	44		Latin vesper; Italian sera	3
 mouth	Body and life	mouth, lips, bodily opening	content	puka	口		kanji	food-part	say-part	head-hole	candidate	kanji 口,舌	3	210	0.0084	28		Italian bocca, Spanish boca; poka was displaced	3
-metal	Material	metal, iron, gold, refined hard material	content	metal	金		kanji	hard-earth-part	money-thing		candidate	kanji 金; supplies Friday 金曜 matching Japanese exactly	1	146			R1-category	Latin metallum	8
+metal	Material	metal, iron, gold, refined hard material	content	metar	金		kanji	hard-earth-part	money-thing		candidate	kanji 金; supplies Friday 金曜 matching Japanese exactly	1	146			R1-category	Latin metallum	8
 stone	Material	stone, rock, mineral, hard natural material	content	rapis	岩		kanji	hard-earth-part	mountain-part		candidate	kanji 石	0	161			R1-category	Latin lapis; Latin petra	8
 door	Made things	door, gate, entrance, portal	content	porta	門		kanji	wall-hole	in-out-way	open-wall-part	candidate	kanji 門	0	84	0.0221	41		Latin porta, Spanish puerta	8
 red	Color	red, warm hue	content	ruper	赤		kanji	fire-color	body-water-color		candidate	kanji 赤	0	124			R1-category	Spanish rojo; Latin ruber; royo was displaced	7
