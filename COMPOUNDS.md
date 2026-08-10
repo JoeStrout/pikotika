@@ -1,9 +1,10 @@
 # Pikotise Compounds
 
-84 terms
+95 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
+| actually | in-true | inves | 内真 |
 | alcohol (usually wine) | fire-water | vokaaku | 火水 |
 | allergy | body-not-agree | korpononakor | 体不約 |
 | banana | long-yellow-plant-child | ronkayoroarponino | 长黄木子 |
@@ -13,6 +14,7 @@
 | bread | grain-food | risokomi | 米食 |
 | brown | earth-color | terakoror | 土色 |
 | bus | many-person-vehicle | muromokaro | 多人车 |
+| bye | sorry-go | pertonire | 悔行 |
 | cat | home-animal | kasepeste | 户匹 |
 | chili pepper | fire-taste-thing | vokasaporkosa | 火味物 |
 | coffee | black-drink | neropipe | 黒飲 |
@@ -23,6 +25,7 @@
 | cow | milk-animal | ratenpeste | 乳匹 |
 | cyan | blue-green | asurverte | 青緑 |
 | decimal point | part | parte | 分 |
+| depart | out-go | eksire | 外行 |
 | doctor | heal-person | sanaomo | 医人 |
 | door handle | door-hand | portamanu | 門手 |
 | firm | buy-group | komparpanto | 買众 |
@@ -34,8 +37,13 @@
 | fruit | plant-child | arponino | 木子 |
 | gluten-free food | no-yellow-grain-food | nemyororisokomi | 无黄米食 |
 | goat | small-milk-animal | pikoratenpeste | 小乳匹 |
+| goodbye | sorry-out-go | pertoneksire | 悔外行 |
 | grey | stone-color | rapiskoror | 岩色 |
+| hello | happy-meet | kontensarve | 楽会 |
+| Hello (when meeting someone new) | new-meet | novasarve | 初会 |
+| in truth | in-true | inves | 内真 |
 | lamb | small-milk-animal-meat | pikoratenpestekarne | 小乳匹肉 |
+| leave (depart) | out-go | eksire | 外行 |
 | lemon | not-sweet-yellow-plant-child | nontukeyoroarponino | 不甘黄木子 |
 | lucky | good-if | ponakan | 好可 |
 | minute | part | parte | 分 |
@@ -53,6 +61,7 @@
 | pork | red-white-animal-meat | ruperrankopestekarne | 赤白匹肉 |
 | porridge | water-grain | akuriso | 水米 |
 | potato | earth-grain | terariso | 土米 |
+| problem | bad-thing | marumkosa | 悪物 |
 | purple | red-blue | ruperasur | 赤青 |
 | quadrilateral | four-bend | watsekurva | 4弓 |
 | rectangle | four-bend | watsekurva | 4弓 |
@@ -61,6 +70,7 @@
 | sand | small-stone | pikorapis | 小岩 |
 | Saturday | earth-weekday | teraverya | 土曜 |
 | second (of time) | small-part | pikoparte | 小分 |
+| see you later | after-meet | tarsarve | 后会 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
 | smell | air-taste | ventosapor | 风味 |
 | soup | water-meal | akusenar | 水飯 |
@@ -77,6 +87,7 @@
 | tomato sauce | red-food | ruperkomi | 赤食 |
 | tomorrow | sun-after | soretar | 日后 |
 | triangle | three-bend | tetsekurva | 3弓 |
+| trouble | bad-thing | marumkosa | 悪物 |
 | Tuesday | fire-weekday | vokaverya | 火曜 |
 | turnstile | money-door | moniporta | 贝門 |
 | vegetables | green-food | vertekomi | 緑食 |

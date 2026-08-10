@@ -32,13 +32,31 @@ PARTICLE_GLOSS = {p: p for p in PARTICLES}
 PARTICLE_ALIASES = {p: p for p in PARTICLES}
 
 # The corpora write numerals as digits ("2-go-paper") as well as spelled out
-# ("one night"), so a digit is accepted as an alias for its numeral root.  Numbers
-# with no root of their own -- 11, 20, 302 -- pass through as literals: the rule for
-# composing them out of roots is not settled and this tool will not invent one.
+# ("one night"), so a digit is accepted as an alias for its numeral root.
 DIGITS = {"0": "no", "1": "one", "2": "two", "3": "three", "4": "four",
           "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine",
           "10": "ten", "100": "hundred", "1000": "thousand",
           "1000000": "million"}
+
+# DETAILS.md "## Numbers" gives the reading of any integer: positional, largest
+# scale first, with the multiplier left off a leading scale word (11 is `ten one`,
+# not `one ten one`; 500 is `five hundred` but 100 is just `hundred`).  A thousands
+# or millions group is set off from the rest by a comma -- 12345 is read
+# `ten two thousand, three hundred four ten five`.
+SCALES = ((1000000, "million", True), (1000, "thousand", True),
+          (100, "hundred", False), (10, "ten", False))
+
+
+def counting_words(n):
+    """An integer as the several words it is read as: 35 -> [three] [ten] [five]."""
+    if n < 10:
+        return [[DIGITS[str(n)]]]
+    value, gloss, grouped = next(s for s in SCALES if n >= s[0])
+    count, rest = divmod(n, value)
+    words = (counting_words(count) if count > 1 else []) + [[gloss]]
+    if rest:
+        words += ([","] if grouped else []) + counting_words(rest)
+    return words
 
 
 class Tables:
@@ -111,6 +129,90 @@ class Tables:
 # notation unchanged, so a corpus expression can be pasted in as-is
 PUNCT = set(",.:;?!" "、。：；？！")
 
+# ...but ordinary writing attaches them ("a kanis, ker?"), so punctuation is peeled
+# off the ends of each whitespace-delimited word.  Only off the ends: a decimal
+# point belongs to its number (**1.25**), not to the sentence.
+def tokenize(text):
+    out = []
+    for word in text.split():
+        lead, tail = 0, len(word)
+        while lead < tail and word[lead] in PUNCT:
+            lead += 1
+        while tail > lead and word[tail - 1] in PUNCT:
+            tail -= 1
+        out += [chunk for chunk in (word[:lead], word[lead:tail], word[tail:])
+                if chunk]
+    return out
+
+
+def join_words(parts):
+    """Join rendered words with spaces, but hang punctuation on the word before."""
+    out = ""
+    for part in parts:
+        if out and not is_punct_text(part):
+            out += " "
+        out += part
+    return out
+
+
+def is_punct_text(s):
+    return bool(s) and all(c in PUNCT for c in s)
+
+
+# A decimal is written with digits but spoken as several words: the `.` is `part`,
+# and the digits after it are read one at a time -- **1.25** is `one part two five`
+# (DETAILS.md).  So a decimal token parses into that many words and renders as that
+# many words; only the written digit form is one token.
+DECIMAL_POINT = "part"
+
+
+def decimal_words(word):
+    """'1.25' -> [[one], [part], [two], [five]].  None if not a decimal numeral."""
+    whole, point, frac = word.partition(".")
+    if not point or not whole.isdigit() or not frac.isdigit():
+        return None
+    return counting_words(int(whole)) + [[DECIMAL_POINT]] + \
+        [[DIGITS[d]] for d in frac]
+
+
+# A clock time is written the same way, with `hour` standing in for the colon:
+# **9:30** is `nine hour three ten`, and :00 minutes go unsaid -- **9:00** is just
+# **noks ora** (DETAILS.md, "Telling Time").
+CLOCK_MARK = "hour"
+
+
+def clock_words(word):
+    """'9:30' -> [[nine], [hour], [three], [ten]].  None if not a clock time."""
+    hour, mark, minute = word.partition(":")
+    if not mark or not hour.isdigit() or not minute.isdigit():
+        return None
+    if not 1 <= len(hour) <= 2 or len(minute) != 2 or int(minute) > 59:
+        return None
+    return counting_words(int(hour)) + [[CLOCK_MARK]] + \
+        (counting_words(int(minute)) if int(minute) else [])
+
+
+def clock_words(word):
+    """'9:30' -> [[nine], [hour], [three], [ten]].  None if not a clock time."""
+    hour, mark, minute = word.partition(":")
+    if not mark or not hour.isdigit() or not minute.isdigit():
+        return None
+    if not 1 <= len(hour) <= 2 or len(minute) != 2 or int(minute) > 59:
+        return None
+    return counting_words(int(hour)) + [[CLOCK_MARK]] + \
+        (counting_words(int(minute)) if int(minute) else [])
+
+
+def numeral_words(word):
+    """The several words a written numeral is read as, or None if it is not one.
+
+    Free-standing numerals only.  A digit bound inside a compound stays a digit
+    (`24-part-one`): a compound is one word, and a reading is several.
+    """
+    if word.isdigit():
+        return counting_words(int(word))
+    return decimal_words(word) or clock_words(word)
+
 
 def name_token(english):
     return ("NAME", english)
@@ -178,9 +280,13 @@ def join_latin(pieces):
 def parse_gloss(text, t):
     """'water-meal RI have A what' -> [[water, meal], [RI], [have], [A], [what]]"""
     words = []
-    for word in text.split():
-        if all(c in PUNCT for c in word):
+    for word in tokenize(text):
+        if is_punct_text(word):
             words.append(word)
+            continue
+        numeral = numeral_words(word)
+        if numeral is not None:
+            words += numeral
             continue
         upper = word.upper()
         if upper in PARTICLE_ALIASES:
@@ -249,12 +355,13 @@ def segment(form, t):
 
 def parse_latin(text, t):
     words = []
-    for word in text.split():
-        if all(c in PUNCT for c in word):
+    for word in tokenize(text):
+        if is_punct_text(word):
             words.append(word)
             continue
-        if word.isdigit():
-            words.append([DIGITS[word]] if word in DIGITS else [num_token(word)])
+        numeral = numeral_words(word)
+        if numeral is not None:
+            words += numeral
             continue
         low = word.lower()
         gloss = t.form2gloss.get(low)
@@ -273,9 +380,13 @@ def parse_latin(text, t):
 
 def parse_han(text, t):
     words = []
-    for word in text.split():
-        if all(c in PUNCT for c in word):
+    for word in tokenize(text):
+        if is_punct_text(word):
             words.append(word)
+            continue
+        numeral = numeral_words(word)
+        if numeral is not None:
+            words += numeral
             continue
         # no digit shortcut here: the characters for two..nine *are* the digits,
         # so the per-character lookup below is what resolves them
@@ -367,7 +478,7 @@ def render_gloss(words, t):
         else:
             out.append("-".join(literal(g) if isinstance(g, tuple) else g
                                 for g in w))
-    return " ".join(out)
+    return join_words(out)
 
 
 def render_latin(words, t):
@@ -379,7 +490,7 @@ def render_latin(words, t):
         out.append(join_latin([
             t.names[g[1].lower()] if is_name(g) else literal(g) if is_num(g)
             else t.form_of(g) for g in w]))
-    return " ".join(out)
+    return join_words(out)
 
 
 def render_han(words, t):
@@ -395,7 +506,7 @@ def render_han(words, t):
         out.append("".join(
             t.names[g[1].lower()] if is_name(g) else literal(g) if is_num(g)
             else t.han_of(g) for g in w))
-    return " ".join(out)
+    return join_words(out)
 
 
 def english_match(words, t):

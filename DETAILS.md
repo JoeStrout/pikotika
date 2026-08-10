@@ -295,7 +295,7 @@ Making new words in Pikotise is easy, and follows this principle:
 
 > **Pikotise gains vocabulary by collapsing common phrases.**
 
-So, if you don't have a word for something, just describe it -- but if you find yourself using that same phrase a lot, you can remove the spaces, and remove the accent (stress) from all but the last root, and now you have a new compound word.
+So, if you don't have a word for something, just describe it -- but if you find yourself using that same phrase a lot, you can remove the spaces, and remove the accent (stress) from all but the next-to-last syllable, and now you have a new compound word.
 
 For example: suppose you're visiting Japan, and have noticed how many of the toilets have fancy features including multi-button digital control panels.  You might refer to these as *electric toilet*, pronounced **VOR-to PAN-yu**.  But if you're going to talk about them much, you can make conversation go a little faster by simply conjoining those words into *electric-toilet*, **vor-to-PAN-yu**.  Note that the combined word has only one accented syllable, always second from the end.
 
@@ -343,6 +343,8 @@ Yes/no answers are short.  **si** ('yes') is the language's one interjection; **
 | yes | **Si.** | **Si, vite.** |
 | no | **Non.** | **Non vite.** |
 
+(See the **Pleasantries** section for more idioms you can use here.)
+
 ### Time, Aspect, and Mood
 
 Pikotise verbs never change form.  **vite** is see, saw, seen, and seeing, and the work that tenses do in other languages is done by ordinary words instead.
@@ -370,3 +372,39 @@ These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is
 | **kan** | 可 | might, maybe | **tuo kan ri ves** -- 'you may be right' |
 | **mekakere** | 大求 | must, needs to | **eko mekakere ire** -- 'I must go' |
 | **tiven** | 成 | becomes, gets | **eko ri tiven mara** -- 'I got sick' |
+
+## Pleasantries & Filler
+
+Here are some words and phrases to grease the wheels of a conversation:
+
+| English | Gloss | Latin | Han |
+|---|---|---|---|
+| Hello (when meeting someone new) | new-meet | **Novasarve.** | 初会. |
+| Hello | happy-meet | **Kontensarve.** | 楽会. |
+| I'm happy to meet you. | self happy meet A you | **Eko konten sarve a tuo.** | 己 楽 会 ⇒ 尔. |
+| Good morning. | good morning | **Pona matin.** | 好 朝. |
+| Good evening. | good evening | **Pona vesper.** | 好 夕. |
+| How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
+| All is good. | all RI good | **Pan ri pona.** | 全 ⊢ 好. |
+| And you? | and you, what | **Kum tuo, ker?** | 并 尔, 何. | 
+| Bye! | sorry-go | **Pertonire!** | 悔行! |
+| Goodbye. | sorry-out-go | **Pertoneksire.** | 悔外行. |
+| See you later. | after-meet | **Tarsarve.** | 后会. |
+| Later! | after | **Tar!** | 后! |
+| Sorry/oops/excuse me. | sorry | **Perton.** | 悔. |
+| I am sorry. | self RI sorry | **Eko ri perton.** | 己 ⊢ 悔. |
+| Actually, ... | in-true | **Inves, ...** | 内真, ... |
+| Thanks. | thank | **Mersi.** | 恩. |
+| I thank you. | self thank A you | **Eko mersi a tuo.** | 己 恩 ⇒ 尔. |
+| No problem. | no bad-thing | **Nem marumkosa.** | 无 悪物. |
+| Please. | please | **Pam.** | 乞. |
+| Yes, please. | yes, please | **Si, pam.** | 是, 乞. |
+| Yes, please give (it to me). | yes, please give | **Si, pam tare.** | 是, 乞 与. |
+| No, thank you. | not, thank | **Non, mersi.** | 不, 恩. |
+| I don't know. | self not know | **Eko non sape.** | 己 不 知. |
+| Help, please! | please help | **Pam servi!** | 乞 助! |
+
+
+If you need a moment while speaking, but don't want to give up your turn in the conversation, you can fill with "e..." (soft vowel as in English 'f**ea**ther').  This is equivalent to "um..." or "ah..." in English (and many other languages).
+
+

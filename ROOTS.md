@@ -237,7 +237,7 @@
 | learn | impar | 学 | learn, study, acquire knowledge |
 | come | veni | 来 | come, arrive, approach |
 | need | neses | 要 | need, require, must, necessary, have to |
-| greet | sarve | 会 | greet, hello, goodbye, salutation |
+| meet | sarve | 会 | meet, encounter, run into, come together with |
 | thank | mersi | 恩 | thank, gratitude, appreciation |
 | sorry | perton | 悔 | sorry, apology, regret, excuse me |
 | lose | perti | 失 | lose, lost, miss, misplace |

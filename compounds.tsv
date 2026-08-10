@@ -83,3 +83,14 @@ triangle	three-bend
 quadrilateral	four-bend
 rectangle	four-bend
 square	four-bend
+depart	out-go
+leave (depart)	out-go
+hello	happy-meet
+goodbye	sorry-out-go
+bye	sorry-go
+Hello (when meeting someone new)	new-meet
+see you later	after-meet
+actually	in-true
+in truth	in-true
+problem	bad-thing
+trouble	bad-thing
