@@ -5,7 +5,7 @@ Pikotise (_pee-ko-TEE-say_, meaning 'small talk') is a constructed language that
 - Where is the bathroom?  (**Panyu ri kerroko?**)
 - Does this dish contain wheat?  (**Tis komi ri tene a yororiso, ker?**)
 - Please wait one moment.  (**Pam asper wun pikotempo.**)
-- I'm staying for 6 days.  (**6 sore turan, eko sista.**)
+- I'm staying for 6 days.  (**6 sore turan, eko ri sista.**)
 
 and much more.
 
@@ -57,9 +57,10 @@ The two little words in the middle are signposts, not words you translate.  **ri
 |---|---|
 | **Sanaomo ri vite a kanis.** | The doctor sees the dog. |
 | **Kanis ri vite a sanaomo.** | The dog sees the doctor. |
-| **Eko vite a kanis.** | I see the dog. |
+| **Eko ri vite a kanis.** | I see the dog. |
 
-That last one drops **ri**, which you may do after a plain pronoun subject.
+**ri** and **a** are never left out, and never move.  Every sentence has them in the
+same places, which is what makes the pattern worth learning once.
 
 There is no verb "to be" -- just leave it out:
 
@@ -75,8 +76,8 @@ To ask a question, don't rearrange anything.  Just put **ker** ('what') where th
 | Question | Meaning |
 |---|---|
 | **Panyu ri kerroko?** | Where is the bathroom? (*the bathroom is what-place?*) |
-| **Tuo ire ver kerroko?** | Where are you going? (*you go toward what-place?*) |
-| **Tuo vite a kanis, ker?** | Do you see the dog? |
+| **Tuo ri ire ver kerroko?** | Where are you going? (*you go toward what-place?*) |
+| **Tuo ri vite a kanis, ker?** | Do you see the dog? |
 
 For a yes-or-no question, add **ker** at the end, as in that last example; or you can append **si** ('yes') or **non** ('no') if you are expecting a 'yes' answer.  **Si** or **non** is a simple way to answer the question.
 

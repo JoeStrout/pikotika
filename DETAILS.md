@@ -322,7 +322,7 @@ Questions never rearrange the sentence.  Word order is the same as in a statemen
 | Question | Literally | Meaning |
 |---|---|---|
 | **Panyu ri kerroko?** | toilet is what-place | Where is the bathroom? |
-| **Tuo ire ver kerroko?** | you go toward what-place | Where are you going? |
+| **Tuo ri ire ver kerroko?** | you RI go toward what-place | Where are you going? |
 | **Tis ri ker moni?** | this is what money | How much is this? |
 | **Keromo ri sanaomo?** | what-person is heal-person | Who is the doctor? |
 
@@ -330,9 +330,9 @@ For a yes-or-no question there is no slot to fill, so the question word goes at 
 
 | Tag | You are | Example | Meaning |
 |---|---|---|---|
-| **, ker?** | genuinely asking | **Tuo vite a kanis, ker?** | Do you see the dog? |
-| **, non?** | expecting yes | **Tuo vite a kanis, non?** | You see the dog, don't you? |
-| **, si?** | seeking agreement | **Tuo vite a kanis, si?** | You see the dog, right? |
+| **, ker?** | genuinely asking | **Tuo ri vite a kanis, ker?** | Do you see the dog? |
+| **, non?** | expecting yes | **Tuo ri vite a kanis, non?** | You see the dog, don't you? |
+| **, si?** | seeking agreement | **Tuo ri vite a kanis, si?** | You see the dog, right? |
 
 Use **ker** when you don't know the answer.  The other two are like English "isn't it?" or Spanish *¿no?* -- they lean toward an answer, and a listener will feel the lean, so don't use them when you want an honest reply.
 
@@ -351,16 +351,16 @@ Pikotise verbs never change form.  **vite** is see, saw, seen, and seeing, and t
 
 **Time is stated once, then assumed.**  Say when you are talking about at the start, and it holds until you change it (just like Chinese or Malay).  There is no need to re-mark every verb.
 
-> **Soreyer, eko vite a kanis.**  'Yesterday I saw the dog.'
-> **Soretar, eko vite a kanis.**  'Tomorrow, I will see the dog.'
+> **Soreyer, eko ri vite a kanis.**  'Yesterday I saw the dog.'
+> **Soretar, eko ri vite a kanis.**  'Tomorrow, I will see the dog.'
 
 **Aspect** -- whether an action is starting, finished, or ongoing -- is marked by one word placed after the predicate:
 
 | Marker | Han | Sense | Example |
 |---|---|---|---|
-| **apa** | 开 | beginning | **eko komi apa** -- I begin/began/will begin eating |
-| **vin** | 終 | finished | **eko komi vin** -- I have/had eaten |
-| **sista** | 止 | still going | **eko komi sista** -- I am/was/will be still eating |
+| **apa** | 开 | beginning | **eko ri komi apa** -- I begin/began/will begin eating |
+| **vin** | 終 | finished | **eko ri komi vin** -- I have/had eaten |
+| **sista** | 止 | still going | **eko ri komi sista** -- I am/was/will be still eating |
 
 These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is 'I am still here'.
 
@@ -368,9 +368,9 @@ These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is
 
 | Marker | Han | Sense | Example |
 |---|---|---|---|
-| **pos** | 能 | can, is able | **eko pos ire** -- 'I can go' |
-| **kan** | 可 | might, maybe | **tuo kan ri ves** -- 'you may be right' |
-| **mekakere** | 大求 | must, needs to | **eko mekakere ire** -- 'I must go' |
+| **pos** | 能 | can, is able | **eko ri pos ire** -- 'I can go' |
+| **kan** | 可 | might, maybe | **tuo ri kan ves** -- 'you may be right' |
+| **mekakere** | 大求 | must, needs to | **eko ri mekakere ire** -- 'I must go' |
 | **tiven** | 成 | becomes, gets | **eko ri tiven mara** -- 'I got sick' |
 
 ## Pleasantries & Filler
@@ -381,7 +381,7 @@ Here are some words and phrases to grease the wheels of a conversation:
 |---|---|---|---|
 | Hello (when meeting someone new) | new-meet | **Novasarve.** | 初会. |
 | Hello | happy-meet | **Kontensarve.** | 楽会. |
-| I'm happy to meet you. | self happy meet A you | **Eko konten sarve a tuo.** | 己 楽 会 ⇒ 尔. |
+| I'm happy to meet you. | self RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
 | Good morning. | good morning | **Pona matin.** | 好 朝. |
 | Good evening. | good evening | **Pona vesper.** | 好 夕. |
 | How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
@@ -395,13 +395,13 @@ Here are some words and phrases to grease the wheels of a conversation:
 | I am sorry. | self RI sorry | **Eko ri perton.** | 己 ⊢ 悔. |
 | Actually, ... | in-true | **Inves, ...** | 内真, ... |
 | Thanks. | thank | **Mersi.** | 恩. |
-| I thank you. | self thank A you | **Eko mersi a tuo.** | 己 恩 ⇒ 尔. |
+| I thank you. | self RI thank A you | **Eko ri mersi a tuo.** | 己 ⊢ 恩 ⇒ 尔. |
 | No problem. | no bad-thing | **Nem marumkosa.** | 无 悪物. |
 | Please. | please | **Pam.** | 乞. |
 | Yes, please. | yes, please | **Si, pam.** | 是, 乞. |
 | Yes, please give (it to me). | yes, please give | **Si, pam tare.** | 是, 乞 与. |
 | No, thank you. | not, thank | **Non, mersi.** | 不, 恩. |
-| I don't know. | self not know | **Eko non sape.** | 己 不 知. |
+| I don't know. | self RI not know | **Eko ri non sape.** | 己 ⊢ 不 知. |
 | Help, please! | please help | **Pam servi!** | 乞 助! |
 
 
