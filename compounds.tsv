@@ -73,3 +73,6 @@ Wednesday	water-weekday
 Thursday	plant-weekday
 Friday	metal-weekday
 Saturday	earth-weekday
+minute	part
+second (of time)	small-part
+moment	small-time

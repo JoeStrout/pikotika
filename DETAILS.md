@@ -63,7 +63,7 @@ In the Han character form, every root word is given a single Chinese character. 
 - *A*: ⇒
 - *TE*: >						
 
-Proper names are written in Latin as above, and numbers are written using Arabic numerals.  Unlike Chinese, in Pikotise we put spaces between the words (but not within compound words), and make use of periods, commas, and semicolons as in English.  This makes it easy to distinguish Pikotise from a block of Chinese text.
+Proper names are written in Latin as above, and numbers are written using Arabic numerals.  Unlike Chinese, in Pikotise we put spaces or particles between the words (but not _within_ compound words), and make use of periods, commas, and semicolons as in English.  This makes it easy to distinguish Pikotise from a block of Chinese text.
 
 If you're not already used to Chinese or Japanese, this form may seem arcane.  You don't need to learn it right away.  But keep in mind, there are fewer than 200 characters to learn, and once you have them, it's both space-efficient and very quick to read.  It can also be written vertically, for example on signs or in comics.  Note that in this case, the particles do NOT rotate; they keep their standard orientation (just like the Han characters, but unlike some bits of Japanese notation).
 
@@ -170,7 +170,7 @@ Clock times are written with digits and a colon, and read with **ora** (hour) st
 | **9:30** | **noks ora tets tekas** | 9:30 |
 | **15:45** | **tekas kins ora wats tekas kins** | 15:45 |
 
-There is no separate word for "minute"; the number after **ora** is understood to be minutes.  Use the 24-hour clock when it matters.  Otherwise, put the part of day in front:
+We don't need to say "minute" in this case; the number after **ora** is understood to be minutes.  You can use the 24-hour clock, or you can clarify a 12-hour time by putting the part of day in front:
 
 | Pikotise | Han | Meaning |
 |---|---|---|
@@ -180,34 +180,46 @@ There is no separate word for "minute"; the number after **ora** is understood t
 | **vesper** | 夕 | evening |
 | **note** | 夜 | night |
 
-So **matin noks ora** is 9 in the morning, and **vesper noks ora** is 9 at night.  For an approximate time, **pikotempo** (小时, *small-time*) is a moment, and **ora** alone is an hour.
+So **matin noks ora** is 9 in the morning, and **vesper noks ora** is 9 at night.  
 
-To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun seman turan** is "for a week."
+To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun seman turan** is "for a week."  For smaller intervals, use **parte turan** for minutes, and **pikoparte turan** for seconds.
+
+For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and does not need **turan**).
+
 
 ## Dates and Days of the Week
 
-Dates run **largest unit first** -- year, month, day.  This is the one order that is unambiguous everywhere, since 03-04 is March 4th in the US and April 3rd almost everywhere else.
+You name a calendar year in Pikotise with the year number plus **anyo** (年, 'year').  Example: **2026 anyo**, written 2026年 in Han characters, would be read **pits kiru pits tekas siks anyo**.  (Notice that when writing in Han form, no space is needed after the number; this is an exception to the usual rule of separating words with spaces or particles.)
 
-| Written | Read | Meaning |
-|---|---|---|
-| **2026-08-09** | **2026 anyo 8 mese 9 sore** | 9 August 2026 |
-| **8-09** | **8 mese 9 sore** | 9 August |
+Months use the same pattern: rather than having unique names, as in English, months are simply numbered from 1 to 12, followed by **mese** (月, 'month').  So **1 mese** (also written 1月, and read **wun mese**) is January, **2 mese** (2月, **pits mese**) is February, etc.
 
-Months have no names: they are simply **1 mese** through **12 mese** (1月 to 12月), the same pattern as Japanese.
+Do the same for days of the month, using **sore** (日, 'day'): write **1 sore** through **31 sore** (1日 to 31日 in Han form).
 
-The seven weekdays are each named for a heavenly body, using roots the language already had.  The characters match Japanese and Korean exactly.
+To specify a date or partial date, just write these out in year, month, day order.  As a shortcut for full dates when using Latin form, you can also separate the numbers with hyphens (i.e. ISO date format).  The examples below show the possible ways to write "August 9th", "August 2026", and "August 9th, 2026".
 
-| Day | Gloss | Pikotise | Han |
-|---|---|---|---|
-| Sunday | *sun-weekday* | **soreverya** | 日曜 |
-| Monday | *month-weekday* | **meseverya** | 月曜 |
-| Tuesday | *fire-weekday* | **vokaverya** | 火曜 |
-| Wednesday | *water-weekday* | **akuverya** | 水曜 |
-| Thursday | *plant-weekday* | **arpoverya** | 木曜 |
-| Friday | *metal-weekday* | **metalverya** | 金曜 |
-| Saturday | *earth-weekday* | **teraverya** | 土曜 |
+| Written | Read |
+|---|---|
+| **8 mese 9 sore** | **ots mese noks sore** |
+| **8月9日** | **ots mese noks sore** |
+| **2026 anyo 8 mese** | **pits kiru pits tekas siks anyo ots mese** |
+| **2026年8月** | **pits kiru pits tekas siks anyo ots mese** |
+| **2026 anyo 8 mese 9 sore** | **pits kiru pits tekas siks anyo ots mese noks sore** |
+| **2026年8月9日** | **pits kiru pits tekas siks anyo ots mese noks sore** |
+| **2026-08-09** | **pits kiru pits tekas siks anyo ots mese noks sore** |
 
-English gives away the two anchors: Sunday is the sun's day and Monday the moon's, which are **soreverya** and **meseverya**.  Once you see that each day belongs to a heavenly body, the rest follow in the same order every tradition already uses.
+Notice that how you choose to write it does not change how it is read.
+
+The seven weekdays are each named for a heavenly body or element, plus **verya** ('weekday').  The Han characters match Japanese and Korean exactly.
+
+| Day | Gloss | Think | Latin | Han |
+|---|---|---|---|---|
+| Sunday | *sun-weekday* | ☀️ sun-day | **soreverya** | 日曜 |
+| Monday | *month-weekday* | 🌖 moon-day | **meseverya** | 月曜 |
+| Tuesday | *fire-weekday* | 🔥 fire-day | **vokaverya** | 火曜 |
+| Wednesday | *water-weekday* | 💧 water-day | **akuverya** | 水曜 |
+| Thursday | *plant-weekday* | 🪵 wood-day | **arpoverya** | 木曜 |
+| Friday | *metal-weekday* | 🏆 metal-day | **metalverya** | 金曜 |
+| Saturday | *earth-weekday* | 🌎 earth-day | **teraverya** | 土曜 |
 
 To ask which day it is, use **kerverya** (何曜, *what-weekday*).
 
