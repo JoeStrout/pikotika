@@ -75,7 +75,7 @@ First, the digits:
 
 | Digit | Reading |
 |---|---|
-| 0 | **no** |
+| 0 | **nem** |
 | 1 | **wun** |
 | 2 | **pits** |
 | 3 | **tets** |
@@ -121,7 +121,7 @@ Even though numbers are normally written in Arabic numerals, the numbers zero an
 
 | Value | Reading | Han |
 |---|---|---|
-| 0 | **no** | 无 |
+| 0 | **nem** | 无 |
 | 1 | **wun** | 一 |
 | ten | **tekas** | 十 |
 | hundred | **katon** | 百 |
@@ -276,4 +276,75 @@ The category word is optional; you can leave it off and say just **Sumis** when 
 
 Modifiers (adjectives and adverbs) come before the word they modify (the base noun or verb): **tuke komi** = 'sweet food'.  This is just like how the initial roots in a compound word modify the final root; the only difference here is that they're multiple words, describing something rather than naming a specific concept.
 
-The one exception to this modifier-first rule is in naming things: here the proper noun comes _after_ the category word (if any), like **omo Sumis**, 'the person Smith'. 　See the Proper Nouns section for details.
+The one exception to this modifier-first rule is in naming things: here the proper noun comes _after_ the category word (if any), like **omo Sumis**, 'the person Smith'.  See the Proper Nouns section for details.
+
+### Questions and Answers
+
+Questions never rearrange the sentence.  Word order is the same as in a statement; you simply put **ker** ('what') in the slot where the answer belongs.
+
+| Question | Literally | Meaning |
+|---|---|---|
+| **Panyu ri kerroko?** | toilet is what-place | Where is the bathroom? |
+| **Tuo ire ver kerroko?** | you go toward what-place | Where are you going? |
+| **Tis ri ker moni?** | this is what money | How much is this? |
+| **Keromo ri sanaomo?** | what-person is heal-person | Who is the doctor? |
+
+For a yes-or-no question there is no slot to fill, so the question word goes at the end instead, after a comma.  Which word you choose says how you expect to be answered:
+
+| Tag | You are | Example | Meaning |
+|---|---|---|---|
+| **, ker?** | genuinely asking | **Tuo vite a kanis, ker?** | Do you see the dog? |
+| **, non?** | expecting yes | **Tuo vite a kanis, non?** | You see the dog, don't you? |
+| **, si?** | seeking agreement | **Tuo vite a kanis, si?** | You see the dog, right? |
+
+Use **ker** when you don't know the answer.  The other two are like English "isn't it?" or Spanish *¿no?* -- they lean toward an answer, and a listener will feel the lean, so don't use them when you want an honest reply.
+
+Yes/no answers are short.  **si** ('yes') is the language's one interjection; **non** ('not') does duty as 'no'.  Either can stand alone, or you can repeat the verb to be unmistakable.
+
+| | Short | Fuller |
+|---|---|---|
+| yes | **Si.** | **Si, vite.** |
+| no | **Non.** | **Non vite.** |
+
+### Time, Tense, and Aspect
+
+Pikotise verbs never change form.  **vite** is see, saw, seen, and seeing, and the work that tenses do in other languages is done by ordinary words instead.
+
+**Time is stated once, then assumed.**  Say when you are talking about at the start, and it holds until you change it -- as in Chinese or Malay.  There is no need to re-mark every verb.
+
+> **Soreyer, eko vite a kanis.**  'Yesterday I saw the dog.'
+
+| Pikotise | Han | Meaning |
+|---|---|---|
+| **soreyer** | 日前 | yesterday |
+| **tissore** | 此日 | today |
+| **soretar** | 日后 | tomorrow |
+| **tistempo** | 此时 | now |
+| **yertempo** / **tartempo** | 前时 / 后时 | in the past / in the future |
+
+For any other distance, count the days and add **yer** ('ago') or **tar** ('from now') at the end.  Note that this postposed use is what makes it deictic: **2 sore yer** is always two days before *now*, whereas **yersore** is 'the previous day' relative to whatever you were just talking about.
+
+| Pikotise | Han | Meaning |
+|---|---|---|
+| **2 sore yer** | 2日前 | two days ago |
+| **kins sore tar** | 5日后 | five days from now |
+| **tets seman yer** | 3週前 | three weeks ago |
+
+**Aspect** -- whether an action is starting, finished, or ongoing -- is marked by one word placed after the predicate:
+
+| Marker | Han | Sense | Example |
+|---|---|---|---|
+| **apa** | 开 | beginning | **eko komi apa** -- I began eating |
+| **vin** | 終 | finished | **eko komi vin** -- I have eaten |
+| **sista** | 止 | still going | **eko komi sista** -- I am still eating |
+
+These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is 'I am still here'.
+
+**Mood** works the same way, with one word before the verb:
+
+| Marker | Han | Sense | Example |
+|---|---|---|---|
+| **pos** | 能 | can, is able | **eko pos ire** -- I can go |
+| **kan** | 可 | might, maybe | **tuo kan ri ves** -- you may be right |
+| **mekakere** | 大求 | must, needs to | **eko mekakere ire** -- I must go |
+| **tiven** | 成 | becomes, gets | **eko ri tiven mara** -- I got sick |

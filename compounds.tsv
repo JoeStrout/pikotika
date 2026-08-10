@@ -76,3 +76,6 @@ Saturday	earth-weekday
 minute	part
 second (of time)	small-part
 moment	small-time
+yesterday	sun-before
+today	this-sun
+tomorrow	sun-after

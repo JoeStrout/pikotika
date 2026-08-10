@@ -11,7 +11,9 @@ and much more.
 
 ## ~200 Root Words
 
-In Pikotise, there are only about 200 words you need to memorize -- and they're not arbitrary; they're chosen to be _easy_ to learn, especially if you already speak English or some Romance language.  These base words were chosen based on common roots in Western languages, and to help speakers of Chinese, Japanese, and Korean (CJK) languages, each root also has an associated Chinese character.  (If those are unfamiliar to you, don't worry!  You don't need them right away, and if you want them later, they will be easier to learn than you probably think.)  Each word also has a "gloss" or simple keyword to remember it by.
+In Pikotise, there are only about 200 words you need to memorize -- and they're not arbitrary; they're chosen to be _easy_ to learn, especially if you already speak English or some Romance language.  These base words were chosen based on common roots in Western languages.  While most of these words have several related meanings, each one also has a "gloss" or simple keyword to remember it by.
+
+To help speakers of Chinese, Japanese, and Korean (CJK) languages, each root also has an associated Chinese character, sometimes called "Han form".  If those are unfamiliar to you, don't worry!  You don't need them right away, and if you want them later, they will be easier to learn than you probably think.
 
 Here are some examples of the 200 or so base or "root" words in Pikotise:
 
@@ -45,10 +47,52 @@ You generally don't need to study these, as their meaning is often obvious, part
 
 ## Sentence Structure
 
+Every Pikotise sentence follows one pattern, and it never changes:
 
-## Examples
+> _subject_ — **ri** — _verb_ — **a** — _object_
+
+The two little words in the middle are signposts, not words you translate.  **ri** says "the subject is finished, here comes the verb"; **a** says "here comes the object."
+
+| Sentence | Meaning |
+|---|---|
+| **Sanaomo ri vite a kanis.** | The doctor sees the dog. |
+| **Kanis ri vite a sanaomo.** | The dog sees the doctor. |
+| **Eko vite a kanis.** | I see the dog. |
+
+That last one drops **ri**, which you may do after a plain pronoun subject.
+
+There is no verb "to be" -- just leave it out:
+
+| Sentence | Meaning |
+|---|---|
+| **Eko ri sanaomo.** | I am a doctor. |
+| **Tis ri pona.** | This is good. |
+
+Descriptive words go **before** what they describe, just as in English: **tuke komi** is 'sweet food'.
+
+To ask a question, don't rearrange anything.  Just put **ker** ('what') where the answer would go:
+
+| Question | Meaning |
+|---|---|
+| **Panyu ri kerroko?** | Where is the bathroom? (*the bathroom is what-place?*) |
+| **Tuo ire ver kerroko?** | Where are you going? (*you go toward what-place?*) |
+| **Tuo vite a kanis, ker?** | Do you see the dog? |
+
+For a yes-or-no question, add **ker** at the end, as in that last example; or you can append **si** ('yes') or **non** ('no') if you are expecting a 'yes' answer.  **Si** or **non** is a simple way to answer the question.
+
+## Stuff Intentionally Left Out 
+
+Finally, here are things Pikotise does **not** have:
+
+- no verb tenses or conjugations -- **vite** is see, saw, seen, and seeing
+- no plural endings -- **kanis** is dog or dogs
+- no articles like "a" or "the"
+- no grammatical gender
+- no irregular verbs, because there is nothing to make irregular
+
+## Example Dialog
 
 
 ## Ready to learn more?
 
-See [[DETAILS.md]] for more details, and watch this space for learning materials coming soon!
+See [DETAILS.md](DETAILS.md) for more details, and watch this space for learning materials coming soon!
