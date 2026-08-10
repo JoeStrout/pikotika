@@ -1,4 +1,7 @@
 gloss	category	covers	wclass	form	han	usage4	freq	alt1	alt2	alt3	status	notes	usage270	rank	corpus_damage	trim2_rank	addback	mnemonic	strokes
+RI	Particles	predicate boundary	particle	ri	⊢						particle							predicate boundary; no etymology, deliberately neutral	
+A	Particles	object boundary	particle	a	⇒						particle							Spanish personal *a*, which marks objects: *veo **a** Juan*	
+TE	Particles	modification, head follows	particle	te	>						particle							Mandarin 的 *de*, Italian/Spanish *di/de* — the same job in both	
 not	Grammar and logic	no, un-, opposite, negation, without	function	non	不	97	usage				core		28	270	veto	150		Latin *non*	4
 all	Grammar and logic	every, whole, total, complete, enough	function	pan	全	16		not-no	many-many		core		11	223	0.0916	122		*pan-* (pandemic, pan-American)	6
 this	Grammar and logic	this, here, now, present (that/there = `not-this`)	function	tis	此	6		near	near-thing		core	TRIM2-PROTECTED: SS7 anaphora and SS deixis (this-place, this-time) are built on it	5	49	0.7918	999		English *this*	6
@@ -52,7 +55,7 @@ relative	People and society	relative, kin, extended family	content	kina	氏	9		l
 friend	People and society	friend, companion, ally	content	ami	朋	5		like-person	good-know-person		core		4	157			R5-principled	French *ami*, Spanish *amigo*	8
 law	People and society	law, rule, permission, authority, government	content	reke	法	36	usage	country-word	all-need-word		core		14	228	0.0269	67		*lex, legal, legge*	8
 money	People and society	money, price, cost, value, payment	content	moni	贝	40	usage	price-thing	get-give-thing		core	han 贝 (historical money radical, 4 strokes) — 金 freed for `metal`	18	237	0.0649	111		English *money*, Latin *moneta*	4
-home	Dwelling	home, house, dwelling, household	content	kase	户	14		sleep-place	self-building	life-place	core	Joe: candidate for replacement by `self-building` / `life-place`; see notes in building	7	194	0.0455	62		*casa*	4
+home	Places, arts, appearance	home, house, dwelling, household	content	kase	户	14		sleep-place	self-building	life-place	core	Joe: candidate for replacement by `self-building` / `life-place`; see notes in building	7	194	0.0455	62		*casa*	4
 body	Body and life	body, physical, flesh	content	korpo	体	24	kanji	life-thing	all-part-one	person-thing	core		17	245	0.0248	69		*corpo, corpus, corporal*	7
 head	Body and life	head, top, leader, chief	content	testa	头	7		up-body-part	think-place	eye-place	core	narrowed: face sense split out to `face`	5	179			R4-head	*testa, tête*	5
 hand	Body and life	hand, arm, finger, grasp	content	manu	手	5	kanji	get-part	make-part		core		5	184	0.0170	33		*manu-, mano, manual*	4
@@ -86,19 +89,19 @@ make	Verbs	make, do, build, create, cause	content	vake	作	52	irregular,usage	wo
 have	Verbs	have, hold, own, possess, keep	content	tene	有	11	irregular	own	self-thing	near-self-put	core		10	160	0.1929	110		*tener, tenir, tenere*	6
 put	Verbs	put, place, set, position	content	seta	安	10	irregular	place-give	stop-make	down-give	core		8	216	0.0359	83		English *set*	6
 say	Verbs	say, speak, talk, tell	content	tise	云	46	irregular,usage	word-give	mouth-work	word-make	core		30	258	0.1754	144		*dicere, decir, dire*	4
-know	Verbs	know, be informed of, information (understand = `see`; true = `good-know`)	content	sape	知	49	irregular,kanji,usage	think-have	true-have	word-have	core		23	267	0.0357	124		*saber, savoir, sapere*	8
+know	Verbs	know, be informed of, information	content	sape	知	49	irregular,kanji,usage	think-have	true-have	word-have	core		23	267	0.0357	124		*saber, savoir, sapere*	8
 think	Verbs	think, mind, idea, opinion, believe	content	pensa	思	29	irregular,kanji	head-work	in-say		core		20	249	0.0477	114		*pensar, penser, pensive*	9
 want	Verbs	want, desire, wish, hope	content	kere	求	32	irregular,usage	good-think	get-feel		core	narrowed: necessity/obligation split out to `need`	19	246	0.0573	118		Spanish *querer*, *quiero*	7
 feel	Verbs	feel, emotion, sense, touch	content	senti	心	53	kanji,usage	body-know	in-know		core		18	254	0.0018	59		*sentir, sentiment*	4
 see	Verbs	see, look, watch, appear; understand, realize, get it	content	vite	见	38	irregular,usage	eye-work	eye-know		core		15	250	0.1997	149		*video, ver, vedere*	4
-hear	Verbs	hear, listen, sound, noise (literal audition only; understand = `see`)	content	oti	耳	11		not-see-know	air-know		core		9	172	0.0316	58		*audio, oír, udire*	6
+hear	Verbs	hear, listen, sound, noise	content	oti	耳	11		not-see-know	air-know		core		9	172	0.0316	58		*audio, oír, udire*	6
 sleep	Verbs	sleep, rest, bed, recharge, be dormant	content	tormi	床	14		night-rest	body-stop-time		core	Joe: same verb for a person in bed and a phone on a charger	9	197	0.0519	109		*dormir, dormant*	7
 play	Verbs	play, game, fun, amuse	content	ruti	玩	24		not-work	good-time-make	happy-work	core		18	199	0.0259	50		*ludic, ludere*	8
 work	Verbs	work, labor, job, effort, use	content	rapo	力	53	kanji,usage	make-time	power-give		core		19	257	0.0439	123		*labor, lavoro*	2
 help	Verbs	help, assist, serve, care for	content	servi	助	11		good-give	work-give		core		7	163	0.0155	11		*serve, servir* — our `help` covers *serve, care for*	7
 begin	Verbs	open, begin, start, uncover	content	apa	开	17		hole-make	in-way-give		core	aspect: inceptive (§9). gloss renamed `open` -> `begin` 2026-08-09; form and character unchanged	10	217	0.1548	141		⚠ *aperire, abrir* — weakened, see §9	4
 break	Verbs	break, cut, damage, ruin	content	rompe	切	12		not-good-change	part-make	sharp-work	core		9	171	0.0258	31		*romper, rompere, rupture*	4
-change	Verbs	change, exchange, differ, alter (become = `become`)	content	muta	化	11	irregular,kanji	other-make	not-same-make	new-make	core	narrowed: inchoative `become` split out after Corpus 2	8	244	0.0248	72		*mutate, mudar*	4
+change	Verbs	change, exchange, differ, alter	content	muta	化	11	irregular,kanji	other-make	not-same-make	new-make	core	narrowed: inchoative `become` split out after Corpus 2	8	244	0.0248	72		*mutate, mudar*	4
 become	Verbs	become, get, turn into, come to be; enter a state	content	tiven	成			change-to	go-to	come-to	candidate	added after Corpus 2. Inchoative was 2 roots (`change to`) against 0 for the bare stative, so speakers drop it. No derivational history: usage4/freq/rank are blank because this root post-dates the 986-concept list and the cut ranking.					R2-conversation	Italian diventare	6
 good	Qualities	good, well, fine, pleasant	content	pona	好	79	irregular,usage	not-bad	want-thing		core		21	262	0.1192	142		*bueno, bonus, buono*	6
 big	Qualities	big, large, great, intense, very	content	meka	大	49	kanji,usage	not-small	many-part		core		29	260	0.0642	130		*mega-*	3
@@ -106,9 +109,6 @@ small	Qualities	small, little, slight, minor	content	piko	小	36	kanji,usage	not
 long	Qualities	long, tall, distant, extended	content	ronka	长	13		big-line	not-small-line		core		12	206	0.0062	1		*long, lungo, largo*	4
 new	Qualities	new, young, recent, fresh	content	nova	初	9		not-old	this-time-make		core		7	185	0.0224	46		*nova, nuevo, novel*	7
 fear	Qualities	fear, afraid, danger, worry	content	timo	危	11		bad-if-feel	not-good-after-feel		core		10	238	0.0336	87		*timor, timid*	6
-RI	Particles	predicate boundary	particle	ri	⊢						particle							predicate boundary; no etymology, deliberately neutral	
-A	Particles	object boundary	particle	a	⇒						particle							Spanish personal *a*, which marks objects: *veo **a** Juan*	
-TE	Particles	modification, head follows	particle	te	>						particle							Mandarin 的 *de*, Italian/Spanish *di/de* — the same job in both	
 middle	Space and direction	middle, center, between, among	function	mets	中		kanji	in-side	half-place		candidate	kanji 中,間; Set 4 cut root. NOTE: `in-side` collision withdrawn — Joe accepts between/center/middle as one region	3	183	0.0106	18		Latin *medius*, Spanish *medio*, Italian *mezzo*	4
 hole	Space and direction	hole, gap, opening, empty space within	content	vuko	穴		kanji	no-part	in-open	not-full-part	candidate	kanji 穴	0	154			R4-head	Italian buco; Latin cavus	5
 true	Grammar and logic	true, correct, right, of course, evidently	function	ves	真		kanji	good-know	yes-know		candidate	kanji 正; Set 4 cut root	4	181	0.0611	89		Latin *verus*, Italian *vero*, Spanish *verdad*	10

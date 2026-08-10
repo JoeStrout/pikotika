@@ -37,7 +37,7 @@ There are no diphthongs.  When two vowels come together, each one is its own syl
 
 ### Stressed syllable
 
-Every word gets exactly one stress, and it always falls on the next-to-last syllable, shown here in capitals: **PO-na**, **TE-kas**, **KA-ton**, **pi-ko-TI-se**.  A one-syllable word is simply stressed on that syllable (with the exception below).  Compound words are written solid and count as a single word for this purpose, so **kasepeste** (*home-animal*, 'cat') is **ka-se-PES-te** -- one stress, on the next-to-last syllable of the whole compound, not one stress per root.  The three particles (**ri**, **a**, **te**) are the exception: they lean on the neighboring word and take no stress of their own.
+Every word gets exactly one stress, and it always falls on the next-to-last syllable, shown here in capitals: **PO-na**, **TE-kas**, **KA-ton**, **pi-ko-TI-se**.  A one-syllable word is simply stressed on that syllable (with the exception below).  Compound words are written solid and count as a single word for this purpose, so **kasepeste** (*home-animal*, 'cat') is **ka-se-PES-te** -- one stress, on the next-to-last syllable of the whole compound, not one stress per [root](ROOTS.md).  The three particles (**ri**, **a**, **te**) are the exception: they lean on the neighboring word and take no stress of their own.
 
 ## Writing Systems
 
@@ -45,7 +45,7 @@ There are three ways to write out any Pikotise utterance -- one that's only used
 
 ### Gloss
 
-This form is only used for teaching purposes: we write out each word using the "gloss" or mnemonic keyword associated with it.  If you're an English speaker, you would use the English keyword; if you're coming from some other language, you would use the keywords defined for your language.  (That's why this form should never be used to communicate with other people -- they might not understand the same gloss words that you do.)  Compound words are written by joining the root words with hyphens.  Particles (*RI*, *A*, and *TE*) are written in all-caps; proper names are capitalized; other words are written in lowercase.
+This form is only used for teaching purposes: we write out each word using the "gloss" or mnemonic keyword associated with it.  If you're an English speaker, you would use the English keyword; if you're coming from some other language, you would use the keywords defined for your language.  (That's why this form should never be used to communicate with other people -- they might not understand the same gloss words that you do.)  Compound words are written by joining the [root words](ROOTS.md) with hyphens.  Particles (*RI*, *A*, and *TE*) are written in all-caps; proper names are capitalized; other words are written in lowercase.
 
 Example:
 
@@ -57,7 +57,7 @@ Example:
 
 ### Han Character
 
-In the Han character form, every root word is given a single Chinese character.  The three particles are written using symbols from math:
+In the Han character form, every [root word](ROOTS.md) is given a single Chinese character.  The three particles are written using symbols from math:
 
 - *RI*: ⊢
 - *A*: ⇒

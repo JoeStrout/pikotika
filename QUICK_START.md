@@ -11,7 +11,7 @@ and much more.
 
 ## ~200 Root Words
 
-In Pikotise, there are only about 200 words you need to memorize -- and they're not arbitrary; they're chosen to be _easy_ to learn, especially if you already speak English or some Romance language.  These base words were chosen based on common roots in Western languages.  While most of these words have several related meanings, each one also has a "gloss" or simple keyword to remember it by.
+In Pikotise, there are only about 200 words you need to memorize -- and they're not arbitrary; they're chosen to be _easy_ to learn, especially if you already speak English or some Romance language.  These base or [root words](ROOTS.md) were chosen based on common roots in Western languages.  While most of these words have several related meanings, each one also has a "gloss" or simple keyword to remember it by.
 
 To help speakers of Chinese, Japanese, and Korean (CJK) languages, each root also has an associated Chinese character, sometimes called "Han form".  If those are unfamiliar to you, don't worry!  You don't need them right away, and if you want them later, they will be easier to learn than you probably think.
 
