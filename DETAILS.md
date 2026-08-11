@@ -375,6 +375,42 @@ These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is
 | **mekakere** | 大求 | must, needs to | **eko ri mekakere ire** -- 'I must go' |
 | **tiven** | 成 | becomes, gets | **eko ri tiven mara** -- 'I got sick' |
 
+### Subordinate Clauses
+
+A clause can serve as the object of a verb, or as a modifier of a noun.
+
+**As an object**, simply put the clause after *A*.  Only one *RI* is allowed per clause, so an *RI* following *A* can only belong to an embedded clause; no other marking is needed.
+
+> **Eko ri pensa a tis seman ri nonturus.**  'I think this week will be easy.'
+> **Eko ri kere a tuo ri veni.**  'I want you to come.'
+
+Such a clause runs to the end of the sentence, so anything else has to come before *A*:
+
+> **Eko ri keretise ver komivakeomo a tis ri tiven non vokasapor.**  'I ask the cook to make it not spicy.'
+
+**As a modifier** -- a relative clause -- there are two forms.
+
+The first uses no special grammar.  State the clause as its own sentence, with **ker** ('what, whichever') filling the slot you are relativizing, then pick it up with **tis** in the next clause:
+
+> **Tuo ri tene a kerkosa, pam tare a tis ver eko.**  'Whatever you have, send me that.'
+> **Eko ri rets veni in kerora, pam sista retover tis.**  'Wait until I get back.'
+
+The second puts the clause in front of the noun, closed by **rite** (*RI-TE*, written ⊢> in Han):
+
+> **Omo ri komi rite peste.**  'the animal the person ate'
+> **Pam tare a tuo ri tene rite kosa ver eko.**  'Send me what you have.'
+
+**rite** is *TE* for clauses.  Like *TE* it says "the head follows," but where *TE* takes only the modifier phrase directly before it, **rite** takes the whole clause:
+
+| | |
+|---|---|
+| **Omo ri komi te peste.** | The person is a food-animal.  (*TE* takes only **komi**) |
+| **Omo ri komi rite peste** | the animal the person ate  (**rite** takes **omo ri komi**) |
+
+The rule is: if the modifier contains *RI* or *A*, close it with **rite**; otherwise use *TE*.  Because word order is rigid, "the whole clause" is unambiguous -- scanning back from **rite**, it takes at most one object phrase, one verb, *RI*, and one subject, stopping at the first word that would break that order.
+
+Note that **rite** closes off the noun phrase, so other words can follow it.  A clause sitting after *A* cannot do this, which is sometimes reason enough to prefer **rite**.
+
 ## Pleasantries & Filler
 
 Here are some words and phrases to grease the wheels of a conversation:

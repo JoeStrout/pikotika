@@ -18,6 +18,7 @@ command line for a single lookup.  No network and no model — just the tables.
 
 import csv
 import os
+import readline
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -27,7 +28,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # a second thing to keep in sync, which is how the old LI/E/PI naming drifted.
 # roots_4.tsv now uses these as the gloss keys too, so the mapping is the identity
 # and is kept only so the two roles stay visibly distinct.
-PARTICLES = ("RI", "A", "TE")
+# **rite** is a fourth particle spelled out of two others (DETAILS.md, "Subordinate
+# Clauses"), so it costs no root and needs no character of its own.  It is not in
+# roots.tsv; this table is folded into the root tables at load time so that every
+# accessor -- is_particle, form_of, han_of -- treats it like any other particle.
+COMPOUND_PARTICLES = {
+    "RI-TE": {"form": "rite", "han": "⊢>",
+              "covers": "relative clause marker, TE for clauses"},
+}
+
+PARTICLES = ("RI", "A", "TE") + tuple(COMPOUND_PARTICLES)
 PARTICLE_GLOSS = {p: p for p in PARTICLES}
 PARTICLE_ALIASES = {p: p for p in PARTICLES}
 
@@ -87,6 +97,16 @@ class Tables:
                     word = word.strip().lower()
                     if word and "`" not in word:
                         self.covers.setdefault(word, []).append(r["gloss"])
+
+        for gloss, spec in COMPOUND_PARTICLES.items():
+            row = dict(spec, gloss=gloss, wclass="particle")
+            self.gloss2root[gloss] = row
+            self.form2gloss[row["form"]] = gloss
+            self.han2gloss[row["han"]] = gloss
+        # han2gloss keys are single characters except for these; parse_han has to
+        # try the long ones before falling back to character-at-a-time
+        self.multi_han = sorted((h for h in self.han2gloss if len(h) > 1),
+                                key=len, reverse=True)
 
         with open(os.path.join(d, "compounds.tsv"), encoding="utf-8") as fh:
             for r in csv.DictReader(fh, delimiter="\t"):
@@ -413,6 +433,12 @@ def parse_han(text, t):
                     return None
                 parts.append(name_token(t.form2name[word[i:j].lower()]))
                 i = j
+                continue
+            # a particle written as several characters (⊢> for RI-TE)
+            multi = next((h for h in t.multi_han if word.startswith(h, i)), None)
+            if multi:
+                parts.append(t.han2gloss[multi])
+                i += len(multi)
                 continue
             ch = word[i]
             gloss = t.han2gloss.get(ch) or FREE_DIGIT_TO_GLOSS.get(ch)

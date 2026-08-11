@@ -18,7 +18,7 @@ Names used here: **Aris** (Alice), **Popu** (Bob), **Karra** (Carla), **Tan** (D
 ## 1. Meeting a stranger at a party
 
 Alice: Hello! I don't think we've met. I'm Alice.
-> **Novasarve! Ekopanto ri non sarve vin, non? Eko ri Aris.**
+> **Novasarve! Eko ri non pensa a ekopanto ri sarve vin. Eko ri Aris.**
 
 Bob: Hi Alice. I'm Bob. Nice to meet you.
 > **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tuo.**
@@ -82,7 +82,7 @@ Dan: She's traveling until Thursday.
 > **Tisomo ri karoire retover arpoverya.**
 
 Eve: Then I think this week will be easy.
-> **Sets, eko ri pensa: tis seman ri nonturus.**
+> **Sets, eko ri pensa a tis seman ri nonturus.**
 
 ---
 
@@ -147,7 +147,7 @@ Gita: And I'll have the fish, please. Is it spicy?
 > **Kum eko ri kere a akupeste, pam. Tis ri vokasapor, ker?**
 
 Server: A little. I can ask them to make it not spicy.
-> **Piko. Eko ri pos keretise ver komivakeomo par non vokasapor.**
+> **Piko. Eko ri pos keretise ver komivakeomo a tis ri tiven non vokasapor.**
 
 Gita: No, a little is fine. And two glasses of water.
 > **Non, piko ri pona. Kum 2 akuvaso, pam.**
@@ -366,7 +366,7 @@ Omar: The numbers are all there. But the last part isn't written.
 > **Pan nus ri in penakarta. Sets vin parte ri non pena vin.**
 
 Pia: Okay. Send me what you have and I'll write that part.
-> **Pona. Pam tare a tuo penakarta ver eko, kum eko ri pena a nontis parte.**
+> **Pona. Pam tare a tuo ri tene rite kosa ver eko, kum eko ri pena a nontis parte.**
 
 Omar: Really? Thank you. I'm sorry — I should have started earlier.
 > **Ves, ker? Meka mersi. Eko ri perton: eko ri neses apa in mas yer tempo.**
@@ -386,19 +386,70 @@ Pia: Go get some coffee. We'll finish by four.
 
 Written after translating, in rough order of how much they hurt.
 
-**No relative clause, and no complement clause.**  'Send me what you have' and 'I
-think this week will be easy' both had to be rewritten.  For the complement clause I
-used a colon (**eko ri pensa: tis seman ri nonturus**), which is a punctuation trick,
-not grammar — nothing in `DETAILS.md` licenses it, and it does not survive being
-spoken aloud.  For the relative clause I substituted a concrete noun ('send me your
-report' for 'send me what you have').  Relatives are avoidable in small talk; they
-will not be avoidable in a daily second language.
-
-**No comparative construction.**  'That sounds better than working' became **mas pona
-vons rapo**, borrowing **vons** 'from' as the standard-of-comparison marker.  That is
-a guess.  'Walking is faster' worked only because the comparison target was left
-implicit (**kampaire ri mas veros**).
+**Relative and complement clauses** were the worst gap on the first pass: 'Send me
+what you have' had to become 'send me your report', and 'I think this week will be
+easy' was written with a colon (**eko ri pensa: tis seman ri nonturus**), which is
+punctuation standing in for grammar and does not survive being spoken aloud.  Four
+lines have since been rewritten using the proposed clause grammar — *A* bracketing a
+complement clause, and **rite** closing a relative one.  See
+[Notes on the clause rewrite](#notes-on-the-clause-rewrite) below.
 
 **No counterfactual or past modal.**  'I should have started earlier' has no
 translation; I wrote 'I needed to start earlier' (**eko ri neses apa in mas yer
 tempo**), which loses the regret that is the whole point of the line.
+
+---
+
+## Notes on the clause rewrite
+
+Written while applying the proposed clause grammar to the dialogs above.  The proposal
+is not yet part of the language; these are notes on how it behaved in use.
+
+**Complement clauses were easy, and cost nothing.**  *A* already marks "the object
+starts here," and only one *RI* is licensed per clause, so an *RI* appearing after *A*
+can only belong to an embedded clause.  Three lines took the construction with no
+friction:
+
+> **Eko ri non pensa a ekopanto ri sarve vin.**  'I don't think we've met.' (1)
+> **Sets, eko ri pensa a tis seman ri nonturus.**  'Then I think this week will be easy.' (2)
+> **Eko ri pos keretise ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
+
+**A complement clause forces prepositional phrases to move.**  That third line is the
+finding.  A bare complement runs to the end of the sentence, so nothing can follow it
+— and **ver komivakeomo** ('to the cook') therefore has to sit *before* *A*, where no
+example in these dialogs had ever put a prepositional phrase.  Every other dialog line
+puts them after the object (**eko ri tise a tis ver tuo**).  So licensing bare
+complements after *A* quietly means licensing a second position for oblique phrases.
+That is a real change to word order, not a free one, and it was not visible from the
+armchair.
+
+**Only one relative clause turned up in ten dialogs.**
+
+> **Pam tare a tuo ri tene rite kosa ver eko.**  'Send me what you have.' (10)
+
+It works cleanly — **rite** closes the noun phrase, which is exactly why **ver eko**
+can still follow it, where a bare complement would have blocked that.  One site in ten
+dialogs is also a measure of how rare relative clauses are in conversation of this
+kind.
+
+**Two candidate sites were rejected, both for the same reason.**  'The one that's been
+broken since spring' (2) and 'Do you have anything without meat?' (4) both relativize
+onto a bare pronoun or an indefinite — **te tis**, **rite komi** — and both read worse
+than the plain predicate versions already in the text.  A relative clause wants a
+contentful head noun, and small talk mostly does not supply one.
+
+**Embedded questions collide with the in-situ question rule.**  'Do you know when the
+train leaves' (5) should be a complement clause, and *A* brackets it fine, but the
+embedded clause contains **kerora** — and a **ker** in situ is how Pikotise marks a
+question.  The matrix is also a yes/no question, so it needs its own **, ker?** tag,
+and the line ends up with two **ker**s doing unrelated jobs:
+
+> **Tuo ri sape a rinekaro ri eksire in kerora, ker?**
+
+I left that line as the direct question it already was.  This is a genuine unsolved
+interaction, not a wording problem: whatever licenses complement clauses has to say
+what an in-situ **ker** scopes over.
+
+**Tooling.**  `pikotise.py` accepts every rewritten line.  **rite** is not a root; it
+is carried in `compounds.tsv` as *RI-TE*, and its Han form is the two existing
+particle glyphs, `⊢>`, so it needs no new character.
