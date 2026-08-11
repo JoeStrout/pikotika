@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pikotise lookup and conversion tool.
 
-Reads roots_4.tsv, compounds.tsv and names.tsv, and converts between the four
+Reads roots.tsv, compounds.tsv and names.tsv, and converts between the four
 ways of writing the language:
 
   1. English      a word or phrase listed in the roots or compounds tables
@@ -26,7 +26,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # Particle names in gloss form are the particles' own pronunciations, upper-cased:
 # ri / a / te.  This is the whole point — a name that is not the pronunciation is
 # a second thing to keep in sync, which is how the old LI/E/PI naming drifted.
-# roots_4.tsv now uses these as the gloss keys too, so the mapping is the identity
+# roots.tsv uses these as the gloss keys too, so the mapping is the identity
 # and is kept only so the two roles stay visibly distinct.
 # **rite** is a fourth particle spelled out of two others (DETAILS.md, "Subordinate
 # Clauses"), so it costs no root and needs no character of its own.  It is not in
@@ -71,7 +71,7 @@ def counting_words(n):
 
 class Tables:
     def __init__(self, directory=HERE):
-        self.gloss2root = {}      # gloss -> {gloss, form, han, covers, wclass}
+        self.gloss2root = {}      # gloss -> {gloss, form, han, covers, ...}
         self.form2gloss = {}
         self.han2gloss = {}
         self.covers = {}          # english word -> [gloss, ...]
@@ -82,10 +82,7 @@ class Tables:
         self._load(directory)
 
     def _load(self, d):
-        # the file is roots.tsv in the pikotise repo, roots_4.tsv in the old notes dir
-        roots = next(os.path.join(d, n) for n in ("roots_4.tsv", "roots.tsv")
-                     if os.path.exists(os.path.join(d, n)))
-        with open(roots, encoding="utf-8") as fh:
+        with open(os.path.join(d, "roots.tsv"), encoding="utf-8") as fh:
             for r in csv.DictReader(fh, delimiter="\t"):
                 if not r["form"]:
                     continue
@@ -99,7 +96,7 @@ class Tables:
                         self.covers.setdefault(word, []).append(r["gloss"])
 
         for gloss, spec in COMPOUND_PARTICLES.items():
-            row = dict(spec, gloss=gloss, wclass="particle")
+            row = dict(spec, gloss=gloss)
             self.gloss2root[gloss] = row
             self.form2gloss[row["form"]] = gloss
             self.han2gloss[row["han"]] = gloss
@@ -129,8 +126,7 @@ class Tables:
     # -- root-level accessors -------------------------------------------------
 
     def is_particle(self, gloss):
-        root = self.gloss2root.get(gloss)
-        return bool(root) and root["wclass"] == "particle"
+        return gloss in PARTICLE_GLOSS
 
     def form_of(self, gloss):
         return self.gloss2root[gloss]["form"]
@@ -297,7 +293,21 @@ def join_latin(pieces):
     return out
 
 
-def parse_gloss(text, t):
+def blame(fail, words, token, why=None):
+    """Record the token a parse died on, for the error message.
+
+    Every notation is tried on every query, so most of the failures are
+    uninteresting -- Latin has nothing to say about a Han sentence.  Keeping
+    the attempt that got the furthest picks out the notation the user was
+    actually writing in, and so the token they actually got wrong.  `why`
+    overrides the default "no such word" explanation.
+    """
+    if fail is not None and fail.get("words", -1) < len(words):
+        fail.clear()
+        fail.update(words=len(words), token=token, why=why)
+
+
+def parse_gloss(text, t, fail=None):
     """'water-meal RI have A what' -> [[water, meal], [RI], [have], [A], [what]]"""
     words = []
     for word in tokenize(text):
@@ -328,6 +338,7 @@ def parse_gloss(text, t):
             elif piece.lower() in t.form2name:             # "yoe"
                 parts.append(name_token(t.form2name[piece.lower()]))
             else:
+                blame(fail, words, piece)   # the piece, not the whole compound
                 return None
         words.append(parts)
     return words or None
@@ -373,7 +384,7 @@ def segment(form, t):
     return best[n]
 
 
-def parse_latin(text, t):
+def parse_latin(text, t, fail=None):
     words = []
     for word in tokenize(text):
         if is_punct_text(word):
@@ -393,12 +404,13 @@ def parse_latin(text, t):
             continue
         parts = segment(low, t)
         if parts is None:
+            blame(fail, words, word)
             return None
         words.append(parts)
     return words or None
 
 
-def parse_han(text, t):
+def parse_han(text, t, fail=None):
     words = []
     for word in tokenize(text):
         if is_punct_text(word):
@@ -430,6 +442,7 @@ def parse_han(text, t):
                 j += 1
             if j > i:
                 if word[i:j].lower() not in t.form2name:
+                    blame(fail, words, word[i:j])
                     return None
                 parts.append(name_token(t.form2name[word[i:j].lower()]))
                 i = j
@@ -443,6 +456,7 @@ def parse_han(text, t):
             ch = word[i]
             gloss = t.han2gloss.get(ch) or FREE_DIGIT_TO_GLOSS.get(ch)
             if gloss is None:
+                blame(fail, words, ch)
                 return None
             parts.append(gloss)
             i += 1
@@ -451,13 +465,17 @@ def parse_han(text, t):
                 and t.is_particle(parts[0]):
             words.append(parts)
         else:
-            if any(not isinstance(g, tuple) and t.is_particle(g) for g in parts):
+            stuck = next((g for g in parts
+                          if not isinstance(g, tuple) and t.is_particle(g)), None)
+            if stuck:
+                blame(fail, words, t.han_of(stuck),
+                      "a particle has to stand as its own word")
                 return None
             words.append(parts)
     return words or None
 
 
-def parse_english(text, t):
+def parse_english(text, t, fail=None):
     key = text.strip().lower()
     if key in t.compounds:
         return parse_gloss(t.compounds[key], t)
@@ -478,15 +496,27 @@ def looks_like_han(text, t):
                                for c in chars)
 
 
-def parse(text, t):
-    """Try each notation in turn; returns (words, source_notation)."""
+def parse(text, t, fail=None):
+    """Try each notation in turn; returns (words, source_notation).
+
+    `fail` is an optional dict; on failure it comes back holding the token
+    that could not be resolved (see blame).
+    """
     if looks_like_han(text, t):
-        words = parse_han(text, t)
+        words = parse_han(text, t, fail)
         if words:
             return words, "Han"
+    else:
+        # one stray character keeps the whole query out of parse_han, and the
+        # other notations can only blame the word it sits in -- so name it here
+        stray = next((c for c in text if not c.isascii() and c not in PUNCT
+                      and c not in t.han2gloss
+                      and c not in FREE_DIGIT_TO_GLOSS), None)
+        if stray:
+            blame(fail, [], stray)
     for fn, label in ((parse_gloss, "gloss"), (parse_latin, "Latin"),
                       (parse_english, "English")):
-        words = fn(text, t)
+        words = fn(text, t, fail)
         if words:
             return words, label
     return None, None
@@ -552,9 +582,14 @@ def english_match(words, t):
 
 
 def lookup(text, t):
-    words, source = parse(text, t)
+    fail = {}
+    words, source = parse(text, t, fail)
     if not words:
-        return ["  no match — not in roots_4.tsv, compounds.tsv or names.tsv"]
+        if "token" not in fail:
+            return ["  no match — not in roots.tsv, compounds.tsv or names.tsv"]
+        return ['  no match — "%s" %s' % (
+            fail["token"],
+            fail["why"] or "is not in roots.tsv, compounds.tsv or names.tsv")]
     lines = ["  gloss: " + render_gloss(words, t),
              "  Latin: " + render_latin(words, t),
              "  Han:   " + render_han(words, t)]

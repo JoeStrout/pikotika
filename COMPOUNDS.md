@@ -1,6 +1,6 @@
 # Pikotise Compounds
 
-211 terms
+212 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -131,6 +131,7 @@
 | question | what-word | kerverpo | 何言 |
 | ready | before-close | yervin | 前閉 |
 | rectangle | four-bend | watsekurva | 4弓 |
+| relative clause marker | RI-TE | rite | ⊢> |
 | report | write-paper | penakarta | 写片 |
 | request | want-say | keretise | 求云 |
 | resemble | same-see | samvite | 同見 |
