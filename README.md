@@ -15,7 +15,7 @@ nouns, and grammar — see [DETAILS.md](DETAILS.md).
 
 | file | what it is |
 |---|---|
-| `roots.tsv` | the root lexicon: 204 roots + 3 particles, with forms and characters |
+| `roots.tsv` | the root lexicon: 205 roots + 3 particles, with forms and characters |
 | `compounds.tsv` | the standing compound lexicon |
 | `names.tsv` | proper nouns adapted to the phonology |
 | `pikotise.py` | converts between English, gloss, Latin, and Han |

@@ -315,6 +315,8 @@ Modifiers (adjectives and adverbs) come before the word they modify (the base no
 
 The one exception to this modifier-first rule is in naming things: here the proper noun comes _after_ the category word (if any), like **omo Sumis**, 'the person Smith'.  See the Proper Nouns section for details.
 
+Possession is shown the same way; the possessor comes before (modifies) the object.  Example: **eko sanaomo** is 'my doctor'.
+
 ### Questions and Answers
 
 Questions never rearrange the sentence.  Word order is the same as in a statement; you simply put **ker** ('what') in the slot where the answer belongs.
@@ -359,7 +361,7 @@ Pikotise verbs never change form.  **vite** is see, saw, seen, and seeing, and t
 | Marker | Han | Sense | Example |
 |---|---|---|---|
 | **apa** | 开 | beginning | **eko ri komi apa** -- I begin/began/will begin eating |
-| **vin** | 終 | finished | **eko ri komi vin** -- I have/had eaten |
+| **vin** | 閉 | finished | **eko ri komi vin** -- I have/had eaten |
 | **sista** | 止 | still going | **eko ri komi sista** -- I am/was/will be still eating |
 
 These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is 'I am still here'.
@@ -379,6 +381,7 @@ Here are some words and phrases to grease the wheels of a conversation:
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
+| Welcome. | happy-come | **Kontenveni.** | 楽来. |
 | Hello (when meeting someone new) | new-meet | **Novasarve.** | 初会. |
 | Hello | happy-meet | **Kontensarve.** | 楽会. |
 | I'm happy to meet you. | self RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
@@ -391,9 +394,11 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Goodbye. | sorry-out-go | **Pertoneksire.** | 悔外行. |
 | See you later. | after-meet | **Tarsarve.** | 后会. |
 | Later! | after | **Tar!** | 后! |
+| Take care (parting). | good go | **Pona ire.** | 好 行. |
 | Sorry/oops/excuse me. | sorry | **Perton.** | 悔. |
 | I am sorry. | self RI sorry | **Eko ri perton.** | 己 ⊢ 悔. |
 | Actually, ... | in-true | **Inves, ...** | 内真, ... |
+| I see (understand). | self RE see | **eko ri vite** | 己 ⊢ 见 |
 | Thanks. | thank | **Mersi.** | 恩. |
 | I thank you. | self RI thank A you | **Eko ri mersi a tuo.** | 己 ⊢ 恩 ⇒ 尔. |
 | No problem. | no bad-thing | **Nem marumkosa.** | 无 悪物. |

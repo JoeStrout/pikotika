@@ -54,6 +54,7 @@ allergy	body-not-agree
 vegetarian	not-meat-food-person
 password	key-word
 lucky	good-if
+good luck	good-if
 decimal point	part
 company	buy-group
 corporation	buy-group
@@ -89,8 +90,114 @@ hello	happy-meet
 goodbye	sorry-out-go
 bye	sorry-go
 Hello (when meeting someone new)	new-meet
+welcome	happy-come
 see you later	after-meet
 actually	in-true
 in truth	in-true
 problem	bad-thing
 trouble	bad-thing
+stubborn	hard-head
+flatterer	sweet-mouth
+smooth talker	sweet-mouth
+thief	long-hand
+unfriendly person	cold-person
+mother	woman-parent
+father	man-parent
+sister	same-parent-woman
+brother	same-parent-man
+boss	work-head
+cook (person)	food-make-person
+vendor	buy-person
+shopkeeper	buy-person
+school	learn-place
+office	work-room
+hallway	go-room
+corridor	go-room
+station	vehicle-place
+airplane	air-vehicle
+airport	air-vehicle-place
+mountain	up-earth
+river	long-water
+breakfast	morning-meal
+glass (drinking vessel)	water-box
+lamp	electric-sun
+electric light	electric-sun
+story	say-thing
+tale	say-thing
+question	what-word
+reservation	before-agree
+booking	before-agree
+change (money returned)	back-money
+party (celebration)	play-group
+walk	leg-go
+drive	vehicle-go
+travel by vehicle	vehicle-go
+hungry	food-want
+thirsty	drink-want
+busy	many-work
+easy	not-hard
+slow	not-fast
+slowly	not-fast
+left (side)	not-right
+that	not-this
+those	not-this
+weekend	week-close
+tonight	this-night
+always	all-time
+how	what-way
+why	what-reason
+what time	what-hour
+sour	not-sweet
+ask	want-say
+request	want-say
+we	self-group
+us	self-group
+bicycle	leg-vehicle
+public transit	line-vehicle
+transit	line-vehicle
+train	metal-line-vehicle
+transit station (bus/train)	line-vehicle-place
+eye	see-part
+ear	hear-part
+loud	big-hear
+report	write-paper
+document (written)	write-paper
+writer	write-person
+author	write-person
+text	write-word
+writing (text)	write-word
+too	up-measure
+too much	up-measure
+excessively	up-measure
+not enough	not-all
+insufficient	not-all
+prepare	before-make
+get ready	before-make
+arrange	before-make
+ready	before-close
+prepared	before-close
+therefore	this-reason
+that's why	this-reason
+for this reason	this-reason
+finally	in-close
+at last	in-close
+in the end	in-close
+eventually	in-close
+important	big-need
+significant	big-need
+essential	big-need
+major	big-need
+kind (good-hearted)	good-feel
+good-hearted	good-feel
+kindness	good-feel
+helpful	help-feel
+love	big-like
+adore	big-like
+be in love with	big-like
+until	straight-to
+till	straight-to
+up to (in time)	straight-to
+look like	same-see
+resemble	same-see
+take after	same-see
+look alike	same-see

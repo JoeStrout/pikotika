@@ -23,7 +23,7 @@ Here are some examples of the 200 or so base or "root" words in Pikotise:
 | water, liquid, wet | water | **aku** | 水 | aquarium, aquatic |
 | time, occasion, period | time | **tempo** | 时 | tempo, temporary |
 | hand, arm, finger | hand | **manu** | 手 | manual, manicure |
-| see, look, watch | see | **vite** | 见 | video, evident |
+| see, look, watch | see | **vite** | 見 | video, evident |
 | ground, land, soil | earth | **tera** | 土 | terrain, territory |
 | new, young, recent | new | **nova** | 初 | nova, novel |
 | door, gate, entrance | door | **porta** | 門 | portal, import |

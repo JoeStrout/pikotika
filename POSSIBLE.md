@@ -22,7 +22,7 @@ meaning stays clear.
 > **Tuo, pona omo.**  'You are a good person.'
 
 Each is the reduced form of the full sentence, which stays correct and is always
-available: **Eko ri tuo pari**, **Eko ri eko pari nino**, **Eko ri pona omo**.
+available: **Eko ri tuo pari**, **Eko ri eko pari nino**, **Tuo ri pona omo**.
 
 **Why it might be worth having:** *RI* marks the boundary between subject and
 predicate, and a pause is the smallest thing that can mark a boundary.  So this is a
@@ -54,3 +54,31 @@ Note that this is not a problem about nouns specifically.  It is a boundary prob
 and it can reach any predicate long enough to have a modifier in front of it, so no
 narrow exception ("*RI* drops except before a bare noun") is enough to contain it.
 Whatever form this shortcut eventually takes, it has to leave a boundary behind.
+
+
+## Adverbial phrases after the verb
+
+**Idea:** a multi-word adverbial phrase may follow the verb instead of preceding it.
+
+> **Eko ri ire piko tar piko.**  'I am going little by little.'
+
+The rule today puts every modifier before what it modifies, which gives **Eko ri piko
+tar piko ire** -- correct, but with four words wedged between *RI* and the verb, and
+the listener holding all of them before learning what is being modified.  English and
+Spanish both prefer such a phrase trailing ('go little by little', *ir poco a poco*),
+which suggests the weight is felt elsewhere too.
+
+**Why it is not in the language:** modifier-before-head is one of the few rules
+Pikotise has, and it is currently exceptionless -- it holds inside compounds, inside
+noun phrases, and before verbs alike.  Buying comfort in one construction with an
+exception to a rule that general is a bad trade until we know the discomfort is real.
+A single-word adverb before the verb is clearly fine, so the question is only where
+the phrase gets long enough to hurt, and that is exactly the sort of threshold that
+guessing gets wrong.
+
+
+## Allow a secondary gloss?
+
+Our root words, by necessity, cover many concepts, but currently we pick just one to represent it as the gloss.  This can lead to some initial confusion when using 'food' as a verb, or 'sun' to mean 'day', or 'open' to mean 'begin'.
+
+We could consider blessing a *secondary* gloss, and allowing the primary or secondary to  be used when writing gloss form.  Our tools could easily convert from gloss to Latin and Han using either word.  When converting *to* gloss automatically, it would be hard (without LLM-level AI) to reliably pick the clearest one, but maybe some heuristics will help... and anyway it couldn't come out worse than the current situation.  (It might complicate round-trip tests, though.)

@@ -1,6 +1,6 @@
 # Pikotise Roots
 
-207 entries in 19 groups.
+208 entries in 19 groups.
 
 ## Particles (3)
 
@@ -61,14 +61,14 @@
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | to | ver | 向 | toward, into, direction of motion |
-| from | vons | 自 | from, source, origin, out of |
+| from | vons | 从 | from, source, origin, out of |
 | in | in | 内 | inside, at, within (middle/between = `in-side`) |
 | out | eks | 外 | outside, external, beyond |
 | up | sur | 上 | above, high, top, over, north |
 | down | tun | 下 | below, low, bottom, under, south |
 | back | rets | 反 | behind, rear, reverse (front = `not-back`) |
 | right | rem | 右 | right, right-hand side |
-| near | nir | 近 | near, close, beside, next to |
+| near | nir | 近 | near, close, beside, next to, almost, nearly |
 | side | ras | 边 | side, edge, direction, lateral |
 | middle | mets | 中 | middle, center, between, among |
 | hole | vuko | 穴 | hole, gap, opening, empty space within |
@@ -78,7 +78,7 @@
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
-| before | yer | 前 | before, earlier, prior, past, early |
+| before | yer | 前 | before, earlier, prior, past, early, already |
 | after | tar | 后 | after, later, subsequent, future, late |
 | month | mese | 月 | month, moon, lunar cycle |
 | year | anyo | 年 | year, annual cycle |
@@ -88,7 +88,7 @@
 | noon | mesyo | 午 | noon, midday |
 | night | note | 夜 | night, nighttime, dark hours |
 | hour | ora | 刻 | hour, clock-time unit |
-| finish | vin | 終 | end, finish, close, conclude |
+| close | vin | 閉 | close, shut, finish, end, conclude |
 | weekday | verya | 曜 | named day of the week (Japanese 曜) |
 | interval | turan | 間 | interval, duration, span of time, period, for (a length of time) |
 
@@ -165,7 +165,7 @@
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | water | aku | 水 | water, liquid, fluid, wet |
-| fire | voka | 火 | fire, burn, heat, hot, anger (cold = `not-fire`) |
+| fire | voka | 火 | fire, burn, heat, hot, anger |
 | air | vento | 风 | air, wind, breath, gas, sky |
 | earth | tera | 土 | ground, land, soil, floor, dirt |
 | sun | sore | 日 | sun, light, day, daytime, 24-hour period, bright |
@@ -207,7 +207,7 @@
 | egg | ovum | 卵 | egg, ovum |
 | meat | karne | 肉 | meat, flesh food, animal protein |
 
-## Verbs (34)
+## Verbs (35)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
@@ -223,13 +223,13 @@
 | think | pensa | 思 | think, mind, idea, opinion, believe |
 | want | kere | 求 | want, desire, wish, hope |
 | feel | senti | 心 | feel, emotion, sense, touch |
-| see | vite | 见 | see, look, watch, appear; understand, realize, get it |
+| see | vite | 見 | see, look, watch, appear; understand, realize, get it |
 | hear | oti | 耳 | hear, listen, sound, noise |
 | sleep | tormi | 床 | sleep, rest, bed, recharge, be dormant |
 | play | ruti | 玩 | play, game, fun, amuse |
 | work | rapo | 力 | work, labor, job, effort, use |
 | help | servi | 助 | help, assist, serve, care for |
-| begin | apa | 开 | open, begin, start, uncover |
+| open | apa | 开 | open, begin, start, uncover |
 | break | rompe | 切 | break, cut, damage, ruin |
 | change | muta | 化 | change, exchange, differ, alter |
 | become | tiven | 成 | become, get, turn into, come to be; enter a state |
@@ -245,6 +245,7 @@
 | agree | akor | 約 | agree, consent, contract, promise, deal |
 | ride | monta | 乗 | ride, sit, mount, be seated on or in |
 | buy | kompar | 買 | buy, purchase, sell, trade, commercial exchange |
+| write | pena | 写 | write, writing, text, script, inscribe, record |
 
 ## Qualities (13)
 
