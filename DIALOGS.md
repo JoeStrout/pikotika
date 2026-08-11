@@ -30,13 +30,13 @@ Bob: We work together. And you?
 > **Ekopanto ri kum rapo. Kum tuo, ker?**
 
 Alice: She's my sister.
-> **Karra ri eko samparivema.**
+> **Tisomo ri eko samparivema.**
 
 Bob: Really? You don't look alike!
 > **Ves, ker? Pits tuo ri non samvite!**
 
 Alice: Everybody says that. She looks like our father, and I look like our mother.
-> **Pan omo ri tise a tis. Karra ri samvite a ekopanto viropari, sets eko ri samvite a ekopanto vemapari.**
+> **Pan omo ri tise a tis. Tisomo ri samvite a ekopanto viropari, sets eko ri samvite a ekopanto vemapari.**
 
 Bob: Ah, that explains it. Do you live here in the city?
 > **E... tis ri kas. Tuo ri viva in tis urpe, ker?**
@@ -79,7 +79,7 @@ Eve: It was. Is the boss in today?
 > **Ves. Tissore, rapotesta ri in rapokamar, ker?**
 
 Dan: She's traveling until Thursday.
-> **Rapotesta ri karoire retover arpoverya.**
+> **Tisomo ri karoire retover arpoverya.**
 
 Eve: Then I think this week will be easy.
 > **Sets, eko ri pensa: tis seman ri nonturus.**
@@ -385,14 +385,6 @@ Pia: Go get some coffee. We'll finish by four.
 ## Notes on gaps and awkwardness
 
 Written after translating, in rough order of how much they hurt.
-
-**No third-person pronoun.**  This was the single biggest problem, and it showed up in
-seven of the ten dialogs.  Pikotise has **eko** and **tuo** and nothing for 'he',
-'she', 'it', or 'they'.  Every workaround is worse than a pronoun: repeat the name
-(**Karra ri...**, **Rapotesta ri...**), which gets stilted fast; use **tis** 'this',
-which is fine for inanimate things but odd for people; or build **nontis omo**, which
-is three syllables to say 'she'.  Dialog 1 line 5 and dialog 2 line 9 both had to fall
-back to the name where English would use a pronoun.  This wants a decision.
 
 **No relative clause, and no complement clause.**  'Send me what you have' and 'I
 think this week will be easy' both had to be rewritten.  For the complement clause I

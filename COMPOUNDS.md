@@ -1,6 +1,6 @@
 # Pikotise Compounds
 
-202 terms
+211 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -11,6 +11,7 @@
 | alcohol (usually wine) | fire-water | vokaaku | 火水 |
 | allergy | body-not-agree | korpononakor | 体不約 |
 | always | all-time | pantempo | 全时 |
+| another person | other-person | aromo | 別人 |
 | arrange | before-make | yervake | 前作 |
 | ask | want-say | keretise | 求云 |
 | at last | in-close | invin | 内閉 |
@@ -75,9 +76,12 @@
 | goodbye | sorry-out-go | pertoneksire | 悔外行 |
 | grey | stone-color | rapiskoror | 岩色 |
 | hallway | go-room | irekamar | 行室 |
+| he | this-person | tisomo | 此人 |
 | hello | happy-meet | kontensarve | 楽会 |
 | Hello (when meeting someone new) | new-meet | novasarve | 初会 |
 | helpful | help-feel | servisenti | 助心 |
+| her | this-person | tisomo | 此人 |
+| him | this-person | tisomo | 此人 |
 | how | what-way | kermoto | 何方 |
 | hungry | food-want | komikere | 食求 |
 | important | big-need | mekaneses | 大要 |
@@ -107,6 +111,7 @@
 | nut | hard-plant-child | turusarponino | 硬木子 |
 | office | work-room | rapokamar | 力室 |
 | orange | red-yellow | ruperyoro | 赤黄 |
+| others | other-person | aromo | 別人 |
 | party (celebration) | play-group | rutipanto | 玩众 |
 | password | key-word | yaveverpo | 錠言 |
 | peanut | earth-hard-plant-child | teraturusarponino | 土硬木子 |
@@ -138,6 +143,7 @@
 | school | learn-place | imparroko | 学所 |
 | second (of time) | small-part | pikoparte | 小分 |
 | see you later | after-meet | tarsarve | 后会 |
+| she | this-person | tisomo | 此人 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
 | shopkeeper | buy-person | komparomo | 買人 |
 | significant | big-need | mekaneses | 大要 |
@@ -146,6 +152,7 @@
 | slowly | not-fast | nonveros | 不早 |
 | smell | air-taste | ventosapor | 风味 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
+| someone else | other-person | aromo | 別人 |
 | soup | water-meal | akusenar | 水飯 |
 | sour | not-sweet | nontuke | 不甘 |
 | spice | taste-thing | saporkosa | 味物 |
@@ -162,7 +169,9 @@
 | text | write-word | penaverpo | 写言 |
 | that | not-this | nontis | 不此 |
 | that's why | this-reason | tiskas | 此故 |
+| them (people) | this-person | tisomo | 此人 |
 | therefore | this-reason | tiskas | 此故 |
+| they (people) | this-person | tisomo | 此人 |
 | thief | long-hand | ronkamanu | 长手 |
 | thirsty | drink-want | pipekere | 飲求 |
 | those | not-this | nontis | 不此 |
