@@ -1,6 +1,6 @@
 # Pikotise Compounds
 
-212 terms
+213 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -71,7 +71,7 @@
 | glass (drinking vessel) | water-box | akuvaso | 水皿 |
 | gluten-free food | no-yellow-grain-food | nemyororisokomi | 无黄米食 |
 | goat | small-milk-animal | pikoratenpeste | 小乳匹 |
-| good luck | good-if | ponakan | 好可 |
+| good luck | good-if | ponapos | 好可 |
 | good-hearted | good-feel | ponasenti | 好心 |
 | goodbye | sorry-out-go | pertoneksire | 悔外行 |
 | grey | stone-color | rapiskoror | 岩色 |
@@ -99,7 +99,7 @@
 | look like | same-see | samvite | 同見 |
 | loud | big-hear | mekaoti | 大耳 |
 | love | big-like | mekakusta | 大愛 |
-| lucky | good-if | ponakan | 好可 |
+| lucky | good-if | ponapos | 好可 |
 | major | big-need | mekaneses | 大要 |
 | minute | part | parte | 分 |
 | moment | small-time | pikotempo | 小时 |
@@ -147,6 +147,7 @@
 | she | this-person | tisomo | 此人 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
 | shopkeeper | buy-person | komparomo | 買人 |
+| should | if-good | pospona | 可好 |
 | significant | big-need | mekaneses | 大要 |
 | sister | same-parent-woman | samparivema | 同亲女 |
 | slow | not-fast | nonveros | 不早 |

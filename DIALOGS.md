@@ -147,7 +147,7 @@ Gita: And I'll have the fish, please. Is it spicy?
 > **Kum eko ri kere a akupeste, pam. Tis ri vokasapor, ker?**
 
 Server: A little. I can ask them to make it not spicy.
-> **Piko. Eko ri pos keretise ver komivakeomo a tis ri tiven non vokasapor.**
+> **Piko. Eko ri kan keretise ver komivakeomo a tis ri tiven non vokasapor.**
 
 Gita: No, a little is fine. And two glasses of water.
 > **Non, piko ri pona. Kum 2 akuvaso, pam.**
@@ -159,7 +159,7 @@ Gita: Cold, please.
 > **Yeru, pam.**
 
 Server: Very good. It will be about fifteen minutes.
-> **Meka pona. Kan 15 parte turan.**
+> **Meka pona. Pos 15 parte turan.**
 
 ---
 
@@ -193,7 +193,7 @@ Ivan: Thank you very much!
 > **Meka mersi!**
 
 Local: Good luck!
-> **Ponakan!**
+> **Ponapos!**
 
 ---
 
@@ -206,7 +206,7 @@ Parent: It's late. You have school tomorrow.
 > **Tempo ri tar. Soretar, tuo ri ire ver imparroko.**
 
 Child: Can I have some water?
-> **Eko ri pos toma a aku, ker?**
+> **Eko ri kan toma a aku, ker?**
 
 Parent: You had water five minutes ago.
 > **5 parte yer, tuo ri pipe a aku.**
@@ -264,7 +264,7 @@ Kim: What time does it start?
 > **Musi ri apa in kerora?**
 
 Jo: Eight. But come at seven and we can eat first.
-> **8 ora. Sets pam veni in 7 ora, kum ekopanto ri pos yer komi.**
+> **8 ora. Sets pam veni in 7 ora, kum ekopanto ri kan yer komi.**
 
 Kim: Perfect. Should I bring anything?
 > **Meka pona. Eko ri neses tare a ker, ker?**
@@ -335,7 +335,7 @@ Nils: I know. Time goes fast.
 > **Ves. Tempo ri veros ire.**
 
 Mira: Listen — I'll be in your city next month. Can we meet?
-> **Pam oti: 1 mese tar, eko ri in tuo urpe. Ekopanto ri pos sarve, ker?**
+> **Pam oti: 1 mese tar, eko ri in tuo urpe. Ekopanto ri kan sarve, ker?**
 
 Nils: Of course! Stay with us. We have room.
 > **Ves! Pam sista kum ekopanto. Ekopanto ri tene a kamar.**
@@ -412,7 +412,7 @@ friction:
 
 > **Eko ri non pensa a ekopanto ri sarve vin.**  'I don't think we've met.' (1)
 > **Sets, eko ri pensa a tis seman ri nonturus.**  'Then I think this week will be easy.' (2)
-> **Eko ri pos keretise ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
+> **Eko ri kan keretise ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
 
 **A complement clause forces prepositional phrases to move.**  That third line is the
 finding.  A bare complement runs to the end of the sentence, so nothing can follow it

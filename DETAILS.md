@@ -317,6 +317,37 @@ The one exception to this modifier-first rule is in naming things: here the prop
 
 Possession is shown the same way; the possessor comes before (modifies) the object.  Example: **eko sanaomo** is 'my doctor'.
 
+Adverbs work the same way: they go before the verb they modify.  Example: **veros ire** = 'go quickly'.  There are many adverbs, but the following five are worth noting because they don't just modify the way in which the action is done; they make the verb something that is not yet done, but could be.
+
+| Marker | Han | Sense | Example |
+|---|---|---|---|
+| **kan** | 能 | can, is able | **eko ri kan ire** -- 'I can go' |
+| **pos** | 可 | might, maybe | **tuo ri pos ves** -- 'you may be right' |
+| **kere** | 求 | want to | **eko ri kere ire** -- 'I want to go' |
+| **pospona** | 可好 | should | **eko ri pospona ire** -- 'I should go' |
+| **mekakere** | 大求 | must, needs to | **eko ri mekakere ire** -- 'I must go' |
+
+
+### Prepositional Phrases
+
+These root words can act as prepositions: **in** (内, in/at), **ver** (向, to), **vons** (从, from), **kum** (并, with), **par** (為, for), **tem** (件, about), and the spatial roots **sur** (上, above), **tun** (下, below), **nir** (近, near), **eks** (外, outside), **mets** (中, between).
+
+A prepositional phrase goes at the **end** of a sentence or clause, after the object if there is one.  It can also stand alone as the whole predicate, right after *RI* -- that is how Pikotise says 'is here', 'is with me', 'is for you'.
+
+| Pikotise | Literally | Meaning |
+|---|---|---|
+| **Eko ri ire ver kase.** | self RI go to home | I'm going home. |
+| **Pam veni in sens ora.** | please come in seven hour | Please come at seven. |
+| **Pam tare a tis ver eko.** | please give A this to self | Please give that to me. |
+| **Eko ri komi kum tuo.** | self RI eat with you | I'm eating with you. |
+| **Pam sista kum ekopanto.** | please remain with self-group | Stay with us. |
+| **Eko ri in tisroko.** | self RI in this-place | I'm here. |
+| **Eko ri kum nino.** | self RI with child | I'm with the child. |
+| **Tis ri par tuo.** | this RI for you | This is for you. |
+
+Note that **kum** is 'and' when it joins two like things and 'with' when it opens a phrase of its own, exactly as in English: *bread and water* against *come with me*.
+
+
 ### Questions and Answers
 
 Questions never rearrange the sentence.  Word order is the same as in a statement; you simply put **ker** ('what') in the slot where the answer belongs.
@@ -366,14 +397,14 @@ Pikotise verbs never change form.  **vite** is see, saw, seen, and seeing, and t
 
 These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is 'I am still here'.
 
-**Mood** works the same way, with one word before the verb:
+Note that **vin** can be combined with the adverbs for 'can', 'might', 'should', and 'must' to express counterfactuals, regret, or a conclusion from evidence:
 
-| Marker | Han | Sense | Example |
-|---|---|---|---|
-| **pos** | 能 | can, is able | **eko ri pos ire** -- 'I can go' |
-| **kan** | 可 | might, maybe | **tuo ri kan ves** -- 'you may be right' |
-| **mekakere** | 大求 | must, needs to | **eko ri mekakere ire** -- 'I must go' |
-| **tiven** | 成 | becomes, gets | **eko ri tiven mara** -- 'I got sick' |
+| Pikotise | English |
+|---|---|
+| Eko ri kan ire vin. | I could have gone. |
+| Eko ri pos ire vin. | I might have gone. |
+| Eko ri pospona ire vin. | I should have gone. |
+| Eko ri mekakere ire vin. | I must have gone. |
 
 ### Subordinate Clauses
 
