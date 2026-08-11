@@ -60,6 +60,9 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 
 ## Level 2
 ### 42 more roots (total: 84)
+
+
+
 ### 40 more compounds (total: 60)
 ### 10 more idioms/set phrases (total: 15)
 ### proper nouns
@@ -69,6 +72,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 ### numbers 0-10
 ### yes/no questions
 ### yesterday/today/tomorrow (without explicit verb tenses)
+### examples with **sets** ('but')
 
 ## Level 3
 ### 42 more roots (total: 126)

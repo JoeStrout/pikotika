@@ -94,7 +94,7 @@
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | close | vin | 閉 | close, shut, finish, end, conclude |
-| before | yer | 前 | before, earlier, prior, past, early, already |
+| before | yer | 前 | before, earlier, prior, in the past, early, already |
 | after | tar | 后 | after, later, subsequent, future, late |
 | hour | ora | 刻 | hour, clock-time unit |
 | interval | turan | 間 | interval, duration, span of time, period, for (a length of time) |
