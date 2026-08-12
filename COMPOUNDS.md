@@ -1,9 +1,10 @@
 # Pikotise Compounds
 
-213 terms
+268 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
+| ache | sick-feel | marasenti | 病心 |
 | actually | in-true | inves | 内真 |
 | adore | big-like | mekakusta | 大愛 |
 | airplane | air-vehicle | ventokaro | 风车 |
@@ -15,6 +16,7 @@
 | arrange | before-make | yervake | 前作 |
 | ask | want-say | keretise | 求云 |
 | at last | in-close | invin | 内閉 |
+| attendant | help-person | serviomo | 助人 |
 | author | write-person | penaomo | 写人 |
 | banana | long-yellow-plant-child | ronkayoroarponino | 长黄木子 |
 | be in love with | big-like | mekakusta | 大愛 |
@@ -25,13 +27,15 @@
 | booking | before-agree | yerakor | 前約 |
 | boss | work-head | rapotesta | 力头 |
 | bread | grain-food | risokomi | 米食 |
-| breakfast | morning-meal | matinsenar | 朝飯 |
+| breakfast | up-sun-food | sursorekomi | 上日食 |
 | brother | same-parent-man | sampariviro | 同亲男 |
 | brown | earth-color | terakoror | 土色 |
 | bus | many-person-vehicle | muromokaro | 多人车 |
+| business plan | buy-group-map | komparpantomapa | 買众図 |
 | busy | many-work | murrapo | 多力 |
 | bye | sorry-go | pertonire | 悔行 |
 | cat | home-animal | kasepeste | 户匹 |
+| chair | put-tool | setauter | 坐工 |
 | change (money returned) | back-money | retsemoni | 反贝 |
 | chili pepper | fire-taste-thing | vokasaporkosa | 火味物 |
 | coffee | black-drink | neropipe | 黒飲 |
@@ -41,22 +45,33 @@
 | cook (person) | food-make-person | komivakeomo | 食作人 |
 | corporation | buy-group | komparpanto | 買众 |
 | corridor | go-room | irekamar | 行室 |
+| cost | money-measure | monimens | 贝寸 |
 | cow | milk-animal | ratenpeste | 乳匹 |
+| crime | not-law-work | nonrekerapo | 不法力 |
+| cutlery | food-tool | komiuter | 食工 |
 | cyan | blue-green | asurverte | 青緑 |
+| dance | music-go | musiire | 曲行 |
 | decimal point | part | parte | 分 |
 | depart | out-go | eksire | 外行 |
+| directory map | help-map | servimapa | 助図 |
 | doctor | heal-person | sanaomo | 医人 |
 | document (written) | write-paper | penakarta | 写片 |
 | door handle | door-hand | portamanu | 門手 |
 | drive | vehicle-go | karoire | 车行 |
 | ear | hear-part | otiparte | 耳分 |
+| east | map-right | maparem | 図右 |
 | easy | not-hard | nonturus | 不硬 |
+| egg | bird-child | avisnino | 鳥子 |
 | electric light | electric-sun | vortosore | 電日 |
+| electronic map | electric-map | vortomapa | 電図 |
 | essential | big-need | mekaneses | 大要 |
+| evening | down-sun | tunsore | 下日 |
 | eventually | in-close | invin | 内閉 |
 | excessively | up-measure | surmens | 上寸 |
+| exercise | heal-go | sanaire | 医行 |
 | eye | see-part | viteparte | 見分 |
 | father | man-parent | viropari | 男亲 |
+| fee | money-measure | monimens | 贝寸 |
 | finally | in-close | invin | 内閉 |
 | firm | buy-group | komparpanto | 買众 |
 | fish | water-animal | akupeste | 水匹 |
@@ -70,30 +85,38 @@
 | get ready | before-make | yervake | 前作 |
 | glass (drinking vessel) | water-box | akuvaso | 水皿 |
 | gluten-free food | no-yellow-grain-food | nemyororisokomi | 无黄米食 |
+| go by vehicle | vehicle-put | karoseta | 车坐 |
 | goat | small-milk-animal | pikoratenpeste | 小乳匹 |
 | good luck | good-if | ponapos | 好可 |
 | good-hearted | good-feel | ponasenti | 好心 |
 | goodbye | sorry-out-go | pertoneksire | 悔外行 |
 | grey | stone-color | rapiskoror | 岩色 |
+| gym | heal-go-place | sanaireroko | 医行所 |
 | hallway | go-room | irekamar | 行室 |
 | he | this-person | tisomo | 此人 |
 | hello | happy-meet | kontensarve | 楽会 |
 | Hello (when meeting someone new) | new-meet | novasarve | 初会 |
-| helpful | help-feel | servisenti | 助心 |
+| helper | help-person | serviomo | 助人 |
+| helpful | help-give | servitare | 助与 |
+| helpless | not-help | nonservi | 不助 |
 | her | this-person | tisomo | 此人 |
 | him | this-person | tisomo | 此人 |
+| hotel | sleep-home | tormikase | 床户 |
 | how | what-way | kermoto | 何方 |
 | hungry | food-want | komikere | 食求 |
+| hurt | sick-feel | marasenti | 病心 |
+| illegal | not-law | nonreke | 不法 |
 | important | big-need | mekaneses | 大要 |
 | in the end | in-close | invin | 内閉 |
 | in truth | in-true | inves | 内真 |
 | insufficient | not-all | nonpan | 不全 |
 | kind (good-hearted) | good-feel | ponasenti | 好心 |
 | kindness | good-feel | ponasenti | 好心 |
+| knife (knife or scissors) | break-tool | rompeuter | 切工 |
 | lamb | small-milk-animal-meat | pikoratenpestekarne | 小乳匹肉 |
 | lamp | electric-sun | vortosore | 電日 |
+| language | word-way | verpomoto | 言方 |
 | leave (depart) | out-go | eksire | 外行 |
-| left (side) | not-right | nonrem | 不右 |
 | lemon | not-sweet-yellow-plant-child | nontukeyoroarponino | 不甘黄木子 |
 | look alike | same-see | samvite | 同見 |
 | look like | same-see | samvite | 同見 |
@@ -101,20 +124,31 @@
 | love | big-like | mekakusta | 大愛 |
 | lucky | good-if | ponapos | 好可 |
 | major | big-need | mekaneses | 大要 |
+| meal (a sitting) | food-time | komitempo | 食时 |
+| mealtime | food-time | komitempo | 食时 |
+| midday | middle-sun | metsesore | 中日 |
 | minute | part | parte | 分 |
 | moment | small-time | pikotempo | 小时 |
 | Monday | month-weekday | meseverya | 月曜 |
+| morning | up-sun | sursore | 上日 |
 | mother | woman-parent | vemapari | 女亲 |
 | mountain | up-earth | surtera | 上土 |
 | mud | water-earth | akutera | 水土 |
+| musical instrument | music-tool | musiuter | 曲工 |
+| night | no-sun | nemsore | 无日 |
+| noon | middle-sun | metsesore | 中日 |
+| north | map-up | mapasur | 図上 |
 | not enough | not-all | nonpan | 不全 |
 | nut | hard-plant-child | turusarponino | 硬木子 |
 | office | work-room | rapokamar | 力室 |
 | orange | red-yellow | ruperyoro | 赤黄 |
+| orientation map | help-map | servimapa | 助図 |
 | others | other-person | aromo | 別人 |
+| pain | sick-feel | marasenti | 病心 |
 | party (celebration) | play-group | rutipanto | 玩众 |
 | password | key-word | yaveverpo | 錠言 |
 | peanut | earth-hard-plant-child | teraturusarponino | 土硬木子 |
+| pen (pen or pencil) | write-tool | penauter | 写工 |
 | pet | home-animal | kasepeste | 户匹 |
 | pet dog | home-dog | kasekanis | 户犬 |
 | pig | red-white-animal | ruperrankopeste | 赤白匹 |
@@ -124,28 +158,38 @@
 | potato | earth-grain | terariso | 土米 |
 | prepare | before-make | yervake | 前作 |
 | prepared | before-close | yervin | 前閉 |
+| price | money-measure | monimens | 贝寸 |
 | problem | bad-thing | marumkosa | 悪物 |
 | public transit | line-vehicle | rinekaro | 糸车 |
 | purple | red-blue | ruperasur | 赤青 |
 | quadrilateral | four-bend | watsekurva | 4弓 |
 | question | what-word | kerverpo | 何言 |
+| rain | air-water | ventoaku | 风水 |
 | ready | before-close | yervin | 前閉 |
 | rectangle | four-bend | watsekurva | 4弓 |
+| relative (kin) | parent-group | paripanto | 亲众 |
 | relative clause marker | RI-TE | rite | ⊢> |
 | report | write-paper | penakarta | 写片 |
 | request | want-say | keretise | 求云 |
 | resemble | same-see | samvite | 同見 |
 | reservation | before-agree | yerakor | 前約 |
 | rice (white rice) | white-grain | rankoriso | 白米 |
+| ride | vehicle-put | karoseta | 车坐 |
 | river | long-water | ronkaaku | 长水 |
+| road map | way-map | motomapa | 方図 |
+| roadmap | way-map | motomapa | 方図 |
 | sake | white-grain-fire-water | rankorisovokaaku | 白米火水 |
 | sand | small-stone | pikorapis | 小岩 |
 | Saturday | earth-weekday | teraverya | 土曜 |
 | school | learn-place | imparroko | 学所 |
+| sea | big-water | mekaaku | 大水 |
+| seat | put-place | setaroko | 坐所 |
 | second (of time) | small-part | pikoparte | 小分 |
 | see you later | after-meet | tarsarve | 后会 |
+| servant | help-person | serviomo | 助人 |
 | she | this-person | tisomo | 此人 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
+| shop | buy-place | komparroko | 買所 |
 | shopkeeper | buy-person | komparomo | 買人 |
 | should | if-good | pospona | 可好 |
 | significant | big-need | mekaneses | 大要 |
@@ -155,11 +199,13 @@
 | smell | air-taste | ventosapor | 风味 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
 | someone else | other-person | aromo | 別人 |
-| soup | water-meal | akusenar | 水飯 |
+| soup | water-food | akukomi | 水食 |
 | sour | not-sweet | nontuke | 不甘 |
+| south | map-down | mapatun | 図下 |
 | spice | taste-thing | saporkosa | 味物 |
 | spicy | fire-taste | vokasapor | 火味 |
 | square | four-bend | watsekurva | 4弓 |
+| staff (person) | help-person | serviomo | 助人 |
 | station | vehicle-place | karoroko | 车所 |
 | story | say-thing | tisekosa | 云物 |
 | stubborn | hard-head | turustesta | 硬头 |
@@ -184,9 +230,11 @@
 | tomato | red-plant-child | ruperarponino | 赤木子 |
 | tomato sauce | red-food | ruperkomi | 赤食 |
 | tomorrow | sun-after | soretar | 日后 |
-| tonight | this-night | tisnote | 此夜 |
+| tongue (language) | word-way | verpomoto | 言方 |
+| tonight | this-no-sun | tisnemsore | 此无日 |
 | too | up-measure | surmens | 上寸 |
 | too much | up-measure | surmens | 上寸 |
+| toy | play-tool | rutiuter | 玩工 |
 | train | metal-line-vehicle | metarrinekaro | 金糸车 |
 | transit | line-vehicle | rinekaro | 糸车 |
 | transit station (bus/train) | line-vehicle-place | rinekaroroko | 糸车所 |
@@ -196,17 +244,23 @@
 | Tuesday | fire-weekday | vokaverya | 火曜 |
 | turnstile | money-door | moniporta | 贝門 |
 | unfriendly person | cold-person | yeruomo | 冷人 |
+| unhelpful | not-help-give | nonservitare | 不助与 |
 | until | straight-to | retover | 直向 |
 | up to (in time) | straight-to | retover | 直向 |
 | us | self-group | ekopanto | 己众 |
 | vegetables | green-food | vertekomi | 緑食 |
 | vegetarian | not-meat-food-person | nonkarnekomiomo | 不肉食人 |
 | vendor | buy-person | komparomo | 買人 |
+| wait a while | time-remain | temposista | 时止 |
+| wait around | time-remain | temposista | 时止 |
+| waiter | help-person | serviomo | 助人 |
 | walk | leg-go | kampaire | 足行 |
 | we | self-group | ekopanto | 己众 |
 | Wednesday | water-weekday | akuverya | 水曜 |
-| weekend | week-close | semanvin | 週閉 |
+| week | seven-sun | sensesore | 7日 |
+| weekend | seven-sun-close | sensesorevin | 7日閉 |
 | welcome | happy-come | kontenveni | 楽来 |
+| west | map-left | mapasini | 図左 |
 | what time | what-hour | kerora | 何刻 |
 | wheat | yellow-grain | yororiso | 黄米 |
 | wheat bread | yellow-grain-food | yororisokomi | 黄米食 |
@@ -217,3 +271,4 @@
 | writing (text) | write-word | penaverpo | 写言 |
 | yellow fruit (usually banana) | yellow-plant-child | yoroarponino | 黄木子 |
 | yesterday | sun-before | soreyer | 日前 |
+| you-are-here map | help-map | servimapa | 助図 |

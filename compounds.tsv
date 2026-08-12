@@ -5,7 +5,7 @@ pet dog	home-dog
 cow	milk-animal		
 goat	small-milk-animal		
 sheep	small-milk-animal		
-fish	water-animal		
+fish	water-animal	2	
 pig	red-white-animal		
 pork	red-white-animal-meat		
 beef	milk-animal-meat		
@@ -13,7 +13,7 @@ lamb	small-milk-animal-meat
 bus	many-person-vehicle		
 doctor	heal-person		
 window	see-hole		
-soup	water-meal		
+soup	water-food	1	
 spice	taste-thing		
 smell	air-taste		
 grey	stone-color		
@@ -91,23 +91,23 @@ hello	happy-meet	1
 goodbye	sorry-out-go	1	
 bye	sorry-go	1	
 Hello (when meeting someone new)	new-meet	1	
-welcome	happy-come		
+welcome	happy-come	2	
 see you later	after-meet	1	
 actually	in-true	1	
 in truth	in-true	1	
-problem	bad-thing		
-trouble	bad-thing		
+problem	bad-thing	2	
+trouble	bad-thing	2	
 stubborn	hard-head		
 flatterer	sweet-mouth		
 smooth talker	sweet-mouth		
 thief	long-hand		
 unfriendly person	cold-person		
-mother	woman-parent		
-father	man-parent		
+mother	woman-parent	2	
+father	man-parent	2	
 sister	same-parent-woman		
 brother	same-parent-man		
 boss	work-head		
-cook (person)	food-make-person		
+cook (person)	food-make-person	2	
 vendor	buy-person		
 shopkeeper	buy-person		
 school	learn-place		
@@ -119,7 +119,23 @@ airplane	air-vehicle
 airport	air-vehicle-place		
 mountain	up-earth		
 river	long-water		
-breakfast	morning-meal		
+sea	big-water	1	
+morning	up-sun	2	
+midday	middle-sun	2	
+noon	middle-sun	2	
+evening	down-sun		
+night	no-sun	2	
+north	map-up		
+south	map-down		
+east	map-right		
+west	map-left		
+road map	way-map		
+roadmap	way-map		
+electronic map	electric-map		
+business plan	buy-group-map		
+breakfast	up-sun-food	2	
+meal (a sitting)	food-time	1	
+mealtime	food-time	1	
 glass (drinking vessel)	water-box		
 lamp	electric-sun		
 electric light	electric-sun		
@@ -130,22 +146,29 @@ reservation	before-agree
 booking	before-agree		
 change (money returned)	back-money		
 party (celebration)	play-group		
+dance	music-go	2	
+exercise	heal-go		
+gym	heal-go-place		
 walk	leg-go		
 drive	vehicle-go	1	
 travel by vehicle	vehicle-go	1	
 hungry	food-want	1	
-thirsty	drink-want		
+pain	sick-feel		
+hurt	sick-feel		
+ache	sick-feel		
+thirsty	drink-want	2	
 busy	many-work		
 easy	not-hard		
-slow	not-fast		
-slowly	not-fast		
-left (side)	not-right		
+slow	not-fast	2	
+slowly	not-fast	2	
 that	not-this	1	
 those	not-this	1	
-weekend	week-close		
-tonight	this-night		
+weekend	seven-sun-close	2	
+tonight	this-no-sun	2	
 always	all-time		
 how	what-way		
+language	word-way		
+tongue (language)	word-way		
 why	what-reason		
 what time	what-hour	1	
 sour	not-sweet		
@@ -158,23 +181,26 @@ public transit	line-vehicle
 transit	line-vehicle		
 train	metal-line-vehicle		
 transit station (bus/train)	line-vehicle-place		
-eye	see-part		
+eye	see-part	2	
 ear	hear-part		
 loud	big-hear		
 report	write-paper		
 document (written)	write-paper		
-writer	write-person		
-author	write-person		
+writer	write-person	2	
+author	write-person	2	
 text	write-word		
 writing (text)	write-word		
 too	up-measure		
 too much	up-measure		
 excessively	up-measure		
+price	money-measure		
+fee	money-measure		
+cost	money-measure		
 not enough	not-all		
 insufficient	not-all		
-prepare	before-make		
-get ready	before-make		
-arrange	before-make		
+prepare	before-make	2	
+get ready	before-make	2	
+arrange	before-make	2	
 ready	before-close	1	
 prepared	before-close	1	
 therefore	this-reason		
@@ -191,10 +217,9 @@ major	big-need
 kind (good-hearted)	good-feel		
 good-hearted	good-feel		
 kindness	good-feel		
-helpful	help-feel		
-love	big-like		
-adore	big-like		
-be in love with	big-like		
+love	big-like	2	
+adore	big-like	2	
+be in love with	big-like	2	
 until	straight-to		
 till	straight-to		
 up to (in time)	straight-to		
@@ -212,3 +237,57 @@ someone else	other-person
 another person	other-person		
 others	other-person		
 relative clause marker	RI-TE		
+egg	bird-child		
+hotel	sleep-home		
+rain	air-water		
+relative (kin)	parent-group	2	
+shop	buy-place		
+week	seven-sun	2	
+illegal	not-law		
+crime	not-law-work		
+pen (pen or pencil)	write-tool		
+musical instrument	music-tool		
+cutlery	food-tool		
+knife (knife or scissors)	break-tool		
+wait a while	time-remain		
+wait around	time-remain		
+ride	vehicle-put		
+go by vehicle	vehicle-put		
+seat	put-place		
+chair	put-tool		
+helper	help-person		
+waiter	help-person		
+attendant	help-person		
+servant	help-person		
+staff (person)	help-person		
+helpful	help-give		
+helpless	not-help		
+unhelpful	not-help-give		
+you-are-here map	help-map		
+directory map	help-map		
+orientation map	help-map		
+toy	play-tool		
+spouse	marry-person		
+earn	money-get		
+harvest	plant-get		
+expect	not-surprise		
+anticipate	not-surprise		
+astonishment	big-surprise		
+rage	big-anger		
+annoyance	small-anger		
+calm	not-anger		
+serene	small-happy		
+relaxed	small-happy		
+peaceful	small-happy		
+sad	not-happy		
+grief	big-not-happy		
+brave	not-fear		
+pride	self-good-feel		
+shame	self-bad-feel		
+quiet	small-hear		
+soft (sound)	small-hear		
+tears	see-water		
+cry	see-water		
+respect	please-feel		
+politeness (verbal)	please-say		
+courtesy	please-way		

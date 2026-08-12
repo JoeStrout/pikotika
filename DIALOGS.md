@@ -55,7 +55,7 @@ Alice: Yes, at Carla's place. I'll drive back tomorrow.
 ## 2. Two coworkers catching up on Monday
 
 Dan: Morning. How was your weekend?
-> **Pona matin. Tuo semanvin ri ker?**
+> **Pona sursore. Tuo sensesorevin ri ker?**
 
 Eve: Too short. Yours?
 > **Surmens piko. Kum tuo, ker?**
@@ -67,7 +67,7 @@ Eve: The one that's been broken since spring?
 > **Tis ri rompe vin in mur mese turan, non?**
 
 Dan: Yes, that's the one. I rode it twenty kilometers on Sunday.
-> **Si, tis. In soreverya, eko ri monta a tis in 20 kirumens turan.**
+> **Si, tis. In soreverya, eko ri karoseta a tis in 20 kirumens turan.**
 
 Eve: Nice. I did nothing. I slept, I ate, I watched three movies.
 > **Pona. Eko ri vake a nem. Eko ri tormi, komi, kum vite a 3 pitur.**
@@ -82,14 +82,14 @@ Dan: She's traveling until Thursday.
 > **Tisomo ri karoire retover arpoverya.**
 
 Eve: Then I think this week will be easy.
-> **Sets, eko ri pensa a tis seman ri nonturus.**
+> **Sets, eko ri pensa a tis sensesore ri nonturus.**
 
 ---
 
 ## 3. Buying fruit at a market
 
 Vendor: Good morning! What would you like?
-> **Pona matin! Tuo ri kere a ker?**
+> **Pona sursore! Tuo ri kere a ker?**
 
 Fumi: How much are the bananas?
 > **Ronkayoroarponino ri ker moni?**
@@ -126,19 +126,19 @@ Vendor: And forty back. Thank you!
 ## 4. Ordering dinner in a restaurant
 
 Server: Good evening. Are you two ready to order?
-> **Pona vesper. Pits tuo ri yervin, ker?**
+> **Pona tunsore. Pits tuo ri yervin, ker?**
 
 Gita: Almost. What's good tonight?
-> **Nir. Tisnote, ker komi ri pona?**
+> **Nir. Tisnemsore, ker komi ri pona?**
 
 Server: The fish is fresh. The soup is also very good.
-> **Akupeste ri nova. Kum akusenar ri meka pona.**
+> **Akupeste ri nova. Kum akukomi ri meka pona.**
 
 Hal: I don't eat fish. Do you have anything without meat?
 > **Eko ri non komi a akupeste. Tuo ri tene a non karne komi, ker?**
 
 Server: Yes — we have a rice dish with vegetables and eggs.
-> **Si. Ekopanto ri tene a rankoriso senar kum vertekomi kum ovum.**
+> **Si. Ekopanto ri tene a rankoriso komi kum vertekomi kum avisnino.**
 
 Hal: I'll have that.
 > **Eko ri kere a tis.**
@@ -166,7 +166,7 @@ Server: Very good. It will be about fifteen minutes.
 ## 5. Asking directions to a train station
 
 Ivan: Excuse me, do you speak English?
-> **Perton. Tuo ri tise a Inkiris paror, ker?**
+> **Perton. Tuo ri tise a Inkiris verpo, ker?**
 
 Local: A little. Slowly, please.
 > **Piko. Pam nonveros tise.**
@@ -175,10 +175,10 @@ Ivan: Where is the train station?
 > **Rinekaroroko ri kerroko?**
 
 Local: Go straight to that big tree, then turn left. Walk five minutes. You will see it.
-> **Pam reto ire ver nontis meka arpo, tar pam kurva ver nonrem. Pam 5 parte turan kampaire. Tuo ri vite a tis.**
+> **Pam reto ire ver nontis meka arpo, tar pam kurva ver sini. Pam 5 parte turan kampaire. Tuo ri vite a tis.**
 
 Ivan: Left at the tree. Thank you. Is there a bus too?
-> **Nonrem in arpo. Mersi. Kum muromokaro ri in tis moto, ker?**
+> **Sini in arpo. Mersi. Kum muromokaro ri in tis moto, ker?**
 
 Local: Yes, but walking is faster.
 > **Si, sets kampaire ri mas veros.**
@@ -227,7 +227,7 @@ Child: About the big fish!
 > **Tem meka akupeste!**
 
 Parent: I told you that one last night.
-> **1 note yer, eko ri tise a tis ver tuo.**
+> **1 nemsore yer, eko ri tise a tis ver tuo.**
 
 Child: I like that one!
 > **Eko ri kusta a tis!**
@@ -252,10 +252,10 @@ Kim: What kind of music?
 > **Ker musi?**
 
 Jo: Old songs, quiet. It's not loud.
-> **Vetus musi, seren. Tis ri non mekaoti.**
+> **Vetus musi, pikooti. Tis ri non mekaoti.**
 
 Kim: Good, because last time my ears hurt for two days.
-> **Pona, kas in yer tempo eko otiparte ri torer in 2 sore turan.**
+> **Pona, kas in yer tempo eko otiparte ri marasenti in 2 sore turan.**
 
 Jo: Ha! No, this is different.
 > **Ha! Non, tis ri ar.**
@@ -280,22 +280,22 @@ Clerk: Good afternoon. Do you have a reservation?
 > **Pona sore. Tuo ri tene a yerakor, ker?**
 
 Lena: Yes, under Lena. Two nights.
-> **Si, in nomen Rena. 2 note.**
+> **Si, in nomen Rena. 2 nemsore.**
 
 Clerk: Yes, I see it. One room, one bed. Is that right?
 > **Si, eko ri vite a tis. 1 kamar, 1 tormi. Tis ri ves, si?**
 
 Lena: Yes. Is breakfast included?
-> **Si. Matinsenar ri in kosto, ker?**
+> **Si. Sursorekomi ri in moni, ker?**
 
 Clerk: It is, from six to nine, in that room there.
 > **Si, vons 6 ora ver 9 ora, in nontis kamar.**
 
 Lena: Good. Is there hot water in the morning?
-> **Pona. In matin, voka aku ri in kamar, ker?**
+> **Pona. In sursore, voka aku ri in kamar, ker?**
 
 Clerk: Always. Here is your key. Room twelve, up the stairs, on the right.
-> **Pantempo. Tis ri tuo yave. Kamar 12, sur in surmoto, in rem ras.**
+> **Pantempo. Tis ri tuo yave. Kamar 12, sur in surmoto, in rem.**
 
 Lena: One thing — the light in the hall is broken.
 > **Wun kosa: vortosore in irekamar ri rompe vin.**
@@ -314,7 +314,7 @@ Mira: Hey! It's been so long. How are you?
 > **E, Nirus! Meka ronka turan vin! Tuo ri pona, ker?**
 
 Nils: Busy, but good. And you? How's the new job?
-> **Murrapo, sets pona. Kum tuo, ker? Tuo nova ravor ri ker?**
+> **Murrapo, sets pona. Kum tuo, ker? Tuo nova rapo ri ker?**
 
 Mira: Hard at first, but now I like it. The people are kind.
 > **In yer, turus; sets tistempo eko ri kusta a tis. Omo ri ponasenti.**
@@ -388,7 +388,7 @@ Written after translating, in rough order of how much they hurt.
 
 **Relative and complement clauses** were the worst gap on the first pass: 'Send me
 what you have' had to become 'send me your report', and 'I think this week will be
-easy' was written with a colon (**eko ri pensa: tis seman ri nonturus**), which is
+easy' was written with a colon (**eko ri pensa: tis sensesore ri nonturus**), which is
 punctuation standing in for grammar and does not survive being spoken aloud.  Four
 lines have since been rewritten using the proposed clause grammar — *A* bracketing a
 complement clause, and **rite** closing a relative one.  See
@@ -411,7 +411,7 @@ can only belong to an embedded clause.  Three lines took the construction with n
 friction:
 
 > **Eko ri non pensa a ekopanto ri sarve vin.**  'I don't think we've met.' (1)
-> **Sets, eko ri pensa a tis seman ri nonturus.**  'Then I think this week will be easy.' (2)
+> **Sets, eko ri pensa a tis sensesore ri nonturus.**  'Then I think this week will be easy.' (2)
 > **Eko ri kan keretise ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
 
 **A complement clause forces prepositional phrases to move.**  That third line is the

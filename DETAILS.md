@@ -174,15 +174,15 @@ We don't need to say "minute" in this case; the number after **ora** is understo
 
 | Pikotise | Han | Meaning |
 |---|---|---|
-| **matin** | 朝 | morning |
-| **mesyo** | 午 | noon, midday |
+| **sursore** | 上日 | morning (*up-sun*) |
+| **metsesore** | 中日 | noon, midday (*middle-sun*) |
 | **sore** | 日 | day, daytime |
-| **vesper** | 夕 | evening |
-| **note** | 夜 | night |
+| **tunsore** | 下日 | afternoon, evening (*down-sun*) |
+| **nemsore** | 无日 | night (*no-sun*) |
 
-So **matin noks ora** is 9 in the morning, and **vesper noks ora** is 9 at night.  
+So **sursore noks ora** is 9 in the morning, and **nemsore noks ora** is 9 at night.  
 
-To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun seman turan** is "for a week."  For smaller intervals, use **parte turan** for minutes, and **pikoparte turan** for seconds.
+To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun sensesore turan** is "for a week."  For smaller intervals, use **parte turan** for minutes, and **pikoparte turan** for seconds.
 
 For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and does not need **turan**).  Finally, here are some words for referring to 'now' or generically in the past/future.
 
@@ -243,7 +243,7 @@ For any other distance, count the days and add **yer** ('ago') or **tar** ('from
 |---|---|---|
 | **2 sore yer** | 2日前 | two days ago |
 | **kins sore tar** | 5日后 | five days from now |
-| **tets seman yer** | 3週前 | three weeks ago |
+| **tets sensesore yer** | 3 7日前 | three weeks ago |
 
 
 ## Proper Nouns
@@ -282,7 +282,7 @@ Some examples will help illustrate.
 
 Standing adaptations -- names that come up often enough to be worth agreeing on -- are recorded in `names.tsv`.
 
-In general, it's not necessary to precede any suffix word with a name.  However, you might precede it with **omo** (person), **roko** (place), **urpe** (city), **nasyon** (country), **komer** (shop/establishment), or **komparpanto** (company), as a separate word, in these cases:
+In general, it's not necessary to precede any suffix word with a name.  However, you might precede it with **omo** (person), **roko** (place), **urpe** (city), **nasyon** (country), **komparroko** (shop/establishment), or **komparpanto** (company), as a separate word, in these cases:
 
 1. You're using a name for the first time in a conversation, and you want to be very clear whether this is a person, place, etc.  Example: **komparpanto Apuru** = 'the company Apple'; **omo Sumis** = 'the person Smith'.
 2. The name happens to sound the same as some Pikotise word, and might be confusing.  Example: Li (a common surname) sounds like **ri** (the particle), so you might use **omo Ri** = 'the person Li'.
@@ -303,6 +303,8 @@ There are only a couple rules to apply when making a compound word:
 
 1. If the original phrase included a TE particle, leave it out.  Example: *yoro te arponino* ('yellow fruit') → **yoroarponino** (yellow fruit, usually banana).
 2. If one of the roots ends in `-ts`, `-ns`, or `-ks`, and the next root starts with a consonant, you will need to insert an `e` between them.  Example: *tets kurva* ('three angles') → **tetsekurva** ('triangle').
+
+Collapsing a phrase does more than save a syllable or two: it can fix a meaning.  A compound is a single word, so it may settle on one reading while the spaced phrase keeps the plain, literal one.  Take **non konten**, two words, which says only 'not happy' -- the neutral state of someone who simply isn't cheerful.  Collapse it to **nonkonten** and you get 'sad', because **non** covers 'un-' as well as 'not', and the compound takes the un- reading.  The other negated feelings split the same way: **nonkoler** 'calm' beside **non koler** 'not angry', **nontimo** 'brave' beside **non timo** 'not afraid', **nonmira** 'expect' beside **non mira** 'not surprised'.  In each pair the compound names a positive state, while the phrase merely denies something.  So when you need the bare denial and nothing more, keep the space.
 
 Compounds that have caught on and become standard words are collected in [COMPOUNDS.md](COMPOUNDS.md).  Check there before coining something new -- if a compound is already in general use, that's the one to reach for.
 
@@ -325,7 +327,7 @@ Adverbs work the same way: they go before the verb they modify.  Example: **vero
 | **pos** | 可 | might, maybe | **tuo ri pos ves** -- 'you may be right' |
 | **kere** | 求 | want to | **eko ri kere ire** -- 'I want to go' |
 | **pospona** | 可好 | should | **eko ri pospona ire** -- 'I should go' |
-| **mekakere** | 大求 | must, needs to | **eko ri mekakere ire** -- 'I must go' |
+| **neses** | 要 | must, needs to | **eko ri neses ire** -- 'I must go' |
 
 
 ### Prepositional Phrases
@@ -404,7 +406,7 @@ Note that **vin** can be combined with the adverbs for 'can', 'might', 'should',
 | Eko ri kan ire vin. | I could have gone. |
 | Eko ri pos ire vin. | I might have gone. |
 | Eko ri pospona ire vin. | I should have gone. |
-| Eko ri mekakere ire vin. | I must have gone. |
+| Eko ri neses ire vin. | I must have gone. |
 
 ### Subordinate Clauses
 
@@ -412,7 +414,7 @@ A clause can serve as the object of a verb, or as a modifier of a noun.
 
 **As an object**, simply put the clause after *A*.  Only one *RI* is allowed per clause, so an *RI* following *A* can only belong to an embedded clause; no other marking is needed.
 
-> **Eko ri pensa a tis seman ri nonturus.**  'I think this week will be easy.'
+> **Eko ri pensa a tis sensesore ri nonturus.**  'I think this week will be easy.'
 > **Eko ri kere a tuo ri veni.**  'I want you to come.'
 
 Such a clause runs to the end of the sentence, so anything else has to come before *A*:
@@ -452,8 +454,8 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Hello (when meeting someone new) | new-meet | **Novasarve.** | 初会. |
 | Hello | happy-meet | **Kontensarve.** | 楽会. |
 | I'm happy to meet you. | self RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
-| Good morning. | good morning | **Pona matin.** | 好 朝. |
-| Good evening. | good evening | **Pona vesper.** | 好 夕. |
+| Good morning. | good up-sun | **Pona sursore.** | 好 上日. |
+| Good evening. | good down-sun | **Pona tunsore.** | 好 下日. |
 | How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
 | All is good. | all RI good | **Pan ri pona.** | 全 ⊢ 好. |
 | And you? | and you, what | **Kum tuo, ker?** | 并 尔, 何. | 

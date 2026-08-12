@@ -8,9 +8,9 @@ ways of writing the language:
   2. gloss        hyphenated compounds, particles as RI / A / TE
                     e.g.  water-meal RI have A what
   3. Latin        the phonological form, compounds written solid
-                    e.g.  akusenar ri tene a ker
+                    e.g.  akukomi ri tene a ker
   4. Han          one character per root
-                    e.g.  水飯 ⊢ 有 ⇒ 何
+                    e.g.  水食 ⊢ 有 ⇒ 何
 
 Run with no arguments for an interactive prompt, or pass the query on the
 command line for a single lookup.  No network and no model — just the tables.
@@ -69,6 +69,49 @@ def counting_words(n):
     return words
 
 
+def split_covers(text):
+    """A `covers` field as its separate entries.
+
+    Commas separate entries, and a semicolon groups them into senses -- "see,
+    look, watch, appear; understand, realize, get it" -- so both end an entry.
+
+    A separator inside a parenthetical belongs to the parenthetical, not to the
+    list: "for (a length of time), until" is two entries, not three.
+    """
+    entries, depth, current = [], 0, []
+    for ch in text:
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth = max(0, depth - 1)
+        if ch in ",;" and depth == 0:
+            entries.append("".join(current))
+            current = []
+        else:
+            current.append(ch)
+    entries.append("".join(current))
+    return entries
+
+
+def cover_keys(entry):
+    """The lookup keys for one `covers` entry.
+
+    Entries may carry a parenthetical that narrows or explains the sense --
+    "creature (generic head)", "visit (socially)".  Readers want to see it, but
+    nobody looking a word up will type it, so index the headword on its own as
+    well as the entry in full.
+
+    A backtick marks a pointer to some other root's compound rather than a word
+    of English ("hurting (pain = `sick-feel`)"), so keys holding one are left
+    out -- which is what makes stripping the parenthetical worthwhile here, as
+    it is the bare headword that survives.
+    """
+    entry = entry.strip().lower()
+    keys = [entry, entry.split("(")[0].strip()]
+    return [k for i, k in enumerate(keys)
+            if k and "`" not in k and k not in keys[:i]]
+
+
 class Tables:
     def __init__(self, directory=HERE):
         self.gloss2root = {}      # gloss -> {gloss, form, han, covers, ...}
@@ -90,10 +133,9 @@ class Tables:
                 self.form2gloss[r["form"]] = r["gloss"]
                 if r["han"]:
                     self.han2gloss[r["han"]] = r["gloss"]
-                for word in r["covers"].split(","):
-                    word = word.strip().lower()
-                    if word and "`" not in word:
-                        self.covers.setdefault(word, []).append(r["gloss"])
+                for entry in split_covers(r["covers"]):
+                    for key in cover_keys(entry):
+                        self.covers.setdefault(key, []).append(r["gloss"])
 
         for gloss, spec in COMPOUND_PARTICLES.items():
             row = dict(spec, gloss=gloss)

@@ -26,3 +26,35 @@ Issues will be removed as they are resolved.
 - **Comparative not documented.**  It's in our old grammar_1.md, but not in the current DETAILS.md file.
 - **No counterfactual.** "I should have started earlier" lost its regret entirely.
 - We haven't entirely decided where the aspect marker (apa/vin/sista) goes in all cases, particularly whether it goes right after the verb (if there is one) or at the end of the sentence (after the object).  I'm leaning towards the former, even if it complicates the rule a little.
+
+## Tooling
+
+- **`pikotise.py` cannot parse proper names in running text.**  Names are supposed to stay in
+  Latin in all three notations, but a name in Latin input fails to resolve:
+  **Tuo ri tise a Inkiris verpo, ker?** returns *no match -- "Inkiris" is not in roots.tsv,
+  compounds.tsv or names.tsv*, even though `names.tsv` has `English  Inkiris`.  Lowercasing
+  does not help.  The name table appears to be wired into the English-to-Pikotise direction
+  only, not into Latin (or presumably Han) parsing.  Consequence: every dialog line
+  containing a name -- and there are many, since the dialogs are built around named speakers
+  -- has never actually been round-trip checked.  Worth fixing before we trust a bulk
+  verification pass over `DIALOGS.md`.
+
+- **Compound headwords shadow root `covers` words, and that is silently shaping the
+  lexicon.**  `pikotise.py` indexes each compound's English headword on its own -- "beer
+  (any grain alcohol)" also answers to plain *beer* -- and it resolves compounds before it
+  looks at any root's `covers` list.  So whenever an English word sits in both places, the
+  compound wins and the root becomes unreachable by that word.
+
+  Two entries have already been steered around this rather than through it.  *wait* was
+  first recorded as the compound `wait (a while)`, whose bare headword *wait* then shadowed
+  **sista**, which covers waiting directly; it was renamed to `wait a while` purely to stop
+  the tool claiming the word.  Then *seat* was deliberately kept out of **seta**'s `covers`
+  and left only as the compound *put-place*, on the same reasoning.
+
+  Both decisions were made for the tool's benefit, not the learner's.  The right question
+  is which form a learner should reach first -- and sometimes that really is the root
+  (**sista** for 'wait'), while sometimes it is the compound (**setaroko** for a seat you
+  can point at).  The tool should be able to hold both and say so, presumably by reporting
+  every hit rather than the first one, with some indication of which is the more basic.
+  Until it can, revisit these case by case and record what is best for learners; do not let
+  the resolution order decide the lexicon.

@@ -86,65 +86,6 @@ We could consider blessing a *secondary* gloss, and allowing the primary or seco
 
 ## Root Reductions
 
-We currently have four roots describing different parts of the day, in addition to **sore** itself:
-
-| Pikotise | Han | Meaning |
-|---|---|---|
-| **sore** | 日 | day, daytime |
-| **matin** | 朝 | morning |
-| **mesyo** | 午 | noon, midday |
-| **vesper** | 夕 | evening |
-| **note** | 夜 | night |
-
-That seems extravagant.  These do combine with 'meal' to make breakfast, etc.; and we combine this+night to make tonight.  But it's still a lot.
-
-We could consider eliminating these and building them in other ways, for example, by assigning each part of the day a color and using the color word plus day, hour, or time.
-
-We also have a separate word for 'meal' (**senar**), which seems excessive when we already have 'food' (**komi**).
-
-**Already covered by another root's `covers` list.**  These are the cheapest to look
-at, because the overlap is written down in our own table:
-
-| root | overlaps | note |
-|---|---|---|
-| **kosto** 'price' (1) | **moni** 'money' | *moni* already covers "price, cost, value, payment" |
-| **mets** 'middle' (0) | **in** | *in* already says "middle/between = `in-side`" |
-| **torer** 'pain' (1) | **mara** 'sick' | *mara* already says "pain = `sick-feel`" |
-| **poten** 'power' (0) | **rapo** 'work', **kan** 'able' | *rapo* covers "effort, use" and its han is 力; *kan* covers "ability, capable" |
-| **paror** 'language' (1), **nomen** 'name' (1) | **verpo** 'word' | *verpo* covers "language, speech, name, message" outright |
-| **ravor** 'job' (1) | **rapo** 'work' | *rapo* covers "job" |
-| **ras** 'side' (1) | **eks**, **in** | maybe; *ras* is load-bearing for *morning-side* 'east' |
-
-**Concrete nouns that look like ordinary compounds.**  Most of these have zero
-recorded uses:
-
-| root | possible replacement |
-|---|---|
-| **uter** 'tool' (0) | *work-thing* |
-| **tapur** 'table' (0) | *flat-thing*, *food-flat* |
-| **panyu** 'toilet' (0) | *water-room* |
-| **oster** 'hotel' (0) | *sleep-home*, *money-home* |
-| **komer** 'shop' (0) | *buy-place* |
-| **kirmen** 'crime' (0) | *not-law thing*, *bad-work* |
-| **venter** 'stomach' (0) | *food-room*, *food-place* |
-| **ropa** 'cloth' (0) | *body-cover* (we have no *cover* -- *out-body cloth* problem) |
-| **sares** 'salt' (0) | *white-stone*, *food-stone* |
-| **oren** 'oil' (0) | *meat-water*, *food-water* |
-| **raten** 'milk' (0) | *animal-water*, *white-drink* |
-| **ovum** 'egg' (1) | *bird-child* |
-| **karne** 'meat' (1) | *animal-food* |
-| **avis** 'bird' (0), **inses** 'bug' (0), **kanis** 'dog' (0) | *air-animal*, *small-many-leg animal*, ? -- these were kept when `fish`/`cat` were cut, so the reasoning is already on record |
-| **ruva** 'rain' (0) | *sky-water*, *down-water* |
-| **metar** 'metal' (1) | *hard-stone* |
-| **karta** 'paper' (2) | *write-thing*, *flat-write* |
-| **arti** 'art' (0) | *make-way*, *see-make* |
-| **pitur** 'picture' (1) | *see-thing*, *see-make* |
-| **seman** 'week' (2) | *seven-day* -- transparent, and it is what the root means |
-| **verya** 'weekday' (3) | *day-number*, *week-part* |
-| **kina** 'relative' (0) | *parent-group*, *big-parent group* |
-| **korpo** 'body' (0) | *self-thing* -- weak; body is basic |
-| **testa** 'head' (2) | *up-part*; the 'leader, chief' sense is the one worth keeping |
-
 **Antonym pairs where one member could be `not-` the other.**  We already do this for
 front (`not-back`) and that/there (`not-this`), so the pattern is established:
 
@@ -158,50 +99,104 @@ front (`not-back`) and that/there (`not-this`), so the pattern is established:
 | **non** 'not' / **nem** 'zero' (4) | *nem* | *not-number*, *not-one* |
 | **rotun** 'round' (2) / **reto** 'straight' (2) / **kurva** 'bend' (1) | *rotun* or *kurva* | *round* = *all-bend*; *straight* = *not-bend* |
 
-**Verb clusters.**  Looser, and the ones most likely to be false economies:
-
-- **impar** 'learn' (2) -- *new-know*, *become-know*.  We have **sape** 'know',
-  **pensa** 'think', and **vite** 'see (understand)' already.
-- **asper** 'wait' (0) -- *time-remain*, given **sista** 'remain, stay'.
-- **seta** 'put' (0) -- *place-make*, given **roko** and **vake**.
-- **perti** 'lose' (0) -- *not-have become*, *bad-get*.
-- **kompar** 'buy' (0) -- *money-change*, given **moni** and **muta**; *muta* itself
-  covers "exchange".
-- **tiven** 'become' (1) vs **muta** 'change' (0) -- one of these two, probably.
-- **monta** 'ride' (1) -- *vehicle-in be*, *vehicle-remain*.
-- **neses** 'need' (3) -- *big-want*, given **kere**.
-- **servi** 'help' (0) -- *for-work*, *good-work*.
-- **ruti** 'play' (1) -- *happy-work*, *fun-do*.
-- **akor** 'agree' (1) -- *same-think*, *same-say*; note **reke** 'law' covers "rule,
-  permission" and **maris** 'marry' (0) could be *law-pair* or *always-agree*.
-- **toma** 'get' (3) -- *to-have*, *become-have*, given **tene** and **tare**.
-
 **Feelings and social formulae.**  The politeness words (**pam**, **perton**,
 **mersi**) earn their keep on frequency, but the rest are thin:
 
-- **putor** 'shame' (0) -- *bad-feel*, *self-bad feel*.
-- **kortes** 'polite' (0) -- *good-way*, *good-say*.
 - **kansa** 'tired' (1) -- *sleep-want*, *work-after*.
 - **timo** 'fear' (0) -- *bad-if feel*; but 'danger' is a travel-critical sense.
-- **seren** 'calm' (1) -- *not-fast*, *not-noise*; 'quiet' is already reachable from
-  **oti** 'sound, noise'.
 - **sapor** 'taste' (3) -- *mouth-feel*.
 
 **Grammar and quantity overlaps.**  Small set, high frequency, so removals here are
 expensive -- but the overlaps are real:
 
-- **kan** 'able' (4) / **pos** 'if, possible' (2) / **poten** 'power' (0) -- three
-  roots on the *posse* concept.  *pos* is the odd one, glossed 'if' but covering
-  "possible, chance, luck".
+- **kan** 'able' (4) / **pos** 'if, possible' (2) -- two roots on the *posse*
+  concept, down from three now that **poten** is gone.  *pos* is the odd one,
+  glossed 'if' but covering "possible, chance, luck".
 - **mens** 'measure' (3) / **nus** 'number' (1) / **mur** 'many, quantity' (3) --
   *nus* could be *number-word* or just *mens*.
 - **son** 'only' (2) / **wun** 'one' (10) -- *only* = *one-ly*, *just-one*.
 - **ves** 'true' (8) / **si** 'yes' (11) -- distinct classes (interjection vs
   modifier), but the same content; **reto** 'straight, direct' adds "correct" on top.
-- **mas** 'more, again, another' (6) / **ar** 'other, different' (1) / **muta**
-  'differ' (0) -- three roots touching sameness and difference, opposite **sam**.
+- **mas** 'more, again, another' (6) / **ar** 'other, different' (1) -- two roots
+  touching sameness and difference, opposite **sam**.
 - **panto** 'group' (11) / **pan** 'all' (6) -- near-homophones; *panto* is frequent
   enough to keep, but the phonetic collision is worth noting on its own.
 - **katon** 'hundred' (3) / **kiru** 'thousand' (1) / **miron** 'million' (0) -- a
   place-value system built from **tekas** could reach these, at a cost in length.
+
+
+## Root Additions
+
+The other half of the same question: if reductions freed up space, what would be
+worth spending it on?  What follows are concepts the current 185 roots do not touch,
+where the workaround is either long, unguessable, or missing entirely.
+
+A concept belongs here only if *both* tests fail: no root covers it, and no short
+compound reaches it.  'Health' does not qualify, for instance -- **sana** covers
+"heal, cure, medicine, health, repair", so *sana-komi* 'health food' and
+*sana-korpo-rapo* 'exercise' are already available.  The gloss `heal` simply hides
+what the root holds, which is an argument for the secondary gloss above, not for a
+new root.  The same goes for 'love' (inside **kusta**) and 'permission' (inside
+**reke**).
+
+### Strongest candidates
+
+These resist compounding: the parts needed to build them are themselves missing, so
+the workaround is a definition rather than a word.
+
+| concept | why it is not reachable | what it unlocks |
+|---|---|---|
+| **find** | opposite of **perti** 'lose', but *see-get* is wrong (you can find without looking) and *want-see* is searching, not finding | find, search, look for, discover, lost-and-found, look up, hunt |
+| **remember** | nothing in the set touches memory.  *not-forget* is circular; **sape** is the state of knowing, not its retention | remember, forget, memory, remind, memorize, souvenir, monument |
+| **try** | no root for attempt.  *want-do* is intention, *work* is effort with no sense of uncertain outcome | try, attempt, test, taste-test, practice, experiment, "let me try" |
+| **choose** | no root for selection.  *want-get* is desire, *think-after* is deliberation | choose, decide, pick, vote, option, menu, election, prefer |
+| **join** | nothing expresses connection.  **sam** is sameness and **kum** is conjunction; neither attaches two things | connect, attach, tie, link, network, internet, cable, relationship, join a group |
+| **carry** | *hand-go* and *with-go* both miss.  A traveler with a bag needs this constantly | carry, bring, take along, transport, luggage handling, delivery, wear |
+| **fight** | no root for conflict.  *not-friend* gives 'enemy' but nothing for the act | fight, argue, war, compete, sport, oppose, resist, protest |
+| **beautiful** | **pona** covers "pleasant", but *good-see* is faint praise for a concept this frequent in travel talk | beautiful, pretty, handsome, view, scenery, ugly (*not-*), decoration, style |
+| **heavy** | no root for weight, and weight is not derivable from **meka** 'big' or **turus** 'hard' | heavy, light, weight, mass, burden, luggage limit, scales, "how much does it weigh" |
+| **holy** | **temper** 'temple' exists with nothing to put in it -- no god, spirit, soul, or sacredness anywhere in the set | god, religion, spirit, soul, sacred, prayer, bless, church-vs-building, ghost |
+
+Other ideas:
+- collect/gather
+
+
+### Worth considering
+
+Reachable by compound, but common enough that the compound may be paying rent every
+day:
+
+| concept | current workaround | note |
+|---|---|---|
+| **die** | *not-life*, *life-close* | works, but death is basic vocabulary in every language; also gives 'kill' (*death-make*) and 'dead' |
+| landscape | *up-earth* 'mountain', *long-water* 'river', *big-water* 'sea' | the three big ones are now coined.  What is still unbuilt is the finer grain: lake, island, beach, coast, forest, valley, desert -- worth revisiting once we see whether the coined three feel thin in use |
+| **cook** | *food-make* (already coined as *food-make-person* 'cook') | the verb works; what is missing is 'kitchen, raw, restaurant, recipe' -- all buildable, but all through the same two roots |
+| **push / pull** | nothing | *pull* is the single most common instruction on a door.  One root with both senses (direction supplied by **ver**/**vons**) may cover it |
+| **safe / protect** | *not-fear* | 'safe' as a state is reachable; 'protect, guard, shelter, insurance' as an act is not |
+| **laugh / smile** | *happy-say*, *happy-see* | badly served, and socially loaded; we also have no **face** to build on |
+| **cloud** | *sky-water* -- now a direct collision, since 'rain' is recorded as *air-water* and **vento** covers 'sky' | weather talk is the canonical small-talk topic and we have only air, sun, and the *air-water* compound.  Cutting **ruva** raised the price of this gap, not lowered it |
+| **clear** | ??? | useful for description, as well as for "is that clear?", and weather; not-clear could also mean cloudy |
+| **read** | *see-word*, *see-write* | acceptable, but for a language that wants to scale to writing it is doing a lot of work |
+| **full** | **pan** covers "whole, complete, enough" | may already be fine; worth checking against 'the hotel is full', 'I am full' |
+
+### Whole domains with no coverage
+
+Stepping back from individual words, four areas of the set are thin in a way that
+single additions may not fix:
+
+- **Body detail.**  The senses are covered -- *see-part* 'eye', *hear-part* 'ear',
+  *air-taste* 'smell' -- but the substance of the body is not: no face, blood, skin,
+  bone, tooth, or hair.  Medical emergencies and doctor visits are exactly the
+  situation where a traveler cannot afford to paraphrase, and *see-part* does not
+  help you say where it hurts.
+- **Manipulation.**  We have **toma**, **tare**, **tene**, **seta**, and then
+  nothing: no carry, push, pull, throw, drop, catch, turn (as an action), open-with-
+  force.  The set can describe transfers of possession but not much physical handling.
+- **Cognition.**  **sape**, **pensa**, **impar**, **vite** -- knowing, thinking,
+  learning, understanding -- but no remembering, finding, choosing, trying, doubting,
+  or deciding.  The mental verbs we have are static states; the ones missing are the
+  processes.
+- **Belief and ceremony.**  **temper** and **maris** are the only two entries, and
+  both name buildings or events rather than the things inside them.  A language meant
+  to scale past small talk will meet religion early.
 
