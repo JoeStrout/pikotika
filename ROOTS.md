@@ -209,14 +209,15 @@
 | flat | yano | 平 | flat, level, plane, sheet |
 | line | rine | 糸 | line, thread, string, rope, wire |
 | round | rotun | 丸 | round, circular, curved, ball |
-| straight | reto | 直 | straight, direct, upright |
+| straight | reto | 直 | straight, direct, nonstop, express, upright |
 
-## Space and direction (13)
+## Space and direction (14)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | back | rets | 反 | behind, rear, reverse (front = `not-back`) |
 | down | tun | 下 | below, low, bottom, under |
+| edge | rante | 边 | edge, side, border, boundary, rim, margin, shore |
 | far | ron | 遠 | far, distant, remote |
 | from | vons | 从 | from, source, origin, out of |
 | hole | vuko | 穴 | hole, gap, opening, empty space within |
@@ -265,7 +266,7 @@
 | meet | sarve | 会 | meet, encounter, run into, come together with |
 | need | neses | 要 | need, require, must, necessary, have to |
 | open | apa | 开 | open, begin, start, uncover |
-| play | ruti | 玩 | play, game, fun, amuse, visit (for enjoyment, not an appointment), hang out |
+| play | ruti | 玩 | play, game, fun, amuse, visit (socially), hang out |
 | put | seta | 坐 | put, place, set, position, sit, be seated, mount |
 | remain | sista | 止 | stop, halt, remain, cease, stand, stay, wait, pause |
 | say | tise | 云 | say, speak, talk, tell |

@@ -408,6 +408,29 @@ Note that **vin** can be combined with the adverbs for 'can', 'might', 'should',
 | Eko ri pospona ire vin. | I should have gone. |
 | Eko ri neses ire vin. | I must have gone. |
 
+**Conditions.**  A condition is marked by **pos** at the head of its clause, and the clause that follows from it opens with **tiskas** ('therefore').  Both parts are ordinary sentences; nothing else changes.
+
+> **Pos eko ri tene a moni, tiskas eko ri kompar a tis.**  'If I had the money, I would buy it.'
+> **Pos tuo ri veni, tiskas ekopanto ri konten.**  'If you come, we'll be happy.'
+
+Do not leave out **tiskas**.  Without it the two clauses are symmetric, and a listener has no way to tell which one is the condition.
+
+Note that English marks the second clause too, with *would* or *will*; Pikotise does not.  **tiskas** does that work, and the verb stays plain.  Nor is there a separate *would* for politeness or for a hedged prediction: 'I would like to go' is simply **eko ri kere ire**, and 'I think you would like it' is **eko ri pensa a tuo ri kusta a tis**.
+
+**Counterfactuals.**  A counterfactual is just a condition you already know to be false, so Pikotise marks it on the condition rather than on the verb.  Use **nonves** (不真, *not-true*) in place of **pos** at the head of the clause; everything after it is unchanged.
+
+| Pikotise | English |
+|---|---|
+| **Pos eko ri tene a moni, tiskas eko ri kompar a tis.** | If I have the money, I'll buy it.  (maybe I do) |
+| **Nonves eko ri tene a moni, tiskas eko ri kompar a tis.** | If I had the money, I would buy it.  (I don't) |
+| **Nonves eko ri tene a moni vin, tiskas eko ri kompar a tis vin.** | If I had had the money, I would have bought it.  (I didn't) |
+
+The two markers are exact opposites: **pos** leaves the condition open, **nonves** denies it.  As an ordinary word **nonves** simply means 'false', and the grammatical use is the same word doing the same job -- 'falsely, I have the money' -- so there is nothing extra to learn.
+
+The consequence clause needs no counterfactual marking of its own.  **tiskas** already says it follows from the condition, and if the condition is false then so is what follows from it.  Past time, where you want it, comes from **vin** as usual.
+
+When there is no stated condition, the plain modal forms above carry the sense on their own: **eko ri pospona apa yer vin** is 'I should have started earlier', and, exactly as in English, saying it implies you did not.  Do not add **nonves** to these.
+
 ### Subordinate Clauses
 
 A clause can serve as the object of a verb, or as a modifier of a noun.

@@ -83,28 +83,15 @@ Our root words, by necessity, cover many concepts, but currently we pick just on
 
 We could consider blessing a *secondary* gloss, and allowing the primary or secondary to  be used when writing gloss form.  Our tools could easily convert from gloss to Latin and Han using either word.  When converting *to* gloss automatically, it would be hard (without LLM-level AI) to reliably pick the clearest one, but maybe some heuristics will help... and anyway it couldn't come out worse than the current situation.  (It might complicate round-trip tests, though.)
 
+## Shortening the most common readings
+
+Right now almost all our roots are two syllables.  There is some scheme where only function words are one syllable, or something like that; but I can't remember exactly what the rule is and I don't find it very useful.  More useful would be shorter compound words.  So, when we have a big catalog of compounds, we could take inventory, see which roots are most commonly used, and shorten them to single syllables that play nicely with their neighbors.  This should have a noticeable impact on the fluency of the language.
+
 
 ## Root Reductions
 
 **Antonym pairs where one member could be `not-` the other.**  We already do this for
 front (`not-back`) and that/there (`not-this`), so the pattern is established:
-
-| pair | candidate to drop | replacement |
-|---|---|---|
-| **voka** 'fire, hot' / **yeru** 'cold' (2) | *yeru* | *not-fire* |
-| **nova** 'new' / **vetus** 'old' (1) | *vetus* | *not-new* |
-| **pona** 'good' / **marum** 'bad' (5) | *marum* | *not-good* -- but *marum* is frequent and *mara* 'sick' already carries "bad" flavor; note *mara*/*marum* are near-homophones, which is its own problem |
-| **ron** 'far' (0) / **nir** 'near' (2) | *ron* | *not-near*; also note *ron* and **ronka** 'long' are near-homophones with overlapping senses ("distant" appears in both) |
-| **mara** 'sick' / **sana** 'heal' (2) | *sana* | *not-sick make*, *good-make* |
-| **non** 'not' / **nem** 'zero' (4) | *nem* | *not-number*, *not-one* |
-| **rotun** 'round' (2) / **reto** 'straight' (2) / **kurva** 'bend' (1) | *rotun* or *kurva* | *round* = *all-bend*; *straight* = *not-bend* |
-
-**Feelings and social formulae.**  The politeness words (**pam**, **perton**,
-**mersi**) earn their keep on frequency, but the rest are thin:
-
-- **kansa** 'tired' (1) -- *sleep-want*, *work-after*.
-- **timo** 'fear' (0) -- *bad-if feel*; but 'danger' is a travel-critical sense.
-- **sapor** 'taste' (3) -- *mouth-feel*.
 
 **Grammar and quantity overlaps.**  Small set, high frequency, so removals here are
 expensive -- but the overlaps are real:

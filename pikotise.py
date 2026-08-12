@@ -93,6 +93,29 @@ def split_covers(text):
     return entries
 
 
+def split_alternatives(text):
+    """An `EN` field from compounds.tsv as its separate English terms.
+
+    A gloss gets one row, and the English words that render it are separated by
+    semicolons -- "theater; playhouse".  Commas are not separators here: an
+    entry may need one inside a phrase.  A semicolon inside a parenthetical
+    belongs to the parenthetical.
+    """
+    entries, depth, current = [], 0, []
+    for ch in text:
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth = max(0, depth - 1)
+        if ch == ";" and depth == 0:
+            entries.append("".join(current))
+            current = []
+        else:
+            current.append(ch)
+    entries.append("".join(current))
+    return [e.strip() for e in entries if e.strip()]
+
+
 def cover_keys(entry):
     """The lookup keys for one `covers` entry.
 
@@ -149,14 +172,17 @@ class Tables:
 
         with open(os.path.join(d, "compounds.tsv"), encoding="utf-8") as fh:
             for r in csv.DictReader(fh, delimiter="\t"):
-                english = r["EN"].strip()
-                self.compounds[english.lower()] = r["gloss"]
-                # entries are labelled "beer (any grain alcohol)"; index the
-                # headword on its own too, so plain "beer" finds it
-                head = english.split("(")[0].strip().lower()
-                if head:
-                    self.compounds.setdefault(head, r["gloss"])
-                self.compound_by_gloss.setdefault(r["gloss"], []).append(english)
+                # one row per gloss; its English equivalents are separated by
+                # semicolons, e.g. "theater; playhouse"
+                for english in split_alternatives(r["EN"]):
+                    self.compounds[english.lower()] = r["gloss"]
+                    # entries are labelled "beer (any grain alcohol)"; index the
+                    # headword on its own too, so plain "beer" finds it
+                    head = english.split("(")[0].strip().lower()
+                    if head:
+                        self.compounds.setdefault(head, r["gloss"])
+                    self.compound_by_gloss.setdefault(
+                        r["gloss"], []).append(english)
 
         names_path = os.path.join(d, "names.tsv")
         if os.path.exists(names_path):

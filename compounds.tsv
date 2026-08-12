@@ -1,10 +1,8 @@
 EN	gloss	root_level	assigned_level
-cat	home-animal		
-pet	home-animal		
+cat; pet	home-animal		
 pet dog	home-dog		
 cow	milk-animal		
-goat	small-milk-animal		
-sheep	small-milk-animal		
+goat; sheep	small-milk-animal		
 fish	water-animal	2	
 pig	red-white-animal		
 pork	red-white-animal-meat		
@@ -22,8 +20,7 @@ pink	red-white
 purple	red-blue		
 orange	red-yellow		
 cyan	blue-green		
-tan	grain-color		
-beige	grain-color		
+tan; beige	grain-color		
 sand	small-stone		
 alcohol (usually wine)	fire-water		
 wine	plant-child-fire-water		
@@ -53,20 +50,15 @@ spicy	fire-taste
 allergy	body-not-agree		
 vegetarian	not-meat-food-person		
 password	key-word		
-lucky	good-if		
-good luck	good-if		
+lucky; good luck	good-if		
 should	if-good		
-decimal point	part	1	
-company	buy-group		
-corporation	buy-group		
-firm	buy-group		
+decimal point; minute	part	1	
+company; corporation; firm	buy-group		
 coin	metal-money		
-porridge	water-grain		
-congee	water-grain		
+porridge; congee	water-grain		
 potato	earth-grain		
 door handle	door-hand		
-turnstile	money-door		
-ticket gate	money-door		
+turnstile; ticket gate	money-door		
 mud	water-earth		
 Sunday	sun-weekday		
 Monday	month-weekday		
@@ -75,31 +67,29 @@ Wednesday	water-weekday
 Thursday	plant-weekday		
 Friday	metal-weekday		
 Saturday	earth-weekday		
-minute	part	1	
 second (of time)	small-part	1	
 moment	small-time	1	
 yesterday	sun-before	1	
 today	this-sun	1	
 tomorrow	sun-after	1	
 triangle	three-bend		
-quadrilateral	four-bend		
-rectangle	four-bend		
-square	four-bend		
-depart	out-go	1	
-leave (depart)	out-go	1	
+quadrilateral; rectangle; square	four-bend		
+polygon	many-bend		
+circle; ring; hoop	round-line		
+disk	flat-round		
+oval; ellipse	long-round		
+depart; leave (depart)	out-go	1	
 hello	happy-meet	1	
 goodbye	sorry-out-go	1	
 bye	sorry-go	1	
 Hello (when meeting someone new)	new-meet	1	
 welcome	happy-come	2	
 see you later	after-meet	1	
-actually	in-true	1	
-in truth	in-true	1	
-problem	bad-thing	2	
-trouble	bad-thing	2	
+actually; in truth	in-true	1	
+problem; trouble	bad-thing	2	
 stubborn	hard-head		
-flatterer	sweet-mouth		
-smooth talker	sweet-mouth		
+flatterer; smooth talker	sweet-mouth		
+honest; frank; blunt	straight-say		
 thief	long-hand		
 unfriendly person	cold-person		
 mother	woman-parent	2	
@@ -108,134 +98,98 @@ sister	same-parent-woman
 brother	same-parent-man		
 boss	work-head		
 cook (person)	food-make-person	2	
-vendor	buy-person		
-shopkeeper	buy-person		
+vendor; shopkeeper	buy-person		
 school	learn-place		
+park	green-place		
+museum	art-home		
+cinema; movie theater	picture-home		
+theater; playhouse	play-home		
+playground	play-place		
+concert hall	music-home		
 office	work-room		
-hallway	go-room		
-corridor	go-room		
+hallway; corridor	go-room		
 station	vehicle-place	1	
 airplane	air-vehicle		
 airport	air-vehicle-place		
 mountain	up-earth		
 river	long-water		
 sea	big-water	1	
+shore; coast; riverbank	water-edge		
+beach; seashore	big-water-edge		
+border (of a country); frontier	country-edge		
+outskirts	city-edge		
+margin (of a page)	paper-edge		
 morning	up-sun	2	
-midday	middle-sun	2	
-noon	middle-sun	2	
+midday; noon	middle-sun	2	
 evening	down-sun		
 night	no-sun	2	
 north	map-up		
 south	map-down		
 east	map-right		
 west	map-left		
-road map	way-map		
-roadmap	way-map		
+road map; roadmap	way-map		
 electronic map	electric-map		
 business plan	buy-group-map		
 breakfast	up-sun-food	2	
-meal (a sitting)	food-time	1	
-mealtime	food-time	1	
+meal (a sitting); mealtime	food-time	1	
 glass (drinking vessel)	water-box		
-lamp	electric-sun		
-electric light	electric-sun		
-story	say-thing	1	
-tale	say-thing	1	
+lamp; electric light	electric-sun		
+story; tale	say-thing	1	
 question	what-word		
-reservation	before-agree		
-booking	before-agree		
+reservation; booking	before-agree		
 change (money returned)	back-money		
 party (celebration)	play-group		
 dance	music-go	2	
 exercise	heal-go		
 gym	heal-go-place		
 walk	leg-go		
-drive	vehicle-go	1	
-travel by vehicle	vehicle-go	1	
+drive; travel by vehicle	vehicle-go	1	
 hungry	food-want	1	
-pain	sick-feel		
-hurt	sick-feel		
-ache	sick-feel		
+pain; hurt; ache	sick-feel		
 thirsty	drink-want	2	
 busy	many-work		
 easy	not-hard		
-slow	not-fast	2	
-slowly	not-fast	2	
-that	not-this	1	
-those	not-this	1	
+slow; slowly	not-fast	2	
+that; those	not-this	1	
 weekend	seven-sun-close	2	
 tonight	this-no-sun	2	
 always	all-time		
 how	what-way		
-language	word-way		
-tongue (language)	word-way		
+language; tongue (language)	word-way		
 why	what-reason		
 what time	what-hour	1	
 sour	not-sweet		
-ask	want-say	1	
-request	want-say	1	
-we	self-group	1	
-us	self-group	1	
+ask; request	want-say	1	
+we; us	self-group	1	
 bicycle	leg-vehicle		
-public transit	line-vehicle		
-transit	line-vehicle		
+public transit; transit	line-vehicle		
 train	metal-line-vehicle		
 transit station (bus/train)	line-vehicle-place		
 eye	see-part	2	
 ear	hear-part		
 loud	big-hear		
-report	write-paper		
-document (written)	write-paper		
-writer	write-person	2	
-author	write-person	2	
-text	write-word		
-writing (text)	write-word		
-too	up-measure		
-too much	up-measure		
-excessively	up-measure		
-price	money-measure		
-fee	money-measure		
-cost	money-measure		
-not enough	not-all		
-insufficient	not-all		
-prepare	before-make	2	
-get ready	before-make	2	
-arrange	before-make	2	
-ready	before-close	1	
-prepared	before-close	1	
-therefore	this-reason		
-that's why	this-reason		
-for this reason	this-reason		
-finally	in-close	1	
-at last	in-close	1	
-in the end	in-close	1	
-eventually	in-close	1	
-important	big-need		
-significant	big-need		
-essential	big-need		
-major	big-need		
-kind (good-hearted)	good-feel		
-good-hearted	good-feel		
-kindness	good-feel		
-love	big-like	2	
-adore	big-like	2	
-be in love with	big-like	2	
-until	straight-to		
-till	straight-to		
-up to (in time)	straight-to		
-look like	same-see		
-resemble	same-see		
-take after	same-see		
-look alike	same-see		
-he	this-person	1	
-she	this-person	1	
-him	this-person	1	
-her	this-person	1	
-they (people)	this-person	1	
-them (people)	this-person	1	
-someone else	other-person		
-another person	other-person		
-others	other-person		
+report; document (written)	write-paper		
+writer; author	write-person	2	
+text; writing (text)	write-word		
+book	many-paper		
+library	many-paper-home		
+read	write-see	2	
+reader	write-see-person	2	
+too; too much; excessively	up-measure		
+price; fee; cost	money-measure		
+not enough; insufficient	not-all		
+prepare; get ready; arrange	before-make	2	
+ready; prepared	before-close	1	
+therefore; that's why; for this reason	this-reason		
+false; untrue; if (counterfactual)	not-true	1	
+finally; at last; in the end; eventually	in-close	1	
+important; significant; essential; major	big-need		
+kind (good-hearted); good-hearted; kindness	good-feel		
+love; adore; be in love with	big-like	2	
+until; till; up to (in time)	straight-to		
+look like; resemble; take after; look alike	same-see		
+he; she; him; her; they (people); them (people)	this-person	1	
+someone else; another person; others	other-person		
 relative clause marker	RI-TE		
 egg	bird-child		
 hotel	sleep-home		
@@ -249,45 +203,32 @@ pen (pen or pencil)	write-tool
 musical instrument	music-tool		
 cutlery	food-tool		
 knife (knife or scissors)	break-tool		
-wait a while	time-remain		
-wait around	time-remain		
-ride	vehicle-put		
-go by vehicle	vehicle-put		
+wait a while; wait around	time-remain		
+ride; go by vehicle	vehicle-put		
 seat	put-place		
 chair	put-tool		
-helper	help-person		
-waiter	help-person		
-attendant	help-person		
-servant	help-person		
-staff (person)	help-person		
+helper; waiter; attendant; servant; staff (person)	help-person		
 helpful	help-give		
 helpless	not-help		
 unhelpful	not-help-give		
-you-are-here map	help-map		
-directory map	help-map		
-orientation map	help-map		
+you-are-here map; directory map; orientation map	help-map		
 toy	play-tool		
 spouse	marry-person		
 earn	money-get		
-harvest	plant-get		
-expect	not-surprise		
-anticipate	not-surprise		
+harvest	plant-get	2	
+expect; anticipate	not-surprise		
 astonishment	big-surprise		
 rage	big-anger		
 annoyance	small-anger		
 calm	not-anger		
-serene	small-happy		
-relaxed	small-happy		
-peaceful	small-happy		
-sad	not-happy		
-grief	big-not-happy		
+serene; relaxed; peaceful	small-happy	1	
+sad	not-happy	1	
+grief	big-not-happy	1	
 brave	not-fear		
 pride	self-good-feel		
 shame	self-bad-feel		
-quiet	small-hear		
-soft (sound)	small-hear		
-tears	see-water		
-cry	see-water		
+quiet; soft (sound)	small-hear		
+tears; cry	see-water	2	
 respect	please-feel		
-politeness (verbal)	please-say		
+politeness (verbal)	please-say	1	
 courtesy	please-way		

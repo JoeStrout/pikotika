@@ -128,24 +128,29 @@ def level_compounds(rows, fields, t):
 
 
 def render_compounds(rows, t):
+    """One row per English term, though the TSV keeps one row per gloss.
+
+    A reader uses this table to look a word up, so the alternatives recorded
+    together as "theater; playhouse" are split back apart and alphabetized
+    separately.
+    """
     entries = []
     for row in rows:
-        english = (row.get('EN') or '').strip()
         gloss = (row.get('gloss') or '').strip()
-        if not english or not gloss:
+        if not gloss:
             continue
         words = pikotise.parse_gloss(gloss, t)
         if words is None:
             sys.exit(f'{COMPOUNDS_TSV}: cannot parse gloss {gloss!r}')
-        entries.append((english, gloss,
-                        pikotise.render_latin(words, t),
-                        pikotise.render_han(words, t)))
+        latin, han = pikotise.render_latin(words, t), pikotise.render_han(words, t)
+        for english in pikotise.split_alternatives(row.get('EN') or ''):
+            entries.append((english, gloss, latin, han))
     entries.sort(key=lambda e: (e[0].casefold(), e[0]))
     out = ['# Pikotise Compounds', '',
            f'{len(entries)} terms', '']
     out += table(['English', 'Gloss', 'Latin', 'Han'], entries)
     out.append('')
-    return '\n'.join(out)
+    return '\n'.join(out), len(entries)
 
 
 def main():
@@ -157,9 +162,10 @@ def main():
 
     t = pikotise.Tables(HERE)
     rows, fields = read_table(COMPOUNDS_TSV)
+    md, terms = render_compounds(rows, t)
     with open(COMPOUNDS_MD, 'w', encoding='utf-8') as f:
-        f.write(render_compounds(rows, t))
-    print(f'Wrote {COMPOUNDS_MD}: {len(rows)} compounds.')
+        f.write(md)
+    print(f'Wrote {COMPOUNDS_MD}: {terms} terms for {len(rows)} compounds.')
 
     leveled = level_compounds(rows, fields, t)
     rewrite(COMPOUNDS_TSV, rows, fields)

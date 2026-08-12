@@ -24,7 +24,6 @@ Issues will be removed as they are resolved.
   unrelated **ker**s: **Tuo ri sape a rinekaro ri eksire in kerora, ker?** ('Do you know when
   the train leaves?')  We have no rule saying what an in-situ **ker** scopes over.
 - **Comparative not documented.**  It's in our old grammar_1.md, but not in the current DETAILS.md file.
-- **No counterfactual.** "I should have started earlier" lost its regret entirely.
 - We haven't entirely decided where the aspect marker (apa/vin/sista) goes in all cases, particularly whether it goes right after the verb (if there is one) or at the end of the sentence (after the object).  I'm leaning towards the former, even if it complicates the rule a little.
 
 ## Tooling

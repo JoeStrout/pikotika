@@ -132,9 +132,10 @@ bend	Shape	bend, curve, turn, fold	kurva	弓	Latin curvus	3	1
 flat	Shape	flat, level, plane, sheet	yano	平	Spanish llano, Latin planus	5	0	
 line	Shape	line, thread, string, rope, wire	rine	糸	Latin linea	6	2	
 round	Shape	round, circular, curved, ball	rotun	丸	Latin rotundus	3	2	
-straight	Shape	straight, direct, upright	reto	直	Italian retto, Spanish recto	8	2	
+straight	Shape	straight, direct, nonstop, express, upright	reto	直	Italian retto, Spanish recto	8	2	
 back	Space and direction	behind, rear, reverse (front = `not-back`)	rets	反	Latin *retro-* — retro, retreat, retrograde; also covers *reverse*	4	2	
 down	Space and direction	below, low, bottom, under	tun	下	English *down*	3	1	
+edge	Space and direction	edge, side, border, boundary, rim, margin, shore	rante	边	German/Dutch *Rand*, Swedish *rand*; English *rim*	5	0
 far	Space and direction	far, distant, remote	ron	遠	Latin *longe*, Italian *lontano*, French *loin*	13	0	
 from	Space and direction	from, source, origin, out of	vons	从	"Latin *fons* ""source"" — coda cluster restores the clipped hook"	4	3	2
 hole	Space and direction	hole, gap, opening, empty space within	vuko	穴	Italian buco; Latin cavus	5	0	

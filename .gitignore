@@ -26,3 +26,6 @@ env/
 
 # macOS
 .DS_Store
+
+# private tools & notes
+private
