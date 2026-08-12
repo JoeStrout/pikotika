@@ -97,7 +97,7 @@ Right now almost all our roots are two syllables.  There is some scheme where on
 ## Root Additions
 
 The other half of the same question: if reductions freed up space, what would be
-worth spending it on?  What follows are concepts the current 185 roots do not touch,
+worth spending it on?  What follows are concepts the current 189 roots do not touch,
 where the workaround is either long, unguessable, or missing entirely.
 
 A concept belongs here only if *both* tests fail: no root covers it, and no short
@@ -117,11 +117,8 @@ the workaround is a definition rather than a word.
 |---|---|---|
 | **find** | opposite of **perti** 'lose', but *see-get* is wrong (you can find without looking) and *want-see* is searching, not finding | find, search, look for, discover, lost-and-found, look up, hunt |
 | **remember** | nothing in the set touches memory.  *not-forget* is circular; **sape** is the state of knowing, not its retention | remember, forget, memory, remind, memorize, souvenir, monument |
-| **try** | no root for attempt.  *want-do* is intention, *work* is effort with no sense of uncertain outcome | try, attempt, test, taste-test, practice, experiment, "let me try" |
-| **choose** | no root for selection.  *want-get* is desire, *think-after* is deliberation | choose, decide, pick, vote, option, menu, election, prefer |
 | **join** | nothing expresses connection.  **sam** is sameness and **kum** is conjunction; neither attaches two things | connect, attach, tie, link, network, internet, cable, relationship, join a group |
 | **carry** | *hand-go* and *with-go* both miss.  A traveler with a bag needs this constantly | carry, bring, take along, transport, luggage handling, delivery, wear |
-| ~~**fight**~~ | *Adopted 2026-08-12 as **patar** 争.*  It also unlocked 'peace' (*no-fight*), which nothing else in the set could reach | fight, argue, war, compete, sport, oppose, resist, protest |
 | **beautiful** | **pona** covers "pleasant", but *good-see* is faint praise for a concept this frequent in travel talk | beautiful, pretty, handsome, view, scenery, ugly (*not-*), decoration, style |
 | **heavy** | no root for weight, and weight is not derivable from **meka** 'big' or **turus** 'hard' | heavy, light, weight, mass, burden, luggage limit, scales, "how much does it weigh" |
 | **holy** | **temper** 'temple' exists with nothing to put in it -- no god, spirit, soul, or sacredness anywhere in the set | god, religion, spirit, soul, sacred, prayer, bless, church-vs-building, ghost |
@@ -162,8 +159,7 @@ single additions may not fix:
   nothing: no carry, push, pull, throw, drop, catch, turn (as an action), open-with-
   force.  The set can describe transfers of possession but not much physical handling.
 - **Cognition.**  **sape**, **pensa**, **impar**, **vite** -- knowing, thinking,
-  learning, understanding -- but no remembering, finding, choosing, trying, doubting,
-  or deciding.  The mental verbs we have are static states; the ones missing are the
+  learning, understanding -- but no remembering, finding, or doubting.  The mental verbs we have are static states; the ones missing are the
   processes.
 - **Belief and ceremony.**  **temper** and **maris** are the only two entries, and
   both name buildings or events rather than the things inside them.  A language meant

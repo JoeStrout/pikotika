@@ -30,6 +30,7 @@ group	General heads	group, set, collection, team, crowd	panto	众	*band, banda*	
 part	General heads	part, piece, portion, member	parte	分	*parte, part*	4	8	1
 person	General heads	person, human, one who, agent	omo	人	*homo, hombre, uomo*	2	8	1
 place	General heads	place, location, area, spot	roko	所	*loco, locus, location*	8	7	1
+sequence	General heads	sequence, order, series, rank, turn, position in a series	orten	序	*orden, ordine, ordre, order, ordinal*	7		
 thing	General heads	thing, object, item, matter	kosa	物	Spanish *cosa*, Italian *cosa*	8	11	1
 time	General heads	time, occasion, when, period	tempo	时	*tempo, tiempo, temporal*	7	7	1
 way	General heads	way, manner, method, road, path, route	moto	方	*modo, mode, method*	4	4	
@@ -158,6 +159,7 @@ agree	Verbs	agree, consent, contract, promise, deal	akor	約	Italian accordo, Sp
 become	Verbs	become, get, turn into, come to be; enter a state	tiven	成	Italian diventare	6	1	
 break	Verbs	break, cut, damage, ruin	rompe	切	*romper, rompere, rupture*	4	2	
 buy	Verbs	buy, purchase, sell, trade, commercial exchange	kompar	買	Spanish comprar; Latin emere	12	0	
+choose	Verbs	choose, decide, pick, select, elect, vote, opt	erike	选	*elegir, eleggere, eleger, elect, eligible*	9		
 come	Verbs	come, arrive, approach	veni	来	Latin venire	7	4	2
 feel	Verbs	feel, emotion, sense, touch	senti	心	*sentir, sentiment*	4	2	
 fight	Verbs	fight, battle, conflict, argue, compete, oppose, resist, struggle	patar	争	*battle, batalla, bataille, battaglia*; b -> p as elsewhere in the set	6		
@@ -183,6 +185,7 @@ sleep	Verbs	sleep, rest, bed, recharge, be dormant	tormi	床	*dormir, dormant*	7
 sorry	Verbs	sorry, apology, regret, excuse me	perton	悔	Spanish perdon; Italian scusa	9	3	1
 thank	Verbs	thank, gratitude, appreciation	mersi	恩	French merci; Spanish gracias	10	5	2
 think	Verbs	think, mind, idea, opinion, believe	pensa	思	*pensar, penser, pensive*	9	3	
+try	Verbs	try, attempt, test, try out, taste-test, sample, check, prove	propa	試	*probar, provare, probieren, probe, prove*	13		
 want	Verbs	want, desire, wish, hope	kere	求	Spanish *querer*, *quiero*	7	9	1
 work	Verbs	work, labor, job, effort, use	rapo	力	*labor, lavoro*	2	8	2
 write	Verbs	write, writing, text, script, inscribe, record	pena	写	pen, Latin penna, Italian penna, Spanish pluma; 写 is the modern CJK character	5	4	2

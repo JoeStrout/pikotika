@@ -93,6 +93,19 @@ Finally, here are things Pikotise does **not** have:
 
 ## Example Dialog
 
+Alice: Hello! I don't think we've met. I'm Alice.
+
+> _new-meet! self RI not think A self-group RI meet close. self RI Aris._
+
+> **Novasarve! Eko ri non pensa a ekopanto ri sarve vin. Eko ri Aris.**
+
+Bob: Hi Alice. I'm Bob. Nice to meet you.
+
+> _happy-meet, Aris. self RI Popu. self RI happy meet A you._
+
+> **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tuo.**
+
+Find much more translated dialog in [DIALOGS.md](DIALOGS.md).
 
 ## Ready to learn more?
 

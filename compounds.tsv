@@ -10,6 +10,7 @@ beef	milk-animal-meat
 lamb	small-milk-animal-meat		
 bus	many-person-vehicle		
 doctor	heal-person		
+medical test; checkup; examination (medical)	heal-try		
 window	see-hole		
 soup	water-food	1	
 spice	taste-thing		
@@ -100,6 +101,11 @@ boss	work-head
 cook (person)	food-make-person	2	
 vendor; shopkeeper	buy-person		
 school	learn-place		
+test (of knowledge); exam; quiz	know-try		
+practice; rehearse; rehearsal	try-learn		
+experiment	try-work		
+experience; experienced	try-know		
+proof; evidence; verify; confirm	try-true		
 park	green-place		
 museum	art-home		
 cinema; movie theater	picture-home		
@@ -108,6 +114,7 @@ playground	play-place
 concert hall	music-home		
 office	work-room		
 hallway; corridor	go-room		
+fitting room; changing room	cloth-try-room		
 station	vehicle-place	1	
 airplane	air-vehicle		
 airport	air-vehicle-place		
@@ -227,6 +234,22 @@ shop	buy-place
 week	seven-sun	2	
 illegal	not-law		
 crime	not-law-work		
+option; alternative; choice	choose-thing		
+decision; settle; make up one's mind	choose-close		
+vote; cast a ballot	choose-say		
+ballot	choose-paper		
+election	all-choose		
+second (in a series); 2nd	two-sequence		
+third (in a series); 3rd	three-sequence		
+last; final; the end (of a series)	close-sequence		
+next; the one after	after-sequence		
+previous; preceding; former; the one before	before-sequence		
+list; roster; register	name-sequence		
+queue; line (of people)	person-sequence		
+schedule; timetable	time-sequence		
+step (in a procedure)	sequence-part		
+sort; arrange; put in order	sequence-put		
+random; disordered; messy	not-sequence		
 pen (pen or pencil)	write-tool		
 musical instrument	music-tool		
 cutlery	food-tool		
