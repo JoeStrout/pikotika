@@ -71,7 +71,7 @@ metal	Material	metal, iron, gold, refined hard material	metar	金	Latin metallum
 oil	Material	oil, fat, grease	oren	油	Latin oleum	8	0	
 salt	Material	salt, savory mineral	sares	塩	Latin sal, Italian sale	13	0	
 stone	Material	stone, rock, mineral, hard natural material	rapis	岩	Latin lapis; Latin petra	8	0	
-air	Nature	air, wind, breath, gas, sky	vento	风	*vento, wind, ventilate*	4	1	
+air	Nature	air, wind, breath, gas, sky, weather	vento	风	*vento, wind, ventilate*	4	1	
 animal	Nature	animal, beast, creature (generic head)	peste	匹	*beast, bestia*	4	4	2
 bird	Nature	bird, fowl	avis	鳥	Latin avis	11	1	
 bug	Nature	insect, bug, spider, worm — small many-legged creature	inses	虫	Spanish insecto	6	0	
@@ -79,6 +79,7 @@ dog	Nature	dog, canine — includes wolf, fox, coyote	kanis	犬	Latin canis	4	0
 earth	Nature	ground, land, soil, floor, dirt	tera	土	*terra, terrain*	3	2	
 fire	Nature	fire, burn, heat, hot	voka	火	Portuguese *fogo*, Italian *fuoco*	4	4	
 plant	Nature	plant, tree, flower, wood	arpo	木	*arbor, árbol, arbre*	4	7	1
+rain	Nature	rain, precipitation	ruva	雨	Spanish *lluvia*, Latin *pluvia*; restored — scored rank 43 in the corpora, above `sun`	8		
 sun	Nature	sun, light, day, daytime, 24-hour period, bright	sore	日	*sol, sole, solar*	4	19	1
 water	Nature	water, liquid, fluid, wet	aku	水	*aqua, agua*	4	10	1
 A	Particles	object boundary	a	⇒	Spanish personal *a*, which marks objects: *veo **a** Juan*		46	2

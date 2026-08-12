@@ -1,6 +1,6 @@
 # Pikotise Compounds
 
-493 terms
+519 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -46,6 +46,8 @@
 | be dressed in | cloth-have | ropatene | 衣有 |
 | be in love with | big-like | mekakusta | 大愛 |
 | beach | big-water-edge | mekaakurante | 大水边 |
+| beautiful | good-see | ponavite | 好見 |
+| beauty | good-see | ponavite | 好見 |
 | beef | milk-animal-meat | ratenpestekarne | 乳匹肉 |
 | beer (any grain alcohol) | grain-fire-water | risovokaaku | 米火水 |
 | beige | grain-color | risokoror | 米色 |
@@ -82,6 +84,8 @@
 | choice | choose-thing | erikekosa | 选物 |
 | cinema | picture-home | piturkase | 画户 |
 | circle | round-line | rotunrine | 丸糸 |
+| cloud | rain-air | ruvavento | 雨风 |
+| cloudy | rain-air | ruvavento | 雨风 |
 | coast | water-edge | akurante | 水边 |
 | coffee | black-drink | neropipe | 黒飲 |
 | coin | metal-money | metarmoni | 金贝 |
@@ -111,12 +115,14 @@
 | depart | out-go | eksire | 外行 |
 | digit | measure-word | menseverpo | 寸言 |
 | directory map | help-map | servimapa | 助図 |
+| discover | new-see | novavite | 初見 |
 | disk | flat-round | yanorotun | 平丸 |
 | disordered | not-sequence | nonorten | 不序 |
 | do again | again-make | repevake | 又作 |
 | doctor | heal-person | sanaomo | 医人 |
 | document (written) | write-paper | penakarta | 写片 |
 | door handle | door-hand | portamanu | 門手 |
+| downpour | big-rain | mekaruva | 大雨 |
 | draw (in a contest) | same-become | samtiven | 同成 |
 | drive | vehicle-go | karoire | 车行 |
 | ear | hear-part | otiparte | 耳分 |
@@ -155,12 +161,14 @@
 | fighter | fight-person | pataromo | 争人 |
 | final | close-sequence | vinorten | 閉序 |
 | finally | in-close | invin | 内閉 |
+| find something new | new-see | novavite | 初見 |
 | firm | buy-group | komparpanto | 買众 |
 | first (in a series) | one-sequence | wunorten | 一序 |
 | fish | water-animal | akupeste | 水匹 |
 | fitting room | cloth-try-room | ropapropakamar | 衣試室 |
 | flat bread | flat-grain-food | yanorisokomi | 平米食 |
 | flatterer | sweet-mouth | tukepuka | 甘口 |
+| fog | water-air | akuvento | 水风 |
 | for this reason | this-reason | tiskas | 此故 |
 | forget | know-lose | sapeperti | 知失 |
 | former | before-sequence | yerorten | 前序 |
@@ -171,7 +179,9 @@
 | fried rice | oil-white-grain | orenrankoriso | 油白米 |
 | frontier | country-edge | nasyonrante | 国边 |
 | fruit | plant-child | arponino | 木子 |
+| gale | big-air | mekavento | 大风 |
 | gather | group-join | pantoyunta | 众合 |
+| get back | again-get | repetoma | 又取 |
 | get ready | before-make | yervake | 前作 |
 | glass (drinking vessel) | water-box | akuvaso | 水皿 |
 | gluten-free food | no-yellow-grain-food | nemyororisokomi | 无黄米食 |
@@ -181,6 +191,7 @@
 | goat | small-milk-animal | pikoratenpeste | 小乳匹 |
 | good luck | good-if | ponapos | 好可 |
 | good-hearted | good-feel | ponasenti | 好心 |
+| good-looking | good-see | ponavite | 好見 |
 | goodbye | sorry-out-go | pertoneksire | 悔外行 |
 | grey | stone-color | rapiskoror | 岩色 |
 | grief | big-not-happy | mekanonkonten | 大不楽 |
@@ -203,6 +214,7 @@
 | how | what-way | kermoto | 何方 |
 | hungry | food-want | komikere | 食求 |
 | hurt | sick-feel | marasenti | 病心 |
+| ice | hard-water | turusaku | 硬水 |
 | if (counterfactual) | not-true | nonves | 不真 |
 | illegal | not-law | nonreke | 不法 |
 | important | heavy-need | pesaneses | 重要 |
@@ -224,11 +236,13 @@
 | lemon | not-sweet-yellow-plant-child | nontukeyoroarponino | 不甘黄木子 |
 | library | many-paper-home | murkartakase | 多片户 |
 | light (in weight) | not-heavy | nonpesa | 不重 |
+| lightning | air-electric | ventovorto | 风電 |
 | lightweight | not-heavy | nonpesa | 不重 |
 | line (of people) | person-sequence | omoorten | 人序 |
 | list | name-sequence | nomenorten | 名序 |
 | long journey | far-come-go | ronveniire | 遠来行 |
 | look alike | same-see | samvite | 同見 |
+| look for | try-see | propavite | 試見 |
 | look like | same-see | samvite | 同見 |
 | look over again | again-see | repevite | 又見 |
 | lose a contest | not-up-become | nonsurtiven | 不上成 |
@@ -249,6 +263,7 @@
 | messy | not-sequence | nonorten | 不序 |
 | midday | middle-sun | metsesore | 中日 |
 | minute | part | parte | 分 |
+| mist | water-air | akuvento | 水风 |
 | moment | small-time | pikotempo | 小时 |
 | Monday | month-weekday | meseverya | 月曜 |
 | morning | up-sun | sursore | 上日 |
@@ -302,6 +317,7 @@
 | preceding | before-sequence | yerorten | 前序 |
 | prepare | before-make | yervake | 前作 |
 | prepared | before-close | yervin | 前閉 |
+| pretty | good-see | ponavite | 好見 |
 | prevail | up-become | surtiven | 上成 |
 | previous | before-sequence | yerorten | 前序 |
 | price | money-measure | monimens | 贝寸 |
@@ -318,7 +334,7 @@
 | quiet | small-hear | pikooti | 小耳 |
 | quiz | know-try | sapepropa | 知試 |
 | rage | big-anger | mekakoler | 大怒 |
-| rain | air-water | ventoaku | 风水 |
+| raincoat | rain-cloth | ruvaropa | 雨衣 |
 | random | not-sequence | nonorten | 不序 |
 | re-examine | again-see | repevite | 又見 |
 | read | write-see | penavite | 写見 |
@@ -327,6 +343,7 @@
 | recall | again-know | repesape | 又知 |
 | recollect | again-know | repesape | 又知 |
 | reconsider | again-think | repepensa | 又思 |
+| recover | again-get | repetoma | 又取 |
 | rectangle | four-bend | watsekurva | 4弓 |
 | redo | again-make | repevake | 又作 |
 | register | name-sequence | nomenorten | 名序 |
@@ -349,6 +366,7 @@
 | response | back-say | retsetise | 反云 |
 | retain | know-have | sapetene | 知有 |
 | rethink | again-think | repepensa | 又思 |
+| retrieve | again-get | repetoma | 又取 |
 | return | back-go | retsire | 反行 |
 | review | again-see | repevite | 又見 |
 | rice (white rice) | white-grain | rankoriso | 白米 |
@@ -367,11 +385,13 @@
 | schedule | time-sequence | tempoorten | 时序 |
 | school | learn-place | imparroko | 学所 |
 | sea | big-water | mekaaku | 大水 |
+| search | try-see | propavite | 試見 |
 | seashore | big-water-edge | mekaakurante | 大水边 |
 | seat | put-place | setaroko | 坐所 |
 | second (in a series) | two-sequence | pitsorten | 2序 |
 | second (of time) | small-part | pikoparte | 小分 |
 | see you later | after-meet | tarsarve | 后会 |
+| seek | try-see | propavite | 試見 |
 | serene | small-happy | pikokonten | 小楽 |
 | servant | help-person | serviomo | 助人 |
 | settle | choose-close | erikevin | 选閉 |
@@ -388,6 +408,7 @@
 | slowly | not-fast | nonveros | 不早 |
 | smell | air-taste | ventosapor | 风味 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
+| snow | cold-rain | yeruruva | 冷雨 |
 | soft (sound) | small-hear | pikooti | 小耳 |
 | soldier | fight-person | pataromo | 争人 |
 | someone else | other-person | aromo | 別人 |
@@ -403,11 +424,14 @@
 | staff (person) | help-person | serviomo | 助人 |
 | station | vehicle-place | karoroko | 车所 |
 | step (in a procedure) | sequence-part | ortenparte | 序分 |
+| storm | big-rain | mekaruva | 大雨 |
 | story | say-thing | tisekosa | 云物 |
+| strong wind | big-air | mekavento | 大风 |
 | stubborn | hard-head | turustesta | 硬头 |
 | study again | again-learn | repeimpar | 又学 |
 | suitcase | go-box | irevaso | 行皿 |
 | Sunday | sun-weekday | soreverya | 日曜 |
+| sunny | sun-air | sorevento | 日风 |
 | syllabus | learn-sequence | imparorten | 学序 |
 | take after | same-see | samvite | 同見 |
 | take along | have-go | teneire | 有行 |
@@ -455,6 +479,8 @@
 | trouble | bad-thing | marumkosa | 悪物 |
 | Tuesday | fire-weekday | vokaverya | 火曜 |
 | turnstile | money-door | moniporta | 贝門 |
+| ugly | bad-see | marumvite | 悪見 |
+| umbrella | rain-tool | ruvauter | 雨工 |
 | unfriendly person | cold-person | yeruomo | 冷人 |
 | unhelpful | not-help-give | nonservitare | 不助与 |
 | until | straight-to | retover | 直向 |

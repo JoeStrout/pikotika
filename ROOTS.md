@@ -1,6 +1,6 @@
 # Pikotise Roots
 
-195 entries in 19 groups.
+196 entries in 19 groups.
 
 ## Body and life (10)
 
@@ -114,11 +114,11 @@
 | salt | sares | 塩 | salt, savory mineral |
 | stone | rapis | 岩 | stone, rock, mineral, hard natural material |
 
-## Nature (10)
+## Nature (11)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
-| air | vento | 风 | air, wind, breath, gas, sky |
+| air | vento | 风 | air, wind, breath, gas, sky, weather |
 | animal | peste | 匹 | animal, beast, creature (generic head) |
 | bird | avis | 鳥 | bird, fowl |
 | bug | inses | 虫 | insect, bug, spider, worm — small many-legged creature |
@@ -126,6 +126,7 @@
 | earth | tera | 土 | ground, land, soil, floor, dirt |
 | fire | voka | 火 | fire, burn, heat, hot |
 | plant | arpo | 木 | plant, tree, flower, wood |
+| rain | ruva | 雨 | rain, precipitation |
 | sun | sore | 日 | sun, light, day, daytime, 24-hour period, bright |
 | water | aku | 水 | water, liquid, fluid, wet |
 

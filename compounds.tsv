@@ -229,7 +229,6 @@ someone else; another person; others	other-person
 relative clause marker	RI-TE		
 egg	bird-child		
 hotel	sleep-home		
-rain	air-water		
 relative (kin)	parent-group	2	
 shop	buy-place		
 week	seven-sun	2	
@@ -308,3 +307,18 @@ remember; retain; keep in mind; memory	know-have
 forget	know-lose		
 recall; recollect; call to mind	again-know		
 reconsider; rethink; think over	again-think		
+search; look for; seek	try-see		
+recover; get back; retrieve	again-get		
+discover; find something new	new-see	2	
+beautiful; pretty; good-looking; beauty	good-see	2	
+ugly	bad-see	2	
+cloud; cloudy	rain-air		
+fog; mist	water-air		
+sunny	sun-air		
+umbrella	rain-tool		
+raincoat	rain-cloth		
+gale; strong wind	big-air		
+storm; downpour	big-rain		
+lightning	air-electric		
+ice	hard-water		
+snow	cold-rain		
