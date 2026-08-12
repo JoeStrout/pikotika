@@ -363,7 +363,7 @@ Pia: How much is left?
 > **Ker mens ri sista?**
 
 Omar: The numbers are all there. But the last part isn't written.
-> **Pan nus ri in penakarta. Sets vin parte ri non pena vin.**
+> **Pan menseverpo ri in penakarta. Sets vin parte ri non pena vin.**
 
 Pia: Okay. Send me what you have and I'll write that part.
 > **Pona. Pam tare a tuo ri tene rite kosa ver eko, kum eko ri pena a nontis parte.**

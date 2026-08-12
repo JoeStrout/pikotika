@@ -154,6 +154,13 @@ that; those	not-this	1
 weekend	seven-sun-close	2	
 tonight	this-no-sun	2	
 always	all-time		
+everyone; everybody	all-person		
+everything	all-thing		
+everywhere	all-place		
+never	no-time	2	
+nobody; no one	no-person	2	
+nothing	no-thing	2	
+nowhere	no-place	2	
 how	what-way		
 language; tongue (language)	word-way		
 why	what-reason		
@@ -171,6 +178,7 @@ loud	big-hear
 report; document (written)	write-paper		
 writer; author	write-person	2	
 text; writing (text)	write-word		
+number; numeral; digit	measure-word		
 book	many-paper		
 library	many-paper-home		
 read	write-see	2	

@@ -246,9 +246,9 @@ For any other distance, count the days and add **yer** ('ago') or **tar** ('from
 | **tets sensesore yer** | 3 7日前 | three weeks ago |
 
 
-## Proper Nouns
+## Proper Nouns and Loan Words
 
-Proper nouns (names) are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotise phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.
+Proper nouns (names) as well as loan words like "penicillin" are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotise phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.
 
 **First, the sounds.**  Our alphabet has only ten consonants, so the missing ones move to their nearest neighbor -- which is always a sound already inside that letter's tolerance range, so the result still sounds right:
 
@@ -288,6 +288,17 @@ In general, it's not necessary to precede any suffix word with a name.  However,
 2. The name happens to sound the same as some Pikotise word, and might be confusing.  Example: Li (a common surname) sounds like **ri** (the particle), so you might use **omo Ri** = 'the person Li'.
 
 The category word is optional; you can leave it off and say just **Sumis** when the meaning is clear.  It is never considered curt or rude to do so.
+
+Loan words (words taken directly from another language, usually English) should be used sparingly, and only where it is likely to be widely known throughout the world.  These are generally technical or product names, or metric units, like these:
+
+| English | Pikotise |
+|---|---|
+| penicillin | penicillin |
+| meter | metoru |
+| liter | ritoru |
+| gram | kuramu |
+
+(Note that *meter* adds an extra "u" sound to the end, like in Japanese, to avoid sounding like **metar** (metal); *liter* and *gram* do the same for consistency.  The extra "u" is not necessary except to avoid confusion, as in this case.)
 
 ## Inventing Compounds
 

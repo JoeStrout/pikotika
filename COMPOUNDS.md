@@ -1,6 +1,6 @@
 # Pikotise Compounds
 
-326 terms
+338 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -68,6 +68,7 @@
 | dance | music-go | musiire | 曲行 |
 | decimal point | part | parte | 分 |
 | depart | out-go | eksire | 外行 |
+| digit | measure-word | menseverpo | 寸言 |
 | directory map | help-map | servimapa | 助図 |
 | disk | flat-round | yanorotun | 平丸 |
 | doctor | heal-person | sanaomo | 医人 |
@@ -85,6 +86,10 @@
 | essential | big-need | mekaneses | 大要 |
 | evening | down-sun | tunsore | 下日 |
 | eventually | in-close | invin | 内閉 |
+| everybody | all-person | panomo | 全人 |
+| everyone | all-person | panomo | 全人 |
+| everything | all-thing | pankosa | 全物 |
+| everywhere | all-place | panroko | 全所 |
 | excessively | up-measure | surmens | 上寸 |
 | exercise | heal-go | sanaire | 医行 |
 | expect | not-surprise | nonmira | 不奇 |
@@ -166,10 +171,17 @@
 | mud | water-earth | akutera | 水土 |
 | museum | art-home | artikase | 芸户 |
 | musical instrument | music-tool | musiuter | 曲工 |
+| never | no-time | nemtempo | 无时 |
 | night | no-sun | nemsore | 无日 |
+| no one | no-person | nemomo | 无人 |
+| nobody | no-person | nemomo | 无人 |
 | noon | middle-sun | metsesore | 中日 |
 | north | map-up | mapasur | 図上 |
 | not enough | not-all | nonpan | 不全 |
+| nothing | no-thing | nemkosa | 无物 |
+| nowhere | no-place | nemroko | 无所 |
+| number | measure-word | menseverpo | 寸言 |
+| numeral | measure-word | menseverpo | 寸言 |
 | nut | hard-plant-child | turusarponino | 硬木子 |
 | office | work-room | rapokamar | 力室 |
 | orange | red-yellow | ruperyoro | 赤黄 |

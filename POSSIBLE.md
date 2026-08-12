@@ -87,30 +87,12 @@ We could consider blessing a *secondary* gloss, and allowing the primary or seco
 
 Right now almost all our roots are two syllables.  There is some scheme where only function words are one syllable, or something like that; but I can't remember exactly what the rule is and I don't find it very useful.  More useful would be shorter compound words.  So, when we have a big catalog of compounds, we could take inventory, see which roots are most commonly used, and shorten them to single syllables that play nicely with their neighbors.  This should have a noticeable impact on the fluency of the language.
 
+(For some reason I find **verpo** especially grating; hopefully that will earn a chance to be shorter and more euphonious.)
+
 
 ## Root Reductions
 
-**Antonym pairs where one member could be `not-` the other.**  We already do this for
-front (`not-back`) and that/there (`not-this`), so the pattern is established:
-
-**Grammar and quantity overlaps.**  Small set, high frequency, so removals here are
-expensive -- but the overlaps are real:
-
-- **kan** 'able' (4) / **pos** 'if, possible' (2) -- two roots on the *posse*
-  concept, down from three now that **poten** is gone.  *pos* is the odd one,
-  glossed 'if' but covering "possible, chance, luck".
-- **mens** 'measure' (3) / **nus** 'number' (1) / **mur** 'many, quantity' (3) --
-  *nus* could be *number-word* or just *mens*.
-- **son** 'only' (2) / **wun** 'one' (10) -- *only* = *one-ly*, *just-one*.
-- **ves** 'true' (8) / **si** 'yes' (11) -- distinct classes (interjection vs
-  modifier), but the same content; **reto** 'straight, direct' adds "correct" on top.
-- **mas** 'more, again, another' (6) / **ar** 'other, different' (1) -- two roots
-  touching sameness and difference, opposite **sam**.
-- **panto** 'group' (11) / **pan** 'all' (6) -- near-homophones; *panto* is frequent
-  enough to keep, but the phonetic collision is worth noting on its own.
-- **katon** 'hundred' (3) / **kiru** 'thousand' (1) / **miron** 'million' (0) -- a
-  place-value system built from **tekas** could reach these, at a cost in length.
-
+(Currently all resolved.)
 
 ## Root Additions
 
@@ -187,3 +169,23 @@ single additions may not fix:
   both name buildings or events rather than the things inside them.  A language meant
   to scale past small talk will meet religion early.
 
+
+
+### Metric sub-unit prefixes
+
+Metric units are handled by loan words (**metoru**, **ritoru**, **kuramu** in
+`names.tsv`), and the *kilo-* prefix needs nothing new: **kiru** 'thousand' already
+gives **tets kiru metoru** '3 km', whose literal reading "three thousand meters" is
+arithmetically exact.  Mandarin builds 千米 the same way.
+
+What is not covered is the other direction.  Decimals reach it in writing -- 3 mm is
+**0.003 metoru** -- but nobody says that out loud, and small measurements are common
+in shops and repairs.  Mandarin's answer is native fraction words (厘 'hundredth',
+毫 'thousandth') rather than borrowed *centi-* and *milli-*, which suggests that if
+this gap bites, the fix is one Pikotise fraction root usable everywhere, not two
+borrowed prefixes usable only on units.
+
+**Why it is not in the language:** we have no observed need yet.  Adding *centi* and
+*milli* as loans would be cheap; adding a general fraction root would be better and
+is a bigger decision.  Waiting costs nothing, and the decimal workaround is correct
+in the meantime -- it is only clumsy in speech.

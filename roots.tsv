@@ -115,12 +115,11 @@ eight	Quantity	eight, 8	ots	8	Latin *octo*, Italian *otto*, Portuguese *oito*		1
 five	Quantity	five, 5	kins	5	Latin *quinque* (quintet, quintuple)		3	2
 four	Quantity	four, 4	wats	4	Latin *quattuor*, Spanish *cuatro* — /kw/ is an illegal onset, so /w/ carries it		4	2
 hundred	Quantity	hundred, 100, hundreds place	katon	百	Greek *hekaton* less the unstressed *he-* (hecatomb); *hekto-* is unwritable — no /h/, and /kt/ is an illegal coda	6	3	
-many	Quantity	many, much, lots, 6+, quantity	mur	多	*multi-*	6	3	
-measure	Quantity	measure, amount, degree, extent	mens	寸	Latin *mensura*, Spanish *mesura*, Italian *misura*	3	3	
+many	Quantity	many, much, lots, 6+	mur	多	*multi-*	6	3	
+measure	Quantity	measure, amount, degree, extent, quantity, count	mens	寸	Latin *mensura*, Spanish *mesura*, Italian *misura*	3	3	
 million	Quantity	million, 1000000, millions place	miron	兆	Latin *milione*, Spanish *millon*, French *million*; *mega* is unavailable — meka is already big	6	0	
 nine	Quantity	nine, 9	noks	9	Latin *novem*, Italian *nove*, Spanish *nueve*		1	2
-no	Quantity	zero, none, nothing, absent	nem	无	"Latin *nemo* ""no one"""	4	7	2
-number	Quantity	number, count, quantity	nus	号	Latin *numerus*, Spanish *numero*	5	1	2
+no	Quantity	zero, none, absent	nem	无	"Latin *nemo* ""no one"""	4	7	2
 one	Quantity	one, single, first, alone, the very	wun	一	English *one*, Spanish *uno*	1	10	1
 seven	Quantity	seven, 7	sens	7	Latin *septem*, French *sept*, Italian *sette*		3	2
 six	Quantity	six, 6	siks	6	Latin *sex*, French/English *six*, Spanish *seis*		5	2
@@ -187,4 +186,4 @@ want	Verbs	want, desire, wish, hope	kere	求	Spanish *querer*, *quiero*	7	9	1
 work	Verbs	work, labor, job, effort, use	rapo	力	*labor, lavoro*	2	8	2
 write	Verbs	write, writing, text, script, inscribe, record	pena	写	pen, Latin penna, Italian penna, Spanish pluma; 写 is the modern CJK character	5	4	2
 name	Word	name, title, label	nomen	名	Latin nomen	6	1	2
-word	Word	word, language, speech, message, number	verpo	言	*verbo, verb, verbum*	7	2	
+word	Word	word, language, speech, message	verpo	言	*verbo, verb, verbum*	7	2	

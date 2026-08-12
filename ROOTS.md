@@ -1,6 +1,6 @@
 # Pikotise Roots
 
-189 entries in 19 groups.
+188 entries in 19 groups.
 
 ## Body and life (10)
 
@@ -179,7 +179,7 @@
 | old | vetus | 古 | old, aged, former, past |
 | small | piko | 小 | small, little, slight, minor |
 
-## Quantity (17)
+## Quantity (16)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
@@ -187,12 +187,11 @@
 | five | kins | 5 | five, 5 |
 | four | wats | 4 | four, 4 |
 | hundred | katon | 百 | hundred, 100, hundreds place |
-| many | mur | 多 | many, much, lots, 6+, quantity |
-| measure | mens | 寸 | measure, amount, degree, extent |
+| many | mur | 多 | many, much, lots, 6+ |
+| measure | mens | 寸 | measure, amount, degree, extent, quantity, count |
 | million | miron | 兆 | million, 1000000, millions place |
 | nine | noks | 9 | nine, 9 |
-| no | nem | 无 | zero, none, nothing, absent |
-| number | nus | 号 | number, count, quantity |
+| no | nem | 无 | zero, none, absent |
 | one | wun | 一 | one, single, first, alone, the very |
 | seven | sens | 7 | seven, 7 |
 | six | siks | 6 | six, 6 |
@@ -284,4 +283,4 @@
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | name | nomen | 名 | name, title, label |
-| word | verpo | 言 | word, language, speech, message, number |
+| word | verpo | 言 | word, language, speech, message |

@@ -276,17 +276,6 @@ def clock_words(word):
         (counting_words(int(minute)) if int(minute) else [])
 
 
-def clock_words(word):
-    """'9:30' -> [[nine], [hour], [three], [ten]].  None if not a clock time."""
-    hour, mark, minute = word.partition(":")
-    if not mark or not hour.isdigit() or not minute.isdigit():
-        return None
-    if not 1 <= len(hour) <= 2 or len(minute) != 2 or int(minute) > 59:
-        return None
-    return counting_words(int(hour)) + [[CLOCK_MARK]] + \
-        (counting_words(int(minute)) if int(minute) else [])
-
-
 def numeral_words(word):
     """The several words a written numeral is read as, or None if it is not one.
 
@@ -296,6 +285,25 @@ def numeral_words(word):
     if word.isdigit():
         return counting_words(int(word))
     return decimal_words(word) or clock_words(word)
+
+
+# A numeral is written with digits but read as several words, and the two must not
+# be confused: 1.25 is *read* `one part two five` but stays **1.25** on the page, in
+# Latin and Han alike (DETAILS.md, "## Numbers").  So a written numeral is kept as
+# one word carrying both -- the digits it was written with, and the words it is read
+# as -- and each notation takes the half it needs.  Deriving the digits back from the
+# reading is what loses `.` and `:`, and turns 12345 into `十 2 千, 3 百 4 十 5`.
+def numeral_word(text, reading):
+    return ("NUMERAL", text, reading)
+
+
+def is_numeral(w):
+    return isinstance(w, tuple) and len(w) == 3 and w[0] == "NUMERAL"
+
+
+def expand_numerals(words):
+    """The word list with each written numeral replaced by the words it reads as."""
+    return [x for w in words for x in (w[2] if is_numeral(w) else [w])]
 
 
 def name_token(english):
@@ -384,7 +392,7 @@ def parse_gloss(text, t, fail=None):
             continue
         numeral = numeral_words(word)
         if numeral is not None:
-            words += numeral
+            words.append(numeral_word(word, numeral))
             continue
         upper = word.upper()
         if upper in PARTICLE_ALIASES:
@@ -460,7 +468,7 @@ def parse_latin(text, t, fail=None):
             continue
         numeral = numeral_words(word)
         if numeral is not None:
-            words += numeral
+            words.append(numeral_word(word, numeral))
             continue
         low = word.lower()
         gloss = t.form2gloss.get(low)
@@ -486,7 +494,7 @@ def parse_han(text, t, fail=None):
             continue
         numeral = numeral_words(word)
         if numeral is not None:
-            words += numeral
+            words.append(numeral_word(word, numeral))
             continue
         # no digit shortcut here: the characters for two..nine *are* the digits,
         # so the per-character lookup below is what resolves them
@@ -595,7 +603,9 @@ def parse(text, t, fail=None):
 def render_gloss(words, t):
     out = []
     for w in words:
-        if is_punct(w):
+        if is_numeral(w):
+            out.append(render_gloss(w[2], t))
+        elif is_punct(w):
             out.append(w)
         elif len(w) == 1 and not is_name(w[0]) and t.is_particle(w[0]):
             out.append(PARTICLE_GLOSS[w[0]])
@@ -608,6 +618,9 @@ def render_gloss(words, t):
 def render_latin(words, t):
     out = []
     for w in words:
+        if is_numeral(w):
+            out.append(render_latin(w[2], t))
+            continue
         if is_punct(w):
             out.append(w)
             continue
@@ -620,6 +633,9 @@ def render_latin(words, t):
 def render_han(words, t):
     out = []
     for w in words:
+        if is_numeral(w):
+            out.append(w[1])          # digits stay digits, `.` and `:` included
+            continue
         if is_punct(w):
             out.append(w)
             continue
@@ -635,7 +651,7 @@ def render_han(words, t):
 
 def english_match(words, t):
     """Exact English equivalents, when the whole query is one root or compound."""
-    words = [w for w in words if not is_punct(w)]
+    words = [w for w in expand_numerals(words) if not is_punct(w)]
     if len(words) != 1:
         return []
     word = words[0]
