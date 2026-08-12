@@ -1,6 +1,6 @@
 # Pikotise Roots
 
-189 entries in 19 groups.
+195 entries in 19 groups.
 
 ## Body and life (10)
 
@@ -49,7 +49,7 @@
 | milk | raten | 乳 | milk, dairy, cream |
 | sweet | tuke | 甘 | sweet, sugar, dessert-quality |
 
-## General heads (7)
+## General heads (8)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
@@ -57,22 +57,24 @@
 | part | parte | 分 | part, piece, portion, member |
 | person | omo | 人 | person, human, one who, agent |
 | place | roko | 所 | place, location, area, spot |
+| sequence | orten | 序 | sequence, order, series, rank, turn, position in a series |
 | thing | kosa | 物 | thing, object, item, matter |
 | time | tempo | 时 | time, occasion, when, period |
 | way | moto | 方 | way, manner, method, road, path, route |
 
-## Grammar and logic (19)
+## Grammar and logic (20)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | able | kan | 能 | can, able, ability, skill, capable |
 | about | tem | 件 | about, concerning, regarding, on the topic of, pertaining to |
+| again | repe | 又 | again, repeat, once more, re- |
 | all | pan | 全 | every, whole, total, complete, enough |
 | and | kum | 并 | and, with, also, plus |
 | but | sets | 但 | but, however, although, contrast |
 | for | par | 為 | for, purpose, in order to, recipient, for the benefit of |
 | if | pos | 可 | maybe, possible, chance, luck, condition |
-| more | mas | 又 | more, again, comparative, extra, another |
+| more | mas | 更 | more, comparative, extra, another |
 | not | non | 不 | no, un-, opposite, negation, without |
 | only | son | 只 | only, just, merely, sole |
 | or | vem | 或 | or, alternative, either |
@@ -162,7 +164,7 @@
 | music | musi | 曲 | music, song, melody |
 | temple | temper | 寺 | temple, shrine, church, sacred place |
 
-## Qualities (12)
+## Qualities (13)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
@@ -174,6 +176,7 @@
 | fear | timo | 危 | fear, afraid, danger, worry |
 | good | pona | 好 | good, well, fine, pleasant |
 | hard | turus | 硬 | hard, firm, solid, rigid, difficult |
+| heavy | pesa | 重 | heavy, weight, weigh, dense |
 | long | ronka | 长 | long, tall, distant, extended |
 | new | nova | 初 | new, young, recent, fresh |
 | old | vetus | 古 | old, aged, former, past |
@@ -242,7 +245,7 @@
 | weekday | verya | 曜 | named day of the week (Japanese 曜) |
 | year | anyo | 年 | year, annual cycle |
 
-## Verbs (32)
+## Verbs (35)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
@@ -250,6 +253,7 @@
 | become | tiven | 成 | become, get, turn into, come to be; enter a state |
 | break | rompe | 切 | break, cut, damage, ruin |
 | buy | kompar | 買 | buy, purchase, sell, trade, commercial exchange |
+| choose | erike | 选 | choose, decide, pick, select, elect, vote, opt |
 | come | veni | 来 | come, arrive, approach |
 | feel | senti | 心 | feel, emotion, sense, touch |
 | fight | patar | 争 | fight, battle, conflict, argue, compete, oppose, resist, struggle |
@@ -259,6 +263,7 @@
 | have | tene | 有 | have, hold, own, possess, keep |
 | hear | oti | 耳 | hear, listen, sound, noise |
 | help | servi | 助 | help, assist, serve, care for |
+| join | yunta | 合 | join, connect, combine, attach, unite, link, mix |
 | know | sape | 知 | know, be informed of, information |
 | learn | impar | 学 | learn, study, acquire knowledge |
 | lose | perti | 失 | lose (misplace), lost, miss, misplace |
@@ -275,6 +280,7 @@
 | sorry | perton | 悔 | sorry, apology, regret, excuse me |
 | thank | mersi | 恩 | thank, gratitude, appreciation |
 | think | pensa | 思 | think, mind, idea, opinion, believe |
+| try | propa | 試 | try, attempt, test, try out, taste-test, sample, check, prove |
 | want | kere | 求 | want, desire, wish, hope |
 | work | rapo | 力 | work, labor, job, effort, use |
 | write | pena | 写 | write, writing, text, script, inscribe, record |

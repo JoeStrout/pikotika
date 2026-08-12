@@ -102,6 +102,7 @@ cook (person)	food-make-person	2
 vendor; shopkeeper	buy-person		
 school	learn-place		
 test (of knowledge); exam; quiz	know-try		
+curriculum; syllabus; course of study	learn-sequence		
 practice; rehearse; rehearsal	try-learn		
 experiment	try-work		
 experience; experienced	try-know		
@@ -218,7 +219,7 @@ ready; prepared	before-close	1
 therefore; that's why; for this reason	this-reason		
 false; untrue; if (counterfactual)	not-true	1	
 finally; at last; in the end; eventually	in-close	1	
-important; significant; essential; major	big-need		
+important; significant; essential; major	heavy-need		
 kind (good-hearted); good-hearted; kindness	good-feel		
 love; adore; be in love with	big-like	2	
 until; till; up to (in time)	straight-to		
@@ -239,8 +240,11 @@ decision; settle; make up one's mind	choose-close
 vote; cast a ballot	choose-say		
 ballot	choose-paper		
 election	all-choose		
+first (in a series); 1st	one-sequence		
 second (in a series); 2nd	two-sequence		
 third (in a series); 3rd	three-sequence		
+fourth (in a series); 4th	four-sequence		
+fifth (in a series); 5th	five-sequence		
 last; final; the end (of a series)	close-sequence		
 next; the one after	after-sequence		
 previous; preceding; former; the one before	before-sequence		
@@ -283,3 +287,24 @@ tears; cry	see-water	2
 respect	please-feel		
 politeness (verbal)	please-say	1	
 courtesy	please-way		
+collect; gather	group-join		
+junction; intersection; crossroads	way-join		
+carry; take along; transport	have-go	2	
+bring	have-come	2	
+fetch; go and get	get-go	2	
+luggage; suitcase; baggage	go-box		
+wear; be dressed in; have on	cloth-have		
+light (in weight); lightweight	not-heavy		
+weigh; measure the weight of	heavy-measure		
+caution; careful; cautious; watch out	fear-see		
+warn; warning; alert	fear-say		
+attention; pay attention; attend to; attentive	think-give		
+redo; remake; do again	again-make		
+repeat; say again	again-say		
+relearn; study again	again-learn		
+review; re-examine; look over again	again-see		
+reply; answer; respond; response	back-say		
+remember; retain; keep in mind; memory	know-have		
+forget	know-lose		
+recall; recollect; call to mind	again-know		
+reconsider; rethink; think over	again-think		

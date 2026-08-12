@@ -320,7 +320,7 @@ Mira: Hard at first, but now I like it. The people are kind.
 > **In yer, turus; sets tistempo eko ri kusta a tis. Omo ri ponasenti.**
 
 Nils: That's the important thing.
-> **Tis ri mekaneses kosa.**
+> **Tis ri pesaneses kosa.**
 
 Mira: How are the children?
 > **Tuo nino ri ker?**

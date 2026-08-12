@@ -115,6 +115,8 @@ Use no thousands separators when writing Pikotise numbers (the world can't agree
 
 On decimals: use `.` for the decimal point.  For example, one and a quarter would be written **1.25**.  The `.` is pronounced **parte**, so **1.25** is read **wun parte pits kins**.
 
+For ordinal numbers (first, second, etc.), just append **sorten** ('sequence') to the number.  For example, 5th would be five-sequence or **kinsorten**.
+
 ### Han Characters
 
 Even though numbers are normally written in Arabic numerals, the numbers zero and one, as well as the powers of ten, _do_ have Han characters, for when you use them as words (e.g. "you're one in a million").  
@@ -315,7 +317,7 @@ There are only a couple rules to apply when making a compound word:
 1. If the original phrase included a TE particle, leave it out.  Example: *yoro te arponino* ('yellow fruit') → **yoroarponino** (yellow fruit, usually banana).
 2. If one of the roots ends in `-ts`, `-ns`, or `-ks`, and the next root starts with a consonant, you will need to insert an `e` between them.  Example: *tets kurva* ('three angles') → **tetsekurva** ('triangle').
 
-Collapsing a phrase does more than save a syllable or two: it can fix a meaning.  A compound is a single word, so it may settle on one reading while the spaced phrase keeps the plain, literal one.  Take **non konten**, two words, which says only 'not happy' -- the neutral state of someone who simply isn't cheerful.  Collapse it to **nonkonten** and you get 'sad', because **non** covers 'un-' as well as 'not', and the compound takes the un- reading.  The other negated feelings split the same way: **nonkoler** 'calm' beside **non koler** 'not angry', **nontimo** 'brave' beside **non timo** 'not afraid', **nonmira** 'expect' beside **non mira** 'not surprised'.  In each pair the compound names a positive state, while the phrase merely denies something.  So when you need the bare denial and nothing more, keep the space.
+Collapsing a phrase does more than save a syllable or two: it can fix a meaning.  A compound is a single word, so it may settle on one reading while the spaced phrase keeps the plain, literal one.  Take **non konten**, two words, which says only 'not happy' -- the neutral state of someone who simply isn't cheerful.  Collapse it to **nonkonten** and you get 'sad', because **non** covers 'un-' as well as 'not', and the compound takes the un- reading.
 
 Compounds that have caught on and become standard words are collected in [COMPOUNDS.md](COMPOUNDS.md).  Check there before coining something new -- if a compound is already in general use, that's the one to reach for.
 

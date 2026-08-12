@@ -117,14 +117,7 @@ the workaround is a definition rather than a word.
 |---|---|---|
 | **find** | opposite of **perti** 'lose', but *see-get* is wrong (you can find without looking) and *want-see* is searching, not finding | find, search, look for, discover, lost-and-found, look up, hunt |
 | **remember** | nothing in the set touches memory.  *not-forget* is circular; **sape** is the state of knowing, not its retention | remember, forget, memory, remind, memorize, souvenir, monument |
-| **join** | nothing expresses connection.  **sam** is sameness and **kum** is conjunction; neither attaches two things | connect, attach, tie, link, network, internet, cable, relationship, join a group |
-| **carry** | *hand-go* and *with-go* both miss.  A traveler with a bag needs this constantly | carry, bring, take along, transport, luggage handling, delivery, wear |
 | **beautiful** | **pona** covers "pleasant", but *good-see* is faint praise for a concept this frequent in travel talk | beautiful, pretty, handsome, view, scenery, ugly (*not-*), decoration, style |
-| **heavy** | no root for weight, and weight is not derivable from **meka** 'big' or **turus** 'hard' | heavy, light, weight, mass, burden, luggage limit, scales, "how much does it weigh" |
-| **holy** | **temper** 'temple' exists with nothing to put in it -- no god, spirit, soul, or sacredness anywhere in the set | god, religion, spirit, soul, sacred, prayer, bless, church-vs-building, ghost |
-
-Other ideas:
-- collect/gather
 
 
 ### Worth considering

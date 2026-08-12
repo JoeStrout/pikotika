@@ -36,12 +36,13 @@ time	General heads	time, occasion, when, period	tempo	时	*tempo, tiempo, tempor
 way	General heads	way, manner, method, road, path, route	moto	方	*modo, mode, method*	4	4	
 able	Grammar and logic	can, able, ability, skill, capable	kan	能	"English *can*, German *kann*, Dutch/Swedish/Danish/Norwegian *kan* — all ""be able"", the same spelling across Germanic"	10	4	2
 about	Grammar and logic	about, concerning, regarding, on the topic of, pertaining to	tem	件	"*tema* ""topic"""	6	1	2
+again	Grammar and logic	again, repeat, once more, re-	repe	又	Latin *repetere* — *repeat, repetir, répéter, ripetere*	2		
 all	Grammar and logic	every, whole, total, complete, enough	pan	全	*pan-* (pandemic, pan-American)	6	3	
 and	Grammar and logic	and, with, also, plus	kum	并	"Latin *cum* ""with"" — and our `and` covers *with*"	6	18	1
 but	Grammar and logic	but, however, although, contrast	sets	但	Latin *sed*	7	7	2
 for	Grammar and logic	for, purpose, in order to, recipient, for the benefit of	par	為	Latin *per, pro*; Spanish *por*	9	5	2
 if	Grammar and logic	maybe, possible, chance, luck, condition	pos	可	*possible, posible, possibile, possível* — the *posse* branch that kept the sense of chance rather than ability	5	2	
-more	Grammar and logic	more, again, comparative, extra, another	mas	又	Spanish *más*	2	6	2
+more	Grammar and logic	more, comparative, extra, another	mas	更	Spanish *más*; 更 is the Chinese comparative adverb — 又 went to `again`	7	6	2
 not	Grammar and logic	no, un-, opposite, negation, without	non	不	Latin *non*	4	25	1
 only	Grammar and logic	only, just, merely, sole	son	只	Latin *solus*, Spanish *solo*	5	2	2
 or	Grammar and logic	or, alternative, either	vem	或	Latin *vel*	8	2	
@@ -108,6 +109,7 @@ fast	Qualities	fast, quick, rapid, soon	veros	早	Spanish veloz; Latin celer	6	4
 fear	Qualities	fear, afraid, danger, worry	timo	危	*timor, timid*	6	0	
 good	Qualities	good, well, fine, pleasant	pona	好	*bueno, bonus, buono*	6	23	1
 hard	Qualities	hard, firm, solid, rigid, difficult	turus	硬	Latin durus	12	2	
+heavy	Qualities	heavy, weight, weigh, dense	pesa	重	Spanish/Portuguese/Italian *peso*, French *peser*, Latin *pendere*/*pensum*; the currency is literally 'a weight'	9		
 long	Qualities	long, tall, distant, extended	ronka	长	*long, lungo, largo*	4	5	
 new	Qualities	new, young, recent, fresh	nova	初	*nova, nuevo, novel*	7	3	1
 old	Qualities	old, aged, former, past	vetus	古	Latin vetus; Latin antiquus	5	1	
@@ -169,6 +171,7 @@ go	Verbs	go, move, travel, proceed, movement	ire	行	Latin *ire*, Spanish *ir*	6
 have	Verbs	have, hold, own, possess, keep	tene	有	*tener, tenir, tenere*	6	6	2
 hear	Verbs	hear, listen, sound, noise	oti	耳	*audio, oír, udire*	6	3	
 help	Verbs	help, assist, serve, care for	servi	助	*serve, servir* — our `help` covers *serve, care for*	7	0	
+join	Verbs	join, connect, combine, attach, unite, link, mix	yunta	合	Spanish/Portuguese *juntar*/*junto*, Latin *iungere* (junction, adjoin); English *join*, *yoke*; Sanskrit *yuj-* -> *yoga* 'union'; Hindi *jodna*	6		
 know	Verbs	know, be informed of, information	sape	知	*saber, savoir, sapere*	8	3	
 learn	Verbs	learn, study, acquire knowledge	impar	学	Latin discere; Italian imparare; tiske was displaced	8	2	
 lose	Verbs	lose (misplace), lost, miss, misplace	perti	失	Latin perdere	5	0	
