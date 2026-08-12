@@ -121,7 +121,7 @@ the workaround is a definition rather than a word.
 | **choose** | no root for selection.  *want-get* is desire, *think-after* is deliberation | choose, decide, pick, vote, option, menu, election, prefer |
 | **join** | nothing expresses connection.  **sam** is sameness and **kum** is conjunction; neither attaches two things | connect, attach, tie, link, network, internet, cable, relationship, join a group |
 | **carry** | *hand-go* and *with-go* both miss.  A traveler with a bag needs this constantly | carry, bring, take along, transport, luggage handling, delivery, wear |
-| **fight** | no root for conflict.  *not-friend* gives 'enemy' but nothing for the act | fight, argue, war, compete, sport, oppose, resist, protest |
+| ~~**fight**~~ | *Adopted 2026-08-12 as **patar** 争.*  It also unlocked 'peace' (*no-fight*), which nothing else in the set could reach | fight, argue, war, compete, sport, oppose, resist, protest |
 | **beautiful** | **pona** covers "pleasant", but *good-see* is faint praise for a concept this frequent in travel talk | beautiful, pretty, handsome, view, scenery, ugly (*not-*), decoration, style |
 | **heavy** | no root for weight, and weight is not derivable from **meka** 'big' or **turus** 'hard' | heavy, light, weight, mass, burden, luggage limit, scales, "how much does it weigh" |
 | **holy** | **temper** 'temple' exists with nothing to put in it -- no god, spirit, soul, or sacredness anywhere in the set | god, religion, spirit, soul, sacred, prayer, bless, church-vs-building, ghost |

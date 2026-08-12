@@ -14,6 +14,18 @@ ways of writing the language:
 
 Run with no arguments for an interactive prompt, or pass the query on the
 command line for a single lookup.  No network and no model — just the tables.
+
+Known bugs in this tool (issues with the *language* go in KNOWN_ISSUES.md; this
+list is for defects in the code):
+
+  - A numeral written against a following character in Han, with no space, is
+    parsed as a compound rather than as a numeral plus a word.  DETAILS.md
+    ("Dates") blesses exactly that spacing for years, so **2026年** is legal
+    input, but it comes back as Latin `2026anyo` written solid instead of
+    **pits kiru, pits tekas siks anyo**.  Not a simple fix: `2行片`
+    (*2-go-paper*) really is a digit-initial compound, so the two forms are
+    structurally identical and telling them apart needs a rule the language
+    does not currently have.  Spelling the year with a space parses correctly.
 """
 
 import csv

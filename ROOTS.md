@@ -1,6 +1,6 @@
 # Pikotise Roots
 
-188 entries in 19 groups.
+189 entries in 19 groups.
 
 ## Body and life (10)
 
@@ -242,7 +242,7 @@
 | weekday | verya | 曜 | named day of the week (Japanese 曜) |
 | year | anyo | 年 | year, annual cycle |
 
-## Verbs (31)
+## Verbs (32)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
@@ -252,6 +252,7 @@
 | buy | kompar | 買 | buy, purchase, sell, trade, commercial exchange |
 | come | veni | 来 | come, arrive, approach |
 | feel | senti | 心 | feel, emotion, sense, touch |
+| fight | patar | 争 | fight, battle, conflict, argue, compete, oppose, resist, struggle |
 | get | toma | 取 | get, take, receive, obtain, catch |
 | give | tare | 与 | give, offer, send, provide |
 | go | ire | 行 | go, move, travel, proceed, movement |
@@ -260,7 +261,7 @@
 | help | servi | 助 | help, assist, serve, care for |
 | know | sape | 知 | know, be informed of, information |
 | learn | impar | 学 | learn, study, acquire knowledge |
-| lose | perti | 失 | lose, lost, miss, misplace |
+| lose | perti | 失 | lose (misplace), lost, miss, misplace |
 | make | vake | 作 | make, do, build, create, cause |
 | meet | sarve | 会 | meet, encounter, run into, come together with |
 | need | neses | 要 | need, require, must, necessary, have to |

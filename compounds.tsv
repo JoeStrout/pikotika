@@ -144,6 +144,26 @@ exercise	heal-go
 gym	heal-go-place		
 walk	leg-go		
 drive; travel by vehicle	vehicle-go	1	
+trip; journey	come-go	2	
+voyage; long journey	far-come-go		
+vacation; holiday	play-come-go		
+business trip	work-come-go	2	
+return; go back	back-go		
+adventure	fear-play		
+adventure trip; expedition	fear-come-go		
+adventurer	fear-play-person		
+win; prevail	up-become		
+be defeated; lose a contest; lose a game	not-up-become		
+tie; draw (in a contest)	same-become		
+winner	up-become-person		
+war	big-fight		
+contest; match; competition	play-fight		
+argue; quarrel	word-fight		
+peace	no-fight		
+sport; athletics	body-play		
+fighter; soldier	fight-person		
+army	fight-group		
+enemy	not-friend		
 hungry	food-want	1	
 pain; hurt; ache	sick-feel		
 thirsty	drink-want	2	

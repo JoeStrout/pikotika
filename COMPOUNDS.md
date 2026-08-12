@@ -1,12 +1,15 @@
 # Pikotise Compounds
 
-338 terms
+372 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
 | ache | sick-feel | marasenti | 病心 |
 | actually | in-true | inves | 内真 |
 | adore | big-like | mekakusta | 大愛 |
+| adventure | fear-play | timoruti | 危玩 |
+| adventure trip | fear-come-go | timoveniire | 危来行 |
+| adventurer | fear-play-person | timorutiomo | 危玩人 |
 | airplane | air-vehicle | ventokaro | 风车 |
 | airport | air-vehicle-place | ventokaroroko | 风车所 |
 | alcohol (usually wine) | fire-water | vokaaku | 火水 |
@@ -15,13 +18,17 @@
 | annoyance | small-anger | pikokoler | 小怒 |
 | another person | other-person | aromo | 別人 |
 | anticipate | not-surprise | nonmira | 不奇 |
+| argue | word-fight | verpopatar | 言争 |
+| army | fight-group | patarpanto | 争众 |
 | arrange | before-make | yervake | 前作 |
 | ask | want-say | keretise | 求云 |
 | astonishment | big-surprise | mekamira | 大奇 |
 | at last | in-close | invin | 内閉 |
+| athletics | body-play | korporuti | 体玩 |
 | attendant | help-person | serviomo | 助人 |
 | author | write-person | penaomo | 写人 |
 | banana | long-yellow-plant-child | ronkayoroarponino | 长黄木子 |
+| be defeated | not-up-become | nonsurtiven | 不上成 |
 | be in love with | big-like | mekakusta | 大愛 |
 | beach | big-water-edge | mekaakurante | 大水边 |
 | beef | milk-animal-meat | ratenpestekarne | 乳匹肉 |
@@ -40,6 +47,7 @@
 | brown | earth-color | terakoror | 土色 |
 | bus | many-person-vehicle | muromokaro | 多人车 |
 | business plan | buy-group-map | komparpantomapa | 買众図 |
+| business trip | work-come-go | rapoveniire | 力来行 |
 | busy | many-work | murrapo | 多力 |
 | bye | sorry-go | pertonire | 悔行 |
 | calm | not-anger | nonkoler | 不怒 |
@@ -53,8 +61,10 @@
 | coffee | black-drink | neropipe | 黒飲 |
 | coin | metal-money | metarmoni | 金贝 |
 | company | buy-group | komparpanto | 買众 |
+| competition | play-fight | rutipatar | 玩争 |
 | concert hall | music-home | musikase | 曲户 |
 | congee | water-grain | akuriso | 水米 |
+| contest | play-fight | rutipatar | 玩争 |
 | cook (person) | food-make-person | komivakeomo | 食作人 |
 | corporation | buy-group | komparpanto | 買众 |
 | corridor | go-room | irekamar | 行室 |
@@ -74,6 +84,7 @@
 | doctor | heal-person | sanaomo | 医人 |
 | document (written) | write-paper | penakarta | 写片 |
 | door handle | door-hand | portamanu | 門手 |
+| draw (in a contest) | same-become | samtiven | 同成 |
 | drive | vehicle-go | karoire | 车行 |
 | ear | hear-part | otiparte | 耳分 |
 | earn | money-get | monitoma | 贝取 |
@@ -83,6 +94,7 @@
 | electric light | electric-sun | vortosore | 電日 |
 | electronic map | electric-map | vortomapa | 電図 |
 | ellipse | long-round | ronkarotun | 长丸 |
+| enemy | not-friend | nonami | 不朋 |
 | essential | big-need | mekaneses | 大要 |
 | evening | down-sun | tunsore | 下日 |
 | eventually | in-close | invin | 内閉 |
@@ -93,10 +105,12 @@
 | excessively | up-measure | surmens | 上寸 |
 | exercise | heal-go | sanaire | 医行 |
 | expect | not-surprise | nonmira | 不奇 |
+| expedition | fear-come-go | timoveniire | 危来行 |
 | eye | see-part | viteparte | 見分 |
 | false | not-true | nonves | 不真 |
 | father | man-parent | viropari | 男亲 |
 | fee | money-measure | monimens | 贝寸 |
+| fighter | fight-person | pataromo | 争人 |
 | finally | in-close | invin | 内閉 |
 | firm | buy-group | komparpanto | 買众 |
 | fish | water-animal | akupeste | 水匹 |
@@ -112,6 +126,7 @@
 | get ready | before-make | yervake | 前作 |
 | glass (drinking vessel) | water-box | akuvaso | 水皿 |
 | gluten-free food | no-yellow-grain-food | nemyororisokomi | 无黄米食 |
+| go back | back-go | retsire | 反行 |
 | go by vehicle | vehicle-put | karoseta | 车坐 |
 | goat | small-milk-animal | pikoratenpeste | 小乳匹 |
 | good luck | good-if | ponapos | 好可 |
@@ -130,6 +145,7 @@
 | helpless | not-help | nonservi | 不助 |
 | her | this-person | tisomo | 此人 |
 | him | this-person | tisomo | 此人 |
+| holiday | play-come-go | rutiveniire | 玩来行 |
 | honest | straight-say | retotise | 直云 |
 | hoop | round-line | rotunrine | 丸糸 |
 | hotel | sleep-home | tormikase | 床户 |
@@ -142,6 +158,7 @@
 | in the end | in-close | invin | 内閉 |
 | in truth | in-true | inves | 内真 |
 | insufficient | not-all | nonpan | 不全 |
+| journey | come-go | veniire | 来行 |
 | kind (good-hearted) | good-feel | ponasenti | 好心 |
 | kindness | good-feel | ponasenti | 好心 |
 | knife (knife or scissors) | break-tool | rompeuter | 切工 |
@@ -151,13 +168,17 @@
 | leave (depart) | out-go | eksire | 外行 |
 | lemon | not-sweet-yellow-plant-child | nontukeyoroarponino | 不甘黄木子 |
 | library | many-paper-home | murkartakase | 多片户 |
+| long journey | far-come-go | ronveniire | 遠来行 |
 | look alike | same-see | samvite | 同見 |
 | look like | same-see | samvite | 同見 |
+| lose a contest | not-up-become | nonsurtiven | 不上成 |
+| lose a game | not-up-become | nonsurtiven | 不上成 |
 | loud | big-hear | mekaoti | 大耳 |
 | love | big-like | mekakusta | 大愛 |
 | lucky | good-if | ponapos | 好可 |
 | major | big-need | mekaneses | 大要 |
 | margin (of a page) | paper-edge | kartarante | 片边 |
+| match | play-fight | rutipatar | 玩争 |
 | meal (a sitting) | food-time | komitempo | 食时 |
 | mealtime | food-time | komitempo | 食时 |
 | midday | middle-sun | metsesore | 中日 |
@@ -193,6 +214,7 @@
 | park | green-place | verteroko | 緑所 |
 | party (celebration) | play-group | rutipanto | 玩众 |
 | password | key-word | yaveverpo | 錠言 |
+| peace | no-fight | nempatar | 无争 |
 | peaceful | small-happy | pikokonten | 小楽 |
 | peanut | earth-hard-plant-child | teraturusarponino | 土硬木子 |
 | pen (pen or pencil) | write-tool | penauter | 写工 |
@@ -209,12 +231,14 @@
 | potato | earth-grain | terariso | 土米 |
 | prepare | before-make | yervake | 前作 |
 | prepared | before-close | yervin | 前閉 |
+| prevail | up-become | surtiven | 上成 |
 | price | money-measure | monimens | 贝寸 |
 | pride | self-good-feel | ekoponasenti | 己好心 |
 | problem | bad-thing | marumkosa | 悪物 |
 | public transit | line-vehicle | rinekaro | 糸车 |
 | purple | red-blue | ruperasur | 赤青 |
 | quadrilateral | four-bend | watsekurva | 4弓 |
+| quarrel | word-fight | verpopatar | 言争 |
 | question | what-word | kerverpo | 何言 |
 | quiet | small-hear | pikooti | 小耳 |
 | rage | big-anger | mekakoler | 大怒 |
@@ -231,6 +255,7 @@
 | resemble | same-see | samvite | 同見 |
 | reservation | before-agree | yerakor | 前約 |
 | respect | please-feel | pamsenti | 乞心 |
+| return | back-go | retsire | 反行 |
 | rice (white rice) | white-grain | rankoriso | 白米 |
 | ride | vehicle-put | karoseta | 车坐 |
 | ring | round-line | rotunrine | 丸糸 |
@@ -264,12 +289,14 @@
 | smell | air-taste | ventosapor | 风味 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
 | soft (sound) | small-hear | pikooti | 小耳 |
+| soldier | fight-person | pataromo | 争人 |
 | someone else | other-person | aromo | 別人 |
 | soup | water-food | akukomi | 水食 |
 | sour | not-sweet | nontuke | 不甘 |
 | south | map-down | mapatun | 図下 |
 | spice | taste-thing | saporkosa | 味物 |
 | spicy | fire-taste | vokasapor | 火味 |
+| sport | body-play | korporuti | 体玩 |
 | spouse | marry-person | marisomo | 婚人 |
 | square | four-bend | watsekurva | 4弓 |
 | staff (person) | help-person | serviomo | 助人 |
@@ -294,6 +321,7 @@
 | those | not-this | nontis | 不此 |
 | Thursday | plant-weekday | arpoverya | 木曜 |
 | ticket gate | money-door | moniporta | 贝門 |
+| tie | same-become | samtiven | 同成 |
 | till | straight-to | retover | 直向 |
 | today | this-sun | tissore | 此日 |
 | tomato | red-plant-child | ruperarponino | 赤木子 |
@@ -309,6 +337,7 @@
 | transit station (bus/train) | line-vehicle-place | rinekaroroko | 糸车所 |
 | travel by vehicle | vehicle-go | karoire | 车行 |
 | triangle | three-bend | tetsekurva | 3弓 |
+| trip | come-go | veniire | 来行 |
 | trouble | bad-thing | marumkosa | 悪物 |
 | Tuesday | fire-weekday | vokaverya | 火曜 |
 | turnstile | money-door | moniporta | 贝門 |
@@ -318,13 +347,16 @@
 | untrue | not-true | nonves | 不真 |
 | up to (in time) | straight-to | retover | 直向 |
 | us | self-group | ekopanto | 己众 |
+| vacation | play-come-go | rutiveniire | 玩来行 |
 | vegetables | green-food | vertekomi | 緑食 |
 | vegetarian | not-meat-food-person | nonkarnekomiomo | 不肉食人 |
 | vendor | buy-person | komparomo | 買人 |
+| voyage | far-come-go | ronveniire | 遠来行 |
 | wait a while | time-remain | temposista | 时止 |
 | wait around | time-remain | temposista | 时止 |
 | waiter | help-person | serviomo | 助人 |
 | walk | leg-go | kampaire | 足行 |
+| war | big-fight | mekapatar | 大争 |
 | we | self-group | ekopanto | 己众 |
 | Wednesday | water-weekday | akuverya | 水曜 |
 | week | seven-sun | sensesore | 7日 |
@@ -335,8 +367,10 @@
 | wheat | yellow-grain | yororiso | 黄米 |
 | wheat bread | yellow-grain-food | yororisokomi | 黄米食 |
 | why | what-reason | kerkas | 何故 |
+| win | up-become | surtiven | 上成 |
 | window | see-hole | vitevuko | 見穴 |
 | wine | plant-child-fire-water | arponinovokaaku | 木子火水 |
+| winner | up-become-person | surtivenomo | 上成人 |
 | writer | write-person | penaomo | 写人 |
 | writing (text) | write-word | penaverpo | 写言 |
 | yellow fruit (usually banana) | yellow-plant-child | yoroarponino | 黄木子 |

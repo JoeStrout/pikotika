@@ -160,6 +160,7 @@ break	Verbs	break, cut, damage, ruin	rompe	切	*romper, rompere, rupture*	4	2
 buy	Verbs	buy, purchase, sell, trade, commercial exchange	kompar	買	Spanish comprar; Latin emere	12	0	
 come	Verbs	come, arrive, approach	veni	来	Latin venire	7	4	2
 feel	Verbs	feel, emotion, sense, touch	senti	心	*sentir, sentiment*	4	2	
+fight	Verbs	fight, battle, conflict, argue, compete, oppose, resist, struggle	patar	争	*battle, batalla, bataille, battaglia*; b -> p as elsewhere in the set	6		
 get	Verbs	get, take, receive, obtain, catch	toma	取	"Spanish *tomar* ""to take"""	8	3	2
 give	Verbs	give, offer, send, provide	tare	与	*dare, dar, donate*	3	3	
 go	Verbs	go, move, travel, proceed, movement	ire	行	Latin *ire*, Spanish *ir*	6	11	1
@@ -168,7 +169,7 @@ hear	Verbs	hear, listen, sound, noise	oti	耳	*audio, oír, udire*	6	3
 help	Verbs	help, assist, serve, care for	servi	助	*serve, servir* — our `help` covers *serve, care for*	7	0	
 know	Verbs	know, be informed of, information	sape	知	*saber, savoir, sapere*	8	3	
 learn	Verbs	learn, study, acquire knowledge	impar	学	Latin discere; Italian imparare; tiske was displaced	8	2	
-lose	Verbs	lose, lost, miss, misplace	perti	失	Latin perdere	5	0	
+lose	Verbs	lose (misplace), lost, miss, misplace	perti	失	Latin perdere	5	0	
 make	Verbs	make, do, build, create, cause	vake	作	*facere, fare, fabricate*	7	5	2
 meet	Verbs	meet, encounter, run into, come together with	sarve	会	"Latin salve, French salut -- what you say on meeting; kanji 会 (Japanese au, ""to meet"")"	6	6	1
 need	Verbs	need, require, must, necessary, have to	neses	要	Latin necesse	9	3	
