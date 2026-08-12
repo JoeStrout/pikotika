@@ -90,6 +90,7 @@ actually; in truth	in-true	1
 problem; trouble	bad-thing	2	
 stubborn	hard-head		
 flatterer; smooth talker	sweet-mouth		
+silent; taciturn; tight-lipped	close-mouth		
 honest; frank; blunt	straight-say		
 thief	long-hand		
 unfriendly person	cold-person		
@@ -281,8 +282,11 @@ grief	big-not-happy	1
 brave	not-fear		
 pride	self-good-feel		
 shame	self-bad-feel		
+facial expression; look on one's face	feel-picture		
 quiet; soft (sound)	small-hear		
 tears; cry	see-water	2	
+smile	happy-mouth		
+laugh	big-happy-mouth		
 respect	please-feel		
 politeness (verbal)	please-say	1	
 courtesy	please-way		

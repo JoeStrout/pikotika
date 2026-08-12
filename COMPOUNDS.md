@@ -1,6 +1,6 @@
 # Pikotise Compounds
 
-519 terms
+526 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -153,6 +153,7 @@
 | experienced | try-know | propasape | 試知 |
 | experiment | try-work | proparapo | 試力 |
 | eye | see-part | viteparte | 見分 |
+| facial expression | feel-picture | sentipitur | 心画 |
 | false | not-true | nonves | 不真 |
 | father | man-parent | viropari | 男亲 |
 | fee | money-measure | monimens | 贝寸 |
@@ -232,6 +233,7 @@
 | lamp | electric-sun | vortosore | 電日 |
 | language | word-way | verpomoto | 言方 |
 | last | close-sequence | vinorten | 閉序 |
+| laugh | big-happy-mouth | mekakontenpuka | 大楽口 |
 | leave (depart) | out-go | eksire | 外行 |
 | lemon | not-sweet-yellow-plant-child | nontukeyoroarponino | 不甘黄木子 |
 | library | many-paper-home | murkartakase | 多片户 |
@@ -244,6 +246,7 @@
 | look alike | same-see | samvite | 同見 |
 | look for | try-see | propavite | 試見 |
 | look like | same-see | samvite | 同見 |
+| look on one's face | feel-picture | sentipitur | 心画 |
 | look over again | again-see | repevite | 又見 |
 | lose a contest | not-up-become | nonsurtiven | 不上成 |
 | lose a game | not-up-become | nonsurtiven | 不上成 |
@@ -403,10 +406,12 @@
 | shore | water-edge | akurante | 水边 |
 | should | if-good | pospona | 可好 |
 | significant | heavy-need | pesaneses | 重要 |
+| silent | close-mouth | vinpuka | 閉口 |
 | sister | same-parent-woman | samparivema | 同亲女 |
 | slow | not-fast | nonveros | 不早 |
 | slowly | not-fast | nonveros | 不早 |
 | smell | air-taste | ventosapor | 风味 |
+| smile | happy-mouth | kontenpuka | 楽口 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
 | snow | cold-rain | yeruruva | 冷雨 |
 | soft (sound) | small-hear | pikooti | 小耳 |
@@ -433,6 +438,7 @@
 | Sunday | sun-weekday | soreverya | 日曜 |
 | sunny | sun-air | sorevento | 日风 |
 | syllabus | learn-sequence | imparorten | 学序 |
+| taciturn | close-mouth | vinpuka | 閉口 |
 | take after | same-see | samvite | 同見 |
 | take along | have-go | teneire | 有行 |
 | tale | say-thing | tisekosa | 云物 |
@@ -458,6 +464,7 @@
 | Thursday | plant-weekday | arpoverya | 木曜 |
 | ticket gate | money-door | moniporta | 贝門 |
 | tie | same-become | samtiven | 同成 |
+| tight-lipped | close-mouth | vinpuka | 閉口 |
 | till | straight-to | retover | 直向 |
 | timetable | time-sequence | tempoorten | 时序 |
 | today | this-sun | tissore | 此日 |
