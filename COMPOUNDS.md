@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-531 terms
+535 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -72,6 +72,7 @@
 | call to mind | again-know | repesape | 又知 |
 | calm | not-anger | nonkoler | 不怒 |
 | careful | fear-see | timovite | 危見 |
+| carpet | earth-cloth | teraropa | 土衣 |
 | carry | have-go | teneire | 有行 |
 | cast a ballot | choose-say | eriketika | 选云 |
 | cat | home-animal | kasepeste | 户匹 |
@@ -260,6 +261,7 @@
 | major | heavy-need | pesaneses | 重要 |
 | make up one's mind | choose-close | erikevin | 选閉 |
 | margin (of a page) | paper-edge | kartarante | 片边 |
+| mat | earth-cloth | teraropa | 土衣 |
 | match | play-fight | rutipatar | 玩争 |
 | meal (a sitting) | food-time | komitempo | 食时 |
 | mealtime | food-time | komitempo | 食时 |
@@ -385,6 +387,7 @@
 | road map | way-map | motomapa | 方図 |
 | roadmap | way-map | motomapa | 方図 |
 | roster | name-sequence | nomenorten | 名序 |
+| rug | earth-cloth | teraropa | 土衣 |
 | sad | not-happy | nonkonten | 不楽 |
 | sake | white-grain-fire-water | rankorisovokaaku | 白米火水 |
 | sand | small-stone | pikorapis | 小岩 |
@@ -442,6 +445,7 @@
 | suitcase | go-box | irevaso | 行皿 |
 | Sunday | sun-weekday | soreverya | 日曜 |
 | sunny | sun-air | sorevento | 日风 |
+| swim | water-go | akuire | 水行 |
 | syllabus | learn-sequence | imparorten | 学序 |
 | taciturn | close-mouth | vinpuka | 閉口 |
 | take after | same-see | samvite | 同見 |

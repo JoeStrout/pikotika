@@ -135,10 +135,13 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 ## Level 3
 ### 40 more roots (total: 120)
 
-black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all, same, map, paper, room, tool, metal, air, earth, fire, TE, money, home, hard, long, hundred, many, measure, million, thousand, month, weekday, year, feel, hear, know, play, try
+black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all, same, map, paper, room, tool, metal, stone, air, earth, fire, TE, money, color, home, long, hundred, many, measure, million, thousand, month, weekday, year, feel, know, play, try, word
 
-### 40 more compounds (total: 100)
-### 5 more idioms/set phrases (total: 15)
+### 45 more compounds (total: 105)
+
+next, recover, recall, repeat, airplane, airport, everyone, everywhere, everything, always, previous, gale, coffee, cyan, brown, Saturday, Tuesday, tan, Friday, Monday, dance, less, Thursday, purple, pink, pig, orange, brother, sister, look like, week, weekend, grey, Sunday, too [much], Wednesday, what time, who, where, when, how, question, rice (white rice), business trip, wheat
+
+### 5 more idioms/set phrases (total: 17)
 
 | English | Gloss | Latin |
 |---|---|---|
@@ -147,7 +150,6 @@ black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all,
 | How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
 | All is good. | all RI good | **Pan ri pona.** | 全 ⊢ 好. |
 | I don't know. | self RI not know | **Eko ri non sape.** | 己 ⊢ 不 知. |
-
 
 ### larger numbers
 ### colors
@@ -159,16 +161,24 @@ black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all,
 
 ---
 ## Level 4
-### 42 more roots (total: 168)
+### 40 more roots (total: 160)
+
+head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electric, picture, rain, city, cold, fear, hard, heavy, bend, line, round, straight, back, edge, become, buy, choose, fight, give, hear, help, learn, need, open, put, remain, sleep, think
+
 ### 40 more compounds (total: 140)
-### decimal numbers
+
+### decimal numbers, fractions, & percent
 ### times and dates
 ### aspect (begin/finish/ongoing actions)
+### counterfactuals
 ### leading relative clauses
 
 ---
 ## Level 5
-### 40 more roots (total: 208, all roots in the language)
+### 36 more roots (total: 196, all roots in the language)
+
+body, hand, life, sick, stomach, anger, surprise, tired, or, other, key, table, toilet, oil, salt, bird, bug, dog, country, friend, law, marry, art, temple, clean, old, flat, down, far, hole, left, right, agree, break, join, lose
+
 ### 40 more compounds (total: 180)
 ### could have, might have, should have, & must have
 ### modifier clause with RITE

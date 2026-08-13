@@ -1,197 +1,197 @@
 gloss	category	covers	form	han	mnemonic	strokes	usage_count	Level
-body	Body and life	body, physical, flesh	korpo	体	*corpo, corpus, corporal*	7	2	
-hand	Body and life	hand, arm, finger, grasp	manu	手	*manu-, mano, manual*	4	2	
-head	Body and life	head, top, leader, chief	testa	头	*testa, tête*	5	4	
-heal	Body and life	heal, cure, medicine, health, repair	sana	医	*sanare, sane, sanitary*	7	6	
-leg	Body and life	leg, foot, walking limb	kampa	足	*gamba, jambe*	7	5	
-life	Body and life	alive, live, birth, grow	viva	生	*viva, vivo, vital*	5	2	
-mouth	Body and life	mouth, lips, bodily opening	puka	口	Italian bocca, Spanish boca; poka was displaced	3	4	
-sick	Body and life	ill, diseased, damaged, defective, hurting (pain = `sick-feel`)	mara	病	*mal, malady, malade*	10	2	
-stomach	Body and life	stomach, belly, gut, abdomen	venter	胃	Latin venter; Italian pancia	9	0	
-taste	Body and life	taste, flavor, savor	sapor	味	Latin sapor, Spanish sabor	8	7	
-black	Color	black, dark, dark-valued	nero	黒	Italian nero, Latin niger	11	2	3
-blue	Color	blue, cool hue	asur	青	Spanish azul, Italian azzurro	8	2	3
-green	Color	green, vegetal hue	verte	緑	Italian verde, Latin viridis	14	4	3
-red	Color	red, warm hue	ruper	赤	Spanish rojo; Latin ruber; royo was displaced	7	8	3
-white	Color	white, pale, light-valued	ranko	白	Italian bianco, Spanish blanco	5	7	3
-yellow	Color	yellow, golden hue	yoro	黄	Italian giallo; Latin aurum	11	9	3
-anger	Feelings	anger, angry, rage, mad, fury	koler	怒	Spanish cólera; Italian collera; French colère	9	3	
-happy	Feelings	happy, glad, pleased, joy	konten	楽	Latin contentus; Spanish feliz	13	10	1
-like	Feelings	like, enjoy, prefer, be fond of	kusta	愛	Spanish gustar	13	4	2
-surprise	Feelings	surprise, astonish, wonder, unexpected	mira	奇	Latin mirari; Spanish admirar, milagro; English miracle	8	2	
-tired	Feelings	tired, weary, exhausted	kansa	疲	Spanish cansado; Latin lassus	10	1	
-drink	Food	drink, beverage, sip	pipe	飲	Latin bibere; Latin potare	12	5	2
-food	Food	food, eat, meal, nourishment	komi	食	*comer, comida*	9	24	1
-grain	Food	grain, bread, rice, staple starch	riso	米	*riso, rice, arroz*	6	13	3
-meat	Food	meat, flesh food, animal protein	karne	肉	Latin caro, carnis	6	5	
-milk	Food	milk, dairy, cream	raten	乳	Italian latte, Latin lac	8	4	
-sweet	Food	sweet, sugar, dessert-quality	tuke	甘	*dulce, dolce*	5	8	3
-group	General heads	group, set, collection, team, crowd	panto	众	*band, banda*	6	18	1
-part	General heads	part, piece, portion, member	parte	分	*parte, part*	4	13	1
-person	General heads	person, human, one who, agent	omo	人	*homo, hombre, uomo*	2	26	1
-place	General heads	place, location, area, spot	roko	所	*loco, locus, location*	8	18	1
-sequence	General heads	sequence, order, series, rank, turn, position in a series	orten	序	*orden, ordine, ordre, order, ordinal*	7	15	3
-thing	General heads	thing, object, item, matter	kosa	物	Spanish *cosa*, Italian *cosa*	8	18	1
-time	General heads	time, occasion, when, period	tempo	时	*tempo, tiempo, temporal*	7	13	1
-way	General heads	way, manner, method, road, path, route	moto	方	*modo, mode, method*	4	9	3
-able	Grammar and logic	can, able, ability, skill, capable	kan	能	English *can*, German *kann*, Dutch/Swedish/Danish/Norwegian *kan* — all "be able", the same spelling across Germanic	10	4	2
-about	Grammar and logic	about, concerning, regarding, on the topic of, pertaining to	topi	件	*topic, tópico, topique*	6	1	2
-again	Grammar and logic	again, repeat, once more, re-	repe	又	Latin *repetere* — *repeat, repetir, répéter, ripetere*	2	7	3
-all	Grammar and logic	every, whole, total, complete, enough	pan	全	*pan-* (pandemic, pan-American)	6	9	3
-and	Grammar and logic	and, with, also, plus	kum	并	Latin *cum* "with" — and our `and` covers *with*	6	18	1
-but	Grammar and logic	but, however, although, contrast	sets	但	Latin *sed*	7	7	2
-for	Grammar and logic	for, purpose, in order to, recipient, for the benefit of	por	為	Spanish/Portuguese *por*; Latin *per, pro*	9	5	2
-if	Grammar and logic	maybe, possible, chance, luck, condition	pos	可	*possible, posible, possibile, possível* — the *posse* branch that kept the sense of chance rather than ability	5	4	
-more	Grammar and logic	more, comparative, extra, another	mas	更	Spanish *más*; 更 is the Chinese comparative adverb — 又 went to `again`	7	6	2
-not	Grammar and logic	no, un-, opposite, negation, without	non	不	Latin *non*	4	47	1
-only	Grammar and logic	only, just, merely, sole	son	只	Latin *solus*, Spanish *solo*	5	2	2
-or	Grammar and logic	or, alternative, either	sive	或	Latin *sive* "or else"	8	2	
-other	Grammar and logic	other, different, else	ar	別	Latin *alter*, Italian *altro*, Spanish *otro*	7	2	
-please	Grammar and logic	please, request marker, politeness	pam	乞	Latin *placet*, Spanish *por favor* — weak: both want a pl-/pr- onset	3	22	1
-reason	Grammar and logic	reason, cause, because; why = `what-reason`	rason	故	Spanish *razón*, French *raison*, English *reason*	9	5	
-same	Grammar and logic	same, equal, like, as, similar, together	sam	同	English *same*, Latin *similis*	6	9	3
-this	Grammar and logic	this, here, now, present (that/there = `not-this`)	tis	此	English *this*	6	48	1
-true	Grammar and logic	true, correct, right, of course, evidently	ves	真	Latin *verus*, Italian *vero*, Spanish *verdad*	10	11	1
-what	Grammar and logic	question, which, any, whichever	ker	何	*quel, qual, quale*	7	49	1
-yes	Grammar and logic	yes, assent, affirm, correct-response	si	是	Spanish *si*, Italian *si*, Latin *sic* — interjection class, CV	9	11	1
-box	Made things	closed container: box, bag, bottle, case, vessel	vaso	皿	*vase, vessel, vaso*	5	3	
-cloth	Made things	cloth, clothes, fabric, covering	ropa	衣	*robe, ropa, roba*	6	3	
-door	Made things	door, gate, entrance, portal	porta	門	Latin porta, Spanish puerta	8	3	
-electric	Made things	electric, electricity, electronic, powered	vorto	電	Italian volta, volt	13	4	
-key	Made things	key, lock, to lock or unlock	yave	錠	Spanish llave, Italian chiave	16	2	
-map	Made things	map, chart, diagram, plan, layout	mapa	図	English *map*, Spanish/Portuguese/Polish/Russian *mapa/mapa/mapa/карта→mapa*	7	8	3
-paper	Made things	paper, card, page, document, ticket	karta	片	*carta, card, chart*	4	7	3
-picture	Made things	picture, image, photo, drawing, film	pitur	画	Spanish pintura, Latin pictura	8	3	
-room	Made things	room, chamber, interior space within a building	kamar	室	Spanish camara, Italian camera	9	10	3
-table	Made things	table, desk, counter, flat surface	tapur	机	Latin tabula; Latin mensa	6	0	
-toilet	Made things	toilet, lavatory, restroom, bathroom, WC	panyu	便	Italian bagno, Spanish bano; panyo was displaced	9	0	
-tool	Made things	tool, instrument, device, machine, utensil	uter	工	*utensil, utile*	3	7	3
-vehicle	Made things	vehicle, car, craft, conveyance	karo	车	*car, carro, char*	4	19	1
-metal	Material	metal, iron, gold, refined hard material	metar	金	Latin metallum	8	4	3
-oil	Material	oil, fat, grease	oren	油	Latin oleum	8	2	
-salt	Material	salt, savory mineral	sares	塩	Latin sal, Italian sale	13	0	
-stone	Material	stone, rock, mineral, hard natural material	rapis	岩	Latin lapis; Latin petra	8	2	
-air	Nature	air, wind, breath, gas, sky, weather	vento	风	*vento, wind, ventilate*	4	9	3
-animal	Nature	animal, beast, creature (generic head)	peste	匹	*beast, bestia*	4	12	2
-bird	Nature	bird, fowl	avis	鳥	Latin avis	11	2	
-bug	Nature	insect, bug, spider, worm — small many-legged creature	inses	虫	Spanish insecto	6	0	
-dog	Nature	dog, canine — includes wolf, fox, coyote	kanis	犬	Latin canis	4	1	
-earth	Nature	ground, land, soil, floor, dirt	tera	土	*terra, terrain*	3	8	3
-fire	Nature	fire, burn, heat, hot	voka	火	Portuguese *fogo*, Italian *fuoco*	4	12	3
-plant	Nature	plant, tree, flower, wood	arpo	木	*arbor, árbol, arbre*	4	18	1
-rain	Nature	rain, precipitation	ruva	雨	Spanish *lluvia*, Latin *pluvia*; restored — scored rank 43 in the corpora, above `sun`	8	5	
-sun	Nature	sun, light, day, daytime, 24-hour period, bright	sore	日	*sol, sole, solar*	4	33	1
-water	Nature	water, liquid, fluid, wet	aku	水	*aqua, agua*	4	28	1
-A	Particles	object boundary	a	⇒	Spanish personal *a*, which marks objects: *veo **a** Juan*		46	2
-RI	Particles	predicate boundary	ri	⊢	predicate boundary; no etymology, deliberately neutral		116	1
-TE	Particles	modification, head follows	te	>	Mandarin 的 *de*, Italian/Spanish *di/de* — the same job in both		1	3
-child	People and society	child, offspring, young of	nino	子	Spanish *niño*	3	17	1
-country	People and society	country, nation, state, homeland	nasyon	国	Spanish nacion; Spanish pais	8	1	
-friend	People and society	friend, companion, ally	ami	朋	French *ami*, Spanish *amigo*	8	1	
-law	People and society	law, rule, permission, authority, government	reke	法	*lex, legal, legge*	8	2	
-man	People and society	male	viro	男	Latin *vir*, *virile*	7	4	2
-marry	People and society	marry, spouse, wedded	maris	婚	Latin maritare; Latin nuptiae	11	1	
-money	People and society	money, price, cost, value, payment	moni	贝	English *money*, Latin *moneta*	4	12	3
-parent	People and society	parent, ancestor	pari	亲	*parent, padre, père*	9	9	2
-self	People and society	self, I, me, own, identity	eko	己	*ego*	3	58	1
-woman	People and society	female	vema	女	*femina, female*	3	4	2
-you	People and society	you, addressee	tuo	尔	*tu, tú, tuo*	5	31	1
-art	Places, arts, appearance	art, artwork, creative craft	arti	芸	Latin ars, artis	7	1	
-city	Places, arts, appearance	city, town, urban place	urpe	市	Latin urbs; Italian citta	5	4	
-color	Places, arts, appearance	color, hue	koror	色	*color, colore*	6	3	
-home	Places, arts, appearance	home, house, dwelling, household	kase	户	*casa*	4	9	3
-music	Places, arts, appearance	music, song, melody	musi	曲	*music, música*	6	7	2
-temple	Places, arts, appearance	temple, shrine, church, sacred place	temper	寺	Latin templum; Latin fanum	6	0	
-bad	Qualities	bad, poor, unpleasant, wrong	marum	悪	Latin malum	11	8	2
-big	Qualities	big, large, great, intense, very	meka	大	*mega-*	3	23	1
-clean	Qualities	clean, pure, washed	puru	清	Latin purus	11	0	
-cold	Qualities	cold, cool, chilled	rikus	冷	Latin *frigus*, *refrigerate*	7	4	
-fast	Qualities	fast, quick, rapid, soon	veros	早	Spanish veloz; Latin celer	6	5	2
-fear	Qualities	fear, afraid, danger, worry	timo	危	*timor, timid*	6	6	
-good	Qualities	good, well, fine, pleasant	pona	好	*bueno, bonus, buono*	6	28	1
-hard	Qualities	hard, firm, solid, rigid, difficult	turus	硬	Latin durus	12	7	3
-heavy	Qualities	heavy, weight, weigh, dense	pesa	重	Spanish/Portuguese/Italian *peso*, French *peser*, Latin *pendere*/*pensum*; the currency is literally 'a weight'	9	4	
-long	Qualities	long, tall, distant, extended	ronka	长	*long, lungo, largo*	4	9	3
-new	Qualities	new, young, recent, fresh	nova	初	*nova, nuevo, novel*	7	5	1
-old	Qualities	old, aged, former, past	vetus	古	Latin vetus; Latin antiquus	5	1	
-small	Qualities	small, little, slight, minor	piko	小	*pico-*	3	18	1
-eight	Quantity	eight, 8	ots	8	Latin *octo*, Italian *otto*, Portuguese *oito*		0	2
-five	Quantity	five, 5	kins	5	Latin *quinque* (quintet, quintuple)		1	2
-four	Quantity	four, 4	wats	4	Latin *quattuor*, Spanish *cuatro* — /kw/ is an illegal onset, so /w/ carries it		2	2
-hundred	Quantity	hundred, 100, hundreds place	katon	百	Greek *hekaton* less the unstressed *he-* (hecatomb); *hekto-* is unwritable — no /h/, and /kt/ is an illegal coda	6	0	3
-many	Quantity	many, much, lots, 6+	mur	多	*multi-*	6	8	3
-measure	Quantity	measure, amount, degree, extent, quantity, count	mens	寸	Latin *mensura*, Spanish *mesura*, Italian *misura*	3	8	3
-million	Quantity	million, 1000000, millions place	miron	兆	Latin *milione*, Spanish *millon*, French *million*; *mega* is unavailable — meka is already big	6	0	3
-nine	Quantity	nine, 9	noks	9	Latin *novem*, Italian *nove*, Spanish *nueve*		0	2
-no	Quantity	zero, none, absent	nem	无	Latin *nemo* "no one"	4	15	2
-one	Quantity	one, single, first, alone, the very	wun	一	English *one*, Spanish *uno*	1	7	1
-seven	Quantity	seven, 7	sens	7	Latin *septem*, French *sept*, Italian *sette*		4	2
-six	Quantity	six, 6	siks	6	Latin *sex*, French/English *six*, Spanish *seis*		0	2
-ten	Quantity	ten, 10, tens place	tekas	十	Greek *dekas* (a group of ten), *deka-* — decade, decathlon; *deka* itself is blocked by tera and meka	2	0	2
-thousand	Quantity	thousand, 1000, thousands place	kiru	千	Greek *khilioi*, metric *kilo-*; *kiro* is blocked by viro and karo	3	1	3
-three	Quantity	three, 3	tets	3	Latin *tres*, Spanish *tres*, Italian *tre*		2	2
-two	Quantity	two, 2, pair, both	pits	2	Latin *bis*, international *bi-* (bicycle, binary)		4	1
-bend	Shape	bend, curve, turn, fold	kurva	弓	Latin curvus	3	4	
-flat	Shape	flat, level, plane, sheet	yano	平	Spanish llano, Latin planus	5	2	
-line	Shape	line, thread, string, rope, wire	rine	糸	Latin linea	6	6	
-round	Shape	round, circular, curved, ball	rotun	丸	Latin rotundus	3	5	
-straight	Shape	straight, direct, nonstop, express, upright	reto	直	Italian retto, Spanish recto	8	4	
-back	Space and direction	behind, rear, reverse (front = `not-back`)	rets	反	Latin *retro-* — retro, retreat, retrograde; also covers *reverse*	4	5	
-down	Space and direction	below, low, bottom, under	tun	下	English *down*	3	3	
-edge	Space and direction	edge, side, border, boundary, rim, margin, shore	rante	边	German/Dutch *Rand*, Swedish *rand*; English *rim*	5	5	
-far	Space and direction	far, distant, remote	ron	遠	Latin *longe*, Italian *lontano*, French *loin*	13	1	
-from	Space and direction	from, source, origin, out of	vons	从	Latin *fons* "source" — coda cluster restores the clipped hook	4	3	2
-hole	Space and direction	hole, gap, opening, empty space within	vuko	穴	Italian buco; Latin cavus	5	1	
-in	Space and direction	inside, at, within	in	内	Latin *in*	4	38	1
-left	Space and direction	left, left-hand side, west (with `map`)	sini	左	Latin *sinistra*, Italian/Spanish *sinistra/siniestra*; English *sinister*	5	3	
-middle	Space and direction	middle, center, between, among	mets	中	Latin *medius*, Spanish *medio*, Italian *mezzo*	4	1	2
-near	Space and direction	near, close, beside, next to, almost, nearly	nir	近	English *near*	7	2	2
-out	Space and direction	outside, external, beyond	eks	外	Latin *ex-*, Spanish *ex-*	5	3	1
-right	Space and direction	right, right-hand side, east (with `map`)	rem	右	⚠ no etymology — see §9	5	2	
-to	Space and direction	toward, into, direction of motion	ver	向	French *vers*, Italian *verso* "toward"	6	14	1
-up	Space and direction	above, high, top, over	sur	上	French *sur*, *super-*	3	17	2
-after	Time direction	after, later, subsequent, future, late	tar	后	Spanish *tarde*, English *tardy* "late"	6	11	1
-before	Time direction	before, earlier, prior, in the past, early, already	yer	前	Spanish *ayer*, French *hier* "yesterday"	9	15	1
-close	Time direction	close, shut, finish, end, conclude	vin	閉	Latin *finis*, Spanish *fin*, Italian *fine*	11	18	1
-hour	Time direction	hour, clock-time unit	ora	刻	Latin hora	8	9	1
-interval	Time direction	interval, duration, span of time, period, for (a length of time)	turan	間	Latin *durare*, Spanish *durar*, Italian *durata* -- duration	12	8	1
-month	Time direction	month, moon, lunar cycle	mese	月	Latin mensis, Italian mese	4	3	3
-weekday	Time direction	named day of the week (Japanese 曜)	verya	曜	Portuguese feira, Spanish feria	18	10	3
-year	Time direction	year, annual cycle	anyo	年	Spanish ano, Latin annus	6	1	3
-agree	Verbs	agree, consent, contract, promise, deal	akor	約	Italian accordo, Spanish acuerdo	9	3	
-become	Verbs	become, get, turn into, come to be; enter a state	tiven	成	Italian diventare	6	5	
-break	Verbs	break, cut, damage, ruin	rompe	切	*romper, rompere, rupture*	4	3	
-buy	Verbs	buy, purchase, sell, trade, commercial exchange	kompar	買	Spanish comprar; Latin emere	12	4	
-choose	Verbs	choose, decide, pick, select, elect, vote, opt	erike	选	*elegir, eleggere, eleger, elect, eligible*	9	5	
-come	Verbs	come, arrive, approach	veni	来	Latin venire	7	11	2
-feel	Verbs	feel, emotion, sense, touch	senti	心	*sentir, sentiment*	4	8	3
-fight	Verbs	fight, battle, conflict, argue, compete, oppose, resist, struggle	patar	争	*battle, batalla, bataille, battaglia*; b -> p as elsewhere in the set	6	6	
-get	Verbs	get, take, receive, obtain, catch	toma	取	Spanish *tomar* "to take"	8	7	2
-give	Verbs	give, offer, send, provide	tonar	与	*donare, donner, donate*	3	6	
-go	Verbs	go, move, travel, proceed, movement	ire	行	Latin *ire*, Spanish *ir*	6	29	1
-have	Verbs	have, hold, own, possess, keep	tene	有	*tener, tenir, tenere*	6	10	2
-hear	Verbs	hear, listen, sound, noise	oti	耳	*audio, oír, udire*	6	7	3
-help	Verbs	help, assist, serve, care for	servi	助	*serve, servir* — our `help` covers *serve, care for*	7	5	
-join	Verbs	join, connect, combine, attach, unite, link, mix	yunta	合	Spanish/Portuguese *juntar*/*junto*, Latin *iungere* (junction, adjoin); English *join*, *yoke*; Sanskrit *yuj-* -> *yoga* 'union'; Hindi *jodna*	6	2	
-know	Verbs	know, be informed of, information	sape	知	*saber, savoir, sapere*	8	8	3
-learn	Verbs	learn, study, acquire knowledge	impar	学	Latin discere; Italian imparare; tiske was displaced	8	6	
-lose	Verbs	lose (misplace), lost, miss, misplace	perti	失	Latin perdere	5	1	
-make	Verbs	make, do, build, create, cause	vake	作	*facere, fare, fabricate*	7	9	2
-meet	Verbs	meet, encounter, run into, come together with	sarve	会	Latin salve, French salut -- what you say on meeting; kanji 会 (Japanese au, "to meet")	6	9	1
-need	Verbs	need, require, must, necessary, have to	neses	要	Latin necesse	9	4	
-open	Verbs	open, begin, start, uncover	apa	开	⚠ *aperire, abrir* — weakened, see §9	4	3	
-play	Verbs	play, game, fun, amuse, visit (socially), hang out	ruti	玩	*ludic, ludere*; the 'visit' sense follows 玩/遊ぶ/놀다 — an obligatory visit is **ire ver**	8	10	3
-put	Verbs	put, place, set, position, sit, be seated, mount	seta	坐	English *set*/*sit* — the causative pair, as German *setzen*/*sitzen*; Spanish *sentar*, Latin *sedere*; the character is two people on the ground	7	5	
-remain	Verbs	stop, halt, remain, cease, stand, stay, wait, pause	sista	止	*sistere, desist, resist* "to halt, to stand"	4	3	
-say	Verbs	say, speak, talk, tell	tika	云	Latin *dicere* — *dictate, diction*; English *talk*	4	18	1
-see	Verbs	see, look, watch, appear; understand, realize, get it	vite	見	*video, ver, vedere*	7	19	2
-sleep	Verbs	sleep, rest, bed, recharge, be dormant	tormi	床	*dormir, dormant*	7	6	
-sorry	Verbs	sorry, apology, regret, excuse me	perton	悔	Spanish perdon; Italian scusa	9	5	1
-thank	Verbs	thank, gratitude, appreciation	mersi	恩	French merci; Spanish gracias	10	5	2
-think	Verbs	think, mind, idea, opinion, believe	pensa	思	*pensar, penser, pensive*	9	5	
-try	Verbs	try, attempt, test, try out, taste-test, sample, check, prove	propa	試	*probar, provare, probieren, probe, prove*	13	8	3
-want	Verbs	want, desire, wish, hope	vori	求	Latin *volo, velle*; Italian *volere*, English *volition*	7	12	1
-work	Verbs	work, labor, job, effort, use	rapo	力	*labor, lavoro*	2	14	2
-write	Verbs	write, writing, text, script, inscribe, record	pena	写	pen, Latin penna, Italian penna, Spanish pluma; 写 is the modern CJK character	5	10	2
-name	Word	name, title, label	nomen	名	Latin nomen	6	2	2
-word	Word	word, language, speech, message	verpo	言	*verbo, verb, verbum*	7	9	3
+body	Body and life	"body, physical, flesh"	korpo	体	"*corpo, corpus, corporal*"	7	2	5
+hand	Body and life	"hand, arm, finger, grasp"	manu	手	"*manu-, mano, manual*"	4	2	5
+head	Body and life	"head, top, leader, chief"	testa	头	"*testa, tête*"	5	4	4
+heal	Body and life	"heal, cure, medicine, health, repair"	sana	医	"*sanare, sane, sanitary*"	7	6	4
+leg	Body and life	"leg, foot, walking limb"	kampa	足	"*gamba, jambe*"	7	5	4
+life	Body and life	"alive, live, birth, grow"	viva	生	"*viva, vivo, vital*"	5	2	5
+mouth	Body and life	"mouth, lips, bodily opening"	puka	口	"Italian bocca, Spanish boca; poka was displaced"	3	4	4
+sick	Body and life	"ill, diseased, damaged, defective, hurting (pain = `sick-feel`)"	mara	病	"*mal, malady, malade*"	10	2	5
+stomach	Body and life	"stomach, belly, gut, abdomen"	venter	胃	Latin venter; Italian pancia	9	0	5
+taste	Body and life	"taste, flavor, savor"	sapor	味	"Latin sapor, Spanish sabor"	8	7	4
+black	Color	"black, dark, dark-valued"	nero	黒	"Italian nero, Latin niger"	11	2	3
+blue	Color	"blue, cool hue"	asur	青	"Spanish azul, Italian azzurro"	8	2	3
+green	Color	"green, vegetal hue"	verte	緑	"Italian verde, Latin viridis"	14	4	3
+red	Color	"red, warm hue"	ruper	赤	Spanish rojo; Latin ruber; royo was displaced	7	8	3
+white	Color	"white, pale, light-valued"	ranko	白	"Italian bianco, Spanish blanco"	5	7	3
+yellow	Color	"yellow, golden hue"	yoro	黄	Italian giallo; Latin aurum	11	9	3
+anger	Feelings	"anger, angry, rage, mad, fury"	koler	怒	Spanish cólera; Italian collera; French colère	9	3	5
+happy	Feelings	"happy, glad, pleased, joy"	konten	楽	Latin contentus; Spanish feliz	13	10	1
+like	Feelings	"like, enjoy, prefer, be fond of"	kusta	愛	Spanish gustar	13	4	2
+surprise	Feelings	"surprise, astonish, wonder, unexpected"	mira	奇	"Latin mirari; Spanish admirar, milagro; English miracle"	8	2	5
+tired	Feelings	"tired, weary, exhausted"	kansa	疲	Spanish cansado; Latin lassus	10	1	5
+drink	Food	"drink, beverage, sip"	pipe	飲	Latin bibere; Latin potare	12	5	2
+food	Food	"food, eat, meal, nourishment"	komi	食	"*comer, comida*"	9	24	1
+grain	Food	"grain, bread, rice, staple starch"	riso	米	"*riso, rice, arroz*"	6	13	3
+meat	Food	"meat, flesh food, animal protein"	karne	肉	"Latin caro, carnis"	6	5	4
+milk	Food	"milk, dairy, cream"	raten	乳	"Italian latte, Latin lac"	8	4	4
+sweet	Food	"sweet, sugar, dessert-quality"	tuke	甘	"*dulce, dolce*"	5	8	3
+group	General heads	"group, set, collection, team, crowd"	panto	众	"*band, banda*"	6	18	1
+part	General heads	"part, piece, portion, member"	parte	分	"*parte, part*"	4	13	1
+person	General heads	"person, human, one who, agent"	omo	人	"*homo, hombre, uomo*"	2	26	1
+place	General heads	"place, location, area, spot"	roko	所	"*loco, locus, location*"	8	18	1
+sequence	General heads	"sequence, order, series, rank, turn, position in a series"	orten	序	"*orden, ordine, ordre, order, ordinal*"	7	15	3
+thing	General heads	"thing, object, item, matter"	kosa	物	"Spanish *cosa*, Italian *cosa*"	8	18	1
+time	General heads	"time, occasion, when, period"	tempo	时	"*tempo, tiempo, temporal*"	7	13	1
+way	General heads	"way, manner, method, road, path, route"	moto	方	"*modo, mode, method*"	4	9	3
+able	Grammar and logic	"can, able, ability, skill, capable"	kan	能	"English *can*, German *kann*, Dutch/Swedish/Danish/Norwegian *kan* — all ""be able"", the same spelling across Germanic"	10	4	2
+about	Grammar and logic	"about, concerning, regarding, on the topic of, pertaining to"	topi	件	"*topic, tópico, topique*"	6	1	2
+again	Grammar and logic	"again, repeat, once more, re-"	repe	又	"Latin *repetere* — *repeat, repetir, répéter, ripetere*"	2	7	3
+all	Grammar and logic	"every, whole, total, complete, enough"	pan	全	"*pan-* (pandemic, pan-American)"	6	9	3
+and	Grammar and logic	"and, with, also, plus"	kum	并	"Latin *cum* ""with"" — and our `and` covers *with*"	6	18	1
+but	Grammar and logic	"but, however, although, contrast"	sets	但	Latin *sed*	7	7	2
+for	Grammar and logic	"for, purpose, in order to, recipient, for the benefit of"	por	為	"Spanish/Portuguese *por*; Latin *per, pro*"	9	5	2
+if	Grammar and logic	"maybe, possible, chance, luck, condition"	pos	可	"*possible, posible, possibile, possível* — the *posse* branch that kept the sense of chance rather than ability"	5	4	4
+more	Grammar and logic	"more, comparative, extra, another"	mas	更	Spanish *más*; 更 is the Chinese comparative adverb — 又 went to `again`	7	6	2
+not	Grammar and logic	"no, un-, opposite, negation, without"	non	不	Latin *non*	4	47	1
+only	Grammar and logic	"only, just, merely, sole"	son	只	"Latin *solus*, Spanish *solo*"	5	2	2
+or	Grammar and logic	"or, alternative, either"	sive	或	"Latin *sive* ""or else"""	8	2	5
+other	Grammar and logic	"other, different, else"	ar	別	"Latin *alter*, Italian *altro*, Spanish *otro*"	7	2	5
+please	Grammar and logic	"please, request marker, politeness"	pam	乞	"Latin *placet*, Spanish *por favor* — weak: both want a pl-/pr- onset"	3	22	1
+reason	Grammar and logic	"reason, cause, because; why = `what-reason`"	rason	故	"Spanish *razón*, French *raison*, English *reason*"	9	5	4
+same	Grammar and logic	"same, equal, like, as, similar, together"	sam	同	"English *same*, Latin *similis*"	6	9	3
+this	Grammar and logic	"this, here, now, present (that/there = `not-this`)"	tis	此	English *this*	6	48	1
+true	Grammar and logic	"true, correct, right, of course, evidently"	ves	真	"Latin *verus*, Italian *vero*, Spanish *verdad*"	10	11	1
+what	Grammar and logic	"question, which, any, whichever"	ker	何	"*quel, qual, quale*"	7	49	1
+yes	Grammar and logic	"yes, assent, affirm, correct-response"	si	是	"Spanish *si*, Italian *si*, Latin *sic* — interjection class, CV"	9	11	1
+box	Made things	"closed container: box, bag, bottle, case, vessel"	vaso	皿	"*vase, vessel, vaso*"	5	3	4
+cloth	Made things	"cloth, clothes, fabric, covering"	ropa	衣	"*robe, ropa, roba*"	6	3	4
+door	Made things	"door, gate, entrance, portal"	porta	門	"Latin porta, Spanish puerta"	8	3	4
+electric	Made things	"electric, electricity, electronic, powered"	vorto	電	"Italian volta, volt"	13	4	4
+key	Made things	"key, lock, to lock or unlock"	yave	錠	"Spanish llave, Italian chiave"	16	2	5
+map	Made things	"map, chart, diagram, plan, layout"	mapa	図	"English *map*, Spanish/Portuguese/Polish/Russian *mapa/mapa/mapa/карта→mapa*"	7	8	3
+paper	Made things	"paper, card, page, document, ticket"	karta	片	"*carta, card, chart*"	4	7	3
+picture	Made things	"picture, image, photo, drawing, film"	pitur	画	"Spanish pintura, Latin pictura"	8	3	4
+room	Made things	"room, chamber, interior space within a building"	kamar	室	"Spanish camara, Italian camera"	9	10	3
+table	Made things	"table, desk, counter, flat surface"	tapur	机	Latin tabula; Latin mensa	6	0	5
+toilet	Made things	"toilet, lavatory, restroom, bathroom, WC"	panyu	便	"Italian bagno, Spanish bano; panyo was displaced"	9	0	5
+tool	Made things	"tool, instrument, device, machine, utensil"	uter	工	"*utensil, utile*"	3	7	3
+vehicle	Made things	"vehicle, car, craft, conveyance"	karo	车	"*car, carro, char*"	4	19	1
+metal	Material	"metal, iron, gold, refined hard material"	metar	金	Latin metallum	8	4	3
+oil	Material	"oil, fat, grease"	oren	油	Latin oleum	8	2	5
+salt	Material	"salt, savory mineral"	sares	塩	"Latin sal, Italian sale"	13	0	5
+stone	Material	"stone, rock, mineral, hard natural material"	rapis	岩	Latin lapis; Latin petra	8	2	3
+air	Nature	"air, wind, breath, gas, sky, weather"	vento	风	"*vento, wind, ventilate*"	4	9	3
+animal	Nature	"animal, beast, creature (generic head)"	peste	匹	"*beast, bestia*"	4	12	2
+bird	Nature	"bird, fowl"	avis	鳥	Latin avis	11	2	5
+bug	Nature	"insect, bug, spider, worm — small many-legged creature"	inses	虫	Spanish insecto	6	0	5
+dog	Nature	"dog, canine — includes wolf, fox, coyote"	kanis	犬	Latin canis	4	1	5
+earth	Nature	"ground, land, soil, floor, dirt"	tera	土	"*terra, terrain*"	3	8	3
+fire	Nature	"fire, burn, heat, hot"	voka	火	"Portuguese *fogo*, Italian *fuoco*"	4	12	3
+plant	Nature	"plant, tree, flower, wood"	arpo	木	"*arbor, árbol, arbre*"	4	18	1
+rain	Nature	"rain, precipitation"	ruva	雨	"Spanish *lluvia*, Latin *pluvia*; restored — scored rank 43 in the corpora, above `sun`"	8	5	4
+sun	Nature	"sun, light, day, daytime, 24-hour period, bright"	sore	日	"*sol, sole, solar*"	4	33	1
+water	Nature	"water, liquid, fluid, wet"	aku	水	"*aqua, agua*"	4	28	1
+A	Particles	object boundary	a	⇒	"Spanish personal *a*, which marks objects: *veo **a** Juan*"		46	2
+RI	Particles	predicate boundary	ri	⊢	"predicate boundary; no etymology, deliberately neutral"		116	1
+TE	Particles	"modification, head follows"	te	>	"Mandarin 的 *de*, Italian/Spanish *di/de* — the same job in both"		1	3
+child	People and society	"child, offspring, young of"	nino	子	Spanish *niño*	3	17	1
+country	People and society	"country, nation, state, homeland"	nasyon	国	Spanish nacion; Spanish pais	8	1	5
+friend	People and society	"friend, companion, ally"	ami	朋	"French *ami*, Spanish *amigo*"	8	1	5
+law	People and society	"law, rule, permission, authority, government"	reke	法	"*lex, legal, legge*"	8	2	5
+man	People and society	male	viro	男	"Latin *vir*, *virile*"	7	4	2
+marry	People and society	"marry, spouse, wedded"	maris	婚	Latin maritare; Latin nuptiae	11	1	5
+money	People and society	"money, price, cost, value, payment"	moni	贝	"English *money*, Latin *moneta*"	4	12	3
+parent	People and society	"parent, ancestor"	pari	亲	"*parent, padre, père*"	9	9	2
+self	People and society	"self, I, me, own, identity"	eko	己	*ego*	3	58	1
+woman	People and society	female	vema	女	"*femina, female*"	3	4	2
+you	People and society	"you, addressee"	tuo	尔	"*tu, tú, tuo*"	5	31	1
+art	"Places, arts, appearance"	"art, artwork, creative craft"	arti	芸	"Latin ars, artis"	7	1	5
+city	"Places, arts, appearance"	"city, town, urban place"	urpe	市	Latin urbs; Italian citta	5	4	4
+color	"Places, arts, appearance"	"color, hue"	koror	色	"*color, colore*"	6	3	3
+home	"Places, arts, appearance"	"home, house, dwelling, household"	kase	户	*casa*	4	9	3
+music	"Places, arts, appearance"	"music, song, melody"	musi	曲	"*music, música*"	6	7	2
+temple	"Places, arts, appearance"	"temple, shrine, church, sacred place"	temper	寺	Latin templum; Latin fanum	6	0	5
+bad	Qualities	"bad, poor, unpleasant, wrong"	marum	悪	Latin malum	11	8	2
+big	Qualities	"big, large, great, intense, very"	meka	大	*mega-*	3	23	1
+clean	Qualities	"clean, pure, washed"	puru	清	Latin purus	11	0	5
+cold	Qualities	"cold, cool, chilled"	rikus	冷	"Latin *frigus*, *refrigerate*"	7	4	4
+fast	Qualities	"fast, quick, rapid, soon"	veros	早	Spanish veloz; Latin celer	6	5	2
+fear	Qualities	"fear, afraid, danger, worry"	timo	危	"*timor, timid*"	6	6	4
+good	Qualities	"good, well, fine, pleasant"	pona	好	"*bueno, bonus, buono*"	6	28	1
+hard	Qualities	"hard, firm, solid, rigid, difficult"	turus	硬	Latin durus	12	7	4
+heavy	Qualities	"heavy, weight, weigh, dense"	pesa	重	"Spanish/Portuguese/Italian *peso*, French *peser*, Latin *pendere*/*pensum*; the currency is literally 'a weight'"	9	4	4
+long	Qualities	"long, tall, distant, extended"	ronka	长	"*long, lungo, largo*"	4	9	3
+new	Qualities	"new, young, recent, fresh"	nova	初	"*nova, nuevo, novel*"	7	5	1
+old	Qualities	"old, aged, former, past"	vetus	古	Latin vetus; Latin antiquus	5	1	5
+small	Qualities	"small, little, slight, minor"	piko	小	*pico-*	3	18	1
+eight	Quantity	"eight, 8"	ots	8	"Latin *octo*, Italian *otto*, Portuguese *oito*"		0	2
+five	Quantity	"five, 5"	kins	5	"Latin *quinque* (quintet, quintuple)"		1	2
+four	Quantity	"four, 4"	wats	4	"Latin *quattuor*, Spanish *cuatro* — /kw/ is an illegal onset, so /w/ carries it"		2	2
+hundred	Quantity	"hundred, 100, hundreds place"	katon	百	"Greek *hekaton* less the unstressed *he-* (hecatomb); *hekto-* is unwritable — no /h/, and /kt/ is an illegal coda"	6	0	3
+many	Quantity	"many, much, lots, 6+"	mur	多	*multi-*	6	8	3
+measure	Quantity	"measure, amount, degree, extent, quantity, count"	mens	寸	"Latin *mensura*, Spanish *mesura*, Italian *misura*"	3	8	3
+million	Quantity	"million, 1000000, millions place"	miron	兆	"Latin *milione*, Spanish *millon*, French *million*; *mega* is unavailable — meka is already big"	6	0	3
+nine	Quantity	"nine, 9"	noks	9	"Latin *novem*, Italian *nove*, Spanish *nueve*"		0	2
+no	Quantity	"zero, none, absent"	nem	无	"Latin *nemo* ""no one"""	4	15	2
+one	Quantity	"one, single, first, alone, the very"	wun	一	"English *one*, Spanish *uno*"	1	7	1
+seven	Quantity	"seven, 7"	sens	7	"Latin *septem*, French *sept*, Italian *sette*"		4	2
+six	Quantity	"six, 6"	siks	6	"Latin *sex*, French/English *six*, Spanish *seis*"		0	2
+ten	Quantity	"ten, 10, tens place"	tekas	十	"Greek *dekas* (a group of ten), *deka-* — decade, decathlon; *deka* itself is blocked by tera and meka"	2	0	2
+thousand	Quantity	"thousand, 1000, thousands place"	kiru	千	"Greek *khilioi*, metric *kilo-*; *kiro* is blocked by viro and karo"	3	1	3
+three	Quantity	"three, 3"	tets	3	"Latin *tres*, Spanish *tres*, Italian *tre*"		2	2
+two	Quantity	"two, 2, pair, both"	pits	2	"Latin *bis*, international *bi-* (bicycle, binary)"		4	1
+bend	Shape	"bend, curve, turn, fold"	kurva	弓	Latin curvus	3	4	4
+flat	Shape	"flat, level, plane, sheet"	yano	平	"Spanish llano, Latin planus"	5	2	5
+line	Shape	"line, thread, string, rope, wire"	rine	糸	Latin linea	6	6	4
+round	Shape	"round, circular, curved, ball"	rotun	丸	Latin rotundus	3	5	4
+straight	Shape	"straight, direct, nonstop, express, upright"	reto	直	"Italian retto, Spanish recto"	8	4	4
+back	Space and direction	"behind, rear, reverse (front = `not-back`)"	rets	反	"Latin *retro-* — retro, retreat, retrograde; also covers *reverse*"	4	5	4
+down	Space and direction	"below, low, bottom, under"	tun	下	English *down*	3	3	5
+edge	Space and direction	"edge, side, border, boundary, rim, margin, shore"	rante	边	"German/Dutch *Rand*, Swedish *rand*; English *rim*"	5	5	4
+far	Space and direction	"far, distant, remote"	ron	遠	"Latin *longe*, Italian *lontano*, French *loin*"	13	1	5
+from	Space and direction	"from, source, origin, out of"	vons	从	"Latin *fons* ""source"" — coda cluster restores the clipped hook"	4	3	2
+hole	Space and direction	"hole, gap, opening, empty space within"	vuko	穴	Italian buco; Latin cavus	5	1	5
+in	Space and direction	"inside, at, within"	in	内	Latin *in*	4	38	1
+left	Space and direction	"left, left-hand side, west (with `map`)"	sini	左	"Latin *sinistra*, Italian/Spanish *sinistra/siniestra*; English *sinister*"	5	3	5
+middle	Space and direction	"middle, center, between, among"	mets	中	"Latin *medius*, Spanish *medio*, Italian *mezzo*"	4	1	2
+near	Space and direction	"near, close, beside, next to, almost, nearly"	nir	近	English *near*	7	2	2
+out	Space and direction	"outside, external, beyond"	eks	外	"Latin *ex-*, Spanish *ex-*"	5	3	1
+right	Space and direction	"right, right-hand side, east (with `map`)"	rem	右	⚠ no etymology — see §9	5	2	5
+to	Space and direction	"toward, into, direction of motion"	ver	向	"French *vers*, Italian *verso* ""toward"""	6	14	1
+up	Space and direction	"above, high, top, over"	sur	上	"French *sur*, *super-*"	3	17	2
+after	Time direction	"after, later, subsequent, future, late"	tar	后	"Spanish *tarde*, English *tardy* ""late"""	6	11	1
+before	Time direction	"before, earlier, prior, in the past, early, already"	yer	前	"Spanish *ayer*, French *hier* ""yesterday"""	9	15	1
+close	Time direction	"close, shut, finish, end, conclude"	vin	閉	"Latin *finis*, Spanish *fin*, Italian *fine*"	11	18	1
+hour	Time direction	"hour, clock-time unit"	ora	刻	Latin hora	8	9	1
+interval	Time direction	"interval, duration, span of time, period, for (a length of time)"	turan	間	"Latin *durare*, Spanish *durar*, Italian *durata* -- duration"	12	8	1
+month	Time direction	"month, moon, lunar cycle"	mese	月	"Latin mensis, Italian mese"	4	3	3
+weekday	Time direction	named day of the week (Japanese 曜)	verya	曜	"Portuguese feira, Spanish feria"	18	10	3
+year	Time direction	"year, annual cycle"	anyo	年	"Spanish ano, Latin annus"	6	1	3
+agree	Verbs	"agree, consent, contract, promise, deal"	akor	約	"Italian accordo, Spanish acuerdo"	9	3	5
+become	Verbs	"become, get, turn into, come to be; enter a state"	tiven	成	Italian diventare	6	5	4
+break	Verbs	"break, cut, damage, ruin"	rompe	切	"*romper, rompere, rupture*"	4	3	5
+buy	Verbs	"buy, purchase, sell, trade, commercial exchange"	kompar	買	Spanish comprar; Latin emere	12	4	4
+choose	Verbs	"choose, decide, pick, select, elect, vote, opt"	erike	选	"*elegir, eleggere, eleger, elect, eligible*"	9	5	4
+come	Verbs	"come, arrive, approach"	veni	来	Latin venire	7	11	2
+feel	Verbs	"feel, emotion, sense, touch"	senti	心	"*sentir, sentiment*"	4	8	3
+fight	Verbs	"fight, battle, conflict, argue, compete, oppose, resist, struggle"	patar	争	"*battle, batalla, bataille, battaglia*; b -> p as elsewhere in the set"	6	6	4
+get	Verbs	"get, take, receive, obtain, catch"	toma	取	"Spanish *tomar* ""to take"""	8	7	2
+give	Verbs	"give, offer, send, provide"	tonar	与	"*donare, donner, donate*"	3	6	4
+go	Verbs	"go, move, travel, proceed, movement"	ire	行	"Latin *ire*, Spanish *ir*"	6	29	1
+have	Verbs	"have, hold, own, possess, keep"	tene	有	"*tener, tenir, tenere*"	6	10	2
+hear	Verbs	"hear, listen, sound, noise"	oti	耳	"*audio, oír, udire*"	6	7	4
+help	Verbs	"help, assist, serve, care for"	servi	助	"*serve, servir* — our `help` covers *serve, care for*"	7	5	4
+join	Verbs	"join, connect, combine, attach, unite, link, mix"	yunta	合	"Spanish/Portuguese *juntar*/*junto*, Latin *iungere* (junction, adjoin); English *join*, *yoke*; Sanskrit *yuj-* -> *yoga* 'union'; Hindi *jodna*"	6	2	5
+know	Verbs	"know, be informed of, information"	sape	知	"*saber, savoir, sapere*"	8	8	3
+learn	Verbs	"learn, study, acquire knowledge"	impar	学	Latin discere; Italian imparare; tiske was displaced	8	6	4
+lose	Verbs	"lose (misplace), lost, miss, misplace"	perti	失	Latin perdere	5	1	5
+make	Verbs	"make, do, build, create, cause"	vake	作	"*facere, fare, fabricate*"	7	9	2
+meet	Verbs	"meet, encounter, run into, come together with"	sarve	会	"Latin salve, French salut -- what you say on meeting; kanji 会 (Japanese au, ""to meet"")"	6	9	1
+need	Verbs	"need, require, must, necessary, have to"	neses	要	Latin necesse	9	4	4
+open	Verbs	"open, begin, start, uncover"	apa	开	"⚠ *aperire, abrir* — weakened, see §9"	4	3	4
+play	Verbs	"play, game, fun, amuse, visit (socially), hang out"	ruti	玩	"*ludic, ludere*; the 'visit' sense follows 玩/遊ぶ/놀다 — an obligatory visit is **ire ver**"	8	10	3
+put	Verbs	"put, place, set, position, sit, be seated, mount"	seta	坐	"English *set*/*sit* — the causative pair, as German *setzen*/*sitzen*; Spanish *sentar*, Latin *sedere*; the character is two people on the ground"	7	5	4
+remain	Verbs	"stop, halt, remain, cease, stand, stay, wait, pause"	sista	止	"*sistere, desist, resist* ""to halt, to stand"""	4	3	4
+say	Verbs	"say, speak, talk, tell"	tika	云	"Latin *dicere* — *dictate, diction*; English *talk*"	4	18	1
+see	Verbs	"see, look, watch, appear; understand, realize, get it"	vite	見	"*video, ver, vedere*"	7	19	2
+sleep	Verbs	"sleep, rest, bed, recharge, be dormant"	tormi	床	"*dormir, dormant*"	7	6	4
+sorry	Verbs	"sorry, apology, regret, excuse me"	perton	悔	Spanish perdon; Italian scusa	9	5	1
+thank	Verbs	"thank, gratitude, appreciation"	mersi	恩	French merci; Spanish gracias	10	5	2
+think	Verbs	"think, mind, idea, opinion, believe"	pensa	思	"*pensar, penser, pensive*"	9	5	4
+try	Verbs	"try, attempt, test, try out, taste-test, sample, check, prove"	propa	試	"*probar, provare, probieren, probe, prove*"	13	8	3
+want	Verbs	"want, desire, wish, hope"	vori	求	"Latin *volo, velle*; Italian *volere*, English *volition*"	7	12	1
+work	Verbs	"work, labor, job, effort, use"	rapo	力	"*labor, lavoro*"	2	14	2
+write	Verbs	"write, writing, text, script, inscribe, record"	pena	写	"pen, Latin penna, Italian penna, Spanish pluma; 写 is the modern CJK character"	5	10	2
+name	Word	"name, title, label"	nomen	名	Latin nomen	6	2	2
+word	Word	"word, language, speech, message"	verpo	言	"*verbo, verb, verbum*"	7	9	3
