@@ -142,6 +142,14 @@ Right now almost all our roots are two syllables.  There is some scheme where on
 
 (For some reason I find **verpo** especially grating; hopefully that will earn a chance to be shorter and more euphonious.)
 
+I did a quite search for roots that were used in a large number of compounds (at least 7 of our current set), are multisyllable, have a high frequency of use overall, and no good reason to stay what they are.  Here are the best candidates:
+
+aku, ire, omo, orten, sore, komi, roko, vite, riso, arpo, karo, nino, ruti, peste, voka, kase, vento, propa, panto, kosa, konten, verya, ruper, uter, rapo, pena, verpo
+
+So, we'd need to examine each of these, particularly in terms of the compounds they participate in, and look for a shorter/easier word that maybe still has some mnemonic value.
+
+Alternatively we could consider a contraction rule, something like "leading 2-syllable roots lose their second syllable in a compound," but that's likely to make them harder to learn, at least for newbies.  It would also open us up to a lot more collisions.
+
 
 ## Root Reductions
 
