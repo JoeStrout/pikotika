@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-529 terms
+531 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -159,6 +159,7 @@
 | father | man-parent | viropari | 男亲 |
 | fee | money-measure | monimens | 贝寸 |
 | fetch | get-go | tomaire | 取行 |
+| fewer | not-more | nonmas | 不更 |
 | fifth (in a series) | five-sequence | kinsorten | 5序 |
 | fighter | fight-person | pataromo | 争人 |
 | final | close-sequence | vinorten | 閉序 |
@@ -237,6 +238,7 @@
 | laugh | big-happy-mouth | mekakontenpuka | 大楽口 |
 | leave (depart) | out-go | eksire | 外行 |
 | lemon | not-sweet-yellow-plant-child | nontukeyoroarponino | 不甘黄木子 |
+| less | not-more | nonmas | 不更 |
 | library | many-paper-home | murkartakase | 多片户 |
 | light (in weight) | not-heavy | nonpesa | 不重 |
 | lightning | air-electric | ventovorto | 风電 |

@@ -178,7 +178,7 @@ Local: Go straight to that big tree, then turn left. Walk five minutes. You will
 > **Pam reto ire ver nontis meka arpo, tar pam kurva ver sini. Pam 5 parte turan kampaire. Tuo ri vite a tis.**
 
 Ivan: Left at the tree. Thank you. Is there a bus too?
-> **Sini in arpo. Mersi. Kum muromokaro ri in tis moto, ker?**
+> **Sini in arpo. Mersi. Ri kum muromokaro in tis moto, ker?**
 
 Local: Yes, but walking is faster.
 > **Si, sets kampaire ri mas veros.**
@@ -369,7 +369,7 @@ Pia: Okay. Send me what you have and I'll write that part.
 > **Pona. Pam tonar a tuo ri tene rite kosa ver eko, kum eko ri pena a nontis parte.**
 
 Omar: Really? Thank you. I'm sorry — I should have started earlier.
-> **Ves, ker? Meka mersi. Eko ri perton: eko ri neses apa in mas yer tempo.**
+> **Ves, ker? Meka mersi. Eko ri perton: eko ri pospona apa yer vin.**
 
 Pia: It happens. Next time, tell me sooner.
 > **Nem marumkosa. In tar tempo, pam mas veros tika ver eko.**
@@ -380,76 +380,4 @@ Omar: I will.
 Pia: Go get some coffee. We'll finish by four.
 > **Pam ire toma a neropipe. 4 ora yer, ekopanto ri vin.**
 
----
 
-## Notes on gaps and awkwardness
-
-Written after translating, in rough order of how much they hurt.
-
-**Relative and complement clauses** were the worst gap on the first pass: 'Send me
-what you have' had to become 'send me your report', and 'I think this week will be
-easy' was written with a colon (**eko ri pensa: tis sensesore ri nonturus**), which is
-punctuation standing in for grammar and does not survive being spoken aloud.  Four
-lines have since been rewritten using the proposed clause grammar — *A* bracketing a
-complement clause, and **rite** closing a relative one.  See
-[Notes on the clause rewrite](#notes-on-the-clause-rewrite) below.
-
-**No counterfactual or past modal.**  'I should have started earlier' has no
-translation; I wrote 'I needed to start earlier' (**eko ri neses apa in mas yer
-tempo**), which loses the regret that is the whole point of the line.
-
----
-
-## Notes on the clause rewrite
-
-Written while applying the proposed clause grammar to the dialogs above.  The proposal
-is not yet part of the language; these are notes on how it behaved in use.
-
-**Complement clauses were easy, and cost nothing.**  *A* already marks "the object
-starts here," and only one *RI* is licensed per clause, so an *RI* appearing after *A*
-can only belong to an embedded clause.  Three lines took the construction with no
-friction:
-
-> **Eko ri non pensa a ekopanto ri sarve vin.**  'I don't think we've met.' (1)
-> **Sets, eko ri pensa a tis sensesore ri nonturus.**  'Then I think this week will be easy.' (2)
-> **Eko ri kan voritika ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
-
-**A complement clause forces prepositional phrases to move.**  That third line is the
-finding.  A bare complement runs to the end of the sentence, so nothing can follow it
-— and **ver komivakeomo** ('to the cook') therefore has to sit *before* *A*, where no
-example in these dialogs had ever put a prepositional phrase.  Every other dialog line
-puts them after the object (**eko ri tika a tis ver tuo**).  So licensing bare
-complements after *A* quietly means licensing a second position for oblique phrases.
-That is a real change to word order, not a free one, and it was not visible from the
-armchair.
-
-**Only one relative clause turned up in ten dialogs.**
-
-> **Pam tonar a tuo ri tene rite kosa ver eko.**  'Send me what you have.' (10)
-
-It works cleanly — **rite** closes the noun phrase, which is exactly why **ver eko**
-can still follow it, where a bare complement would have blocked that.  One site in ten
-dialogs is also a measure of how rare relative clauses are in conversation of this
-kind.
-
-**Two candidate sites were rejected, both for the same reason.**  'The one that's been
-broken since spring' (2) and 'Do you have anything without meat?' (4) both relativize
-onto a bare pronoun or an indefinite — **te tis**, **rite komi** — and both read worse
-than the plain predicate versions already in the text.  A relative clause wants a
-contentful head noun, and small talk mostly does not supply one.
-
-**Embedded questions collide with the in-situ question rule.**  'Do you know when the
-train leaves' (5) should be a complement clause, and *A* brackets it fine, but the
-embedded clause contains **kerora** — and a **ker** in situ is how Pikotika marks a
-question.  The matrix is also a yes/no question, so it needs its own **, ker?** tag,
-and the line ends up with two **ker**s doing unrelated jobs:
-
-> **Tuo ri sape a rinekaro ri eksire in kerora, ker?**
-
-I left that line as the direct question it already was.  This is a genuine unsolved
-interaction, not a wording problem: whatever licenses complement clauses has to say
-what an in-situ **ker** scopes over.
-
-**Tooling.**  `pikotika.py` accepts every rewritten line.  **rite** is not a root; it
-is carried in `compounds.tsv` as *RI-TE*, and its Han form is the two existing
-particle glyphs, `⊢>`, so it needs no new character.

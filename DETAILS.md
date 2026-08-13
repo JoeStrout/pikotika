@@ -367,6 +367,37 @@ A prepositional phrase goes at the **end** of a sentence or clause, after the ob
 Note that **kum** is 'and' when it joins two like things and 'with' when it opens a phrase of its own, exactly as in English: *bread and water* against *come with me*.
 
 
+### Comparison
+
+Comparison needs no special grammar.  Put **mas** (更, 'more'), **nonmas** (不更, 'less'), or **sam** (同, 'same') in front of the quality, exactly as you would any other modifier, and mark whatever you are comparing against with **vons** (从, 'from') in an ordinary prepositional phrase at the end.
+
+| Pikotika | Literally | Meaning |
+|---|---|---|
+| **Tis ri mas pona vons nontis.** | this RI more good from that | This one is better than that one. |
+| **Tis ri mas piko moni vons urpe.** | this RI more small money from city | It's cheaper than in the city. |
+| **Tis ri nonmas pesaneses vons nontis.** | this RI not-more heavy-need from that | It's less important than that one. |
+| **Tis ri sam pona vons yerkosa.** | this RI same good from before-thing | It's as good as it was. |
+| **Tis ri mas vetus vons pan.** | this RI more old from all | It's the oldest. |
+
+Marking the standard of comparison with 'from' is the commonest strategy in the world's languages -- it is how Latin, Turkish, Japanese, Russian, Arabic, and Hindi all do it -- so for many learners this is the construction they already have.
+
+**The superlative is just 'from all'.**  There is no separate superlative form to learn: **vons pan** compares against everything, which is what a superlative means.
+
+**'Less' has two forms, and both are correct.**  Where the quality has a natural opposite, most speakers simply use it: 'worse' is **mas nonpona** (*more not-good*), 'smaller' is **mas piko** (*more small*).  Where it does not -- and many qualities have no one-word opposite -- use **nonmas**: **nonmas pesaneses** is 'less important', and **nonmas vori** is 'less wanted'.  Note that this is the ordinary compounding rule at work, the same one that turns **non konten** ('not happy') into **nonkonten** ('sad'): spaced, **non mas** says only 'not more'; written solid, **nonmas** takes the un- reading and means 'less'.  **nonmas** takes **vons pan** for a superlative like any other, so 'the least important' is **nonmas pesaneses vons pan**.
+
+**The standard can be left out.**  If it is obvious what you are comparing against, drop the **vons** phrase: **Eko ri mas pona in tistempo** is 'I'm better now', and **mas meka kamar** is 'a bigger room'.  This is the most common form in ordinary speech.
+
+#### Telling a comparison from a source
+
+**vons** is also the plain preposition 'from', so one sentence can hold both:
+
+> **In tisroko tis ri mas piko moni vons in kase.**  'It's cheaper here than at home.'
+
+The rule is mechanical, and you can apply it the moment you hear **vons**, with no need to wait and see how the sentence ends:
+
+> **A vons phrase is the standard of comparison if the predicate contains mas, nonmas, or sam.  Otherwise it is a source.**
+
+
 ### Questions and Answers
 
 Questions never rearrange the sentence.  Word order is the same as in a statement; you simply put **ker** ('what') in the slot where the answer belongs.
@@ -488,9 +519,9 @@ Note that **rite** closes off the noun phrase, so other words can follow it.  A 
 
 In some cases, the subject of a sentence is undefined or unnecessary, like in the English sentence "It's raining," or "There is a problem."  English requires a subject except in imperative (command) sentences, and so inserts these dummy words like "it" and "there" that don't really refer to anything in particular.  Or, English may use a passive construct, changing "[someone] lost my luggage" into "My luggage was lost."
 
-In Pikotike, we handle these situations by simply omitting the subject, and starting the sentence with the RI particle.  This makes it clear that there *is* a subject, but it is unspecified.  Examples:
+In Pikotika, we handle these situations by simply omitting the subject, and starting the sentence with the RI particle.  This makes it clear that there *is* a subject, but it is unspecified.  Examples:
 
-| English | Pikotike |
+| English | Pikotika |
 |---|---|
 | It's raining. | **Ri ruva.** |
 | There is a problem. | **Ri marumkosa.** |

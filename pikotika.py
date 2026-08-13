@@ -727,7 +727,7 @@ def render_latin(words, t):
     out = []
     for w in words:
         if is_numeral(w):
-            out.append(render_latin(w[2], t))
+            out.append(w[1])          # digits stay digits, `.` and `:` included
             continue
         if is_punct(w):
             out.append(w)

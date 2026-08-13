@@ -13,6 +13,11 @@ in one place.
 compounds.tsv is also rewritten in place, to fill in `root_level` (the
 highest Level of any root the compound uses).  `assigned_level` is edited by
 hand and only carried through.
+
+corpus.tsv likewise: `EN` and `gloss` are canonical and hand-edited, and
+`latin`, `han`, and `root_level` are rendered from the gloss on every run, so
+a sentence recorded once stays correct through any later change to a root's
+form or character.
 """
 
 import csv
@@ -25,6 +30,7 @@ import pikotika  # noqa: E402  (needs HERE on the path first)
 
 ROOTS_TSV = os.path.join(HERE, 'roots.tsv')
 COMPOUNDS_TSV = os.path.join(HERE, 'compounds.tsv')
+CORPUS_TSV = os.path.join(HERE, 'corpus.tsv')
 ROOTS_MD = os.path.join(HERE, 'ROOTS.md')
 COMPOUNDS_MD = os.path.join(HERE, 'COMPOUNDS.md')
 
@@ -93,18 +99,25 @@ ROOT_LEVEL = 'root_level'
 ASSIGNED_LEVEL = 'assigned_level'
 
 
-def root_level(gloss, t):
-    """The highest Level of any root in `gloss`; '' if any root has none.
+def parse_or_die(gloss, t, source):
+    words = pikotika.parse_gloss(gloss, t)
+    if words is None:
+        sys.exit(f'{source}: cannot parse gloss {gloss!r}')
+    return words
+
+
+def root_level(words, t):
+    """The highest Level of any root in `words`; '' if any root has none.
 
     A blank Level counts as higher than any number: a compound is only as
     teachable as its least-placed root, and an unplaced root is unplaced.
+
+    A written numeral is read out first, the same way `pikotika.max_level`
+    does it, so `30` costs the roots `three` and `ten` that saying it costs.
     """
-    words = pikotika.parse_gloss(gloss, t)
-    if words is None:
-        sys.exit(f'{COMPOUNDS_TSV}: cannot parse gloss {gloss!r}')
     highest = 0
-    for word in words:
-        if isinstance(word, str):     # punctuation rides along as text
+    for word in pikotika.expand_numerals(words):
+        if pikotika.is_punct(word):    # punctuation rides along as text
             continue
         for piece in word:
             if isinstance(piece, tuple):   # names and numbers are not roots
@@ -123,7 +136,8 @@ def level_compounds(rows, fields, t):
             fields.append(column)
     for row in rows:
         gloss = (row.get('gloss') or '').strip()
-        row[ROOT_LEVEL] = root_level(gloss, t) if gloss else ''
+        row[ROOT_LEVEL] = (root_level(parse_or_die(gloss, t, COMPOUNDS_TSV), t)
+                           if gloss else '')
         row[ASSIGNED_LEVEL] = (row.get(ASSIGNED_LEVEL) or '').strip()
     return sum(1 for r in rows if r[ROOT_LEVEL])
 
@@ -140,9 +154,7 @@ def render_compounds(rows, t):
         gloss = (row.get('gloss') or '').strip()
         if not gloss:
             continue
-        words = pikotika.parse_gloss(gloss, t)
-        if words is None:
-            sys.exit(f'{COMPOUNDS_TSV}: cannot parse gloss {gloss!r}')
+        words = parse_or_die(gloss, t, COMPOUNDS_TSV)
         latin, han = pikotika.render_latin(words, t), pikotika.render_han(words, t)
         for english in pikotika.split_alternatives(row.get('EN') or ''):
             entries.append((english, gloss, latin, han))
@@ -152,6 +164,41 @@ def render_compounds(rows, t):
     out += table(['English', 'Gloss', 'Latin', 'Han'], entries)
     out.append('')
     return '\n'.join(out), len(entries)
+
+
+# --- corpus -----------------------------------------------------------
+
+LATIN = 'latin'
+HAN = 'han'
+
+
+def sentence_case(text):
+    """Latin notation capitalizes a sentence; gloss notation does not.
+
+    The particles are the reason this is done here and not in pikotika.py:
+    they are *RI* in gloss and **ri** in Latin, so a sentence-initial *RI*
+    renders lowercase and only a whole-sentence view knows to raise it.
+    """
+    return text[:1].upper() + text[1:]
+
+
+def render_corpus(rows, fields, t):
+    """Fill in latin, han and root_level from the hand-edited gloss."""
+    for column in (LATIN, HAN, ROOT_LEVEL):
+        if column not in fields:
+            fields.append(column)
+    rendered = 0
+    for row in rows:
+        gloss = (row.get('gloss') or '').strip()
+        if not gloss:
+            row[LATIN] = row[HAN] = row[ROOT_LEVEL] = ''
+            continue
+        words = parse_or_die(gloss, t, CORPUS_TSV)
+        row[LATIN] = sentence_case(pikotika.render_latin(words, t))
+        row[HAN] = pikotika.render_han(words, t)
+        row[ROOT_LEVEL] = root_level(words, t)
+        rendered += 1
+    return rendered
 
 
 def main():
@@ -172,6 +219,11 @@ def main():
     rewrite(COMPOUNDS_TSV, rows, fields)
     print(f'Wrote {COMPOUNDS_TSV}: {leveled} of {len(rows)} compounds leveled, '
           f'{len(rows) - leveled} with an unleveled root.')
+
+    rows, fields = read_table(CORPUS_TSV)
+    rendered = render_corpus(rows, fields, t)
+    rewrite(CORPUS_TSV, rows, fields)
+    print(f'Wrote {CORPUS_TSV}: {rendered} of {len(rows)} sentences rendered.')
 
 
 if __name__ == '__main__':
