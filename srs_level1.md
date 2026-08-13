@@ -1,15 +1,3 @@
-# RI
-### predicate boundary
----
-# ri
-## ⊢
-===
-# ri
----
-# RI
-### predicate boundary
-## ⊢
-===
 # self
 ### "self, I, me, own, identity"
 ---

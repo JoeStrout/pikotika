@@ -19,6 +19,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CARD_SEP = "==="
 SIDE_SEP = "---"
 
+PARTICLES = "Particles"       # a roots.tsv category, but not card material
+
 
 # -- reading the curriculum --------------------------------------------------
 
@@ -120,6 +122,8 @@ def root_cards(gloss, t):
     root = t.gloss2root.get(gloss)
     if not root:
         sys.exit("no root %r in roots.tsv" % gloss)
+    if (root.get("category") or "").strip() == PARTICLES:
+        return                # particles are taught by the grammar, not by drill
     latin, han, covers = root["form"], root["han"], root["covers"]
     yield card(["# " + gloss, "### " + covers],
                ["# " + latin, "## " + han])

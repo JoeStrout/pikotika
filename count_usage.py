@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Count how often each root is used, into roots.tsv `usage_count`.
 
-Two sources are counted, and the column holds their total: the running text in
-DIALOGS.md, and the standing compound lexicon in compounds.tsv (one count per
-appearance of a root in a compound's gloss).  Only the dialogs themselves are
-counted -- the notes after them requote lines that were already counted.
+Two sources are counted, and the column holds their total: the example
+sentences in corpus.tsv, and the standing compound lexicon in compounds.tsv
+(one count per appearance of a root in a compound's gloss).
+
+The corpus is read from its `han` column rather than `gloss` or `latin`:
+one character is one root, so names and numerals sort themselves out in
+parse_han and nothing here has to know a cast list.
 
 Usage: python3 count_usage.py [--dry-run]
 """
@@ -21,70 +24,38 @@ sys.path.insert(0, HERE)
 import pikotika  # noqa: E402  (needs HERE on the path first)
 
 ROOTS_TSV = os.path.join(HERE, 'roots.tsv')
-DIALOGS_MD = os.path.join(HERE, 'DIALOGS.md')
+CORPUS_TSV = os.path.join(HERE, 'corpus.tsv')
 COLUMN = 'usage_count'
 
-# every Pikotika line in the dialogs is a blockquote holding one bold run
-LINE = re.compile(r'^>\s*\*\*(.+?)\*\*')
-# the dialogs end where the commentary starts; after this the same lines recur
-END = re.compile(r'^##\s+Notes\b')
-# the dialogs open by declaring their cast: "Names used here: **Aris** (Alice), ..."
-CAST = re.compile(r'^Names used here:')
-BOLD = re.compile(r'\*\*(.+?)\*\*')
+
+def read_corpus(path):
+    """The non-empty Han renderings of corpus.tsv, one per sentence."""
+    with open(path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f, **pikotika.TSV)
+        return [han for han in ((row.get('han') or '').strip()
+                                for row in reader) if han]
 
 
-def read_dialogs(path):
-    """Return (Pikotika lines, names the dialogs declare)."""
-    lines, names, in_cast = [], set(), False
-    with open(path, encoding='utf-8') as f:
-        for line in f:
-            if END.match(line):
-                break
-            if CAST.match(line):
-                in_cast = True
-            if in_cast:
-                names.update(n.lower() for n in BOLD.findall(line))
-                if line.rstrip().endswith('.'):
-                    in_cast = False
-                continue
-            found = LINE.match(line)
-            if found:
-                lines.append(found.group(1))
-    return lines, names
-
-
-def count_roots(lines, names, t):
-    """Counter of gloss -> uses, plus the tokens that were not roots at all.
-
-    Counting is per word rather than per line: a name or an interjection the
-    parser does not know should cost that one token, not the whole sentence.
-    """
+def count_corpus(lines, t):
+    """Counter of gloss -> uses, plus the sentences that would not parse."""
     counts = Counter()
     skipped = Counter()
     for line in lines:
-        for token in pikotika.tokenize(line):
-            if pikotika.is_punct_text(token):
+        words = pikotika.parse_han(line, t)
+        if words is None:
+            skipped[line] += 1
+            continue
+        for word in words:
+            # punctuation comes back as the bare string it was, and a written
+            # numeral as one ("NUMERAL", text, reading) tuple rather than a
+            # list of glosses -- its reading spells out the digits, and those
+            # are not roots anyone chose
+            if pikotika.is_punct(word) or pikotika.is_numeral(word):
                 continue
-            # Names are capitalized wherever they stand, so capitalization is
-            # what separates the name **Ar** (Hal) from the root `ar` 'other'.
-            # It cannot separate a sentence-initial one, but no such case
-            # occurs; if one ever does, the name reading is the one taken.
-            if token[:1].isupper() and token.lower() in names:
-                continue
-            words = pikotika.parse_latin(token, t)
-            if words is None:
-                skipped[token] += 1
-                continue
-            for word in words:
-                # a written numeral comes back as one ("NUMERAL", text,
-                # reading) tuple rather than a list of glosses; the reading
-                # is a spelling of the digits, not roots anyone chose
-                if pikotika.is_numeral(word):
-                    continue
-                for gloss in word:
-                    # names and numbers ride along as tuples; not roots
-                    if not isinstance(gloss, tuple):
-                        counts[gloss] += 1
+            for gloss in word:
+                # names, numbers and punctuation ride along as tuples
+                if not isinstance(gloss, tuple):
+                    counts[gloss] += 1
     return counts, skipped
 
 
@@ -126,15 +97,14 @@ def rewrite(path, rows, fields):
 
 def main(argv):
     t = pikotika.Tables(HERE)
-    lines, names = read_dialogs(DIALOGS_MD)
-    names |= {form.lower() for form in t.form2name}
-    counts, skipped = count_roots(lines, names, t)
+    lines = read_corpus(CORPUS_TSV)
+    counts, skipped = count_corpus(lines, t)
     compound_counts, compound_skipped = count_compounds(t)
     counts += compound_counts
     skipped += compound_skipped
 
     if skipped:
-        print('not counted (no such root): '
+        print('not counted (did not parse): '
               + ', '.join(f'{tok} x{n}' if n > 1 else tok
                           for tok, n in skipped.most_common()),
               file=sys.stderr)
@@ -144,12 +114,12 @@ def main(argv):
         rewrite(ROOTS_TSV, rows, fields)
 
     used = sum(1 for r in rows if r[COLUMN])
-    print(f'{len(lines)} dialog lines + {len(t.compound_by_gloss)} compounds, '
-          f'{sum(counts.values())} root uses; '
+    print(f'{len(lines)} corpus sentences + {len(t.compound_by_gloss)} '
+          f'compounds, {sum(counts.values())} root uses; '
           f'{used} of {len(rows)} roots used, {len(rows) - used} unused')
     unused = [r['gloss'] for r in rows if not r[COLUMN]]
     if unused:
-            print('unused: ' + ', '.join(unused))
+        print('unused: ' + ', '.join(unused))
     return 0
 
 
