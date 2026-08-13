@@ -191,16 +191,16 @@
 ## 是
 ===
 # say
-### "say, speak, talk, tell"
+### "say, speak, tell, word, speech, message"
 ---
 # tika
-## 云
+## 言
 ===
 # tika
 ---
 # say
-### "say, speak, talk, tell"
-## 云
+### "say, speak, tell, word, speech, message"
+## 言
 ===
 # one
 ### "one, single, first, alone, the very"
@@ -625,13 +625,13 @@ plant-water
 # story; tale
 ---
 # tikakosa
-## 云物
+## 言物
 say-thing
 ===
 # tikakosa
 ---
 # story; tale
-## 云物
+## 言物
 say-thing
 ===
 # we; us
@@ -718,17 +718,17 @@ vehicle-place
 ## 车所
 vehicle-place
 ===
-# ask; request
+# question; ask; inquire
 ---
-# voritika
-## 求云
-want-say
+# kertika
+## 何言
+what-say
 ===
-# voritika
+# kertika
 ---
-# ask; request
-## 求云
-want-say
+# question; ask; inquire
+## 何言
+what-say
 ===
 # Hello (when meeting someone new)
 ---
@@ -997,13 +997,13 @@ this-person RI child
 # The story is true.
 ---
 # Tikakosa ri ves.
-## 云物 ⊢ 真.
+## 言物 ⊢ 真.
 say-thing RI true
 ===
 # Tikakosa ri ves.
 ---
 # The story is true.
-## 云物 ⊢ 真.
+## 言物 ⊢ 真.
 say-thing RI true
 ===
 # I'm going.
@@ -1021,13 +1021,13 @@ self RI go
 # You're talking.
 ---
 # Tuo ri tika.
-## 尔 ⊢ 云.
+## 尔 ⊢ 言.
 you RI say
 ===
 # Tuo ri tika.
 ---
 # You're talking.
-## 尔 ⊢ 云.
+## 尔 ⊢ 言.
 you RI say
 ===
 # He/she is eating.
@@ -1081,13 +1081,13 @@ self RI close
 # Please speak.
 ---
 # Pam tika.
-## 乞 云.
+## 乞 言.
 please say
 ===
 # Pam tika.
 ---
 # Please speak.
-## 乞 云.
+## 乞 言.
 please say
 ===
 # Please eat.

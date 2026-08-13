@@ -1,6 +1,6 @@
 # Pikotika Roots
 
-196 entries in 19 groups.
+195 entries in 19 groups.
 
 ## Body and life (10)
 
@@ -275,7 +275,7 @@
 | play | ruti | 玩 | "play, game, fun, amuse, visit (socially), hang out" |
 | put | seta | 坐 | "put, place, set, position, sit, be seated, mount" |
 | remain | sista | 止 | "stop, halt, remain, cease, stand, stay, wait, pause" |
-| say | tika | 云 | "say, speak, talk, tell" |
+| say | tika | 言 | "say, speak, tell, word, speech, message" |
 | see | vite | 見 | "see, look, watch, appear; understand, realize, get it" |
 | sleep | tormi | 床 | "sleep, rest, bed, recharge, be dormant" |
 | sorry | perton | 悔 | "sorry, apology, regret, excuse me" |
@@ -286,9 +286,8 @@
 | work | rapo | 力 | "work, labor, job, effort, use" |
 | write | pena | 写 | "write, writing, text, script, inscribe, record" |
 
-## Word (2)
+## Word (1)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | name | nomen | 名 | "name, title, label" |
-| word | verpo | 言 | "word, language, speech, message" |

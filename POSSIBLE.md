@@ -140,25 +140,47 @@ We could consider blessing a *secondary* gloss, and allowing the primary or seco
 
 Right now almost all our roots are two syllables.  There is some scheme where only function words are one syllable, or something like that; but I can't remember exactly what the rule is and I don't find it very useful.  More useful would be shorter compound words.  So, when we have a big catalog of compounds, we could take inventory, see which roots are most commonly used, and shorten them to single syllables that play nicely with their neighbors.  This should have a noticeable impact on the fluency of the language.
 
-(For some reason I find **verpo** especially grating; hopefully that will earn a chance to be shorter and more euphonious.)
+(**verpo** was the first candidate examined, and it was retired outright rather than
+shortened: every sense it carried was already inside **tika** 'say', so the root was
+folded in and the six compounds reglossed -- *what-say* 'question', *say-way*
+'language', *write-say* 'text', and so on.  See "Root Reductions" below.)
 
-I did a quite search for roots that were used in a large number of compounds (at least 7 of our current set), are multisyllable, have a high frequency of use overall, and no good reason to stay what they are.  Here are the best candidates:
+I did a quick search for roots that were used in a large number of compounds (at least 7 of our current set), are multisyllable, have a high frequency of use overall, and no good reason to stay what they are.  Here are the best candidates:
 
-aku, ire, omo, orten, sore, komi, roko, vite, riso, arpo, karo, nino, ruti, peste, voka, kase, vento, propa, panto, kosa, konten, verya, ruper, uter, rapo, pena, verpo
+aku, ire, omo, orten, sore, komi, roko, vite, riso, arpo, karo, nino, ruti, peste, voka, kase, vento, propa, panto, kosa, konten, verya, ruper, uter, rapo, pena
 
-So, we'd need to examine each of these, particularly in terms of the compounds they participate in, and look for a shorter/easier word that maybe still has some mnemonic value.
+So, we'd need to examine each of these, particularly in terms of the compounds they participate in, and look for a shorter/easier word that maybe still has some mnemonic value.  (**verpo** was on this list, but it got removed and merged into **tika**.)
 
-Alternatively we could consider a contraction rule, something like "leading 2-syllable roots lose their second syllable in a compound," but that's likely to make them harder to learn, at least for newbies.  It would also open us up to a lot more collisions.
 
 
 ## Root Reductions
 
 (Currently all resolved.)
 
+**Done: `word` folded into `say` (2026-08-13).**  **verpo** covered "word, language,
+speech, message", all of which **tika** already reaches -- **tikakosa** (*say-thing*)
+'story' was treating **tika** as a noun head before the merge, so nothing new was
+asked of the root.  The six compounds recoined without collision: *what-say*
+'question', *say-way* 'language', *write-say* 'text', *measure-say* 'numeral',
+*key-say* 'password', *say-fight* 'argue'.  Two consequences worth remembering:
+
+- **kertika** now carries "question; ask; inquire" and **voritika** was narrowed to
+  "request; ask for", splitting the two senses English writes as one word (compare
+  *fragen*/*bitten*, *preguntar*/*pedir*, 問う/頼む).
+- The merged root took **言** and gave up 云.  言 is 'word' and 'speak' in both Chinese
+  and Japanese, where 云 reads as 'cloud' outside classical Chinese, so the character
+  now covers what the root covers -- at a cost of 3 strokes on the most-used root in
+  the set.  A pleasant side effect: the Han text of every affected compound is
+  unchanged (何言 is still 何言), since 言 simply moved to the surviving root.
+
+The cost is polysemy: **tika** now holds six senses under the gloss `say`, which is
+the strongest case yet for the secondary gloss proposed above -- a secondary gloss of
+`word` would carry all six compounds on its own.
+
 ## Root Additions
 
 The other half of the same question: if reductions freed up space, what would be
-worth spending it on?  What follows are concepts the current 189 roots do not touch,
+worth spending it on?  What follows are concepts the current 188 roots do not touch,
 where the workaround is either long, unguessable, or missing entirely.
 
 A concept belongs here only if *both* tests fail: no root covers it, and no short

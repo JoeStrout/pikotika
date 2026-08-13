@@ -166,7 +166,7 @@ Server: Very good. It will be about fifteen minutes.
 ## 5. Asking directions to a train station
 
 Ivan: Excuse me, do you speak English?
-> **Perton. Tuo ri tika a Inkiris verpo, ker?**
+> **Perton. Tuo ri tika a Inkiris, ker?**
 
 Local: A little. Slowly, please.
 > **Piko. Pam nonveros tika.**
@@ -184,7 +184,7 @@ Local: Yes, but walking is faster.
 > **Si, sets kampaire ri mas veros.**
 
 Ivan: One more question — do you know when the train to the airport leaves?
-> **Wun mas kerverpo: metarrinekaro ver ventokaroroko ri eksire in kerora?**
+> **Wun mas kertika: metarrinekaro ver ventokaroroko ri eksire in kerora?**
 
 Local: I don't know. Ask inside the station.
 > **Eko ri non sape. Pam voritika in karoroko.**
@@ -363,7 +363,7 @@ Pia: How much is left?
 > **Ker mens ri sista?**
 
 Omar: The numbers are all there. But the last part isn't written.
-> **Pan menseverpo ri in penakarta. Sets vin parte ri non pena vin.**
+> **Pan mensetika ri in penakarta. Sets vin parte ri non pena vin.**
 
 Pia: Okay. Send me what you have and I'll write that part.
 > **Pona. Pam tonar a tuo ri tene rite kosa ver eko, kum eko ri pena a nontis parte.**

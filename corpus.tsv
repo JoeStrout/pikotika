@@ -11,11 +11,11 @@ The road has been closed.	RI close A way.	Ri vin a moto.	⊢ 閉 ⇒ 方.	3
 My luggage has been lost.	RI lose A self go-box.	Ri perti a eko irevaso.	⊢ 失 ⇒ 己 行皿.	5
 The shop opens at eight.	RI open A buy-place in eight hour.	Ri apa a komparroko in ots ora.	⊢ 开 ⇒ 買所 内 8 刻.	4
 Someone is coming.	RI come.	Ri veni.	⊢ 来.	2
-They say the doctor is coming.	not-this-person RI say A heal-person RI come.	Nontisomo ri tika a sanaomo ri veni.	不此人 ⊢ 云 ⇒ 医人 ⊢ 来.	4
-They say time is money.	RI say A time RI money.	Ri tika a tempo ri moni.	⊢ 云 ⇒ 时 ⊢ 贝.	3
-English is spoken here.	RI say A English in this-place.	Ri tika a Inkiris in tisroko.	⊢ 云 ⇒ Inkiris 内 此所.	2
+They say the doctor is coming.	not-this-person RI say A heal-person RI come.	Nontisomo ri tika a sanaomo ri veni.	不此人 ⊢ 言 ⇒ 医人 ⊢ 来.	4
+They say time is money.	RI say A time RI money.	Ri tika a tempo ri moni.	⊢ 言 ⇒ 时 ⊢ 贝.	3
+English is spoken here.	RI say A English in this-place.	Ri tika a Inkiris in tisroko.	⊢ 言 ⇒ Inkiris 内 此所.	2
 Food is sold here.	RI buy A food in this-place.	Ri kompar a komi in tisroko.	⊢ 買 ⇒ 食 内 此所.	4
-I was told this.	RI say A this to self.	Ri tika a tis ver eko.	⊢ 云 ⇒ 此 向 己.	2
+I was told this.	RI say A this to self.	Ri tika a tis ver eko.	⊢ 言 ⇒ 此 向 己.	2
 Is this allowed?	RI law A this, what?	Ri reke a tis, ker?	⊢ 法 ⇒ 此, 何?	5
 It's not allowed.	RI not law.	Ri non reke.	⊢ 不 法.	5
 Payment is required.	RI need give A money.	Ri neses tonar a moni.	⊢ 要 与 ⇒ 贝.	4
@@ -50,14 +50,14 @@ The sun is big.	sun RI big.	Sore ri meka.	日 ⊢ 大.	1
 The vehicle is new.	vehicle RI new.	Karo ri nova.	车 ⊢ 初.	1
 It's late.	hour RI after.	Ora ri tar.	刻 ⊢ 后.	1
 He/she is a child.	this-person RI child.	Tisomo ri nino.	此人 ⊢ 子.	1
-The story is true.	say-thing RI true.	Tikakosa ri ves.	云物 ⊢ 真.	1
+The story is true.	say-thing RI true.	Tikakosa ri ves.	言物 ⊢ 真.	1
 I'm going.	self RI go.	Eko ri ire.	己 ⊢ 行.	1
-You're talking.	you RI say.	Tuo ri tika.	尔 ⊢ 云.	1
+You're talking.	you RI say.	Tuo ri tika.	尔 ⊢ 言.	1
 He/she is eating.	this-person RI food.	Tisomo ri komi.	此人 ⊢ 食.	1
 I'm driving.	self RI vehicle-go.	Eko ri karoire.	己 ⊢ 车行.	1
 We're leaving.	self-group RI out-go.	Ekopanto ri eksire.	己众 ⊢ 外行.	1
 I'm finished.	self RI close.	Eko ri vin.	己 ⊢ 閉.	1
-Please speak.	please say.	Pam tika.	乞 云.	1
+Please speak.	please say.	Pam tika.	乞 言.	1
 Please eat.	please food.	Pam komi.	乞 食.	1
 Please drive.	please vehicle-go.	Pam karoire.	乞 车行.	1
 Please leave.	please out-go.	Pam eksire.	乞 外行.	1
@@ -73,7 +73,7 @@ And you?	and you, what?	Kum tuo, ker?	并 尔, 何?	1
 She's my sister.	this-person RI self same-parent-woman.	Tisomo ri eko samparivema.	此人 ⊢ 己 同亲女.	3
 Really?	true, what?	Ves, ker?	真, 何?	1
 You don't look alike!	two you RI not same-see!	Pits tuo ri non samvite!	2 尔 ⊢ 不 同見!	3
-Everybody says that.	all person RI say A this.	Pan omo ri tika a tis.	全 人 ⊢ 云 ⇒ 此.	3
+Everybody says that.	all person RI say A this.	Pan omo ri tika a tis.	全 人 ⊢ 言 ⇒ 此.	3
 She looks like our father, and I look like our mother.	this-person RI same-see A self-group man-parent, but self RI same-see A self-group woman-parent.	Tisomo ri samvite a ekopanto viropari, sets eko ri samvite a ekopanto vemapari.	此人 ⊢ 同見 ⇒ 己众 男亲, 但 己 ⊢ 同見 ⇒ 己众 女亲.	3
 That explains it.	this RI reason.	Tis ri rason.	此 ⊢ 故.	4
 Do you live here in the city?	you RI life in this city, what?	Tuo ri viva in tis urpe, ker?	尔 ⊢ 生 内 此 市, 何?	5
@@ -127,15 +127,15 @@ I'll have that.	self RI want A this.	Eko ri vori a tis.	己 ⊢ 求 ⇒ 此.	2
 And I'll have the fish, please.	and self RI want A water-animal, please.	Kum eko ri vori a akupeste, pam.	并 己 ⊢ 求 ⇒ 水匹, 乞.	2
 Is it spicy?	this RI fire-taste, what?	Tis ri vokasapor, ker?	此 ⊢ 火味, 何?	4
 A little.	small.	Piko.	小.	1
-I can ask them to make it not spicy.	self RI able want-say to food-make-person A this RI become not fire-taste.	Eko ri kan voritika ver komivakeomo a tis ri tiven non vokasapor.	己 ⊢ 能 求云 向 食作人 ⇒ 此 ⊢ 成 不 火味.	4
+I can ask them to make it not spicy.	self RI able want-say to food-make-person A this RI become not fire-taste.	Eko ri kan voritika ver komivakeomo a tis ri tiven non vokasapor.	己 ⊢ 能 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.	4
 No, a little is fine.	not, small RI good.	Non, piko ri pona.	不, 小 ⊢ 好.	1
 And two glasses of water.	and 2 water-box, please.	Kum 2 akuvaso, pam.	并 2 水皿, 乞.	4
 Cold or warm?	cold or fire, what?	Rikus sive voka, ker?	冷 或 火, 何?	5
 Cold, please.	cold, please.	Rikus, pam.	冷, 乞.	4
 Very good.	big good.	Meka pona.	大 好.	1
 It will be about fifteen minutes.	if 15 part interval.	Pos 15 parte turan.	可 15 分 間.	4
-Excuse me, do you speak English?	sorry. you RI say A English word, what?	Perton. tuo ri tika a Inkiris verpo, ker?	悔. 尔 ⊢ 云 ⇒ Inkiris 言, 何?	3
-Slowly, please.	please not-fast say.	Pam nonveros tika.	乞 不早 云.	2
+Excuse me, do you speak English?	sorry. you RI say A English, what?	Perton. tuo ri tika a Inkiris, ker?	悔. 尔 ⊢ 言 ⇒ Inkiris, 何?	2
+Slowly, please.	please not-fast say.	Pam nonveros tika.	乞 不早 言.	2
 Where is the train station?	line-vehicle-place RI what-place?	Rinekaroroko ri kerroko?	糸车所 ⊢ 何所?	4
 Go straight to that big tree, then turn left.	please straight go to not-this big plant, after please bend to left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.	乞 直 行 向 不此 大 木, 后 乞 弓 向 左.	5
 Walk five minutes.	please 5 part interval leg-go.	Pam 5 parte turan kampaire.	乞 5 分 間 足行.	4
@@ -144,9 +144,9 @@ Left at the tree.	left in plant.	Sini in arpo.	左 内 木.	5
 Thank you.	thank.	Mersi.	恩.	2
 Is there a bus too?	RI and many-person-vehicle in this way, what?	Ri kum muromokaro in tis moto, ker?	⊢ 并 多人车 内 此 方, 何?	3
 Yes, but walking is faster.	yes, but leg-go RI more fast.	Si, sets kampaire ri mas veros.	是, 但 足行 ⊢ 更 早.	4
-One more question — do you know when the train to the airport leaves?	one more what-word: metal-line-vehicle to air-vehicle-place RI out-go in what-hour?	Wun mas kerverpo: metarrinekaro ver ventokaroroko ri eksire in kerora?	1 更 何言: 金糸车 向 风车所 ⊢ 外行 内 何刻?	4
+One more question — do you know when the train to the airport leaves?	one more what-say: metal-line-vehicle to air-vehicle-place RI out-go in what-hour?	Wun mas kertika: metarrinekaro ver ventokaroroko ri eksire in kerora?	1 更 何言: 金糸车 向 风车所 ⊢ 外行 内 何刻?	4
 I don't know.	self RI not know.	Eko ri non sape.	己 ⊢ 不 知.	3
-Ask inside the station.	please want-say in vehicle-place.	Pam voritika in karoroko.	乞 求云 内 车所.	1
+Ask inside the station.	please want-say in vehicle-place.	Pam voritika in karoroko.	乞 求言 内 车所.	1
 Thank you very much!	big thank!	Meka mersi!	大 恩!	2
 Good luck!	good-if!	Ponapos!	好可!	4
 I'm not tired.	self RI not tired.	Eko ri non kansa.	己 ⊢ 不 疲.	5
@@ -157,10 +157,10 @@ You had water five minutes ago.	5 part before, you RI drink A water.	5 parte yer
 I'm thirsty again.	self RI more drink-want.	Eko ri mas pipevori.	己 ⊢ 更 飲求.	2
 All right, a little.	good, small.	Pona, piko.	好, 小.	1
 Then sleep.	after, please sleep.	Tar, pam tormi.	后, 乞 床.	4
-Will you tell me a story?	you RI say A say-thing to self, what?	Tuo ri tika a tikakosa ver eko, ker?	尔 ⊢ 云 ⇒ 云物 向 己, 何?	2
-A short one.	small say-thing.	Piko tikakosa.	小 云物.	1
+Will you tell me a story?	you RI say A say-thing to self, what?	Tuo ri tika a tikakosa ver eko, ker?	尔 ⊢ 言 ⇒ 言物 向 己, 何?	2
+A short one.	small say-thing.	Piko tikakosa.	小 言物.	1
 About the big fish!	about big water-animal!	Topi meka akupeste!	件 大 水匹!	2
-I told you that one last night.	1 no-sun before, self RI say A this to you.	1 nemsore yer, eko ri tika a tis ver tuo.	1 无日 前, 己 ⊢ 云 ⇒ 此 向 尔.	2
+I told you that one last night.	1 no-sun before, self RI say A this to you.	1 nemsore yer, eko ri tika a tis ver tuo.	1 无日 前, 己 ⊢ 言 ⇒ 此 向 尔.	2
 I like that one!	self RI like A this!	Eko ri kusta a tis!	己 ⊢ 愛 ⇒ 此!	2
 Okay, okay.	good, good.	Pona, pona.	好, 好.	1
 Lie down.	please sleep.	Pam tormi.	乞 床.	4
@@ -224,12 +224,12 @@ Do you have a minute?	you RI have A one part interval, what?	Tuo ri tene a wun p
 What's wrong?	what bad-thing?	Ker marumkosa?	何 悪物?	2
 The report is not finished, and they want it today.	write-paper RI not close, and work-head RI want A this in this-sun.	Penakarta ri non vin, kum rapotesta ri vori a tis in tissore.	写片 ⊢ 不 閉, 并 力头 ⊢ 求 ⇒ 此 内 此日.	4
 How much is left?	what measure RI remain?	Ker mens ri sista?	何 寸 ⊢ 止?	4
-The numbers are all there.	all measure-word RI in write-paper.	Pan menseverpo ri in penakarta.	全 寸言 ⊢ 内 写片.	3
+The numbers are all there.	all measure-say RI in write-paper.	Pan mensetika ri in penakarta.	全 寸言 ⊢ 内 写片.	3
 But the last part isn't written.	but close part RI not write close.	Sets vin parte ri non pena vin.	但 閉 分 ⊢ 不 写 閉.	2
 Send me what you have and I'll write that part.	please give A you RI have RI-TE thing to self, and self RI write A not-this part.	Pam tonar a tuo ri tene rite kosa ver eko, kum eko ri pena a nontis parte.	乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己, 并 己 ⊢ 写 ⇒ 不此 分.	4
 Thank you.	big thank.	Meka mersi.	大 恩.	2
 I'm sorry — I should have started earlier.	self RI sorry: self RI if-good open before close.	Eko ri perton: eko ri pospona apa yer vin.	己 ⊢ 悔: 己 ⊢ 可好 开 前 閉.	4
-Next time, tell me sooner.	in after time, please more fast say to self.	In tar tempo, pam mas veros tika ver eko.	内 后 时, 乞 更 早 云 向 己.	2
+Next time, tell me sooner.	in after time, please more fast say to self.	In tar tempo, pam mas veros tika ver eko.	内 后 时, 乞 更 早 言 向 己.	2
 I will.	self RI make A this.	Eko ri vake a tis.	己 ⊢ 作 ⇒ 此.	2
 Go get some coffee.	please go get A black-drink.	Pam ire toma a neropipe.	乞 行 取 ⇒ 黒飲.	3
 We'll finish by four.	4 hour before, self-group RI close.	4 ora yer, ekopanto ri vin.	4 刻 前, 己众 ⊢ 閉.	2
@@ -246,10 +246,10 @@ I'm getting food for you.	self RI get A food for you.	Eko ri toma a komi por tuo
 Can you bring water for the child?	you RI able have-come A water for child, what?	Tuo ri kan teneveni a aku por nino, ker?	尔 ⊢ 能 有来 ⇒ 水 為 子, 何?	2
 The station is near, isn't it?	vehicle-place RI near, not?	Karoroko ri nir, non?	车所 ⊢ 近, 不?	2
 This fish is good, right?	this water-animal RI good, yes?	Tis akupeste ri pona, si?	此 水匹 ⊢ 好, 是?	2
-Yesterday I read a good story.	sun-before, self RI write-see A good say-thing.	Soreyer, eko ri penavite a pona tikakosa.	日前, 己 ⊢ 写見 ⇒ 好 云物.	2
+Yesterday I read a good story.	sun-before, self RI write-see A good say-thing.	Soreyer, eko ri penavite a pona tikakosa.	日前, 己 ⊢ 写見 ⇒ 好 言物.	2
 Today I'm meeting your relatives.	this-sun, self RI meet A you parent-group.	Tissore, eko ri sarve a tuo paripanto.	此日, 己 ⊢ 会 ⇒ 尔 亲众.	2
 Tomorrow we're going to the sea.	sun-after, self-group RI go to big-water.	Soretar, ekopanto ri ire ver mekaaku.	日后, 己众 ⊢ 行 向 大水.	1
 I love the sea, but I can't swim.	self RI big-like A big-water, but self RI not able water-go.	Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.	己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.	2
-The story is beautiful, but it isn't true.	say-thing RI good-see, but this RI not true.	Tikakosa ri ponavite, sets tis ri non ves.	云物 ⊢ 好見, 但 此 ⊢ 不 真.	2
+The story is beautiful, but it isn't true.	say-thing RI good-see, but this RI not true.	Tikakosa ri ponavite, sets tis ri non ves.	言物 ⊢ 好見, 但 此 ⊢ 不 真.	2
 I'm thirsty, but I don't want tea.	self RI drink-want, but self RI not want A plant-water.	Eko ri pipevori, sets eko ri non vori a arpoaku.	己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.	2
 Tomorrow my mother is coming, but my father isn't.	sun-after, self woman-parent RI come, but self man-parent RI not come.	Soretar, eko vemapari ri veni, sets eko viropari ri non veni.	日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.	2

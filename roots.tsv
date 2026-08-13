@@ -183,7 +183,7 @@ open	Verbs	"open, begin, start, uncover"	apa	开	"⚠ *aperire, abrir* — weake
 play	Verbs	"play, game, fun, amuse, visit (socially), hang out"	ruti	玩	"*ludic, ludere*; the 'visit' sense follows 玩/遊ぶ/놀다 — an obligatory visit is **ire ver**"	8	10	3
 put	Verbs	"put, place, set, position, sit, be seated, mount"	seta	坐	"English *set*/*sit* — the causative pair, as German *setzen*/*sitzen*; Spanish *sentar*, Latin *sedere*; the character is two people on the ground"	7	5	4
 remain	Verbs	"stop, halt, remain, cease, stand, stay, wait, pause"	sista	止	"*sistere, desist, resist* ""to halt, to stand"""	4	3	4
-say	Verbs	"say, speak, talk, tell"	tika	云	"Latin *dicere* — *dictate, diction*; English *talk*"	4	27	1
+say	Verbs	"say, speak, tell, word, speech, message"	tika	言	"Latin *dicere* — *dictate, diction*; English *talk*"	7	35	1
 see	Verbs	"see, look, watch, appear; understand, realize, get it"	vite	見	"*video, ver, vedere*"	7	23	2
 sleep	Verbs	"sleep, rest, bed, recharge, be dormant"	tormi	床	"*dormir, dormant*"	7	6	4
 sorry	Verbs	"sorry, apology, regret, excuse me"	perton	悔	Spanish perdon; Italian scusa	9	8	1
@@ -194,4 +194,3 @@ want	Verbs	"want, desire, wish, hope"	vori	求	"Latin *volo, velle*; Italian *vo
 work	Verbs	"work, labor, job, effort, use"	rapo	力	"*labor, lavoro*"	2	14	2
 write	Verbs	"write, writing, text, script, inscribe, record"	pena	写	"pen, Latin penna, Italian penna, Spanish pluma; 写 is the modern CJK character"	5	11	2
 name	Word	"name, title, label"	nomen	名	Latin nomen	6	2	2
-word	Word	"word, language, speech, message"	verpo	言	"*verbo, verb, verbum*"	7	9	3

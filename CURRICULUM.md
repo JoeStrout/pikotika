@@ -133,9 +133,9 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 
 ---
 ## Level 3
-### 40 more roots (total: 120)
+### 39 more roots (total: 119)
 
-black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all, same, map, paper, room, tool, metal, stone, air, earth, fire, TE, money, color, home, long, hundred, many, measure, million, thousand, month, weekday, year, feel, know, play, try, word
+black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all, same, map, paper, room, tool, metal, stone, air, earth, fire, TE, money, color, home, long, hundred, many, measure, million, thousand, month, weekday, year, feel, know, play, try
 
 ### 45 more compounds (total: 105)
 
@@ -161,7 +161,7 @@ next, recover, recall, repeat, airplane, airport, everyone, everywhere, everythi
 
 ---
 ## Level 4
-### 40 more roots (total: 160)
+### 40 more roots (total: 159)
 
 head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electric, picture, rain, city, cold, fear, hard, heavy, bend, line, round, straight, back, edge, become, buy, choose, fight, give, hear, help, learn, need, open, put, remain, sleep, think
 
@@ -175,7 +175,7 @@ head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electri
 
 ---
 ## Level 5
-### 36 more roots (total: 196, all roots in the language)
+### 36 more roots (total: 195, all roots in the language)
 
 body, hand, life, sick, stomach, anger, surprise, tired, or, other, key, table, toilet, oil, salt, bird, bug, dog, country, friend, law, marry, art, temple, clean, old, flat, down, far, hole, left, right, agree, break, join, lose
 

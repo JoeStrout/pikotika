@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-539 terms
+541 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -19,19 +19,20 @@
 | airplane | air-vehicle | ventokaro | 风车 |
 | airport | air-vehicle-place | ventokaroroko | 风车所 |
 | alcohol (usually wine) | fire-water | vokaaku | 火水 |
-| alert | fear-say | timotika | 危云 |
+| alert | fear-say | timotika | 危言 |
 | allergy | body-not-agree | korpononakor | 体不約 |
 | alternative | choose-thing | erikekosa | 选物 |
 | always | all-time | pantempo | 全时 |
 | annoyance | small-anger | pikokoler | 小怒 |
 | another person | other-person | aromo | 別人 |
-| answer | back-say | retsetika | 反云 |
+| answer | back-say | retsetika | 反言 |
 | anticipate | not-surprise | nonmira | 不奇 |
-| argue | word-fight | verpopatar | 言争 |
+| argue | say-fight | tikapatar | 言争 |
 | army | fight-group | patarpanto | 争众 |
 | arrange | before-make | yervake | 前作 |
 | arrange | sequence-put | ortenseta | 序坐 |
-| ask | want-say | voritika | 求云 |
+| ask | what-say | kertika | 何言 |
+| ask for | want-say | voritika | 求言 |
 | astonishment | big-surprise | mekamira | 大奇 |
 | at last | in-close | invin | 内閉 |
 | athletics | body-play | korporuti | 体玩 |
@@ -53,7 +54,7 @@
 | beer (any grain alcohol) | grain-fire-water | risovokaaku | 米火水 |
 | beige | grain-color | risokoror | 米色 |
 | bicycle | leg-vehicle | kampakaro | 足车 |
-| blunt | straight-say | retotika | 直云 |
+| blunt | straight-say | retotika | 直言 |
 | book | many-paper | murkarta | 多片 |
 | booking | before-agree | yerakor | 前約 |
 | border (of a country) | country-edge | nasyonrante | 国边 |
@@ -74,7 +75,7 @@
 | careful | fear-see | timovite | 危見 |
 | carpet | earth-cloth | teraropa | 土衣 |
 | carry | have-go | teneire | 有行 |
-| cast a ballot | choose-say | eriketika | 选云 |
+| cast a ballot | choose-say | eriketika | 选言 |
 | cat | home-animal | kasepeste | 户匹 |
 | caution | fear-see | timovite | 危見 |
 | cautious | fear-see | timovite | 危見 |
@@ -115,7 +116,7 @@
 | decimal point | part | parte | 分 |
 | decision | choose-close | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
-| digit | measure-word | menseverpo | 寸言 |
+| digit | measure-say | mensetika | 寸言 |
 | directory map | help-map | servimapa | 助図 |
 | discover | new-see | novavite | 初見 |
 | disk | flat-round | yanorotun | 平丸 |
@@ -177,7 +178,7 @@
 | forget | know-lose | sapeperti | 知失 |
 | former | before-sequence | yerorten | 前序 |
 | fourth (in a series) | four-sequence | watsorten | 4序 |
-| frank | straight-say | retotika | 直云 |
+| frank | straight-say | retotika | 直言 |
 | Friday | metal-weekday | metarverya | 金曜 |
 | fried | fire-oil-make | vokaorenvake | 火油作 |
 | fried rice | oil-white-grain | orenrankoriso | 油白米 |
@@ -213,7 +214,7 @@
 | her | this-person | tisomo | 此人 |
 | him | this-person | tisomo | 此人 |
 | holiday | play-come-go | rutiveniire | 玩来行 |
-| honest | straight-say | retotika | 直云 |
+| honest | straight-say | retotika | 直言 |
 | hoop | round-line | rotunrine | 丸糸 |
 | hotel | sleep-home | tormikase | 床户 |
 | how | what-way | kermoto | 何方 |
@@ -225,6 +226,7 @@
 | important | heavy-need | pesaneses | 重要 |
 | in the end | in-close | invin | 内閉 |
 | in truth | in-true | inves | 内真 |
+| inquire | what-say | kertika | 何言 |
 | insufficient | not-all | nonpan | 不全 |
 | intersection | way-join | motoyunta | 方合 |
 | journey | come-go | veniire | 来行 |
@@ -235,7 +237,7 @@
 | knife (knife or scissors) | break-tool | rompeuter | 切工 |
 | lamb | small-milk-animal-meat | pikoratenpestekarne | 小乳匹肉 |
 | lamp | electric-sun | vortosore | 電日 |
-| language | word-way | verpomoto | 言方 |
+| language | say-way | tikamoto | 言方 |
 | last | close-sequence | vinorten | 閉序 |
 | laugh | big-happy-mouth | mekakontenpuka | 大楽口 |
 | leave (depart) | out-go | eksire | 外行 |
@@ -292,8 +294,8 @@
 | not enough | not-all | nonpan | 不全 |
 | nothing | no-thing | nemkosa | 无物 |
 | nowhere | no-place | nemroko | 无所 |
-| number | measure-word | menseverpo | 寸言 |
-| numeral | measure-word | menseverpo | 寸言 |
+| number | measure-say | mensetika | 寸言 |
+| numeral | measure-say | mensetika | 寸言 |
 | nut | hard-plant-child | turusarponino | 硬木子 |
 | office | work-room | rapokamar | 力室 |
 | option | choose-thing | erikekosa | 选物 |
@@ -305,7 +307,7 @@
 | pain | sick-feel | marasenti | 病心 |
 | park | green-place | verteroko | 緑所 |
 | party (celebration) | play-group | rutipanto | 玩众 |
-| password | key-word | yaveverpo | 錠言 |
+| password | key-say | yavetika | 錠言 |
 | pay attention | think-give | pensatonar | 思与 |
 | peace | no-fight | nempatar | 无争 |
 | peaceful | small-happy | pikokonten | 小楽 |
@@ -319,7 +321,7 @@
 | pink | red-white | ruperranko | 赤白 |
 | playground | play-place | rutiroko | 玩所 |
 | playhouse | play-home | rutikase | 玩户 |
-| politeness (verbal) | please-say | pamtika | 乞云 |
+| politeness (verbal) | please-say | pamtika | 乞言 |
 | polygon | many-bend | murkurva | 多弓 |
 | pork | red-white-animal-meat | ruperrankopestekarne | 赤白匹肉 |
 | porridge | water-grain | akuriso | 水米 |
@@ -339,8 +341,8 @@
 | purple | red-blue | ruperasur | 赤青 |
 | put in order | sequence-put | ortenseta | 序坐 |
 | quadrilateral | four-bend | watsekurva | 4弓 |
-| quarrel | word-fight | verpopatar | 言争 |
-| question | what-word | kerverpo | 何言 |
+| quarrel | say-fight | tikapatar | 言争 |
+| question | what-say | kertika | 何言 |
 | queue | person-sequence | omoorten | 人序 |
 | quiet | small-hear | pikooti | 小耳 |
 | quiz | know-try | sapepropa | 知試 |
@@ -366,15 +368,15 @@
 | relearn | again-learn | repeimpar | 又学 |
 | remake | again-make | repevake | 又作 |
 | remember | know-have | sapetene | 知有 |
-| repeat | again-say | repetika | 又云 |
-| reply | back-say | retsetika | 反云 |
+| repeat | again-say | repetika | 又言 |
+| reply | back-say | retsetika | 反言 |
 | report | write-paper | penakarta | 写片 |
-| request | want-say | voritika | 求云 |
+| request | want-say | voritika | 求言 |
 | resemble | same-see | samvite | 同見 |
 | reservation | before-agree | yerakor | 前約 |
 | respect | please-feel | pamsenti | 乞心 |
-| respond | back-say | retsetika | 反云 |
-| response | back-say | retsetika | 反云 |
+| respond | back-say | retsetika | 反言 |
+| response | back-say | retsetika | 反言 |
 | retain | know-have | sapetene | 知有 |
 | rethink | again-think | repepensa | 又思 |
 | retrieve | again-get | repetoma | 又取 |
@@ -393,7 +395,7 @@
 | sake | white-grain-fire-water | rankorisovokaaku | 白米火水 |
 | sand | small-stone | pikorapis | 小岩 |
 | Saturday | earth-weekday | teraverya | 土曜 |
-| say again | again-say | repetika | 又云 |
+| say again | again-say | repetika | 又言 |
 | schedule | time-sequence | tempoorten | 时序 |
 | school | learn-place | imparroko | 学所 |
 | sea | big-water | mekaaku | 大水 |
@@ -440,7 +442,7 @@
 | station | vehicle-place | karoroko | 车所 |
 | step (in a procedure) | sequence-part | ortenparte | 序分 |
 | storm | big-rain | mekaruva | 大雨 |
-| story | say-thing | tikakosa | 云物 |
+| story | say-thing | tikakosa | 言物 |
 | strong wind | big-air | mekavento | 大风 |
 | stubborn | hard-head | turustesta | 硬头 |
 | study again | again-learn | repeimpar | 又学 |
@@ -452,12 +454,12 @@
 | taciturn | close-mouth | vinpuka | 閉口 |
 | take after | same-see | samvite | 同見 |
 | take along | have-go | teneire | 有行 |
-| tale | say-thing | tikakosa | 云物 |
+| tale | say-thing | tikakosa | 言物 |
 | tan | grain-color | risokoror | 米色 |
 | tea | plant-water | arpoaku | 木水 |
 | tears | see-water | viteaku | 見水 |
 | test (of knowledge) | know-try | sapepropa | 知試 |
-| text | write-word | penaverpo | 写言 |
+| text | write-say | penatika | 写言 |
 | that | not-this | nontis | 不此 |
 | that's why | this-reason | tisrason | 此故 |
 | the end (of a series) | close-sequence | vinorten | 閉序 |
@@ -482,7 +484,7 @@
 | tomato | red-plant-child | ruperarponino | 赤木子 |
 | tomato sauce | red-food | ruperkomi | 赤食 |
 | tomorrow | sun-after | soretar | 日后 |
-| tongue (language) | word-way | verpomoto | 言方 |
+| tongue (language) | say-way | tikamoto | 言方 |
 | tonight | this-no-sun | tisnemsore | 此无日 |
 | too [much] | up-measure | surmens | 上寸 |
 | toy | play-tool | rutiuter | 玩工 |
@@ -509,15 +511,15 @@
 | vegetarian | not-meat-food-person | nonkarnekomiomo | 不肉食人 |
 | vendor | buy-person | komparomo | 買人 |
 | verify | try-true | propaves | 試真 |
-| vote | choose-say | eriketika | 选云 |
+| vote | choose-say | eriketika | 选言 |
 | voyage | far-come-go | ronveniire | 遠来行 |
 | wait a while | time-remain | temposista | 时止 |
 | wait around | time-remain | temposista | 时止 |
 | waiter | help-person | serviomo | 助人 |
 | walk | leg-go | kampaire | 足行 |
 | war | big-fight | mekapatar | 大争 |
-| warn | fear-say | timotika | 危云 |
-| warning | fear-say | timotika | 危云 |
+| warn | fear-say | timotika | 危言 |
+| warning | fear-say | timotika | 危言 |
 | watch out | fear-see | timovite | 危見 |
 | we | self-group | ekopanto | 己众 |
 | wear | cloth-have | ropatene | 衣有 |
@@ -539,7 +541,7 @@
 | wine | plant-child-fire-water | arponinovokaaku | 木子火水 |
 | winner | up-become-person | surtivenomo | 上成人 |
 | writer | write-person | penaomo | 写人 |
-| writing (text) | write-word | penaverpo | 写言 |
+| writing (text) | write-say | penatika | 写言 |
 | yellow fruit (usually banana) | yellow-plant-child | yoroarponino | 黄木子 |
 | yesterday | sun-before | soreyer | 日前 |
 | you-are-here map | help-map | servimapa | 助図 |
