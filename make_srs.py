@@ -134,20 +134,20 @@ def compound_cards(english, t):
     latin, han = from_gloss(gloss, t)
     meanings = all_english(gloss, t) or english
     yield card(["# " + meanings],
-               ["# " + latin, "## " + han])
-    yield card(["# " + latin, "## " + han],
-               ["# " + meanings])
+               ["# " + latin, "## " + han, gloss])
+    yield card(["# " + latin],
+               ["# " + meanings, "## " + han, gloss])
 
 
-def phrase_cards(english, latin, t):
+def phrase_cards(english, gloss, latin, t):
     # the curriculum's Latin is kept verbatim: it is a sentence, and rendering
     # it from the roots would lose its capitalization
     latin = strip_bold(latin)
     han = han_of_latin(latin, t)
     yield card(["# " + english],
-               ["# " + latin, "## " + han])
+               ["# " + latin, "## " + han, gloss])
     yield card(["# " + latin],
-               ["# " + english])
+               ["# " + english, "## " + han, gloss])
 
 
 def build(level, t):
@@ -162,8 +162,8 @@ def build(level, t):
             for english in comma_list(body):
                 cards += compound_cards(english, t)
         else:
-            for english, _gloss, latin in table_rows(body):
-                cards += phrase_cards(english, latin, t)
+            for english, gloss, latin in table_rows(body):
+                cards += phrase_cards(english, gloss, latin, t)
     return cards
 
 
