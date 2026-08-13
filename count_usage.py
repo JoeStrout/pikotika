@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Count how often each root is used in DIALOGS.md, into roots.tsv `usage_count`.
+"""Count how often each root is used, into roots.tsv `usage_count`.
 
-The dialogs are the only running corpus in the repo, so they are the best
-evidence for which roots are earning their place.  Only the dialogs themselves
-are counted -- the notes after them requote lines that were already counted.
+Two sources are counted, and the column holds their total: the running text in
+DIALOGS.md, and the standing compound lexicon in compounds.tsv (one count per
+appearance of a root in a compound's gloss).  Only the dialogs themselves are
+counted -- the notes after them requote lines that were already counted.
 
 Usage: python3 count_usage.py [--dry-run]
 """
@@ -75,10 +76,30 @@ def count_roots(lines, names, t):
                 skipped[token] += 1
                 continue
             for word in words:
+                # a written numeral comes back as one ("NUMERAL", text,
+                # reading) tuple rather than a list of glosses; the reading
+                # is a spelling of the digits, not roots anyone chose
+                if pikotise.is_numeral(word):
+                    continue
                 for gloss in word:
                     # names and numbers ride along as tuples; not roots
                     if not isinstance(gloss, tuple):
                         counts[gloss] += 1
+    return counts, skipped
+
+
+def count_compounds(t):
+    """Counter of gloss -> uses across every compound gloss in compounds.tsv."""
+    counts = Counter()
+    skipped = Counter()
+    for gloss in t.compound_by_gloss:
+        for part in re.split(r'[-\s]+', gloss.strip()):
+            if not part:
+                continue
+            if part in t.gloss2root:
+                counts[part] += 1
+            else:
+                skipped[part] += 1
     return counts, skipped
 
 
@@ -108,6 +129,9 @@ def main(argv):
     lines, names = read_dialogs(DIALOGS_MD)
     names |= {form.lower() for form in t.form2name}
     counts, skipped = count_roots(lines, names, t)
+    compound_counts, compound_skipped = count_compounds(t)
+    counts += compound_counts
+    skipped += compound_skipped
 
     if skipped:
         print('not counted (no such root): '
@@ -120,7 +144,8 @@ def main(argv):
         rewrite(ROOTS_TSV, rows, fields)
 
     used = sum(1 for r in rows if r[COLUMN])
-    print(f'{len(lines)} dialog lines, {sum(counts.values())} root uses; '
+    print(f'{len(lines)} dialog lines + {len(t.compound_by_gloss)} compounds, '
+          f'{sum(counts.values())} root uses; '
           f'{used} of {len(rows)} roots used, {len(rows) - used} unused')
     unused = [r['gloss'] for r in rows if not r[COLUMN]]
     if unused:

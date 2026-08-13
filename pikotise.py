@@ -147,6 +147,16 @@ def cover_keys(entry):
             if k and "`" not in k and k not in keys[:i]]
 
 
+def level_key(level):
+    """Sort key for a Level cell: blank is later than any number.
+
+    A blank means the root has not been assigned to a teaching level yet, so
+    nothing can be said about when a learner meets it -- treat that as the
+    hardest case rather than the easiest.
+    """
+    return (1, 0) if not level else (0, int(level))
+
+
 class Tables:
     def __init__(self, directory=HERE):
         self.gloss2root = {}      # gloss -> {gloss, form, han, covers, ...}
@@ -174,6 +184,9 @@ class Tables:
 
         for gloss, spec in COMPOUND_PARTICLES.items():
             row = dict(spec, gloss=gloss)
+            # a compound particle is learned once both its parts are
+            row["Level"] = max((self.level_of(p) for p in gloss.split("-")),
+                               key=level_key, default="")
             self.gloss2root[gloss] = row
             self.form2gloss[row["form"]] = gloss
             self.han2gloss[row["han"]] = gloss
@@ -213,6 +226,10 @@ class Tables:
 
     def han_of(self, gloss):
         return self.gloss2root[gloss]["han"]
+
+    def level_of(self, gloss):
+        """The root's teaching level as written in roots.tsv; "" if unleveled."""
+        return (self.gloss2root.get(gloss) or {}).get("Level", "") or ""
 
 
 # ---------------------------------------------------------------------------
@@ -677,6 +694,26 @@ def english_match(words, t):
     return hits
 
 
+def max_level(words, t):
+    """"<level> (gloss, ...)" for the hardest roots used, or None if no roots.
+
+    A written numeral is read out first, so "2" costs the root `two`.
+    """
+    glosses = []
+    for word in expand_numerals(words):
+        if is_punct(word):
+            continue
+        for gloss in word:
+            if (not isinstance(gloss, tuple) and gloss in t.gloss2root
+                    and gloss not in glosses):
+                glosses.append(gloss)
+    if not glosses:
+        return None
+    top = max((t.level_of(g) for g in glosses), key=level_key)
+    at_top = [g for g in glosses if t.level_of(g) == top]
+    return "%s (%s)" % (top, ", ".join(at_top))
+
+
 def lookup(text, t):
     fail = {}
     words, source = parse(text, t, fail)
@@ -689,6 +726,9 @@ def lookup(text, t):
     lines = ["  gloss: " + render_gloss(words, t),
              "  Latin: " + render_latin(words, t),
              "  Han:   " + render_han(words, t)]
+    top = max_level(words, t)
+    if top:
+        lines.append("  Max. root level: " + top)
     hits = english_match(words, t)
     if hits:
         lines.append("  EN:    " + "; ".join(hits))

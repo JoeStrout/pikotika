@@ -108,17 +108,6 @@ what the root holds, which is an argument for the secondary gloss above, not for
 new root.  The same goes for 'love' (inside **kusta**) and 'permission' (inside
 **reke**).
 
-### Strongest candidates
-
-These resist compounding: the parts needed to build them are themselves missing, so
-the workaround is a definition rather than a word.
-
-| concept | why it is not reachable | what it unlocks |
-|---|---|---|
-| **find** | opposite of **perti** 'lose', but *see-get* is wrong (you can find without looking) and *want-see* is searching, not finding | find, search, look for, discover, lost-and-found, look up, hunt |
-| **remember** | nothing in the set touches memory.  *not-forget* is circular; **sape** is the state of knowing, not its retention | remember, forget, memory, remind, memorize, souvenir, monument |
-| **beautiful** | **pona** covers "pleasant", but *good-see* is faint praise for a concept this frequent in travel talk | beautiful, pretty, handsome, view, scenery, ugly (*not-*), decoration, style |
-
 
 ### Worth considering
 
@@ -132,11 +121,7 @@ day:
 | **cook** | *food-make* (already coined as *food-make-person* 'cook') | the verb works; what is missing is 'kitchen, raw, restaurant, recipe' -- all buildable, but all through the same two roots |
 | **push / pull** | nothing | *pull* is the single most common instruction on a door.  One root with both senses (direction supplied by **ver**/**vons**) may cover it |
 | **safe / protect** | *not-fear* | 'safe' as a state is reachable; 'protect, guard, shelter, insurance' as an act is not |
-| **laugh / smile** | *happy-say*, *happy-see* | badly served, and socially loaded; we also have no **face** to build on |
-| **cloud** | *sky-water* -- now a direct collision, since 'rain' is recorded as *air-water* and **vento** covers 'sky' | weather talk is the canonical small-talk topic and we have only air, sun, and the *air-water* compound.  Cutting **ruva** raised the price of this gap, not lowered it |
 | **clear** | ??? | useful for description, as well as for "is that clear?", and weather; not-clear could also mean cloudy |
-| **read** | *see-word*, *see-write* | acceptable, but for a language that wants to scale to writing it is doing a lot of work |
-| **full** | **pan** covers "whole, complete, enough" | may already be fine; worth checking against 'the hotel is full', 'I am full' |
 
 ### Whole domains with no coverage
 
@@ -151,13 +136,6 @@ single additions may not fix:
 - **Manipulation.**  We have **toma**, **tare**, **tene**, **seta**, and then
   nothing: no carry, push, pull, throw, drop, catch, turn (as an action), open-with-
   force.  The set can describe transfers of possession but not much physical handling.
-- **Cognition.**  **sape**, **pensa**, **impar**, **vite** -- knowing, thinking,
-  learning, understanding -- but no remembering, finding, or doubting.  The mental verbs we have are static states; the ones missing are the
-  processes.
-- **Belief and ceremony.**  **temper** and **maris** are the only two entries, and
-  both name buildings or events rather than the things inside them.  A language meant
-  to scale past small talk will meet religion early.
-
 
 
 ### Metric sub-unit prefixes

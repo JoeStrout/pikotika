@@ -59,11 +59,14 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | Please leave. | please out-go | **Pam eksire.** |
 
 ## Level 2
-### 42 more roots (total: 84)
+### 38 more roots (total: 80)
 
+A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, get, more, drink, for, fast, thank, like, able, woman, man, seven, from, only, three, four, near, name, about, five, middle, six, eight, nine, ten
 
+### 40 more compounds (total: 80)
 
-### 40 more compounds (total: 60)
+beautiful, breakfast, bring, carry, cook (person), dance, discover, eye, father, fetch, fish, love, meal (a sitting), midday, morning, mother, never, night, nobody, nothing, nowhere, politeness (verbal), prepare, problem, read, reader, relative (kin), sad, sea, slow, soup, tears, thirsty, today, tomorrow, tonight, trip, welcome, writer, yesterday
+
 ### 10 more idioms/set phrases (total: 15)
 ### proper nouns
 ### simple modifiers (adjectives)
@@ -75,7 +78,10 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 ### examples with **sets** ('but')
 
 ## Level 3
-### 42 more roots (total: 126)
+### 40 more roots (total: 120)
+
+black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all, same, map, paper, room, tool, metal, air, earth, fire, TE, money, home, hard, long, hundred, many, measure, million, thousand, month, weekday, year, feel, hear, know, play, try
+
 ### 40 more compounds (total: 100)
 ### 10 more idioms/set phrases (total: 25)
 ### larger numbers
