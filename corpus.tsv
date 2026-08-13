@@ -234,3 +234,22 @@ I will.	self RI make A this.	Eko ri vake a tis.	己 ⊢ 作 ⇒ 此.	2
 Go get some coffee.	please go get A black-drink.	Pam ire toma a neropipe.	乞 行 取 ⇒ 黒飲.	3
 We'll finish by four.	4 hour before, self-group RI close.	4 ora yer, ekopanto ri vin.	4 刻 前, 己众 ⊢ 閉.	2
 and the line ends up with two **ker**s doing unrelated jobs:	you RI know A line-vehicle RI out-go in what-hour, what?	Tuo ri sape a rinekaro ri eksire in kerora, ker?	尔 ⊢ 知 ⇒ 糸车 ⊢ 外行 内 何刻, 何?	
+I see the child.	self RI see A child.	Eko ri vite a nino.	己 ⊢ 見 ⇒ 子.	2
+The child wants water.	child RI want A water.	Nino ri vori a aku.	子 ⊢ 求 ⇒ 水.	2
+We'll get the food soon.	self-group RI fast get A food.	Ekopanto ri veros toma a komi.	己众 ⊢ 早 取 ⇒ 食.	2
+My mother makes good food.	self woman-parent RI make A good food.	Eko vemapari ri vake a pona komi.	己 女亲 ⊢ 作 ⇒ 好 食.	2
+Please come with me.	please come with self.	Pam veni kum eko.	乞 来 并 己.	2
+I see the fish in the water.	self RI see A water-animal in water.	Eko ri vite a akupeste in aku.	己 ⊢ 見 ⇒ 水匹 内 水.	2
+I drink tea with my father.	self RI drink A plant-water with self man-parent.	Eko ri pipe a arpoaku kum eko viropari.	己 ⊢ 飲 ⇒ 木水 并 己 男亲.	2
+Please bring the water to the child.	please have-come A water to child.	Pam teneveni a aku ver nino.	乞 有来 ⇒ 水 向 子.	2
+I'm getting food for you.	self RI get A food for you.	Eko ri toma a komi por tuo.	己 ⊢ 取 ⇒ 食 為 尔.	2
+Can you bring water for the child?	you RI able have-come A water for child, what?	Tuo ri kan teneveni a aku por nino, ker?	尔 ⊢ 能 有来 ⇒ 水 為 子, 何?	2
+The station is near, isn't it?	vehicle-place RI near, not?	Karoroko ri nir, non?	车所 ⊢ 近, 不?	2
+This fish is good, right?	this water-animal RI good, yes?	Tis akupeste ri pona, si?	此 水匹 ⊢ 好, 是?	2
+Yesterday I read a good story.	sun-before, self RI write-see A good say-thing.	Soreyer, eko ri penavite a pona tikakosa.	日前, 己 ⊢ 写見 ⇒ 好 云物.	2
+Today I'm meeting your relatives.	this-sun, self RI meet A you parent-group.	Tissore, eko ri sarve a tuo paripanto.	此日, 己 ⊢ 会 ⇒ 尔 亲众.	2
+Tomorrow we're going to the sea.	sun-after, self-group RI go to big-water.	Soretar, ekopanto ri ire ver mekaaku.	日后, 己众 ⊢ 行 向 大水.	1
+I love the sea, but I can't swim.	self RI big-like A big-water, but self RI not able water-go.	Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.	己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.	2
+The story is beautiful, but it isn't true.	say-thing RI good-see, but this RI not true.	Tikakosa ri ponavite, sets tis ri non ves.	云物 ⊢ 好見, 但 此 ⊢ 不 真.	2
+I'm thirsty, but I don't want tea.	self RI drink-want, but self RI not want A plant-water.	Eko ri pipevori, sets eko ri non vori a arpoaku.	己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.	2
+Tomorrow my mother is coming, but my father isn't.	sun-after, self woman-parent RI come, but self man-parent RI not come.	Soretar, eko vemapari ri veni, sets eko viropari ri non veni.	日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.	2

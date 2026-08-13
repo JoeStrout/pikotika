@@ -12,7 +12,7 @@ RI, self, what, this, in, you, not, good, please, and, to, big, close, go, thing
 
 see you later, ready, hungry, hello, finally, actually, Hello (someone new), that, leave (depart), fruit, tea, story, we, moment, bye, goodbye, he/she/they, drive, station, ask
 
-### 5 idioms/set phrases
+### 7 idioms/set phrases
 
 | English | Gloss | Latin |
 |---|---|---|
@@ -21,6 +21,8 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | Take care (parting). | good go | **Pona ire.** |
 | Sorry/oops/excuse me. | sorry | **Perton.** |
 | Goodbye. | sorry-out-go | **Pertoneksire.** |
+| Enjoy your meal.  (*bon appétit*) | good food | **Pona komi.** | 好 食. |
+| Take care.  Safe travels. | good go | **Pona ire.** | 好 行. |
 
 ### simple copula sentences with RI
 
@@ -58,6 +60,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | Please drive. | please vehicle-go | **Pam karoire.** |
 | Please leave. | please out-go | **Pam eksire.** |
 
+---
 ## Level 2
 ### 38 more roots (total: 80)
 
@@ -65,25 +68,87 @@ A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, 
 
 ### 40 more compounds (total: 80)
 
-beautiful, breakfast, bring, carry, cook (person), dance, discover, eye, father, fetch, fish, love, meal (a sitting), midday, morning, mother, never, night, nobody, nothing, nowhere, politeness (verbal), prepare, problem, read, reader, relative (kin), sad, sea, slow, soup, tears, thirsty, today, tomorrow, tonight, trip, welcome, writer, yesterday
+beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, fetch, fish, love, meal (a sitting), midday, morning, mother, never, night, nobody, nothing, nowhere, politeness (verbal), prepare, problem, read, reader, relative (kin), sad, sea, slow, soup, tears, thirsty, today, tomorrow, tonight, trip, welcome, writer, yesterday
 
-### 10 more idioms/set phrases (total: 15)
+### 5 more idioms/set phrases (total: 12)
+
+| English | Gloss | Latin |
+|---|---|---|
+| little by little, gradually | small after small | **piko tar piko** |
+| I'm happy to meet you. | self RI happy meet A you | **Eko ri konten sarve a tuo.** |
+| Good morning. | good up-sun | **Pona sursore.** | 好 上日. |
+| Good evening. | good down-sun | **Pona tunsore.** | 好 下日. |
+| I see (understand.) | self RI see | **Eko ri vite.** | 己 ⊢ 見. |
+
 ### proper nouns
 ### simple modifiers (adjectives)
 ### simple SVO sentences with A
+
+| English | Gloss | Latin |
+|---|---|---|
+| I see the child. | self RI see A child | **Eko ri vite a nino.** |
+| The child wants water. | child RI want A water | **Nino ri vori a aku.** |
+| I don't eat fish. | self RI not food A water-animal | **Eko ri non komi a akupeste.** |
+| We'll get breakfast soon. | self-group RI fast get A up-sun-food | **Ekopanto ri veros toma a sursorekomi.** |
+| My mother makes good food. | self woman-parent RI make A good food | **Eko vemapari ri vake a pona komi.** |
+
 ### prepositional phrases (NOTE: include **kum** as 'with')
+
+| English | Gloss | Latin |
+|---|---|---|
+| Please come with me. | please come with self | **Pam veni kum eko.** |
+| I see the fish in the water. | self RI see A water-animal in water | **Eko ri vite a akupeste in aku.** |
+| I drink tea with my father. | self RI drink A plant-water with self man-parent | **Eko ri pipe a arpoaku kum eko viropari.** |
+| Please bring the water to the child. | please have-come A water to child | **Pam teneveni a aku ver nino.** |
+| I'm getting food for you. | self RI get A food for you | **Eko ri toma a komi por tuo.** |
+
 ### numbers 0-10
 ### yes/no questions
+
+| English | Gloss | Latin |
+|---|---|---|
+| Can you bring water for the child? | you RI able have-come A water for child, what | **Tuo ri kan teneveni a aku por nino, ker?** |
+| The station is near, isn't it? | vehicle-place RI near, not | **Karoroko ri nir, non?** |
+| This fish is good, right? | this water-animal RI good, yes | **Tis akupeste ri pona, si?** |
+
+
 ### yesterday/today/tomorrow (without explicit verb tenses)
+
+| English | Gloss | Latin |
+|---|---|---|
+| Yesterday I read a good story. | sun-before, self RI write-see A good say-thing | **Soreyer, eko ri penavite a pona tikakosa.** |
+| Today I'm meeting your relatives. | this-sun, self RI meet A you parent-group | **Tissore, eko ri sarve a tuo paripanto.** |
+| Tomorrow we're going to the sea.  We'll swim. | sun-after, self-group RI go to big-water.  self-group RI water-go | **Soretar, ekopanto ri ire ver mekaaku.  Ekopanto ri akuire.** |
+
+
 ### examples with **sets** ('but')
 
+| English | Gloss | Latin |
+|---|---|---|
+| I love the sea, but I can't swim. | self RI big-like A big-water, but self RI not able water-go | **Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.** |
+| The story is beautiful, but it isn't true. | say-thing RI good-see, but this RI not true | **Tikakosa ri ponavite, sets tis ri non ves.** |
+| I'm thirsty, but I don't want tea. | self RI drink-want, but self RI not want A plant-water | **Eko ri pipevori, sets eko ri non vori a arpoaku.** |
+| Tomorrow my mother is coming, but my father isn't. | sun-after, self woman-parent RI come, but self man-parent RI not come | **Soretar, eko vemapari ri veni, sets eko viropari ri non veni.** |
+
+
+---
 ## Level 3
 ### 40 more roots (total: 120)
 
 black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all, same, map, paper, room, tool, metal, air, earth, fire, TE, money, home, hard, long, hundred, many, measure, million, thousand, month, weekday, year, feel, hear, know, play, try
 
 ### 40 more compounds (total: 100)
-### 10 more idioms/set phrases (total: 25)
+### 5 more idioms/set phrases (total: 15)
+
+| English | Gloss | Latin |
+|---|---|---|
+| Time is money. | time RI money | **Tempo ri moni.** |
+| It's a small world. | earth RI small | **Tera ri piko.** |
+| How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
+| All is good. | all RI good | **Pan ri pona.** | 全 ⊢ 好. |
+| I don't know. | self RI not know | **Eko ri non sape.** | 己 ⊢ 不 知. |
+
+
 ### larger numbers
 ### colors
 ### days of the week
@@ -92,21 +157,22 @@ black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all,
 ### subordinate clause after A
 ### detail questions (ker-words)
 
+---
 ## Level 4
 ### 42 more roots (total: 168)
 ### 40 more compounds (total: 140)
-### 10 more idioms/set phrases (total: 35)
 ### decimal numbers
 ### times and dates
 ### aspect (begin/finish/ongoing actions)
 ### leading relative clauses
 
+---
 ## Level 5
 ### 40 more roots (total: 208, all roots in the language)
 ### 40 more compounds (total: 180)
-### 10 more idioms/set phrases (total: 45)
 ### could have, might have, should have, & must have
 ### modifier clause with RITE
+### indefinite-subject sentences (starting with RI)
 
 
 ## Optional bonus level: Han writing

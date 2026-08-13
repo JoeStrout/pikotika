@@ -77,6 +77,59 @@ the phrase gets long enough to hurt, and that is exactly the sort of threshold t
 guessing gets wrong.
 
 
+## Gapping a repeated predicate after **sets**
+
+**Idea:** when a **sets** ('but') clause repeats the predicate of the clause before it
+and differs only in polarity, the predicate may be left out, stranding **non** alone
+after *RI*.
+
+> **Soretar, eko vemapari ri veni, sets eko viropari ri non.**
+> 'Tomorrow my mother is coming, but my father isn't.'
+
+The full form stays correct and is always available: **sets eko viropari ri non
+veni**.
+
+**Why it might be worth having:** the reduced form is genuinely clear.  Word order is
+rigid, so the empty slot is identifiable; the parallel clause supplies the only
+candidate predicate; and **non** already stands alone as 'no' in short answers, so
+nothing about a bare **non** is unfamiliar.  Pikotika also elides elsewhere already --
+**Kum tuo, ker?** 'And you?' drops an entire predicate -- so ellipsis as such is not
+foreign to the language.
+
+**Why it is not in the language:** three reasons, in increasing order of weight.
+
+First, it saves almost nothing.  **non veni** to **non** is one syllable, against a
+new grammatical device to learn.
+
+Second, sentence-final **non** is already the yes/no tag that expects the answer yes
+(**Tuo ri vite a kanis, non?**).  Written, the comma keeps them apart.  Spoken,
+**...ri non** and **..., non?** are separated only by a pause and intonation, and
+Pikotika avoids resting a distinction on prosody everywhere else.
+
+Third and decisive: **there is no affirmative counterpart.**  The shortcut works only
+because **non** happens to be available to strand.  Reverse the polarity --
+'Tomorrow my mother isn't coming, but my father is' -- and the second clause has an
+empty predicate and no negator to fill it.  The obvious repair is to license **si**
+in the slot (**sets eko viropari ri si**), but **si** is described as an interjection,
+not a predicate, so that is a second new device rather than a free consequence of the
+first.  A gapping rule that works in one polarity and not the other is worse than no
+rule at all.
+
+**Note on why the English intuition does not transfer.**  English gaps here by
+stranding an auxiliary: 'my father isn't' keeps *is*, a real verb carrying tense, and
+deletes the lexical verb under it.  Pikotika has no auxiliaries.  *RI* looks like the
+place to strand something but is a particle marking the predicate boundary, not a verb
+that can host anything -- so the only thing left to strand is **non** itself, which
+means promoting a modifier to predicate.  That is a category shift the grammar asks
+for nowhere else, and it is the reason this is a new mechanism rather than an
+application of an existing one.
+
+**If it is ever adopted**, prefer the narrow form -- "*RI* plus **non** alone answers a
+parallel positive clause" -- over the general one, "elide any predicate recoverable
+from a parallel clause."  The general version invites gapping in clause pairs that
+differ in more than one slot, where rigid word order stops doing the recovery work.
+
+
 ## Allow a secondary gloss?
 
 Our root words, by necessity, cover many concepts, but currently we pick just one to represent it as the gloss.  This can lead to some initial confusion when using 'food' as a verb, or 'sun' to mean 'day', or 'open' to mean 'begin'.

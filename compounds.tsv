@@ -228,6 +228,7 @@ rice (white rice)	white-grain	3
 ride; go by vehicle	vehicle-put		
 river	long-water	3	
 road map; roadmap	way-map	3	
+rug; mat; carpet	earth-cloth		
 sad	not-happy	1	2
 sake	white-grain-fire-water	3	
 sand	small-stone		
@@ -267,6 +268,7 @@ story; tale	say-thing	1	1
 stubborn	hard-head		
 Sunday	sun-weekday	3	
 sunny	sun-air	3	
+swim	water-go		
 tan; beige	grain-color		
 tea	plant-water	1	1
 tears; cry	see-water	2	2

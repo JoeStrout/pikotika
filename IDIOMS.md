@@ -44,5 +44,5 @@ Common fixed expressions people just memorize and use in the appropriate situati
 | There's a 30% chance of rain. | RI 30 in-hundred rain if | **Ri 30 inkaton ruva pos.** | ⊢ 30 内百 雨 可. |
 | little by little, gradually | small after small | **piko tar piko** | 小 后 小 |
 | one by one | one after one | **wun tar wun** | 1 后 1 |
-| day by day | sun after sun | **sore tar sore** | 日 后 日 |
+| day after day | sun after sun | **sore tar sore** | 日 后 日 |
 | They say that ... | RI say A ... | **RI tika a ...** |  ⊢ 云 ⇒ ... |

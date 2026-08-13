@@ -556,7 +556,7 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Sorry/oops/excuse me. | sorry | **Perton.** | 悔. |
 | I am sorry. | self RI sorry | **Eko ri perton.** | 己 ⊢ 悔. |
 | Actually, ... | in-true | **Inves, ...** | 内真, ... |
-| I see (understand). | self RE see | **eko ri vite** | 己 ⊢ 见 |
+| I see (understand). | self RI see | **eko ri vite** | 己 ⊢ 见 |
 | Thanks. | thank | **Mersi.** | 恩. |
 | I thank you. | self RI thank A you | **Eko ri mersi a tuo.** | 己 ⊢ 恩 ⇒ 尔. |
 | No problem. | no bad-thing | **Nem marumkosa.** | 无 悪物. |
