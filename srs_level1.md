@@ -205,10 +205,10 @@
 # say
 ### say, speak, talk, tell
 ---
-# tise
+# tika
 ## 云
 ===
-# tise
+# tika
 ---
 # say
 ### say, speak, talk, tell
@@ -614,10 +614,10 @@
 ===
 # story; tale
 ---
-# tisekosa
+# tikakosa
 ## 云物
 ===
-# tisekosa
+# tikakosa
 ## 云物
 ---
 # story; tale
@@ -694,10 +694,10 @@
 ===
 # ask; request
 ---
-# voritise
+# voritika
 ## 求云
 ===
-# voritise
+# voritika
 ## 求云
 ---
 # ask; request
@@ -884,10 +884,10 @@
 ===
 # The story is true.
 ---
-# Tisekosa ri ves.
+# Tikakosa ri ves.
 ## 云物 ⊢ 真.
 ===
-# Tisekosa ri ves.
+# Tikakosa ri ves.
 ---
 # The story is true.
 ===
@@ -902,10 +902,10 @@
 ===
 # You're talking.
 ---
-# Tuo ri tise.
+# Tuo ri tika.
 ## 尔 ⊢ 云.
 ===
-# Tuo ri tise.
+# Tuo ri tika.
 ---
 # You're talking.
 ===
@@ -947,10 +947,10 @@
 ===
 # Please speak.
 ---
-# Pam tise.
+# Pam tika.
 ## 乞 云.
 ===
-# Pam tise.
+# Pam tika.
 ---
 # Please speak.
 ===

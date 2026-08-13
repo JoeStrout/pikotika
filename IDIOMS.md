@@ -1,4 +1,4 @@
-# Pikotise Idioms and Stock Phrases
+# Pikotika Idioms and Stock Phrases
 
 Multi-word expressions whose meaning is conventional rather than merely the sum of
 their parts -- greetings, courtesies, and the set phrases that come up constantly in

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pikotise lookup and conversion tool.
+"""Pikotika lookup and conversion tool.
 
 Reads roots.tsv, compounds.tsv and names.tsv, and converts between the four
 ways of writing the language:
@@ -34,6 +34,15 @@ import readline
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+# The tables are TSV, not CSV, and the difference is the point: a tab never
+# appears inside a cell, so nothing ever needs quoting and a comma is just a
+# comma.  Turning quoting off on both sides keeps `"` a literal character --
+# several mnemonics gloss their source that way, Latin *sive* "or else" -- and
+# makes a writer the exact inverse of the reader, so rewriting a file to change
+# one cell no longer requotes every other line.  A cell holding a tab would be
+# unwritable, and csv raises rather than corrupting the file.
+TSV = dict(delimiter="\t", quoting=csv.QUOTE_NONE, quotechar=None)
 
 # Particle names in gloss form are the particles' own pronunciations, upper-cased:
 # ri / a / te.  This is the whole point — a name that is not the pronunciation is
@@ -171,7 +180,7 @@ class Tables:
 
     def _load(self, d):
         with open(os.path.join(d, "roots.tsv"), encoding="utf-8") as fh:
-            for r in csv.DictReader(fh, delimiter="\t"):
+            for r in csv.DictReader(fh, **TSV):
                 if not r["form"]:
                     continue
                 self.gloss2root[r["gloss"]] = r
@@ -196,7 +205,7 @@ class Tables:
                                 key=len, reverse=True)
 
         with open(os.path.join(d, "compounds.tsv"), encoding="utf-8") as fh:
-            for r in csv.DictReader(fh, delimiter="\t"):
+            for r in csv.DictReader(fh, **TSV):
                 # one row per gloss; its English equivalents are separated by
                 # semicolons, e.g. "theater; playhouse"
                 for english in split_alternatives(r["EN"]):
@@ -212,7 +221,7 @@ class Tables:
         names_path = os.path.join(d, "names.tsv")
         if os.path.exists(names_path):
             with open(names_path, encoding="utf-8") as fh:
-                for r in csv.DictReader(fh, delimiter="\t"):
+                for r in csv.DictReader(fh, **TSV):
                     self.names[r["EN"].strip().lower()] = r["form"]
                     self.form2name[r["form"]] = r["EN"]
 
@@ -740,7 +749,7 @@ def main(argv):
     if len(argv) > 1:
         print("\n".join(lookup(" ".join(argv[1:]), t)))
         return 0
-    print("Pikotise — %d roots, %d compounds, %d names."
+    print("Pikotika — %d roots, %d compounds, %d names."
           % (len(t.gloss2root), len(t.compounds), len(t.names)))
     print("Enter English, gloss (RI / A / TE), Latin, or Han.  Ctrl-D to quit.")
     while True:

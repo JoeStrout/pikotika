@@ -1,6 +1,6 @@
 ## Pronunciation
 
-Pikotise uses 10 consonants and 5 vowels, designed to be forgiving; that is, even if your accent is different from mine, we can still easily understand each other.
+Pikotika uses 10 consonants and 5 vowels, designed to be forgiving; that is, even if your accent is different from mine, we can still easily understand each other.
 
 ### Consonants
 
@@ -19,11 +19,11 @@ The 10 consonants are written with the letters you'd expect, and the sound in th
 | `w` | **w** in **w**e | **v** in **v**an |
 | `y` | **y** in **y**es | **j** in **j**am, or the **s** in mea**s**ure ("zh") |
 
-So if you come from a language that makes no distinction between `r` and `l`, don't worry -- in Pikotise it doesn't matter.  Or if you can hear the difference between `t` and `d`, but find one or the other easier to say in certain words, go for it -- those are equivalent too.  A Spanish speaker, a Mandarin speaker, and a Japanese speaker reading the word **pona** out loud will produce three noticeably different sounds, and all three are saying it right.
+So if you come from a language that makes no distinction between `r` and `l`, don't worry -- in Pikotika it doesn't matter.  Or if you can hear the difference between `t` and `d`, but find one or the other easier to say in certain words, go for it -- those are equivalent too.  A Spanish speaker, a Mandarin speaker, and a Japanese speaker reading the word **pona** out loud will produce three noticeably different sounds, and all three are saying it right.
 
 ### Vowels
 
-The five vowels have "standard" pronunciations, but here too Pikotise is very forgiving; almost all words can be recognized from the pattern of consonants alone, leaving vowels as a secondary cue.  But if you want to speak "the Queen's Pikotise," then practice these:
+The five vowels have "standard" pronunciations, but here too Pikotika is very forgiving; almost all words can be recognized from the pattern of consonants alone, leaving vowels as a secondary cue.  But if you want to speak "the Queen's Pikotika," then practice these:
 
 | Letter | As in | Also correct |
 |---|---|---|
@@ -37,11 +37,11 @@ There are no diphthongs.  When two vowels come together, each one is its own syl
 
 ### Stressed syllable
 
-Every word gets exactly one stress, and it always falls on the next-to-last syllable, shown here in capitals: **PO-na**, **TE-rason**, **KA-ton**, **pi-ko-TI-se**.  A one-syllable word is simply stressed on that syllable (with the exception below).  Compound words are written solid and count as a single word for this purpose, so **kasepeste** (*home-animal*, 'cat') is **ka-se-PES-te** -- one stress, on the next-to-last syllable of the whole compound, not one stress per [root](ROOTS.md).  The three particles (**ri**, **a**, **te**) are the exception: they lean on the neighboring word and take no stress of their own.
+Every word gets exactly one stress, and it always falls on the next-to-last syllable, shown here in capitals: **PO-na**, **TE-rason**, **KA-ton**, **pi-ko-TI-ka**.  A one-syllable word is simply stressed on that syllable (with the exception below).  Compound words are written solid and count as a single word for this purpose, so **kasepeste** (*home-animal*, 'cat') is **ka-se-PES-te** -- one stress, on the next-to-last syllable of the whole compound, not one stress per [root](ROOTS.md).  The three particles (**ri**, **a**, **te**) are the exception: they lean on the neighboring word and take no stress of their own.
 
 ## Writing Systems
 
-There are three ways to write out any Pikotise utterance -- one that's only used for teaching purposes, and two that can be used in the real world.
+There are three ways to write out any Pikotika utterance -- one that's only used for teaching purposes, and two that can be used in the real world.
 
 ### Gloss
 
@@ -51,7 +51,7 @@ Example:
 
 ### Latin
 
-In Latin form, the Pikotise words are written as they're pronounced, using our 15-letter alphabet (`p t k v s r m n w y a e i o u`).  The start of a sentence is capitalized, as are proper names.  Periods, commas, and (rarely) semicolons are used as in English.
+In Latin form, the Pikotika words are written as they're pronounced, using our 15-letter alphabet (`p t k v s r m n w y a e i o u`).  The start of a sentence is capitalized, as are proper names.  Periods, commas, and (rarely) semicolons are used as in English.
 
 Example:
 
@@ -63,13 +63,13 @@ In the Han character form, every [root word](ROOTS.md) is given a single Chinese
 - *A*: ⇒
 - *TE*: >						
 
-Proper names are written in Latin as above, and numbers are written using Arabic numerals.  Unlike Chinese, in Pikotise we put spaces or particles between the words (but not _within_ compound words), and make use of periods, commas, and semicolons as in English.  This makes it easy to distinguish Pikotise from a block of Chinese text.
+Proper names are written in Latin as above, and numbers are written using Arabic numerals.  Unlike Chinese, in Pikotika we put spaces or particles between the words (but not _within_ compound words), and make use of periods, commas, and semicolons as in English.  This makes it easy to distinguish Pikotika from a block of Chinese text.
 
 If you're not already used to Chinese or Japanese, this form may seem arcane.  You don't need to learn it right away.  But keep in mind, there are fewer than 200 characters to learn, and once you have them, it's both space-efficient and very quick to read.  It can also be written vertically, for example on signs or in comics.  Note that in this case, the particles do NOT rotate; they keep their standard orientation (just like the Han characters, but unlike some bits of Japanese notation).
 
 ## Numbers
 
-Numbers in Pikotise are written using Arabic numerals, like **123** and **2026**.  So the only thing you need to learn is how to say them out loud (or understand them when heard).
+Numbers in Pikotika are written using Arabic numerals, like **123** and **2026**.  So the only thing you need to learn is how to say them out loud (or understand them when heard).
 
 First, the digits:
 
@@ -95,7 +95,7 @@ And, the named powers of ten:
 | thousand | **kiru** |
 | million | **miron** |
 
-The number reading system is very similar to English and Romance languages, and similar to Japanese.  The only difference from English is that while English (and related languages) have unique words for 11-19 as well as 20, 30, 40, etc., Pikotise uses a simple and regular pattern: 20 is "two tens", 30 is "three tens", and so on.
+The number reading system is very similar to English and Romance languages, and similar to Japanese.  The only difference from English is that while English (and related languages) have unique words for 11-19 as well as 20, 30, 40, etc., Pikotika uses a simple and regular pattern: 20 is "two tens", 30 is "three tens", and so on.
 
 | Value | Reading |
 |---|---|
@@ -111,7 +111,7 @@ As numbers get larger, you just do the same thing, making use of **katon** (hund
 | 678 | **siks katon sens tekas ots** |
 | 12345 | **tekas pits kiru, tets katon wats tekas kins** |
 
-Use no thousands separators when writing Pikotise numbers (the world can't agree on whether `,` or `.` should be used for this purpose, so just leave them out).
+Use no thousands separators when writing Pikotika numbers (the world can't agree on whether `,` or `.` should be used for this purpose, so just leave them out).
 
 On decimals: use `.` for the decimal point.  For example, one and a quarter would be written **1.25**.  The `.` is pronounced **parte**, so **1.25** is read **wun parte pits kins**.
 
@@ -130,13 +130,13 @@ Even though numbers are normally written in Arabic numerals, the numbers zero an
 | thousand | **kiru** | 千 |
 | million | **miron** | 兆 |
 
-Japanese readers, please note that 兆 in Pikotise means million (10^6), not trillion (10^12).  This follows the Chinese convention associated with the metric "mega" prefix.
+Japanese readers, please note that 兆 in Pikotika means million (10^6), not trillion (10^12).  This follows the Chinese convention associated with the metric "mega" prefix.
 
 ## Colors
 
-Pikotise has six basic color roots, plus the root **koror** 'color' itself.
+Pikotika has six basic color roots, plus the root **koror** 'color' itself.
 
-| Meaning | Gloss | Pikotise | Han |
+| Meaning | Gloss | Pikotika | Han |
 |---|---|---|---|
 | red, warm hue | *red* | **ruper** | 赤 |
 | blue, cool hue | *blue* | **asur** | 青 |
@@ -150,7 +150,7 @@ Note the broadness of **ranko** and **nero**; these are as much about lightness 
 
 Other colors are built as compounds:
 
-| Meaning | Gloss | Pikotise | Han |
+| Meaning | Gloss | Pikotika | Han |
 |---|---|---|---|
 | orange | *red-yellow* | **ruperyoro** | 赤黄 |
 | pink | *red-white* | **ruperranko** | 赤白 |
@@ -174,7 +174,7 @@ Clock times are written with digits and a colon, and read with **ora** (hour) st
 
 We don't need to say "minute" in this case; the number after **ora** is understood to be minutes.  You can use the 24-hour clock, or you can clarify a 12-hour time by putting the part of day in front:
 
-| Pikotise | Han | Meaning |
+| Pikotika | Han | Meaning |
 |---|---|---|
 | **sursore** | 上日 | morning (*up-sun*) |
 | **metsesore** | 中日 | noon, midday (*middle-sun*) |
@@ -188,7 +188,7 @@ To speak of a *length* of time rather than a point in it, add **turan** (間, in
 
 For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and does not need **turan**).  Finally, here are some words for referring to 'now' or generically in the past/future.
 
-| Pikotise | Han | Meaning |
+| Pikotika | Han | Meaning |
 |---|---|---|
 | **tistempo** | 此时 | now |
 | **yertempo** | 前时 | in the past |
@@ -197,7 +197,7 @@ For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and d
 
 ## Dates and Days of the Week
 
-You name a calendar year in Pikotise with the year number plus **anyo** (年, 'year').  Example: **2026 anyo**, written 2026年 in Han characters, would be read **pits kiru pits tekas siks anyo**.  (Notice that when writing in Han form, no space is needed after the number; this is an exception to the usual rule of separating words with spaces or particles.)
+You name a calendar year in Pikotika with the year number plus **anyo** (年, 'year').  Example: **2026 anyo**, written 2026年 in Han characters, would be read **pits kiru pits tekas siks anyo**.  (Notice that when writing in Han form, no space is needed after the number; this is an exception to the usual rule of separating words with spaces or particles.)
 
 Months use the same pattern: rather than having unique names, as in English, months are simply numbered from 1 to 12, followed by **mese** (月, 'month').  So **1 mese** (also written 1月, and read **wun mese**) is January, **2 mese** (2月, **pits mese**) is February, etc.
 
@@ -233,7 +233,7 @@ To ask which day it is, use **kerverya** (何曜, *what-weekday*).
 
 Here's how you can refer to days relative to today:
 
-| Pikotise | Han | Meaning |
+| Pikotika | Han | Meaning |
 |---|---|---|
 | **soreyer** | 日前 | yesterday |
 | **tissore** | 此日 | today |
@@ -241,7 +241,7 @@ Here's how you can refer to days relative to today:
 
 For any other distance, count the days and add **yer** ('ago') or **tar** ('from now') at the end.  Note that this postposed use is what makes it deictic: **2 sore yer** is always two days before *now*, whereas **yersore** is 'the previous day' relative to whatever you were just talking about.
 
-| Pikotise | Han | Meaning |
+| Pikotika | Han | Meaning |
 |---|---|---|
 | **2 sore yer** | 2日前 | two days ago |
 | **kins sore tar** | 5日后 | five days from now |
@@ -250,7 +250,7 @@ For any other distance, count the days and add **yer** ('ago') or **tar** ('from
 
 ## Proper Nouns and Loan Words
 
-Proper nouns (names) as well as loan words like "penicillin" are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotise phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.
+Proper nouns (names) as well as loan words like "penicillin" are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotika phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.
 
 **First, the sounds.**  Our alphabet has only ten consonants, so the missing ones move to their nearest neighbor -- which is always a sound already inside that letter's tolerance range, so the result still sounds right:
 
@@ -262,17 +262,17 @@ Proper nouns (names) as well as loan words like "penicillin" are always written 
 - `h`, and any silent letter, simply drops (Johnson → **Yonson**)
 - `sh`, `ch`, `th` → `s` or `t`, whichever is closer
 
-**Then, the syllables.**  Pikotise allows no consonant clusters at the start of a syllable, and only `n m s r ns ts ks` at the end, so anything else needs a vowel inserted to break it up.  Use `u`, except after `t`, where `o` sounds more natural:
+**Then, the syllables.**  Pikotika allows no consonant clusters at the start of a syllable, and only `n m s r ns ts ks` at the end, so anything else needs a vowel inserted to break it up.  Use `u`, except after `t`, where `o` sounds more natural:
 
 - a cluster at the start of a word or syllable is broken open by giving the first consonant its own vowel, while the second keeps whatever vowel already followed it: `st-` becomes **suta-**, **sute-**, **suto-** and so on, depending on the name (Strout → **Sutorauto**, Smith → **Sumis**, Brenda → **Purenta**)
 - a word ending in `p`, `t`, or `k` takes a vowel after it, since bare final stops aren't allowed (Marek → **Mareku**)
 - a name with no vowel to carry a syllable gets one (Petr → **Peter**)
 
-Note also that Pikotise has no diphthongs, so a vowel pair like `ou` or `au` simply becomes two syllables.
+Note also that Pikotika has no diphthongs, so a vowel pair like `ou` or `au` simply becomes two syllables.
 
 Some examples will help illustrate.
 
-| English | Pikotise | What changed |
+| English | Pikotika | What changed |
 |---|---|---|
 | Joe | **Yo** | `j` → `y` |
 | Mary | **Mari** | already legal, just respelled |
@@ -287,13 +287,13 @@ Standing adaptations -- names that come up often enough to be worth agreeing on 
 In general, it's not necessary to precede any suffix word with a name.  However, you might precede it with **omo** (person), **roko** (place), **urpe** (city), **nasyon** (country), **komparroko** (shop/establishment), or **komparpanto** (company), as a separate word, in these cases:
 
 1. You're using a name for the first time in a conversation, and you want to be very clear whether this is a person, place, etc.  Example: **komparpanto Apuru** = 'the company Apple'; **omo Sumis** = 'the person Smith'.
-2. The name happens to sound the same as some Pikotise word, and might be confusing.  Example: Li (a common surname) sounds like **ri** (the particle), so you might use **omo Ri** = 'the person Li'.
+2. The name happens to sound the same as some Pikotika word, and might be confusing.  Example: Li (a common surname) sounds like **ri** (the particle), so you might use **omo Ri** = 'the person Li'.
 
 The category word is optional; you can leave it off and say just **Sumis** when the meaning is clear.  It is never considered curt or rude to do so.
 
 Loan words (words taken directly from another language, usually English) should be used sparingly, and only where it is likely to be widely known throughout the world.  These are generally technical or product names, or metric units, like these:
 
-| English | Pikotise |
+| English | Pikotika |
 |---|---|
 | penicillin | penicillin |
 | meter | metoru |
@@ -304,9 +304,9 @@ Loan words (words taken directly from another language, usually English) should 
 
 ## Inventing Compounds
 
-Making new words in Pikotise is easy, and follows this principle:
+Making new words in Pikotika is easy, and follows this principle:
 
-> **Pikotise gains vocabulary by collapsing common phrases.**
+> **Pikotika gains vocabulary by collapsing common phrases.**
 
 So, if you don't have a word for something, just describe it -- but if you find yourself using that same phrase a lot, you can remove the spaces, and remove the accent (stress) from all but the next-to-last syllable, and now you have a new compound word.
 
@@ -347,9 +347,9 @@ Adverbs work the same way: they go before the verb they modify.  Example: **vero
 
 These root words can act as prepositions: **in** (内, in/at), **ver** (向, to), **vons** (从, from), **kum** (并, with), **por** (為, for), **topi** (件, about), and the spatial roots **sur** (上, above), **tun** (下, below), **nir** (近, near), **eks** (外, outside), **mets** (中, between).
 
-A prepositional phrase goes at the **end** of a sentence or clause, after the object if there is one.  It can also stand alone as the whole predicate, right after *RI* -- that is how Pikotise says 'is here', 'is with me', 'is for you'.
+A prepositional phrase goes at the **end** of a sentence or clause, after the object if there is one.  It can also stand alone as the whole predicate, right after *RI* -- that is how Pikotika says 'is here', 'is with me', 'is for you'.
 
-| Pikotise | Literally | Meaning |
+| Pikotika | Literally | Meaning |
 |---|---|---|
 | **Eko ri ire ver kase.** | self RI go to home | I'm going home. |
 | **Pam veni in sens ora.** | please come in seven hour | Please come at seven. |
@@ -395,7 +395,7 @@ Yes/no answers are short.  **si** ('yes') is the language's one interjection; **
 
 ### Time, Aspect, and Mood
 
-Pikotise verbs never change form.  **vite** is see, saw, seen, and seeing, and the work that tenses do in other languages is done by ordinary words instead.
+Pikotika verbs never change form.  **vite** is see, saw, seen, and seeing, and the work that tenses do in other languages is done by ordinary words instead.
 
 **Time is stated once, then assumed.**  Say when you are talking about at the start, and it holds until you change it (just like Chinese or Malay).  There is no need to re-mark every verb.
 
@@ -414,7 +414,7 @@ These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is
 
 Note that **vin** can be combined with the adverbs for 'can', 'might', 'should', and 'must' to express counterfactuals, regret, or a conclusion from evidence:
 
-| Pikotise | English |
+| Pikotika | English |
 |---|---|
 | Eko ri kan ire vin. | I could have gone. |
 | Eko ri pos ire vin. | I might have gone. |
@@ -428,11 +428,11 @@ Note that **vin** can be combined with the adverbs for 'can', 'might', 'should',
 
 Do not leave out **tisrason**.  Without it the two clauses are symmetric, and a listener has no way to tell which one is the condition.
 
-Note that English marks the second clause too, with *would* or *will*; Pikotise does not.  **tisrason** does that work, and the verb stays plain.  Nor is there a separate *would* for politeness or for a hedged prediction: 'I would like to go' is simply **eko ri vori ire**, and 'I think you would like it' is **eko ri pensa a tuo ri kusta a tis**.
+Note that English marks the second clause too, with *would* or *will*; Pikotika does not.  **tisrason** does that work, and the verb stays plain.  Nor is there a separate *would* for politeness or for a hedged prediction: 'I would like to go' is simply **eko ri vori ire**, and 'I think you would like it' is **eko ri pensa a tuo ri kusta a tis**.
 
-**Counterfactuals.**  A counterfactual is just a condition you already know to be false, so Pikotise marks it on the condition rather than on the verb.  Use **nonves** (不真, *not-true*) in place of **pos** at the head of the clause; everything after it is unchanged.
+**Counterfactuals.**  A counterfactual is just a condition you already know to be false, so Pikotika marks it on the condition rather than on the verb.  Use **nonves** (不真, *not-true*) in place of **pos** at the head of the clause; everything after it is unchanged.
 
-| Pikotise | English |
+| Pikotika | English |
 |---|---|
 | **Pos eko ri tene a moni, tisrason eko ri kompar a tis.** | If I have the money, I'll buy it.  (maybe I do) |
 | **Nonves eko ri tene a moni, tisrason eko ri kompar a tis.** | If I had the money, I would buy it.  (I don't) |
@@ -455,7 +455,7 @@ A clause can serve as the object of a verb, or as a modifier of a noun.
 
 Such a clause runs to the end of the sentence, so anything else has to come before *A*:
 
-> **Eko ri voritise ver komivakeomo a tis ri tiven non vokasapor.**  'I ask the cook to make it not spicy.'
+> **Eko ri voritika ver komivakeomo a tis ri tiven non vokasapor.**  'I ask the cook to make it not spicy.'
 
 **As a modifier** -- a relative clause -- there are two forms.
 

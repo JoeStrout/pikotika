@@ -1,7 +1,7 @@
 # Dialogs
 
-Ten short conversations, written first in English and then translated into Pikotise
-(Latin notation). Each English line is followed by its Pikotise line.
+Ten short conversations, written first in English and then translated into Pikotika
+(Latin notation). Each English line is followed by its Pikotika line.
 
 The English was written before any of the reference material was consulted, on
 purpose: the goal was to find out what the language cannot yet say, not to compose
@@ -36,7 +36,7 @@ Bob: Really? You don't look alike!
 > **Ves, ker? Pits tuo ri non samvite!**
 
 Alice: Everybody says that. She looks like our father, and I look like our mother.
-> **Pan omo ri tise a tis. Tisomo ri samvite a ekopanto viropari, sets eko ri samvite a ekopanto vemapari.**
+> **Pan omo ri tika a tis. Tisomo ri samvite a ekopanto viropari, sets eko ri samvite a ekopanto vemapari.**
 
 Bob: Ah, that explains it. Do you live here in the city?
 > **E... tis ri rason. Tuo ri viva in tis urpe, ker?**
@@ -147,7 +147,7 @@ Gita: And I'll have the fish, please. Is it spicy?
 > **Kum eko ri vori a akupeste, pam. Tis ri vokasapor, ker?**
 
 Server: A little. I can ask them to make it not spicy.
-> **Piko. Eko ri kan voritise ver komivakeomo a tis ri tiven non vokasapor.**
+> **Piko. Eko ri kan voritika ver komivakeomo a tis ri tiven non vokasapor.**
 
 Gita: No, a little is fine. And two glasses of water.
 > **Non, piko ri pona. Kum 2 akuvaso, pam.**
@@ -166,10 +166,10 @@ Server: Very good. It will be about fifteen minutes.
 ## 5. Asking directions to a train station
 
 Ivan: Excuse me, do you speak English?
-> **Perton. Tuo ri tise a Inkiris verpo, ker?**
+> **Perton. Tuo ri tika a Inkiris verpo, ker?**
 
 Local: A little. Slowly, please.
-> **Piko. Pam nonveros tise.**
+> **Piko. Pam nonveros tika.**
 
 Ivan: Where is the train station?
 > **Rinekaroroko ri kerroko?**
@@ -187,7 +187,7 @@ Ivan: One more question — do you know when the train to the airport leaves?
 > **Wun mas kerverpo: metarrinekaro ver ventokaroroko ri eksire in kerora?**
 
 Local: I don't know. Ask inside the station.
-> **Eko ri non sape. Pam voritise in karoroko.**
+> **Eko ri non sape. Pam voritika in karoroko.**
 
 Ivan: Thank you very much!
 > **Meka mersi!**
@@ -218,16 +218,16 @@ Parent: All right, a little. Then sleep.
 > **Pona, piko. Tar, pam tormi.**
 
 Child: Will you tell me a story?
-> **Tuo ri tise a tisekosa ver eko, ker?**
+> **Tuo ri tika a tikakosa ver eko, ker?**
 
 Parent: A short one.
-> **Piko tisekosa.**
+> **Piko tikakosa.**
 
 Child: About the big fish!
 > **Topi meka akupeste!**
 
 Parent: I told you that one last night.
-> **1 nemsore yer, eko ri tise a tis ver tuo.**
+> **1 nemsore yer, eko ri tika a tis ver tuo.**
 
 Child: I like that one!
 > **Eko ri kusta a tis!**
@@ -372,7 +372,7 @@ Omar: Really? Thank you. I'm sorry — I should have started earlier.
 > **Ves, ker? Meka mersi. Eko ri perton: eko ri neses apa in mas yer tempo.**
 
 Pia: It happens. Next time, tell me sooner.
-> **Nem marumkosa. In tar tempo, pam mas veros tise ver eko.**
+> **Nem marumkosa. In tar tempo, pam mas veros tika ver eko.**
 
 Omar: I will.
 > **Eko ri vake a tis.**
@@ -412,13 +412,13 @@ friction:
 
 > **Eko ri non pensa a ekopanto ri sarve vin.**  'I don't think we've met.' (1)
 > **Sets, eko ri pensa a tis sensesore ri nonturus.**  'Then I think this week will be easy.' (2)
-> **Eko ri kan voritise ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
+> **Eko ri kan voritika ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
 
 **A complement clause forces prepositional phrases to move.**  That third line is the
 finding.  A bare complement runs to the end of the sentence, so nothing can follow it
 — and **ver komivakeomo** ('to the cook') therefore has to sit *before* *A*, where no
 example in these dialogs had ever put a prepositional phrase.  Every other dialog line
-puts them after the object (**eko ri tise a tis ver tuo**).  So licensing bare
+puts them after the object (**eko ri tika a tis ver tuo**).  So licensing bare
 complements after *A* quietly means licensing a second position for oblique phrases.
 That is a real change to word order, not a free one, and it was not visible from the
 armchair.
@@ -440,7 +440,7 @@ contentful head noun, and small talk mostly does not supply one.
 
 **Embedded questions collide with the in-situ question rule.**  'Do you know when the
 train leaves' (5) should be a complement clause, and *A* brackets it fine, but the
-embedded clause contains **kerora** — and a **ker** in situ is how Pikotise marks a
+embedded clause contains **kerora** — and a **ker** in situ is how Pikotika marks a
 question.  The matrix is also a yes/no question, so it needs its own **, ker?** tag,
 and the line ends up with two **ker**s doing unrelated jobs:
 
@@ -450,6 +450,6 @@ I left that line as the direct question it already was.  This is a genuine unsol
 interaction, not a wording problem: whatever licenses complement clauses has to say
 what an in-situ **ker** scopes over.
 
-**Tooling.**  `pikotise.py` accepts every rewritten line.  **rite** is not a root; it
+**Tooling.**  `pikotika.py` accepts every rewritten line.  **rite** is not a root; it
 is carried in `compounds.tsv` as *RI-TE*, and its Han form is the two existing
 particle glyphs, `⊢>`, so it needs no new character.

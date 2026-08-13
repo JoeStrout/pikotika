@@ -1,4 +1,4 @@
-# Pikotise Learning Curriculum
+# Pikotika Learning Curriculum
 
 This document breaks down the vocabulary and grammar of the language into five levels to be learned in order.
 
@@ -41,9 +41,9 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | The vehicle is new. | vehicle RI new | **Karo ri nova.** |
 | It's late. | hour RI after | **Ora ri tar.** |
 | He/she is a child. | this-person RI child | **Tisomo ri nino.** |
-| The story is true. | say-thing RI true | **Tisekosa ri ves.** |
+| The story is true. | say-thing RI true | **Tikakosa ri ves.** |
 | I'm going. | self RI go | **Eko ri ire.** |
-| You're talking. | you RI say | **Tuo ri tise.** |
+| You're talking. | you RI say | **Tuo ri tika.** |
 | He/she is eating. | this-person RI food | **Tisomo ri komi.** |
 | I'm driving. | self RI vehicle-go | **Eko ri karoire.** |
 | We're leaving. | self-group RI out-go | **Ekopanto ri eksire.** |
@@ -53,7 +53,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 
 | English | Gloss | Latin |
 |---|---|---|
-| Please speak. | please say | **Pam tise.** |
+| Please speak. | please say | **Pam tika.** |
 | Please eat. | please food | **Pam komi.** |
 | Please drive. | please vehicle-go | **Pam karoire.** |
 | Please leave. | please out-go | **Pam eksire.** |

@@ -6,7 +6,7 @@ ROOTS.md      one table per category from roots.tsv, in source order,
 COMPOUNDS.md  one table from compounds.tsv, sorted by English, with
               columns English, Gloss, Latin, Han.
 
-Latin and Han for the compounds are rendered through pikotise.py rather
+Latin and Han for the compounds are rendered through pikotika.py rather
 than spelled out here, so the linking `e` and the numeral/digit rules stay
 in one place.
 
@@ -21,7 +21,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pikotise  # noqa: E402  (needs HERE on the path first)
+import pikotika  # noqa: E402  (needs HERE on the path first)
 
 ROOTS_TSV = os.path.join(HERE, 'roots.tsv')
 COMPOUNDS_TSV = os.path.join(HERE, 'compounds.tsv')
@@ -31,19 +31,20 @@ COMPOUNDS_MD = os.path.join(HERE, 'COMPOUNDS.md')
 
 def rows_of(path):
     with open(path, newline='', encoding='utf-8') as f:
-        return list(csv.DictReader(f, delimiter='\t'))
+        return list(csv.DictReader(f, **pikotika.TSV))
 
 
 def read_table(path):
     """Rows plus the field order, so a file can be rewritten as it was read."""
     with open(path, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter='\t')
+        reader = csv.DictReader(f, **pikotika.TSV)
         return list(reader), list(reader.fieldnames)
 
 
 def rewrite(path, rows, fields):
     with open(path, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fields, delimiter='\t', lineterminator='\n')
+        writer = csv.DictWriter(f, fields, lineterminator='\n',
+                                **pikotika.TSV)
         writer.writeheader()
         writer.writerows(rows)
 
@@ -75,7 +76,7 @@ def group_roots(rows):
 
 def render_roots(groups):
     total = sum(len(rows) for _, rows in groups)
-    out = ['# Pikotise Roots', '',
+    out = ['# Pikotika Roots', '',
            f'{total} entries in {len(groups)} groups.', '']
     for category, rows in groups:
         out += [f'## {category} ({len(rows)})', '']
@@ -98,7 +99,7 @@ def root_level(gloss, t):
     A blank Level counts as higher than any number: a compound is only as
     teachable as its least-placed root, and an unplaced root is unplaced.
     """
-    words = pikotise.parse_gloss(gloss, t)
+    words = pikotika.parse_gloss(gloss, t)
     if words is None:
         sys.exit(f'{COMPOUNDS_TSV}: cannot parse gloss {gloss!r}')
     highest = 0
@@ -139,14 +140,14 @@ def render_compounds(rows, t):
         gloss = (row.get('gloss') or '').strip()
         if not gloss:
             continue
-        words = pikotise.parse_gloss(gloss, t)
+        words = pikotika.parse_gloss(gloss, t)
         if words is None:
             sys.exit(f'{COMPOUNDS_TSV}: cannot parse gloss {gloss!r}')
-        latin, han = pikotise.render_latin(words, t), pikotise.render_han(words, t)
-        for english in pikotise.split_alternatives(row.get('EN') or ''):
+        latin, han = pikotika.render_latin(words, t), pikotika.render_han(words, t)
+        for english in pikotika.split_alternatives(row.get('EN') or ''):
             entries.append((english, gloss, latin, han))
     entries.sort(key=lambda e: (e[0].casefold(), e[0]))
-    out = ['# Pikotise Compounds', '',
+    out = ['# Pikotika Compounds', '',
            f'{len(entries)} terms', '']
     out += table(['English', 'Gloss', 'Latin', 'Han'], entries)
     out.append('')
@@ -160,7 +161,7 @@ def main():
     print(f'Wrote {ROOTS_MD}: {sum(len(r) for _, r in groups)} roots, '
           f'{len(groups)} groups.')
 
-    t = pikotise.Tables(HERE)
+    t = pikotika.Tables(HERE)
     rows, fields = read_table(COMPOUNDS_TSV)
     md, terms = render_compounds(rows, t)
     with open(COMPOUNDS_MD, 'w', encoding='utf-8') as f:

@@ -1,6 +1,6 @@
 # Possible Future Enhancements
 
-Ideas that are **not part of Pikotise** as it stands.  Nothing here should be taught,
+Ideas that are **not part of Pikotika** as it stands.  Nothing here should be taught,
 used in examples, or treated as correct; the other documents describe the language,
 and this one describes things we have merely thought about.
 
@@ -69,7 +69,7 @@ Spanish both prefer such a phrase trailing ('go little by little', *ir poco a po
 which suggests the weight is felt elsewhere too.
 
 **Why it is not in the language:** modifier-before-head is one of the few rules
-Pikotise has, and it is currently exceptionless -- it holds inside compounds, inside
+Pikotika has, and it is currently exceptionless -- it holds inside compounds, inside
 noun phrases, and before verbs alike.  Buying comfort in one construction with an
 exception to a rule that general is a bad trade until we know the discomfort is real.
 A single-word adverb before the verb is clearly fine, so the question is only where
@@ -149,7 +149,7 @@ What is not covered is the other direction.  Decimals reach it in writing -- 3 m
 **0.003 metoru** -- but nobody says that out loud, and small measurements are common
 in shops and repairs.  Mandarin's answer is native fraction words (厘 'hundredth',
 毫 'thousandth') rather than borrowed *centi-* and *milli-*, which suggests that if
-this gap bites, the fix is one Pikotise fraction root usable everywhere, not two
+this gap bites, the fix is one Pikotika fraction root usable everywhere, not two
 borrowed prefixes usable only on units.
 
 **Why it is not in the language:** we have no observed need yet.  Adding *centi* and

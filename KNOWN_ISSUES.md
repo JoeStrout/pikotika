@@ -28,18 +28,18 @@ Issues will be removed as they are resolved.
 
 ## Tooling
 
-- **`pikotise.py` cannot parse proper names in running text.**  Names are supposed to stay in
+- **`pikotika.py` cannot parse proper names in running text.**  Names are supposed to stay in
   Latin in all three notations, but a name in Latin input fails to resolve:
-  **Tuo ri tise a Inkiris verpo, ker?** returns *no match -- "Inkiris" is not in roots.tsv,
+  **Tuo ri tika a Inkiris verpo, ker?** returns *no match -- "Inkiris" is not in roots.tsv,
   compounds.tsv or names.tsv*, even though `names.tsv` has `English  Inkiris`.  Lowercasing
-  does not help.  The name table appears to be wired into the English-to-Pikotise direction
+  does not help.  The name table appears to be wired into the English-to-Pikotika direction
   only, not into Latin (or presumably Han) parsing.  Consequence: every dialog line
   containing a name -- and there are many, since the dialogs are built around named speakers
   -- has never actually been round-trip checked.  Worth fixing before we trust a bulk
   verification pass over `DIALOGS.md`.
 
 - **Compound headwords shadow root `covers` words, and that is silently shaping the
-  lexicon.**  `pikotise.py` indexes each compound's English headword on its own -- "beer
+  lexicon.**  `pikotika.py` indexes each compound's English headword on its own -- "beer
   (any grain alcohol)" also answers to plain *beer* -- and it resolves compounds before it
   looks at any root's `covers` list.  So whenever an English word sits in both places, the
   compound wins and the root becomes unreachable by that word.

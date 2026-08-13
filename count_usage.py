@@ -18,13 +18,13 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-import pikotise  # noqa: E402  (needs HERE on the path first)
+import pikotika  # noqa: E402  (needs HERE on the path first)
 
 ROOTS_TSV = os.path.join(HERE, 'roots.tsv')
 DIALOGS_MD = os.path.join(HERE, 'DIALOGS.md')
 COLUMN = 'usage_count'
 
-# every Pikotise line in the dialogs is a blockquote holding one bold run
+# every Pikotika line in the dialogs is a blockquote holding one bold run
 LINE = re.compile(r'^>\s*\*\*(.+?)\*\*')
 # the dialogs end where the commentary starts; after this the same lines recur
 END = re.compile(r'^##\s+Notes\b')
@@ -34,7 +34,7 @@ BOLD = re.compile(r'\*\*(.+?)\*\*')
 
 
 def read_dialogs(path):
-    """Return (Pikotise lines, names the dialogs declare)."""
+    """Return (Pikotika lines, names the dialogs declare)."""
     lines, names, in_cast = [], set(), False
     with open(path, encoding='utf-8') as f:
         for line in f:
@@ -62,8 +62,8 @@ def count_roots(lines, names, t):
     counts = Counter()
     skipped = Counter()
     for line in lines:
-        for token in pikotise.tokenize(line):
-            if pikotise.is_punct_text(token):
+        for token in pikotika.tokenize(line):
+            if pikotika.is_punct_text(token):
                 continue
             # Names are capitalized wherever they stand, so capitalization is
             # what separates the name **Ar** (Hal) from the root `ar` 'other'.
@@ -71,7 +71,7 @@ def count_roots(lines, names, t):
             # occurs; if one ever does, the name reading is the one taken.
             if token[:1].isupper() and token.lower() in names:
                 continue
-            words = pikotise.parse_latin(token, t)
+            words = pikotika.parse_latin(token, t)
             if words is None:
                 skipped[token] += 1
                 continue
@@ -79,7 +79,7 @@ def count_roots(lines, names, t):
                 # a written numeral comes back as one ("NUMERAL", text,
                 # reading) tuple rather than a list of glosses; the reading
                 # is a spelling of the digits, not roots anyone chose
-                if pikotise.is_numeral(word):
+                if pikotika.is_numeral(word):
                     continue
                 for gloss in word:
                     # names and numbers ride along as tuples; not roots
@@ -106,7 +106,7 @@ def count_compounds(t):
 def counted_rows(path, counts):
     """The roots.tsv rows with `usage_count` filled in, plus the field order."""
     with open(path, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter='\t')
+        reader = csv.DictReader(f, **pikotika.TSV)
         fields = list(reader.fieldnames)
         rows = list(reader)
     if COLUMN not in fields:
@@ -118,14 +118,14 @@ def counted_rows(path, counts):
 
 def rewrite(path, rows, fields):
     with open(path, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fields, delimiter='\t',
-                                lineterminator='\n')
+        writer = csv.DictWriter(f, fields, lineterminator='\n',
+                                **pikotika.TSV)
         writer.writeheader()
         writer.writerows(rows)
 
 
 def main(argv):
-    t = pikotise.Tables(HERE)
+    t = pikotika.Tables(HERE)
     lines, names = read_dialogs(DIALOGS_MD)
     names |= {form.lower() for form in t.form2name}
     counts, skipped = count_roots(lines, names, t)

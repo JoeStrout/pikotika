@@ -12,7 +12,7 @@ import os
 import re
 import sys
 
-import pikotise
+import pikotika
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -73,7 +73,7 @@ def table_rows(body):
     return rows
 
 
-# -- rendering Pikotise ------------------------------------------------------
+# -- rendering Pikotika ------------------------------------------------------
 
 def strip_bold(s):
     return re.sub(r"\*\*(.+?)\*\*", r"\1", s).strip()
@@ -82,15 +82,15 @@ def strip_bold(s):
 def from_gloss(gloss, t):
     """(Latin, Han) for a single root or compound named by its gloss."""
     words = [gloss.split("-")]
-    return pikotise.render_latin(words, t), pikotise.render_han(words, t)
+    return pikotika.render_latin(words, t), pikotika.render_han(words, t)
 
 
 def han_of_latin(latin, t):
     """The Han for a whole utterance written in Latin notation."""
-    words, _ = pikotise.parse(latin, t)
+    words, _ = pikotika.parse(latin, t)
     if not words:
         sys.exit("could not parse Latin: %r" % latin)
-    return pikotise.render_han(words, t)
+    return pikotika.render_han(words, t)
 
 
 def find_compound(english, t):
@@ -174,7 +174,7 @@ def main(argv=None):
     ap.add_argument("-o", "--out", help="output file (default: srs_level<N>.md)")
     args = ap.parse_args(argv)
 
-    cards = build(args.level, pikotise.Tables(HERE))
+    cards = build(args.level, pikotika.Tables(HERE))
     out = args.out or "srs_level%s.md" % args.level
     with open(out, "w", encoding="utf-8") as fh:
         fh.write(("\n" + CARD_SEP + "\n").join(cards) + "\n")

@@ -1,4 +1,4 @@
-# Pikotise Roots
+# Pikotika Roots
 
 196 entries in 19 groups.
 
@@ -275,7 +275,7 @@
 | play | ruti | 玩 | play, game, fun, amuse, visit (socially), hang out |
 | put | seta | 坐 | put, place, set, position, sit, be seated, mount |
 | remain | sista | 止 | stop, halt, remain, cease, stand, stay, wait, pause |
-| say | tise | 云 | say, speak, talk, tell |
+| say | tika | 云 | say, speak, talk, tell |
 | see | vite | 見 | see, look, watch, appear; understand, realize, get it |
 | sleep | tormi | 床 | sleep, rest, bed, recharge, be dormant |
 | sorry | perton | 悔 | sorry, apology, regret, excuse me |

@@ -1,6 +1,6 @@
-# Welcome to Pikotise
+# Welcome to Pikotika
 
-Pikotise (_pee-ko-TEE-say_, meaning 'small talk') is a constructed language that is very tiny -- only about 200 words -- and designed to be especially easy to learn, yet useful for real-world situations.  With Pikotise you can learn to say things like:
+Pikotika (_pee-ko-TEE-say_, meaning 'small talk') is a constructed language that is very tiny -- only about 200 words -- and designed to be especially easy to learn, yet useful for real-world situations.  With Pikotika you can learn to say things like:
 
 - Where is the bathroom?  (**Panyu ri kerroko?**)
 - Does this dish contain wheat?  (**Tis komi ri tene a yororiso, ker?**)
@@ -11,13 +11,13 @@ and much more.
 
 ## ~200 Root Words
 
-In Pikotise, there are only about 200 words you need to memorize -- and they're not arbitrary; they're chosen to be _easy_ to learn, especially if you already speak English or some Romance language.  These base or [root words](ROOTS.md) were chosen based on common roots in Western languages.  While most of these words have several related meanings, each one also has a "gloss" or simple keyword to remember it by.
+In Pikotika, there are only about 200 words you need to memorize -- and they're not arbitrary; they're chosen to be _easy_ to learn, especially if you already speak English or some Romance language.  These base or [root words](ROOTS.md) were chosen based on common roots in Western languages.  While most of these words have several related meanings, each one also has a "gloss" or simple keyword to remember it by.
 
 To help speakers of Chinese, Japanese, and Korean (CJK) languages, each root also has an associated Chinese character, sometimes called "Han form".  If those are unfamiliar to you, don't worry!  You don't need them right away, and if you want them later, they will be easier to learn than you probably think.
 
-Here are some examples of the 200 or so base or "root" words in Pikotise:
+Here are some examples of the 200 or so base or "root" words in Pikotika:
 
-| English Meanings | Gloss | Pikotise | Chinese symbol | Think of |
+| English Meanings | Gloss | Pikotika | Chinese symbol | Think of |
 |---|---|---|---|---|
 | grain, bread, rice | grain | **riso** | 米 | rice, risotto |
 | water, liquid, wet | water | **aku** | 水 | aquarium, aquatic |
@@ -34,7 +34,7 @@ The examples above are 5% of the full word set -- you've learned a lot already!
 
 ## Compound Words
 
-Root words can be used on their own; but what do you do when you need to say something not clearly covered by those 200 words?  In that case, Pikotise uses a _compound word_ constructed by jamming two or more root words together.
+Root words can be used on their own; but what do you do when you need to say something not clearly covered by those 200 words?  In that case, Pikotika uses a _compound word_ constructed by jamming two or more root words together.
 
 | Roots | Compound | Han | Meaning |
 |---|---|---|---|
@@ -47,7 +47,7 @@ You generally don't need to study these, as their meaning is often obvious, part
 
 ## Sentence Structure
 
-Every Pikotise sentence follows one pattern, and it never changes:
+Every Pikotika sentence follows one pattern, and it never changes:
 
 > _subject_ — **ri** — _verb_ — **a** — _object_
 
@@ -83,7 +83,7 @@ For a yes-or-no question, add **ker** at the end, as in that last example; or yo
 
 ## Stuff Intentionally Left Out 
 
-Finally, here are things Pikotise does **not** have:
+Finally, here are things Pikotika does **not** have:
 
 - no verb tenses or conjugations -- **vite** is see, saw, seen, and seeing
 - no plural endings -- **kanis** is dog or dogs
