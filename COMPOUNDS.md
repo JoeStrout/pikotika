@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-535 terms
+539 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -197,6 +197,7 @@
 | good-hearted | good-feel | ponasenti | 好心 |
 | good-looking | good-see | ponavite | 好見 |
 | goodbye | sorry-out-go | pertoneksire | 悔外行 |
+| gravel | small-stone | pikorapis | 小岩 |
 | grey | stone-color | rapiskoror | 岩色 |
 | grief | big-not-happy | mekanonkonten | 大不楽 |
 | gym | heal-go-place | sanaireroko | 医行所 |
@@ -413,6 +414,7 @@
 | shopkeeper | buy-person | komparomo | 買人 |
 | shore | water-edge | akurante | 水边 |
 | should | if-good | pospona | 可好 |
+| should | if-good | pospona | 可好 |
 | significant | heavy-need | pesaneses | 重要 |
 | silent | close-mouth | vinpuka | 閉口 |
 | sister | same-parent-woman | samparivema | 同亲女 |
@@ -482,8 +484,7 @@
 | tomorrow | sun-after | soretar | 日后 |
 | tongue (language) | word-way | verpomoto | 言方 |
 | tonight | this-no-sun | tisnemsore | 此无日 |
-| too | up-measure | surmens | 上寸 |
-| too much | up-measure | surmens | 上寸 |
+| too [much] | up-measure | surmens | 上寸 |
 | toy | play-tool | rutiuter | 玩工 |
 | train | metal-line-vehicle | metarrinekaro | 金糸车 |
 | transit | line-vehicle | rinekaro | 糸车 |
@@ -529,6 +530,9 @@
 | what time | what-hour | kerora | 何刻 |
 | wheat | yellow-grain | yororiso | 黄米 |
 | wheat bread | yellow-grain-food | yororisokomi | 黄米食 |
+| when | what-time | kertempo | 何时 |
+| where | what-place | kerroko | 何所 |
+| who | what-person | keromo | 何人 |
 | why | what-reason | kerrason | 何故 |
 | win | up-become | surtiven | 上成 |
 | window | see-hole | vitevuko | 見穴 |
