@@ -113,9 +113,13 @@ As numbers get larger, you just do the same thing, making use of **katon** (hund
 
 Use no thousands separators when writing Pikotika numbers (the world can't agree on whether `,` or `.` should be used for this purpose, so just leave them out).
 
-On decimals: use `.` for the decimal point.  For example, one and a quarter would be written **1.25**.  The `.` is pronounced **parte**, so **1.25** is read **wun parte pits kins**.
+### Decimals, fractions, percent, and ordinals
 
-For ordinal numbers (first, second, etc.), just append **sorten** ('sequence') to the number.  For example, 5th would be five-sequence or **kinsorten**.
+Decimals use `.` for the decimal point.  For example, one and a quarter would be written **1.25**.  The `.` is pronounced **parte**, so **1.25** is read **wun parte pits kins**.  
+
+Fractions separate the numerator and denominator with 'in' (a root word that happens to be the same in English and Pikotika).  So **3 in 4** is simply 3/4.  A percentage, written as a fraction, would be something like '50 in 100' -- but there is a standard compound of 'in 100', **inkaton**, meaning 'percent'.  So you can write **50 inkaton** (or in Han, **50内百**) for this.
+
+For ordinal numbers (first, second, etc.), just append **orten** ('sequence') to the number.  For example, 5th would be five-sequence or **kinsorten**.
 
 ### Han Characters
 
@@ -479,6 +483,24 @@ The second puts the clause in front of the noun, closed by **rite** (*RI-TE*, wr
 The rule is: if the modifier contains *RI* or *A*, close it with **rite**; otherwise use *TE*.  Because word order is rigid, "the whole clause" is unambiguous -- scanning back from **rite**, it takes at most one object phrase, one verb, *RI*, and one subject, stopping at the first word that would break that order.
 
 Note that **rite** closes off the noun phrase, so other words can follow it.  A clause sitting after *A* cannot do this, which is sometimes reason enough to prefer **rite**.
+
+### Indefinite Subjects
+
+In some cases, the subject of a sentence is undefined or unnecessary, like in the English sentence "It's raining," or "There is a problem."  English requires a subject except in imperative (command) sentences, and so inserts these dummy words like "it" and "there" that don't really refer to anything in particular.  Or, English may use a passive construct, changing "[someone] lost my luggage" into "My luggage was lost."
+
+In Pikotike, we handle these situations by simply omitting the subject, and starting the sentence with the RI particle.  This makes it clear that there *is* a subject, but it is unspecified.  Examples:
+
+| English | Pikotike |
+|---|---|
+| It's raining. | **Ri ruva.** |
+| There is a problem. | **Ri marumkosa.** |
+| My luggage was lost. | **Ri perti a eko irevaso.** |
+| Food is sold here. | **Ri kompar a komi in tisroko.** |
+| Is this allowed? | **Ri reke a tis, ker?** |
+| It's not allowed. | **Ri non reke.** |
+| Payment is required. | **Ri neses tonar a moni.** |
+
+Note the difference from the imperative form: **Ri sista!** means "It's stopping!" (an observation) while **Sista!** means "Stop!" (a command).
 
 ## Pleasantries & Filler
 

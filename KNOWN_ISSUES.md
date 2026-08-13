@@ -28,16 +28,6 @@ Issues will be removed as they are resolved.
 
 ## Tooling
 
-- **`pikotika.py` cannot parse proper names in running text.**  Names are supposed to stay in
-  Latin in all three notations, but a name in Latin input fails to resolve:
-  **Tuo ri tika a Inkiris verpo, ker?** returns *no match -- "Inkiris" is not in roots.tsv,
-  compounds.tsv or names.tsv*, even though `names.tsv` has `English  Inkiris`.  Lowercasing
-  does not help.  The name table appears to be wired into the English-to-Pikotika direction
-  only, not into Latin (or presumably Han) parsing.  Consequence: every dialog line
-  containing a name -- and there are many, since the dialogs are built around named speakers
-  -- has never actually been round-trip checked.  Worth fixing before we trust a bulk
-  verification pass over `DIALOGS.md`.
-
 - **Compound headwords shadow root `covers` words, and that is silently shaping the
   lexicon.**  `pikotika.py` indexes each compound's English headword on its own -- "beer
   (any grain alcohol)" also answers to plain *beer* -- and it resolves compounds before it

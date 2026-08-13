@@ -17,6 +17,21 @@ Peper	Peper	name
 Pavel	Paver	name	
 Jan	Yan	name	
 Italia	Itaria	name	
+Alice	Aris	name	l -> r; final -ce -> -s
+Bob	Popu	name	no b; b -> p, and bare final stop not licensed, vowel added
+Carla	Karra	name	c -> k; l -> r
+Dan	Tan	name	no d; d -> t
+Eve	Ivu	name	to the sound /iv/; bare final -v not licensed, vowel added
+Fumi	Vumi	name	no f; f -> v
+Gita	Kita	name	no g; g -> k
+Hal	Ar	name	no h; h dropped, l -> r
+Ivan	Ivan	name	already legal unchanged
+Kim	Kim	name	already legal unchanged
+Lena	Rena	name	l -> r; cf. Elena -> Erena
+Mira	Mira	name	already legal unchanged
+Nils	Nirus	name	l -> r; -rs coda not licensed, vowel added
+Omar	Omar	name	already legal unchanged
+Pia	Pia	name	already legal unchanged
 meter	metoru	loan	bare *meter* would collide with metar "metal"; cf. Japanese metoru
 liter	ritoru	loan	no l; l -> r
 gram	kuramu	loan	no g; gr- cluster resolved by epenthesis

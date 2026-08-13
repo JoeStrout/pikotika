@@ -1,9 +1,10 @@
 # Pikotika Compounds
 
-526 terms
+529 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
+| % | in-hundred | inkaton | 内百 |
 | 1st | one-sequence | wunorten | 一序 |
 | 2nd | two-sequence | pitsorten | 2序 |
 | 3rd | three-sequence | tetsorten | 3序 |
@@ -305,6 +306,8 @@
 | peaceful | small-happy | pikokonten | 小楽 |
 | peanut | earth-hard-plant-child | teraturusarponino | 土硬木子 |
 | pen (pen or pencil) | write-tool | penauter | 写工 |
+| per cent | in-hundred | inkaton | 内百 |
+| percent | in-hundred | inkaton | 内百 |
 | pet | home-animal | kasepeste | 户匹 |
 | pet dog | home-dog | kasekanis | 户犬 |
 | pig | red-white-animal | ruperrankopeste | 赤白匹 |

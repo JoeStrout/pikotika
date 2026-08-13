@@ -175,7 +175,8 @@ class Tables:
         self.compounds = {}       # english phrase -> gloss string
         self.compound_by_gloss = {}
         self.names = {}           # english name -> form
-        self.form2name = {}
+        self.form2name = {}       # form, case-folded -> english name
+        self.name_forms = {}      # form, exactly as written -> english name
         self._load(directory)
 
     def _load(self, d):
@@ -223,7 +224,10 @@ class Tables:
             with open(names_path, encoding="utf-8") as fh:
                 for r in csv.DictReader(fh, **TSV):
                     self.names[r["EN"].strip().lower()] = r["form"]
-                    self.form2name[r["form"]] = r["EN"]
+                    # keyed lowercase: a proper name's form is capitalized in
+                    # names.tsv (Erena) but most lookup sites fold case first
+                    self.form2name[r["form"].lower()] = r["EN"]
+                    self.name_forms[r["form"]] = r["EN"]
 
     # -- root-level accessors -------------------------------------------------
 
@@ -240,6 +244,18 @@ class Tables:
         """The root's teaching level as written in roots.tsv; "" if unleveled."""
         return (self.gloss2root.get(gloss) or {}).get("Level", "") or ""
 
+    def name_of(self, token):
+        """The English name a token spells, in either notation; None if neither.
+
+        Accepts the English spelling ("Elena") and the Pikotika form ("Erena"),
+        since gloss notation is written with English keywords but readers paste
+        Latin forms into it all the time.
+        """
+        english = self.names.get(token.lower())
+        if english is not None:
+            return self.form2name[english.lower()]
+        return self.form2name.get(token.lower())
+
 
 # ---------------------------------------------------------------------------
 # A parsed query is a list of words; each word is a list of glosses.  A word of
@@ -250,6 +266,14 @@ class Tables:
 # the corpora punctuate with free-standing , . : ? — these pass through every
 # notation unchanged, so a corpus expression can be pasted in as-is
 PUNCT = set(",.:;?!" "、。：；？！")
+
+# Sentence-final punctuation.  Every word is capitalized after one of these, so
+# capitalization stops distinguishing a name from a root there -- see name_wins.
+SENTENCE_END = set(".?!" "。？！")
+
+
+def ends_sentence(token):
+    return any(c in SENTENCE_END for c in token)
 
 # ...but ordinary writing attaches them ("a kanis, ker?"), so punctuation is peeled
 # off the ends of each whitespace-delimited word.  Only off the ends: a decimal
@@ -424,20 +448,25 @@ def blame(fail, words, token, why=None):
 def parse_gloss(text, t, fail=None):
     """'water-meal RI have A what' -> [[water, meal], [RI], [have], [A], [what]]"""
     words = []
+    start = True
     for word in tokenize(text):
         if is_punct_text(word):
             words.append(word)
+            if ends_sentence(word):
+                start = True
             continue
         numeral = numeral_words(word)
         if numeral is not None:
             words.append(numeral_word(word, numeral))
+            start = False
             continue
         upper = word.upper()
         if upper in PARTICLE_ALIASES:
             words.append([PARTICLE_ALIASES[upper]])
+            start = False
             continue
         parts = []
-        for piece in word.split("-"):
+        for n, piece in enumerate(word.split("-")):
             if piece.isdigit():
                 if piece in DIGITS:
                     parts.append(DIGITS[piece])
@@ -447,19 +476,26 @@ def parse_gloss(text, t, fail=None):
             key = piece
             if key in t.gloss2root and not t.is_particle(key):
                 parts.append(key)
-            elif piece.lower() in t.names:                 # "Joe"
-                parts.append(name_token(t.form2name[t.names[piece.lower()]]))
-            elif piece.lower() in t.form2name:             # "yoe"
-                parts.append(name_token(t.form2name[piece.lower()]))
-            else:
-                blame(fail, words, piece)   # the piece, not the whole compound
-                return None
+                continue
+            # "Joe" by its English spelling, "Yo" by its Pikotika form
+            name = t.name_of(piece)
+            if name is not None and name_wins(piece, start and not n, t):
+                parts.append(name_token(name))
+                continue
+            blame(fail, words, piece)   # the piece, not the whole compound
+            return None
         words.append(parts)
+        start = False
     return words or None
 
 
-def segment(form, t):
-    """Split a solid Latin word into root forms.  Returns one segmentation."""
+def segment(form, t, raw=None):
+    """Split a solid Latin word into root forms.  Returns one segmentation.
+
+    `raw` is the word as written, same length as `form`; names are matched
+    against it so that their capitalization still counts inside a compound.
+    """
+    raw = form if raw is None else raw
     n = len(form)
     best = [None] * (n + 1)
     best[0] = []
@@ -487,8 +523,8 @@ def segment(form, t):
                 break
             # a name inside a compound is only recoverable because the reader
             # knows the name -- so names are part of the segmentation lexicon
-            if piece in t.form2name:
-                best[i] = head + [name_token(t.form2name[piece])]
+            if raw[j:i] in t.name_forms:
+                best[i] = head + [name_token(t.name_forms[raw[j:i]])]
                 break
             # a multi-digit number keeps its digits inline (see DIGITS)
             if piece.isdigit() and piece not in DIGITS and \
@@ -498,29 +534,54 @@ def segment(form, t):
     return best[n]
 
 
+def name_wins(token, start, t):
+    """Does a capitalized token stand for a name rather than for roots?
+
+    Names are capitalized in every notation (see DETAILS.md, Writing Systems),
+    so case alone separates Mira the name from **mira** 'surprise'.  The one
+    place it cannot is the start of a sentence, where every word is capitalized:
+    there the root wins, and the name is only the fallback for a token no roots
+    can spell.  Write **omo Mira** to force the name -- which is exactly the
+    disambiguation DETAILS.md prescribes for a name that collides with a word.
+    """
+    if not token[:1].isupper():
+        return False
+    return not start or segment(token.lower(), t) is None
+
+
 def parse_latin(text, t, fail=None):
     words = []
+    start = True
     for word in tokenize(text):
         if is_punct_text(word):
             words.append(word)
+            if ends_sentence(word):
+                start = True
             continue
         numeral = numeral_words(word)
         if numeral is not None:
             words.append(numeral_word(word, numeral))
+            start = False
             continue
         low = word.lower()
         gloss = t.form2gloss.get(low)
         if gloss and t.is_particle(gloss):
             words.append([gloss])
+            start = False
             continue
-        if low in t.form2name:
-            words.append([name_token(t.form2name[low])])
-            continue
-        parts = segment(low, t)
+        # an outright win takes the name; otherwise the roots get first refusal
+        # and the name catches what they cannot spell
+        name = t.name_forms.get(word)
+        parts = None
+        if name is None or start:
+            parts = segment(low, t, word)
+        if parts is None and name is not None:
+            parts = [name_token(name)]
         if parts is None:
             blame(fail, words, word)
             return None
         words.append(parts)
+        start = False
     return words or None
 
 
@@ -555,10 +616,14 @@ def parse_han(text, t, fail=None):
             while j < len(word) and word[j].isascii() and word[j].isalpha():
                 j += 1
             if j > i:
-                if word[i:j].lower() not in t.form2name:
+                # no roots are written in Latin here, so nothing competes with
+                # the name and case can stay a courtesy rather than a rule
+                name = t.name_forms.get(word[i:j]) or \
+                    t.form2name.get(word[i:j].lower())
+                if name is None:
                     blame(fail, words, word[i:j])
                     return None
-                parts.append(name_token(t.form2name[word[i:j].lower()]))
+                parts.append(name_token(name))
                 i = j
                 continue
             # a particle written as several characters (⊢> for RI-TE)
@@ -598,12 +663,17 @@ def parse_english(text, t, fail=None):
     if key in t.covers:
         return [[t.covers[key][0]]]
     if key in t.names:
-        return [[name_token(t.form2name[t.names[key]])]]
+        return [[name_token(t.form2name[t.names[key].lower()])]]
     return None
 
 
 def looks_like_han(text, t):
     chars = [c for c in text if not c.isspace()]
+    # digits and names are written in Latin inside Han text, so an all-ASCII
+    # string satisfies the test below while being no such thing -- it takes one
+    # actual character to make the notation Han
+    if not any(not c.isascii() for c in chars):
+        return False
     return bool(chars) and all(c in t.han2gloss or c in PUNCT
                                or c in FREE_DIGIT_TO_GLOSS
                                or c.isdigit() or c.isascii() and c.isalpha()
