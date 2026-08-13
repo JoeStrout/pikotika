@@ -30,14 +30,14 @@
 | army | fight-group | patarpanto | 争众 |
 | arrange | before-make | yervake | 前作 |
 | arrange | sequence-put | ortenseta | 序坐 |
-| ask | want-say | keretise | 求云 |
+| ask | want-say | voritise | 求云 |
 | astonishment | big-surprise | mekamira | 大奇 |
 | at last | in-close | invin | 内閉 |
 | athletics | body-play | korporuti | 体玩 |
-| attend to | think-give | pensatare | 思与 |
+| attend to | think-give | pensatonar | 思与 |
 | attendant | help-person | serviomo | 助人 |
-| attention | think-give | pensatare | 思与 |
-| attentive | think-give | pensatare | 思与 |
+| attention | think-give | pensatonar | 思与 |
+| attentive | think-give | pensatonar | 思与 |
 | author | write-person | penaomo | 写人 |
 | baggage | go-box | irevaso | 行皿 |
 | ballot | choose-paper | erikekarta | 选片 |
@@ -170,7 +170,7 @@
 | flat bread | flat-grain-food | yanorisokomi | 平米食 |
 | flatterer | sweet-mouth | tukepuka | 甘口 |
 | fog | water-air | akuvento | 水风 |
-| for this reason | this-reason | tiskas | 此故 |
+| for this reason | this-reason | tisrason | 此故 |
 | forget | know-lose | sapeperti | 知失 |
 | former | before-sequence | yerorten | 前序 |
 | fourth (in a series) | four-sequence | watsorten | 4序 |
@@ -202,9 +202,9 @@
 | have on | cloth-have | ropatene | 衣有 |
 | he | this-person | tisomo | 此人 |
 | hello | happy-meet | kontensarve | 楽会 |
-| Hello (when meeting someone new) | new-meet | novasarve | 初会 |
+| hello (someone new) | new-meet | novasarve | 初会 |
 | helper | help-person | serviomo | 助人 |
-| helpful | help-give | servitare | 助与 |
+| helpful | help-give | servitonar | 助与 |
 | helpless | not-help | nonservi | 不助 |
 | her | this-person | tisomo | 此人 |
 | him | this-person | tisomo | 此人 |
@@ -213,7 +213,7 @@
 | hoop | round-line | rotunrine | 丸糸 |
 | hotel | sleep-home | tormikase | 床户 |
 | how | what-way | kermoto | 何方 |
-| hungry | food-want | komikere | 食求 |
+| hungry | food-want | komivori | 食求 |
 | hurt | sick-feel | marasenti | 病心 |
 | ice | hard-water | turusaku | 硬水 |
 | if (counterfactual) | not-true | nonves | 不真 |
@@ -300,7 +300,7 @@
 | park | green-place | verteroko | 緑所 |
 | party (celebration) | play-group | rutipanto | 玩众 |
 | password | key-word | yaveverpo | 錠言 |
-| pay attention | think-give | pensatare | 思与 |
+| pay attention | think-give | pensatonar | 思与 |
 | peace | no-fight | nempatar | 无争 |
 | peaceful | small-happy | pikokonten | 小楽 |
 | peanut | earth-hard-plant-child | teraturusarponino | 土硬木子 |
@@ -361,7 +361,7 @@
 | repeat | again-say | repetise | 又云 |
 | reply | back-say | retsetise | 反云 |
 | report | write-paper | penakarta | 写片 |
-| request | want-say | keretise | 求云 |
+| request | want-say | voritise | 求云 |
 | resemble | same-see | samvite | 同見 |
 | reservation | before-agree | yerakor | 前約 |
 | respect | please-feel | pamsenti | 乞心 |
@@ -413,7 +413,7 @@
 | smell | air-taste | ventosapor | 风味 |
 | smile | happy-mouth | kontenpuka | 楽口 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
-| snow | cold-rain | yeruruva | 冷雨 |
+| snow | cold-rain | rikusruva | 冷雨 |
 | soft (sound) | small-hear | pikooti | 小耳 |
 | soldier | fight-person | pataromo | 争人 |
 | someone else | other-person | aromo | 別人 |
@@ -448,18 +448,18 @@
 | test (of knowledge) | know-try | sapepropa | 知試 |
 | text | write-word | penaverpo | 写言 |
 | that | not-this | nontis | 不此 |
-| that's why | this-reason | tiskas | 此故 |
+| that's why | this-reason | tisrason | 此故 |
 | the end (of a series) | close-sequence | vinorten | 閉序 |
 | the one after | after-sequence | tarorten | 后序 |
 | the one before | before-sequence | yerorten | 前序 |
 | theater | play-home | rutikase | 玩户 |
 | them (people) | this-person | tisomo | 此人 |
-| therefore | this-reason | tiskas | 此故 |
+| therefore | this-reason | tisrason | 此故 |
 | they (people) | this-person | tisomo | 此人 |
 | thief | long-hand | ronkamanu | 长手 |
 | think over | again-think | repepensa | 又思 |
 | third (in a series) | three-sequence | tetsorten | 3序 |
-| thirsty | drink-want | pipekere | 飲求 |
+| thirsty | drink-want | pipevori | 飲求 |
 | those | not-this | nontis | 不此 |
 | Thursday | plant-weekday | arpoverya | 木曜 |
 | ticket gate | money-door | moniporta | 贝門 |
@@ -488,8 +488,8 @@
 | turnstile | money-door | moniporta | 贝門 |
 | ugly | bad-see | marumvite | 悪見 |
 | umbrella | rain-tool | ruvauter | 雨工 |
-| unfriendly person | cold-person | yeruomo | 冷人 |
-| unhelpful | not-help-give | nonservitare | 不助与 |
+| unfriendly person | cold-person | rikusomo | 冷人 |
+| unhelpful | not-help-give | nonservitonar | 不助与 |
 | until | straight-to | retover | 直向 |
 | untrue | not-true | nonves | 不真 |
 | up to (in time) | straight-to | retover | 直向 |
@@ -520,7 +520,7 @@
 | what time | what-hour | kerora | 何刻 |
 | wheat | yellow-grain | yororiso | 黄米 |
 | wheat bread | yellow-grain-food | yororisokomi | 黄米食 |
-| why | what-reason | kerkas | 何故 |
+| why | what-reason | kerrason | 何故 |
 | win | up-become | surtiven | 上成 |
 | window | see-hole | vitevuko | 見穴 |
 | wine | plant-child-fire-water | arponinovokaaku | 木子火水 |

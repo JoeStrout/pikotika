@@ -12,8 +12,8 @@ Issues will be removed as they are resolved.
 ## Missing Grammar
 
 - **No 'so X that Y'** ("I was so late that I missed the train").  No word for 'so' would fix
-  it, since the difficulty is attaching the result clause.  For now it inverts with **kas**
-  ('I missed the train, because I was very late') or breaks in two with **tiskas** ('I was
+  it, since the difficulty is attaching the result clause.  For now it inverts with **rason**
+  ('I missed the train, because I was very late') or breaks in two with **tisrason** ('I was
   very late.  Therefore...'), losing the emphasis but not the content.  When this does get
   designed, **mens** 'measure, amount, degree, extent' is the likely pivot: it is exactly
   Japanese *hodo* ('tired to the extent that I could not walk') and does the same job as

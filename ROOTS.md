@@ -67,20 +67,20 @@
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | able | kan | 能 | can, able, ability, skill, capable |
-| about | tem | 件 | about, concerning, regarding, on the topic of, pertaining to |
+| about | topi | 件 | about, concerning, regarding, on the topic of, pertaining to |
 | again | repe | 又 | again, repeat, once more, re- |
 | all | pan | 全 | every, whole, total, complete, enough |
 | and | kum | 并 | and, with, also, plus |
 | but | sets | 但 | but, however, although, contrast |
-| for | par | 為 | for, purpose, in order to, recipient, for the benefit of |
+| for | por | 為 | for, purpose, in order to, recipient, for the benefit of |
 | if | pos | 可 | maybe, possible, chance, luck, condition |
 | more | mas | 更 | more, comparative, extra, another |
 | not | non | 不 | no, un-, opposite, negation, without |
 | only | son | 只 | only, just, merely, sole |
-| or | vem | 或 | or, alternative, either |
+| or | sive | 或 | or, alternative, either |
 | other | ar | 別 | other, different, else |
 | please | pam | 乞 | please, request marker, politeness |
-| reason | kas | 故 | reason, cause, because; why = `what-reason` |
+| reason | rason | 故 | reason, cause, because; why = `what-reason` |
 | same | sam | 同 | same, equal, like, as, similar, together |
 | this | tis | 此 | this, here, now, present (that/there = `not-this`) |
 | true | ves | 真 | true, correct, right, of course, evidently |
@@ -172,7 +172,7 @@
 | bad | marum | 悪 | bad, poor, unpleasant, wrong |
 | big | meka | 大 | big, large, great, intense, very |
 | clean | puru | 清 | clean, pure, washed |
-| cold | yeru | 冷 | cold, cool, chilled |
+| cold | rikus | 冷 | cold, cool, chilled |
 | fast | veros | 早 | fast, quick, rapid, soon |
 | fear | timo | 危 | fear, afraid, danger, worry |
 | good | pona | 好 | good, well, fine, pleasant |
@@ -259,7 +259,7 @@
 | feel | senti | 心 | feel, emotion, sense, touch |
 | fight | patar | 争 | fight, battle, conflict, argue, compete, oppose, resist, struggle |
 | get | toma | 取 | get, take, receive, obtain, catch |
-| give | tare | 与 | give, offer, send, provide |
+| give | tonar | 与 | give, offer, send, provide |
 | go | ire | 行 | go, move, travel, proceed, movement |
 | have | tene | 有 | have, hold, own, possess, keep |
 | hear | oti | 耳 | hear, listen, sound, noise |
@@ -282,7 +282,7 @@
 | thank | mersi | 恩 | thank, gratitude, appreciation |
 | think | pensa | 思 | think, mind, idea, opinion, believe |
 | try | propa | 試 | try, attempt, test, try out, taste-test, sample, check, prove |
-| want | kere | 求 | want, desire, wish, hope |
+| want | vori | 求 | want, desire, wish, hope |
 | work | rapo | 力 | work, labor, job, effort, use |
 | write | pena | 写 | write, writing, text, script, inscribe, record |
 

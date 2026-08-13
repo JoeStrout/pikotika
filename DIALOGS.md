@@ -39,10 +39,10 @@ Alice: Everybody says that. She looks like our father, and I look like our mothe
 > **Pan omo ri tise a tis. Tisomo ri samvite a ekopanto viropari, sets eko ri samvite a ekopanto vemapari.**
 
 Bob: Ah, that explains it. Do you live here in the city?
-> **E... tis ri kas. Tuo ri viva in tis urpe, ker?**
+> **E... tis ri rason. Tuo ri viva in tis urpe, ker?**
 
 Alice: No, I live about two hours north. I came just for the party.
-> **Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son par rutipanto.**
+> **Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por rutipanto.**
 
 Bob: That's a long way. Are you staying the night?
 > **Tis ri ronka moto. Tuo ri tormi in tis urpe, ker?**
@@ -89,13 +89,13 @@ Eve: Then I think this week will be easy.
 ## 3. Buying fruit at a market
 
 Vendor: Good morning! What would you like?
-> **Pona sursore! Tuo ri kere a ker?**
+> **Pona sursore! Tuo ri vori a ker?**
 
 Fumi: How much are the bananas?
 > **Ronkayoroarponino ri ker moni?**
 
 Vendor: Twenty each, or a hundred for six.
-> **20 moni par wun, vem 100 moni par 6.**
+> **20 moni por wun, sive 100 moni por 6.**
 
 Fumi: I'll take six. Are they sweet?
 > **Eko ri toma a 6. Tis ri tuke, ker?**
@@ -110,7 +110,7 @@ Vendor: Apples. From the mountains. They're not sweet; they're a little sour.
 > **Rotunarponino, vons surtera. Tis ri non tuke; tis ri piko nontuke.**
 
 Fumi: I like sour. Give me four.
-> **Eko ri kusta a nontuke. Pam tare a 4.**
+> **Eko ri kusta a nontuke. Pam tonar a 4.**
 
 Vendor: Six bananas and four apples — one hundred sixty.
 > **6 ronkayoroarponino kum 4 rotunarponino: 160 moni.**
@@ -141,22 +141,22 @@ Server: Yes — we have a rice dish with vegetables and eggs.
 > **Si. Ekopanto ri tene a rankoriso komi kum vertekomi kum avisnino.**
 
 Hal: I'll have that.
-> **Eko ri kere a tis.**
+> **Eko ri vori a tis.**
 
 Gita: And I'll have the fish, please. Is it spicy?
-> **Kum eko ri kere a akupeste, pam. Tis ri vokasapor, ker?**
+> **Kum eko ri vori a akupeste, pam. Tis ri vokasapor, ker?**
 
 Server: A little. I can ask them to make it not spicy.
-> **Piko. Eko ri kan keretise ver komivakeomo a tis ri tiven non vokasapor.**
+> **Piko. Eko ri kan voritise ver komivakeomo a tis ri tiven non vokasapor.**
 
 Gita: No, a little is fine. And two glasses of water.
 > **Non, piko ri pona. Kum 2 akuvaso, pam.**
 
 Server: Cold or warm?
-> **Yeru vem voka, ker?**
+> **Rikus sive voka, ker?**
 
 Gita: Cold, please.
-> **Yeru, pam.**
+> **Rikus, pam.**
 
 Server: Very good. It will be about fifteen minutes.
 > **Meka pona. Pos 15 parte turan.**
@@ -187,7 +187,7 @@ Ivan: One more question — do you know when the train to the airport leaves?
 > **Wun mas kerverpo: metarrinekaro ver ventokaroroko ri eksire in kerora?**
 
 Local: I don't know. Ask inside the station.
-> **Eko ri non sape. Pam keretise in karoroko.**
+> **Eko ri non sape. Pam voritise in karoroko.**
 
 Ivan: Thank you very much!
 > **Meka mersi!**
@@ -212,7 +212,7 @@ Parent: You had water five minutes ago.
 > **5 parte yer, tuo ri pipe a aku.**
 
 Child: I'm thirsty again.
-> **Eko ri mas pipekere.**
+> **Eko ri mas pipevori.**
 
 Parent: All right, a little. Then sleep.
 > **Pona, piko. Tar, pam tormi.**
@@ -224,7 +224,7 @@ Parent: A short one.
 > **Piko tisekosa.**
 
 Child: About the big fish!
-> **Tem meka akupeste!**
+> **Topi meka akupeste!**
 
 Parent: I told you that one last night.
 > **1 nemsore yer, eko ri tise a tis ver tuo.**
@@ -243,10 +243,10 @@ Jo: Are you free on Saturday?
 > **In teraverya, tuo ri non rapo, ker?**
 
 Kim: I think so. Why?
-> **Eko ri pensa a si. Kerkas?**
+> **Eko ri pensa a si. Kerrason?**
 
 Jo: My brother is playing music at a small place near the river. Do you want to come?
-> **Eko sampariviro ri vake a musi in piko roko nir ronkaaku. Tuo ri kere veni, ker?**
+> **Eko sampariviro ri vake a musi in piko roko nir ronkaaku. Tuo ri vori veni, ker?**
 
 Kim: What kind of music?
 > **Ker musi?**
@@ -255,7 +255,7 @@ Jo: Old songs, quiet. It's not loud.
 > **Vetus musi, pikooti. Tis ri non mekaoti.**
 
 Kim: Good, because last time my ears hurt for two days.
-> **Pona, kas in yer tempo eko otiparte ri marasenti in 2 sore turan.**
+> **Pona, rason in yer tempo eko otiparte ri marasenti in 2 sore turan.**
 
 Jo: Ha! No, this is different.
 > **Ha! Non, tis ri ar.**
@@ -267,10 +267,10 @@ Jo: Eight. But come at seven and we can eat first.
 > **8 ora. Sets pam veni in 7 ora, kum ekopanto ri kan yer komi.**
 
 Kim: Perfect. Should I bring anything?
-> **Meka pona. Eko ri neses tare a ker, ker?**
+> **Meka pona. Eko ri neses tonar a ker, ker?**
 
 Jo: Just money for food. I'll meet you at the door.
-> **Son moni par komi. Eko ri sarve a tuo in porta.**
+> **Son moni por komi. Eko ri sarve a tuo in porta.**
 
 ---
 
@@ -301,7 +301,7 @@ Lena: One thing — the light in the hall is broken.
 > **Wun kosa: vortosore in irekamar ri rompe vin.**
 
 Clerk: I know, I'm sorry. A man will come tomorrow to fix it.
-> **Eko ri sape; eko ri perton. Soretar, wun omo ri veni par sana a tis.**
+> **Eko ri sape; eko ri perton. Soretar, wun omo ri veni por sana a tis.**
 
 Lena: No problem. Thank you.
 > **Nem marumkosa. Mersi.**
@@ -341,7 +341,7 @@ Nils: Of course! Stay with us. We have room.
 > **Ves! Pam sista kum ekopanto. Ekopanto ri tene a kamar.**
 
 Mira: Are you sure? I don't want to make trouble.
-> **Tuo ri ves, ker? Eko ri non kere vake a marumkosa.**
+> **Tuo ri ves, ker? Eko ri non vori vake a marumkosa.**
 
 Nils: No trouble. The children will be happy.
 > **Nem marumkosa. Nino ri konten.**
@@ -357,7 +357,7 @@ Pia: Sure. What's wrong?
 > **Si. Ker marumkosa?**
 
 Omar: The report is not finished, and they want it today.
-> **Penakarta ri non vin, kum rapotesta ri kere a tis in tissore.**
+> **Penakarta ri non vin, kum rapotesta ri vori a tis in tissore.**
 
 Pia: How much is left?
 > **Ker mens ri sista?**
@@ -366,7 +366,7 @@ Omar: The numbers are all there. But the last part isn't written.
 > **Pan menseverpo ri in penakarta. Sets vin parte ri non pena vin.**
 
 Pia: Okay. Send me what you have and I'll write that part.
-> **Pona. Pam tare a tuo ri tene rite kosa ver eko, kum eko ri pena a nontis parte.**
+> **Pona. Pam tonar a tuo ri tene rite kosa ver eko, kum eko ri pena a nontis parte.**
 
 Omar: Really? Thank you. I'm sorry — I should have started earlier.
 > **Ves, ker? Meka mersi. Eko ri perton: eko ri neses apa in mas yer tempo.**
@@ -412,7 +412,7 @@ friction:
 
 > **Eko ri non pensa a ekopanto ri sarve vin.**  'I don't think we've met.' (1)
 > **Sets, eko ri pensa a tis sensesore ri nonturus.**  'Then I think this week will be easy.' (2)
-> **Eko ri kan keretise ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
+> **Eko ri kan voritise ver komivakeomo a tis ri tiven non vokasapor.**  'I can ask the cook to make it not spicy.' (4)
 
 **A complement clause forces prepositional phrases to move.**  That third line is the
 finding.  A bare complement runs to the end of the sentence, so nothing can follow it
@@ -425,7 +425,7 @@ armchair.
 
 **Only one relative clause turned up in ten dialogs.**
 
-> **Pam tare a tuo ri tene rite kosa ver eko.**  'Send me what you have.' (10)
+> **Pam tonar a tuo ri tene rite kosa ver eko.**  'Send me what you have.' (10)
 
 It works cleanly — **rite** closes the noun phrase, which is exactly why **ver eko**
 can still follow it, where a bare complement would have blocked that.  One site in ten

@@ -37,7 +37,7 @@ There are no diphthongs.  When two vowels come together, each one is its own syl
 
 ### Stressed syllable
 
-Every word gets exactly one stress, and it always falls on the next-to-last syllable, shown here in capitals: **PO-na**, **TE-kas**, **KA-ton**, **pi-ko-TI-se**.  A one-syllable word is simply stressed on that syllable (with the exception below).  Compound words are written solid and count as a single word for this purpose, so **kasepeste** (*home-animal*, 'cat') is **ka-se-PES-te** -- one stress, on the next-to-last syllable of the whole compound, not one stress per [root](ROOTS.md).  The three particles (**ri**, **a**, **te**) are the exception: they lean on the neighboring word and take no stress of their own.
+Every word gets exactly one stress, and it always falls on the next-to-last syllable, shown here in capitals: **PO-na**, **TE-rason**, **KA-ton**, **pi-ko-TI-se**.  A one-syllable word is simply stressed on that syllable (with the exception below).  Compound words are written solid and count as a single word for this purpose, so **kasepeste** (*home-animal*, 'cat') is **ka-se-PES-te** -- one stress, on the next-to-last syllable of the whole compound, not one stress per [root](ROOTS.md).  The three particles (**ri**, **a**, **te**) are the exception: they lean on the neighboring word and take no stress of their own.
 
 ## Writing Systems
 
@@ -338,14 +338,14 @@ Adverbs work the same way: they go before the verb they modify.  Example: **vero
 |---|---|---|---|
 | **kan** | 能 | can, is able | **eko ri kan ire** -- 'I can go' |
 | **pos** | 可 | might, maybe | **tuo ri pos ves** -- 'you may be right' |
-| **kere** | 求 | want to | **eko ri kere ire** -- 'I want to go' |
+| **vori** | 求 | want to | **eko ri vori ire** -- 'I want to go' |
 | **pospona** | 可好 | should | **eko ri pospona ire** -- 'I should go' |
 | **neses** | 要 | must, needs to | **eko ri neses ire** -- 'I must go' |
 
 
 ### Prepositional Phrases
 
-These root words can act as prepositions: **in** (内, in/at), **ver** (向, to), **vons** (从, from), **kum** (并, with), **par** (為, for), **tem** (件, about), and the spatial roots **sur** (上, above), **tun** (下, below), **nir** (近, near), **eks** (外, outside), **mets** (中, between).
+These root words can act as prepositions: **in** (内, in/at), **ver** (向, to), **vons** (从, from), **kum** (并, with), **por** (為, for), **topi** (件, about), and the spatial roots **sur** (上, above), **tun** (下, below), **nir** (近, near), **eks** (外, outside), **mets** (中, between).
 
 A prepositional phrase goes at the **end** of a sentence or clause, after the object if there is one.  It can also stand alone as the whole predicate, right after *RI* -- that is how Pikotise says 'is here', 'is with me', 'is for you'.
 
@@ -353,12 +353,12 @@ A prepositional phrase goes at the **end** of a sentence or clause, after the ob
 |---|---|---|
 | **Eko ri ire ver kase.** | self RI go to home | I'm going home. |
 | **Pam veni in sens ora.** | please come in seven hour | Please come at seven. |
-| **Pam tare a tis ver eko.** | please give A this to self | Please give that to me. |
+| **Pam tonar a tis ver eko.** | please give A this to self | Please give that to me. |
 | **Eko ri komi kum tuo.** | self RI eat with you | I'm eating with you. |
 | **Pam sista kum ekopanto.** | please remain with self-group | Stay with us. |
 | **Eko ri in tisroko.** | self RI in this-place | I'm here. |
 | **Eko ri kum nino.** | self RI with child | I'm with the child. |
-| **Tis ri par tuo.** | this RI for you | This is for you. |
+| **Tis ri por tuo.** | this RI for you | This is for you. |
 
 Note that **kum** is 'and' when it joins two like things and 'with' when it opens a phrase of its own, exactly as in English: *bread and water* against *come with me*.
 
@@ -421,26 +421,26 @@ Note that **vin** can be combined with the adverbs for 'can', 'might', 'should',
 | Eko ri pospona ire vin. | I should have gone. |
 | Eko ri neses ire vin. | I must have gone. |
 
-**Conditions.**  A condition is marked by **pos** at the head of its clause, and the clause that follows from it opens with **tiskas** ('therefore').  Both parts are ordinary sentences; nothing else changes.
+**Conditions.**  A condition is marked by **pos** at the head of its clause, and the clause that follows from it opens with **tisrason** ('therefore').  Both parts are ordinary sentences; nothing else changes.
 
-> **Pos eko ri tene a moni, tiskas eko ri kompar a tis.**  'If I had the money, I would buy it.'
-> **Pos tuo ri veni, tiskas ekopanto ri konten.**  'If you come, we'll be happy.'
+> **Pos eko ri tene a moni, tisrason eko ri kompar a tis.**  'If I had the money, I would buy it.'
+> **Pos tuo ri veni, tisrason ekopanto ri konten.**  'If you come, we'll be happy.'
 
-Do not leave out **tiskas**.  Without it the two clauses are symmetric, and a listener has no way to tell which one is the condition.
+Do not leave out **tisrason**.  Without it the two clauses are symmetric, and a listener has no way to tell which one is the condition.
 
-Note that English marks the second clause too, with *would* or *will*; Pikotise does not.  **tiskas** does that work, and the verb stays plain.  Nor is there a separate *would* for politeness or for a hedged prediction: 'I would like to go' is simply **eko ri kere ire**, and 'I think you would like it' is **eko ri pensa a tuo ri kusta a tis**.
+Note that English marks the second clause too, with *would* or *will*; Pikotise does not.  **tisrason** does that work, and the verb stays plain.  Nor is there a separate *would* for politeness or for a hedged prediction: 'I would like to go' is simply **eko ri vori ire**, and 'I think you would like it' is **eko ri pensa a tuo ri kusta a tis**.
 
 **Counterfactuals.**  A counterfactual is just a condition you already know to be false, so Pikotise marks it on the condition rather than on the verb.  Use **nonves** (不真, *not-true*) in place of **pos** at the head of the clause; everything after it is unchanged.
 
 | Pikotise | English |
 |---|---|
-| **Pos eko ri tene a moni, tiskas eko ri kompar a tis.** | If I have the money, I'll buy it.  (maybe I do) |
-| **Nonves eko ri tene a moni, tiskas eko ri kompar a tis.** | If I had the money, I would buy it.  (I don't) |
-| **Nonves eko ri tene a moni vin, tiskas eko ri kompar a tis vin.** | If I had had the money, I would have bought it.  (I didn't) |
+| **Pos eko ri tene a moni, tisrason eko ri kompar a tis.** | If I have the money, I'll buy it.  (maybe I do) |
+| **Nonves eko ri tene a moni, tisrason eko ri kompar a tis.** | If I had the money, I would buy it.  (I don't) |
+| **Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin.** | If I had had the money, I would have bought it.  (I didn't) |
 
 The two markers are exact opposites: **pos** leaves the condition open, **nonves** denies it.  As an ordinary word **nonves** simply means 'false', and the grammatical use is the same word doing the same job -- 'falsely, I have the money' -- so there is nothing extra to learn.
 
-The consequence clause needs no counterfactual marking of its own.  **tiskas** already says it follows from the condition, and if the condition is false then so is what follows from it.  Past time, where you want it, comes from **vin** as usual.
+The consequence clause needs no counterfactual marking of its own.  **tisrason** already says it follows from the condition, and if the condition is false then so is what follows from it.  Past time, where you want it, comes from **vin** as usual.
 
 When there is no stated condition, the plain modal forms above carry the sense on their own: **eko ri pospona apa yer vin** is 'I should have started earlier', and, exactly as in English, saying it implies you did not.  Do not add **nonves** to these.
 
@@ -451,23 +451,23 @@ A clause can serve as the object of a verb, or as a modifier of a noun.
 **As an object**, simply put the clause after *A*.  Only one *RI* is allowed per clause, so an *RI* following *A* can only belong to an embedded clause; no other marking is needed.
 
 > **Eko ri pensa a tis sensesore ri nonturus.**  'I think this week will be easy.'
-> **Eko ri kere a tuo ri veni.**  'I want you to come.'
+> **Eko ri vori a tuo ri veni.**  'I want you to come.'
 
 Such a clause runs to the end of the sentence, so anything else has to come before *A*:
 
-> **Eko ri keretise ver komivakeomo a tis ri tiven non vokasapor.**  'I ask the cook to make it not spicy.'
+> **Eko ri voritise ver komivakeomo a tis ri tiven non vokasapor.**  'I ask the cook to make it not spicy.'
 
 **As a modifier** -- a relative clause -- there are two forms.
 
 The first uses no special grammar.  State the clause as its own sentence, with **ker** ('what, whichever') filling the slot you are relativizing, then pick it up with **tis** in the next clause:
 
-> **Tuo ri tene a kerkosa, pam tare a tis ver eko.**  'Whatever you have, send me that.'
+> **Tuo ri tene a kerkosa, pam tonar a tis ver eko.**  'Whatever you have, send me that.'
 > **Eko ri rets veni in kerora, pam sista retover tis.**  'Wait until I get back.'
 
 The second puts the clause in front of the noun, closed by **rite** (*RI-TE*, written ⊢> in Han):
 
 > **Omo ri komi rite peste.**  'the animal the person ate'
-> **Pam tare a tuo ri tene rite kosa ver eko.**  'Send me what you have.'
+> **Pam tonar a tuo ri tene rite kosa ver eko.**  'Send me what you have.'
 
 **rite** is *TE* for clauses.  Like *TE* it says "the head follows," but where *TE* takes only the modifier phrase directly before it, **rite** takes the whole clause:
 
@@ -509,7 +509,7 @@ Here are some words and phrases to grease the wheels of a conversation:
 | No problem. | no bad-thing | **Nem marumkosa.** | 无 悪物. |
 | Please. | please | **Pam.** | 乞. |
 | Yes, please. | yes, please | **Si, pam.** | 是, 乞. |
-| Yes, please give (it to me). | yes, please give | **Si, pam tare.** | 是, 乞 与. |
+| Yes, please give (it to me). | yes, please give | **Si, pam tonar.** | 是, 乞 与. |
 | No, thank you. | not, thank | **Non, mersi.** | 不, 恩. |
 | I don't know. | self RI not know | **Eko ri non sape.** | 己 ⊢ 不 知. |
 | Help, please! | please help | **Pam servi!** | 乞 助! |

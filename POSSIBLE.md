@@ -133,7 +133,7 @@ single additions may not fix:
   bone, tooth, or hair.  Medical emergencies and doctor visits are exactly the
   situation where a traveler cannot afford to paraphrase, and *see-part* does not
   help you say where it hurts.
-- **Manipulation.**  We have **toma**, **tare**, **tene**, **seta**, and then
+- **Manipulation.**  We have **toma**, **tonar**, **tene**, **seta**, and then
   nothing: no carry, push, pull, throw, drop, catch, turn (as an action), open-with-
   force.  The set can describe transfers of possession but not much physical handling.
 

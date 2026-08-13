@@ -277,10 +277,10 @@
 # want
 ### want, desire, wish, hope
 ---
-# kere
+# vori
 ## 求
 ===
-# kere
+# vori
 ---
 # want
 ### want, desire, wish, hope
@@ -524,10 +524,10 @@
 ===
 # hungry
 ---
-# komikere
+# komivori
 ## 食求
 ===
-# komikere
+# komivori
 ## 食求
 ---
 # hungry
@@ -694,10 +694,10 @@
 ===
 # ask; request
 ---
-# keretise
+# voritise
 ## 求云
 ===
-# keretise
+# voritise
 ## 求云
 ---
 # ask; request
@@ -758,10 +758,10 @@
 ===
 # The child and I are hungry.
 ---
-# Nino kum eko ri komikere.
+# Nino kum eko ri komivori.
 ## 子 并 己 ⊢ 食求.
 ===
-# Nino kum eko ri komikere.
+# Nino kum eko ri komivori.
 ---
 # The child and I are hungry.
 ===

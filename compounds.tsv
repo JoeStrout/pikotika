@@ -3,11 +3,11 @@ actually; in truth	in-true	1	1
 adventure	fear-play		
 adventure trip; expedition	fear-come-go		
 adventurer	fear-play-person		
-airplane	air-vehicle		
-airport	air-vehicle-place		
-alcohol (usually wine)	fire-water		
+airplane	air-vehicle	3	
+airport	air-vehicle-place	3	
+alcohol (usually wine)	fire-water	3	
 allergy	body-not-agree		
-always	all-time		
+always	all-time	3	
 annoyance	small-anger		
 argue; quarrel	word-fight		
 army	fight-group		
@@ -15,30 +15,30 @@ ask; request	want-say	1	1
 astonishment	big-surprise		
 attention; pay attention; attend to; attentive	think-give		
 ballot	choose-paper		
-banana	long-yellow-plant-child		
+banana	long-yellow-plant-child	3	
 be defeated; lose a contest; lose a game	not-up-become		
 beach; seashore	big-water-edge		
 beautiful; pretty; good-looking; beauty	good-see	2	2
 beef	milk-animal-meat		
-beer (any grain alcohol)	grain-fire-water		
+beer (any grain alcohol)	grain-fire-water	3	
 bicycle	leg-vehicle		
-book	many-paper		
+book	many-paper	3	
 border (of a country); frontier	country-edge		
 boss	work-head		
 brave	not-fear		
-bread	grain-food		
+bread	grain-food	3	
 breakfast	up-sun-food	2	2
 bring	have-come	2	2
-brother	same-parent-man		
+brother	same-parent-man	3	
 brown	earth-color		
-bus	many-person-vehicle		
+bus	many-person-vehicle	3	
 business plan	buy-group-map		
 business trip	work-come-go	2	
-busy	many-work		
+busy	many-work	3	
 bye	sorry-go	1	1
 calm	not-anger		
 carry; take along; transport	have-go	2	2
-cat; pet	home-animal		
+cat; pet	home-animal	3	
 caution; careful; cautious; watch out	fear-see		
 chair	put-tool		
 change (money returned)	back-money		
@@ -46,19 +46,19 @@ chili pepper	fire-taste-thing
 cinema; movie theater	picture-home		
 circle; ring; hoop	round-line		
 cloud; cloudy	rain-air		
-coffee	black-drink		
-coin	metal-money		
+coffee	black-drink	3	
+coin	metal-money	3	
 collect; gather	group-join		
 company; corporation; firm	buy-group		
-concert hall	music-home		
+concert hall	music-home	3	
 contest; match; competition	play-fight		
 cook (person)	food-make-person	2	2
-courtesy	please-way		
+courtesy	please-way	3	
 cow	milk-animal		
 crime	not-law-work		
 curriculum; syllabus; course of study	learn-sequence		
-cutlery	food-tool		
-cyan	blue-green		
+cutlery	food-tool	3	
+cyan	blue-green	3	
 dance	music-go	2	2
 decimal point; minute	part	1	
 decision; settle; make up one's mind	choose-close		
@@ -68,51 +68,51 @@ disk	flat-round
 doctor	heal-person		
 door handle	door-hand		
 drive; travel by vehicle	vehicle-go	1	1
-ear	hear-part		
-earn	money-get		
+ear	hear-part	3	
+earn	money-get	3	
 east	map-right		
-easy	not-hard		
+easy	not-hard	3	
 egg	bird-child		
 election	all-choose		
 electronic map	electric-map		
 enemy	not-friend		
 evening	down-sun		
-everyone; everybody	all-person		
-everything	all-thing		
-everywhere	all-place		
+everyone; everybody	all-person	3	
+everything	all-thing	3	
+everywhere	all-place	3	
 exercise	heal-go		
 expect; anticipate	not-surprise		
-experience; experienced	try-know		
-experiment	try-work		
+experience; experienced	try-know	3	
+experiment	try-work	3	
 eye	see-part	2	2
 facial expression; look on one's face	feel-picture		
 false; untrue; if (counterfactual)	not-true	1	
 father	man-parent	2	2
 fetch; go and get	get-go	2	2
-fifth (in a series); 5th	five-sequence		
+fifth (in a series); 5th	five-sequence	3	
 fighter; soldier	fight-person		
 finally; at last; in the end; eventually	in-close	1	1
-first (in a series); 1st	one-sequence		
+first (in a series); 1st	one-sequence	3	
 fish	water-animal	2	2
 fitting room; changing room	cloth-try-room		
 flat bread	flat-grain-food		
 flatterer; smooth talker	sweet-mouth		
-fog; mist	water-air		
+fog; mist	water-air	3	
 forget	know-lose		
-fourth (in a series); 4th	four-sequence		
-Friday	metal-weekday		
+fourth (in a series); 4th	four-sequence	3	
+Friday	metal-weekday	3	
 fried	fire-oil-make		
 fried rice	oil-white-grain		
 fruit	plant-child	1	1
-gale; strong wind	big-air		
+gale; strong wind	big-air	3	
 glass (drinking vessel)	water-box		
-gluten-free food	no-yellow-grain-food		
+gluten-free food	no-yellow-grain-food	3	
 goat; sheep	small-milk-animal		
 goodbye	sorry-out-go	1	1
 grey	stone-color		
 grief	big-not-happy	1	
 gym	heal-go-place		
-hallway; corridor	go-room		
+hallway; corridor	go-room	3	
 harvest	plant-get	2	
 he; she; him; her; they (people); them (people)	this-person	1	1
 hello	happy-meet	1	1
@@ -122,26 +122,26 @@ helpful	help-give
 helpless	not-help		
 honest; frank; blunt	straight-say		
 hotel	sleep-home		
-how	what-way		
+how	what-way	3	
 hungry	food-want	1	1
-ice	hard-water		
+ice	hard-water	3	
 illegal	not-law		
 important; significant; essential; major	heavy-need		
 junction; intersection; crossroads	way-join		
-kind (good-hearted); good-hearted; kindness	good-feel		
+kind (good-hearted); good-hearted; kindness	good-feel	3	
 knife (knife or scissors)	break-tool		
 lamb	small-milk-animal-meat		
 lamp; electric light	electric-sun		
-language; tongue (language)	word-way		
-last; final; the end (of a series)	close-sequence		
+language; tongue (language)	word-way	3	
+last; final; the end (of a series)	close-sequence	3	
 laugh	big-happy-mouth		
-lemon	not-sweet-yellow-plant-child		
-library	many-paper-home		
+lemon	not-sweet-yellow-plant-child	3	
+library	many-paper-home	3	
 light (in weight); lightweight	not-heavy		
 lightning	air-electric		
-list; roster; register	name-sequence		
-look like; resemble; take after; look alike	same-see		
-loud	big-hear		
+list; roster; register	name-sequence	3	
+look like; resemble; take after; look alike	same-see	3	
+loud	big-hear	3	
 love; adore; be in love with	big-like	2	2
 lucky; good luck	good-if		
 luggage; suitcase; baggage	go-box		
@@ -150,101 +150,101 @@ meal (a sitting); mealtime	food-time	1	2
 medical test; checkup; examination (medical)	heal-try		
 midday; noon	middle-sun	2	2
 moment	small-time	1	1
-Monday	month-weekday		
+Monday	month-weekday	3	
 morning	up-sun	2	2
 mother	woman-parent	2	2
-mountain	up-earth		
-mud	water-earth		
+mountain	up-earth	3	
+mud	water-earth	3	
 museum	art-home		
-musical instrument	music-tool		
+musical instrument	music-tool	3	
 never	no-time	2	2
-next; the one after	after-sequence		
+next; the one after	after-sequence	3	
 night	no-sun	2	2
 nobody; no one	no-person	2	2
-north	map-up		
-not enough; insufficient	not-all		
+north	map-up	3	
+not enough; insufficient	not-all	3	
 nothing	no-thing	2	2
 nowhere	no-place	2	2
-number; numeral; digit	measure-word		
-nut	hard-plant-child		
-office	work-room		
+number; numeral; digit	measure-word	3	
+nut	hard-plant-child	3	
+office	work-room	3	
 option; alternative; choice	choose-thing		
-orange	red-yellow		
+orange	red-yellow	3	
 outskirts	city-edge		
 oval; ellipse	long-round		
 pain; hurt; ache	sick-feel		
-park	green-place		
-party (celebration)	play-group		
+park	green-place	3	
+party (celebration)	play-group	3	
 password	key-word		
 peace	no-fight		
-peanut	earth-hard-plant-child		
-pen (pen or pencil)	write-tool		
+peanut	earth-hard-plant-child	3	
+pen (pen or pencil)	write-tool	3	
 pet dog	home-dog		
-pig	red-white-animal		
-pink	red-white		
-playground	play-place		
+pig	red-white-animal	3	
+pink	red-white	3	
+playground	play-place	3	
 politeness (verbal)	please-say	1	2
 polygon	many-bend		
 pork	red-white-animal-meat		
-porridge; congee	water-grain		
-potato	earth-grain		
+porridge; congee	water-grain	3	
+potato	earth-grain	3	
 practice; rehearse; rehearsal	try-learn		
 prepare; get ready; arrange	before-make	2	2
-previous; preceding; former; the one before	before-sequence		
-price; fee; cost	money-measure		
-pride	self-good-feel		
+previous; preceding; former; the one before	before-sequence	3	
+price; fee; cost	money-measure	3	
+pride	self-good-feel	3	
 problem; trouble	bad-thing	2	2
-proof; evidence; verify; confirm	try-true		
+proof; evidence; verify; confirm	try-true	3	
 public transit; transit	line-vehicle		
-purple	red-blue		
+purple	red-blue	3	
 quadrilateral; rectangle; square	four-bend		
-question	what-word		
-queue; line (of people)	person-sequence		
-quiet; soft (sound)	small-hear		
+question	what-word	3	
+queue; line (of people)	person-sequence	3	
+quiet; soft (sound)	small-hear	3	
 rage	big-anger		
 raincoat	rain-cloth		
-random; disordered; messy	not-sequence		
+random; disordered; messy	not-sequence	3	
 read	write-see	2	2
 reader	write-see-person	2	2
 ready; prepared	before-close	1	1
-recall; recollect; call to mind	again-know		
+recall; recollect; call to mind	again-know	3	
 reconsider; rethink; think over	again-think		
-recover; get back; retrieve	again-get		
-redo; remake; do again	again-make		
+recover; get back; retrieve	again-get	3	
+redo; remake; do again	again-make	3	
 relative (kin)	parent-group	2	2
-relative clause marker	RI-TE		
+relative clause marker	RI-TE	3	
 relearn; study again	again-learn		
-remember; retain; keep in mind; memory	know-have		
-repeat; say again	again-say		
+remember; retain; keep in mind; memory	know-have	3	
+repeat; say again	again-say	3	
 reply; answer; respond; response	back-say		
-report; document (written)	write-paper		
+report; document (written)	write-paper	3	
 reservation; booking	before-agree		
-respect	please-feel		
+respect	please-feel	3	
 return; go back	back-go		
-review; re-examine; look over again	again-see		
-rice (white rice)	white-grain		
+review; re-examine; look over again	again-see	3	
+rice (white rice)	white-grain	3	
 ride; go by vehicle	vehicle-put		
-river	long-water		
-road map; roadmap	way-map		
+river	long-water	3	
+road map; roadmap	way-map	3	
 sad	not-happy	1	2
-sake	white-grain-fire-water		
+sake	white-grain-fire-water	3	
 sand	small-stone		
-Saturday	earth-weekday		
-schedule; timetable	time-sequence		
+Saturday	earth-weekday	3	
+schedule; timetable	time-sequence	3	
 school	learn-place		
 sea	big-water	1	2
-search; look for; seek	try-see		
+search; look for; seek	try-see	3	
 seat	put-place		
-second (in a series); 2nd	two-sequence		
+second (in a series); 2nd	two-sequence	3	
 second (of time)	small-part	1	
 see you later	after-meet	1	1
 serene; relaxed; peaceful	small-happy	1	
-shame	self-bad-feel		
+shame	self-bad-feel	3	
 shop	buy-place		
 shore; coast; riverbank	water-edge		
 should	if-good		
 silent; taciturn; tight-lipped	close-mouth		
-sister	same-parent-woman		
+sister	same-parent-woman	3	
 slow; slowly	not-fast	2	2
 smell	air-taste		
 smile	happy-mouth		
@@ -252,52 +252,52 @@ snow	cold-rain
 someone else; another person; others	other-person		
 sort; arrange; put in order	sequence-put		
 soup	water-food	1	2
-sour	not-sweet		
+sour	not-sweet	3	
 south	map-down		
 spice	taste-thing		
 spicy	fire-taste		
 sport; athletics	body-play		
 spouse	marry-person		
 station	vehicle-place	1	1
-step (in a procedure)	sequence-part		
+step (in a procedure)	sequence-part	3	
 storm; downpour	big-rain		
 story; tale	say-thing	1	1
 stubborn	hard-head		
-Sunday	sun-weekday		
-sunny	sun-air		
+Sunday	sun-weekday	3	
+sunny	sun-air	3	
 tan; beige	grain-color		
 tea	plant-water	1	1
 tears; cry	see-water	2	2
-test (of knowledge); exam; quiz	know-try		
-text; writing (text)	write-word		
+test (of knowledge); exam; quiz	know-try	3	
+text; writing (text)	write-word	3	
 that; those	not-this	1	1
-theater; playhouse	play-home		
+theater; playhouse	play-home	3	
 therefore; that's why; for this reason	this-reason		
 thief	long-hand		
-third (in a series); 3rd	three-sequence		
+third (in a series); 3rd	three-sequence	3	
 thirsty	drink-want	2	2
-Thursday	plant-weekday		
+Thursday	plant-weekday	3	
 tie; draw (in a contest)	same-become		
 today	this-sun	1	2
-tomato	red-plant-child		
-tomato sauce	red-food		
+tomato	red-plant-child	3	
+tomato sauce	red-food	3	
 tomorrow	sun-after	1	2
 tonight	this-no-sun	2	2
-too; too much; excessively	up-measure		
-toy	play-tool		
+too; too much; excessively	up-measure	3	
+toy	play-tool	3	
 train	metal-line-vehicle		
 transit station (bus/train)	line-vehicle-place		
 triangle	three-bend		
 trip; journey	come-go	2	2
-Tuesday	fire-weekday		
+Tuesday	fire-weekday	3	
 turnstile; ticket gate	money-door		
 ugly	bad-see	2	
 umbrella	rain-tool		
 unfriendly person	cold-person		
 unhelpful	not-help-give		
 until; till; up to (in time)	straight-to		
-vacation; holiday	play-come-go		
-vegetables	green-food		
+vacation; holiday	play-come-go	3	
+vegetables	green-food	3	
 vegetarian	not-meat-food-person		
 vendor; shopkeeper	buy-person		
 vote; cast a ballot	choose-say		
@@ -308,21 +308,21 @@ war	big-fight
 warn; warning; alert	fear-say		
 we; us	self-group	1	1
 wear; be dressed in; have on	cloth-have		
-Wednesday	water-weekday		
+Wednesday	water-weekday	3	
 week	seven-sun	2	
 weekend	seven-sun-close	2	
 weigh; measure the weight of	heavy-measure		
 welcome	happy-come	2	2
 west	map-left		
 what time	what-hour	1	
-wheat	yellow-grain		
-wheat bread	yellow-grain-food		
+wheat	yellow-grain	3	
+wheat bread	yellow-grain-food	3	
 why	what-reason		
 win; prevail	up-become		
 window	see-hole		
-wine	plant-child-fire-water		
+wine	plant-child-fire-water	3	
 winner	up-become-person		
 writer; author	write-person	2	2
-yellow fruit (usually banana)	yellow-plant-child		
+yellow fruit (usually banana)	yellow-plant-child	3	
 yesterday	sun-before	1	2
 you-are-here map; directory map; orientation map	help-map		

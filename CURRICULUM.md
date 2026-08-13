@@ -27,7 +27,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | English | Gloss | Latin |
 |---|---|---|
 | I'm good. | self RI good | **Eko ri pona.** |
-| The child and I are hungry. | child and self RI food-want | **Nino kum eko ri komikere.** |
+| The child and I are hungry. | child and self RI food-want | **Nino kum eko ri komivori.** |
 | The child is small. | child RI not-big | **Nino ri nonmeka.** |
 | You are happy. | you RI happy | **Tuo ri konten.** |
 | I am sorry. | self RI sorry | **Eko ri perton.** |

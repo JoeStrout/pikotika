@@ -35,20 +35,20 @@ thing	General heads	"thing, object, item, matter"	kosa	物	"Spanish *cosa*, Ital
 time	General heads	"time, occasion, when, period"	tempo	时	"*tempo, tiempo, temporal*"	7	13	1
 way	General heads	"way, manner, method, road, path, route"	moto	方	"*modo, mode, method*"	4	9	3
 able	Grammar and logic	"can, able, ability, skill, capable"	kan	能	"English *can*, German *kann*, Dutch/Swedish/Danish/Norwegian *kan* — all ""be able"", the same spelling across Germanic"	10	4	2
-about	Grammar and logic	"about, concerning, regarding, on the topic of, pertaining to"	tem	件	"*tema* ""topic"""	6	1	2
+about	Grammar and logic	"about, concerning, regarding, on the topic of, pertaining to"	topi	件	"*topic, tópico, topique*"	6	1	2
 again	Grammar and logic	"again, repeat, once more, re-"	repe	又	"Latin *repetere* — *repeat, repetir, répéter, ripetere*"	2	7	3
 all	Grammar and logic	"every, whole, total, complete, enough"	pan	全	"*pan-* (pandemic, pan-American)"	6	9	3
 and	Grammar and logic	"and, with, also, plus"	kum	并	"Latin *cum* ""with"" — and our `and` covers *with*"	6	18	1
 but	Grammar and logic	"but, however, although, contrast"	sets	但	Latin *sed*	7	7	2
-for	Grammar and logic	"for, purpose, in order to, recipient, for the benefit of"	par	為	"Latin *per, pro*; Spanish *por*"	9	5	2
+for	Grammar and logic	"for, purpose, in order to, recipient, for the benefit of"	por	為	"Spanish/Portuguese *por*; Latin *per, pro*"	9	5	2
 if	Grammar and logic	"maybe, possible, chance, luck, condition"	pos	可	"*possible, posible, possibile, possível* — the *posse* branch that kept the sense of chance rather than ability"	5	4	
 more	Grammar and logic	"more, comparative, extra, another"	mas	更	Spanish *más*; 更 is the Chinese comparative adverb — 又 went to `again`	7	6	2
 not	Grammar and logic	"no, un-, opposite, negation, without"	non	不	Latin *non*	4	47	1
 only	Grammar and logic	"only, just, merely, sole"	son	只	"Latin *solus*, Spanish *solo*"	5	2	2
-or	Grammar and logic	"or, alternative, either"	vem	或	Latin *vel*	8	2	
+or	Grammar and logic	"or, alternative, either"	sive	或	"Latin *sive* ""or else"""	8	2	
 other	Grammar and logic	"other, different, else"	ar	別	"Latin *alter*, Italian *altro*, Spanish *otro*"	7	2	
 please	Grammar and logic	"please, request marker, politeness"	pam	乞	"Latin *placet*, Spanish *por favor* — weak: both want a pl-/pr- onset"	3	22	1
-reason	Grammar and logic	"reason, cause, because; why = `what-reason`"	kas	故	"Latin *causa*, Spanish *cosa*, French *chose*"	9	5	
+reason	Grammar and logic	"reason, cause, because; why = `what-reason`"	rason	故	"Spanish *razón*, French *raison*, English *reason*"	9	5	
 same	Grammar and logic	"same, equal, like, as, similar, together"	sam	同	"English *same*, Latin *similis*"	6	9	3
 this	Grammar and logic	"this, here, now, present (that/there = `not-this`)"	tis	此	English *this*	6	48	1
 true	Grammar and logic	"true, correct, right, of course, evidently"	ves	真	"Latin *verus*, Italian *vero*, Spanish *verdad*"	10	11	1
@@ -105,7 +105,7 @@ temple	"Places, arts, appearance"	"temple, shrine, church, sacred place"	temper	
 bad	Qualities	"bad, poor, unpleasant, wrong"	marum	悪	Latin malum	11	8	2
 big	Qualities	"big, large, great, intense, very"	meka	大	*mega-*	3	23	1
 clean	Qualities	"clean, pure, washed"	puru	清	Latin purus	11	0	
-cold	Qualities	"cold, cool, chilled"	yeru	冷	Latin gelu; Italian fresco	7	4	
+cold	Qualities	"cold, cool, chilled"	rikus	冷	"Latin *frigus*, *refrigerate*"	7	4	
 fast	Qualities	"fast, quick, rapid, soon"	veros	早	Spanish veloz; Latin celer	6	5	2
 fear	Qualities	"fear, afraid, danger, worry"	timo	危	"*timor, timid*"	6	6	
 good	Qualities	"good, well, fine, pleasant"	pona	好	"*bueno, bonus, buono*"	6	28	1
@@ -167,7 +167,7 @@ come	Verbs	"come, arrive, approach"	veni	来	Latin venire	7	11	2
 feel	Verbs	"feel, emotion, sense, touch"	senti	心	"*sentir, sentiment*"	4	8	3
 fight	Verbs	"fight, battle, conflict, argue, compete, oppose, resist, struggle"	patar	争	"*battle, batalla, bataille, battaglia*; b -> p as elsewhere in the set"	6	6	
 get	Verbs	"get, take, receive, obtain, catch"	toma	取	"Spanish *tomar* ""to take"""	8	7	2
-give	Verbs	"give, offer, send, provide"	tare	与	"*dare, dar, donate*"	3	6	
+give	Verbs	"give, offer, send, provide"	tonar	与	"*donare, donner, donate*"	3	6	
 go	Verbs	"go, move, travel, proceed, movement"	ire	行	"Latin *ire*, Spanish *ir*"	6	29	1
 have	Verbs	"have, hold, own, possess, keep"	tene	有	"*tener, tenir, tenere*"	6	10	2
 hear	Verbs	"hear, listen, sound, noise"	oti	耳	"*audio, oír, udire*"	6	7	3
@@ -190,7 +190,7 @@ sorry	Verbs	"sorry, apology, regret, excuse me"	perton	悔	Spanish perdon; Itali
 thank	Verbs	"thank, gratitude, appreciation"	mersi	恩	French merci; Spanish gracias	10	5	2
 think	Verbs	"think, mind, idea, opinion, believe"	pensa	思	"*pensar, penser, pensive*"	9	5	
 try	Verbs	"try, attempt, test, try out, taste-test, sample, check, prove"	propa	試	"*probar, provare, probieren, probe, prove*"	13	8	3
-want	Verbs	"want, desire, wish, hope"	kere	求	"Spanish *querer*, *quiero*"	7	12	1
+want	Verbs	"want, desire, wish, hope"	vori	求	"Latin *volo, velle*; Italian *volere*, English *volition*"	7	12	1
 work	Verbs	"work, labor, job, effort, use"	rapo	力	"*labor, lavoro*"	2	14	2
 write	Verbs	"write, writing, text, script, inscribe, record"	pena	写	"pen, Latin penna, Italian penna, Spanish pluma; 写 is the modern CJK character"	5	10	2
 name	Word	"name, title, label"	nomen	名	Latin nomen	6	2	2
