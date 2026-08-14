@@ -136,39 +136,6 @@ Our root words, by necessity, cover many concepts, but currently we pick just on
 
 We could consider blessing a *secondary* gloss, and allowing the primary or secondary to  be used when writing gloss form.  Our tools could easily convert from gloss to Latin and Han using either word.  When converting *to* gloss automatically, it would be hard (without LLM-level AI) to reliably pick the clearest one, but maybe some heuristics will help... and anyway it couldn't come out worse than the current situation.  (It might complicate round-trip tests, though.)
 
-## Shortening the most common readings
-
-Right now almost all our roots are two syllables.  There is some scheme where only function words are one syllable, or something like that; but I can't remember exactly what the rule is and I don't find it very useful.  More useful would be shorter compound words.  So, when we have a big catalog of compounds, we could take inventory, see which roots are most commonly used, and shorten them to single syllables that play nicely with their neighbors.  This should have a noticeable impact on the fluency of the language.
-
-(**verpo** was the first candidate examined, and it was retired outright rather than
-shortened: every sense it carried was already inside **tika** 'say', so the root was
-folded in and the six compounds reglossed -- *what-say* 'question', *say-way*
-'language', *write-say* 'text', and so on.  See "Root Reductions" below.)
-
-I did a quick search for roots that were used in a large number of compounds (at least 7 of our current set), are multisyllable, have a high frequency of use overall, and no good reason to stay what they are.  Here are the best candidates:
-
-aku, ire, omo, orten, sore, komi, roko, vite, riso, arpo, karo, nino, ruti, peste, voka, kase, vento, propa, panto, kosa, konten, verya, ruper, uter, rapo, pena
-
-So, we'd need to examine each of these, particularly in terms of the compounds they participate in, and look for a shorter/easier word that maybe still has some mnemonic value.  (**verpo** was on this list, but it got removed and merged into **tika**.)
-
-Note that pena/pona and mara/mira are very nearly collision pairs, differing by only one vowel.  We should prioritize renaming pena, and at least one of mara and mira (even though neither mara nor mira are on my list above.)  Also, there are four sets of three near-misses: parte/perti/porta, rapo/repe/ropa, reto/rite/ruti, and vake/voka/vuko.
-
-Proposed:
-	ruper ('red') --> rus
-	ranko ('white') --> anko
-	urpe ('city') --> sitas
-	verya ('weekday') --> yom
-	sore ('sun') --> yan
-	pena ('write') --> kita
-	mira ('surprise') --> sorpe
-	ropa ('work') --> opus
-	ruti ('play') --> yu   (and change toy from play-tool to play-thing)
-	voka ('fire') --> wo
-	
-	new root fruit;result → nus (果)
-	
-
-With **arpo**, I note that almost every compound it's in (some of them very long) is based on **arponino**, 'fruit'.  It might be worth adding a root just for that.
 
 ## V versus F
 
@@ -182,7 +149,7 @@ Most speakers in the world do not have both V and F sounds, so we are right to n
 ## Root Additions
 
 The other half of the same question: if reductions freed up space, what would be
-worth spending it on?  What follows are concepts the current 188 roots do not touch,
+worth spending it on?  What follows are concepts the current 193 roots do not touch,
 where the workaround is either long, unguessable, or missing entirely.
 
 A concept belongs here only if *both* tests fail: no root covers it, and no short

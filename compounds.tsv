@@ -67,7 +67,7 @@ thirsty	drink-want	2	2
 rug; mat; carpet	earth-cloth	4	
 brown	earth-color	3	3
 potato	earth-grain	3	
-peanut	earth-hard-plant-child	4	
+peanut	earth-hard-fruit	4	
 Saturday	earth-weekday	3	3
 electronic map	electric-map	4	
 lamp; electric light	electric-sun	4	
@@ -110,7 +110,7 @@ welcome	happy-come	2	2
 hello	happy-meet	1	1
 smile	happy-mouth	4	
 stubborn	hard-head	4	
-nut	hard-plant-child	4	
+nut	hard-fruit	4	
 ice	hard-water	4	
 bring	have-come	2	2
 carry; take along; transport	have-go	2	2
@@ -143,7 +143,7 @@ transit station (bus/train)	line-vehicle-place	4
 thief	long-hand	5	
 oval; ellipse	long-round	4	
 river	long-water	3	
-banana	long-yellow-plant-child	3	
+banana	long-yellow-fruit	3	
 father	man-parent	2	2
 polygon	many-bend	4	
 book	many-paper	3	
@@ -196,7 +196,7 @@ less; fewer	not-more	2	3
 random; disordered; messy	not-sequence	3	
 expect; anticipate	not-surprise	5	
 sour	not-sweet	3	
-lemon	not-sweet-yellow-plant-child	3	
+lemon	not-sweet-yellow-fruit	3	
 that; those	not-this	1	1
 false; untrue; if (counterfactual)	not-true	1	
 be defeated; lose a contest; lose a game	not-up-become	4	
@@ -209,8 +209,7 @@ relative (kin)	parent-group	2	2
 decimal point; minute	part	1	
 queue; line (of people)	person-sequence	3	
 cinema; movie theater	picture-home	4	
-fruit	plant-child	1	1
-wine	plant-child-fire-water	3	
+wine	fruit-fire-water	3	
 harvest	plant-get	2	
 tea	plant-water	1	1
 Thursday	plant-weekday	3	3
@@ -230,7 +229,7 @@ raincoat	rain-cloth	4
 umbrella	rain-tool	4	
 purple	red-blue	3	3
 tomato sauce	red-food	3	
-tomato	red-plant-child	3	
+tomato	red-fruit	3	
 pink	red-white	3	3
 pig	red-white-animal	3	3
 pork	red-white-animal-meat	4	
@@ -332,4 +331,4 @@ reader	write-see-person	2	2
 pen (pen or pencil)	write-tool	3	
 wheat	yellow-grain	3	3
 wheat bread	yellow-grain-food	3	
-yellow fruit (usually banana)	yellow-plant-child	3	
+yellow fruit (usually banana)	yellow-fruit	3	

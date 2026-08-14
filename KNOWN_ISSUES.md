@@ -15,7 +15,7 @@ Issues will be removed as they are resolved.
   it, since the difficulty is attaching the result clause.  For now it inverts with **rason**
   ('I missed the train, because I was very late') or breaks in two with **tisrason** ('I was
   very late.  Therefore...'), losing the emphasis but not the content.  When this does get
-  designed, **mens** 'measure, amount, degree, extent' is the likely pivot: it is exactly
+  designed, **mesur** 'measure, amount, degree, extent' is the likely pivot: it is exactly
   Japanese *hodo* ('tired to the extent that I could not walk') and does the same job as
   Chinese 得.
 - **Embedded questions clash with the in-situ question rule.**  A question word stays in its

@@ -1,6 +1,6 @@
 # Pikotika Roots
 
-195 entries in 18 groups.
+196 entries in 18 groups.
 
 ## Body and life (10)
 
@@ -24,26 +24,27 @@
 | black | nero | 黒 | "black, dark, dark-valued" |
 | blue | asur | 青 | "blue, cool hue" |
 | green | verte | 緑 | "green, vegetal hue" |
-| red | ruper | 赤 | "red, warm hue" |
-| white | ranko | 白 | "white, pale, light-valued" |
+| red | rus | 赤 | "red, warm hue" |
+| white | anka | 白 | "white, pale, light-valued" |
 | yellow | yoro | 黄 | "yellow, golden hue" |
 
 ## Feelings (5)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
-| anger | koler | 怒 | "anger, angry, rage, mad, fury" |
+| anger | raye | 怒 | "anger, angry, rage, mad, fury" |
 | happy | konten | 楽 | "happy, glad, pleased, joy" |
 | like | kusta | 愛 | "like, enjoy, prefer, be fond of" |
-| surprise | mira | 奇 | "surprise, astonish, wonder, unexpected" |
+| surprise | sorpe | 奇 | "surprise, astonish, wonder, unexpected" |
 | tired | kansa | 疲 | "tired, weary, exhausted" |
 
-## Food (6)
+## Food (7)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | drink | pipe | 飲 | "drink, beverage, sip" |
 | food | komi | 食 | "food, eat, meal, nourishment" |
+| fruit | pomo | 果 | fruit, berry, seed; result, outcome |
 | grain | riso | 米 | "grain, bread, rice, staple starch" |
 | meat | karne | 肉 | "meat, flesh food, animal protein" |
 | milk | raten | 乳 | "milk, dairy, cream" |
@@ -53,7 +54,7 @@
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
-| group | panto | 众 | "group, set, collection, team, crowd" |
+| group | men | 众 | "group, set, collection, team, crowd" |
 | name | nomen | 名 | "name, title, label" |
 | part | parte | 分 | "part, piece, portion, member" |
 | person | omo | 人 | "person, human, one who, agent" |
@@ -125,10 +126,10 @@
 | bug | inses | 虫 | "insect, bug, spider, worm — small many-legged creature" |
 | dog | kanis | 犬 | "dog, canine — includes wolf, fox, coyote" |
 | earth | tera | 土 | "ground, land, soil, floor, dirt" |
-| fire | voka | 火 | "fire, burn, heat, hot" |
+| fire | wo | 火 | "fire, burn, heat, hot" |
 | plant | arpo | 木 | "plant, tree, flower, wood" |
 | rain | ruva | 雨 | "rain, precipitation" |
-| sun | sore | 日 | "sun, light, day, daytime, 24-hour period, bright" |
+| sun | yan | 日 | "sun, light, day, daytime, 24-hour period, bright" |
 | water | aku | 水 | "water, liquid, fluid, wet" |
 
 ## Particles (3)
@@ -160,7 +161,7 @@
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | art | arti | 芸 | "art, artwork, creative craft" |
-| city | urpe | 市 | "city, town, urban place" |
+| city | sitas | 市 | "city, town, urban place" |
 | color | koror | 色 | "color, hue" |
 | home | kase | 户 | "home, house, dwelling, household" |
 | music | musi | 曲 | "music, song, melody" |
@@ -193,7 +194,7 @@
 | four | wats | 4 | "four, 4" |
 | hundred | katon | 百 | "hundred, 100, hundreds place" |
 | many | mur | 多 | "many, much, lots, 6+" |
-| measure | mens | 寸 | "measure, amount, degree, extent, quantity, count" |
+| measure | mesur | 寸 | "measure, amount, degree, extent, quantity, count" |
 | million | miron | 兆 | "million, 1000000, millions place" |
 | nine | noks | 9 | "nine, 9" |
 | no | nem | 无 | "zero, none, absent" |
@@ -244,7 +245,7 @@
 | hour | ora | 刻 | "hour, clock-time unit" |
 | interval | turan | 間 | "interval, duration, span of time, period, for (a length of time)" |
 | month | mese | 月 | "month, moon, lunar cycle" |
-| weekday | verya | 曜 | named day of the week (Japanese 曜) |
+| weekday | yom | 曜 | named day of the week (Japanese 曜) |
 | year | anyo | 年 | "year, annual cycle" |
 
 ## Verbs (35)
@@ -273,7 +274,7 @@
 | meet | sarve | 会 | "meet, encounter, run into, come together with" |
 | need | neses | 要 | "need, require, must, necessary, have to" |
 | open | apa | 开 | "open, begin, start, uncover" |
-| play | ruti | 玩 | "play, game, fun, amuse, visit (socially), hang out" |
+| play | yu | 玩 | "play, game, fun, amuse, visit (socially), hang out" |
 | put | seta | 坐 | "put, place, set, position, sit, be seated, mount" |
 | remain | sista | 止 | "stop, halt, remain, cease, stand, stay, wait, pause" |
 | say | tika | 言 | "say, speak, tell, word, speech, message" |
@@ -282,7 +283,7 @@
 | sorry | perton | 悔 | "sorry, apology, regret, excuse me" |
 | thank | mersi | 恩 | "thank, gratitude, appreciation" |
 | think | pensa | 思 | "think, mind, idea, opinion, believe" |
-| try | propa | 試 | "try, attempt, test, try out, taste-test, sample, check, prove" |
+| try | tentar | 試 | "try, attempt, test, try out, taste-test, sample, check, prove" |
 | want | vori | 求 | "want, desire, wish, hope" |
-| work | rapo | 力 | "work, labor, job, effort, use" |
-| write | pena | 写 | "write, writing, text, script, inscribe, record" |
+| work | opus | 力 | "work, labor, job, effort, use" |
+| write | kita | 写 | "write, writing, text, script, inscribe, record" |

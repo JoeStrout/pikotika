@@ -169,10 +169,10 @@
 # group
 ### "group, set, collection, team, crowd"
 ---
-# panto
+# men
 ## 众
 ===
-# panto
+# men
 ---
 # group
 ### "group, set, collection, team, crowd"
@@ -253,10 +253,10 @@
 # sun
 ### "sun, light, day, daytime, 24-hour period, bright"
 ---
-# sore
+# yan
 ## 日
 ===
-# sore
+# yan
 ---
 # sun
 ### "sun, light, day, daytime, 24-hour period, bright"
@@ -430,6 +430,18 @@
 ### "plant, tree, flower, wood"
 ## 木
 ===
+# fruit
+### fruit, berry, seed; result, outcome
+---
+# pomo
+## 果
+===
+# pomo
+---
+# fruit
+### fruit, berry, seed; result, outcome
+## 果
+===
 # meet
 ### "meet, encounter, run into, come together with"
 ---
@@ -597,18 +609,6 @@ out-go
 # depart; leave (depart)
 ## 外行
 out-go
-===
-# fruit
----
-# arponino
-## 木子
-plant-child
-===
-# arponino
----
-# fruit
-## 木子
-plant-child
 ===
 # tea
 ---
@@ -636,11 +636,11 @@ say-thing
 ===
 # we; us
 ---
-# ekopanto
+# ekomen
 ## 己众
 self-group
 ===
-# ekopanto
+# ekomen
 ---
 # we; us
 ## 己众
@@ -888,11 +888,11 @@ you RI true
 ===
 # We are ready.
 ---
-# Ekopanto ri yervin.
+# Ekomen ri yervin.
 ## 己众 ⊢ 前閉.
 self-group RI before-close
 ===
-# Ekopanto ri yervin.
+# Ekomen ri yervin.
 ---
 # We are ready.
 ## 己众 ⊢ 前閉.
@@ -936,23 +936,23 @@ food RI new
 ===
 # The fruit is small.
 ---
-# Arponino ri piko.
-## 木子 ⊢ 小.
-plant-child RI small
+# Pomo ri piko.
+## 果 ⊢ 小.
+fruit RI small
 ===
-# Arponino ri piko.
+# Pomo ri piko.
 ---
 # The fruit is small.
-## 木子 ⊢ 小.
-plant-child RI small
+## 果 ⊢ 小.
+fruit RI small
 ===
 # The sun is big.
 ---
-# Sore ri meka.
+# Yan ri meka.
 ## 日 ⊢ 大.
 sun RI big
 ===
-# Sore ri meka.
+# Yan ri meka.
 ---
 # The sun is big.
 ## 日 ⊢ 大.
@@ -1056,11 +1056,11 @@ self RI vehicle-go
 ===
 # We're leaving.
 ---
-# Ekopanto ri eksire.
+# Ekomen ri eksire.
 ## 己众 ⊢ 外行.
 self-group RI out-go
 ===
-# Ekopanto ri eksire.
+# Ekomen ri eksire.
 ---
 # We're leaving.
 ## 己众 ⊢ 外行.

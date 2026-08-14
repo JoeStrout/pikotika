@@ -142,23 +142,23 @@ Pikotika has six basic color roots, plus the root **koror** 'color' itself.
 
 | Meaning | Gloss | Pikotika | Han |
 |---|---|---|---|
-| red, warm hue | *red* | **ruper** | 赤 |
+| red, warm hue | *red* | **rus** | 赤 |
 | blue, cool hue | *blue* | **asur** | 青 |
 | green | *green* | **verte** | 緑 |
 | yellow, golden | *yellow* | **yoro** | 黄 |
-| white, pale | *white* | **ranko** | 白 |
+| white, pale | *white* | **anka** | 白 |
 | black, dark | *black* | **nero** | 黒 |
 | color, hue | *color* | **koror** | 色 |
 
-Note the broadness of **ranko** and **nero**; these are as much about lightness and darkness as about white and black.  So a pale grey shirt is reasonably **ranko** and a dark navy one **nero**.
+Note the broadness of **anka** and **nero**; these are as much about lightness and darkness as about white and black.  So a pale grey shirt is reasonably **anka** and a dark navy one **nero**.
 
 Other colors are built as compounds:
 
 | Meaning | Gloss | Pikotika | Han |
 |---|---|---|---|
-| orange | *red-yellow* | **ruperyoro** | 赤黄 |
-| pink | *red-white* | **ruperranko** | 赤白 |
-| purple | *red-blue* | **ruperasur** | 赤青 |
+| orange | *red-yellow* | **rusyoro** | 赤黄 |
+| pink | *red-white* | **rusanka** | 赤白 |
+| purple | *red-blue* | **rusasur** | 赤青 |
 | cyan | *blue-green* | **asurverte** | 青緑 |
 | grey | *stone-color* | **rapiskoror** | 岩色 |
 | brown | *earth-color* | **terakoror** | 土色 |
@@ -180,15 +180,15 @@ We don't need to say "minute" in this case; the number after **ora** is understo
 
 | Pikotika | Han | Meaning |
 |---|---|---|
-| **sursore** | 上日 | morning (*up-sun*) |
-| **metsesore** | 中日 | noon, midday (*middle-sun*) |
-| **sore** | 日 | day, daytime |
-| **tunsore** | 下日 | afternoon, evening (*down-sun*) |
-| **nemsore** | 无日 | night (*no-sun*) |
+| **suryan** | 上日 | morning (*up-sun*) |
+| **metseyan** | 中日 | noon, midday (*middle-sun*) |
+| **yan** | 日 | day, daytime |
+| **tunyan** | 下日 | afternoon, evening (*down-sun*) |
+| **nemyan** | 无日 | night (*no-sun*) |
 
-So **sursore noks ora** is 9 in the morning, and **nemsore noks ora** is 9 at night.  
+So **suryan noks ora** is 9 in the morning, and **nemyan noks ora** is 9 at night.  
 
-To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun sensesore turan** is "for a week."  For smaller intervals, use **parte turan** for minutes, and **pikoparte turan** for seconds.
+To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun senseyan turan** is "for a week."  For smaller intervals, use **parte turan** for minutes, and **pikoparte turan** for seconds.
 
 For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and does not need **turan**).  Finally, here are some words for referring to 'now' or generically in the past/future.
 
@@ -205,51 +205,51 @@ You name a calendar year in Pikotika with the year number plus **anyo** (年, 'y
 
 Months use the same pattern: rather than having unique names, as in English, months are simply numbered from 1 to 12, followed by **mese** (月, 'month').  So **1 mese** (also written 1月, and read **wun mese**) is January, **2 mese** (2月, **pits mese**) is February, etc.
 
-Do the same for days of the month, using **sore** (日, 'day'): write **1 sore** through **31 sore** (1日 to 31日 in Han form).
+Do the same for days of the month, using **yan** (日, 'day'): write **1 yan** through **31 yan** (1日 to 31日 in Han form).
 
 To specify a date or partial date, just write these out in year, month, day order.  As a shortcut for full dates when using Latin form, you can also separate the numbers with hyphens (i.e. ISO date format).  The examples below show the possible ways to write "August 9th", "August 2026", and "August 9th, 2026".
 
 | Written | Read |
 |---|---|
-| **8 mese 9 sore** | **ots mese noks sore** |
-| **8月9日** | **ots mese noks sore** |
+| **8 mese 9 yan** | **ots mese noks yan** |
+| **8月9日** | **ots mese noks yan** |
 | **2026 anyo 8 mese** | **pits kiru pits tekas siks anyo ots mese** |
 | **2026年8月** | **pits kiru pits tekas siks anyo ots mese** |
-| **2026 anyo 8 mese 9 sore** | **pits kiru pits tekas siks anyo ots mese noks sore** |
-| **2026年8月9日** | **pits kiru pits tekas siks anyo ots mese noks sore** |
-| **2026-08-09** | **pits kiru pits tekas siks anyo ots mese noks sore** |
+| **2026 anyo 8 mese 9 yan** | **pits kiru pits tekas siks anyo ots mese noks yan** |
+| **2026年8月9日** | **pits kiru pits tekas siks anyo ots mese noks yan** |
+| **2026-08-09** | **pits kiru pits tekas siks anyo ots mese noks yan** |
 
 Notice that how you choose to write it does not change how it is read.
 
-The seven weekdays are each named for a heavenly body or element, plus **verya** ('weekday').  The Han characters match Japanese and Korean exactly.
+The seven weekdays are each named for a heavenly body or element, plus **yom** ('weekday').  The Han characters match Japanese and Korean exactly.
 
 | Day | Gloss | Think | Latin | Han |
 |---|---|---|---|---|
-| Sunday | *sun-weekday* | ☀️ sun-day | **soreverya** | 日曜 |
-| Monday | *month-weekday* | 🌖 moon-day | **meseverya** | 月曜 |
-| Tuesday | *fire-weekday* | 🔥 fire-day | **vokaverya** | 火曜 |
-| Wednesday | *water-weekday* | 💧 water-day | **akuverya** | 水曜 |
-| Thursday | *plant-weekday* | 🪵 wood-day | **arpoverya** | 木曜 |
-| Friday | *metal-weekday* | 🏆 metal-day | **metarverya** | 金曜 |
-| Saturday | *earth-weekday* | 🌎 earth-day | **teraverya** | 土曜 |
+| Sunday | *sun-weekday* | ☀️ sun-day | **yanyom** | 日曜 |
+| Monday | *month-weekday* | 🌖 moon-day | **meseyom** | 月曜 |
+| Tuesday | *fire-weekday* | 🔥 fire-day | **woyom** | 火曜 |
+| Wednesday | *water-weekday* | 💧 water-day | **akuyom** | 水曜 |
+| Thursday | *plant-weekday* | 🪵 wood-day | **arpoyom** | 木曜 |
+| Friday | *metal-weekday* | 🏆 metal-day | **metaryom** | 金曜 |
+| Saturday | *earth-weekday* | 🌎 earth-day | **terayom** | 土曜 |
 
-To ask which day it is, use **kerverya** (何曜, *what-weekday*).
+To ask which day it is, use **keryom** (何曜, *what-weekday*).
 
 Here's how you can refer to days relative to today:
 
 | Pikotika | Han | Meaning |
 |---|---|---|
-| **soreyer** | 日前 | yesterday |
-| **tissore** | 此日 | today |
-| **soretar** | 日后 | tomorrow |
+| **yanyer** | 日前 | yesterday |
+| **tisyan** | 此日 | today |
+| **yantar** | 日后 | tomorrow |
 
-For any other distance, count the days and add **yer** ('ago') or **tar** ('from now') at the end.  Note that this postposed use is what makes it deictic: **2 sore yer** is always two days before *now*, whereas **yersore** is 'the previous day' relative to whatever you were just talking about.
+For any other distance, count the days and add **yer** ('ago') or **tar** ('from now') at the end.  Note that this postposed use is what makes it deictic: **2 yan yer** is always two days before *now*, whereas **yeryan** is 'the previous day' relative to whatever you were just talking about.
 
 | Pikotika | Han | Meaning |
 |---|---|---|
-| **2 sore yer** | 2日前 | two days ago |
-| **kins sore tar** | 5日后 | five days from now |
-| **tets sensesore yer** | 3 7日前 | three weeks ago |
+| **2 yan yer** | 2日前 | two days ago |
+| **kins yan tar** | 5日后 | five days from now |
+| **tets senseyan yer** | 3 7日前 | three weeks ago |
 
 
 ## Proper Nouns and Loan Words
@@ -288,9 +288,9 @@ Some examples will help illustrate.
 
 Standing adaptations -- names that come up often enough to be worth agreeing on -- are recorded in `names.tsv`.
 
-In general, it's not necessary to precede any suffix word with a name.  However, you might precede it with **omo** (person), **roko** (place), **urpe** (city), **nasyon** (country), **komparroko** (shop/establishment), or **komparpanto** (company), as a separate word, in these cases:
+In general, it's not necessary to precede any suffix word with a name.  However, you might precede it with **omo** (person), **roko** (place), **sitas** (city), **nasyon** (country), **komparroko** (shop/establishment), or **komparmen** (company), as a separate word, in these cases:
 
-1. You're using a name for the first time in a conversation, and you want to be very clear whether this is a person, place, etc.  Example: **komparpanto Apuru** = 'the company Apple'; **omo Sumis** = 'the person Smith'.
+1. You're using a name for the first time in a conversation, and you want to be very clear whether this is a person, place, etc.  Example: **komparmen Apuru** = 'the company Apple'; **omo Sumis** = 'the person Smith'.
 2. The name happens to sound the same as some Pikotika word, and might be confusing.  Example: Li (a common surname) sounds like **ri** (the particle), so you might use **omo Ri** = 'the person Li'.
 
 The category word is optional; you can leave it off and say just **Sumis** when the meaning is clear.  It is never considered curt or rude to do so.
@@ -318,7 +318,7 @@ For example: suppose you're visiting Japan, and have noticed how many of the toi
 
 There are only a couple rules to apply when making a compound word:
 
-1. If the original phrase included a TE particle, leave it out.  Example: *yoro te arponino* ('yellow fruit') → **yoroarponino** (yellow fruit, usually banana).
+1. If the original phrase included a TE particle, leave it out.  Example: *yoro te pomo* ('yellow fruit') → **yoropomo** (yellow fruit, usually banana).
 2. If one of the roots ends in `-ts`, `-ns`, or `-ks`, and the next root starts with a consonant, you will need to insert an `e` between them.  Example: *tets kurva* ('three angles') → **tetsekurva** ('triangle').
 
 Collapsing a phrase does more than save a syllable or two: it can fix a meaning.  A compound is a single word, so it may settle on one reading while the spaced phrase keeps the plain, literal one.  Take **non konten**, two words, which says only 'not happy' -- the neutral state of someone who simply isn't cheerful.  Collapse it to **nonkonten** and you get 'sad', because **non** covers 'un-' as well as 'not', and the compound takes the un- reading.
@@ -359,7 +359,7 @@ A prepositional phrase goes at the **end** of a sentence or clause, after the ob
 | **Pam veni in sens ora.** | please come in seven hour | Please come at seven. |
 | **Pam tonar a tis ver eko.** | please give A this to self | Please give that to me. |
 | **Eko ri komi kum tuo.** | self RI eat with you | I'm eating with you. |
-| **Pam sista kum ekopanto.** | please remain with self-group | Stay with us. |
+| **Pam sista kum ekomen.** | please remain with self-group | Stay with us. |
 | **Eko ri in tisroko.** | self RI in this-place | I'm here. |
 | **Eko ri kum nino.** | self RI with child | I'm with the child. |
 | **Tis ri por tuo.** | this RI for you | This is for you. |
@@ -374,7 +374,7 @@ Comparison needs no special grammar.  Put **mas** (更, 'more'), **nonmas** (不
 | Pikotika | Literally | Meaning |
 |---|---|---|
 | **Tis ri mas pona vons nontis.** | this RI more good from that | This one is better than that one. |
-| **Tis ri mas piko moni vons urpe.** | this RI more small money from city | It's cheaper than in the city. |
+| **Tis ri mas piko moni vons sitas.** | this RI more small money from city | It's cheaper than in the city. |
 | **Tis ri nonmas pesaneses vons nontis.** | this RI not-more heavy-need from that | It's less important than that one. |
 | **Tis ri sam pona vons yerkosa.** | this RI same good from before-thing | It's as good as it was. |
 | **Tis ri mas vetus vons pan.** | this RI more old from all | It's the oldest. |
@@ -434,8 +434,8 @@ Pikotika verbs never change form.  **vite** is see, saw, seen, and seeing, and t
 
 **Time is stated once, then assumed.**  Say when you are talking about at the start, and it holds until you change it (just like Chinese or Malay).  There is no need to re-mark every verb.
 
-> **Soreyer, eko ri vite a kanis.**  'Yesterday I saw the dog.'
-> **Soretar, eko ri vite a kanis.**  'Tomorrow, I will see the dog.'
+> **Yanyer, eko ri vite a kanis.**  'Yesterday I saw the dog.'
+> **Yantar, eko ri vite a kanis.**  'Tomorrow, I will see the dog.'
 
 **Aspect** -- whether an action is starting, finished, or ongoing -- is marked by one word placed after the predicate:
 
@@ -459,7 +459,7 @@ Note that **vin** can be combined with the adverbs for 'can', 'might', 'should',
 **Conditions.**  A condition is marked by **pos** at the head of its clause, and the clause that follows from it opens with **tisrason** ('therefore').  Both parts are ordinary sentences; nothing else changes.
 
 > **Pos eko ri tene a moni, tisrason eko ri kompar a tis.**  'If I had the money, I would buy it.'
-> **Pos tuo ri veni, tisrason ekopanto ri konten.**  'If you come, we'll be happy.'
+> **Pos tuo ri veni, tisrason ekomen ri konten.**  'If you come, we'll be happy.'
 
 Do not leave out **tisrason**.  Without it the two clauses are symmetric, and a listener has no way to tell which one is the condition.
 
@@ -485,12 +485,12 @@ A clause can serve as the object of a verb, or as a modifier of a noun.
 
 **As an object**, simply put the clause after *A*.  Only one *RI* is allowed per clause, so an *RI* following *A* can only belong to an embedded clause; no other marking is needed.
 
-> **Eko ri pensa a tis sensesore ri nonturus.**  'I think this week will be easy.'
+> **Eko ri pensa a tis senseyan ri nonturus.**  'I think this week will be easy.'
 > **Eko ri vori a tuo ri veni.**  'I want you to come.'
 
 Such a clause runs to the end of the sentence, so anything else has to come before *A*:
 
-> **Eko ri voritika ver komivakeomo a tis ri tiven non vokasapor.**  'I ask the cook to make it not spicy.'
+> **Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.**  'I ask the cook to make it not spicy.'
 
 **As a modifier** -- a relative clause -- there are two forms.
 
@@ -543,8 +543,8 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Hello (when meeting someone new) | new-meet | **Novasarve.** | 初会. |
 | Hello | happy-meet | **Kontensarve.** | 楽会. |
 | I'm happy to meet you. | self RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
-| Good morning. | good up-sun | **Pona sursore.** | 好 上日. |
-| Good evening. | good down-sun | **Pona tunsore.** | 好 下日. |
+| Good morning. | good up-sun | **Pona suryan.** | 好 上日. |
+| Good evening. | good down-sun | **Pona tunyan.** | 好 下日. |
 | How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
 | All is good. | all RI good | **Pan ri pona.** | 全 ⊢ 好. |
 | And you? | and you, what | **Kum tuo, ker?** | 并 尔, 何. | 

@@ -4,13 +4,13 @@ This document breaks down the vocabulary and grammar of the language into five l
 
 
 ## Level 1
-### 42 most frequent roots
+### 43 most frequent roots
 
-RI, self, what, this, in, you, not, good, please, and, to, big, close, go, thing, group, yes, say, one, two, before, water, sun, want, small, after, person, part, vehicle, food, true, hour, interval, place, time, child, plant, meet, new, happy, sorry, out
+RI, self, what, this, in, you, not, good, please, and, to, big, close, go, thing, group, yes, say, one, two, before, water, sun, want, small, after, person, part, vehicle, food, true, hour, interval, place, time, child, plant, fruit, meet, new, happy, sorry, out
 
-### 20 compounds
+### 19 compounds
 
-see you later, ready, hungry, hello, finally, actually, Hello (someone new), that, leave (depart), fruit, tea, story, we, moment, bye, goodbye, he/she/they, drive, station, ask
+see you later, ready, hungry, hello, finally, actually, Hello (someone new), that, leave (depart), tea, story, we, moment, bye, goodbye, he/she/they, drive, station, ask
 
 ### 7 idioms/set phrases
 
@@ -34,12 +34,12 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | You are happy. | you RI happy | **Tuo ri konten.** |
 | I am sorry. | self RI sorry | **Eko ri perton.** |
 | You are right. | you RI true | **Tuo ri ves.** |
-| We are ready. | self-group RI before-close | **Ekopanto ri yervin.** |
+| We are ready. | self-group RI before-close | **Ekomen ri yervin.** |
 | This is tea. | this RI plant-water | **Tis ri arpoaku.** |
 | The water is good. | water RI good | **Aku ri pona.** |
 | The food is fresh. | food RI new | **Komi ri nova.** |
-| The fruit is small. | plant-child RI small | **Arponino ri piko.** |
-| The sun is big. | sun RI big | **Sore ri meka.** |
+| The fruit is small. | fruit RI small | **Pomo ri piko.** |
+| The sun is big. | sun RI big | **Yan ri meka.** |
 | The vehicle is new. | vehicle RI new | **Karo ri nova.** |
 | It's late. | hour RI after | **Ora ri tar.** |
 | He/she is a child. | this-person RI child | **Tisomo ri nino.** |
@@ -48,7 +48,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | You're talking. | you RI say | **Tuo ri tika.** |
 | He/she is eating. | this-person RI food | **Tisomo ri komi.** |
 | I'm driving. | self RI vehicle-go | **Eko ri karoire.** |
-| We're leaving. | self-group RI out-go | **Ekopanto ri eksire.** |
+| We're leaving. | self-group RI out-go | **Ekomen ri eksire.** |
 | I'm finished. | self RI close | **Eko ri vin.** |
 
 ### requests
@@ -62,11 +62,11 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 
 ---
 ## Level 2
-### 38 more roots (total: 80)
+### 38 more roots (total: 81)
 
 A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, get, more, drink, for, fast, thank, like, able, woman, man, seven, from, only, three, four, near, name, about, five, middle, six, eight, nine, ten
 
-### 40 more compounds (total: 80)
+### 40 more compounds (total: 79)
 
 beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, fetch, fish, love, meal (a sitting), midday, morning, mother, never, night, nobody, nothing, nowhere, politeness (verbal), prepare, problem, read, reader, relative (kin), sad, sea, slow, soup, tears, thirsty, today, tomorrow, tonight, trip, welcome, writer, yesterday
 
@@ -76,8 +76,8 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 |---|---|---|
 | little by little, gradually | small after small | **piko tar piko** |
 | I'm happy to meet you. | self RI happy meet A you | **Eko ri konten sarve a tuo.** |
-| Good morning. | good up-sun | **Pona sursore.** | 好 上日. |
-| Good evening. | good down-sun | **Pona tunsore.** | 好 下日. |
+| Good morning. | good up-sun | **Pona suryan.** | 好 上日. |
+| Good evening. | good down-sun | **Pona tunyan.** | 好 下日. |
 | I see (understand.) | self RI see | **Eko ri vite.** | 己 ⊢ 見. |
 
 ### proper nouns
@@ -89,7 +89,7 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 | I see the child. | self RI see A child | **Eko ri vite a nino.** |
 | The child wants water. | child RI want A water | **Nino ri vori a aku.** |
 | I don't eat fish. | self RI not food A water-animal | **Eko ri non komi a akupeste.** |
-| We'll get breakfast soon. | self-group RI fast get A up-sun-food | **Ekopanto ri veros toma a sursorekomi.** |
+| We'll get breakfast soon. | self-group RI fast get A up-sun-food | **Ekomen ri veros toma a suryankomi.** |
 | My mother makes good food. | self woman-parent RI make A good food | **Eko vemapari ri vake a pona komi.** |
 
 ### prepositional phrases (NOTE: include **kum** as 'with')
@@ -116,9 +116,9 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 
 | English | Gloss | Latin |
 |---|---|---|
-| Yesterday I read a good story. | sun-before, self RI write-see A good say-thing | **Soreyer, eko ri penavite a pona tikakosa.** |
-| Today I'm meeting your relatives. | this-sun, self RI meet A you parent-group | **Tissore, eko ri sarve a tuo paripanto.** |
-| Tomorrow we're going to the sea.  We'll swim. | sun-after, self-group RI go to big-water.  self-group RI water-go | **Soretar, ekopanto ri ire ver mekaaku.  Ekopanto ri akuire.** |
+| Yesterday I read a good story. | sun-before, self RI write-see A good say-thing | **Yanyer, eko ri kitavite a pona tikakosa.** |
+| Today I'm meeting your relatives. | this-sun, self RI meet A you parent-group | **Tisyan, eko ri sarve a tuo parimen.** |
+| Tomorrow we're going to the sea.  We'll swim. | sun-after, self-group RI go to big-water.  self-group RI water-go | **Yantar, ekomen ri ire ver mekaaku.  Ekomen ri akuire.** |
 
 
 ### examples with **sets** ('but')
@@ -128,16 +128,16 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 | I love the sea, but I can't swim. | self RI big-like A big-water, but self RI not able water-go | **Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.** |
 | The story is beautiful, but it isn't true. | say-thing RI good-see, but this RI not true | **Tikakosa ri ponavite, sets tis ri non ves.** |
 | I'm thirsty, but I don't want tea. | self RI drink-want, but self RI not want A plant-water | **Eko ri pipevori, sets eko ri non vori a arpoaku.** |
-| Tomorrow my mother is coming, but my father isn't. | sun-after, self woman-parent RI come, but self man-parent RI not come | **Soretar, eko vemapari ri veni, sets eko viropari ri non veni.** |
+| Tomorrow my mother is coming, but my father isn't. | sun-after, self woman-parent RI come, but self man-parent RI not come | **Yantar, eko vemapari ri veni, sets eko viropari ri non veni.** |
 
 
 ---
 ## Level 3
-### 39 more roots (total: 119)
+### 39 more roots (total: 120)
 
 black, blue, green, red, white, yellow, grain, sweet, sequence, way, again, all, same, map, paper, room, tool, metal, stone, air, earth, fire, TE, money, color, home, long, hundred, many, measure, million, thousand, month, weekday, year, feel, know, play, try
 
-### 45 more compounds (total: 105)
+### 45 more compounds (total: 104)
 
 next, recover, recall, repeat, airplane, airport, everyone, everywhere, everything, always, previous, gale, coffee, cyan, brown, Saturday, Tuesday, tan, Friday, Monday, dance, less, Thursday, purple, pink, pig, orange, brother, sister, look like, week, weekend, grey, Sunday, too [much], Wednesday, what time, who, where, when, how, question, rice (white rice), business trip, wheat
 
@@ -161,11 +161,11 @@ next, recover, recall, repeat, airplane, airport, everyone, everywhere, everythi
 
 ---
 ## Level 4
-### 40 more roots (total: 159)
+### 40 more roots (total: 160)
 
 head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electric, picture, rain, city, cold, fear, hard, heavy, bend, line, round, straight, back, edge, become, buy, choose, fight, give, hear, help, learn, need, open, put, remain, sleep, think
 
-### 40 more compounds (total: 140)
+### 40 more compounds (total: 139)
 
 ### decimal numbers, fractions, & percent
 ### times and dates
@@ -175,11 +175,11 @@ head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electri
 
 ---
 ## Level 5
-### 36 more roots (total: 195, all roots in the language)
+### 36 more roots (total: 196, all roots in the language)
 
 body, hand, life, sick, stomach, anger, surprise, tired, or, other, key, table, toilet, oil, salt, bird, bug, dog, country, friend, law, marry, art, temple, clean, old, flat, down, far, hole, left, right, agree, break, join, lose
 
-### 40 more compounds (total: 180)
+### 40 more compounds (total: 179)
 ### could have, might have, should have, & must have
 ### modifier clause with RITE
 ### indefinite-subject sentences (starting with RI)

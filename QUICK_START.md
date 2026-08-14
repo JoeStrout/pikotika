@@ -5,7 +5,7 @@ Pikotika (_pee-ko-TEE-say_, meaning 'small talk') is a constructed language that
 - Where is the bathroom?  (**Panyu ri kerroko?**)
 - Does this dish contain wheat?  (**Tis komi ri tene a yororiso, ker?**)
 - Please wait one moment.  (**Pam sista wun pikotempo.**)
-- I'm staying for 6 days.  (**6 sore turan, eko ri sista.**)
+- I'm staying for 6 days.  (**6 yan turan, eko ri sista.**)
 
 and much more.
 
@@ -97,7 +97,7 @@ Alice: Hello! I don't think we've met. I'm Alice.
 
 > _new-meet! self RI not think A self-group RI meet close. self RI Aris._
 
-> **Novasarve! Eko ri non pensa a ekopanto ri sarve vin. Eko ri Aris.**
+> **Novasarve! Eko ri non pensa a ekomen ri sarve vin. Eko ri Aris.**
 
 Bob: Hi Alice. I'm Bob. Nice to meet you.
 
