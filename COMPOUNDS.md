@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-541 terms
+540 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -180,7 +180,7 @@
 | fourth (in a series) | four-sequence | watsorten | 4序 |
 | frank | straight-say | retotika | 直言 |
 | Friday | metal-weekday | metarverya | 金曜 |
-| fried | fire-oil-make | vokaorenvake | 火油作 |
+| fried | oil-make | orenvake | 油作 |
 | fried rice | oil-white-grain | orenrankoriso | 油白米 |
 | frontier | country-edge | nasyonrante | 国边 |
 | fruit | plant-child | arponino | 木子 |
@@ -416,7 +416,6 @@
 | shopkeeper | buy-person | komparomo | 買人 |
 | shore | water-edge | akurante | 水边 |
 | should | if-good | pospona | 可好 |
-| should | if-good | pospona | 可好 |
 | significant | heavy-need | pesaneses | 重要 |
 | silent | close-mouth | vinpuka | 閉口 |
 | sister | same-parent-woman | samparivema | 同亲女 |
@@ -487,7 +486,7 @@
 | tongue (language) | say-way | tikamoto | 言方 |
 | tonight | this-no-sun | tisnemsore | 此无日 |
 | too [much] | up-measure | surmens | 上寸 |
-| toy | play-tool | rutiuter | 玩工 |
+| toy | play-thing | rutikosa | 玩物 |
 | train | metal-line-vehicle | metarrinekaro | 金糸车 |
 | transit | line-vehicle | rinekaro | 糸车 |
 | transit station (bus/train) | line-vehicle-place | rinekaroroko | 糸车所 |

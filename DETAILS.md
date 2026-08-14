@@ -16,7 +16,7 @@ The 10 consonants are written with the letters you'd expect, and the sound in th
 | `r` | **r** in **r**ed | **l** in **l**ed |
 | `m` | **m** in **m**e | (no variation) |
 | `n` | **n** in **n**o | **ng** in si**ng**, but only directly before `p`, `t`, or `k` |
-| `w` | **w** in **w**e | **v** in **v**an |
+| `w` | **w** in **w**e |  |
 | `y` | **y** in **y**es | **j** in **j**am, or the **s** in mea**s**ure ("zh") |
 
 So if you come from a language that makes no distinction between `r` and `l`, don't worry -- in Pikotika it doesn't matter.  Or if you can hear the difference between `t` and `d`, but find one or the other easier to say in certain words, go for it -- those are equivalent too.  A Spanish speaker, a Mandarin speaker, and a Japanese speaker reading the word **pona** out loud will produce three noticeably different sounds, and all three are saying it right.

@@ -19,6 +19,7 @@ nouns, and grammar — see [DETAILS.md](DETAILS.md).
 | `compounds.tsv` | the standing compound lexicon |
 | `names.tsv` | proper nouns adapted to the phonology |
 | `pikotika.py` | converts between English, gloss, Latin, and Han |
+| `check_form.py` | screens a proposed root form, or audits the forms already in use |
 
 ```
 $ python3 pikotika.py "water-grain"

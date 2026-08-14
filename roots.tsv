@@ -27,11 +27,12 @@ meat	Food	"meat, flesh food, animal protein"	karne	肉	"Latin caro, carnis"	6	5	
 milk	Food	"milk, dairy, cream"	raten	乳	"Italian latte, Latin lac"	8	4	4
 sweet	Food	"sweet, sugar, dessert-quality"	tuke	甘	"*dulce, dolce*"	5	8	3
 group	General heads	"group, set, collection, team, crowd"	panto	众	"*band, banda*"	6	23	1
+name	General heads	"name, title, label"	nomen	名	Latin nomen	6	2	2
 part	General heads	"part, piece, portion, member"	parte	分	"*parte, part*"	4	13	1
 person	General heads	"person, human, one who, agent"	omo	人	"*homo, hombre, uomo*"	2	31	1
 place	General heads	"place, location, area, spot"	roko	所	"*loco, locus, location*"	8	24	1
 sequence	General heads	"sequence, order, series, rank, turn, position in a series"	orten	序	"*orden, ordine, ordre, order, ordinal*"	7	15	3
-thing	General heads	"thing, object, item, matter"	kosa	物	"Spanish *cosa*, Italian *cosa*"	8	23	1
+thing	General heads	"thing, object, item, matter"	kosa	物	"Spanish *cosa*, Italian *cosa*"	8	24	1
 time	General heads	"time, occasion, when, period"	tempo	时	"*tempo, tiempo, temporal*"	7	15	1
 way	General heads	"way, manner, method, road, path, route"	moto	方	"*modo, mode, method*"	4	11	3
 able	Grammar and logic	"can, able, ability, skill, capable"	kan	能	"English *can*, German *kann*, Dutch/Swedish/Danish/Norwegian *kan* — all ""be able"", the same spelling across Germanic"	10	6	2
@@ -65,7 +66,7 @@ picture	Made things	"picture, image, photo, drawing, film"	pitur	画	"Spanish pi
 room	Made things	"room, chamber, interior space within a building"	kamar	室	"Spanish camara, Italian camera"	9	11	3
 table	Made things	"table, desk, counter, flat surface"	tapur	机	Latin tabula; Latin mensa	6	0	5
 toilet	Made things	"toilet, lavatory, restroom, bathroom, WC"	panyu	便	"Italian bagno, Spanish bano; panyo was displaced"	9	0	5
-tool	Made things	"tool, instrument, device, machine, utensil"	uter	工	"*utensil, utile*"	3	7	3
+tool	Made things	"tool, instrument, device, machine, utensil"	uter	工	"*utensil, utile*"	3	6	3
 vehicle	Made things	"vehicle, car, craft, conveyance"	karo	车	"*car, carro, char*"	4	24	1
 metal	Material	"metal, iron, gold, refined hard material"	metar	金	Latin metallum	8	4	3
 oil	Material	"oil, fat, grease"	oren	油	Latin oleum	8	2	5
@@ -77,7 +78,7 @@ bird	Nature	"bird, fowl"	avis	鳥	Latin avis	11	2	5
 bug	Nature	"insect, bug, spider, worm — small many-legged creature"	inses	虫	Spanish insecto	6	0	5
 dog	Nature	"dog, canine — includes wolf, fox, coyote"	kanis	犬	Latin canis	4	1	5
 earth	Nature	"ground, land, soil, floor, dirt"	tera	土	"*terra, terrain*"	3	9	3
-fire	Nature	"fire, burn, heat, hot"	voka	火	"Portuguese *fogo*, Italian *fuoco*"	4	12	3
+fire	Nature	"fire, burn, heat, hot"	voka	火	"Portuguese *fogo*, Italian *fuoco*"	4	11	3
 plant	Nature	"plant, tree, flower, wood"	arpo	木	"*arbor, árbol, arbre*"	4	22	1
 rain	Nature	"rain, precipitation"	ruva	雨	"Spanish *lluvia*, Latin *pluvia*; restored — scored rank 43 in the corpora, above `sun`"	8	8	4
 sun	Nature	"sun, light, day, daytime, 24-hour period, bright"	sore	日	"*sol, sole, solar*"	4	38	1
@@ -193,4 +194,3 @@ try	Verbs	"try, attempt, test, try out, taste-test, sample, check, prove"	propa	
 want	Verbs	"want, desire, wish, hope"	vori	求	"Latin *volo, velle*; Italian *volere*, English *volition*"	7	16	1
 work	Verbs	"work, labor, job, effort, use"	rapo	力	"*labor, lavoro*"	2	14	2
 write	Verbs	"write, writing, text, script, inscribe, record"	pena	写	"pen, Latin penna, Italian penna, Spanish pluma; 写 is the modern CJK character"	5	11	2
-name	Word	"name, title, label"	nomen	名	Latin nomen	6	2	2

@@ -151,31 +151,33 @@ aku, ire, omo, orten, sore, komi, roko, vite, riso, arpo, karo, nino, ruti, pest
 
 So, we'd need to examine each of these, particularly in terms of the compounds they participate in, and look for a shorter/easier word that maybe still has some mnemonic value.  (**verpo** was on this list, but it got removed and merged into **tika**.)
 
+Note that pena/pona and mara/mira are very nearly collision pairs, differing by only one vowel.  We should prioritize renaming pena, and at least one of mara and mira (even though neither mara nor mira are on my list above.)  Also, there are four sets of three near-misses: parte/perti/porta, rapo/repe/ropa, reto/rite/ruti, and vake/voka/vuko.
+
+Proposed:
+	ruper ('red') --> rus
+	ranko ('white') --> anko
+	urpe ('city') --> sitas
+	verya ('weekday') --> yom
+	sore ('sun') --> yan
+	pena ('write') --> kita
+	mira ('surprise') --> sorpe
+	ropa ('work') --> opus
+	ruti ('play') --> yu   (and change toy from play-tool to play-thing)
+	voka ('fire') --> wo
+	
+	new root fruit;result → nus (果)
+	
+
+With **arpo**, I note that almost every compound it's in (some of them very long) is based on **arponino**, 'fruit'.  It might be worth adding a root just for that.
+
+## V versus F
+
+Most speakers in the world do not have both V and F sounds, so we are right to not attempt to separate them. But we currently write it as a 'v' and tell people to aim for the [v] sound.  This is supported by the majority of the etemology of our roots (viva, viro, vite, etc.).  However, speakers of Mandarin, Spanish, or Arabic will say [f] regardless; they simply don't have a [v] sound.  It might be more honest, less frustrating, and more widely available to write this as 'f' and tell speakers to aim for the [f] sound.
 
 
 ## Root Reductions
 
 (Currently all resolved.)
-
-**Done: `word` folded into `say` (2026-08-13).**  **verpo** covered "word, language,
-speech, message", all of which **tika** already reaches -- **tikakosa** (*say-thing*)
-'story' was treating **tika** as a noun head before the merge, so nothing new was
-asked of the root.  The six compounds recoined without collision: *what-say*
-'question', *say-way* 'language', *write-say* 'text', *measure-say* 'numeral',
-*key-say* 'password', *say-fight* 'argue'.  Two consequences worth remembering:
-
-- **kertika** now carries "question; ask; inquire" and **voritika** was narrowed to
-  "request; ask for", splitting the two senses English writes as one word (compare
-  *fragen*/*bitten*, *preguntar*/*pedir*, 問う/頼む).
-- The merged root took **言** and gave up 云.  言 is 'word' and 'speak' in both Chinese
-  and Japanese, where 云 reads as 'cloud' outside classical Chinese, so the character
-  now covers what the root covers -- at a cost of 3 strokes on the most-used root in
-  the set.  A pleasant side effect: the Han text of every affected compound is
-  unchanged (何言 is still 何言), since 言 simply moved to the surviving root.
-
-The cost is polysemy: **tika** now holds six senses under the gloss `say`, which is
-the strongest case yet for the secondary gloss proposed above -- a secondary gloss of
-`word` would carry all six compounds on its own.
 
 ## Root Additions
 

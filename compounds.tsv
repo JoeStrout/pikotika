@@ -80,7 +80,7 @@ caution; careful; cautious; watch out	fear-see	4
 facial expression; look on one's face	feel-picture	4	
 army	fight-group	4	
 fighter; soldier	fight-person	4	
-fried	fire-oil-make	5	
+fried	oil-make	5	
 spicy	fire-taste	4	
 chili pepper	fire-taste-thing	4	
 alcohol (usually wine)	fire-water	3	
@@ -126,7 +126,7 @@ you-are-here map; directory map; orientation map	help-map	4
 helper; waiter; attendant; servant; staff (person)	help-person	4	
 cat; pet	home-animal	3	
 pet dog	home-dog	5	
-should	if-good	4	
+should	if-good	4	4
 finally; at last; in the end; eventually	in-close	1	1
 percent; per cent; %	in-hundred	3	
 actually; in truth	in-true	1	1
@@ -219,11 +219,10 @@ contest; match; competition	play-fight	4
 party (celebration)	play-group	3	
 theater; playhouse	play-home	3	
 playground	play-place	3	
-toy	play-tool	3	
+toy	play-thing	3	
 respect	please-feel	3	
 politeness (verbal)	please-say	1	2
 courtesy	please-way	3	
-should	if-good	4	4
 seat	put-place	4	
 chair	put-tool	4	
 cloud; cloudy	rain-air	4	

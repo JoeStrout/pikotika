@@ -1,6 +1,6 @@
 # Pikotika Roots
 
-195 entries in 19 groups.
+195 entries in 18 groups.
 
 ## Body and life (10)
 
@@ -49,11 +49,12 @@
 | milk | raten | 乳 | "milk, dairy, cream" |
 | sweet | tuke | 甘 | "sweet, sugar, dessert-quality" |
 
-## General heads (8)
+## General heads (9)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | group | panto | 众 | "group, set, collection, team, crowd" |
+| name | nomen | 名 | "name, title, label" |
 | part | parte | 分 | "part, piece, portion, member" |
 | person | omo | 人 | "person, human, one who, agent" |
 | place | roko | 所 | "place, location, area, spot" |
@@ -285,9 +286,3 @@
 | want | vori | 求 | "want, desire, wish, hope" |
 | work | rapo | 力 | "work, labor, job, effort, use" |
 | write | pena | 写 | "write, writing, text, script, inscribe, record" |
-
-## Word (1)
-
-| Gloss | Latin | Han | Covers |
-|---|---|---|---|
-| name | nomen | 名 | "name, title, label" |
