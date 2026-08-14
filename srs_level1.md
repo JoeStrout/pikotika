@@ -370,18 +370,6 @@
 ### "hour, clock-time unit"
 ## 刻
 ===
-# interval
-### "interval, duration, span of time, period, for (a length of time)"
----
-# turan
-## 間
-===
-# turan
----
-# interval
-### "interval, duration, span of time, period, for (a length of time)"
-## 間
-===
 # place
 ### "place, location, area, spot"
 ---
@@ -431,7 +419,7 @@
 ## 木
 ===
 # fruit
-### fruit, berry, seed; result, outcome
+### "fruit, berry, seed; result, outcome"
 ---
 # pomo
 ## 果
@@ -439,7 +427,7 @@
 # pomo
 ---
 # fruit
-### fruit, berry, seed; result, outcome
+### "fruit, berry, seed; result, outcome"
 ## 果
 ===
 # meet
