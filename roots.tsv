@@ -12,22 +12,22 @@ taste	Body and life	"taste, flavor, savor"	sapor	味	"Latin sapor, Spanish sabor
 black	Color	"black, dark, dark-valued"	nero	黒	"Italian nero, Latin niger"	11	2	3
 blue	Color	"blue, cool hue"	asur	青	"Spanish azul, Italian azzurro"	8	2	3
 green	Color	"green, vegetal hue"	verte	緑	"Italian verde, Latin viridis"	14	4	3
-red	Color	"red, warm hue"	rus	赤	Latin *russus*; Italian *rosso*; French *rouge*; English *rust, ruby*	7	8	3
-white	Color	"white, pale, light-valued"	anka	白	Italian *bianco*, Spanish *blanco*, minus the onset	5	7	3
+red	Color	"red, warm hue"	rus	赤	"Latin *russus*; Italian *rosso*; French *rouge*; English *rust, ruby*"	7	8	3
+white	Color	"white, pale, light-valued"	anka	白	"Italian *bianco*, Spanish *blanco*, minus the onset"	5	7	3
 yellow	Color	"yellow, golden hue"	yoro	黄	Italian giallo; Latin aurum	11	9	3
-anger	Feelings	"anger, angry, rage, mad, fury"	raye	怒	French/English *rage*; Latin *rabies* -- Spanish *rabia*, Italian *rabbia*, Portuguese *raiva*	9	3	5
+anger	Feelings	"anger, angry, rage, mad, fury"	raye	怒	"French/English *rage*; Latin *rabies* -- Spanish *rabia*, Italian *rabbia*, Portuguese *raiva*"	9	3	5
 happy	Feelings	"happy, glad, pleased, joy"	konten	楽	Latin contentus; Spanish feliz	13	12	1
 like	Feelings	"like, enjoy, prefer, be fond of"	kusta	愛	Spanish gustar	13	5	2
-surprise	Feelings	"surprise, astonish, wonder, unexpected"	sorpe	奇	Spanish *sorpresa*, Italian *sorpresa*, Portuguese *surpresa*, French/English *surprise*	8	2	5
+surprise	Feelings	"surprise, astonish, wonder, unexpected"	sorpe	奇	"Spanish *sorpresa*, Italian *sorpresa*, Portuguese *surpresa*, French/English *surprise*"	8	2	5
 tired	Feelings	"tired, weary, exhausted"	kansa	疲	Spanish cansado; Latin lassus	10	1	5
 drink	Food	"drink, beverage, sip"	pipe	飲	Latin bibere; Latin potare	12	7	2
 food	Food	"food, eat, meal, nourishment"	komi	食	"*comer, comida*"	9	32	1
-fruit	Food	fruit, berry, seed; result, outcome	pomo	果	Latin *pomum* "fruit"; Italian *pomo*, French *pomme*; English *pome*	8	12	1
+fruit	Food	"fruit, berry, seed; result, outcome"	pomo	果	"Latin *pomum* ""fruit""; Italian *pomo*, French *pomme*; English *pome*"	8	12	1
 grain	Food	"grain, bread, rice, staple starch"	riso	米	"*riso, rice, arroz*"	6	13	3
 meat	Food	"meat, flesh food, animal protein"	karne	肉	"Latin caro, carnis"	6	5	4
 milk	Food	"milk, dairy, cream"	raten	乳	"Italian latte, Latin lac"	8	4	4
 sweet	Food	"sweet, sugar, dessert-quality"	tuke	甘	"*dulce, dolce*"	5	8	3
-group	General heads	"group, set, collection, team, crowd"	men	众	Mandarin 们 *-men*, the plural suffix; English *many*	6	23	1
+group	General heads	"group, set, collection, team, crowd"	men	众	"Mandarin 们 *-men*, the plural suffix; English *many*"	6	23	1
 name	General heads	"name, title, label"	nomen	名	Latin nomen	6	2	2
 part	General heads	"part, piece, portion, member"	parte	分	"*parte, part*"	4	13	1
 person	General heads	"person, human, one who, agent"	omo	人	"*homo, hombre, uomo*"	2	31	1
@@ -53,9 +53,9 @@ please	Grammar and logic	"please, request marker, politeness"	pam	乞	"Latin *pl
 reason	Grammar and logic	"reason, cause, because; why = `what-reason`"	rason	故	"Spanish *razón*, French *raison*, English *reason*"	9	6	4
 same	Grammar and logic	"same, equal, like, as, similar, together"	sam	同	"English *same*, Latin *similis*"	6	10	3
 this	Grammar and logic	"this, here, now, present (that/there = `not-this`)"	tis	此	English *this*	6	75	1
-true	Grammar and logic	"true, correct, right, of course, evidently"	ves	真	"Latin *verus*, Italian *vero*, Spanish *verdad*"	10	12	1
 what	Grammar and logic	"question, which, any, whichever"	ker	何	"*quel, qual, quale*"	7	54	1
 yes	Grammar and logic	"yes, assent, affirm, correct-response"	si	是	"Spanish *si*, Italian *si*, Latin *sic* — interjection class, CV"	9	11	1
+true	Grammar and logic	"true, correct, right, of course, evidently"	ves	真	"Latin *verus*, Italian *vero*, Spanish *verdad*"	10	12	1
 box	Made things	"closed container: box, bag, bottle, case, vessel"	vaso	皿	"*vase, vessel, vaso*"	5	4	4
 cloth	Made things	"cloth, clothes, fabric, covering"	ropa	衣	"*robe, ropa, roba*"	6	4	4
 door	Made things	"door, gate, entrance, portal"	porta	門	"Latin porta, Spanish puerta"	8	3	4
@@ -82,7 +82,7 @@ earth	Nature	"ground, land, soil, floor, dirt"	tera	土	"*terra, terrain*"	3	9	3
 fire	Nature	"fire, burn, heat, hot"	wo	火	Mandarin 火 *huo*; Japanese 火 *ho*	4	11	3
 plant	Nature	"plant, tree, flower, wood"	arpo	木	"*arbor, árbol, arbre*"	4	9	1
 rain	Nature	"rain, precipitation"	ruva	雨	"Spanish *lluvia*, Latin *pluvia*; restored — scored rank 43 in the corpora, above `sun`"	8	8	4
-sun	Nature	"sun, light, day, daytime, 24-hour period, bright"	yan	日	Mandarin 阳 *yang* "sun, bright"; Japanese 陽	4	38	1
+sun	Nature	"sun, light, day, daytime, 24-hour period, bright"	yan	日	"Mandarin 阳 *yang* ""sun, bright""; Japanese 陽"	4	38	1
 water	Nature	"water, liquid, fluid, wet"	aku	水	"*aqua, agua*"	4	42	1
 A	Particles	object boundary	a	⇒	"Spanish personal *a*, which marks objects: *veo **a** Juan*"		71	2
 RI	Particles	predicate boundary	ri	⊢	"predicate boundary; no etymology, deliberately neutral"		194	1
@@ -122,7 +122,7 @@ five	Quantity	"five, 5"	kins	5	"Latin *quinque* (quintet, quintuple)"		1	2
 four	Quantity	"four, 4"	wats	4	"Latin *quattuor*, Spanish *cuatro* — /kw/ is an illegal onset, so /w/ carries it"		2	2
 hundred	Quantity	"hundred, 100, hundreds place"	katon	百	"Greek *hekaton* less the unstressed *he-* (hecatomb); *hekto-* is unwritable — no /h/, and /kt/ is an illegal coda"	6	2	3
 many	Quantity	"many, much, lots, 6+"	mur	多	*multi-*	6	10	3
-measure	Quantity	"measure, amount, degree, extent, quantity, count"	mesur	寸	French *mesure*, Spanish *mesura*, English *measure*, Latin *mensura*	3	8	3
+measure	Quantity	"measure, amount, degree, extent, quantity, count"	mesur	寸	"French *mesure*, Spanish *mesura*, English *measure*, Latin *mensura*"	3	8	3
 million	Quantity	"million, 1000000, millions place"	miron	兆	"Latin *milione*, Spanish *millon*, French *million*; *mega* is unavailable — meka is already big"	6	0	3
 nine	Quantity	"nine, 9"	noks	9	"Latin *novem*, Italian *nove*, Spanish *nueve*"		0	2
 no	Quantity	"zero, none, absent"	nem	无	"Latin *nemo* ""no one"""	4	14	2
@@ -156,9 +156,9 @@ after	Time direction	"after, later, subsequent, future, late"	tar	后	"Spanish *
 before	Time direction	"before, earlier, prior, in the past, early, already"	yer	前	"Spanish *ayer*, French *hier* ""yesterday"""	9	18	1
 close	Time direction	"close, shut, finish, end, conclude"	vin	閉	"Latin *finis*, Spanish *fin*, Italian *fine*"	11	24	1
 hour	Time direction	"hour, clock-time unit"	ora	刻	Latin hora	8	12	1
-interval	Time direction	"interval, duration, span of time, period, for (a length of time)"	turan	間	"Latin *durare*, Spanish *durar*, Italian *durata* -- duration"	12	8	1
+interval	Time direction	"interval, duration, span of time, period, for (a length of time)"	turan	間	"Latin *durare*, Spanish *durar*, Italian *durata* -- duration"	12	8	2
 month	Time direction	"month, moon, lunar cycle"	mese	月	"Latin mensis, Italian mese"	4	3	3
-weekday	Time direction	named day of the week (Japanese 曜)	yom	曜	Arabic *yawm*, Hebrew *yom* "day"; Korean 요일 *yoil* "day of the week"	18	10	3
+weekday	Time direction	named day of the week (Japanese 曜)	yom	曜	"Arabic *yawm*, Hebrew *yom* ""day""; Korean 요일 *yoil* ""day of the week"""	18	10	3
 year	Time direction	"year, annual cycle"	anyo	年	"Spanish ano, Latin annus"	6	1	3
 agree	Verbs	"agree, consent, contract, promise, deal"	akor	約	"Italian accordo, Spanish acuerdo"	9	3	5
 become	Verbs	"become, get, turn into, come to be; enter a state"	tiven	成	Italian diventare	6	5	4
@@ -182,7 +182,7 @@ make	Verbs	"make, do, build, create, cause"	vake	作	"*facere, fare, fabricate*"
 meet	Verbs	"meet, encounter, run into, come together with"	sarve	会	"Latin salve, French salut -- what you say on meeting; kanji 会 (Japanese au, ""to meet"")"	6	12	1
 need	Verbs	"need, require, must, necessary, have to"	neses	要	Latin necesse	9	7	4
 open	Verbs	"open, begin, start, uncover"	apa	开	"⚠ *aperire, abrir* — weakened, see §9"	4	4	4
-play	Verbs	"play, game, fun, amuse, visit (socially), hang out"	yu	玩	Mandarin 游/遊 *you* "play, roam"; Japanese 遊 *yu*; the "visit" sense follows 玩/遊ぶ/놀다 -- an obligatory visit is **ire ver**	8	10	3
+play	Verbs	"play, game, fun, amuse, visit (socially), hang out"	yu	玩	"Mandarin 游/遊 *you* ""play, roam""; Japanese 遊 *yu*; the ""visit"" sense follows 玩/遊ぶ/놀다 -- an obligatory visit is **ire ver**"	8	10	3
 put	Verbs	"put, place, set, position, sit, be seated, mount"	seta	坐	"English *set*/*sit* — the causative pair, as German *setzen*/*sitzen*; Spanish *sentar*, Latin *sedere*; the character is two people on the ground"	7	5	4
 remain	Verbs	"stop, halt, remain, cease, stand, stay, wait, pause"	sista	止	"*sistere, desist, resist* ""to halt, to stand"""	4	3	4
 say	Verbs	"say, speak, tell, word, speech, message"	tika	言	"Latin *dicere* — *dictate, diction*; English *talk*"	7	35	1
@@ -191,7 +191,7 @@ sleep	Verbs	"sleep, rest, bed, recharge, be dormant"	tormi	床	"*dormir, dormant
 sorry	Verbs	"sorry, apology, regret, excuse me"	perton	悔	Spanish perdon; Italian scusa	9	8	1
 thank	Verbs	"thank, gratitude, appreciation"	mersi	恩	French merci; Spanish gracias	10	4	2
 think	Verbs	"think, mind, idea, opinion, believe"	pensa	思	"*pensar, penser, pensive*"	9	5	4
-try	Verbs	"try, attempt, test, try out, taste-test, sample, check, prove"	tentar	試	Spanish/Portuguese *tentar*, French *tenter*, Latin *tentare*; English *tentative, attempt*	13	8	3
+try	Verbs	"try, attempt, test, try out, taste-test, sample, check, prove"	tentar	試	"Spanish/Portuguese *tentar*, French *tenter*, Latin *tentare*; English *tentative, attempt*"	13	8	3
 want	Verbs	"want, desire, wish, hope"	vori	求	"Latin *volo, velle*; Italian *volere*, English *volition*"	7	16	1
-work	Verbs	"work, labor, job, effort, use"	opus	力	Latin *opus*; English *opus, operate, operation*; Spanish *obra*	2	14	2
-write	Verbs	"write, writing, text, script, inscribe, record"	kita	写	Arabic *kataba* "wrote", *kitab* "book" -- borrowed into Persian, Turkish, Hindi/Urdu, Malay, Swahili	5	11	2
+work	Verbs	"work, labor, job, effort, use"	opus	力	"Latin *opus*; English *opus, operate, operation*; Spanish *obra*"	2	14	2
+write	Verbs	"write, writing, text, script, inscribe, record"	kita	写	"Arabic *kataba* ""wrote"", *kitab* ""book"" -- borrowed into Persian, Turkish, Hindi/Urdu, Malay, Swahili"	5	11	2

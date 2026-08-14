@@ -44,7 +44,7 @@
 |---|---|---|---|
 | drink | pipe | 飲 | "drink, beverage, sip" |
 | food | komi | 食 | "food, eat, meal, nourishment" |
-| fruit | pomo | 果 | fruit, berry, seed; result, outcome |
+| fruit | pomo | 果 | "fruit, berry, seed; result, outcome" |
 | grain | riso | 米 | "grain, bread, rice, staple starch" |
 | meat | karne | 肉 | "meat, flesh food, animal protein" |
 | milk | raten | 乳 | "milk, dairy, cream" |
@@ -85,9 +85,9 @@
 | reason | rason | 故 | "reason, cause, because; why = `what-reason`" |
 | same | sam | 同 | "same, equal, like, as, similar, together" |
 | this | tis | 此 | "this, here, now, present (that/there = `not-this`)" |
-| true | ves | 真 | "true, correct, right, of course, evidently" |
 | what | ker | 何 | "question, which, any, whichever" |
 | yes | si | 是 | "yes, assent, affirm, correct-response" |
+| true | ves | 真 | "true, correct, right, of course, evidently" |
 
 ## Made things (13)
 

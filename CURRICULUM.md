@@ -4,9 +4,9 @@ This document breaks down the vocabulary and grammar of the language into five l
 
 
 ## Level 1
-### 43 most frequent roots
+### 42 most frequent roots
 
-RI, self, what, this, in, you, not, good, please, and, to, big, close, go, thing, group, yes, say, one, two, before, water, sun, want, small, after, person, part, vehicle, food, true, hour, interval, place, time, child, plant, fruit, meet, new, happy, sorry, out
+RI, self, what, this, in, you, not, good, please, and, to, big, close, go, thing, group, yes, say, one, two, before, water, sun, want, small, after, person, part, vehicle, food, true, hour, place, time, child, plant, fruit, meet, new, happy, sorry, out
 
 ### 19 compounds
 
@@ -62,9 +62,9 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 
 ---
 ## Level 2
-### 38 more roots (total: 81)
+### 39 more roots (total: 81)
 
-A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, get, more, drink, for, fast, thank, like, able, woman, man, seven, from, only, three, four, near, name, about, five, middle, six, eight, nine, ten
+A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, get, more, drink, for, fast, thank, like, able, woman, man, seven, from, only, three, four, near, name, about, five, middle, six, eight, nine, ten, interval
 
 ### 40 more compounds (total: 79)
 
