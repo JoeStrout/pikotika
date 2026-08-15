@@ -1,5 +1,5 @@
 # self
-### "self, I, me, own, identity"
+### self, I, me, own, identity
 ---
 # eko
 ## 己
@@ -7,11 +7,11 @@
 # eko
 ---
 # self
-### "self, I, me, own, identity"
+### self, I, me, own, identity
 ## 己
 ===
 # what
-### "question, which, any, whichever"
+### question, which, any, whichever
 ---
 # ker
 ## 何
@@ -19,11 +19,11 @@
 # ker
 ---
 # what
-### "question, which, any, whichever"
+### question, which, any, whichever
 ## 何
 ===
 # this
-### "this, here, now, present (that/there = `not-this`)"
+### this, here, now, present (that/there = `not-this`)
 ---
 # tis
 ## 此
@@ -31,11 +31,11 @@
 # tis
 ---
 # this
-### "this, here, now, present (that/there = `not-this`)"
+### this, here, now, present (that/there = `not-this`)
 ## 此
 ===
 # in
-### "inside, at, within"
+### inside, at, within
 ---
 # in
 ## 内
@@ -43,11 +43,11 @@
 # in
 ---
 # in
-### "inside, at, within"
+### inside, at, within
 ## 内
 ===
 # you
-### "you, addressee"
+### you, addressee
 ---
 # tuo
 ## 尔
@@ -55,11 +55,11 @@
 # tuo
 ---
 # you
-### "you, addressee"
+### you, addressee
 ## 尔
 ===
 # not
-### "no, un-, opposite, negation, without"
+### no, un-, opposite, negation, without
 ---
 # non
 ## 不
@@ -67,11 +67,11 @@
 # non
 ---
 # not
-### "no, un-, opposite, negation, without"
+### no, un-, opposite, negation, without
 ## 不
 ===
 # good
-### "good, well, fine, pleasant"
+### good, well, fine, pleasant
 ---
 # pona
 ## 好
@@ -79,11 +79,11 @@
 # pona
 ---
 # good
-### "good, well, fine, pleasant"
+### good, well, fine, pleasant
 ## 好
 ===
 # please
-### "please, request marker, politeness"
+### please, request marker, politeness
 ---
 # pam
 ## 乞
@@ -91,11 +91,11 @@
 # pam
 ---
 # please
-### "please, request marker, politeness"
+### please, request marker, politeness
 ## 乞
 ===
 # and
-### "and, with, also, plus"
+### and, with, also, plus
 ---
 # kum
 ## 并
@@ -103,11 +103,11 @@
 # kum
 ---
 # and
-### "and, with, also, plus"
+### and, with, also, plus
 ## 并
 ===
 # to
-### "toward, into, direction of motion"
+### toward, into, direction of motion
 ---
 # ver
 ## 向
@@ -115,11 +115,11 @@
 # ver
 ---
 # to
-### "toward, into, direction of motion"
+### toward, into, direction of motion
 ## 向
 ===
 # big
-### "big, large, great, intense, very"
+### big, large, great, intense, very
 ---
 # meka
 ## 大
@@ -127,11 +127,11 @@
 # meka
 ---
 # big
-### "big, large, great, intense, very"
+### big, large, great, intense, very
 ## 大
 ===
 # close
-### "close, shut, finish, end, conclude"
+### close, shut, finish, end, conclude
 ---
 # vin
 ## 閉
@@ -139,11 +139,11 @@
 # vin
 ---
 # close
-### "close, shut, finish, end, conclude"
+### close, shut, finish, end, conclude
 ## 閉
 ===
 # go
-### "go, move, travel, proceed, movement"
+### go, move, travel, proceed, movement
 ---
 # ire
 ## 行
@@ -151,11 +151,11 @@
 # ire
 ---
 # go
-### "go, move, travel, proceed, movement"
+### go, move, travel, proceed, movement
 ## 行
 ===
 # thing
-### "thing, object, item, matter"
+### thing, object, item, matter
 ---
 # kosa
 ## 物
@@ -163,11 +163,11 @@
 # kosa
 ---
 # thing
-### "thing, object, item, matter"
+### thing, object, item, matter
 ## 物
 ===
 # group
-### "group, set, collection, team, crowd"
+### group, set, collection, team, crowd
 ---
 # men
 ## 众
@@ -175,11 +175,11 @@
 # men
 ---
 # group
-### "group, set, collection, team, crowd"
+### group, set, collection, team, crowd
 ## 众
 ===
 # yes
-### "yes, assent, affirm, correct-response"
+### yes, assent, affirm, correct-response
 ---
 # si
 ## 是
@@ -187,11 +187,11 @@
 # si
 ---
 # yes
-### "yes, assent, affirm, correct-response"
+### yes, assent, affirm, correct-response
 ## 是
 ===
 # say
-### "say, speak, tell, word, speech, message"
+### say, speak, tell, word, speech, message
 ---
 # tika
 ## 言
@@ -199,11 +199,11 @@
 # tika
 ---
 # say
-### "say, speak, tell, word, speech, message"
+### say, speak, tell, word, speech, message
 ## 言
 ===
 # one
-### "one, single, first, alone, the very"
+### one, single, first, alone, the very
 ---
 # wun
 ## 一
@@ -211,11 +211,11 @@
 # wun
 ---
 # one
-### "one, single, first, alone, the very"
+### one, single, first, alone, the very
 ## 一
 ===
 # two
-### "two, 2, pair, both"
+### two, 2, pair, both
 ---
 # pits
 ## 2
@@ -223,11 +223,11 @@
 # pits
 ---
 # two
-### "two, 2, pair, both"
+### two, 2, pair, both
 ## 2
 ===
 # before
-### "before, earlier, prior, in the past, early, already"
+### before, earlier, prior, in the past, early, already
 ---
 # yer
 ## 前
@@ -235,11 +235,11 @@
 # yer
 ---
 # before
-### "before, earlier, prior, in the past, early, already"
+### before, earlier, prior, in the past, early, already
 ## 前
 ===
 # water
-### "water, liquid, fluid, wet"
+### water, liquid, fluid, wet
 ---
 # aku
 ## 水
@@ -247,11 +247,11 @@
 # aku
 ---
 # water
-### "water, liquid, fluid, wet"
+### water, liquid, fluid, wet
 ## 水
 ===
 # sun
-### "sun, light, day, daytime, 24-hour period, bright"
+### sun, light, day, daytime, 24-hour period, bright
 ---
 # yan
 ## 日
@@ -259,11 +259,11 @@
 # yan
 ---
 # sun
-### "sun, light, day, daytime, 24-hour period, bright"
+### sun, light, day, daytime, 24-hour period, bright
 ## 日
 ===
 # want
-### "want, desire, wish, hope"
+### want, desire, wish, hope
 ---
 # vori
 ## 求
@@ -271,11 +271,11 @@
 # vori
 ---
 # want
-### "want, desire, wish, hope"
+### want, desire, wish, hope
 ## 求
 ===
 # small
-### "small, little, slight, minor"
+### small, little, slight, minor
 ---
 # piko
 ## 小
@@ -283,11 +283,11 @@
 # piko
 ---
 # small
-### "small, little, slight, minor"
+### small, little, slight, minor
 ## 小
 ===
 # after
-### "after, later, subsequent, future, late"
+### after, later, subsequent, future, late
 ---
 # tar
 ## 后
@@ -295,11 +295,11 @@
 # tar
 ---
 # after
-### "after, later, subsequent, future, late"
+### after, later, subsequent, future, late
 ## 后
 ===
 # person
-### "person, human, one who, agent"
+### person, human, one who, agent
 ---
 # omo
 ## 人
@@ -307,11 +307,11 @@
 # omo
 ---
 # person
-### "person, human, one who, agent"
+### person, human, one who, agent
 ## 人
 ===
 # part
-### "part, piece, portion, member"
+### part, piece, portion, member
 ---
 # parte
 ## 分
@@ -319,11 +319,11 @@
 # parte
 ---
 # part
-### "part, piece, portion, member"
+### part, piece, portion, member
 ## 分
 ===
 # vehicle
-### "vehicle, car, craft, conveyance"
+### vehicle, car, craft, conveyance
 ---
 # karo
 ## 车
@@ -331,11 +331,11 @@
 # karo
 ---
 # vehicle
-### "vehicle, car, craft, conveyance"
+### vehicle, car, craft, conveyance
 ## 车
 ===
 # food
-### "food, eat, meal, nourishment"
+### food, eat, meal, nourishment
 ---
 # komi
 ## 食
@@ -343,11 +343,11 @@
 # komi
 ---
 # food
-### "food, eat, meal, nourishment"
+### food, eat, meal, nourishment
 ## 食
 ===
 # true
-### "true, correct, right, of course, evidently"
+### true, correct, right, of course, evidently
 ---
 # ves
 ## 真
@@ -355,11 +355,11 @@
 # ves
 ---
 # true
-### "true, correct, right, of course, evidently"
+### true, correct, right, of course, evidently
 ## 真
 ===
 # hour
-### "hour, clock-time unit"
+### hour, clock-time unit
 ---
 # ora
 ## 刻
@@ -367,11 +367,11 @@
 # ora
 ---
 # hour
-### "hour, clock-time unit"
+### hour, clock-time unit
 ## 刻
 ===
 # place
-### "place, location, area, spot"
+### place, location, area, spot
 ---
 # roko
 ## 所
@@ -379,11 +379,11 @@
 # roko
 ---
 # place
-### "place, location, area, spot"
+### place, location, area, spot
 ## 所
 ===
 # time
-### "time, occasion, when, period"
+### time, occasion, when, period
 ---
 # tempo
 ## 时
@@ -391,11 +391,11 @@
 # tempo
 ---
 # time
-### "time, occasion, when, period"
+### time, occasion, when, period
 ## 时
 ===
 # child
-### "child, offspring, young of"
+### child, offspring, young of
 ---
 # nino
 ## 子
@@ -403,11 +403,11 @@
 # nino
 ---
 # child
-### "child, offspring, young of"
+### child, offspring, young of
 ## 子
 ===
 # plant
-### "plant, tree, flower, wood"
+### plant, tree, flower, wood
 ---
 # arpo
 ## 木
@@ -415,11 +415,11 @@
 # arpo
 ---
 # plant
-### "plant, tree, flower, wood"
+### plant, tree, flower, wood
 ## 木
 ===
 # fruit
-### "fruit, berry, seed; result, outcome"
+### fruit, berry, seed; result, outcome
 ---
 # pomo
 ## 果
@@ -427,11 +427,11 @@
 # pomo
 ---
 # fruit
-### "fruit, berry, seed; result, outcome"
+### fruit, berry, seed; result, outcome
 ## 果
 ===
 # meet
-### "meet, encounter, run into, come together with"
+### meet, encounter, run into, come together with
 ---
 # sarve
 ## 会
@@ -439,11 +439,11 @@
 # sarve
 ---
 # meet
-### "meet, encounter, run into, come together with"
+### meet, encounter, run into, come together with
 ## 会
 ===
 # new
-### "new, young, recent, fresh"
+### new, young, recent, fresh
 ---
 # nova
 ## 初
@@ -451,11 +451,11 @@
 # nova
 ---
 # new
-### "new, young, recent, fresh"
+### new, young, recent, fresh
 ## 初
 ===
 # happy
-### "happy, glad, pleased, joy"
+### happy, glad, pleased, joy
 ---
 # konten
 ## 楽
@@ -463,11 +463,11 @@
 # konten
 ---
 # happy
-### "happy, glad, pleased, joy"
+### happy, glad, pleased, joy
 ## 楽
 ===
 # sorry
-### "sorry, apology, regret, excuse me"
+### sorry, apology, regret, excuse me
 ---
 # perton
 ## 悔
@@ -475,11 +475,11 @@
 # perton
 ---
 # sorry
-### "sorry, apology, regret, excuse me"
+### sorry, apology, regret, excuse me
 ## 悔
 ===
 # out
-### "outside, external, beyond"
+### outside, external, beyond
 ---
 # eks
 ## 外
@@ -487,7 +487,7 @@
 # eks
 ---
 # out
-### "outside, external, beyond"
+### outside, external, beyond
 ## 外
 ===
 # see you later

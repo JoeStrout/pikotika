@@ -233,7 +233,7 @@ Next time, tell me sooner.	in after time, please more fast say to self.	In tar t
 I will.	self RI make A this.	Eko ri vake a tis.	己 ⊢ 作 ⇒ 此.	2
 Go get some coffee.	please go get A black-drink.	Pam ire toma a neropipe.	乞 行 取 ⇒ 黒飲.	3
 We'll finish by four.	4 hour before, self-group RI close.	4 ora yer, ekomen ri vin.	4 刻 前, 己众 ⊢ 閉.	2
-and the line ends up with two **ker**s doing unrelated jobs:	you RI know A line-vehicle RI out-go in what-hour, what?	Tuo ri sape a rinekaro ri eksire in kerora, ker?	尔 ⊢ 知 ⇒ 糸车 ⊢ 外行 内 何刻, 何?	4
+Do you know when the train leaves?	you RI know A line-vehicle RI out-go in what-hour, what?	Tuo ri sape a rinekaro ri eksire in kerora, ker?	尔 ⊢ 知 ⇒ 糸车 ⊢ 外行 内 何刻, 何?	4
 I see the child.	self RI see A child.	Eko ri vite a nino.	己 ⊢ 見 ⇒ 子.	2
 The child wants water.	child RI want A water.	Nino ri vori a aku.	子 ⊢ 求 ⇒ 水.	2
 We'll get the food soon.	self-group RI fast get A food.	Ekomen ri veros toma a komi.	己众 ⊢ 早 取 ⇒ 食.	2
@@ -253,3 +253,83 @@ I love the sea, but I can't swim.	self RI big-like A big-water, but self RI not 
 The story is beautiful, but it isn't true.	say-thing RI good-see, but this RI not true.	Tikakosa ri ponavite, sets tis ri non ves.	言物 ⊢ 好見, 但 此 ⊢ 不 真.	2
 I'm thirsty, but I don't want tea.	self RI drink-want, but self RI not want A plant-water.	Eko ri pipevori, sets eko ri non vori a arpoaku.	己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.	2
 Tomorrow my mother is coming, but my father isn't.	sun-after, self woman-parent RI come, but self man-parent RI not come.	Yantar, eko vemapari ri veni, sets eko viropari ri non veni.	日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.	2
+I'm going home.	self RI go to home.	Eko ri ire ver kase.	己 ⊢ 行 向 户.	3
+I'm eating with you.	self RI food and you.	Eko ri komi kum tuo.	己 ⊢ 食 并 尔.	1
+I'm here.	self RI in this-place.	Eko ri in tisroko.	己 ⊢ 内 此所.	1
+I'm with the child.	self RI and child.	Eko ri kum nino.	己 ⊢ 并 子.	1
+This is for you.	this RI for you.	Tis ri por tuo.	此 ⊢ 為 尔.	2
+Please come at seven.	please come in seven hour.	Pam veni in sens ora.	乞 来 内 7 刻.	2
+Please give that to me.	please give A this to self.	Pam tonar a tis ver eko.	乞 与 ⇒ 此 向 己.	4
+Where is the bathroom?	toilet RI what-place?	Panyu ri kerroko?	便 ⊢ 何所?	5
+Where are you going?	you RI go to what-place?	Tuo ri ire ver kerroko?	尔 ⊢ 行 向 何所?	1
+How much is this?	this RI what money?	Tis ri ker moni?	此 ⊢ 何 贝?	3
+Who is the doctor?	what-person RI heal-person?	Keromo ri sanaomo?	何人 ⊢ 医人?	4
+Do you see the dog?	you RI see A dog, what?	Tuo ri vite a kanis, ker?	尔 ⊢ 見 ⇒ 犬, 何?	5
+You see the dog, don't you?	you RI see A dog, not?	Tuo ri vite a kanis, non?	尔 ⊢ 見 ⇒ 犬, 不?	5
+You see the dog, right?	you RI see A dog, yes?	Tuo ri vite a kanis, si?	尔 ⊢ 見 ⇒ 犬, 是?	5
+Yes, I see.	yes, see.	Si, vite.	是, 見.	2
+No, I don't see.	not see.	Non vite.	不 見.	2
+Yesterday I saw the dog.	sun-before, self RI see A dog.	Yanyer, eko ri vite a kanis.	日前, 己 ⊢ 見 ⇒ 犬.	5
+Tomorrow I will see the dog.	sun-after, self RI see A dog.	Yantar, eko ri vite a kanis.	日后, 己 ⊢ 見 ⇒ 犬.	5
+I can go.	self RI able go.	Eko ri kan ire.	己 ⊢ 能 行.	2
+You may be right.	you RI if true.	Tuo ri pos ves.	尔 ⊢ 可 真.	4
+I want to go.	self RI want go.	Eko ri vori ire.	己 ⊢ 求 行.	1
+I should go.	self RI if-good go.	Eko ri pospona ire.	己 ⊢ 可好 行.	4
+I must go.	self RI need go.	Eko ri neses ire.	己 ⊢ 要 行.	4
+I am beginning to eat.	self RI food open.	Eko ri komi apa.	己 ⊢ 食 开.	4
+I have eaten.	self RI food close.	Eko ri komi vin.	己 ⊢ 食 閉.	1
+I am still eating.	self RI food remain.	Eko ri komi sista.	己 ⊢ 食 止.	4
+I am still here.	self RI in this-place remain.	Eko ri in tisroko sista.	己 ⊢ 内 此所 止.	4
+I could have gone.	self RI able go close.	Eko ri kan ire vin.	己 ⊢ 能 行 閉.	2
+I might have gone.	self RI if go close.	Eko ri pos ire vin.	己 ⊢ 可 行 閉.	4
+I should have gone.	self RI if-good go close.	Eko ri pospona ire vin.	己 ⊢ 可好 行 閉.	4
+I must have gone.	self RI need go close.	Eko ri neses ire vin.	己 ⊢ 要 行 閉.	4
+If I have the money, I'll buy it.	if self RI have A money, this-reason self RI buy A this.	Pos eko ri tene a moni, tisrason eko ri kompar a tis.	可 己 ⊢ 有 ⇒ 贝, 此故 己 ⊢ 買 ⇒ 此.	4
+If you come, we'll be happy.	if you RI come, this-reason self-group RI happy.	Pos tuo ri veni, tisrason ekomen ri konten.	可 尔 ⊢ 来, 此故 己众 ⊢ 楽.	4
+If I had the money, I would buy it.	not-true self RI have A money, this-reason self RI buy A this.	Nonves eko ri tene a moni, tisrason eko ri kompar a tis.	不真 己 ⊢ 有 ⇒ 贝, 此故 己 ⊢ 買 ⇒ 此.	4
+If I had had the money, I would have bought it.	not-true self RI have A money close, this-reason self RI buy A this close.	Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin.	不真 己 ⊢ 有 ⇒ 贝 閉, 此故 己 ⊢ 買 ⇒ 此 閉.	4
+I want you to come.	self RI want A you RI come.	Eko ri vori a tuo ri veni.	己 ⊢ 求 ⇒ 尔 ⊢ 来.	2
+I ask the cook to make it not spicy.	self RI want-say to food-make-person A this RI become not fire-taste.	Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.	己 ⊢ 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.	4
+I think you would like it.	self RI think A you RI like A this.	Eko ri pensa a tuo ri kusta a tis.	己 ⊢ 思 ⇒ 尔 ⊢ 愛 ⇒ 此.	4
+Whatever you have, send me that.	you RI have A what-thing, please give A this to self.	Tuo ri tene a kerkosa, pam tonar a tis ver eko.	尔 ⊢ 有 ⇒ 何物, 乞 与 ⇒ 此 向 己.	4
+Wait until I get back.	self RI back come in what-hour, please remain straight-to this.	Eko ri rets veni in kerora, pam sista retover tis.	己 ⊢ 反 来 内 何刻, 乞 止 直向 此.	4
+the animal the person ate	person RI food RI-TE animal.	Omo ri komi rite peste.	人 ⊢ 食 ⊢> 匹.	3
+Send me what you have.	please give A you RI have RI-TE thing to self.	Pam tonar a tuo ri tene rite kosa ver eko.	乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己.	4
+It's stopping!	RI remain!	Ri sista!	⊢ 止!	4
+Stop!	remain!	Sista!	止!	4
+All is good.	all RI good.	Pan ri pona.	全 ⊢ 好.	3
+I see.	self RI see.	Eko ri vite.	己 ⊢ 見.	2
+I thank you.	self RI thank A you.	Eko ri mersi a tuo.	己 ⊢ 恩 ⇒ 尔.	2
+Yes, please.	yes, please.	Si, pam.	是, 乞.	1
+No, thank you.	not, thank.	Non, mersi.	不, 恩.	2
+Help, please!	please help!	Pam servi!	乞 助!	4
+Welcome.	happy-come.	Kontenveni.	楽来.	2
+Bye!	sorry-go!	Pertonire!	悔行!	1
+See you later.	after-meet.	Tarsarve.	后会.	1
+If it rains, we'll stay home.	if RI rain, this-reason self-group RI remain in home.	Pos ri ruva, tisrason ekomen ri sista in kase.	可 ⊢ 雨, 此故 己众 ⊢ 止 内 户.	4
+If the train is late, please tell me.	if metal-line-vehicle RI after, this-reason please say to self.	Pos metarrinekaro ri tar, tisrason pam tika ver eko.	可 金糸车 ⊢ 后, 此故 乞 言 向 己.	4
+If you're tired, we can go back.	if you RI tired, this-reason self-group RI able back-go.	Pos tuo ri kansa, tisrason ekomen ri kan retsire.	可 尔 ⊢ 疲, 此故 己众 ⊢ 能 反行.	5
+If it's too expensive, I won't buy it.	if this RI up-measure money, this-reason self RI not buy A this.	Pos tis ri surmesur moni, tisrason eko ri non kompar a tis.	可 此 ⊢ 上寸 贝, 此故 己 ⊢ 不 買 ⇒ 此.	4
+If you want, I'll bring water.	if you RI want, this-reason self RI have-come A water.	Pos tuo ri vori, tisrason eko ri teneveni a aku.	可 尔 ⊢ 求, 此故 己 ⊢ 有来 ⇒ 水.	4
+If you build it, they will come.	if you RI make A this, this-reason not-this-person RI come.	Pos tuo ri vake a tis, tisrason nontisomo ri veni.	可 尔 ⊢ 作 ⇒ 此, 此故 不此人 ⊢ 来.	4
+If there's no hot water, tell the staff.	if RI no fire water, this-reason please say to help-person.	Pos ri nem wo aku, tisrason pam tika ver serviomo.	可 ⊢ 无 火 水, 此故 乞 言 向 助人.	4
+If you come tomorrow, we can eat together.	if you RI come sun-after, this-reason self-group RI able and food.	Pos tuo ri veni yantar, tisrason ekomen ri kan kum komi.	可 尔 ⊢ 来 日后, 此故 己众 ⊢ 能 并 食.	4
+If it isn't spicy, the child will eat it.	if this RI not fire-taste, this-reason child RI food A this.	Pos tis ri non wosapor, tisrason nino ri komi a tis.	可 此 ⊢ 不 火味, 此故 子 ⊢ 食 ⇒ 此.	4
+If I had known, I would have come earlier.	not-true self RI know close, this-reason self RI come before close.	Nonves eko ri sape vin, tisrason eko ri veni yer vin.	不真 己 ⊢ 知 閉, 此故 己 ⊢ 来 前 閉.	4
+If the shop were open, we could buy food.	not-true buy-place RI open, this-reason self-group RI able buy A food.	Nonves komparroko ri apa, tisrason ekomen ri kan kompar a komi.	不真 買所 ⊢ 开, 此故 己众 ⊢ 能 買 ⇒ 食.	4
+If I had a car, I would drive.	not-true self RI have A vehicle, this-reason self RI vehicle-go.	Nonves eko ri tene a karo, tisrason eko ri karoire.	不真 己 ⊢ 有 ⇒ 车, 此故 己 ⊢ 车行.	4
+I want a red fruit.	self RI want A red fruit.	Eko ri vori a rus pomo.	己 ⊢ 求 ⇒ 赤 果.	3
+This is a yellow fruit.	this RI yellow fruit.	Tis ri yoro pomo.	此 ⊢ 黄 果.	3
+We're going to my father's house.	self-group RI go to self man-parent home.	Ekomen ri ire ver eko viropari kase.	己众 ⊢ 行 向 己 男亲 户.	3
+I see a small fish.	self RI see A small water-animal.	Eko ri vite a piko akupeste.	己 ⊢ 見 ⇒ 小 水匹.	2
+This is a sea creature.	this RI big water TE animal.	Tis ri meka aku te peste.	此 ⊢ 大 水 > 匹.	3
+She's a business owner who is small.	this-person RI small buy-group have-person.	Tisomo ri piko komparmen teneomo.	此人 ⊢ 小 買众 有人.	4
+She's a small-business owner.	this-person RI small buy-group TE have-person.	Tisomo ri piko komparmen te teneomo.	此人 ⊢ 小 買众 > 有人.	4
+I want that big red ball.	self RI want A not-this big red round.	Eko ri vori a nontis meka rus rotun.	己 ⊢ 求 ⇒ 不此 大 赤 丸.	4
+She's a happier person.	this-person RI more happy person.	Tisomo ri mas konten omo.	此人 ⊢ 更 楽 人.	2
+It's a tea shop that is green.	this RI green plant-water buy-place.	Tis ri verte arpoaku komparroko.	此 ⊢ 緑 木水 買所.	4
+It's a green-tea shop.	this RI green plant-water TE buy-place.	Tis ri verte arpoaku te komparroko.	此 ⊢ 緑 木水 > 買所.	4
+She's a tea-shop owner.	this-person RI plant-water buy-place TE have-person.	Tisomo ri arpoaku komparroko te teneomo.	此人 ⊢ 木水 買所 > 有人.	4
+She owns a tea shop that's green.	this-person RI green plant-water buy-place TE have-person.	Tisomo ri verte arpoaku komparroko te teneomo.	此人 ⊢ 緑 木水 買所 > 有人.	4
+She's the owner of a green-tea shop.	this-person RI green plant-water TE buy-place TE have-person.	Tisomo ri verte arpoaku te komparroko te teneomo.	此人 ⊢ 緑 木水 > 買所 > 有人.	4
+Where are you going for summer vacation?	in fire-time play-come-go, you RI go to what-place?	In wotempo yuveniire, tuo ri ire ver kerroko?	内 火时 玩来行, 尔 ⊢ 行 向 何所?	3

@@ -252,6 +252,34 @@ For any other distance, count the days and add **yer** ('ago') or **tar** ('from
 | **tets senseyan yer** | 3 7日前 | three weeks ago |
 
 
+## Seasons
+
+A season is an **anyoparte** (年分, *year-part*), and the four seasons are named as follows.
+
+| Meaning | Gloss | Pikotika | Han |
+|---|---|---|---|
+| spring | *plant-time* | **arpotempo** | 木时 |
+| summer | *fire-time* | **wotempo** | 火时 |
+| autumn, fall | *fruit-time* | **pomotempo** | 果时 |
+| winter | *cold-time* | **rikustempo** | 冷时 |
+
+Much of the world has a wet and a dry season, and those are named the
+same way:
+
+| Meaning | Gloss | Pikotika | Han |
+|---|---|---|---|
+| rainy season, wet season | *rain-time* | **ruvatempo** | 雨时 |
+| dry season | *not-rain-time* | **nonruvatempo** | 不雨时 |
+
+To say when something happens, use **in** as with any other time: **in wotempo** ('in
+summer').  **tis wotempo** is 'this summer'.  To count seasons forward or back, add
+**yer** or **tar** at the end, exactly as with days: **pits wotempo yer** is 'two
+summers ago'.
+
+> **In wotempo yuveniire, tuo ri ire ver kerroko?**
+> 内 火时 玩来行, 尔 ⊢ 行 向 何所?
+> 'Where are you going for summer vacation?'
+
 ## Proper Nouns and Loan Words
 
 Proper nouns (names) as well as loan words like "penicillin" are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotika phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.
@@ -478,6 +506,43 @@ The two markers are exact opposites: **pos** leaves the condition open, **nonves
 The consequence clause needs no counterfactual marking of its own.  **tisrason** already says it follows from the condition, and if the condition is false then so is what follows from it.  Past time, where you want it, comes from **vin** as usual.
 
 When there is no stated condition, the plain modal forms above carry the sense on their own: **eko ri pospona apa yer vin** is 'I should have started earlier', and, exactly as in English, saying it implies you did not.  Do not add **nonves** to these.
+
+### Standard Modifier Order
+
+Pikotika puts modifiers (adjectives/adverbs) before the head words (noun/verb) that they modify.  The rules for ordering and semantically grouping those modifiers are the same as in virtually every language that has such modifiers.  That means that you probably don't need to study or memorize the following rules; just do what seems natural and it will be correct.  But here are the rules anyway.
+
+**Stacked modifiers group right.**  The most intrinsic property sits closest to the head and composes with it first.  In the English phrase *that big red ball*, the property most intrinsic to the ball is "red"; it's a red ball.  What kind of red ball?  A big one: *big [red ball]*.  Which red ball?  That one: *that [big [red ball]].*  In Pikotika, it's exactly the same: **nontis meka rus rotun**.
+
+> Languages with adjectives before the noun are strikingly consistent about their order: quantifier/demonstrative, quality/opinion, size, age, shape, color, origin, material.  That's why it is "big red ball" (size before color) rather than "red big ball" (color before size).  If your native language works this way, then don't study this rule; just order modifiers in Pikotika the same way you would naturally.
+
+An apparent exception may be when a word modifies a modifier: words that show degree, like **mas** ('more'), **nonmas** ('less'), and **surmesur** ('too').  It's not actually an exception, because these words don't modify the head word; they modify the adjective that comes after them.  In the phrase "a more happy person," *more* modifies *happy* (not *happy person*).  Again, it's the same in Pikotika: **mas konten omo**.
+
+**Compounds usually group left.**  In the English phrase "coffee shop owner", this is a multi-word compound noun, grouped left to right: *[coffee shop] owner*.  It's an owner of a coffee shop, not a coffee-styled shop owner (whatever that would mean).  The same occurs in most such phrases: "book club meeting" is a meeting of the book club, etc.  In Pikotika, compounds turn into single words: **mekaakurante** is a compound of *meka-aku-rante*, or *big-water-edge*.  This is the edge of the big water, i.e. seashore/beach.  This left-to-right grouping often falls naturally from making larger compounds from smaller ones; *big-water* itself (**mekaaku**) is a compound meaning 'ocean', and was probably coined first.  From there it's easy to append **rante** ('edge') to get the three-root compound.
+
+There is a potential ambiguity caused by **meka** and **piko**, whose meanings cover big/small (which would modify the head noun) as well as very/little (which show degree).  Technically **meka rus rotun** could be interpreted as 'a very red ball' rather than 'a big red ball'.  Generally context and intonation will make it clear; and in practice, you will probably use compound words to avoid the issue.
+
+### Use TE To Override Grouping
+
+On rare occasions the natural grouping will convey the wrong idea.  Consider the sentence **Tisomo ri piko komparmen teneomo.**  Literally this means "He/she is a small business owner."  Is this an owner of a small business?  Or is it a business owner who is physically small?  In English, it's ambiguous.  In Pikotika, it would clearly be a business owner who is small, by the standard grouping rules above.
+
+If you want the "owner of a small business" meaning, there are two ways to get it.  One would be to coin a new compound on the spot: **Tisomo ri pikokomparmen teneomo.**  Here *pikokomparmen* would mean 'small business'.  But *pikokomparmen* is a bit of a mouthful, and it violates the general guideline that compounds group left.  Neither is a show-stopper, but it's a little awkward.
+
+The other solution is the TE particle:
+
+> **Tisomo ri piko komparmen te teneomo.**
+> She's a small-business owner.
+
+TE breaks up a phrase and stops modifiers on its left from binding to heads on its right.  It makes it clear that *piko* in this example does not modify *teneomo* — it can't, since there is a TE in the way.  So *piko* modifies *komparmen*; and then that whole phrase, *piko komparmen*, modifies *teneomo*.
+
+TE applies to the preceding phrase, backing up to the last particle (RI, A, **rite**, or another TE) found before it.  Here's another example:
+
+> **Tis ri verte arpoaku komparroko.**
+> It's a tea shop that's green.
+
+> **Tis ri verte arpoaku te komparroko.**
+> It's a green-tea shop (i.e. a shop that sells green tea).
+
+
 
 ### Subordinate Clauses
 
