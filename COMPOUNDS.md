@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-562 terms
+574 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -10,6 +10,7 @@
 | 3rd | three-sequence | tetsorten | 3序 |
 | 4th | four-sequence | watsorten | 4序 |
 | 5th | five-sequence | kinsorten | 5序 |
+| abroad | out-country | eksenasyon | 外国 |
 | ache | sick-feel | marasenti | 病心 |
 | actually | in-true | inves | 内真 |
 | adore | big-like | mekakusta | 大愛 |
@@ -57,6 +58,7 @@
 | beige | grain-color | risokoror | 米色 |
 | bicycle | leg-vehicle | kampakaro | 足车 |
 | blunt | straight-say | retotika | 直言 |
+| boat | water-vehicle | akukaro | 水车 |
 | book | many-paper | murkarta | 多片 |
 | booking | before-agree | yerakor | 前約 |
 | border (of a country) | country-edge | nasyonrante | 国边 |
@@ -181,6 +183,7 @@
 | flatterer | sweet-mouth | tukepuka | 甘口 |
 | fog | water-air | akuvento | 水风 |
 | for this reason | this-reason | tisrason | 此故 |
+| foreign | out-country | eksenasyon | 外国 |
 | forget | know-lose | sapeperti | 知失 |
 | former | before-sequence | yerorten | 前序 |
 | fourth (in a series) | four-sequence | watsorten | 4序 |
@@ -234,6 +237,8 @@
 | in truth | in-true | inves | 内真 |
 | incidentally | other-about | artopi | 別件 |
 | inquire | what-say | kertika | 何言 |
+| instruct | learn-give | impartonar | 学与 |
+| instructor | learn-give-person | impartonaromo | 学与人 |
 | insufficient | not-all | nonpan | 不全 |
 | intersection | way-join | motoyunta | 方合 |
 | journey | come-go | veniire | 来行 |
@@ -315,6 +320,7 @@
 | others | other-person | aromo | 別人 |
 | outskirts | city-edge | sitasrante | 市边 |
 | oval | long-round | ronkarotun | 长丸 |
+| overseas | out-country | eksenasyon | 外国 |
 | owner | have-person | teneomo | 有人 |
 | pain | sick-feel | marasenti | 病心 |
 | park | green-place | verteroko | 緑所 |
@@ -410,6 +416,7 @@
 | sad | not-happy | nonkonten | 不楽 |
 | sake | white-grain-fire-water | ankarisowoaku | 白米火水 |
 | sand | small-stone | pikorapis | 小岩 |
+| sane | heal-think | sanapensa | 医思 |
 | Saturday | earth-weekday | terayom | 土曜 |
 | say again | again-say | repetika | 又言 |
 | schedule | time-sequence | tempoorten | 时序 |
@@ -429,6 +436,7 @@
 | shame | self-bad-feel | ekomarumsenti | 己悪心 |
 | she | this-person | tisomo | 此人 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
+| ship | water-vehicle | akukaro | 水车 |
 | shop | buy-place | komparroko | 買所 |
 | shopkeeper | buy-person | komparomo | 買人 |
 | shore | water-edge | akurante | 水边 |
@@ -476,6 +484,8 @@
 | tale | say-thing | tikakosa | 言物 |
 | tan | grain-color | risokoror | 米色 |
 | tea | plant-water | arpoaku | 木水 |
+| teach | learn-give | impartonar | 学与 |
+| teacher | learn-give-person | impartonaromo | 学与人 |
 | tears | see-water | viteaku | 見水 |
 | test (of knowledge) | know-try | sapetentar | 知試 |
 | text | write-say | kitatika | 写言 |
@@ -547,6 +557,8 @@
 | weekend | seven-sun-close | senseyanvin | 7日閉 |
 | weigh | heavy-measure | pesamesur | 重寸 |
 | welcome | happy-come | kontenveni | 楽来 |
+| well-adjusted | heal-think | sanapensa | 医思 |
+| well-balanced | heal-think | sanapensa | 医思 |
 | west | map-left | mapasini | 図左 |
 | wet season | rain-time | ruvatempo | 雨时 |
 | what time | what-hour | kerora | 何刻 |

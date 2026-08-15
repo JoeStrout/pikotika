@@ -394,6 +394,32 @@ A prepositional phrase goes at the **end** of a sentence or clause, after the ob
 
 Note that **kum** is 'and' when it joins two like things and 'with' when it opens a phrase of its own, exactly as in English: *bread and water* against *come with me*.
 
+**kum** is only ever accompaniment, never means.  For means, manner, or route, use **in ... moto** (内 ... 方, 'in ... way'): **in akukaro moto** 'by ship', **in Rispon moto** 'via Lisbon'.  Its question form is **in kermoto**, 'how'.
+
+
+### Joining and Explaining
+
+Three roots join things: **kum** (并, 'and'), **sive** (或, 'or'), and **sets** (但, 'but').  All three work at any size -- between two words, two phrases, or two whole clauses -- and none of them changes the grammar of what they join.  There is nothing to learn beyond the three words.
+
+| Pikotika | Meaning |
+|---|---|
+| **Rikus sive wo, ker?** | Cold or warm? |
+| **20 moni por wun, sive 100 moni por 6.** | Twenty each, or a hundred for six. |
+| **Nino kum eko ri komivori.** | The child and I are hungry. |
+| **Kitakarta ri non vin, kum opustesta ri vori a tis in tisyan.** | The report isn't finished, and they want it today. |
+| **Si, sets kampaire ri mas veros.** | Yes, but walking is faster. |
+| **Yantar, eko vemapari ri veni, sets eko viropari ri non veni.** | Tomorrow my mother is coming, but my father isn't. |
+
+Recall that **kum** is also the preposition 'with'; see Prepositional Phrases above.  **sets** may open a sentence, picking up from the one before, exactly as English "But..." does: **Sets pam veni in 7 ora, kum ekomen ri kan yer komi.**  'But come at seven, and we can eat first.'
+
+**Cause is `rason`.**  The root **rason** (故) is the noun 'reason', and it also opens a clause to mean 'because':
+
+> **Pona, rason in yer tempo eko otiparte ri marasenti in 2 yan turan.**
+> 'Good, because last time my ears hurt for two days.'
+
+Two standard compounds complete the set: **kerrason** (何故) 'why', and **tisrason** (此故) 'therefore', which is the word that closes a condition (see Conditions below).
+
+Note the division of labor.  **rason** heads the cause; **tisrason** heads the consequence.  So an explanation can run in either direction, and which word you reach for tells the listener which half is coming: *A, rason B* and *B, tisrason A* say the same thing.
 
 ### Comparison
 

@@ -46,3 +46,4 @@ Common fixed expressions people just memorize and use in the appropriate situati
 | one by one | one after one | **wun tar wun** | 1 后 1 |
 | day after day | sun after sun | **yan tar yan** | 日 后 日 |
 | They say that ... | RI say A ... | **RI tika a ...** |  ⊢ 言 ⇒ ... |
+| by means of; by way of; via | in ... way | **in ... moto** | 内 ... 方 |

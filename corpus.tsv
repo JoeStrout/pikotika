@@ -333,3 +333,6 @@ She's a tea-shop owner.	this-person RI plant-water buy-place TE have-person.	Tis
 She owns a tea shop that's green.	this-person RI green plant-water buy-place TE have-person.	Tisomo ri verte arpoaku komparroko te teneomo.	此人 ⊢ 緑 木水 買所 > 有人.	4
 She's the owner of a green-tea shop.	this-person RI green plant-water TE buy-place TE have-person.	Tisomo ri verte arpoaku te komparroko te teneomo.	此人 ⊢ 緑 木水 > 買所 > 有人.	4
 Where are you going for summer vacation?	in fire-time play-come-go, you RI go to what-place?	In wotempo yuveniire, tuo ri ire ver kerroko?	内 火时 玩来行, 尔 ⊢ 行 向 何所?	3
+The man is sick.	man RI sick.	Viro ri mara.	男 ⊢ 病.	5
+The teacher said Mary was a well-balanced child who got on well at school.	learn-give-person RI say A Mary RI heal-think child, and this-person RI good work in learn-place.	Impartonaromo ri tika a Mari ri sanapensa nino, kum tisomo ri pona opus in imparroko.	学与人 ⊢ 言 ⇒ Mari ⊢ 医思 子, 并 此人 ⊢ 好 力 内 学所.	4
+Did you ever travel abroad by ship?	you RI come-go to out-country in water-vehicle way close, what?	Tuo ri veniire ver eksenasyon in akukaro moto vin, ker?	尔 ⊢ 来行 向 外国 内 水车 方 閉, 何?	5

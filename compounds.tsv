@@ -121,6 +121,7 @@ owner; proprietor	have-person	2
 exercise	heal-go	4	
 gym	heal-go-place	4	
 doctor	heal-person	4	
+well-balanced; well-adjusted; sane	heal-think	4	
 medical test; checkup; examination (medical)	heal-try	4	
 ear	hear-part	4	
 weigh; measure the weight of	heavy-measure	4	
@@ -141,6 +142,8 @@ password	key-say	5
 remember; retain; keep in mind; memory	know-have	3	
 forget	know-lose	5	
 test (of knowledge); exam; quiz	know-try	3	
+teach; instruct	learn-give	4	
+teacher; instructor	learn-give-person	4	
 school	learn-place	4	
 curriculum; syllabus; course of study	learn-sequence	4	
 walk	leg-go	4	
@@ -214,6 +217,7 @@ fried rice	oil-white-grain	5
 first (in a series); 1st	one-sequence	3	
 anyway; by the way; incidentally	other-about	5	
 someone else; another person; others	other-person	5	
+abroad; foreign; overseas	out-country	5	
 depart; leave (depart)	out-go	1	1
 margin (of a page)	paper-edge	4	
 relative (kin)	parent-group	2	2
@@ -319,6 +323,7 @@ shore; coast; riverbank	water-edge	4
 soup	water-food	1	2
 swim	water-go	1	2
 porridge; congee	water-grain	3	
+ship; boat	water-vehicle	1	
 Wednesday	water-weekday	3	3
 junction; intersection; crossroads	way-join	5	
 road map; roadmap	way-map	3	
