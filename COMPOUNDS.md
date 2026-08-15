@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-579 terms
+593 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -17,6 +17,8 @@
 | adventure | fear-play | timoyu | 危玩 |
 | adventure trip | fear-come-go | timoveniire | 危来行 |
 | adventurer | fear-play-person | timoyuomo | 危玩人 |
+| age | year-interval | anyoturan | 年間 |
+| aged | year-big | anyomeka | 年大 |
 | airplane | air-vehicle | ventokaro | 风车 |
 | airport | air-vehicle-place | ventokaroroko | 风车所 |
 | alcohol (usually wine) | fire-water | woaku | 火水 |
@@ -66,11 +68,13 @@
 | boss | work-head | opustesta | 力头 |
 | brave | not-fear | nontimo | 不危 |
 | bread | grain-food | risokomi | 米食 |
+| break | not-work-time | nonopustempo | 不力时 |
 | breakfast | up-sun-food | suryankomi | 上日食 |
 | bring | have-come | teneveni | 有来 |
 | brother | same-parent-man | sampariviro | 同亲男 |
 | brown | earth-color | terakoror | 土色 |
 | bus | many-person-vehicle | muromokaro | 多人车 |
+| business day | work-sun | opusyan | 力日 |
 | business plan | buy-group-map | komparmenmapa | 買众図 |
 | business trip | work-come-go | opusveniire | 力来行 |
 | busy | many-work | muropus | 多力 |
@@ -121,6 +125,7 @@
 | cutlery | food-tool | komiuter | 食工 |
 | cyan | blue-green | asurverte | 青緑 |
 | dance | music-go | musiire | 曲行 |
+| day off | not-work-sun | nonopusyan | 不力日 |
 | decimal point | part | parte | 分 |
 | decision | choose-close | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
@@ -190,6 +195,7 @@
 | former | before-sequence | yerorten | 前序 |
 | fourth (in a series) | four-sequence | watsorten | 4序 |
 | frank | straight-say | retotika | 直言 |
+| free | not-work | nonopus | 不力 |
 | Friday | metal-weekday | metaryom | 金曜 |
 | fried | oil-make | orenvake | 油作 |
 | fried rice | oil-white-grain | orenankariso | 油白米 |
@@ -224,6 +230,7 @@
 | her | this-person | tisomo | 此人 |
 | him | this-person | tisomo | 此人 |
 | hire | interval-buy | turankompar | 間買 |
+| holiday | not-work-sun | nonopusyan | 不力日 |
 | holiday | play-come-go | yuveniire | 玩来行 |
 | honest | straight-say | retotika | 直言 |
 | hoop | round-line | rotunrine | 丸糸 |
@@ -315,7 +322,10 @@
 | number | measure-say | mesurtika | 寸言 |
 | numeral | measure-say | mesurtika | 寸言 |
 | nut | hard-fruit | turuspomo | 硬果 |
+| off | not-work | nonopus | 不力 |
+| off duty | not-work | nonopus | 不力 |
 | office | work-room | opuskamar | 力室 |
+| old (in years) | year-big | anyomeka | 年大 |
 | on that note | near-about | nirtopi | 近件 |
 | option | choose-thing | erikekosa | 选物 |
 | orange | red-yellow | rusyoro | 赤黄 |
@@ -496,6 +506,7 @@
 | that | not-this | nontis | 不此 |
 | that's why | this-reason | tisrason | 此故 |
 | the end (of a series) | close-sequence | vinorten | 閉序 |
+| the holidays | not-work-time | nonopustempo | 不力时 |
 | the one after | after-sequence | tarorten | 后序 |
 | the one before | before-sequence | yerorten | 前序 |
 | theater | play-home | yukase | 玩户 |
@@ -512,6 +523,7 @@
 | tie | same-become | samtiven | 同成 |
 | tight-lipped | close-mouth | vinpuka | 閉口 |
 | till | straight-to | retover | 直向 |
+| time off | not-work-time | nonopustempo | 不力时 |
 | timetable | time-sequence | tempoorten | 时序 |
 | today | this-sun | tisyan | 此日 |
 | tomato | red-fruit | ruspomo | 赤果 |
@@ -578,8 +590,10 @@
 | wine | fruit-fire-water | pomowoaku | 果火水 |
 | winner | up-become-person | surtivenomo | 上成人 |
 | winter | cold-time | rikustempo | 冷时 |
+| work day | work-sun | opusyan | 力日 |
 | writer | write-person | kitaomo | 写人 |
 | writing (text) | write-say | kitatika | 写言 |
 | yellow fruit (usually banana) | yellow-fruit | yoropomo | 黄果 |
 | yesterday | sun-before | yanyer | 日前 |
 | you-are-here map | help-map | servimapa | 助図 |
+| young | year-small | anyopiko | 年小 |

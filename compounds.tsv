@@ -213,6 +213,9 @@ lemon	not-sweet-yellow-fruit	3
 that; those	not-this	1	1
 false; untrue; if (counterfactual)	not-true	1	
 be defeated; lose a contest; lose a game	not-up-become	4	
+off; free; off duty	not-work	2	
+day off; holiday	not-work-sun	2	
+time off; break; the holidays	not-work-time	2	
 fried	oil-make	5	
 fried rice	oil-white-grain	5	
 first (in a series); 1st	one-sequence	3	
@@ -342,13 +345,17 @@ mother	woman-parent	2	2
 business trip	work-come-go	2	3
 boss	work-head	4	
 office	work-room	3	
+work day; business day	work-sun	2	
 report; document (written)	write-paper	3	
 writer; author	write-person	2	2
 text; writing (text)	write-say	2	
 read	write-see	2	2
 reader	write-see-person	2	2
 pen (pen or pencil)	write-tool	3	
+old (in years); aged	year-big	3	
+age	year-interval	3	
 season	year-part	3	
+young	year-small	3	
 yellow fruit (usually banana)	yellow-fruit	3	
 wheat	yellow-grain	3	3
 wheat bread	yellow-grain-food	3	

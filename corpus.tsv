@@ -341,3 +341,7 @@ Tom likes to watch TV while he eats.	Tom RI like A electric-see in food-time.	To
 When Tom eats, he watches TV.	Tom RI food in what-hour, this-person RI electric-see.	Tom ri komi in kerora, tisomo ri vortovite.	Tom ⊢ 食 内 何刻, 此人 ⊢ 電見.	4
 I want to try eating meat.	self RI want A try A food A meat.	Eko ri vori a tentar a komi a karne.	己 ⊢ 求 ⇒ 試 ⇒ 食 ⇒ 肉.	4
 I like to read comic books.	self RI like A write-see A picture-many-paper.	Eko ri kusta a kitavite a piturmurkarta.	己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.	4
+How old are you?	you year-interval RI what?	Tuo anyoturan ri ker?	尔 年間 ⊢ 何?	3
+I'm 34 years old.	self year-interval RI 34.	Eko anyoturan ri 34.	己 年間 ⊢ 34.	3
+My boss is younger than me.	self work-head RI more year-small from self.	Eko opustesta ri mas anyopiko vons eko.	己 力头 ⊢ 更 年小 从 己.	4
+My older sister will be visiting for the holidays.	in not-work-time, self more year-big same-parent-woman RI come.	In nonopustempo, eko mas anyomeka samparivema ri veni.	内 不力时, 己 更 年大 同亲女 ⊢ 来.	3
