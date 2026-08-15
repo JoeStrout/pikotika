@@ -71,6 +71,7 @@ potato	earth-grain	3
 peanut	earth-hard-fruit	4	
 Saturday	earth-weekday	3	3
 electronic map	electric-map	4	
+television; watch TV	electric-see	4	
 lamp; electric light	electric-sun	4	
 voyage; long journey	far-come-go	5	
 adventure trip; expedition	fear-come-go	4	
@@ -224,6 +225,7 @@ relative (kin)	parent-group	2	2
 decimal point; minute	part	1	
 queue; line (of people)	person-sequence	3	
 cinema; movie theater	picture-home	4	
+comic book; comics; manga	picture-many-paper	4	
 harvest	plant-get	2	
 spring (season)	plant-time	1	
 tea	plant-water	1	1

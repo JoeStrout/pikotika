@@ -568,8 +568,6 @@ TE applies to the preceding phrase, backing up to the last particle (RI, A, **ri
 > **Tis ri verte arpoaku te komparroko.**
 > It's a green-tea shop (i.e. a shop that sells green tea).
 
-
-
 ### Subordinate Clauses
 
 A clause can serve as the object of a verb, or as a modifier of a noun.
@@ -579,7 +577,12 @@ A clause can serve as the object of a verb, or as a modifier of a noun.
 > **Eko ri pensa a tis senseyan ri nonturus.**  'I think this week will be easy.'
 > **Eko ri vori a tuo ri veni.**  'I want you to come.'
 
-Such a clause runs to the end of the sentence, so anything else has to come before *A*:
+You can have multiple such clauses; each one binds to the verb directly to its left:
+
+> **Eko ri vori a tentar a komi a karne.** 'I want to try eating meat.'
+> **Eko ri kusta a kitavite a piturmurkarta.** 'I like to read comic books.'
+
+Such a clause runs to the next A or the end of the sentence, so anything else has to come before *A*:
 
 > **Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.**  'I ask the cook to make it not spicy.'
 
@@ -602,7 +605,7 @@ The second puts the clause in front of the noun, closed by **rite** (*RI-TE*, wr
 | **Omo ri komi te peste.** | The person is a food-animal.  (*TE* takes only **komi**) |
 | **Omo ri komi rite peste** | the animal the person ate  (**rite** takes **omo ri komi**) |
 
-The rule is: if the modifier contains *RI* or *A*, close it with **rite**; otherwise use *TE*.  Because word order is rigid, "the whole clause" is unambiguous -- scanning back from **rite**, it takes at most one object phrase, one verb, *RI*, and one subject, stopping at the first word that would break that order.
+The rule is: if the modifier contains *RI* or *A*, close it with **rite**; otherwise use *TE*.  Because word order is rigid, "the whole clause" is unambiguous -- scanning back from **rite**, it takes at most one verb with its objects, *RI*, and one subject, stopping at the first word that would break that order.
 
 Note that **rite** closes off the noun phrase, so other words can follow it.  A clause sitting after *A* cannot do this, which is sometimes reason enough to prefer **rite**.
 

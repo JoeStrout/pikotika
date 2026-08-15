@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-574 terms
+579 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -99,6 +99,8 @@
 | coffee | black-drink | neropipe | 黒飲 |
 | coin | metal-money | metarmoni | 金贝 |
 | collect | group-join | menyunta | 众合 |
+| comic book | picture-many-paper | piturmurkarta | 画多片 |
+| comics | picture-many-paper | piturmurkarta | 画多片 |
 | company | buy-group | komparmen | 買众 |
 | competition | play-fight | yupatar | 玩争 |
 | concert hall | music-home | musikase | 曲户 |
@@ -278,6 +280,7 @@
 | luggage | go-box | irevaso | 行皿 |
 | major | heavy-need | pesaneses | 重要 |
 | make up one's mind | choose-close | erikevin | 选閉 |
+| manga | picture-many-paper | piturmurkarta | 画多片 |
 | margin (of a page) | paper-edge | kartarante | 片边 |
 | mat | earth-cloth | teraropa | 土衣 |
 | match | play-fight | yupatar | 玩争 |
@@ -487,6 +490,7 @@
 | teach | learn-give | impartonar | 学与 |
 | teacher | learn-give-person | impartonaromo | 学与人 |
 | tears | see-water | viteaku | 見水 |
+| television | electric-see | vortovite | 電見 |
 | test (of knowledge) | know-try | sapetentar | 知試 |
 | text | write-say | kitatika | 写言 |
 | that | not-this | nontis | 不此 |
@@ -550,6 +554,7 @@
 | warn | fear-say | timotika | 危言 |
 | warning | fear-say | timotika | 危言 |
 | watch out | fear-see | timovite | 危見 |
+| watch TV | electric-see | vortovite | 電見 |
 | we | self-group | ekomen | 己众 |
 | wear | cloth-have | ropatene | 衣有 |
 | Wednesday | water-weekday | akuyom | 水曜 |
