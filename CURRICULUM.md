@@ -21,8 +21,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | Take care (parting). | good go | **Pona ire.** |
 | Sorry/oops/excuse me. | sorry | **Perton.** |
 | Goodbye. | sorry-out-go | **Pertoneksire.** |
-| Enjoy your meal.  (*bon appétit*) | good food | **Pona komi.** | 好 食. |
-| Take care.  Safe travels. | good go | **Pona ire.** | 好 行. |
+| Enjoy your meal.  (*bon appétit*) | good food | **Pona komi.** |
 
 ### simple copula sentences with RI
 
@@ -76,9 +75,9 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 |---|---|---|
 | little by little, gradually | small after small | **piko tar piko** |
 | I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tuo.** |
-| Good morning. | good up-sun | **Pona suryan.** | 好 上日. |
-| Good evening. | good down-sun | **Pona tunyan.** | 好 下日. |
-| I see (understand.) | I RI see | **Eko ri vite.** | 己 ⊢ 見. |
+| Good morning. | good up-sun | **Pona suryan.** |
+| Good evening. | good down-sun | **Pona tunyan.** |
+| I see (understand.) | I RI see | **Eko ri vite.** |
 
 ### proper nouns
 ### simple modifiers (adjectives)
@@ -139,7 +138,7 @@ black, blue, green, red, white, yellow, grain, sweet, sequence, manner, again, e
 
 ### 45 more compounds (total: 104)
 
-next, recover, recall, repeat, airplane, airport, everyone, everywhere, everything, always, previous, gale, coffee, cyan, brown, Saturday, Tuesday, tan, Friday, Monday, dance, less, Thursday, purple, pink, pig, orange, brother, sister, look like, week, weekend, grey, Sunday, too [much], Wednesday, what time, who, where, when, how, question, rice (white rice), business trip, wheat
+next, recover, repeat, airplane, airport, everyone, everywhere, everything, always, previous, gale, coffee, cyan, brown, Saturday, Tuesday, tan, Friday, Monday, dance, less, Thursday, purple, pink, pig, orange, brother, sister, look like, week, weekend, grey, Sunday, too [much], Wednesday, what time, who, where, when, how, question, rice (white rice), party, wheat, owner
 
 ### 5 more idioms/set phrases (total: 17)
 
@@ -147,17 +146,58 @@ next, recover, recall, repeat, airplane, airport, everyone, everywhere, everythi
 |---|---|---|
 | Time is money. | time RI money | **Tempo ri moni.** |
 | It's a small world. | earth RI small | **Tera ri piko.** |
-| How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
-| All is good. | all RI good | **Pan ri pona.** | 全 ⊢ 好. |
-| I don't know. | I RI not know | **Eko ri non sape.** | 己 ⊢ 不 知. |
+| How are you? | you RI good, what | **Tuo ri pona, ker?** |
+| All is good. | all RI good | **Pan ri pona.** |
+| I don't know. | I RI not know | **Eko ri non sape.** |
 
 ### larger numbers
+
+| English | Gloss | Latin |
+|---|---|---|
+| 20 (twenty) | two ten | **pits tekas** |
+| 30 (thirty) | three ten | **tets tekas** |
+| 45 (forty-five) | four ten five | **wats tekas kins** |
+| 100 (one hundred) | hundred | **katon** |
+| 110 (one hundred ten) | hundred ten | **katon tekas** |
+| 125 (one hundred twenty-five) | hundred two ten five | **katon pits tekas kins** |
+| 2026 (two thousand twenty-six) | two thousand two ten six | **pits kiru pits tekas siks** |
+
 ### colors
 ### days of the week
 ### use of TE to group modifiers
+
+| English | Gloss | Latin |
+|---|---|---|
+| This is a sea creature. | this RI big water TE animal | **Tis ri meka aku te peste.** |
+| She's the owner of a big house. | this-person RI big home TE have-person | **Tisomo ri meka kase te teneomo.** |
+| It's a New Year party. | this RI new year TE play-group | **Tis ri nova anyo te yumen.** |
+
 ### adverbs
+
+| English | Gloss | Latin |
+|---|---|---|
+| Please speak slowly. | please not-fast say | **Pam nonveros tika.** |
+| Please say it again. | please again say | **Pam repe tika.** |
+| You speak Pikotika well. | you RI good say A pikotika | **Tuo ri pona tika a Pikotika.** |
+| I'm just looking. | I RI only see | **Eko ri son vite.** |
+
 ### subordinate clause after A
+
+| English | Gloss | Latin |
+|---|---|---|
+| I want you to come. | I RI want A you RI come | **Eko ri vori a tuo ri veni.** |
+| She says the water is good. | this-person RI say A water RI good | **Tisomo ri tika a aku ri pona.** |
+| I know you're busy. | I RI know A you RI many-work | **Eko ri sape a tuo ri muropus.** |
+
+
 ### detail questions (ker-words)
+
+| English | Gloss | Latin |
+|---|---|---|
+| Where are you going? | you RI go to what-place | **Tuo ri ire ver kerroko?** |
+| What time does the bus leave? | many-person-vehicle RI out-go in what-hour | **Muromokaro ri eksire in kerora?** |
+| Who is the cook? | what-person RI food-make-person | **Keromo ri komivakeomo?** |
+
 
 ---
 ## Level 4
@@ -165,13 +205,55 @@ next, recover, recall, repeat, airplane, airport, everyone, everywhere, everythi
 
 head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electric, picture, rain, city, cold, fear, hard, heavy, bend, line, round, straight, back, edge, become, buy, choose, fight, give, sound, help, learn, necessary, begin, put, remain, sleep, think
 
-### 40 more compounds (total: 139)
+### 45 more compounds (total: 139)
+
+alcohol, autumn, beach, bicycle, book, borrow, bread, caution, cloud, day off, doctor, false, fly, guest, ice cream, menu, number, office, park, pen, price, public transit, return (something), go back, school, ship, shop, should, smile, snow, spicy, spring, summer, sunny, teacher, telephone, television, toy, vegetables, vendor, walk, warn, whatever, winter, work day
 
 ### decimal numbers, fractions, & percent
+
+| English | Gloss | Latin |
+|---|---|---|
+| 1.25 (one point two five) | one part two five | **wun parte pits kins** |
+| 3/4 (three fourths) | three in four | **tets in wats** |
+| 30% (thirty percent) | three ten in-hundred | **tets tekas inkaton** |
+
 ### times and dates
+
+| English | Gloss | Latin |
+|---|---|---|
+| 9 o'clock | nine hour | **noks ora** |
+| 15:45 | ten five hour four ten five | **tekas kins ora wats tekas kins** |
+| 2:00 PM | sun two hour | **yan pits ora** |
+| 10:00 PM | no-sun tekas hour | **nemyan tekas ora** |
+| January | one month | **wun mese** |
+| February | two month | **pits mese** |
+| August 9th | eight month nine day | **ots mese noks yan** |
+
 ### aspect (begin/finish/ongoing actions)
+
+| English | Gloss | Latin |
+|---|---|---|
+| I [begin/began/will begin] eating | I RI food begin | **Eko ri komi apa.** |
+| I [have/had] eaten | I RI food finish | **Eko ri komi vin.** |
+| I [am/was/will be] still eating | I RI food remain. | **Eko ri komi sista.** |
+
 ### counterfactuals
+
+| English | Gloss | Latin |
+|---|---|---|
+| I could have gone. | I RI can go finish | **Eko ri kan ire vin.** |
+| I might have gone. | I RI if go finish | **Eko ri pos ire vin.** |
+| I should have gone. | I RI if-good go finish | **Eko ri pospona ire vin.** |
+| I must have gone. | I RI must go finish | **Eko ri neses ire vin.** |
+
 ### leading relative clauses
+
+| English | Gloss | Latin |
+|---|---|---|
+| Whatever you have, send me that. | you RI have A what-thing, please give A this to me | **Tuo ri tene a kerkosa, pam tonar a tis ver eko.** |
+| Wherever you go, I go. | you RI go to what-place, I RI go to this | **Tuo ri ire ver kerroko, eko ri ire ver tis.** |
+| When Tom eats, he watches TV. | Tom RI food in what-time, this-person RI electric-see | **Tom ri komi in kertempo, tisomo ri vortovite.** |
+
 
 ---
 ## Level 5

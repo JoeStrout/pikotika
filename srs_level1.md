@@ -790,18 +790,6 @@ good food
 ## 好 食.
 good food
 ===
-# Take care.  Safe travels.
----
-# Pona ire.
-## 好 行.
-good go
-===
-# Pona ire.
----
-# Take care.  Safe travels.
-## 好 行.
-good go
-===
 # I'm good.
 ---
 # Eko ri pona.

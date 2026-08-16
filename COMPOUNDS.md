@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-621 terms
+643 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -41,6 +41,7 @@
 | ask for | want-say | voritika | 求言 |
 | astonishment | big-surprise | mekasorpe | 大奇 |
 | at last | in-finish | invin | 内閉 |
+| at what o'clock | what-hour | kerora | 何刻 |
 | athletics | body-play | korpoyu | 体玩 |
 | attend to | think-give | pensatonar | 思与 |
 | attendant | help-person | serviomo | 助人 |
@@ -84,6 +85,7 @@
 | busy | many-work | muropus | 多力 |
 | by the way | other-about | artopi | 別件 |
 | bye | sorry-go | pertonire | 悔行 |
+| call | electric-say | vortotika | 電言 |
 | call to mind | again-know | repesape | 又知 |
 | calm | not-anger | nonraye | 不怒 |
 | careful | fear-see | timovite | 危見 |
@@ -96,6 +98,7 @@
 | chair | put-tool | setauter | 坐工 |
 | change (money returned) | back-money | retsemoni | 反贝 |
 | changing room | cloth-try-room | ropatentarkamar | 衣試室 |
+| chat | small-say | pikotika | 小言 |
 | checkup | heal-try | sanatentar | 医試 |
 | chicken (meat) | bird-meat | aviskarne | 鳥肉 |
 | chili pepper | hot-taste-thing | wosaporkosa | 火味物 |
@@ -128,6 +131,7 @@
 | crossroads | road-join | motoyunta | 方合 |
 | cry | see-water | viteaku | 見水 |
 | curriculum | learn-sequence | imparorten | 学序 |
+| customer | come-person | veniomo | 来人 |
 | cutlery | food-tool | komiuter | 食工 |
 | cyan | blue-green | asurverte | 青緑 |
 | dance | music-go | musiire | 曲行 |
@@ -199,6 +203,7 @@
 | flock | bird-group | avismen | 鳥众 |
 | fly | air-go | ventoire | 风行 |
 | fog | water-air | akuvento | 水风 |
+| food supplies | have-food | tenekomi | 有食 |
 | for this reason | this-reason | tisrason | 此故 |
 | foreign | out-country | eksenasyon | 外国 |
 | forget | know-lose | sapeperti | 知失 |
@@ -214,6 +219,7 @@
 | gather | group-join | menyunta | 众合 |
 | get back | again-get | repetoma | 又取 |
 | get ready | before-make | yervake | 前作 |
+| give back | back-give | retsetonar | 反与 |
 | glass (drinking vessel) | water-box | akuvaso | 水皿 |
 | gluten-free food | no-yellow-grain-food | nemyororisokomi | 无黄米食 |
 | go and get | get-go | tomaire | 取行 |
@@ -230,8 +236,10 @@
 | green light (permission) | green-say | vertetika | 緑言 |
 | grey | stone-color | rapiskoror | 岩色 |
 | grief | big-not-happy | mekanonkonten | 大不楽 |
+| guest | come-person | veniomo | 来人 |
 | gym | heal-go-place | sanaireroko | 医行所 |
 | hallway | go-room | irekamar | 行室 |
+| hand back | back-give | retsetonar | 反与 |
 | harvest | plant-get | arpotoma | 木取 |
 | have on | cloth-have | ropatene | 衣有 |
 | he | this-person | tisomo | 此人 |
@@ -350,6 +358,7 @@
 | office | work-room | opuskamar | 力室 |
 | old (in years) | year-big | anyomeka | 年大 |
 | on that note | near-about | nirtopi | 近件 |
+| on what occasion | what-time | kertempo | 何时 |
 | option | choose-thing | erikekosa | 选物 |
 | orange | red-yellow | rusyoro | 赤黄 |
 | orientation map | help-map | servimapa | 助図 |
@@ -371,7 +380,9 @@
 | percent | in-hundred | inkaton | 内百 |
 | pet | home-animal | kasepeste | 户匹 |
 | pet dog | home-dog | kasekanis | 户犬 |
+| phone | electric-say | vortotika | 電言 |
 | pig | red-white-animal | rusankapeste | 赤白匹 |
+| Pikotika (the language) | small-say | pikotika | 小言 |
 | pink | red-white | rusanka | 赤白 |
 | playground | play-place | yuroko | 玩所 |
 | playhouse | play-home | yukase | 玩户 |
@@ -393,6 +404,7 @@
 | problem | bad-thing | marumkosa | 悪物 |
 | proof | try-true | tentarves | 試真 |
 | proprietor | have-person | teneomo | 有人 |
+| provisions | have-food | tenekomi | 有食 |
 | public transit | line-vehicle | rinekaro | 糸车 |
 | purple | red-blue | rusasur | 赤青 |
 | put in order | sequence-put | ortenseta | 序坐 |
@@ -440,6 +452,7 @@
 | rethink | again-think | repepensa | 又思 |
 | retrieve | again-get | repetoma | 又取 |
 | return | back-go | retsire | 反行 |
+| return (something) | back-give | retsetonar | 反与 |
 | review | again-see | repevite | 又見 |
 | rice (white rice) | white-grain | ankariso | 白米 |
 | ride | vehicle-put | karoseta | 车坐 |
@@ -484,6 +497,7 @@
 | sister | same-parent-woman | samparivema | 同亲女 |
 | slow | not-fast | nonveros | 不早 |
 | slowly | not-fast | nonveros | 不早 |
+| small talk | small-say | pikotika | 小言 |
 | smell | air-taste | ventosapor | 风味 |
 | smile | happy-mouth | kontenpuka | 楽口 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
@@ -507,6 +521,7 @@
 | staff (person) | help-person | serviomo | 助人 |
 | station | vehicle-place | karoroko | 车所 |
 | step (in a procedure) | sequence-part | ortenparte | 序分 |
+| stores | have-food | tenekomi | 有食 |
 | storm | big-rain | mekaruva | 大雨 |
 | story | say-thing | tikakosa | 言物 |
 | strong wind | big-air | mekavento | 大风 |
@@ -527,6 +542,7 @@
 | teach | learn-give | impartonar | 学与 |
 | teacher | learn-give-person | impartonaromo | 学与人 |
 | tears | see-water | viteaku | 見水 |
+| telephone | electric-say | vortotika | 電言 |
 | television | electric-see | vortovite | 電見 |
 | test (of knowledge) | know-try | sapetentar | 知試 |
 | text | write-say | kitatika | 写言 |
@@ -573,8 +589,11 @@
 | turnstile | money-door | moniporta | 贝門 |
 | ugly | bad-see | marumvite | 悪見 |
 | umbrella | rain-tool | ruvauter | 雨工 |
+| unfortunate | bad-if | marumpos | 悪可 |
+| unfortunately | bad-if | marumpos | 悪可 |
 | unfriendly person | cold-person | rikusomo | 冷人 |
 | unhelpful | not-help-give | nonservitonar | 不助与 |
+| unlucky | bad-if | marumpos | 悪可 |
 | until | straight-to | retover | 直向 |
 | untrue | not-true | nonves | 不真 |
 | up to (in time) | straight-to | retover | 直向 |
@@ -584,6 +603,7 @@
 | vegetarian | not-meat-food-person | nonkarnekomiomo | 不肉食人 |
 | vendor | buy-person | komparomo | 買人 |
 | verify | try-true | tentarves | 試真 |
+| visitor | come-person | veniomo | 来人 |
 | vote | choose-say | eriketika | 选言 |
 | voyage | far-come-go | ronveniire | 遠来行 |
 | wait a while | time-remain | temposista | 时止 |
@@ -607,10 +627,12 @@
 | west | map-left | mapasini | 図左 |
 | wet season | rain-time | ruvatempo | 雨时 |
 | what time | what-hour | kerora | 何刻 |
+| whatever | what-thing | kerkosa | 何物 |
 | wheat | yellow-grain | yororiso | 黄米 |
 | wheat bread | yellow-grain-food | yororisokomi | 黄米食 |
 | when | what-time | kertempo | 何时 |
 | where | what-place | kerroko | 何所 |
+| whichever thing | what-thing | kerkosa | 何物 |
 | who | what-person | keromo | 何人 |
 | why | what-reason | kerrason | 何故 |
 | win | up-become | surtiven | 上成 |

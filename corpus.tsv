@@ -338,7 +338,7 @@ The teacher said Mary was a well-balanced child who got on well at school.	learn
 Did you ever travel abroad by ship?	you RI come-go to out-country in water-vehicle manner finish, what?	Tuo ri veniire ver eksenasyon in akukaro moto vin, ker?	尔 ⊢ 来行 向 外国 内 水车 方 閉, 何?	5
 Tom can't remember where he put his wallet.	Tom RI not can know-have A this-person RI put A money-box in what-place.	Tom ri non kan sapetene a tisomo ri seta a monivaso in kerroko.	Tom ⊢ 不 能 知有 ⇒ 此人 ⊢ 坐 ⇒ 贝皿 内 何所.	4
 Tom likes to watch TV while he eats.	Tom RI like A electric-see in food-time.	Tom ri kusta a vortovite in komitempo.	Tom ⊢ 愛 ⇒ 電見 内 食时.	4
-When Tom eats, he watches TV.	Tom RI food in what-hour, this-person RI electric-see.	Tom ri komi in kerora, tisomo ri vortovite.	Tom ⊢ 食 内 何刻, 此人 ⊢ 電見.	4
+When Tom eats, he watches TV.	Tom RI food in what-time, this-person RI electric-see.	Tom ri komi in kertempo, tisomo ri vortovite.	Tom ⊢ 食 内 何时, 此人 ⊢ 電見.	4
 I want to try eating meat.	I RI want A try A food A meat.	Eko ri vori a tentar a komi a karne.	己 ⊢ 求 ⇒ 試 ⇒ 食 ⇒ 肉.	4
 I like to read comic books.	I RI like A write-see A picture-many-page.	Eko ri kusta a kitavite a piturmurkarta.	己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.	4
 How old are you?	you year-interval RI what?	Tuo anyoturan ri ker?	尔 年間 ⊢ 何?	3
@@ -369,3 +369,8 @@ Iced tea, please.	cold-plant-water, please.	Rikusarpoaku, pam.	冷木水, 乞.	4
 It is snowing.	RI cold-rain.	Ri rikusruva.	⊢ 冷雨.	4
 I like my present job.	I RI like A me this work.	Eko ri kusta a eko tis opus.	己 ⊢ 愛 ⇒ 己 此 力.	2
 From now on, please tell me sooner.	from this-time, please more fast say to me.	Vons tistempo, pam mas veros tika ver eko.	从 此时, 乞 更 早 言 向 己.	2
+I am tired. I need to go to bed!	I RI tired. I RI must sleep!	Eko ri kansa. eko ri neses tormi!	己 ⊢ 疲. 己 ⊢ 要 床!	5
+I need to charge my phone.	I RI must sleep A me electric-say.	Eko ri neses tormi a eko vortotika.	己 ⊢ 要 床 ⇒ 己 電言.	4
+Unfortunately, the food supplies gave out before the end of winter.	bad-if, cold-time-finish before, have-food RI finish.	Marumpos, rikustempovin yer, tenekomi ri vin.	悪可, 冷时閉 前, 有食 ⊢ 閉.	4
+Why do I have to tell them?	I RI must say to not-this-person, what-reason?	Eko ri neses tika ver nontisomo, kerrason?	己 ⊢ 要 言 向 不此人, 何故?	4
+Please return the book when you have finished reading it.	you RI write-see A many-page finish in what-time, please back-give A this.	Tuo ri kitavite a murkarta vin in kertempo, pam retsetonar a tis.	尔 ⊢ 写見 ⇒ 多片 閉 内 何时, 乞 反与 ⇒ 此.	4

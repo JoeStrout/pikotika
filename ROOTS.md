@@ -116,7 +116,7 @@
 | salt; salty | sares | 塩 | salt, savory mineral |
 | stone; mineral | rapis | 岩 | stone, rock, mineral, hard natural material |
 
-## Nature (11)
+## Nature (12)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
@@ -124,6 +124,7 @@
 | animal; creature | peste | 匹 | animal, beast, creature (generic head) |
 | bird | avis | 鳥 | bird, fowl |
 | bug; worm | inses | 虫 | insect, bug, spider, worm — small many-legged creature |
+| cold; ice | rikus | 冷 | cold, cool, chilled, ice, frozen |
 | dog; canine | kanis | 犬 | dog, canine — includes wolf, fox, coyote |
 | earth; ground | tera | 土 | ground, land, soil, floor, dirt |
 | hot; fire | wo | 火 | fire, burn, heat, hot |
@@ -167,14 +168,13 @@
 | music; song | musi | 曲 | music, song, melody |
 | temple; church | temper | 寺 | temple, shrine, church, sacred place |
 
-## Qualities (13)
+## Qualities (12)
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | bad; wrong | marum | 悪 | bad, poor, unpleasant, wrong |
 | big; very | meka | 大 | big, large, great, intense, very |
 | clean; pure | puru | 清 | clean, pure, washed |
-| cold; ice | rikus | 冷 | cold, cool, chilled, ice, frozen |
 | fast; soon | veros | 早 | fast, quick, rapid, soon |
 | fear; danger | timo | 危 | fear, afraid, danger, worry |
 | good; pleasant | pona | 好 | good, well, fine, pleasant |
@@ -190,21 +190,21 @@
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
 | amount; degree | mesur | 寸 | measure, amount, degree, extent, quantity, count |
-| eight; 8 | ots | 8 | eight, 8 |
-| five; 5 | kins | 5 | five, 5 |
-| four; 4 | wats | 4 | four, 4 |
-| hundred; 100 | katon | 百 | hundred, 100, hundreds place |
 | many; much | mur | 多 | many, much, lots, 6+ |
-| million; 1000000 | miron | 兆 | million, 1000000, millions place |
-| nine; 9 | noks | 9 | nine, 9 |
 | no; none | nem | 无 | zero, none, absent |
 | one; 1 | wun | 一 | one, single, first, alone, the very |
-| seven; 7 | sens | 7 | seven, 7 |
-| six; 6 | siks | 6 | six, 6 |
-| ten; 10 | tekas | 十 | ten, 10, tens place |
-| thousand; 1000 | kiru | 千 | thousand, 1000, thousands place |
-| three; 3 | tets | 3 | three, 3 |
 | two; 2 | pits | 2 | two, 2, pair, both |
+| three; 3 | tets | 3 | three, 3 |
+| four; 4 | wats | 4 | four, 4 |
+| five; 5 | kins | 5 | five, 5 |
+| six; 6 | siks | 6 | six, 6 |
+| seven; 7 | sens | 7 | seven, 7 |
+| eight; 8 | ots | 8 | eight, 8 |
+| nine; 9 | noks | 9 | nine, 9 |
+| ten; 10 | tekas | 十 | ten, 10, tens place |
+| hundred; 100 | katon | 百 | hundred, 100, hundreds place |
+| thousand; 1000 | kiru | 千 | thousand, 1000, thousands place |
+| million; 1000000 | miron | 兆 | million, 1000000, millions place |
 
 ## Shape (5)
 

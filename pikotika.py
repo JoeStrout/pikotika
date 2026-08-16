@@ -185,6 +185,8 @@ class Tables:
         self.names = {}           # english name -> form
         self.form2name = {}       # form, case-folded -> english name
         self.name_forms = {}      # form, exactly as written -> english name
+        self.compound_roots = {}  # gloss -> [root gloss, ...]
+        self.corpus = []          # corpus.tsv rows, in file order
         self._load(directory)
 
     def _load(self, d):
@@ -233,6 +235,14 @@ class Tables:
                         self.compounds.setdefault(head, r["gloss"])
                     self.compound_by_gloss.setdefault(
                         r["gloss"], []).append(english)
+                roots = self.gloss_roots(r["gloss"])
+                if roots:
+                    self.compound_roots[r["gloss"]] = roots
+
+        corpus_path = os.path.join(d, "corpus.tsv")
+        if os.path.exists(corpus_path):
+            with open(corpus_path, encoding="utf-8") as fh:
+                self.corpus = list(csv.DictReader(fh, **TSV))
 
         names_path = os.path.join(d, "names.tsv")
         if os.path.exists(names_path):
@@ -262,6 +272,22 @@ class Tables:
         if key in self.gloss2root and not self.is_particle(key):
             return key
         return self.alias2gloss.get(key)
+
+    def gloss_roots(self, word):
+        """One gloss word as its list of primary root glosses, or None.
+
+        None for anything that is not roots all the way through -- a name, a
+        numeral, a word with a typo -- since those are what the index of roots
+        below has nothing to say about.
+        """
+        roots = []
+        for piece in word.strip("".join(PUNCT)).split("-"):
+            gloss = self.root_gloss(piece) or (
+                piece if piece in PARTICLE_GLOSS else None)
+            if gloss is None:
+                return None
+            roots.append(gloss)
+        return roots or None
 
     def form_of(self, gloss):
         return self.gloss2root[gloss]["form"]
@@ -808,7 +834,12 @@ def english_match(words, t):
     hits = list(t.compound_by_gloss.get(gloss, []))
     if len(word) == 1 and gloss in t.gloss2root:
         root = t.gloss2root[gloss]
-        hits.append("%s  (root: %s)" % (root["gloss"], root["covers"]))
+        # A learner memorizes both glosses, so a lookup shows both -- one keyword
+        # only ever points at part of a root's range.  Some rows carry only the
+        # primary (the particles, and a few roots such as `blue`).
+        names = "; ".join(g for g in (root["gloss"],
+                                      (root.get("gloss2") or "").strip()) if g)
+        hits.append("%s  (root: %s)" % (names, root["covers"]))
     return hits
 
 
@@ -832,6 +863,83 @@ def max_level(words, t):
     return "%s (%s)" % (top, ", ".join(at_top))
 
 
+# A common root is in dozens of compounds and hundreds of sentences, so both
+# lists are capped and the rest is counted.  The point of these sections is to
+# show the word in use, and a handful of uses does that as well as all of them.
+COMPOUND_LIMIT = 24
+SENTENCE_LIMIT = 6
+
+
+def query_roots(words, t):
+    """The roots a one-word query is made of, or None if it is not one word.
+
+    Anything longer is a phrase, and looking for a phrase inside the lexicon
+    finds nothing useful; names and numerals index nothing.
+    """
+    words = [w for w in expand_numerals(words) if not is_punct(w)]
+    if len(words) != 1 or any(isinstance(g, tuple) for g in words[0]):
+        return None
+    return list(words[0])
+
+
+def contains_run(haystack, needle):
+    """Does `needle` appear in `haystack` as a contiguous run of elements?
+
+    Roots, not characters: **moni** 'money' does not contain **wun** 'one' just
+    because *money* spells *one* -- the glosses are what the query names.
+    """
+    return any(haystack[i:i + len(needle)] == needle
+               for i in range(len(haystack) - len(needle) + 1))
+
+
+def compound_hits(roots, t):
+    """(latin, english) for every compound built around `roots`, minus itself."""
+    hits = []
+    for gloss, parts in t.compound_roots.items():
+        if parts != roots and contains_run(parts, roots):
+            hits.append((join_latin([t.form_of(g) for g in parts]),
+                         "; ".join(t.compound_by_gloss.get(gloss, []))))
+    return sorted(hits)
+
+
+def sentence_hits(roots, t):
+    """(latin, english) for every corpus sentence using `roots`, in file order."""
+    hits = []
+    for row in t.corpus:
+        for word in row["gloss"].split():
+            parts = t.gloss_roots(word)
+            if parts and contains_run(parts, roots):
+                hits.append((row["latin"], row["EN"]))
+                break
+    return hits
+
+
+def more(hits, limit):
+    """The note that stands in for whatever the limit cut off."""
+    return [] if len(hits) <= limit else \
+        ["    ... and %d more" % (len(hits) - limit)]
+
+
+def usage_lines(words, t):
+    """The `Compounds:` and `Sentences:` sections, for a query that is one word."""
+    roots = query_roots(words, t)
+    if roots is None:
+        return []
+    lines = []
+    compounds = compound_hits(roots, t)
+    if compounds:
+        lines.append("  Compounds:")
+        lines += ["    %s — %s" % hit for hit in compounds[:COMPOUND_LIMIT]]
+        lines += more(compounds, COMPOUND_LIMIT)
+    sentences = sentence_hits(roots, t)
+    if sentences:
+        lines.append("  Sentences:")
+        for latin, english in sentences[:SENTENCE_LIMIT]:
+            lines += ["    " + latin, "      " + english]
+        lines += more(sentences, SENTENCE_LIMIT)
+    return lines
+
+
 def lookup(text, t):
     fail = {}
     words, source = parse(text, t, fail)
@@ -850,7 +958,7 @@ def lookup(text, t):
     hits = english_match(words, t)
     if hits:
         lines.append("  EN:    " + "; ".join(hits))
-    return lines
+    return lines + usage_lines(words, t)
 
 
 def main(argv):

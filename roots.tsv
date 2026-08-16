@@ -77,6 +77,7 @@ air	wind	Nature	air, wind, breath, gas, sky, weather	vento	风	*vento, wind, ven
 animal	creature	Nature	animal, beast, creature (generic head)	peste	匹	*beast, bestia*	4	17	2
 bird		Nature	bird, fowl	avis	鳥	Latin avis	11	2	5
 bug	worm	Nature	insect, bug, spider, worm — small many-legged creature	inses	虫	Spanish insecto	6	0	5
+cold	ice	Nature	cold, cool, chilled, ice, frozen	rikus	冷	Latin *frigus*, *refrigerate*	7	4	4
 dog	canine	Nature	dog, canine — includes wolf, fox, coyote	kanis	犬	Latin canis	4	6	5
 earth	ground	Nature	ground, land, soil, floor, dirt	tera	土	*terra, terrain*	3	9	3
 hot	fire	Nature	fire, burn, heat, hot	wo	火	Mandarin 火 *huo*; Japanese 火 *ho*	4	14	3
@@ -107,7 +108,6 @@ temple	church	Places, arts, appearance	temple, shrine, church, sacred place	temp
 bad	wrong	Qualities	bad, poor, unpleasant, wrong	marum	悪	Latin malum	11	8	2
 big	very	Qualities	big, large, great, intense, very	meka	大	*mega-*	3	30	1
 clean	pure	Qualities	clean, pure, washed	puru	清	Latin purus	11	0	5
-cold	ice	Qualities	cold, cool, chilled, ice, frozen	rikus	冷	Latin *frigus*, *refrigerate*	7	4	4
 fast	soon	Qualities	fast, quick, rapid, soon	veros	早	Spanish veloz; Latin celer	6	6	2
 fear	danger	Qualities	fear, afraid, danger, worry	timo	危	*timor, timid*	6	6	4
 good	pleasant	Qualities	good, well, fine, pleasant	pona	好	*bueno, bonus, buono*	6	40	1

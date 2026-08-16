@@ -99,7 +99,7 @@ And, the named powers of ten:
 | thousand | **kiru** |
 | million | **miron** |
 
-The number reading system is very similar to English and Romance languages, and similar to Japanese.  The only difference from English is that while English (and related languages) have unique words for 11-19 as well as 20, 30, 40, etc., Pikotika uses a simple and regular pattern: 20 is "two tens", 30 is "three tens", and so on.
+The number reading system is very similar to English and Romance languages, and similar to Japanese.  The only difference from English is that while English (and related languages) have unique words for 11-19 as well as 20, 30, 40, etc., Pikotika uses a simple and regular pattern: 20 is "two tens", 30 is "three tens", and so on.  (The only difference from Japanese is that it groups in thousands and millions rather than ten-thousands.)
 
 | Value | Reading |
 |---|---|
@@ -107,11 +107,12 @@ The number reading system is very similar to English and Romance languages, and 
 | 20 | **pits tekas** |
 | 35 | **tets tekas kins** |
 
-As numbers get larger, you just do the same thing, making use of **katon** (hundred), **kiru** (thousand), and **miron** (million) as needed.
+As numbers get larger, you just do the same thing, making use of **katon** (hundred), **kiru** (thousand), and **miron** (million) as needed.  Note that you can omit **wun** before a power of ten.
 
 | Value | Reading |
 |---|---|
 | 500 | **kins katon** |
+| 510 | **kins katon tekas** |
 | 678 | **siks katon sens tekas ots** |
 | 12345 | **tekas pits kiru, tets katon wats tekas kins** |
 
@@ -210,6 +211,8 @@ You name a calendar year in Pikotika with the year number plus **anyo** (年, 'y
 Months use the same pattern: rather than having unique names, as in English, months are simply numbered from 1 to 12, followed by **mese** (月, 'month').  So **1 mese** (also written 1月, and read **wun mese**) is January, **2 mese** (2月, **pits mese**) is February, etc.
 
 Do the same for days of the month, using **yan** (日, 'day'): write **1 yan** through **31 yan** (1日 to 31日 in Han form).
+
+A month name stays two words; it is not written solid as a compound.  So **pits mese** is February, and 'for two months' is **pits mese turan** -- **turan** is what marks a length of time, exactly as it does everywhere else (see Telling Time above), so there is nothing for a compound to disambiguate.
 
 To specify a date or partial date, just write these out in year, month, day order.  As a shortcut for full dates when using Latin form, you can also separate the numbers with hyphens (i.e. ISO date format).  The examples below show the possible ways to write "August 9th", "August 2026", and "August 9th, 2026".
 
