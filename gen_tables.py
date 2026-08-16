@@ -80,17 +80,23 @@ def group_roots(rows):
     return groups
 
 
+def glosses(row):
+    """Both glosses of a root, as `gloss; gloss2` (`gloss` alone if bare)."""
+    return '; '.join(g for g in ((row.get('gloss') or '').strip(),
+                                 (row.get('gloss2') or '').strip()) if g)
+
+
 def render_roots(groups):
     total = sum(len(rows) for _, rows in groups)
     out = ['# Pikotika Roots', '',
            f'{total} entries in {len(groups)} groups.', '']
     for category, rows in groups:
         out += [f'## {category} ({len(rows)})', '']
-        # both glosses: a learner memorizes the pair, and either one may be
-        # written in gloss notation (see DETAILS.md, "Gloss")
-        out += table(['Gloss', 'Gloss 2', 'Latin', 'Han', 'Covers'],
-                     [(r.get('gloss'), r.get('gloss2'), r.get('form'),
-                       r.get('han'), r.get('covers')) for r in rows])
+        # both glosses in one cell: a learner memorizes the pair, and either
+        # one may be written in gloss notation (see DETAILS.md, "Gloss")
+        out += table(['Gloss', 'Latin', 'Han', 'Covers'],
+                     [(glosses(r), r.get('form'), r.get('han'),
+                       r.get('covers')) for r in rows])
         out.append('')
     return '\n'.join(out)
 

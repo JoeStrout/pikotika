@@ -118,21 +118,21 @@ new	fresh	Qualities	new, young, recent, fresh	nova	初	*nova, nuevo, novel*	7	8	
 old	former	Qualities	old, aged, former, past	vetus	古	Latin vetus; Latin antiquus	5	2	5
 small	slight	Qualities	small, little, slight, minor	piko	小	*pico-*	3	23	1
 amount	degree	Quantity	measure, amount, degree, extent, quantity, count	mesur	寸	French *mesure*, Spanish *mesura*, English *measure*, Latin *mensura*	3	9	3
-eight	8	Quantity	eight, 8	ots	8	Latin *octo*, Italian *otto*, Portuguese *oito*		0	2
-five	5	Quantity	five, 5	kins	5	Latin *quinque* (quintet, quintuple)		1	2
-four	4	Quantity	four, 4	wats	4	Latin *quattuor*, Spanish *cuatro* — /kw/ is an illegal onset, so /w/ carries it		2	2
-hundred	100	Quantity	hundred, 100, hundreds place	katon	百	Greek *hekaton* less the unstressed *he-* (hecatomb); *hekto-* is unwritable — no /h/, and /kt/ is an illegal coda	6	2	3
 many	much	Quantity	many, much, lots, 6+	mur	多	*multi-*	6	10	3
-million	1000000	Quantity	million, 1000000, millions place	miron	兆	Latin *milione*, Spanish *millon*, French *million*; *mega* is unavailable — meka is already big	6	0	3
-nine	9	Quantity	nine, 9	noks	9	Latin *novem*, Italian *nove*, Spanish *nueve*		0	2
 no	none	Quantity	zero, none, absent	nem	无	Latin *nemo* "no one"	4	15	2
 one	1	Quantity	one, single, first, alone, the very	wun	一	English *one*, Spanish *uno*	1	1	1
-seven	7	Quantity	seven, 7	sens	7	Latin *septem*, French *sept*, Italian *sette*		4	2
-six	6	Quantity	six, 6	siks	6	Latin *sex*, French/English *six*, Spanish *seis*		0	2
-ten	10	Quantity	ten, 10, tens place	tekas	十	Greek *dekas* (a group of ten), *deka-* — decade, decathlon; *deka* itself is blocked by tera and meka	2	0	2
-thousand	1000	Quantity	thousand, 1000, thousands place	kiru	千	Greek *khilioi*, metric *kilo-*; *kiro* is blocked by viro and karo	3	1	3
-three	3	Quantity	three, 3	tets	3	Latin *tres*, Spanish *tres*, Italian *tre*		2	2
 two	2	Quantity	two, 2, pair, both	pits	2	Latin *bis*, international *bi-* (bicycle, binary)		1	1
+three	3	Quantity	three, 3	tets	3	Latin *tres*, Spanish *tres*, Italian *tre*		2	2
+four	4	Quantity	four, 4	wats	4	Latin *quattuor*, Spanish *cuatro* — /kw/ is an illegal onset, so /w/ carries it		2	2
+five	5	Quantity	five, 5	kins	5	Latin *quinque* (quintet, quintuple)		1	2
+six	6	Quantity	six, 6	siks	6	Latin *sex*, French/English *six*, Spanish *seis*		0	2
+seven	7	Quantity	seven, 7	sens	7	Latin *septem*, French *sept*, Italian *sette*		4	2
+eight	8	Quantity	eight, 8	ots	8	Latin *octo*, Italian *otto*, Portuguese *oito*		0	2
+nine	9	Quantity	nine, 9	noks	9	Latin *novem*, Italian *nove*, Spanish *nueve*		0	2
+ten	10	Quantity	ten, 10, tens place	tekas	十	Greek *dekas* (a group of ten), *deka-* — decade, decathlon; *deka* itself is blocked by tera and meka	2	0	2
+hundred	100	Quantity	hundred, 100, hundreds place	katon	百	Greek *hekaton* less the unstressed *he-* (hecatomb); *hekto-* is unwritable — no /h/, and /kt/ is an illegal coda	6	2	3
+thousand	1000	Quantity	thousand, 1000, thousands place	kiru	千	Greek *khilioi*, metric *kilo-*; *kiro* is blocked by viro and karo	3	1	3
+million	1000000	Quantity	million, 1000000, millions place	miron	兆	Latin *milione*, Spanish *millon*, French *million*; *mega* is unavailable — meka is already big	6	0	3
 bend	turn	Shape	bend, curve, turn, fold, corner, angle	kurva	弓	Latin curvus	3	4	4
 flat	level	Shape	flat, level, plane, sheet	yano	平	Spanish llano, Latin planus	5	2	5
 line	thread	Shape	line, thread, string, rope, wire	rine	糸	Latin linea	6	8	4
