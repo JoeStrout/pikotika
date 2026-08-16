@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-593 terms
+621 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -25,20 +25,22 @@
 | alert | fear-say | timotika | 危言 |
 | allergy | body-not-agree | korpononakor | 体不約 |
 | alternative | choose-thing | erikekosa | 选物 |
-| always | all-time | pantempo | 全时 |
+| always | every-time | pantempo | 全时 |
 | annoyance | small-anger | pikoraye | 小怒 |
 | another person | other-person | aromo | 別人 |
 | answer | back-say | retsetika | 反言 |
 | anticipate | not-surprise | nonsorpe | 不奇 |
+| anything else | other-thing | arkosa | 別物 |
 | anyway | other-about | artopi | 別件 |
 | argue | say-fight | tikapatar | 言争 |
 | army | fight-group | patarmen | 争众 |
 | arrange | before-make | yervake | 前作 |
 | arrange | sequence-put | ortenseta | 序坐 |
+| ascend | up-go | surire | 上行 |
 | ask | what-say | kertika | 何言 |
 | ask for | want-say | voritika | 求言 |
 | astonishment | big-surprise | mekasorpe | 大奇 |
-| at last | in-close | invin | 内閉 |
+| at last | in-finish | invin | 内閉 |
 | athletics | body-play | korpoyu | 体玩 |
 | attend to | think-give | pensatonar | 思与 |
 | attendant | help-person | serviomo | 助人 |
@@ -47,7 +49,7 @@
 | author | write-person | kitaomo | 写人 |
 | autumn | fruit-time | pomotempo | 果时 |
 | baggage | go-box | irevaso | 行皿 |
-| ballot | choose-paper | erikekarta | 选片 |
+| ballot | choose-page | erikekarta | 选片 |
 | banana | long-yellow-fruit | ronkayoropomo | 长黄果 |
 | be defeated | not-up-become | nonsurtiven | 不上成 |
 | be dressed in | cloth-have | ropatene | 衣有 |
@@ -59,9 +61,10 @@
 | beer (any grain alcohol) | grain-fire-water | risowoaku | 米火水 |
 | beige | grain-color | risokoror | 米色 |
 | bicycle | leg-vehicle | kampakaro | 足车 |
+| black market | black-buy-place | nerokomparroko | 黒買所 |
 | blunt | straight-say | retotika | 直言 |
 | boat | water-vehicle | akukaro | 水车 |
-| book | many-paper | murkarta | 多片 |
+| book | many-page | murkarta | 多片 |
 | booking | before-agree | yerakor | 前約 |
 | border (of a country) | country-edge | nasyonrante | 国边 |
 | borrow | interval-get | turantoma | 間取 |
@@ -74,6 +77,7 @@
 | brother | same-parent-man | sampariviro | 同亲男 |
 | brown | earth-color | terakoror | 土色 |
 | bus | many-person-vehicle | muromokaro | 多人车 |
+| business card | name-page | nomenkarta | 名片 |
 | business day | work-sun | opusyan | 力日 |
 | business plan | buy-group-map | komparmenmapa | 買众図 |
 | business trip | work-come-go | opusveniire | 力来行 |
@@ -93,7 +97,8 @@
 | change (money returned) | back-money | retsemoni | 反贝 |
 | changing room | cloth-try-room | ropatentarkamar | 衣試室 |
 | checkup | heal-try | sanatentar | 医試 |
-| chili pepper | fire-taste-thing | wosaporkosa | 火味物 |
+| chicken (meat) | bird-meat | aviskarne | 鳥肉 |
+| chili pepper | hot-taste-thing | wosaporkosa | 火味物 |
 | choice | choose-thing | erikekosa | 选物 |
 | cinema | picture-home | piturkase | 画户 |
 | circle | round-line | rotunrine | 丸糸 |
@@ -103,8 +108,8 @@
 | coffee | black-drink | neropipe | 黒飲 |
 | coin | metal-money | metarmoni | 金贝 |
 | collect | group-join | menyunta | 众合 |
-| comic book | picture-many-paper | piturmurkarta | 画多片 |
-| comics | picture-many-paper | piturmurkarta | 画多片 |
+| comic book | picture-many-page | piturmurkarta | 画多片 |
+| comics | picture-many-page | piturmurkarta | 画多片 |
 | company | buy-group | komparmen | 買众 |
 | competition | play-fight | yupatar | 玩争 |
 | concert hall | music-home | musikase | 曲户 |
@@ -112,14 +117,15 @@
 | congee | water-grain | akuriso | 水米 |
 | contest | play-fight | yupatar | 玩争 |
 | cook (person) | food-make-person | komivakeomo | 食作人 |
+| corner (of a street) | bend-place | kurvaroko | 弓所 |
 | corporation | buy-group | komparmen | 買众 |
 | corridor | go-room | irekamar | 行室 |
-| cost | money-measure | monimesur | 贝寸 |
+| cost | money-amount | monimesur | 贝寸 |
 | course of study | learn-sequence | imparorten | 学序 |
-| courtesy | please-way | pammoto | 乞方 |
+| courtesy | please-manner | pammoto | 乞方 |
 | cow | milk-animal | ratenpeste | 乳匹 |
 | crime | not-law-work | nonrekeopus | 不法力 |
-| crossroads | way-join | motoyunta | 方合 |
+| crossroads | road-join | motoyunta | 方合 |
 | cry | see-water | viteaku | 見水 |
 | curriculum | learn-sequence | imparorten | 学序 |
 | cutlery | food-tool | komiuter | 食工 |
@@ -127,16 +133,16 @@
 | dance | music-go | musiire | 曲行 |
 | day off | not-work-sun | nonopusyan | 不力日 |
 | decimal point | part | parte | 分 |
-| decision | choose-close | erikevin | 选閉 |
+| decision | choose-finish | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
-| digit | measure-say | mesurtika | 寸言 |
+| digit | amount-say | mesurtika | 寸言 |
 | directory map | help-map | servimapa | 助図 |
 | discover | new-see | novavite | 初見 |
 | disk | flat-round | yanorotun | 平丸 |
 | disordered | not-sequence | nonorten | 不序 |
 | do again | again-make | repevake | 又作 |
 | doctor | heal-person | sanaomo | 医人 |
-| document (written) | write-paper | kitakarta | 写片 |
+| document (written) | write-page | kitakarta | 写片 |
 | door handle | door-hand | portamanu | 門手 |
 | downpour | big-rain | mekaruva | 大雨 |
 | draw (in a contest) | same-become | samtiven | 同成 |
@@ -151,18 +157,19 @@
 | electric light | electric-sun | vortoyan | 電日 |
 | electronic map | electric-map | vortomapa | 電図 |
 | ellipse | long-round | ronkarotun | 长丸 |
+| elsewhere | other-place | arroko | 別所 |
 | enemy | not-friend | nonami | 不朋 |
-| essential | heavy-need | pesaneses | 重要 |
+| essential | heavy-necessary | pesaneses | 重要 |
 | evening | down-sun | tunyan | 下日 |
-| eventually | in-close | invin | 内閉 |
-| everybody | all-person | panomo | 全人 |
-| everyone | all-person | panomo | 全人 |
-| everything | all-thing | pankosa | 全物 |
-| everywhere | all-place | panroko | 全所 |
+| eventually | in-finish | invin | 内閉 |
+| everybody | every-person | panomo | 全人 |
+| everyone | every-person | panomo | 全人 |
+| everything | every-thing | pankosa | 全物 |
+| everywhere | every-place | panroko | 全所 |
 | evidence | try-true | tentarves | 試真 |
 | exam | know-try | sapetentar | 知試 |
 | examination (medical) | heal-try | sanatentar | 医試 |
-| excessively | up-measure | surmesur | 上寸 |
+| excessively | up-degree | surmesur | 上寸 |
 | exercise | heal-go | sanaire | 医行 |
 | expect | not-surprise | nonsorpe | 不奇 |
 | expedition | fear-come-go | timoveniire | 危来行 |
@@ -174,13 +181,13 @@
 | fall | fruit-time | pomotempo | 果时 |
 | false | not-true | nonves | 不真 |
 | father | man-parent | viropari | 男亲 |
-| fee | money-measure | monimesur | 贝寸 |
+| fee | money-amount | monimesur | 贝寸 |
 | fetch | get-go | tomaire | 取行 |
 | fewer | not-more | nonmas | 不更 |
 | fifth (in a series) | five-sequence | kinsorten | 5序 |
 | fighter | fight-person | pataromo | 争人 |
-| final | close-sequence | vinorten | 閉序 |
-| finally | in-close | invin | 内閉 |
+| final | finish-sequence | vinorten | 閉序 |
+| finally | in-finish | invin | 内閉 |
 | find something new | new-see | novavite | 初見 |
 | firm | buy-group | komparmen | 買众 |
 | first (in a series) | one-sequence | wunorten | 一序 |
@@ -188,6 +195,9 @@
 | fitting room | cloth-try-room | ropatentarkamar | 衣試室 |
 | flat bread | flat-grain-food | yanorisokomi | 平米食 |
 | flatterer | sweet-mouth | tukepuka | 甘口 |
+| flight | air-go | ventoire | 风行 |
+| flock | bird-group | avismen | 鳥众 |
+| fly | air-go | ventoire | 风行 |
 | fog | water-air | akuvento | 水风 |
 | for this reason | this-reason | tisrason | 此故 |
 | foreign | out-country | eksenasyon | 外国 |
@@ -209,12 +219,15 @@
 | go and get | get-go | tomaire | 取行 |
 | go back | back-go | retsire | 反行 |
 | go by vehicle | vehicle-put | karoseta | 车坐 |
+| go up | up-go | surire | 上行 |
+| go-ahead | green-say | vertetika | 緑言 |
 | goat | small-milk-animal | pikoratenpeste | 小乳匹 |
 | good luck | good-if | ponapos | 好可 |
 | good-hearted | good-feel | ponasenti | 好心 |
 | good-looking | good-see | ponavite | 好見 |
 | goodbye | sorry-out-go | pertoneksire | 悔外行 |
 | gravel | small-stone | pikorapis | 小岩 |
+| green light (permission) | green-say | vertetika | 緑言 |
 | grey | stone-color | rapiskoror | 岩色 |
 | grief | big-not-happy | mekanonkonten | 大不楽 |
 | gym | heal-go-place | sanaireroko | 医行所 |
@@ -222,8 +235,10 @@
 | harvest | plant-get | arpotoma | 木取 |
 | have on | cloth-have | ropatene | 衣有 |
 | he | this-person | tisomo | 此人 |
+| headache | head-sick | testamara | 头病 |
 | hello | happy-meet | kontensarve | 楽会 |
 | hello (someone new) | new-meet | novasarve | 初会 |
+| help out | hand-give | manutonar | 手与 |
 | helper | help-person | serviomo | 助人 |
 | helpful | help-give | servitonar | 助与 |
 | helpless | not-help | nonservi | 不助 |
@@ -234,39 +249,44 @@
 | holiday | play-come-go | yuveniire | 玩来行 |
 | honest | straight-say | retotika | 直言 |
 | hoop | round-line | rotunrine | 丸糸 |
+| horse | vehicle-animal | karopeste | 车匹 |
 | hotel | sleep-home | tormikase | 床户 |
-| how | what-way | kermoto | 何方 |
+| how | what-manner | kermoto | 何方 |
 | hungry | food-want | komivori | 食求 |
 | hurt | sick-feel | marasenti | 病心 |
-| ice | hard-water | turusaku | 硬水 |
+| ice cream | cold-milk | rikusraten | 冷乳 |
+| iced tea | cold-plant-water | rikusarpoaku | 冷木水 |
 | if (counterfactual) | not-true | nonves | 不真 |
 | illegal | not-law | nonreke | 不法 |
-| important | heavy-need | pesaneses | 重要 |
-| in the end | in-close | invin | 内閉 |
+| important | heavy-necessary | pesaneses | 重要 |
+| in the end | in-finish | invin | 内閉 |
 | in truth | in-true | inves | 内真 |
 | incidentally | other-about | artopi | 別件 |
 | inquire | what-say | kertika | 何言 |
 | instruct | learn-give | impartonar | 学与 |
 | instructor | learn-give-person | impartonaromo | 学与人 |
 | insufficient | not-all | nonpan | 不全 |
-| intersection | way-join | motoyunta | 方合 |
+| intersection | road-join | motoyunta | 方合 |
 | journey | come-go | veniire | 来行 |
-| junction | way-join | motoyunta | 方合 |
+| jump | leg-up-go | kampasurire | 足上行 |
+| junction | road-join | motoyunta | 方合 |
 | keep in mind | know-have | sapetene | 知有 |
 | kind (good-hearted) | good-feel | ponasenti | 好心 |
 | kindness | good-feel | ponasenti | 好心 |
 | knife (knife or scissors) | break-tool | rompeuter | 切工 |
 | lamb | small-milk-animal-meat | pikoratenpestekarne | 小乳匹肉 |
 | lamp | electric-sun | vortoyan | 電日 |
-| language | say-way | tikamoto | 言方 |
-| last | close-sequence | vinorten | 閉序 |
+| language | say-manner | tikamoto | 言方 |
+| last | finish-sequence | vinorten | 閉序 |
 | laugh | big-happy-mouth | mekakontenpuka | 大楽口 |
+| leap | leg-up-go | kampasurire | 足上行 |
 | lease | interval-buy | turankompar | 間買 |
 | leave (depart) | out-go | eksire | 外行 |
 | lemon | not-sweet-yellow-fruit | nontukeyoropomo | 不甘黄果 |
 | lend | interval-give | turantonar | 間与 |
+| lend a hand | hand-give | manutonar | 手与 |
 | less | not-more | nonmas | 不更 |
-| library | many-paper-home | murkartakase | 多片户 |
+| library | many-page-home | murkartakase | 多片户 |
 | light (in weight) | not-heavy | nonpesa | 不重 |
 | lightning | air-electric | ventovorto | 风電 |
 | lightweight | not-heavy | nonpesa | 不重 |
@@ -281,21 +301,22 @@
 | look over again | again-see | repevite | 又見 |
 | lose a contest | not-up-become | nonsurtiven | 不上成 |
 | lose a game | not-up-become | nonsurtiven | 不上成 |
-| loud | big-hear | mekaoti | 大耳 |
+| loud | big-sound | mekaoti | 大耳 |
 | love | big-like | mekakusta | 大愛 |
 | lucky | good-if | ponapos | 好可 |
 | luggage | go-box | irevaso | 行皿 |
-| major | heavy-need | pesaneses | 重要 |
-| make up one's mind | choose-close | erikevin | 选閉 |
-| manga | picture-many-paper | piturmurkarta | 画多片 |
-| margin (of a page) | paper-edge | kartarante | 片边 |
+| major | heavy-necessary | pesaneses | 重要 |
+| make up one's mind | choose-finish | erikevin | 选閉 |
+| manga | picture-many-page | piturmurkarta | 画多片 |
+| margin (of a page) | page-edge | kartarante | 片边 |
 | mat | earth-cloth | teraropa | 土衣 |
 | match | play-fight | yupatar | 玩争 |
 | meal (a sitting) | food-time | komitempo | 食时 |
 | mealtime | food-time | komitempo | 食时 |
-| measure the weight of | heavy-measure | pesamesur | 重寸 |
+| measure the weight of | heavy-amount | pesamesur | 重寸 |
 | medical test | heal-try | sanatentar | 医試 |
 | memory | know-have | sapetene | 知有 |
+| menu | food-sequence | komiorten | 食序 |
 | messy | not-sequence | nonorten | 不序 |
 | midday | middle-sun | metseyan | 中日 |
 | minute | part | parte | 分 |
@@ -304,6 +325,7 @@
 | Monday | month-weekday | meseyom | 月曜 |
 | morning | up-sun | suryan | 上日 |
 | mother | woman-parent | vemapari | 女亲 |
+| mount | vehicle-animal | karopeste | 车匹 |
 | mountain | up-earth | surtera | 上土 |
 | movie theater | picture-home | piturkase | 画户 |
 | mud | water-earth | akutera | 水土 |
@@ -319,8 +341,9 @@
 | not enough | not-all | nonpan | 不全 |
 | nothing | no-thing | nemkosa | 无物 |
 | nowhere | no-place | nemroko | 无所 |
-| number | measure-say | mesurtika | 寸言 |
-| numeral | measure-say | mesurtika | 寸言 |
+| nuisance | head-sick | testamara | 头病 |
+| number | amount-say | mesurtika | 寸言 |
+| numeral | amount-say | mesurtika | 寸言 |
 | nut | hard-fruit | turuspomo | 硬果 |
 | off | not-work | nonopus | 不力 |
 | off duty | not-work | nonopus | 不力 |
@@ -357,15 +380,16 @@
 | pork | red-white-animal-meat | rusankapestekarne | 赤白匹肉 |
 | porridge | water-grain | akuriso | 水米 |
 | potato | earth-grain | terariso | 土米 |
+| poultry | bird-meat | aviskarne | 鳥肉 |
 | practice | try-learn | tentarimpar | 試学 |
 | preceding | before-sequence | yerorten | 前序 |
 | prepare | before-make | yervake | 前作 |
-| prepared | before-close | yervin | 前閉 |
+| prepared | before-finish | yervin | 前閉 |
 | pretty | good-see | ponavite | 好見 |
 | prevail | up-become | surtiven | 上成 |
 | previous | before-sequence | yerorten | 前序 |
-| price | money-measure | monimesur | 贝寸 |
-| pride | self-good-feel | ekoponasenti | 己好心 |
+| price | money-amount | monimesur | 贝寸 |
+| pride | me-good-feel | ekoponasenti | 己好心 |
 | problem | bad-thing | marumkosa | 悪物 |
 | proof | try-true | tentarves | 試真 |
 | proprietor | have-person | teneomo | 有人 |
@@ -376,7 +400,7 @@
 | quarrel | say-fight | tikapatar | 言争 |
 | question | what-say | kertika | 何言 |
 | queue | person-sequence | omoorten | 人序 |
-| quiet | small-hear | pikooti | 小耳 |
+| quiet | small-sound | pikooti | 小耳 |
 | quiz | know-try | sapetentar | 知試 |
 | rage | big-anger | mekaraye | 大怒 |
 | raincoat | rain-cloth | ruvaropa | 雨衣 |
@@ -385,7 +409,7 @@
 | re-examine | again-see | repevite | 又見 |
 | read | write-see | kitavite | 写見 |
 | reader | write-see-person | kitaviteomo | 写見人 |
-| ready | before-close | yervin | 前閉 |
+| ready | before-finish | yervin | 前閉 |
 | recall | again-know | repesape | 又知 |
 | recollect | again-know | repesape | 又知 |
 | reconsider | again-think | repepensa | 又思 |
@@ -405,7 +429,7 @@
 | rent | interval-buy | turankompar | 間買 |
 | repeat | again-say | repetika | 又言 |
 | reply | back-say | retsetika | 反言 |
-| report | write-paper | kitakarta | 写片 |
+| report | write-page | kitakarta | 写片 |
 | request | want-say | voritika | 求言 |
 | resemble | same-see | samvite | 同見 |
 | reservation | before-agree | yerakor | 前約 |
@@ -420,10 +444,11 @@
 | rice (white rice) | white-grain | ankariso | 白米 |
 | ride | vehicle-put | karoseta | 车坐 |
 | ring | round-line | rotunrine | 丸糸 |
+| rise | up-go | surire | 上行 |
 | river | long-water | ronkaaku | 长水 |
 | riverbank | water-edge | akurante | 水边 |
-| road map | way-map | motomapa | 方図 |
-| roadmap | way-map | motomapa | 方図 |
+| road map | road-map | motomapa | 方図 |
+| roadmap | road-map | motomapa | 方図 |
 | roster | name-sequence | nomenorten | 名序 |
 | rug | earth-cloth | teraropa | 土衣 |
 | sad | not-happy | nonkonten | 不楽 |
@@ -445,8 +470,8 @@
 | seek | try-see | tentarvite | 試見 |
 | serene | small-happy | pikokonten | 小楽 |
 | servant | help-person | serviomo | 助人 |
-| settle | choose-close | erikevin | 选閉 |
-| shame | self-bad-feel | ekomarumsenti | 己悪心 |
+| settle | choose-finish | erikevin | 选閉 |
+| shame | me-bad-feel | ekomarumsenti | 己悪心 |
 | she | this-person | tisomo | 此人 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
 | ship | water-vehicle | akukaro | 水车 |
@@ -454,7 +479,7 @@
 | shopkeeper | buy-person | komparomo | 買人 |
 | shore | water-edge | akurante | 水边 |
 | should | if-good | pospona | 可好 |
-| significant | heavy-need | pesaneses | 重要 |
+| significant | heavy-necessary | pesaneses | 重要 |
 | silent | close-mouth | vinpuka | 閉口 |
 | sister | same-parent-woman | samparivema | 同亲女 |
 | slow | not-fast | nonveros | 不早 |
@@ -463,16 +488,18 @@
 | smile | happy-mouth | kontenpuka | 楽口 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
 | snow | cold-rain | rikusruva | 冷雨 |
-| soft (sound) | small-hear | pikooti | 小耳 |
+| soft (sound) | small-sound | pikooti | 小耳 |
 | soldier | fight-person | pataromo | 争人 |
 | someone else | other-person | aromo | 別人 |
+| something else | other-thing | arkosa | 別物 |
+| somewhere else | other-place | arroko | 別所 |
 | sort | sequence-put | ortenseta | 序坐 |
 | soup | water-food | akukomi | 水食 |
 | sour | not-sweet | nontuke | 不甘 |
 | south | map-down | mapatun | 図下 |
 | speaking of which | near-about | nirtopi | 近件 |
 | spice | taste-thing | saporkosa | 味物 |
-| spicy | fire-taste | wosapor | 火味 |
+| spicy | hot-taste | wosapor | 火味 |
 | sport | body-play | korpoyu | 体玩 |
 | spouse | marry-person | marisomo | 婚人 |
 | spring (season) | plant-time | arpotempo | 木时 |
@@ -486,7 +513,7 @@
 | stubborn | hard-head | turustesta | 硬头 |
 | study again | again-learn | repeimpar | 又学 |
 | suitcase | go-box | irevaso | 行皿 |
-| summer | fire-time | wotempo | 火时 |
+| summer | hot-time | wotempo | 火时 |
 | Sunday | sun-weekday | yanyom | 日曜 |
 | sunny | sun-air | yanvento | 日风 |
 | swim | water-go | akuire | 水行 |
@@ -505,7 +532,7 @@
 | text | write-say | kitatika | 写言 |
 | that | not-this | nontis | 不此 |
 | that's why | this-reason | tisrason | 此故 |
-| the end (of a series) | close-sequence | vinorten | 閉序 |
+| the end (of a series) | finish-sequence | vinorten | 閉序 |
 | the holidays | not-work-time | nonopustempo | 不力时 |
 | the one after | after-sequence | tarorten | 后序 |
 | the one before | before-sequence | yerorten | 前序 |
@@ -529,9 +556,9 @@
 | tomato | red-fruit | ruspomo | 赤果 |
 | tomato sauce | red-food | ruskomi | 赤食 |
 | tomorrow | sun-after | yantar | 日后 |
-| tongue (language) | say-way | tikamoto | 言方 |
+| tongue (language) | say-manner | tikamoto | 言方 |
 | tonight | this-no-sun | tisnemyan | 此无日 |
-| too [much] | up-measure | surmesur | 上寸 |
+| too [much] | up-degree | surmesur | 上寸 |
 | toy | play-thing | yukosa | 玩物 |
 | train | metal-line-vehicle | metarrinekaro | 金糸车 |
 | transit | line-vehicle | rinekaro | 糸车 |
@@ -542,6 +569,7 @@
 | trip | come-go | veniire | 来行 |
 | trouble | bad-thing | marumkosa | 悪物 |
 | Tuesday | fire-weekday | woyom | 火曜 |
+| turn (in a road) | bend-place | kurvaroko | 弓所 |
 | turnstile | money-door | moniporta | 贝門 |
 | ugly | bad-see | marumvite | 悪見 |
 | umbrella | rain-tool | ruvauter | 雨工 |
@@ -550,7 +578,7 @@
 | until | straight-to | retover | 直向 |
 | untrue | not-true | nonves | 不真 |
 | up to (in time) | straight-to | retover | 直向 |
-| us | self-group | ekomen | 己众 |
+| us | I-group | ekomen | 己众 |
 | vacation | play-come-go | yuveniire | 玩来行 |
 | vegetables | green-food | vertekomi | 緑食 |
 | vegetarian | not-meat-food-person | nonkarnekomiomo | 不肉食人 |
@@ -567,12 +595,12 @@
 | warning | fear-say | timotika | 危言 |
 | watch out | fear-see | timovite | 危見 |
 | watch TV | electric-see | vortovite | 電見 |
-| we | self-group | ekomen | 己众 |
+| we | I-group | ekomen | 己众 |
 | wear | cloth-have | ropatene | 衣有 |
 | Wednesday | water-weekday | akuyom | 水曜 |
 | week | seven-sun | senseyan | 7日 |
-| weekend | seven-sun-close | senseyanvin | 7日閉 |
-| weigh | heavy-measure | pesamesur | 重寸 |
+| weekend | seven-sun-finish | senseyanvin | 7日閉 |
+| weigh | heavy-amount | pesamesur | 重寸 |
 | welcome | happy-come | kontenveni | 楽来 |
 | well-adjusted | heal-think | sanapensa | 医思 |
 | well-balanced | heal-think | sanapensa | 医思 |

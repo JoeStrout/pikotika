@@ -168,7 +168,7 @@ day:
 
 | concept | current workaround | note |
 |---|---|---|
-| **die** | *not-life*, *life-close* | works, but death is basic vocabulary in every language; also gives 'kill' (*death-make*) and 'dead' |
+| **die** | *not-life*, *life-finish* | works, but death is basic vocabulary in every language; also gives 'kill' (*death-make*) and 'dead' |
 | landscape | *up-earth* 'mountain', *long-water* 'river', *big-water* 'sea' | the three big ones are now coined.  What is still unbuilt is the finer grain: lake, island, beach, coast, forest, valley, desert -- worth revisiting once we see whether the coined three feel thin in use |
 | **cook** | *food-make* (already coined as *food-make-person* 'cook') | the verb works; what is missing is 'kitchen, raw, restaurant, recipe' -- all buildable, but all through the same two roots |
 | **push / pull** | nothing | *pull* is the single most common instruction on a door.  One root with both senses (direction supplied by **ver**/**vons**) may cover it |

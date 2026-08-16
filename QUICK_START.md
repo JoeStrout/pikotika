@@ -95,13 +95,13 @@ Finally, here are things Pikotika does **not** have:
 
 Alice: Hello! I don't think we've met. I'm Alice.
 
-> _new-meet! self RI not think A self-group RI meet close. self RI Aris._
+> _new-meet! I RI not think A I-group RI meet finish. I RI Aris._
 
 > **Novasarve! Eko ri non pensa a ekomen ri sarve vin. Eko ri Aris.**
 
 Bob: Hi Alice. I'm Bob. Nice to meet you.
 
-> _happy-meet, Aris. self RI Popu. self RI happy meet A you._
+> _happy-meet, Aris. I RI Popu. I RI happy meet A you._
 
 > **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tuo.**
 

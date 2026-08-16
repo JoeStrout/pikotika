@@ -1,4 +1,4 @@
-# self
+# I
 ### self, I, me, own, identity
 ---
 # eko
@@ -6,7 +6,7 @@
 ===
 # eko
 ---
-# self
+# I
 ### self, I, me, own, identity
 ## 己
 ===
@@ -23,7 +23,7 @@
 ## 何
 ===
 # this
-### this, here, now, present (that/there = `not-this`)
+### this, present, the current/indicated one
 ---
 # tis
 ## 此
@@ -31,7 +31,7 @@
 # tis
 ---
 # this
-### this, here, now, present (that/there = `not-this`)
+### this, present, the current/indicated one
 ## 此
 ===
 # in
@@ -130,7 +130,7 @@
 ### big, large, great, intense, very
 ## 大
 ===
-# close
+# finish
 ### close, shut, finish, end, conclude
 ---
 # vin
@@ -138,7 +138,7 @@
 ===
 # vin
 ---
-# close
+# finish
 ### close, shut, finish, end, conclude
 ## 閉
 ===
@@ -506,13 +506,13 @@ after-meet
 ---
 # yervin
 ## 前閉
-before-close
+before-finish
 ===
 # yervin
 ---
 # ready; prepared
 ## 前閉
-before-close
+before-finish
 ===
 # hungry
 ---
@@ -542,13 +542,13 @@ happy-meet
 ---
 # invin
 ## 内閉
-in-close
+in-finish
 ===
 # invin
 ---
 # finally; at last; in the end; eventually
 ## 内閉
-in-close
+in-finish
 ===
 # actually; in truth
 ---
@@ -626,13 +626,13 @@ say-thing
 ---
 # ekomen
 ## 己众
-self-group
+I-group
 ===
 # ekomen
 ---
 # we; us
 ## 己众
-self-group
+I-group
 ===
 # moment
 ---
@@ -806,25 +806,25 @@ good go
 ---
 # Eko ri pona.
 ## 己 ⊢ 好.
-self RI good
+I RI good
 ===
 # Eko ri pona.
 ---
 # I'm good.
 ## 己 ⊢ 好.
-self RI good
+I RI good
 ===
 # The child and I are hungry.
 ---
 # Nino kum eko ri komivori.
 ## 子 并 己 ⊢ 食求.
-child and self RI food-want
+child and I RI food-want
 ===
 # Nino kum eko ri komivori.
 ---
 # The child and I are hungry.
 ## 子 并 己 ⊢ 食求.
-child and self RI food-want
+child and I RI food-want
 ===
 # The child is small.
 ---
@@ -854,13 +854,13 @@ you RI happy
 ---
 # Eko ri perton.
 ## 己 ⊢ 悔.
-self RI sorry
+I RI sorry
 ===
 # Eko ri perton.
 ---
 # I am sorry.
 ## 己 ⊢ 悔.
-self RI sorry
+I RI sorry
 ===
 # You are right.
 ---
@@ -878,13 +878,13 @@ you RI true
 ---
 # Ekomen ri yervin.
 ## 己众 ⊢ 前閉.
-self-group RI before-close
+I-group RI before-finish
 ===
 # Ekomen ri yervin.
 ---
 # We are ready.
 ## 己众 ⊢ 前閉.
-self-group RI before-close
+I-group RI before-finish
 ===
 # This is tea.
 ---
@@ -998,13 +998,13 @@ say-thing RI true
 ---
 # Eko ri ire.
 ## 己 ⊢ 行.
-self RI go
+I RI go
 ===
 # Eko ri ire.
 ---
 # I'm going.
 ## 己 ⊢ 行.
-self RI go
+I RI go
 ===
 # You're talking.
 ---
@@ -1034,37 +1034,37 @@ this-person RI food
 ---
 # Eko ri karoire.
 ## 己 ⊢ 车行.
-self RI vehicle-go
+I RI vehicle-go
 ===
 # Eko ri karoire.
 ---
 # I'm driving.
 ## 己 ⊢ 车行.
-self RI vehicle-go
+I RI vehicle-go
 ===
 # We're leaving.
 ---
 # Ekomen ri eksire.
 ## 己众 ⊢ 外行.
-self-group RI out-go
+I-group RI out-go
 ===
 # Ekomen ri eksire.
 ---
 # We're leaving.
 ## 己众 ⊢ 外行.
-self-group RI out-go
+I-group RI out-go
 ===
 # I'm finished.
 ---
 # Eko ri vin.
 ## 己 ⊢ 閉.
-self RI close
+I RI finish
 ===
 # Eko ri vin.
 ---
 # I'm finished.
 ## 己 ⊢ 閉.
-self RI close
+I RI finish
 ===
 # Please speak.
 ---

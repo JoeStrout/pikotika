@@ -47,6 +47,10 @@ There are three ways to write out any Pikotika utterance -- one that's only used
 
 This form is only used for teaching purposes: we write out each word using the "gloss" or mnemonic keyword associated with it.  If you're an English speaker, you would use the English keyword; if you're coming from some other language, you would use the keywords defined for your language.  (That's why this form should never be used to communicate with other people -- they might not understand the same gloss words that you do.)  Compound words are written by joining the [root words](ROOTS.md) with hyphens.  Particles (*RI*, *A*, and *TE*) are written in all-caps; proper names are capitalized; other words are written in lowercase.
 
+Most roots carry **two** glosses, listed in [ROOTS.md](ROOTS.md) as *Gloss* and *Gloss 2*, and a learner memorizes both.  One keyword can only ever point at part of a root's range, and two point at it from opposite sides: **eko** is *I* and *me*, **vin** is *finish* and *close*, **moto** is *manner* and *road*.  Seeing the pair is what tells you the root is one word covering both, not an English word in disguise.
+
+Either gloss may be written, so pick whichever fits what you are saying -- *I RI go* and *me RI go* are the same sentence, but *road RI finish* reads better than *manner RI close* for 'the road is closed'.  A gloss made of two English words is joined with an underscore (*one_who*, *excuse_me*), since a space would end the word and a hyphen would make it a compound.
+
 Example:
 
 ### Latin
@@ -259,7 +263,7 @@ A season is an **anyoparte** (年分, *year-part*), and the four seasons are nam
 | Meaning | Gloss | Pikotika | Han |
 |---|---|---|---|
 | spring | *plant-time* | **arpotempo** | 木时 |
-| summer | *fire-time* | **wotempo** | 火时 |
+| summer | *hot-time* | **wotempo** | 火时 |
 | autumn, fall | *fruit-time* | **pomotempo** | 果时 |
 | winter | *cold-time* | **rikustempo** | 冷时 |
 
@@ -383,13 +387,13 @@ A prepositional phrase goes at the **end** of a sentence or clause, after the ob
 
 | Pikotika | Literally | Meaning |
 |---|---|---|
-| **Eko ri ire ver kase.** | self RI go to home | I'm going home. |
+| **Eko ri ire ver kase.** | I RI go to home | I'm going home. |
 | **Pam veni in sens ora.** | please come in seven hour | Please come at seven. |
-| **Pam tonar a tis ver eko.** | please give A this to self | Please give that to me. |
-| **Eko ri komi kum tuo.** | self RI eat with you | I'm eating with you. |
-| **Pam sista kum ekomen.** | please remain with self-group | Stay with us. |
-| **Eko ri in tisroko.** | self RI in this-place | I'm here. |
-| **Eko ri kum nino.** | self RI with child | I'm with the child. |
+| **Pam tonar a tis ver eko.** | please give A this to me | Please give that to me. |
+| **Eko ri komi kum tuo.** | I RI eat with you | I'm eating with you. |
+| **Pam sista kum ekomen.** | please remain with I-group | Stay with us. |
+| **Eko ri in tisroko.** | I RI in this-place | I'm here. |
+| **Eko ri kum nino.** | I RI with child | I'm with the child. |
 | **Tis ri por tuo.** | this RI for you | This is for you. |
 
 Note that **kum** is 'and' when it joins two like things and 'with' when it opens a phrase of its own, exactly as in English: *bread and water* against *come with me*.
@@ -429,7 +433,7 @@ Comparison needs no special grammar.  Put **mas** (更, 'more'), **nonmas** (不
 |---|---|---|
 | **Tis ri mas pona vons nontis.** | this RI more good from that | This one is better than that one. |
 | **Tis ri mas piko moni vons sitas.** | this RI more small money from city | It's cheaper than in the city. |
-| **Tis ri nonmas pesaneses vons nontis.** | this RI not-more heavy-need from that | It's less important than that one. |
+| **Tis ri nonmas pesaneses vons nontis.** | this RI not-more heavy-necessary from that | It's less important than that one. |
 | **Tis ri sam pona vons yerkosa.** | this RI same good from before-thing | It's as good as it was. |
 | **Tis ri mas vetus vons pan.** | this RI more old from all | It's the oldest. |
 
@@ -586,6 +590,13 @@ Such a clause runs to the next A or the end of the sentence, so anything else ha
 
 > **Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.**  'I ask the cook to make it not spicy.'
 
+For the same reason, a clause you mean to join on with **kum**, **sive**, or **sets** cannot simply follow such a clause with a comma -- it would be swallowed into it.  Break the sentence instead, with a semicolon or a period, and open the next one with the joining word:
+
+> **Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.**
+> 'I hope I can find it, or else I'll have to buy a new one.'
+
+Written with a comma, that **sive** clause would be part of what is hoped for ('I hope that I can find it, or that I must buy a new one'), which is not the meaning at all.
+
 **As a modifier** -- a relative clause -- there are two forms.
 
 The first uses no special grammar.  State the clause as its own sentence, with **ker** ('what, whichever') filling the slot you are relativizing, then pick it up with **tis** in the next clause:
@@ -636,7 +647,7 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Welcome. | happy-come | **Kontenveni.** | 楽来. |
 | Hello (when meeting someone new) | new-meet | **Novasarve.** | 初会. |
 | Hello | happy-meet | **Kontensarve.** | 楽会. |
-| I'm happy to meet you. | self RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
+| I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
 | Good morning. | good up-sun | **Pona suryan.** | 好 上日. |
 | Good evening. | good down-sun | **Pona tunyan.** | 好 下日. |
 | How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
@@ -648,17 +659,17 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Later! | after | **Tar!** | 后! |
 | Take care (parting). | good go | **Pona ire.** | 好 行. |
 | Sorry/oops/excuse me. | sorry | **Perton.** | 悔. |
-| I am sorry. | self RI sorry | **Eko ri perton.** | 己 ⊢ 悔. |
+| I am sorry. | I RI sorry | **Eko ri perton.** | 己 ⊢ 悔. |
 | Actually, ... | in-true | **Inves, ...** | 内真, ... |
-| I see (understand). | self RI see | **eko ri vite** | 己 ⊢ 见 |
+| I see (understand). | I RI see | **eko ri vite** | 己 ⊢ 见 |
 | Thanks. | thank | **Mersi.** | 恩. |
-| I thank you. | self RI thank A you | **Eko ri mersi a tuo.** | 己 ⊢ 恩 ⇒ 尔. |
+| I thank you. | I RI thank A you | **Eko ri mersi a tuo.** | 己 ⊢ 恩 ⇒ 尔. |
 | No problem. | no bad-thing | **Nem marumkosa.** | 无 悪物. |
 | Please. | please | **Pam.** | 乞. |
 | Yes, please. | yes, please | **Si, pam.** | 是, 乞. |
 | Yes, please give (it to me). | yes, please give | **Si, pam tonar.** | 是, 乞 与. |
 | No, thank you. | not, thank | **Non, mersi.** | 不, 恩. |
-| I don't know. | self RI not know | **Eko ri non sape.** | 己 ⊢ 不 知. |
+| I don't know. | I RI not know | **Eko ri non sape.** | 己 ⊢ 不 知. |
 | Help, please! | please help | **Pam servi!** | 乞 助! |
 
 

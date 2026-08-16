@@ -7,6 +7,13 @@ ways of writing the language:
   1. English      a word or phrase listed in the roots or compounds tables
   2. gloss        hyphenated compounds, particles as RI / A / TE
                     e.g.  water-meal RI have A what
+
+                  Most roots carry two glosses in roots.tsv, `gloss` and
+                  `gloss2`, and learners memorize both; either one may be
+                  written, so `I RI eat A food` and `me RI eat A food` are the
+                  same sentence.  Reading *into* gloss always writes the
+                  primary, which is the form the tables are keyed on.
+
   3. Latin        the phonological form, compounds written solid
                     e.g.  akukomi ri tene a ker
   4. Han          one character per root
@@ -169,6 +176,7 @@ def level_key(level):
 class Tables:
     def __init__(self, directory=HERE):
         self.gloss2root = {}      # gloss -> {gloss, form, han, covers, ...}
+        self.alias2gloss = {}     # gloss2 -> gloss (see roots.tsv `gloss2`)
         self.form2gloss = {}
         self.han2gloss = {}
         self.covers = {}          # english word -> [gloss, ...]
@@ -188,6 +196,13 @@ class Tables:
                 self.form2gloss[r["form"]] = r["gloss"]
                 if r["han"]:
                     self.han2gloss[r["han"]] = r["gloss"]
+                alias = (r.get("gloss2") or "").strip()
+                if alias:
+                    # a space-separated gloss2 ("one who") cannot be a token in
+                    # gloss notation, where a space ends the word and a hyphen
+                    # joins roots into a compound.  Underscore is free in both
+                    # roles, so it is what holds such a gloss together: `one_who`.
+                    self.alias2gloss["_".join(alias.split())] = r["gloss"]
                 for entry in split_covers(r["covers"]):
                     for key in cover_keys(entry):
                         self.covers.setdefault(key, []).append(r["gloss"])
@@ -233,6 +248,20 @@ class Tables:
 
     def is_particle(self, gloss):
         return gloss in PARTICLE_GLOSS
+
+    def root_gloss(self, key):
+        """The primary gloss `key` names, whether it is the primary or the gloss2.
+
+        Most roots carry two glosses, and learners memorize both, so either may
+        be written -- `I RI eat A food` and `me RI eat A food` are the same
+        sentence.  Nothing downstream sees the alias: this resolves to the
+        primary gloss, which is what indexes the root and what render_gloss
+        writes back out.  A primary gloss always wins over another root's
+        gloss2, though as of this writing no gloss2 collides with anything.
+        """
+        if key in self.gloss2root and not self.is_particle(key):
+            return key
+        return self.alias2gloss.get(key)
 
     def form_of(self, gloss):
         return self.gloss2root[gloss]["form"]
@@ -465,28 +494,37 @@ def parse_gloss(text, t, fail=None):
             words.append([PARTICLE_ALIASES[upper]])
             start = False
             continue
-        parts = []
-        for n, piece in enumerate(word.split("-")):
-            if piece.isdigit():
-                if piece in DIGITS:
-                    parts.append(DIGITS[piece])
-                else:
-                    parts.append(num_token(piece))
-                continue
-            key = piece
-            if key in t.gloss2root and not t.is_particle(key):
-                parts.append(key)
-                continue
-            # "Joe" by its English spelling, "Yo" by its Pikotika form
-            name = t.name_of(piece)
-            if name is not None and name_wins(piece, start and not n, t):
-                parts.append(name_token(name))
-                continue
-            blame(fail, words, piece)   # the piece, not the whole compound
+        parts = split_gloss_word(word, t, words, start, fail)
+        if parts is None:
             return None
         words.append(parts)
         start = False
     return words or None
+
+
+def split_gloss_word(word, t, words, start, fail):
+    """One hyphenated gloss word as its list of glosses, or None."""
+    parts = []
+    for n, piece in enumerate(word.split("-")):
+        if piece.isdigit():
+            if piece in DIGITS:
+                parts.append(DIGITS[piece])
+            else:
+                parts.append(num_token(piece))
+            continue
+        # either of the root's two glosses names it; see Tables.root_gloss
+        gloss = t.root_gloss(piece)
+        if gloss is not None:
+            parts.append(gloss)
+            continue
+        # "Joe" by its English spelling, "Yo" by its Pikotika form
+        name = t.name_of(piece)
+        if name is not None and name_wins(piece, start and not n, t):
+            parts.append(name_token(name))
+            continue
+        blame(fail, words, piece)   # the piece, not the whole compound
+        return None
+    return parts
 
 
 def segment(form, t, raw=None):
@@ -658,8 +696,9 @@ def parse_english(text, t, fail=None):
     key = text.strip().lower()
     if key in t.compounds:
         return parse_gloss(t.compounds[key], t)
-    if key in t.gloss2root and not t.is_particle(key):
-        return [[key]]
+    gloss = t.root_gloss(key) or t.root_gloss("_".join(key.split()))
+    if gloss is not None:
+        return [[gloss]]
     if key in t.covers:
         return [[t.covers[key][0]]]
     if key in t.names:

@@ -86,9 +86,11 @@ def render_roots(groups):
            f'{total} entries in {len(groups)} groups.', '']
     for category, rows in groups:
         out += [f'## {category} ({len(rows)})', '']
-        out += table(['Gloss', 'Latin', 'Han', 'Covers'],
-                     [(r.get('gloss'), r.get('form'), r.get('han'),
-                       r.get('covers')) for r in rows])
+        # both glosses: a learner memorizes the pair, and either one may be
+        # written in gloss notation (see DETAILS.md, "Gloss")
+        out += table(['Gloss', 'Gloss 2', 'Latin', 'Han', 'Covers'],
+                     [(r.get('gloss'), r.get('gloss2'), r.get('form'),
+                       r.get('han'), r.get('covers')) for r in rows])
         out.append('')
     return '\n'.join(out)
 

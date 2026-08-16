@@ -1,4 +1,6 @@
 EN	gloss	root_level	assigned_level
+we; us	I-group	1	1
+relative clause marker	RI-TE	3	
 see you later	after-meet	1	1
 next; the one after	after-sequence	3	3
 recover; get back; retrieve	again-get	3	3
@@ -9,14 +11,12 @@ repeat; say again	again-say	3	3
 review; re-examine; look over again	again-see	3	
 reconsider; rethink; think over	again-think	4	
 lightning	air-electric	4	
+fly; flight	air-go	3	
 smell	air-taste	4	
 airplane	air-vehicle	3	3
 airport	air-vehicle-place	3	3
 election	all-choose	4	
-everyone; everybody	all-person	3	3
-everywhere	all-place	3	3
-everything	all-thing	3	3
-always	all-time	3	3
+number; numeral; digit	amount-say	3	
 museum	art-home	5	
 return; go back	back-go	4	
 change (money returned)	back-money	4	
@@ -24,21 +24,25 @@ reply; answer; respond; response	back-say	4
 ugly	bad-see	2	
 problem; trouble	bad-thing	2	2
 reservation; booking	before-agree	5	
-ready; prepared	before-close	1	1
+ready; prepared	before-finish	1	1
 prepare; get ready; arrange	before-make	2	2
 previous; preceding; former; the one before	before-sequence	3	3
+corner (of a street); turn (in a road)	bend-place	4	
 gale; strong wind	big-air	3	3
 rage	big-anger	5	
 war	big-fight	4	
 laugh	big-happy-mouth	4	
-loud	big-hear	4	
 love; adore; be in love with	big-like	2	2
 grief	big-not-happy	1	
 storm; downpour	big-rain	4	
+loud	big-sound	4	
 astonishment	big-surprise	5	
 sea	big-water	1	2
 beach; seashore	big-water-edge	4	
 egg	bird-child	5	
+flock	bird-group	5	
+poultry; chicken (meat)	bird-meat	5	
+black market	black-buy-place	4	
 coffee	black-drink	3	3
 cyan	blue-green	3	3
 allergy	body-not-agree	5	
@@ -48,16 +52,17 @@ company; corporation; firm	buy-group	4
 business plan	buy-group-map	4	
 vendor; shopkeeper	buy-person	4	
 shop	buy-place	4	
-decision; settle; make up one's mind	choose-close	4	
-ballot	choose-paper	4	
+decision; settle; make up one's mind	choose-finish	4	
+ballot	choose-page	4	
 vote; cast a ballot	choose-say	4	
 option; alternative; choice	choose-thing	4	
 outskirts	city-edge	4	
 silent; taciturn; tight-lipped	close-mouth	4	
-last; final; the end (of a series)	close-sequence	3	
 wear; be dressed in; have on	cloth-have	4	
 fitting room; changing room	cloth-try-room	4	
+ice cream	cold-milk	4	
 unfriendly person	cold-person	4	
+iced tea	cold-plant-water	4	
 snow	cold-rain	4	
 winter	cold-time	4	
 trip; journey	come-go	2	2
@@ -73,6 +78,10 @@ Saturday	earth-weekday	3	3
 electronic map	electric-map	4	
 television; watch TV	electric-see	4	
 lamp; electric light	electric-sun	4	
+everyone; everybody	every-person	3	3
+everywhere	every-place	3	3
+everything	every-thing	3	3
+always	every-time	3	3
 voyage; long journey	far-come-go	5	
 adventure trip; expedition	fear-come-go	4	
 adventure	fear-play	4	
@@ -82,15 +91,14 @@ caution; careful; cautious; watch out	fear-see	4
 facial expression; look on one's face	feel-picture	4	
 army	fight-group	4	
 fighter; soldier	fight-person	4	
-spicy	fire-taste	4	
-chili pepper	fire-taste-thing	4	
-summer	fire-time	3	
+last; final; the end (of a series)	finish-sequence	3	
 alcohol (usually wine)	fire-water	3	
 Tuesday	fire-weekday	3	3
 fifth (in a series); 5th	five-sequence	3	
 flat bread	flat-grain-food	5	
 disk	flat-round	5	
 cook (person)	food-make-person	2	2
+menu	food-sequence	3	
 meal (a sitting); mealtime	food-time	1	2
 cutlery	food-tool	3	
 hungry	food-want	1	1
@@ -109,31 +117,36 @@ beer (any grain alcohol)	grain-fire-water	3
 bread	grain-food	3	
 vegetables	green-food	3	
 park	green-place	3	
+green light (permission); go-ahead	green-say	3	
 collect; gather	group-join	5	
+lend a hand; help out	hand-give	5	
 welcome	happy-come	2	2
 hello	happy-meet	1	1
 smile	happy-mouth	4	
 nut	hard-fruit	4	
 stubborn	hard-head	4	
-ice	hard-water	4	
 bring	have-come	2	2
 carry; take along; transport	have-go	2	2
 owner; proprietor	have-person	2	
+headache; nuisance	head-sick	5	
 exercise	heal-go	4	
 gym	heal-go-place	4	
 doctor	heal-person	4	
 well-balanced; well-adjusted; sane	heal-think	4	
 medical test; checkup; examination (medical)	heal-try	4	
 ear	hear-part	4	
-weigh; measure the weight of	heavy-measure	4	
-important; significant; essential; major	heavy-need	4	
+weigh; measure the weight of	heavy-amount	4	
+important; significant; essential; major	heavy-necessary	4	
 helpful	help-give	4	
 you-are-here map; directory map; orientation map	help-map	4	
 helper; waiter; attendant; servant; staff (person)	help-person	4	
 cat; pet	home-animal	3	
 pet dog	home-dog	5	
+spicy	hot-taste	4	
+chili pepper	hot-taste-thing	4	
+summer	hot-time	3	
 should	if-good	4	4
-finally; at last; in the end; eventually	in-close	1	1
+finally; at last; in the end; eventually	in-finish	1	1
 percent; per cent; %	in-hundred	3	
 actually; in truth	in-true	1	1
 hire; lease; rent	interval-buy	4	
@@ -148,6 +161,7 @@ teacher; instructor	learn-give-person	4
 school	learn-place	4	
 curriculum; syllabus; course of study	learn-sequence	4	
 walk	leg-go	4	
+jump; leap	leg-up-go	4	
 bicycle	leg-vehicle	4	
 public transit; transit	line-vehicle	4	
 transit station (bus/train)	line-vehicle-place	4	
@@ -157,8 +171,8 @@ river	long-water	3
 banana	long-yellow-fruit	3	
 father	man-parent	2	2
 polygon	many-bend	4	
-book	many-paper	3	
-library	many-paper-home	3	
+book	many-page	3	
+library	many-page-home	3	
 bus	many-person-vehicle	3	
 busy	many-work	3	
 south	map-down	5	
@@ -166,20 +180,22 @@ west	map-left	5
 east	map-right	5	
 north	map-up	3	
 spouse	marry-person	5	
-number; numeral; digit	measure-say	3	
+shame	me-bad-feel	3	
+pride	me-good-feel	3	
 train	metal-line-vehicle	4	
 coin	metal-money	3	
 Friday	metal-weekday	3	3
 midday; noon	middle-sun	2	2
 cow	milk-animal	4	
 beef	milk-animal-meat	4	
+price; fee; cost	money-amount	3	
 turnstile; ticket gate	money-door	4	
 earn	money-get	3	
-price; fee; cost	money-measure	3	
 Monday	month-weekday	3	3
 dance	music-go	2	3
 concert hall	music-home	3	
 musical instrument	music-tool	3	
+business card	name-page	3	
 list; roster; register	name-sequence	3	
 on that note; relatedly; speaking of which	near-about	2	
 hello (someone new)	new-meet	1	1
@@ -221,14 +237,16 @@ fried rice	oil-white-grain	5
 first (in a series); 1st	one-sequence	3	
 anyway; by the way; incidentally	other-about	5	
 someone else; another person; others	other-person	5	
+somewhere else; elsewhere	other-place	5	
+something else; anything else	other-thing	5	
 abroad; foreign; overseas	out-country	5	
 depart; leave (depart)	out-go	1	1
-margin (of a page)	paper-edge	4	
+margin (of a page)	page-edge	4	
 relative (kin)	parent-group	2	2
 decimal point; minute	part	1	
 queue; line (of people)	person-sequence	3	
 cinema; movie theater	picture-home	4	
-comic book; comics; manga	picture-many-paper	4	
+comic book; comics; manga	picture-many-page	4	
 harvest	plant-get	2	
 spring (season)	plant-time	1	
 tea	plant-water	1	1
@@ -240,8 +258,8 @@ theater; playhouse	play-home	3
 playground	play-place	3	
 toy	play-thing	3	
 respect	please-feel	3	
+courtesy	please-manner	3	
 politeness (verbal)	please-say	1	2
-courtesy	please-way	3	
 seat	put-place	4	
 chair	put-tool	4	
 cloud; cloudy	rain-air	4	
@@ -255,33 +273,31 @@ pink	red-white	3	3
 pig	red-white-animal	3	3
 pork	red-white-animal-meat	4	
 orange	red-yellow	3	3
-relative clause marker	RI-TE	3	
+junction; intersection; crossroads	road-join	5	
+road map; roadmap	road-map	3	
 circle; ring; hoop	round-line	4	
 tie; draw (in a contest)	same-become	4	
 brother	same-parent-man	3	3
 sister	same-parent-woman	3	3
 look like; resemble; take after; look alike	same-see	3	3
 argue; quarrel	say-fight	4	
+language; tongue (language)	say-manner	3	
 story; tale	say-thing	1	1
-language; tongue (language)	say-way	3	
 window	see-hole	5	
 eye	see-part	2	2
 tears; cry	see-water	2	2
-shame	self-bad-feel	3	
-pride	self-good-feel	3	
-we; us	self-group	1	1
 step (in a procedure)	sequence-part	3	
 sort; arrange; put in order	sequence-put	4	
 week	seven-sun	2	3
-weekend	seven-sun-close	2	3
+weekend	seven-sun-finish	2	3
 pain; hurt; ache	sick-feel	5	
 hotel	sleep-home	4	
 annoyance	small-anger	5	
 serene; relaxed; peaceful	small-happy	1	
-quiet; soft (sound)	small-hear	4	
 goat; sheep	small-milk-animal	4	
 lamb	small-milk-animal-meat	4	
 second (of time)	small-part	1	
+quiet; soft (sound)	small-sound	4	
 sand; gravel	small-stone	3	
 moment	small-time	1	1
 bye	sorry-go	1	1
@@ -312,10 +328,12 @@ experiment	try-work	3
 second (in a series); 2nd	two-sequence	3	
 win; prevail	up-become	4	
 winner	up-become-person	4	
+too [much]; excessively	up-degree	3	3
 mountain	up-earth	3	
-too [much]; excessively	up-measure	3	3
+rise; ascend; go up	up-go	2	
 morning	up-sun	2	2
 breakfast	up-sun-food	2	2
+horse; mount	vehicle-animal	2	
 drive; travel by vehicle	vehicle-go	1	1
 station	vehicle-place	1	1
 ride; go by vehicle	vehicle-put	4	
@@ -330,15 +348,13 @@ swim	water-go	1	2
 porridge; congee	water-grain	3	
 ship; boat	water-vehicle	1	
 Wednesday	water-weekday	3	3
-junction; intersection; crossroads	way-join	5	
-road map; roadmap	way-map	3	
 what time	what-hour	1	3
+how	what-manner	3	3
 who	what-person	1	3
 where	what-place	1	3
 why	what-reason	4	
 question; ask; inquire	what-say	1	3
 when	what-time	1	3
-how	what-way	3	3
 rice (white rice)	white-grain	3	3
 sake	white-grain-fire-water	3	
 mother	woman-parent	2	2
@@ -346,7 +362,7 @@ business trip	work-come-go	2	3
 boss	work-head	4	
 office	work-room	3	
 work day; business day	work-sun	2	
-report; document (written)	write-paper	3	
+report; document (written)	write-page	3	
 writer; author	write-person	2	2
 text; writing (text)	write-say	2	
 read	write-see	2	2
