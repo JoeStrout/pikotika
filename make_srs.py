@@ -82,9 +82,16 @@ def strip_bold(s):
 
 
 def from_gloss(gloss, t):
-    """(Latin, Han) for a single root or compound named by its gloss."""
-    words = [gloss.split("-")]
-    return pikotika.render_latin(words, t), pikotika.render_han(words, t)
+    """(Latin, Han) for a single root or compound named by its gloss.
+
+    Resolved through gloss_roots rather than split on "-", since a compound may
+    be recorded under a root's gloss2 (*fire-water*, where the primary is
+    *hot*), and only the primary indexes the root.
+    """
+    roots = t.gloss_roots(gloss)
+    if roots is None:
+        sys.exit("could not read the gloss %r" % gloss)
+    return pikotika.render_latin([roots], t), pikotika.render_han([roots], t)
 
 
 def han_of_latin(latin, t):
@@ -125,10 +132,11 @@ def root_cards(gloss, t):
     if (root.get("category") or "").strip() == PARTICLES:
         return                # particles are taught by the grammar, not by drill
     latin, han, covers = root["form"], root["han"], root["covers"]
-    yield card(["# " + gloss, "### " + covers],
+    names = pikotika.root_glosses(root)
+    yield card(["# " + names, "### " + covers],
                ["# " + latin, "## " + han])
     yield card(["# " + latin],
-               ["# " + gloss, "### " + covers, "## " + han])
+               ["# " + names, "### " + covers, "## " + han])
 
 
 def compound_cards(english, t):

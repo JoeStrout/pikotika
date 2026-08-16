@@ -822,6 +822,17 @@ def render_han(words, t):
     return join_words(out)
 
 
+def root_glosses(root):
+    """"gloss; gloss2" for a roots.tsv row -- a learner memorizes both.
+
+    One keyword only ever points at part of a root's range, so anything that
+    names a root for a learner shows the pair.  A few rows carry only the
+    primary (the particles, and roots such as `blue` with nothing to add).
+    """
+    return "; ".join(g for g in (root["gloss"],
+                                 (root.get("gloss2") or "").strip()) if g)
+
+
 def english_match(words, t):
     """Exact English equivalents, when the whole query is one root or compound."""
     words = [w for w in expand_numerals(words) if not is_punct(w)]
@@ -834,12 +845,7 @@ def english_match(words, t):
     hits = list(t.compound_by_gloss.get(gloss, []))
     if len(word) == 1 and gloss in t.gloss2root:
         root = t.gloss2root[gloss]
-        # A learner memorizes both glosses, so a lookup shows both -- one keyword
-        # only ever points at part of a root's range.  Some rows carry only the
-        # primary (the particles, and a few roots such as `blue`).
-        names = "; ".join(g for g in (root["gloss"],
-                                      (root.get("gloss2") or "").strip()) if g)
-        hits.append("%s  (root: %s)" % (names, root["covers"]))
+        hits.append("%s  (root: %s)" % (root_glosses(root), root["covers"]))
     return hits
 
 
