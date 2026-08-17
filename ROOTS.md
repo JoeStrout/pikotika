@@ -155,7 +155,7 @@
 | money; price | moni | 贝 | money, price, cost, value, payment |
 | parent; ancestor | pari | 亲 | parent, ancestor |
 | woman; female | vema | 女 | female |
-| you | tuo | 尔 | you, addressee |
+| you | tu | 尔 | you, addressee |
 
 ## Places, arts, appearance (6)
 
@@ -178,7 +178,7 @@
 | fast; soon | veros | 早 | fast, quick, rapid, soon |
 | fear; danger | timo | 危 | fear, afraid, danger, worry |
 | good; pleasant | pona | 好 | good, well, fine, pleasant |
-| hard; difficult | turus | 硬 | hard, firm, solid, rigid, difficult |
+| hard; difficult | sorin | 硬 | hard, firm, solid, rigid, difficult |
 | heavy; weight | pesa | 重 | heavy, weight, weigh, dense |
 | long; tall | ronka | 长 | long, tall, distant, extended |
 | new; fresh | nova | 初 | new, young, recent, fresh |

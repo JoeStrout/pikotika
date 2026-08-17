@@ -98,7 +98,7 @@ marry	spouse	People and society	marry, spouse, wedded	maris	婚	Latin maritare; 
 money	price	People and society	money, price, cost, value, payment	moni	贝	English *money*, Latin *moneta*	4	21	3
 parent	ancestor	People and society	parent, ancestor	pari	亲	*parent, padre, père*	9	15	2
 woman	female	People and society	female	vema	女	*femina, female*	3	6	2
-you		People and society	you, addressee	tuo	尔	*tu, tú, tuo*	5	54	1
+you		People and society	you, addressee	tu	尔	*tu, tú*, Russian *ty*	5	54	1
 art	craft	Places, arts, appearance	art, artwork, creative craft	arti	芸	Latin ars, artis	7	1	5
 city	town	Places, arts, appearance	city, town, urban place	sitas	市	Latin *civitas*; Spanish *ciudad*; French *cite*; English *city*	5	5	4
 color	hue	Places, arts, appearance	color, hue	koror	色	*color, colore*	6	3	3
@@ -111,7 +111,7 @@ clean	pure	Qualities	clean, pure, washed	puru	清	Latin purus	11	0	5
 fast	soon	Qualities	fast, quick, rapid, soon	veros	早	Spanish veloz; Latin celer	6	6	2
 fear	danger	Qualities	fear, afraid, danger, worry	timo	危	*timor, timid*	6	6	4
 good	pleasant	Qualities	good, well, fine, pleasant	pona	好	*bueno, bonus, buono*	6	40	1
-hard	difficult	Qualities	hard, firm, solid, rigid, difficult	turus	硬	Latin durus	12	7	4
+hard	difficult	Qualities	hard, firm, solid, rigid, difficult	sorin	硬	Russian *solidnyj*, Polish *solidny*, Latin *solidus*	12	7	4
 heavy	weight	Qualities	heavy, weight, weigh, dense	pesa	重	Spanish/Portuguese/Italian *peso*, French *peser*, Latin *pendere*/*pensum*; the currency is literally 'a weight'	9	7	4
 long	tall	Qualities	long, tall, distant, extended	ronka	长	*long, lungo, largo*	4	9	3
 new	fresh	Qualities	new, young, recent, fresh	nova	初	*nova, nuevo, novel*	7	8	1

@@ -21,31 +21,31 @@ Alice: Hello! I don't think we've met. I'm Alice.
 > **Novasarve! Eko ri non pensa a ekomen ri sarve vin. Eko ri Aris.**
 
 Bob: Hi Alice. I'm Bob. Nice to meet you.
-> **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tuo.**
+> **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tu.**
 
 Alice: How do you know Carla?
-> **Tuo ri sape a Karra in kermoto?**
+> **Tu ri sape a Karra in kermoto?**
 
 Bob: We work together. And you?
-> **Ekomen ri kum opus. Kum tuo, ker?**
+> **Ekomen ri kum opus. Kum tu, ker?**
 
 Alice: She's my sister.
 > **Tisomo ri eko samparivema.**
 
 Bob: Really? You don't look alike!
-> **Ves, ker? Pits tuo ri non samvite!**
+> **Ves, ker? Pits tu ri non samvite!**
 
 Alice: Everybody says that. She looks like our father, and I look like our mother.
 > **Pan omo ri tika a tis. Tisomo ri samvite a ekomen viropari, sets eko ri samvite a ekomen vemapari.**
 
 Bob: Ah, that explains it. Do you live here in the city?
-> **E... tis ri rason. Tuo ri viva in tis sitas, ker?**
+> **E... tis ri rason. Tu ri viva in tis sitas, ker?**
 
 Alice: No, I live about two hours north. I came just for the party.
 > **Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.**
 
 Bob: That's a long way. Are you staying the night?
-> **Tis ri ronka moto. Tuo ri tormi in tis sitas, ker?**
+> **Tis ri ronka moto. Tu ri tormi in tis sitas, ker?**
 
 Alice: Yes, at Carla's place. I'll drive back tomorrow.
 > **Si, in Karra kase. Yantar, eko ri karoire rets.**
@@ -55,10 +55,10 @@ Alice: Yes, at Carla's place. I'll drive back tomorrow.
 ## 2. Two coworkers catching up on Monday
 
 Dan: Morning. How was your weekend?
-> **Pona suryan. Tuo senseyanvin ri ker?**
+> **Pona suryan. Tu senseyanvin ri ker?**
 
 Eve: Too short. Yours?
-> **Surmesur piko. Kum tuo, ker?**
+> **Surmesur piko. Kum tu, ker?**
 
 Dan: Good, actually. I finally fixed my bicycle.
 > **Pona, inves. Invin, eko ri sana a eko kampakaro.**
@@ -82,14 +82,14 @@ Dan: She's traveling until Thursday.
 > **Tisomo ri karoire retover arpoyom.**
 
 Eve: Then I think this week will be easy.
-> **Sets, eko ri pensa a tis senseyan ri nonturus.**
+> **Sets, eko ri pensa a tis senseyan ri nonsorin.**
 
 ---
 
 ## 3. Buying fruit at a market
 
 Vendor: Good morning! What would you like?
-> **Pona suryan! Tuo ri vori a ker?**
+> **Pona suryan! Tu ri vori a ker?**
 
 Fumi: How much are the bananas?
 > **Ronkayoropomo ri ker moni?**
@@ -126,7 +126,7 @@ Vendor: And forty back. Thank you!
 ## 4. Ordering dinner in a restaurant
 
 Server: Good evening. Are you two ready to order?
-> **Pona tunyan. Pits tuo ri yervin, ker?**
+> **Pona tunyan. Pits tu ri yervin, ker?**
 
 Gita: Almost. What's good tonight?
 > **Nir. Tisnemyan, ker komi ri pona?**
@@ -135,7 +135,7 @@ Server: The fish is fresh. The soup is also very good.
 > **Akupeste ri nova. Kum akukomi ri meka pona.**
 
 Hal: I don't eat fish. Do you have anything without meat?
-> **Eko ri non komi a akupeste. Tuo ri tene a non karne komi, ker?**
+> **Eko ri non komi a akupeste. Tu ri tene a non karne komi, ker?**
 
 Server: Yes — we have a rice dish with vegetables and eggs.
 > **Si. Ekomen ri tene a ankariso komi kum vertekomi kum avisnino.**
@@ -166,7 +166,7 @@ Server: Very good. It will be about fifteen minutes.
 ## 5. Asking directions to a train station
 
 Ivan: Excuse me, do you speak English?
-> **Perton. Tuo ri tika a Inkiris, ker?**
+> **Perton. Tu ri tika a Inkiris, ker?**
 
 Local: A little. Slowly, please.
 > **Piko. Pam nonveros tika.**
@@ -175,7 +175,7 @@ Ivan: Where is the train station?
 > **Rinekaroroko ri kerroko?**
 
 Local: Go straight to that big tree, then turn left. Walk five minutes. You will see it.
-> **Pam reto ire ver nontis meka arpo, tar pam kurva ver sini. Pam 5 parte turan kampaire. Tuo ri vite a tis.**
+> **Pam reto ire ver nontis meka arpo, tar pam kurva ver sini. Pam 5 parte turan kampaire. Tu ri vite a tis.**
 
 Ivan: Left at the tree. Thank you. Is there a bus too?
 > **Sini in arpo. Mersi. Ri kum muromokaro in tis moto, ker?**
@@ -203,13 +203,13 @@ Child: I'm not tired.
 > **Eko ri non kansa.**
 
 Parent: It's late. You have school tomorrow.
-> **Tempo ri tar. Yantar, tuo ri ire ver imparroko.**
+> **Tempo ri tar. Yantar, tu ri ire ver imparroko.**
 
 Child: Can I have some water?
 > **Eko ri kan toma a aku, ker?**
 
 Parent: You had water five minutes ago.
-> **5 parte yer, tuo ri pipe a aku.**
+> **5 parte yer, tu ri pipe a aku.**
 
 Child: I'm thirsty again.
 > **Eko ri mas pipevori.**
@@ -218,7 +218,7 @@ Parent: All right, a little. Then sleep.
 > **Pona, piko. Tar, pam tormi.**
 
 Child: Will you tell me a story?
-> **Tuo ri tika a tikakosa ver eko, ker?**
+> **Tu ri tika a tikakosa ver eko, ker?**
 
 Parent: A short one.
 > **Piko tikakosa.**
@@ -227,26 +227,26 @@ Child: About the big fish!
 > **Topi meka akupeste!**
 
 Parent: I told you that one last night.
-> **1 nemyan yer, eko ri tika a tis ver tuo.**
+> **1 nemyan yer, eko ri tika a tis ver tu.**
 
 Child: I like that one!
 > **Eko ri kusta a tis!**
 
 Parent: Okay, okay. Lie down. Close your eyes...
-> **Pona, pona. Pam tormi. Pam vin a tuo viteparte...**
+> **Pona, pona. Pam tormi. Pam vin a tu viteparte...**
 
 ---
 
 ## 7. Two friends making plans
 
 Jo: Are you free on Saturday?
-> **In terayom, tuo ri non opus, ker?**
+> **In terayom, tu ri non opus, ker?**
 
 Kim: I think so. Why?
 > **Eko ri pensa a si. Kerrason?**
 
 Jo: My brother is playing music at a small place near the river. Do you want to come?
-> **Eko sampariviro ri vake a musi in piko roko nir ronkaaku. Tuo ri vori veni, ker?**
+> **Eko sampariviro ri vake a musi in piko roko nir ronkaaku. Tu ri vori veni, ker?**
 
 Kim: What kind of music?
 > **Ker musi?**
@@ -270,14 +270,14 @@ Kim: Perfect. Should I bring anything?
 > **Meka pona. Eko ri neses tonar a ker, ker?**
 
 Jo: Just money for food. I'll meet you at the door.
-> **Son moni por komi. Eko ri sarve a tuo in porta.**
+> **Son moni por komi. Eko ri sarve a tu in porta.**
 
 ---
 
 ## 8. Checking in at a small hotel
 
 Clerk: Good afternoon. Do you have a reservation?
-> **Pona yan. Tuo ri tene a yerakor, ker?**
+> **Pona yan. Tu ri tene a yerakor, ker?**
 
 Lena: Yes, under Lena. Two nights.
 > **Si, in nomen Rena. 2 nemyan.**
@@ -295,7 +295,7 @@ Lena: Good. Is there hot water in the morning?
 > **Pona. In suryan, wo aku ri in kamar, ker?**
 
 Clerk: Always. Here is your key. Room twelve, up the stairs, on the right.
-> **Pantempo. Tis ri tuo yave. Kamar 12, sur in surmoto, in rem.**
+> **Pantempo. Tis ri tu yave. Kamar 12, sur in surmoto, in rem.**
 
 Lena: One thing — the light in the hall is broken.
 > **Wun kosa: vortoyan in irekamar ri rompe vin.**
@@ -311,19 +311,19 @@ Lena: No problem. Thank you.
 ## 9. A phone call between old friends
 
 Mira: Hey! It's been so long. How are you?
-> **E, Nirus! Meka ronka turan vin! Tuo ri pona, ker?**
+> **E, Nirus! Meka ronka turan vin! Tu ri pona, ker?**
 
 Nils: Busy, but good. And you? How's the new job?
-> **Muropus, sets pona. Kum tuo, ker? Tuo nova opus ri ker?**
+> **Muropus, sets pona. Kum tu, ker? Tu nova opus ri ker?**
 
 Mira: Hard at first, but now I like it. The people are kind.
-> **In yer, turus; sets tistempo eko ri kusta a tis. Omo ri ponasenti.**
+> **In yer, sorin; sets tistempo eko ri kusta a tis. Omo ri ponasenti.**
 
 Nils: That's the important thing.
 > **Tis ri pesaneses kosa.**
 
 Mira: How are the children?
-> **Tuo nino ri ker?**
+> **Tu nino ri ker?**
 
 Nils: Big! The little one started school this year.
 > **Meka! Tis anyo, piko nino ri apa ire ver imparroko.**
@@ -335,13 +335,13 @@ Nils: I know. Time goes fast.
 > **Ves. Tempo ri veros ire.**
 
 Mira: Listen — I'll be in your city next month. Can we meet?
-> **Pam oti: 1 mese tar, eko ri in tuo sitas. Ekomen ri kan sarve, ker?**
+> **Pam oti: 1 mese tar, eko ri in tu sitas. Ekomen ri kan sarve, ker?**
 
 Nils: Of course! Stay with us. We have room.
 > **Ves! Pam sista kum ekomen. Ekomen ri tene a kamar.**
 
 Mira: Are you sure? I don't want to make trouble.
-> **Tuo ri ves, ker? Eko ri non vori vake a marumkosa.**
+> **Tu ri ves, ker? Eko ri non vori vake a marumkosa.**
 
 Nils: No trouble. The children will be happy.
 > **Nem marumkosa. Nino ri konten.**
@@ -351,7 +351,7 @@ Nils: No trouble. The children will be happy.
 ## 10. A small problem at work
 
 Omar: Do you have a minute?
-> **Tuo ri tene a wun parte turan, ker?**
+> **Tu ri tene a wun parte turan, ker?**
 
 Pia: Sure. What's wrong?
 > **Si. Ker marumkosa?**
@@ -366,7 +366,7 @@ Omar: The numbers are all there. But the last part isn't written.
 > **Pan mesurtika ri in kitakarta. Sets vin parte ri non kita vin.**
 
 Pia: Okay. Send me what you have and I'll write that part.
-> **Pona. Pam tonar a tuo ri tene rite kosa ver eko, kum eko ri kita a nontis parte.**
+> **Pona. Pam tonar a tu ri tene rite kosa ver eko, kum eko ri kita a nontis parte.**
 
 Omar: Really? Thank you. I'm sorry — I should have started earlier.
 > **Ves, ker? Meka mersi. Eko ri perton: eko ri pospona apa yer vin.**

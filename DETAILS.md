@@ -33,7 +33,7 @@ The five vowels have "standard" pronunciations, but here too Pikotika is very fo
 | `o` | g**o** | **o** in l**o**ng |
 | `u` | r**u**le | |
 
-There are no diphthongs.  When two vowels come together, each one is its own syllable: **via** is **vi-a**, and **tuo** is **tu-o**.
+There are no diphthongs.  When two vowels come together, each one is its own syllable: **mekaaku** ('sea') is **me-ka-A-ku**, and **veniire** ('trip') is **ve-ni-I-re**.  No single root has two vowels in a row; the pairs turn up where roots meet in a compound, and in adapted names like **Sutorauto** (Strout), where `au` is two syllables.
 
 ### Stressed syllable
 
@@ -283,7 +283,7 @@ summer').  **tis wotempo** is 'this summer'.  To count seasons forward or back, 
 **yer** or **tar** at the end, exactly as with days: **pits wotempo yer** is 'two
 summers ago'.
 
-> **In wotempo yuveniire, tuo ri ire ver kerroko?**
+> **In wotempo yuveniire, tu ri ire ver kerroko?**
 > 内 火时 玩来行, 尔 ⊢ 行 向 何所?
 > 'Where are you going for summer vacation?'
 
@@ -376,7 +376,7 @@ Adverbs work the same way: they go before the verb they modify.  Example: **vero
 | Marker | Han | Sense | Example |
 |---|---|---|---|
 | **kan** | 能 | can, is able | **eko ri kan ire** -- 'I can go' |
-| **pos** | 可 | might, maybe | **tuo ri pos ves** -- 'you may be right' |
+| **pos** | 可 | might, maybe | **tu ri pos ves** -- 'you may be right' |
 | **vori** | 求 | want to | **eko ri vori ire** -- 'I want to go' |
 | **pospona** | 可好 | should | **eko ri pospona ire** -- 'I should go' |
 | **neses** | 要 | must, needs to | **eko ri neses ire** -- 'I must go' |
@@ -393,11 +393,11 @@ A prepositional phrase goes at the **end** of a sentence or clause, after the ob
 | **Eko ri ire ver kase.** | I RI go to home | I'm going home. |
 | **Pam veni in sens ora.** | please come in seven hour | Please come at seven. |
 | **Pam tonar a tis ver eko.** | please give A this to me | Please give that to me. |
-| **Eko ri komi kum tuo.** | I RI eat with you | I'm eating with you. |
+| **Eko ri komi kum tu.** | I RI eat with you | I'm eating with you. |
 | **Pam sista kum ekomen.** | please remain with I-group | Stay with us. |
 | **Eko ri in tisroko.** | I RI in this-place | I'm here. |
 | **Eko ri kum nino.** | I RI with child | I'm with the child. |
-| **Tis ri por tuo.** | this RI for you | This is for you. |
+| **Tis ri por tu.** | this RI for you | This is for you. |
 
 Note that **kum** is 'and' when it joins two like things and 'with' when it opens a phrase of its own, exactly as in English: *bread and water* against *come with me*.
 
@@ -466,7 +466,7 @@ Questions never rearrange the sentence.  Word order is the same as in a statemen
 | Question | Literally | Meaning |
 |---|---|---|
 | **Panyu ri kerroko?** | toilet is what-place | Where is the bathroom? |
-| **Tuo ri ire ver kerroko?** | you RI go toward what-place | Where are you going? |
+| **Tu ri ire ver kerroko?** | you RI go toward what-place | Where are you going? |
 | **Tis ri ker moni?** | this is what money | How much is this? |
 | **Keromo ri sanaomo?** | what-person is heal-person | Who is the doctor? |
 
@@ -474,9 +474,9 @@ For a yes-or-no question there is no slot to fill, so the question word goes at 
 
 | Tag | You are | Example | Meaning |
 |---|---|---|---|
-| **, ker?** | genuinely asking | **Tuo ri vite a kanis, ker?** | Do you see the dog? |
-| **, non?** | expecting yes | **Tuo ri vite a kanis, non?** | You see the dog, don't you? |
-| **, si?** | seeking agreement | **Tuo ri vite a kanis, si?** | You see the dog, right? |
+| **, ker?** | genuinely asking | **Tu ri vite a kanis, ker?** | Do you see the dog? |
+| **, non?** | expecting yes | **Tu ri vite a kanis, non?** | You see the dog, don't you? |
+| **, si?** | seeking agreement | **Tu ri vite a kanis, si?** | You see the dog, right? |
 
 Use **ker** when you don't know the answer.  The other two are like English "isn't it?" or Spanish *¿no?* -- they lean toward an answer, and a listener will feel the lean, so don't use them when you want an honest reply.
 
@@ -520,11 +520,11 @@ Note that **vin** can be combined with the adverbs for 'can', 'might', 'should',
 **Conditions.**  A condition is marked by **pos** at the head of its clause, and the clause that follows from it opens with **tisrason** ('therefore').  Both parts are ordinary sentences; nothing else changes.
 
 > **Pos eko ri tene a moni, tisrason eko ri kompar a tis.**  'If I had the money, I would buy it.'
-> **Pos tuo ri veni, tisrason ekomen ri konten.**  'If you come, we'll be happy.'
+> **Pos tu ri veni, tisrason ekomen ri konten.**  'If you come, we'll be happy.'
 
 Do not leave out **tisrason**.  Without it the two clauses are symmetric, and a listener has no way to tell which one is the condition.
 
-Note that English marks the second clause too, with *would* or *will*; Pikotika does not.  **tisrason** does that work, and the verb stays plain.  Nor is there a separate *would* for politeness or for a hedged prediction: 'I would like to go' is simply **eko ri vori ire**, and 'I think you would like it' is **eko ri pensa a tuo ri kusta a tis**.
+Note that English marks the second clause too, with *would* or *will*; Pikotika does not.  **tisrason** does that work, and the verb stays plain.  Nor is there a separate *would* for politeness or for a hedged prediction: 'I would like to go' is simply **eko ri vori ire**, and 'I think you would like it' is **eko ri pensa a tu ri kusta a tis**.
 
 **Counterfactuals.**  A counterfactual is just a condition you already know to be false, so Pikotika marks it on the condition rather than on the verb.  Use **nonves** (不真, *not-true*) in place of **pos** at the head of the clause; everything after it is unchanged.
 
@@ -581,8 +581,8 @@ A clause can serve as the object of a verb, or as a modifier of a noun.
 
 **As an object**, simply put the clause after *A*.  Only one *RI* is allowed per clause, so an *RI* following *A* can only belong to an embedded clause; no other marking is needed.
 
-> **Eko ri pensa a tis senseyan ri nonturus.**  'I think this week will be easy.'
-> **Eko ri vori a tuo ri veni.**  'I want you to come.'
+> **Eko ri pensa a tis senseyan ri nonsorin.**  'I think this week will be easy.'
+> **Eko ri vori a tu ri veni.**  'I want you to come.'
 
 You can have multiple such clauses; each one binds to the verb directly to its left:
 
@@ -604,13 +604,13 @@ Written with a comma, that **sive** clause would be part of what is hoped for ('
 
 The first uses no special grammar.  State the clause as its own sentence, with **ker** ('what, whichever') filling the slot you are relativizing, then pick it up with **tis** in the next clause:
 
-> **Tuo ri tene a kerkosa, pam tonar a tis ver eko.**  'Whatever you have, send me that.'
+> **Tu ri tene a kerkosa, pam tonar a tis ver eko.**  'Whatever you have, send me that.'
 > **Eko ri rets veni in kerora, pam sista retover tis.**  'Wait until I get back.'
 
 The second puts the clause in front of the noun, closed by **rite** (*RI-TE*, written ⊢> in Han):
 
 > **Omo ri komi rite peste.**  'the animal the person ate'
-> **Pam tonar a tuo ri tene rite kosa ver eko.**  'Send me what you have.'
+> **Pam tonar a tu ri tene rite kosa ver eko.**  'Send me what you have.'
 
 **rite** is *TE* for clauses.  Like *TE* it says "the head follows," but where *TE* takes only the modifier phrase directly before it, **rite** takes the whole clause:
 
@@ -650,12 +650,12 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Welcome. | happy-come | **Kontenveni.** | 楽来. |
 | Hello (when meeting someone new) | new-meet | **Novasarve.** | 初会. |
 | Hello | happy-meet | **Kontensarve.** | 楽会. |
-| I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
+| I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tu.** | 己 ⊢ 楽 会 ⇒ 尔. |
 | Good morning. | good up-sun | **Pona suryan.** | 好 上日. |
 | Good evening. | good down-sun | **Pona tunyan.** | 好 下日. |
-| How are you? | you RI good, what | **Tuo ri pona, ker?** | 尔 ⊢ 好, 何? | 
+| How are you? | you RI good, what | **Tu ri pona, ker?** | 尔 ⊢ 好, 何? | 
 | All is good. | all RI good | **Pan ri pona.** | 全 ⊢ 好. |
-| And you? | and you, what | **Kum tuo, ker?** | 并 尔, 何. | 
+| And you? | and you, what | **Kum tu, ker?** | 并 尔, 何. | 
 | Bye! | sorry-go | **Pertonire!** | 悔行! |
 | Goodbye. | sorry-out-go | **Pertoneksire.** | 悔外行. |
 | See you later. | after-meet | **Tarsarve.** | 后会. |
@@ -666,7 +666,7 @@ Here are some words and phrases to grease the wheels of a conversation:
 | Actually, ... | in-true | **Inves, ...** | 内真, ... |
 | I see (understand). | I RI see | **eko ri vite** | 己 ⊢ 见 |
 | Thanks. | thank | **Mersi.** | 恩. |
-| I thank you. | I RI thank A you | **Eko ri mersi a tuo.** | 己 ⊢ 恩 ⇒ 尔. |
+| I thank you. | I RI thank A you | **Eko ri mersi a tu.** | 己 ⊢ 恩 ⇒ 尔. |
 | No problem. | no bad-thing | **Nem marumkosa.** | 无 悪物. |
 | Please. | please | **Pam.** | 乞. |
 | Yes, please. | yes, please | **Si, pam.** | 是, 乞. |

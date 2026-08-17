@@ -76,8 +76,8 @@ To ask a question, don't rearrange anything.  Just put **ker** ('what') where th
 | Question | Meaning |
 |---|---|
 | **Panyu ri kerroko?** | Where is the bathroom? (*the bathroom is what-place?*) |
-| **Tuo ri ire ver kerroko?** | Where are you going? (*you go toward what-place?*) |
-| **Tuo ri vite a kanis, ker?** | Do you see the dog? |
+| **Tu ri ire ver kerroko?** | Where are you going? (*you go toward what-place?*) |
+| **Tu ri vite a kanis, ker?** | Do you see the dog? |
 
 For a yes-or-no question, add **ker** at the end, as in that last example; or you can append **si** ('yes') or **non** ('no') if you are expecting a 'yes' answer.  **Si** or **non** is a simple way to answer the question.
 
@@ -103,7 +103,7 @@ Bob: Hi Alice. I'm Bob. Nice to meet you.
 
 > _happy-meet, Aris. I RI Popu. I RI happy meet A you._
 
-> **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tuo.**
+> **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tu.**
 
 Find much more translated dialog in [DIALOGS.md](DIALOGS.md).
 

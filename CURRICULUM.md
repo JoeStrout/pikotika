@@ -30,9 +30,9 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | I'm good. | I RI good | **Eko ri pona.** |
 | The child and I are hungry. | child and I RI food-want | **Nino kum eko ri komivori.** |
 | The child is small. | child RI not-big | **Nino ri piko.** |
-| You are happy. | you RI happy | **Tuo ri konten.** |
+| You are happy. | you RI happy | **Tu ri konten.** |
 | I am sorry. | I RI sorry | **Eko ri perton.** |
-| You are right. | you RI true | **Tuo ri ves.** |
+| You are right. | you RI true | **Tu ri ves.** |
 | We are ready. | I-group RI before-finish | **Ekomen ri yervin.** |
 | This is tea. | this RI plant-water | **Tis ri arpoaku.** |
 | The water is good. | water RI good | **Aku ri pona.** |
@@ -44,7 +44,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 | He/she is a child. | this-person RI child | **Tisomo ri nino.** |
 | The story is true. | say-thing RI true | **Tikakosa ri ves.** |
 | I'm going. | I RI go | **Eko ri ire.** |
-| You're talking. | you RI say | **Tuo ri tika.** |
+| You're talking. | you RI say | **Tu ri tika.** |
 | He/she is eating. | this-person RI food | **Tisomo ri komi.** |
 | I'm driving. | I RI vehicle-go | **Eko ri karoire.** |
 | We're leaving. | I-group RI out-go | **Ekomen ri eksire.** |
@@ -74,7 +74,7 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 | English | Gloss | Latin |
 |---|---|---|
 | little by little, gradually | small after small | **piko tar piko** |
-| I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tuo.** |
+| I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tu.** |
 | Good morning. | good up-sun | **Pona suryan.** |
 | Good evening. | good down-sun | **Pona tunyan.** |
 | I see (understand.) | I RI see | **Eko ri vite.** |
@@ -99,14 +99,14 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 | I see the fish in the water. | I RI see A water-animal in water | **Eko ri vite a akupeste in aku.** |
 | I drink tea with my father. | I RI drink A plant-water with me man-parent | **Eko ri pipe a arpoaku kum eko viropari.** |
 | Please bring the water to the child. | please have-come A water to child | **Pam teneveni a aku ver nino.** |
-| I'm getting food for you. | I RI get A food for you | **Eko ri toma a komi por tuo.** |
+| I'm getting food for you. | I RI get A food for you | **Eko ri toma a komi por tu.** |
 
 ### numbers 0-10
 ### yes/no questions
 
 | English | Gloss | Latin |
 |---|---|---|
-| Can you bring water for the child? | you RI can have-come A water for child, what | **Tuo ri kan teneveni a aku por nino, ker?** |
+| Can you bring water for the child? | you RI can have-come A water for child, what | **Tu ri kan teneveni a aku por nino, ker?** |
 | The station is near, isn't it? | vehicle-place RI near, not | **Karoroko ri nir, non?** |
 | This fish is good, right? | this water-animal RI good, yes | **Tis akupeste ri pona, si?** |
 
@@ -116,7 +116,7 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 | English | Gloss | Latin |
 |---|---|---|
 | Yesterday I read a good story. | sun-before, I RI write-see A good say-thing | **Yanyer, eko ri kitavite a pona tikakosa.** |
-| Today I'm meeting your relatives. | this-sun, I RI meet A you parent-group | **Tisyan, eko ri sarve a tuo parimen.** |
+| Today I'm meeting your relatives. | this-sun, I RI meet A you parent-group | **Tisyan, eko ri sarve a tu parimen.** |
 | Tomorrow we're going to the sea.  We'll swim. | sun-after, I-group RI go to big-water.  I-group RI water-go | **Yantar, ekomen ri ire ver mekaaku.  Ekomen ri akuire.** |
 
 
@@ -146,7 +146,7 @@ next, recover, repeat, airplane, airport, everyone, everywhere, everything, alwa
 |---|---|---|
 | Time is money. | time RI money | **Tempo ri moni.** |
 | It's a small world. | earth RI small | **Tera ri piko.** |
-| How are you? | you RI good, what | **Tuo ri pona, ker?** |
+| How are you? | you RI good, what | **Tu ri pona, ker?** |
 | All is good. | all RI good | **Pan ri pona.** |
 | I don't know. | I RI not know | **Eko ri non sape.** |
 
@@ -178,23 +178,23 @@ next, recover, repeat, airplane, airport, everyone, everywhere, everything, alwa
 |---|---|---|
 | Please speak slowly. | please not-fast say | **Pam nonveros tika.** |
 | Please say it again. | please again say | **Pam repe tika.** |
-| You speak Pikotika well. | you RI good say A pikotika | **Tuo ri pona tika a Pikotika.** |
+| You speak Pikotika well. | you RI good say A pikotika | **Tu ri pona tika a Pikotika.** |
 | I'm just looking. | I RI only see | **Eko ri son vite.** |
 
 ### subordinate clause after A
 
 | English | Gloss | Latin |
 |---|---|---|
-| I want you to come. | I RI want A you RI come | **Eko ri vori a tuo ri veni.** |
+| I want you to come. | I RI want A you RI come | **Eko ri vori a tu ri veni.** |
 | She says the water is good. | this-person RI say A water RI good | **Tisomo ri tika a aku ri pona.** |
-| I know you're busy. | I RI know A you RI many-work | **Eko ri sape a tuo ri muropus.** |
+| I know you're busy. | I RI know A you RI many-work | **Eko ri sape a tu ri muropus.** |
 
 
 ### detail questions (ker-words)
 
 | English | Gloss | Latin |
 |---|---|---|
-| Where are you going? | you RI go to what-place | **Tuo ri ire ver kerroko?** |
+| Where are you going? | you RI go to what-place | **Tu ri ire ver kerroko?** |
 | What time does the bus leave? | many-person-vehicle RI out-go in what-hour | **Muromokaro ri eksire in kerora?** |
 | Who is the cook? | what-person RI food-make-person | **Keromo ri komivakeomo?** |
 
@@ -250,8 +250,8 @@ alcohol, autumn, beach, bicycle, book, borrow, bread, caution, cloud, day off, d
 
 | English | Gloss | Latin |
 |---|---|---|
-| Whatever you have, send me that. | you RI have A what-thing, please give A this to me | **Tuo ri tene a kerkosa, pam tonar a tis ver eko.** |
-| Wherever you go, I go. | you RI go to what-place, I RI go to this | **Tuo ri ire ver kerroko, eko ri ire ver tis.** |
+| Whatever you have, send me that. | you RI have A what-thing, please give A this to me | **Tu ri tene a kerkosa, pam tonar a tis ver eko.** |
+| Wherever you go, I go. | you RI go to what-place, I RI go to this | **Tu ri ire ver kerroko, eko ri ire ver tis.** |
 | When Tom eats, he watches TV. | Tom RI food in what-time, this-person RI electric-see | **Tom ri komi in kertempo, tisomo ri vortovite.** |
 
 

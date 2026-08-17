@@ -155,7 +155,7 @@
 | ear | hear-part | otiparte | 耳分 |
 | earn | money-get | monitoma | 贝取 |
 | east | map-right | maparem | 図右 |
-| easy | not-hard | nonturus | 不硬 |
+| easy | not-hard | nonsorin | 不硬 |
 | egg | bird-child | avisnino | 鳥子 |
 | election | all-choose | panerike | 全选 |
 | electric light | electric-sun | vortoyan | 電日 |
@@ -352,7 +352,7 @@
 | nuisance | head-sick | testamara | 头病 |
 | number | amount-say | mesurtika | 寸言 |
 | numeral | amount-say | mesurtika | 寸言 |
-| nut | hard-fruit | turuspomo | 硬果 |
+| nut | hard-fruit | sorinpomo | 硬果 |
 | off | not-work | nonopus | 不力 |
 | off duty | not-work | nonopus | 不力 |
 | office | work-room | opuskamar | 力室 |
@@ -374,7 +374,7 @@
 | pay attention | think-give | pensatonar | 思与 |
 | peace | no-fight | nempatar | 无争 |
 | peaceful | small-happy | pikokonten | 小楽 |
-| peanut | earth-hard-fruit | teraturuspomo | 土硬果 |
+| peanut | earth-hard-fruit | terasorinpomo | 土硬果 |
 | pen (pen or pencil) | write-tool | kitauter | 写工 |
 | per cent | in-hundred | inkaton | 内百 |
 | percent | in-hundred | inkaton | 内百 |
@@ -525,7 +525,7 @@
 | storm | big-rain | mekaruva | 大雨 |
 | story | say-thing | tikakosa | 言物 |
 | strong wind | big-air | mekavento | 大风 |
-| stubborn | hard-head | turustesta | 硬头 |
+| stubborn | hard-head | sorintesta | 硬头 |
 | study again | again-learn | repeimpar | 又学 |
 | suitcase | go-box | irevaso | 行皿 |
 | summer | hot-time | wotempo | 火时 |

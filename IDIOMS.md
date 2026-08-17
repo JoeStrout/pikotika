@@ -26,7 +26,7 @@ one stone' passes: English, German, Chinese 一石二鳥 and Japanese all say it
 cake' fails, and fails instructively -- Spanish says *pan comido* (eaten bread),
 Japanese 朝飯前 (before breakfast), Russian "simpler than a steamed turnip."  There is
 no shared picture to recognize, so a Pikotika coinage would be a 201st root in
-disguise.  Say **nonturus**, 'not hard'.
+disguise.  Say **nonsorin**, 'not hard'.
 
 **A figure that earns its keep usually becomes a root sense or a compound instead, and
 that is the better home for it.**  The language is already full of them: **pesaneses**
@@ -56,12 +56,12 @@ list short.
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
-| I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tuo.** | 己 ⊢ 楽 会 ⇒ 尔. |
+| I'm happy to meet you. | I RI happy meet A you | **Eko ri konten sarve a tu.** | 己 ⊢ 楽 会 ⇒ 尔. |
 | No problem.  You're welcome. | no bad-thing | **Nem marumkosa.** | 无 悪物. |
 | Never mind.  It doesn't matter. | no thing | **Nem kosa.** | 无 物. |
 | Enjoy your meal.  (*bon appétit*) | good food | **Pona komi.** | 好 食. |
 | Take care.  Safe travels. | good go | **Pona ire.** | 好 行. |
-| After you. | you before | **Tuo yer.** | 尔 前. |
+| After you. | you before | **Tu yer.** | 尔 前. |
 | I'm just looking. | I RI only see | **Eko ri son vite.** | 己 ⊢ 只 見. |
 | It's on me.  I'll pay. | I RI buy | **Eko ri kompar.** | 己 ⊢ 買. |
 | I see (understand.) | I RI see | **Eko ri vite.** | 己 ⊢ 見. |

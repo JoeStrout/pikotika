@@ -49,10 +49,10 @@
 # you
 ### you, addressee
 ---
-# tuo
+# tu
 ## 尔
 ===
-# tuo
+# tu
 ---
 # you
 ### you, addressee
@@ -828,11 +828,11 @@ child RI not-big
 ===
 # You are happy.
 ---
-# Tuo ri konten.
+# Tu ri konten.
 ## 尔 ⊢ 楽.
 you RI happy
 ===
-# Tuo ri konten.
+# Tu ri konten.
 ---
 # You are happy.
 ## 尔 ⊢ 楽.
@@ -852,11 +852,11 @@ I RI sorry
 ===
 # You are right.
 ---
-# Tuo ri ves.
+# Tu ri ves.
 ## 尔 ⊢ 真.
 you RI true
 ===
-# Tuo ri ves.
+# Tu ri ves.
 ---
 # You are right.
 ## 尔 ⊢ 真.
@@ -996,11 +996,11 @@ I RI go
 ===
 # You're talking.
 ---
-# Tuo ri tika.
+# Tu ri tika.
 ## 尔 ⊢ 言.
 you RI say
 ===
-# Tuo ri tika.
+# Tu ri tika.
 ---
 # You're talking.
 ## 尔 ⊢ 言.

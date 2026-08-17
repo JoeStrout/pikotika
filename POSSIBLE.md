@@ -17,12 +17,12 @@ actually observed.
 **Idea:** *RI* may be reduced to a brief pause -- written as a comma -- whenever the
 meaning stays clear.
 
-> **Eko, tuo pari.**  'I am your parent.'
+> **Eko, tu pari.**  'I am your parent.'
 > **Eko, eko pari nino.**  'I am my parent's child.'
-> **Tuo, pona omo.**  'You are a good person.'
+> **Tu, pona omo.**  'You are a good person.'
 
 Each is the reduced form of the full sentence, which stays correct and is always
-available: **Eko ri tuo pari**, **Eko ri eko pari nino**, **Tuo ri pona omo**.
+available: **Eko ri tu pari**, **Eko ri eko pari nino**, **Tu ri pona omo**.
 
 **Why it might be worth having:** *RI* marks the boundary between subject and
 predicate, and a pause is the smallest thing that can mark a boundary.  So this is a
@@ -47,7 +47,7 @@ ends:
 
 | String | One reading | The other |
 |---|---|---|
-| **eko tuo pari** | 'I am your parent' | 'my-your parent' (one phrase) |
+| **eko tu pari** | 'I am your parent' | 'my-your parent' (one phrase) |
 | **eko pona omo** | 'I am a good person' | 'my good person' (one phrase) |
 
 Note that this is not a problem about nouns specifically.  It is a boundary problem,
@@ -93,7 +93,7 @@ veni**.
 rigid, so the empty slot is identifiable; the parallel clause supplies the only
 candidate predicate; and **non** already stands alone as 'no' in short answers, so
 nothing about a bare **non** is unfamiliar.  Pikotika also elides elsewhere already --
-**Kum tuo, ker?** 'And you?' drops an entire predicate -- so ellipsis as such is not
+**Kum tu, ker?** 'And you?' drops an entire predicate -- so ellipsis as such is not
 foreign to the language.
 
 **Why it is not in the language:** three reasons, in increasing order of weight.
@@ -102,7 +102,7 @@ First, it saves almost nothing.  **non veni** to **non** is one syllable, agains
 new grammatical device to learn.
 
 Second, sentence-final **non** is already the yes/no tag that expects the answer yes
-(**Tuo ri vite a kanis, non?**).  Written, the comma keeps them apart.  Spoken,
+(**Tu ri vite a kanis, non?**).  Written, the comma keeps them apart.  Spoken,
 **...ri non** and **..., non?** are separated only by a pause and intonation, and
 Pikotika avoids resting a distinction on prosody everywhere else.
 
