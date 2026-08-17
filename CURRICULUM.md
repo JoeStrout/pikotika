@@ -65,7 +65,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 
 A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, get, more, drink, for, fast, thank, like, can, woman, man, seven, from, only, three, four, near, name, about, five, middle, six, eight, nine, ten, interval
 
-### 40 more compounds (total: 79)
+### 40 more compounds
 
 beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, fetch, fish, love, meal (a sitting), midday, morning, mother, never, night, nobody, nothing, nowhere, politeness (verbal), prepare, problem, read, reader, relative (kin), sad, sea, slow, soup, tears, thirsty, today, tomorrow, tonight, trip, welcome, writer, yesterday
 
@@ -136,7 +136,7 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 
 black, blue, green, red, white, yellow, grain, sweet, sequence, manner, again, every, same, map, page, room, tool, metal, stone, air, earth, hot, TE, money, color, home, long, hundred, many, amount, million, thousand, month, weekday, year, feel, know, play, try
 
-### 45 more compounds (total: 104)
+### 45 more compounds
 
 next, recover, repeat, airplane, airport, everyone, everywhere, everything, always, previous, gale, coffee, cyan, brown, Saturday, Tuesday, tan, Friday, Monday, dance, less, Thursday, purple, pink, pig, orange, brother, sister, look like, week, weekend, grey, Sunday, too [much], Wednesday, what time, who, where, when, how, question, rice (white rice), party, wheat, owner
 
@@ -205,7 +205,7 @@ next, recover, repeat, airplane, airport, everyone, everywhere, everything, alwa
 
 head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electric, picture, rain, city, cold, fear, hard, heavy, bend, line, round, straight, back, edge, become, buy, choose, fight, give, sound, help, learn, necessary, begin, put, remain, sleep, think
 
-### 45 more compounds (total: 139)
+### 45 more compounds
 
 alcohol, autumn, beach, bicycle, book, borrow, bread, caution, cloud, day off, doctor, false, fly, guest, ice cream, menu, number, office, park, pen, price, public transit, return (something), go back, school, ship, shop, should, smile, snow, spicy, spring, summer, sunny, teacher, telephone, television, toy, vegetables, vendor, walk, warn, whatever, winter, work day
 
@@ -231,20 +231,23 @@ alcohol, autumn, beach, bicycle, book, borrow, bread, caution, cloud, day off, d
 
 ### aspect (begin/finish/ongoing actions)
 
-| English | Gloss | Latin |
-|---|---|---|
-| I [begin/began/will begin] eating | I RI food begin | **Eko ri komi apa.** |
-| I [have/had] eaten | I RI food finish | **Eko ri komi vin.** |
-| I [am/was/will be] still eating | I RI food remain. | **Eko ri komi sista.** |
-
-### counterfactuals
+The aspect word (**apa**, **vin**, or **sista**) comes after the whole predicate (including the object, if any).
 
 | English | Gloss | Latin |
 |---|---|---|
-| I could have gone. | I RI can go finish | **Eko ri kan ire vin.** |
-| I might have gone. | I RI if go finish | **Eko ri pos ire vin.** |
-| I should have gone. | I RI if-good go finish | **Eko ri pospona ire vin.** |
-| I must have gone. | I RI must go finish | **Eko ri neses ire vin.** |
+| I [begin/began/will begin] eating the vegetables | I RI food A green-food begin | **Eko ri komi a vertekomi apa.** |
+| I [have/had] eaten the vegetables | I RI food A green-food finish | **Eko ri komi a vertekomi vin.** |
+| I [am/was/will be] still eating the vegetables | I RI food A green-food remain | **Eko ri komi a vertekomi sista.** |
+
+
+### conditionals & counterfactuals
+
+| English | Gloss | Latin |
+|---|---|---|
+| If I have the money, I'll buy it. | if I RI have A money, this-reason I RI buy A this. | Pos eko ri tene a moni, tisrason eko ri kompar a tis. |
+| If I had the money, I would buy it. | not-true I RI have A money, this-reason I RI buy A this. | Nonves eko ri tene a moni, tisrason eko ri kompar a tis. |
+| If I had had the money, I would have bought it. | not-true I RI have A money finish, this-reason I RI buy A this finish. | Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin. |
+
 
 ### leading relative clauses
 
@@ -261,11 +264,22 @@ alcohol, autumn, beach, bicycle, book, borrow, bread, caution, cloud, day off, d
 
 body, hand, life, sick, stomach, anger, surprise, tired, or, other, key, table, toilet, oil, salt, bird, bug, dog, country, friend, law, marry, art, temple, clean, old, flat, down, far, hole, left, right, agree, break, join, lose
 
-### 40 more compounds (total: 179)
+### 40 more compounds
+
 ### could have, might have, should have, & must have
+
+| English | Gloss | Latin |
+|---|---|---|
+| I could have gone. | I RI can go finish | **Eko ri kan ire vin.** |
+| I might have gone. | I RI if go finish | **Eko ri pos ire vin.** |
+| I should have gone. | I RI if-good go finish | **Eko ri pospona ire vin.** |
+| I must have gone. | I RI must go finish | **Eko ri neses ire vin.** |
+
 ### modifier clause with RITE
+
 ### indefinite-subject sentences (starting with RI)
 
 
+---
 ## Optional bonus level: Han writing
 

@@ -506,7 +506,17 @@ Pikotika verbs never change form.  **vite** is see, saw, seen, and seeing, and t
 | **vin** | 閉 | finished | **eko ri komi vin** -- I have/had eaten |
 | **sista** | 止 | still going | **eko ri komi sista** -- I am/was/will be still eating |
 
-These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is 'I am still here'.
+**The marker closes the predicate, not the verb.**  If there is an object, the aspect word comes after it -- never between the verb and *A*:
+
+| Pikotika | Literally | Meaning |
+|---|---|---|
+| **Eko ri komi a karne vin.** | I RI food A meat finish | I have eaten the meat. |
+| **Eko ri komi a karne apa.** | I RI food A meat begin | I'm starting on the meat. |
+| **Tu ri kitavite a murkarta vin in kertempo, pam retsetonar a tis.** | you RI write-see A many-page finish in what-time, please back-give A this | Please return the book when you have finished reading it. |
+
+These attach to any predicate, not only to verbs: **eko ri in tisroko sista** is 'I am still here'.  That sentence has no verb at all, and the marker still lands at the end -- which is the clearest sign that what it closes is the predication, not a word.
+
+A prepositional phrase may fall on either side of the marker.  A phrase that is part of what you are predicating sits inside, before it (**eko ri in tisroko sista**); one that merely frames the clause in time or place may follow the marker or precede it, as reads better: **Vortoyan ri rompe vin in mur mese turan** -- 'the light has been broken for months'.
 
 Note that **vin** can be combined with the adverbs for 'can', 'might', 'should', and 'must' to express counterfactuals, regret, or a conclusion from evidence:
 
