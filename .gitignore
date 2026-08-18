@@ -29,3 +29,6 @@ env/
 
 # private tools & notes
 private
+
+# built site
+site/
