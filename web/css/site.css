@@ -6,6 +6,32 @@
    for an explicit [data-theme="dark"], so the toggle wins in both directions.
    --------------------------------------------------------------------------- */
 
+/* --- the Han face --------------------------------------------------------
+   One file, not two.  Pikotika Han is a subset of Noto Sans CJK JP built by
+   gen_han_font.py: every character the language uses, including the ⊢ and ⇒
+   particles, so a line of Han never picks up a second typeface partway
+   through.  23 KB a weight.  See web/fonts/OFL.txt.
+
+   No unicode-range: the font covers exactly what .han needs and nothing else,
+   so anything outside it -- a name, which stays in Latin on purpose -- falls
+   through to the stack below by itself. */
+
+@font-face {
+  font-family: "Pikotika Han";
+  src: url("/fonts/pikotika-han-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pikotika Han";
+  src: url("/fonts/pikotika-han-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg:            #FFFDF3;
   --bg-tint:       #FFFAE0;
@@ -26,7 +52,8 @@
   --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
                   ui-serif, serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-  --font-han: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  --font-han: "Pikotika Han", "Hiragino Sans", "Noto Sans JP", "Yu Gothic",
+              sans-serif;
 
   --measure: 38rem;
   --wide: 64rem;
@@ -291,7 +318,11 @@ p { margin: 0 0 1.1em; }
 
 .gloss { font-style: italic; color: var(--text-muted); }
 
-.han { font-family: var(--font-han); }
+.han {
+  font-family: var(--font-han);
+  /* CJK metrics are tall; without this a Han line pushes its neighbors apart. */
+  line-height: 1.5;
+}
 
 .example {
   border-left: 3px solid var(--accent);
@@ -300,6 +331,142 @@ p { margin: 0 0 1.1em; }
 }
 .example .en { color: var(--text-muted); margin: 0 0 .2em; }
 .example .pk { display: block; font-size: 1.15rem; margin: 0; }
+
+/* The play button sits on the same baseline as the sentence it speaks.  The
+   row is built by JavaScript, so nothing here applies until it runs. */
+.example-line { display: flex; align-items: baseline; gap: .5rem; }
+.example-line .pk { display: inline; }
+
+.example-speak {
+  flex: none;
+  font: inherit;
+  font-size: .8rem;
+  line-height: 1;
+  padding: .3rem .55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.example-speak:hover:not([disabled]) {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+.example-speak[disabled] { opacity: .4; cursor: default; }
+.example-speak.loading { opacity: .5; cursor: progress; }
+
+/* --- word chips ---------------------------------------------------------
+   A chip is a button that has to look like nothing but the word it contains,
+   so all of the button is reset away and a dotted underline is the only mark
+   -- the convention Duolingo has taught most readers to read as "tap this".
+
+   Every chip is underlined, including on an all-Pikotika line where that means
+   every word carries dots.  WEBSITE_DESIGN.md proposed setting it once at block
+   level there instead; the continuous rule read as one long link rather than as
+   a row of separate tappable words, which is the opposite of what it is for.
+
+   These are created by JavaScript at page load (see site.js), so nothing here
+   applies until it runs; a reader without JavaScript sees ordinary text. */
+
+/* A span with role="button" (see site.js) -- so it needs no button reset, and
+   it stays selectable, which a real <button> is not. */
+.pk .w {
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.pk .w:hover { text-decoration-color: var(--accent-deep); }
+.pk .w[aria-expanded="true"] { background: var(--accent); color: var(--accent-ink); }
+
+.wordpop {
+  position: absolute;
+  z-index: 40;
+  width: max-content;
+  max-width: min(22rem, calc(100vw - 2rem));
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: .7rem .85rem;
+  font-size: .95rem;
+}
+
+.wordpop-head { display: flex; align-items: baseline; gap: .5rem; }
+.wordpop-form { font-size: 1.1rem; }
+.wordpop-han { font-family: var(--font-han); color: var(--text-muted); }
+.wordpop-en { margin: .25rem 0 0; }
+.wordpop-parse { margin: .15rem 0 0; font-size: .9rem; }
+.wordpop-none { margin: 0; color: var(--text-muted); }
+
+.wordpop-foot {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-top: .6rem;
+  padding-top: .5rem;
+  border-top: 1px solid var(--border);
+  font-size: .85rem;
+}
+
+.wordpop-speak {
+  font: inherit;
+  line-height: 1;
+  padding: .25rem .5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-tint);
+  color: var(--text);
+  cursor: pointer;
+}
+.wordpop-speak[disabled] { opacity: .4; cursor: default; }
+.wordpop-speak:hover:not([disabled]) { background: var(--accent); }
+/* The first press fetches the whole sprite; say so rather than looking dead. */
+.wordpop-speak.loading { opacity: .5; cursor: progress; }
+.wordpop-level { color: var(--text-muted); }
+.wordpop-link { margin-left: auto; }
+
+/* --- Han specimen (/specimen/) ------------------------------------------- */
+
+.glyphs {
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+  gap: .5rem;
+}
+
+.glyph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .15rem;
+  padding: .6rem .3rem .5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.glyph .han { font-size: 2rem; line-height: 1.1; }
+.glyph-label { font-size: .8rem; color: var(--text-muted); }
+.glyph-sub { font-size: .75rem; color: var(--text-muted); opacity: .75; }
+
+.specimen-line { font-size: 1.5rem; margin: .75rem 0; }
+.specimen-weight {
+  font-family: var(--font-body);
+  font-size: .8rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: .75rem;
+}
 
 /* --- footer -------------------------------------------------------------- */
 

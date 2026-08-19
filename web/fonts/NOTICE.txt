@@ -1,0 +1,16 @@
+Pikotika Han
+------------
+
+pikotika-han-regular.woff2, pikotika-han-bold.woff2
+
+A subset of Noto Sans CJK JP, containing only the ~200 characters Pikotika
+uses, with one glyph added: U+22A2 TURNSTILE (the particle RI), which the
+source face does not have.  That glyph is drawn from the source face's own
+stroke weights and math axis -- see gen_han_font.py in the repository root,
+which builds these files.
+
+Noto Sans CJK is copyright the Noto Project Authors
+(https://github.com/notofonts/noto-cjk) and is licensed under the SIL Open
+Font License, Version 1.1, reproduced in OFL.txt beside this file.  The OFL
+permits modification and redistribution; the family has been renamed so that
+this subset does not claim to be Noto.
