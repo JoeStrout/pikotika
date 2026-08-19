@@ -357,6 +357,70 @@ p { margin: 0 0 1.1em; }
 .example-speak[disabled] { opacity: .4; cursor: default; }
 .example-speak.loading { opacity: .5; cursor: progress; }
 
+/* --- sentence schema -----------------------------------------------------
+   A diagram of a sentence frame: one cell per position, the particles written
+   out as themselves and the open positions as dashed placeholders you fill in.
+   Meant to be reused wherever a construction is introduced, not just on the
+   home page.
+
+       <table class="schema"><tr>
+       <td class="slot">subject</td>
+       <td><span class="pk">ri</span></td>
+       ...
+
+   The author marks only the placeholders; a plain cell is a literal word.  An
+   optional <thead> row labels the columns.  Particles are deliberately not
+   filled with the accent color: they hold live word chips, and an open chip
+   marks itself by turning accent, which it cannot do on an accent ground. */
+
+.schema {
+  margin: 1.5rem auto;
+  border-collapse: separate;
+  border-spacing: .3rem;
+  /* Not a data table: no caption to read, and the row is the whole content. */
+  text-align: center;
+}
+
+.schema td {
+  padding: .4rem .8rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 7px;
+  background: var(--bg-tint);
+  white-space: nowrap;
+}
+
+.schema td.slot {
+  border-style: dashed;
+  background: none;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.schema th {
+  padding: 0 .8rem .15rem;
+  border: 0;
+  background: none;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* A gloss or translation under the frame, aligned to the same columns. */
+.schema tr.schema-eg td {
+  border: 0;
+  background: none;
+  padding-top: .1rem;
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 26rem) {
+  .schema { border-spacing: .2rem; }
+  .schema td { padding: .35rem .5rem; }
+}
+
 /* --- word chips ---------------------------------------------------------
    A chip is a button that has to look like nothing but the word it contains,
    so all of the button is reset away and a dotted underline is the only mark
@@ -657,22 +721,6 @@ p { margin: 0 0 1.1em; }
   margin: 0 0 .35rem;
 }
 .vocab-rels { margin: 0; display: flex; flex-wrap: wrap; gap: .3rem .5rem; }
-
-/* A related word is a button that has to read as the word it names -- the same
-   bargain the sentence chips strike, so it wears the same dotted underline. */
-.vocab-rel {
-  font: inherit;
-  font-weight: 550;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: inherit;
-  cursor: pointer;
-  text-decoration: underline dotted;
-  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
-  text-underline-offset: 3px;
-}
-.vocab-rel:hover { text-decoration-color: var(--accent-deep); }
 
 .vocab-section .example { margin: .5rem 0; }
 .vocab-dlink { margin: 1rem 0 0; font-size: .8rem; }

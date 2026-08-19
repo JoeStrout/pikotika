@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-643 terms
+641 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -14,15 +14,15 @@
 | ache | sick-feel | marasenti | 病心 |
 | actually | in-true | inves | 内真 |
 | adore | big-like | mekakusta | 大愛 |
-| adventure | fear-play | timoyu | 危玩 |
-| adventure trip | fear-come-go | timoveniire | 危来行 |
-| adventurer | fear-play-person | timoyuomo | 危玩人 |
+| adventure | danger-play | timoyu | 危玩 |
+| adventure trip | danger-come-go | timoveniire | 危来行 |
+| adventurer | danger-play-person | timoyuomo | 危玩人 |
 | age | year-interval | anyoturan | 年間 |
 | aged | year-big | anyomeka | 年大 |
 | airplane | air-vehicle | ventokaro | 风车 |
 | airport | air-vehicle-place | ventokaroroko | 风车所 |
 | alcohol (usually wine) | fire-water | woaku | 火水 |
-| alert | fear-say | timotika | 危言 |
+| alert | danger-say | timotika | 危言 |
 | allergy | body-not-agree | korpononakor | 体不約 |
 | alternative | choose-thing | erikekosa | 选物 |
 | always | every-time | pantempo | 全时 |
@@ -88,13 +88,13 @@
 | call | electric-say | vortotika | 電言 |
 | call to mind | again-know | repesape | 又知 |
 | calm | not-anger | nonraye | 不怒 |
-| careful | fear-see | timovite | 危見 |
+| careful | danger-see | timovite | 危見 |
 | carpet | earth-cloth | teraropa | 土衣 |
 | carry | have-go | teneire | 有行 |
 | cast a ballot | choose-say | eriketika | 选言 |
 | cat | home-animal | kasepeste | 户匹 |
-| caution | fear-see | timovite | 危見 |
-| cautious | fear-see | timovite | 危見 |
+| caution | danger-see | timovite | 危見 |
+| cautious | danger-see | timovite | 危見 |
 | chair | put-tool | setauter | 坐工 |
 | change (money returned) | back-money | retsemoni | 反贝 |
 | changing room | cloth-try-room | ropatentarkamar | 衣試室 |
@@ -134,9 +134,8 @@
 | customer | come-person | veniomo | 来人 |
 | cutlery | food-tool | komiuter | 食工 |
 | cyan | blue-green | asurverte | 青緑 |
-| dance | music-go | musiire | 曲行 |
+| dance | music-movement | musiire | 曲行 |
 | day off | not-work-sun | nonopusyan | 不力日 |
-| decimal point | part | parte | 分 |
 | decision | choose-finish | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
 | digit | amount-say | mesurtika | 寸言 |
@@ -174,9 +173,9 @@
 | exam | know-try | sapetentar | 知試 |
 | examination (medical) | heal-try | sanatentar | 医試 |
 | excessively | up-degree | surmesur | 上寸 |
-| exercise | heal-go | sanaire | 医行 |
+| exercise | heal-movement | sanaire | 医行 |
 | expect | not-surprise | nonsorpe | 不奇 |
-| expedition | fear-come-go | timoveniire | 危来行 |
+| expedition | danger-come-go | timoveniire | 危来行 |
 | experience | try-know | tentarsape | 試知 |
 | experienced | try-know | tentarsape | 試知 |
 | experiment | try-work | tentaropus | 試力 |
@@ -237,7 +236,7 @@
 | grey | stone-color | rapiskoror | 岩色 |
 | grief | big-not-happy | mekanonkonten | 大不楽 |
 | guest | come-person | veniomo | 来人 |
-| gym | heal-go-place | sanaireroko | 医行所 |
+| gym | heal-movement-place | sanaireroko | 医行所 |
 | hallway | go-room | irekamar | 行室 |
 | hand back | back-give | retsetonar | 反与 |
 | harvest | plant-get | arpotoma | 木取 |
@@ -327,7 +326,6 @@
 | menu | food-sequence | komiorten | 食序 |
 | messy | not-sequence | nonorten | 不序 |
 | midday | middle-sun | metseyan | 中日 |
-| minute | part | parte | 分 |
 | mist | water-air | akuvento | 水风 |
 | moment | small-time | pikotempo | 小时 |
 | Monday | month-weekday | meseyom | 月曜 |
@@ -611,9 +609,9 @@
 | waiter | help-person | serviomo | 助人 |
 | walk | leg-go | kampaire | 足行 |
 | war | big-fight | mekapatar | 大争 |
-| warn | fear-say | timotika | 危言 |
-| warning | fear-say | timotika | 危言 |
-| watch out | fear-see | timovite | 危見 |
+| warn | danger-say | timotika | 危言 |
+| warning | danger-say | timotika | 危言 |
+| watch out | danger-see | timovite | 危見 |
 | watch TV | electric-see | vortovite | 電見 |
 | we | I-group | ekomen | 己众 |
 | wear | cloth-have | ropatene | 衣有 |

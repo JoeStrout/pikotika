@@ -1,384 +1,383 @@
-EN	gloss	root_level	assigned_level
-we; us	I-group	1	1
-see you later	after-meet	1	1
-ready; prepared	before-finish	1	1
-hungry	food-want	1	1
-hello	happy-meet	1	1
-finally; at last; in the end; eventually	in-finish	1	1
-actually; in truth	in-true	1	1
-hello (someone new)	new-meet	1	1
-that; those	not-this	1	1
-depart; leave (depart)	out-go	1	1
-tea	plant-water	1	1
-story; tale	say-thing	1	1
-moment	small-time	1	1
-bye	sorry-go	1	1
-goodbye	sorry-out-go	1	1
-he; she; him; her; they (people); them (people)	this-person	1	1
-drive; travel by vehicle	vehicle-go	1	1
-station	vehicle-place	1	1
-request; ask for	want-say	1	1
-sea	big-water	1	2
-meal (a sitting); mealtime	food-time	1	2
-sad	not-happy	1	2
-politeness (verbal)	please-say	1	2
-tomorrow	sun-after	1	2
-yesterday	sun-before	1	2
-today	this-sun	1	2
-soup	water-food	1	2
-swim	water-go	1	2
-problem; trouble	bad-thing	2	2
-prepare; get ready; arrange	before-make	2	2
-love; adore; be in love with	big-like	2	2
-trip; journey	come-go	2	2
-thirsty	drink-want	2	2
-cook (person)	food-make-person	2	2
-fetch; go and get	get-go	2	2
-beautiful; pretty; good-looking; beauty	good-see	2	2
-welcome	happy-come	2	2
-bring	have-come	2	2
-carry; take along; transport	have-go	2	2
-father	man-parent	2	2
-midday; noon	middle-sun	2	2
-discover; find something new	new-see	2	2
-nobody; no one	no-person	2	2
-nowhere	no-place	2	2
-night	no-sun	2	2
-nothing	no-thing	2	2
-never	no-time	2	2
-slow; slowly	not-fast	2	2
-relative (kin)	parent-group	2	2
-eye	see-part	2	2
-tears; cry	see-water	2	2
-tonight	this-no-sun	2	2
-morning	up-sun	2	2
-breakfast	up-sun-food	2	2
-fish	water-animal	2	2
-mother	woman-parent	2	2
-writer; author	write-person	2	2
-read	write-see	2	2
-reader	write-see-person	2	2
-what time; at what o'clock	what-hour	1	3
-who	what-person	1	3
-where	what-place	1	3
-question; ask; inquire	what-say	1	3
-when; on what occasion	what-time	1	3
-dance	music-go	2	3
-less; fewer	not-more	2	3
-week	seven-sun	2	3
-weekend	seven-sun-finish	2	3
-business trip	work-come-go	2	3
-next; the one after	after-sequence	3	3
-recover; get back; retrieve	again-get	3	3
-recall; recollect; call to mind	again-know	3	3
-repeat; say again	again-say	3	3
-airplane	air-vehicle	3	3
-airport	air-vehicle-place	3	3
-previous; preceding; former; the one before	before-sequence	3	3
-gale; strong wind	big-air	3	3
-coffee	black-drink	3	3
-cyan	blue-green	3	3
-brown	earth-color	3	3
-Saturday	earth-weekday	3	3
-everyone; everybody	every-person	3	3
-everywhere	every-place	3	3
-everything	every-thing	3	3
-always	every-time	3	3
-Tuesday	fire-weekday	3	3
-tan; beige	grain-color	3	3
-Friday	metal-weekday	3	3
-Monday	month-weekday	3	3
-Thursday	plant-weekday	3	3
-purple	red-blue	3	3
-pink	red-white	3	3
-pig	red-white-animal	3	3
-orange	red-yellow	3	3
-brother	same-parent-man	3	3
-sister	same-parent-woman	3	3
-look like; resemble; take after; look alike	same-see	3	3
-grey	stone-color	3	3
-Sunday	sun-weekday	3	3
-too [much]; excessively	up-degree	3	3
-Wednesday	water-weekday	3	3
-how	what-manner	3	3
-rice (white rice)	white-grain	3	3
-wheat	yellow-grain	3	3
-whatever; whichever thing	what-thing	1	4
-autumn; fall	fruit-time	1	4
-spring (season)	plant-time	1	4
-number; numeral; digit	amount-say	3	4
-summer	hot-time	3	4
-should	if-good	4	4
-winter	cold-time	4	4
-grief	big-not-happy	1	
-false; untrue; if (counterfactual)	not-true	1	
-decimal point; minute	part	1	
-serene; relaxed; peaceful	small-happy	1	
-second (of time)	small-part	1	
-small talk; chat; Pikotika (the language)	small-say	1	
-ship; boat	water-vehicle	1	
-ugly	bad-see	2	
-guest; visitor; customer	come-person	2	
-food supplies; provisions; stores	have-food	2	
-owner; proprietor	have-person	2	
-borrow	interval-get	2	
-on that note; relatedly; speaking of which	near-about	2	
-off; free; off duty	not-work	2	
-day off; holiday	not-work-sun	2	
-time off; break; the holidays	not-work-time	2	
-harvest	plant-get	2	
-rise; ascend; go up	up-go	2	
-horse; mount	vehicle-animal	2	
-work day; business day	work-sun	2	
-text; writing (text)	write-say	2	
-relative clause marker	RI-TE	3	
-redo; remake; do again	again-make	3	
-review; re-examine; look over again	again-see	3	
-fly; flight	air-go	3	
-potato	earth-grain	3	
-last; final; the end (of a series)	finish-sequence	3	
-alcohol (usually wine)	fire-water	3	
-fifth (in a series); 5th	five-sequence	3	
-menu	food-sequence	3	
-cutlery	food-tool	3	
-fourth (in a series); 4th	four-sequence	3	
-wine	fruit-fire-water	3	
-hallway; corridor	go-room	3	
-kind (good-hearted); good-hearted; kindness	good-feel	3	
-beer (any grain alcohol)	grain-fire-water	3	
-bread	grain-food	3	
-vegetables	green-food	3	
-park	green-place	3	
-green light (permission); go-ahead	green-say	3	
-cat; pet	home-animal	3	
-percent; per cent; %	in-hundred	3	
-remember; retain; keep in mind; memory	know-have	3	
-test (of knowledge); exam; quiz	know-try	3	
-river	long-water	3	
-banana	long-yellow-fruit	3	
-book	many-page	3	
-library	many-page-home	3	
-bus	many-person-vehicle	3	
-busy	many-work	3	
-north	map-up	3	
-shame	me-bad-feel	3	
-pride	me-good-feel	3	
-coin	metal-money	3	
-price; fee; cost	money-amount	3	
-earn	money-get	3	
-concert hall	music-home	3	
-musical instrument	music-tool	3	
-business card	name-page	3	
-list; roster; register	name-sequence	3	
-gluten-free food	no-yellow-grain-food	3	
-not enough; insufficient	not-all	3	
-random; disordered; messy	not-sequence	3	
-sour	not-sweet	3	
-lemon	not-sweet-yellow-fruit	3	
-first (in a series); 1st	one-sequence	3	
-queue; line (of people)	person-sequence	3	
-vacation; holiday	play-come-go	3	
-party (celebration)	play-group	3	
-theater; playhouse	play-home	3	
-playground	play-place	3	
-toy	play-thing	3	
-respect	please-feel	3	
-courtesy	please-manner	3	
-tomato sauce	red-food	3	
-tomato	red-fruit	3	
-road map; roadmap	road-map	3	
-language; tongue (language)	say-manner	3	
-step (in a procedure)	sequence-part	3	
-sand; gravel	small-stone	3	
-sunny	sun-air	3	
-third (in a series); 3rd	three-sequence	3	
-schedule; timetable	time-sequence	3	
-experience; experienced	try-know	3	
-search; look for; seek	try-see	3	
-proof; evidence; verify; confirm	try-true	3	
-experiment	try-work	3	
-second (in a series); 2nd	two-sequence	3	
-mountain	up-earth	3	
-fog; mist	water-air	3	
-mud	water-earth	3	
-porridge; congee	water-grain	3	
-sake	white-grain-fire-water	3	
-office	work-room	3	
-report; document (written)	write-page	3	
-pen (pen or pencil)	write-tool	3	
-old (in years); aged	year-big	3	
-age	year-interval	3	
-season	year-part	3	
-young	year-small	3	
-yellow fruit (usually banana)	yellow-fruit	3	
-wheat bread	yellow-grain-food	3	
-relearn; study again	again-learn	4	
-reconsider; rethink; think over	again-think	4	
-lightning	air-electric	4	
-smell	air-taste	4	
-election	all-choose	4	
-return (something); give back; hand back	back-give	4	
-return; go back	back-go	4	
-change (money returned)	back-money	4	
-reply; answer; respond; response	back-say	4	
-unlucky; unfortunate; unfortunately	bad-if	4	
-corner (of a street); turn (in a road)	bend-place	4	
-war	big-fight	4	
-laugh	big-happy-mouth	4	
-storm; downpour	big-rain	4	
-loud	big-sound	4	
-beach; seashore	big-water-edge	4	
-black market	black-buy-place	4	
-company; corporation; firm	buy-group	4	
-business plan	buy-group-map	4	
-vendor; shopkeeper	buy-person	4	
-shop	buy-place	4	
-decision; settle; make up one's mind	choose-finish	4	
-ballot	choose-page	4	
-vote; cast a ballot	choose-say	4	
-option; alternative; choice	choose-thing	4	
-outskirts	city-edge	4	
-silent; taciturn; tight-lipped	close-mouth	4	
-wear; be dressed in; have on	cloth-have	4	
-fitting room; changing room	cloth-try-room	4	
-ice cream	cold-milk	4	
-unfriendly person	cold-person	4	
-iced tea	cold-plant-water	4	
-snow	cold-rain	4	
-rug; mat; carpet	earth-cloth	4	
-peanut	earth-hard-fruit	4	
-electronic map	electric-map	4	
-telephone; phone; call	electric-say	4	
-television; watch TV	electric-see	4	
-lamp; electric light	electric-sun	4	
-adventure trip; expedition	fear-come-go	4	
-adventure	fear-play	4	
-adventurer	fear-play-person	4	
-warn; warning; alert	fear-say	4	
-caution; careful; cautious; watch out	fear-see	4	
-facial expression; look on one's face	feel-picture	4	
-army	fight-group	4	
-fighter; soldier	fight-person	4	
-quadrilateral; rectangle; square	four-bend	4	
-luggage; suitcase; baggage	go-box	4	
-lucky; good luck	good-if	4	
-smile	happy-mouth	4	
-nut	hard-fruit	4	
-stubborn	hard-head	4	
-exercise	heal-go	4	
-gym	heal-go-place	4	
-doctor	heal-person	4	
-well-balanced; well-adjusted; sane	heal-think	4	
-medical test; checkup; examination (medical)	heal-try	4	
-ear	hear-part	4	
-weigh; measure the weight of	heavy-amount	4	
-important; significant; essential; major	heavy-necessary	4	
-helpful	help-give	4	
-you-are-here map; directory map; orientation map	help-map	4	
-helper; waiter; attendant; servant; staff (person)	help-person	4	
-spicy	hot-taste	4	
-chili pepper	hot-taste-thing	4	
-hire; lease; rent	interval-buy	4	
-lend; loan	interval-give	4	
-teach; instruct	learn-give	4	
-teacher; instructor	learn-give-person	4	
-school	learn-place	4	
-curriculum; syllabus; course of study	learn-sequence	4	
-walk	leg-go	4	
-jump; leap	leg-up-go	4	
-bicycle	leg-vehicle	4	
-public transit; transit	line-vehicle	4	
-transit station (bus/train)	line-vehicle-place	4	
-oval; ellipse	long-round	4	
-polygon	many-bend	4	
-train	metal-line-vehicle	4	
-cow	milk-animal	4	
-beef	milk-animal-meat	4	
-turnstile; ticket gate	money-door	4	
-peace	no-fight	4	
-brave	not-fear	4	
-easy	not-hard	4	
-light (in weight); lightweight	not-heavy	4	
-helpless	not-help	4	
-unhelpful	not-help-give	4	
-vegetarian	not-meat-food-person	4	
-dry season	not-rain-time	4	
-be defeated; lose a contest; lose a game	not-up-become	4	
-margin (of a page)	page-edge	4	
-cinema; movie theater	picture-home	4	
-comic book; comics; manga	picture-many-page	4	
-contest; match; competition	play-fight	4	
-seat	put-place	4	
-chair	put-tool	4	
-cloud; cloudy	rain-air	4	
-raincoat	rain-cloth	4	
-rainy season; wet season	rain-time	4	
-umbrella	rain-tool	4	
-pork	red-white-animal-meat	4	
-circle; ring; hoop	round-line	4	
-tie; draw (in a contest)	same-become	4	
-argue; quarrel	say-fight	4	
-sort; arrange; put in order	sequence-put	4	
-hotel	sleep-home	4	
-goat; sheep	small-milk-animal	4	
-lamb	small-milk-animal-meat	4	
-quiet; soft (sound)	small-sound	4	
-honest; frank; blunt	straight-say	4	
-until; till; up to (in time)	straight-to	4	
-flatterer; smooth talker	sweet-mouth	4	
-spice	taste-thing	4	
-attention; pay attention; attend to; attentive	think-give	4	
-therefore; that's why; for this reason	this-reason	4	
-triangle	three-bend	4	
-wait a while; wait around	time-remain	4	
-practice; rehearse; rehearsal	try-learn	4	
-win; prevail	up-become	4	
-winner	up-become-person	4	
-ride; go by vehicle	vehicle-put	4	
-glass (drinking vessel)	water-box	4	
-shore; coast; riverbank	water-edge	4	
-why	what-reason	4	
-boss	work-head	4	
-museum	art-home	5	
-reservation; booking	before-agree	5	
-rage	big-anger	5	
-astonishment	big-surprise	5	
-egg	bird-child	5	
-flock	bird-group	5	
-poultry; chicken (meat)	bird-meat	5	
-allergy	body-not-agree	5	
-sport; athletics	body-play	5	
-knife (knife or scissors)	break-tool	5	
-border (of a country); frontier	country-edge	5	
-door handle	door-hand	5	
-evening	down-sun	5	
-voyage; long journey	far-come-go	5	
-flat bread	flat-grain-food	5	
-disk	flat-round	5	
-collect; gather	group-join	5	
-lend a hand; help out	hand-give	5	
-headache; nuisance	head-sick	5	
-pet dog	home-dog	5	
-password	key-say	5	
-forget	know-lose	5	
-thief	long-hand	5	
-south	map-down	5	
-west	map-left	5	
-east	map-right	5	
-spouse	marry-person	5	
-calm	not-anger	5	
-enemy	not-friend	5	
-illegal	not-law	5	
-crime	not-law-work	5	
-expect; anticipate	not-surprise	5	
-fried	oil-make	5	
-fried rice	oil-white-grain	5	
-anyway; by the way; incidentally	other-about	5	
-someone else; another person; others	other-person	5	
-somewhere else; elsewhere	other-place	5	
-something else; anything else	other-thing	5	
-abroad; foreign; overseas	out-country	5	
-junction; intersection; crossroads	road-join	5	
-window	see-hole	5	
-pain; hurt; ache	sick-feel	5	
-annoyance	small-anger	5	
+EN	gloss	categories	root_level	assigned_level
+we; us	I-group	Grammar and logic;People and society	1	1
+see you later	after-meet	Verbs;People and society	1	1
+ready; prepared	before-finish	Qualities	1	1
+hungry	food-want	Body and life;Food	1	1
+hello	happy-meet	People and society;Verbs	1	1
+finally; at last; in the end; eventually	in-finish	Time direction	1	1
+actually; in truth	in-true	Grammar and logic	1	1
+hello (someone new)	new-meet	People and society;Verbs	1	1
+that; those	not-this	Grammar and logic	1	1
+depart; leave (depart)	out-go	Verbs;Space and direction	1	1
+tea	plant-water	Food	1	1
+story; tale	say-thing	Places, arts, appearance	1	1
+moment	small-time	Time direction	1	1
+bye	sorry-go	People and society;Verbs	1	1
+goodbye	sorry-out-go	People and society;Verbs	1	1
+he; she; him; her; they (people); them (people)	this-person	Grammar and logic;People and society	1	1
+drive; travel by vehicle	vehicle-go	Verbs;Made things	1	1
+station	vehicle-place	Places, arts, appearance	1	1
+request; ask for	want-say	Verbs	1	1
+sea	big-water	Nature	1	2
+meal (a sitting); mealtime	food-time	Food;Time direction	1	2
+sad	not-happy	Feelings	1	2
+politeness (verbal)	please-say	People and society	1	2
+tomorrow	sun-after	Time direction	1	2
+yesterday	sun-before	Time direction	1	2
+today	this-sun	Time direction	1	2
+soup	water-food	Food	1	2
+swim	water-go	Verbs	1	2
+problem; trouble	bad-thing	General heads	2	2
+prepare; get ready; arrange	before-make	Verbs	2	2
+love; adore; be in love with	big-like	Feelings;Verbs	2	2
+trip; journey	come-go	Space and direction	2	2
+thirsty	drink-want	Body and life;Food	2	2
+cook (person)	food-make-person	People and society;Food	2	2
+fetch; go and get	get-go	Verbs	2	2
+beautiful; pretty; good-looking; beauty	good-see	Qualities;Places, arts, appearance	2	2
+welcome	happy-come	People and society;Verbs	2	2
+bring	have-come	Verbs	2	2
+carry; take along; transport	have-go	Verbs	2	2
+father	man-parent	People and society	2	2
+midday; noon	middle-sun	Time direction	2	2
+discover; find something new	new-see	Verbs	2	2
+nobody; no one	no-person	Grammar and logic;People and society	2	2
+nowhere	no-place	Grammar and logic;Space and direction	2	2
+night	no-sun	Time direction	2	2
+nothing	no-thing	Grammar and logic	2	2
+never	no-time	Grammar and logic;Time direction	2	2
+slow; slowly	not-fast	Qualities	2	2
+relative (kin)	parent-group	People and society	2	2
+eye	see-part	Body and life	2	2
+tears; cry	see-water	Body and life;Feelings	2	2
+tonight	this-no-sun	Time direction	2	2
+morning	up-sun	Time direction	2	2
+breakfast	up-sun-food	Food	2	2
+fish	water-animal	Nature	2	2
+mother	woman-parent	People and society	2	2
+writer; author	write-person	People and society;Verbs	2	2
+read	write-see	Verbs	2	2
+reader	write-see-person	People and society;Verbs	2	2
+what time; at what o'clock	what-hour	Grammar and logic;Time direction	1	3
+who	what-person	Grammar and logic;People and society	1	3
+where	what-place	Grammar and logic;Space and direction	1	3
+question; ask; inquire	what-say	Grammar and logic;Verbs	1	3
+when; on what occasion	what-time	Grammar and logic;Time direction	1	3
+dance	music-movement	Places, arts, appearance	2	3
+less; fewer	not-more	Quantity	2	3
+week	seven-sun	Time direction	2	3
+weekend	seven-sun-finish	Time direction	2	3
+business trip	work-come-go	Space and direction;Verbs	2	3
+next; the one after	after-sequence	General heads	3	3
+recover; get back; retrieve	again-get	Verbs	3	3
+recall; recollect; call to mind	again-know	Verbs	3	3
+repeat; say again	again-say	Verbs	3	3
+airplane	air-vehicle	Made things	3	3
+airport	air-vehicle-place	Places, arts, appearance	3	3
+previous; preceding; former; the one before	before-sequence	General heads	3	3
+gale; strong wind	big-air	Nature	3	3
+coffee	black-drink	Food	3	3
+cyan	blue-green	Color	3	3
+brown	earth-color	Color	3	3
+Saturday	earth-weekday	Time direction	3	3
+everyone; everybody	every-person	Grammar and logic;People and society	3	3
+everywhere	every-place	Grammar and logic;Space and direction	3	3
+everything	every-thing	Grammar and logic	3	3
+always	every-time	Grammar and logic;Time direction	3	3
+Tuesday	fire-weekday	Time direction	3	3
+tan; beige	grain-color	Color	3	3
+Friday	metal-weekday	Time direction	3	3
+Monday	month-weekday	Time direction	3	3
+Thursday	plant-weekday	Time direction	3	3
+purple	red-blue	Color	3	3
+pink	red-white	Color	3	3
+pig	red-white-animal	Nature	3	3
+orange	red-yellow	Color	3	3
+brother	same-parent-man	People and society	3	3
+sister	same-parent-woman	People and society	3	3
+look like; resemble; take after; look alike	same-see	Verbs;Qualities	3	3
+grey	stone-color	Color	3	3
+Sunday	sun-weekday	Time direction	3	3
+too [much]; excessively	up-degree	Grammar and logic;Quantity	3	3
+Wednesday	water-weekday	Time direction	3	3
+how	what-manner	Grammar and logic	3	3
+rice (white rice)	white-grain	Food	3	3
+wheat	yellow-grain	Food	3	3
+whatever; whichever thing	what-thing	Grammar and logic	1	4
+autumn; fall	fruit-time	Time direction	1	4
+spring (season)	plant-time	Time direction	1	4
+number; numeral; digit	amount-say	Quantity	3	4
+summer	hot-time	Time direction	3	4
+should	if-good	Grammar and logic	4	4
+winter	cold-time	Time direction	4	4
+grief	big-not-happy	Feelings	1	
+false; untrue; if (counterfactual)	not-true	Grammar and logic	1	
+serene; relaxed; peaceful	small-happy	Feelings	1	
+second (of time)	small-part	Time direction	1	
+small talk; chat; Pikotika (the language)	small-say	People and society	1	
+ship; boat	water-vehicle	Made things	1	
+ugly	bad-see	Qualities;Places, arts, appearance	2	
+guest; visitor; customer	come-person	People and society	2	
+food supplies; provisions; stores	have-food	Food	2	
+owner; proprietor	have-person	People and society	2	
+borrow	interval-get	Verbs	2	
+on that note; relatedly; speaking of which	near-about	Grammar and logic	2	
+off; free; off duty	not-work	Qualities;Verbs	2	
+day off; holiday	not-work-sun	Time direction	2	
+time off; break; the holidays	not-work-time	Time direction	2	
+harvest	plant-get	Verbs;Nature	2	
+rise; ascend; go up	up-go	Verbs;Space and direction	2	
+horse; mount	vehicle-animal	Nature	2	
+work day; business day	work-sun	Time direction	2	
+text; writing (text)	write-say	Made things;Verbs	2	
+relative clause marker	RI-TE	Particles;Grammar and logic	3	
+redo; remake; do again	again-make	Verbs	3	
+review; re-examine; look over again	again-see	Verbs	3	
+fly; flight	air-go	Verbs	3	
+potato	earth-grain	Food	3	
+last; final; the end (of a series)	finish-sequence	General heads;Time direction	3	
+alcohol (usually wine)	fire-water	Food	3	
+fifth (in a series); 5th	five-sequence	Quantity	3	
+menu	food-sequence	Food	3	
+cutlery	food-tool	Made things;Food	3	
+fourth (in a series); 4th	four-sequence	Quantity	3	
+wine	fruit-fire-water	Food	3	
+hallway; corridor	go-room	Made things;Places, arts, appearance	3	
+kind (good-hearted); good-hearted; kindness	good-feel	Qualities;Feelings	3	
+beer (any grain alcohol)	grain-fire-water	Food	3	
+bread	grain-food	Food	3	
+vegetables	green-food	Food	3	
+park	green-place	Places, arts, appearance;Nature	3	
+green light (permission); go-ahead	green-say	Grammar and logic	3	
+cat; pet	home-animal	Nature	3	
+percent; per cent; %	in-hundred	Quantity	3	
+remember; retain; keep in mind; memory	know-have	Verbs	3	
+test (of knowledge); exam; quiz	know-try	Verbs	3	
+river	long-water	Nature	3	
+banana	long-yellow-fruit	Food	3	
+book	many-page	Made things	3	
+library	many-page-home	Places, arts, appearance	3	
+bus	many-person-vehicle	Made things	3	
+busy	many-work	Qualities;Verbs	3	
+north	map-up	Space and direction	3	
+shame	me-bad-feel	Feelings	3	
+pride	me-good-feel	Feelings	3	
+coin	metal-money	People and society;Material	3	
+price; fee; cost	money-amount	People and society;Quantity	3	
+earn	money-get	Verbs;People and society	3	
+concert hall	music-home	Places, arts, appearance	3	
+musical instrument	music-tool	Made things;Places, arts, appearance	3	
+business card	name-page	Made things	3	
+list; roster; register	name-sequence	General heads	3	
+gluten-free food	no-yellow-grain-food	Food	3	
+not enough; insufficient	not-all	Quantity	3	
+random; disordered; messy	not-sequence	Qualities	3	
+sour	not-sweet	Food;Qualities	3	
+lemon	not-sweet-yellow-fruit	Food	3	
+first (in a series); 1st	one-sequence	Quantity	3	
+queue; line (of people)	person-sequence	People and society;General heads	3	
+vacation; holiday	play-come-go	Verbs;Time direction	3	
+party (celebration)	play-group	People and society;Verbs	3	
+theater; playhouse	play-home	Places, arts, appearance	3	
+playground	play-place	Places, arts, appearance	3	
+toy	play-thing	Made things;Verbs	3	
+respect	please-feel	Feelings;People and society	3	
+courtesy	please-manner	People and society	3	
+tomato sauce	red-food	Food	3	
+tomato	red-fruit	Food	3	
+road map; roadmap	road-map	Made things	3	
+language; tongue (language)	say-manner	People and society	3	
+step (in a procedure)	sequence-part	General heads	3	
+sand; gravel	small-stone	Nature;Material	3	
+sunny	sun-air	Nature;Qualities	3	
+third (in a series); 3rd	three-sequence	Quantity	3	
+schedule; timetable	time-sequence	General heads;Time direction	3	
+experience; experienced	try-know	Verbs;Qualities	3	
+search; look for; seek	try-see	Verbs	3	
+proof; evidence; verify; confirm	try-true	Verbs;Grammar and logic	3	
+experiment	try-work	Verbs	3	
+second (in a series); 2nd	two-sequence	Quantity	3	
+mountain	up-earth	Nature	3	
+fog; mist	water-air	Nature	3	
+mud	water-earth	Nature	3	
+porridge; congee	water-grain	Food	3	
+sake	white-grain-fire-water	Food	3	
+office	work-room	Made things;Places, arts, appearance	3	
+report; document (written)	write-page	Made things	3	
+pen (pen or pencil)	write-tool	Made things	3	
+old (in years); aged	year-big	Qualities	3	
+age	year-interval	Time direction;Quantity	3	
+season	year-part	Time direction	3	
+young	year-small	Qualities	3	
+yellow fruit (usually banana)	yellow-fruit	Food	3	
+wheat bread	yellow-grain-food	Food	3	
+relearn; study again	again-learn	Verbs	4	
+reconsider; rethink; think over	again-think	Verbs	4	
+lightning	air-electric	Nature	4	
+smell	air-taste	Body and life	4	
+election	all-choose	People and society;Verbs	4	
+return (something); give back; hand back	back-give	Verbs	4	
+return; go back	back-go	Verbs;Space and direction	4	
+change (money returned)	back-money	People and society;Quantity	4	
+reply; answer; respond; response	back-say	Verbs	4	
+unlucky; unfortunate; unfortunately	bad-if	Qualities	4	
+corner (of a street); turn (in a road)	bend-place	Space and direction;Places, arts, appearance	4	
+war	big-fight	People and society;Verbs	4	
+laugh	big-happy-mouth	Feelings;Body and life	4	
+storm; downpour	big-rain	Nature	4	
+loud	big-sound	Qualities	4	
+beach; seashore	big-water-edge	Nature;Places, arts, appearance	4	
+black market	black-buy-place	Places, arts, appearance;People and society	4	
+company; corporation; firm	buy-group	People and society	4	
+business plan	buy-group-map	People and society;Made things	4	
+vendor; shopkeeper	buy-person	People and society	4	
+shop	buy-place	Places, arts, appearance	4	
+decision; settle; make up one's mind	choose-finish	Verbs	4	
+ballot	choose-page	People and society;Made things	4	
+vote; cast a ballot	choose-say	Verbs;People and society	4	
+option; alternative; choice	choose-thing	General heads;Verbs	4	
+outskirts	city-edge	Places, arts, appearance;Space and direction	4	
+silent; taciturn; tight-lipped	close-mouth	Qualities;People and society	4	
+wear; be dressed in; have on	cloth-have	Verbs;Made things	4	
+fitting room; changing room	cloth-try-room	Made things;Places, arts, appearance	4	
+ice cream	cold-milk	Food	4	
+unfriendly person	cold-person	People and society;Qualities	4	
+iced tea	cold-plant-water	Food	4	
+snow	cold-rain	Nature	4	
+rug; mat; carpet	earth-cloth	Made things	4	
+peanut	earth-hard-fruit	Food	4	
+electronic map	electric-map	Made things	4	
+telephone; phone; call	electric-say	Made things	4	
+television; watch TV	electric-see	Made things	4	
+lamp; electric light	electric-sun	Made things	4	
+adventure trip; expedition	danger-come-go	Space and direction;Qualities	4	
+adventure	danger-play	Verbs;Qualities	4	
+adventurer	danger-play-person	People and society	4	
+warn; warning; alert	danger-say	Verbs;Qualities	4	
+caution; careful; cautious; watch out	danger-see	Verbs;Qualities	4	
+facial expression; look on one's face	feel-picture	Body and life;Feelings	4	
+army	fight-group	People and society	4	
+fighter; soldier	fight-person	People and society	4	
+quadrilateral; rectangle; square	four-bend	Shape	4	
+luggage; suitcase; baggage	go-box	Made things	4	
+lucky; good luck	good-if	Qualities	4	
+smile	happy-mouth	Feelings;Body and life	4	
+nut	hard-fruit	Food	4	
+stubborn	hard-head	Qualities;People and society	4	
+exercise	heal-movement	Body and life;Verbs	4	
+gym	heal-movement-place	Places, arts, appearance;Body and life	4	
+doctor	heal-person	People and society;Body and life	4	
+well-balanced; well-adjusted; sane	heal-think	Qualities;Body and life	4	
+medical test; checkup; examination (medical)	heal-try	Body and life	4	
+ear	hear-part	Body and life	4	
+weigh; measure the weight of	heavy-amount	Verbs;Quantity	4	
+important; significant; essential; major	heavy-necessary	Qualities	4	
+helpful	help-give	Qualities;Verbs	4	
+you-are-here map; directory map; orientation map	help-map	Made things	4	
+helper; waiter; attendant; servant; staff (person)	help-person	People and society	4	
+spicy	hot-taste	Food;Qualities	4	
+chili pepper	hot-taste-thing	Food	4	
+hire; lease; rent	interval-buy	Verbs;People and society	4	
+lend; loan	interval-give	Verbs;People and society	4	
+teach; instruct	learn-give	Verbs	4	
+teacher; instructor	learn-give-person	People and society;Verbs	4	
+school	learn-place	Places, arts, appearance	4	
+curriculum; syllabus; course of study	learn-sequence	General heads;Verbs	4	
+walk	leg-go	Verbs;Body and life	4	
+jump; leap	leg-up-go	Verbs;Body and life	4	
+bicycle	leg-vehicle	Made things	4	
+public transit; transit	line-vehicle	Made things	4	
+transit station (bus/train)	line-vehicle-place	Places, arts, appearance	4	
+oval; ellipse	long-round	Shape	4	
+polygon	many-bend	Shape	4	
+train	metal-line-vehicle	Made things	4	
+cow	milk-animal	Nature	4	
+beef	milk-animal-meat	Food	4	
+turnstile; ticket gate	money-door	Made things	4	
+peace	no-fight	People and society	4	
+brave	not-fear	Qualities	4	
+easy	not-hard	Qualities	4	
+light (in weight); lightweight	not-heavy	Qualities	4	
+helpless	not-help	Qualities	4	
+unhelpful	not-help-give	Qualities	4	
+vegetarian	not-meat-food-person	People and society;Food	4	
+dry season	not-rain-time	Time direction;Nature	4	
+be defeated; lose a contest; lose a game	not-up-become	Verbs	4	
+margin (of a page)	page-edge	Made things;Space and direction	4	
+cinema; movie theater	picture-home	Places, arts, appearance	4	
+comic book; comics; manga	picture-many-page	Made things;Places, arts, appearance	4	
+contest; match; competition	play-fight	Verbs;People and society	4	
+seat	put-place	Made things;Space and direction	4	
+chair	put-tool	Made things	4	
+cloud; cloudy	rain-air	Nature	4	
+raincoat	rain-cloth	Made things	4	
+rainy season; wet season	rain-time	Time direction;Nature	4	
+umbrella	rain-tool	Made things	4	
+pork	red-white-animal-meat	Food	4	
+circle; ring; hoop	round-line	Shape	4	
+tie; draw (in a contest)	same-become	Verbs	4	
+argue; quarrel	say-fight	Verbs;People and society	4	
+sort; arrange; put in order	sequence-put	Verbs	4	
+hotel	sleep-home	Places, arts, appearance	4	
+goat; sheep	small-milk-animal	Nature	4	
+lamb	small-milk-animal-meat	Food	4	
+quiet; soft (sound)	small-sound	Qualities	4	
+honest; frank; blunt	straight-say	Qualities;People and society	4	
+until; till; up to (in time)	straight-to	Time direction;Grammar and logic	4	
+flatterer; smooth talker	sweet-mouth	People and society	4	
+spice	taste-thing	Food	4	
+attention; pay attention; attend to; attentive	think-give	Verbs	4	
+therefore; that's why; for this reason	this-reason	Grammar and logic	4	
+triangle	three-bend	Shape	4	
+wait a while; wait around	time-remain	Verbs;Time direction	4	
+practice; rehearse; rehearsal	try-learn	Verbs	4	
+win; prevail	up-become	Verbs	4	
+winner	up-become-person	People and society	4	
+ride; go by vehicle	vehicle-put	Verbs;Made things	4	
+glass (drinking vessel)	water-box	Made things	4	
+shore; coast; riverbank	water-edge	Nature;Space and direction	4	
+why	what-reason	Grammar and logic	4	
+boss	work-head	People and society	4	
+museum	art-home	Places, arts, appearance	5	
+reservation; booking	before-agree	Verbs	5	
+rage	big-anger	Feelings	5	
+astonishment	big-surprise	Feelings	5	
+egg	bird-child	Food;Nature	5	
+flock	bird-group	Nature	5	
+poultry; chicken (meat)	bird-meat	Food	5	
+allergy	body-not-agree	Body and life	5	
+sport; athletics	body-play	Verbs;Body and life	5	
+knife (knife or scissors)	break-tool	Made things	5	
+border (of a country); frontier	country-edge	People and society;Space and direction	5	
+door handle	door-hand	Made things	5	
+evening	down-sun	Time direction	5	
+voyage; long journey	far-come-go	Space and direction	5	
+flat bread	flat-grain-food	Food	5	
+disk	flat-round	Shape	5	
+collect; gather	group-join	Verbs	5	
+lend a hand; help out	hand-give	Verbs;People and society	5	
+headache; nuisance	head-sick	Body and life	5	
+pet dog	home-dog	Nature	5	
+password	key-say	Made things	5	
+forget	know-lose	Verbs	5	
+thief	long-hand	People and society	5	
+south	map-down	Space and direction	5	
+west	map-left	Space and direction	5	
+east	map-right	Space and direction	5	
+spouse	marry-person	People and society	5	
+calm	not-anger	Feelings;Qualities	5	
+enemy	not-friend	People and society	5	
+illegal	not-law	People and society;Qualities	5	
+crime	not-law-work	People and society	5	
+expect; anticipate	not-surprise	Verbs	5	
+fried	oil-make	Food	5	
+fried rice	oil-white-grain	Food	5	
+anyway; by the way; incidentally	other-about	Grammar and logic	5	
+someone else; another person; others	other-person	Grammar and logic;People and society	5	
+somewhere else; elsewhere	other-place	Grammar and logic;Space and direction	5	
+something else; anything else	other-thing	Grammar and logic	5	
+abroad; foreign; overseas	out-country	People and society;Space and direction	5	
+junction; intersection; crossroads	road-join	Space and direction;Places, arts, appearance	5	
+window	see-hole	Made things	5	
+pain; hurt; ache	sick-feel	Body and life	5	
+annoyance	small-anger	Feelings	5	

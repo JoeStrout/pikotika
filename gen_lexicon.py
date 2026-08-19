@@ -121,16 +121,30 @@ def entry_for(gloss, t, kind, usage=None):
         # full entry, not for a chip you tapped in the middle of a sentence.
         if row and row.get("mnemonic"):
             entry["mnemonic"] = row["mnemonic"]
-        # The Vocab page searches the sense range and groups by `category`, so
-        # both ride along; strokes is for the Han character in the detail view.
-        # `covers` holds only what the glosses do not already name, so what
-        # ships is the joined range -- see pikotika.root_covers.
+        # The Vocab page searches the sense range, so it rides along; strokes is
+        # for the Han character in the detail view.  `covers` holds only what
+        # the glosses do not already name, so what ships is the joined range --
+        # see pikotika.root_covers.
         if row:
             entry["covers"] = P.root_covers(row)
-            for key, out in (("category", "cat"),
-                             ("strokes", "strokes"), ("gloss2", "gloss2")):
+            for key, out in (("strokes", "strokes"), ("gloss2", "gloss2")):
                 if row.get(key):
                     entry[out] = row[key]
+
+    # A root sits in exactly one category and a compound may sit in several,
+    # but the page filters them all the same way, so what ships is always a
+    # list.  **parte** is both -- a root, and a compounds.tsv row for the
+    # "decimal point; minute" sense -- so the two are unioned, its own category
+    # first, rather than one silently replacing the other.
+    cats = []
+    row = t.gloss2root.get(gloss)
+    if row and row.get("category"):
+        cats.append(row["category"])
+    for cat in t.compound_cats.get(gloss, ()):
+        if cat not in cats:
+            cats.append(cat)
+    if cats:
+        entry["cats"] = cats
 
     if usage:
         by_sentence, by_compound = usage
@@ -148,7 +162,7 @@ def name_entries(t):
     for form, english in sorted(t.name_forms.items()):
         # names.tsv marks the sanctioned loan register with kind=loan; both ride
         # in the same table and both stay in Latin inside Han text
-        yield form, {
+        entry = {
             "form": form,
             "kind": t.name_kind.get(form, "name"),
             "gloss": english,
@@ -156,19 +170,47 @@ def name_entries(t):
             "han": "",
             "level": "",
         }
+        if t.name_cats.get(form):
+            entry["cats"] = list(t.name_cats[form])
+        yield form, entry
 
 
-def categories(t):
-    """The `category` values of roots.tsv, in the order the table gives them.
+def check_compounds(t):
+    """Every compounds.tsv row is a compound: two roots or more.
 
-    Vocab groups its browse list by these, and the table's order is editorial --
-    body and life first, grammar words last -- so it is kept, not sorted."""
-    out = []
-    for row in t.gloss2root.values():
-        cat = row.get("category")
-        if cat and cat not in out:
-            out.append(cat)
-    return out
+    A single-root row would work -- the lookups are by gloss either way -- which
+    is why one sat there unnoticed, giving **parte** the extra senses "decimal
+    point" and "minute".  That is what a root's `covers` column is for, and a
+    sense recorded in the wrong table is a sense the root's own entry does not
+    show."""
+    bad = [gloss for gloss in t.compound_by_gloss
+           if len(t.gloss_roots(gloss) or ()) < 2]
+    if bad:
+        raise SystemExit(
+            "gen_lexicon: compounds.tsv row is a single root, not a compound: "
+            + ", ".join(sorted(bad))
+            + " -- extra senses of a root belong in its roots.tsv `covers`")
+
+
+def check_categories(t):
+    """roots.tsv defines the categories; the other two tables may only cite them.
+
+    A typo in a `categories` cell would otherwise be silent -- the word would
+    simply never appear under any chip -- so it stops the build instead."""
+    known = set(t.category_order)
+    bad = {}
+    for gloss, cats in t.compound_cats.items():
+        for cat in cats:
+            if cat not in known:
+                bad.setdefault(cat, []).append(gloss)
+    for form, cats in t.name_cats.items():
+        for cat in cats:
+            if cat not in known:
+                bad.setdefault(cat, []).append(form)
+    if bad:
+        lines = ["category not in roots.tsv: %r (%s)" % (cat, ", ".join(w[:3]))
+                 for cat, w in sorted(bad.items())]
+        raise SystemExit("gen_lexicon: " + "; ".join(lines))
 
 
 def build(t, extra_forms=()):
@@ -211,8 +253,10 @@ def build(t, extra_forms=()):
         entry["form"] = form
         words[form.lower()] = entry
 
+    check_compounds(t)
+    check_categories(t)
     return {"words": words, "sentences": sentences,
-            "categories": categories(t)}, unresolved
+            "categories": list(t.category_order)}, unresolved
 
 
 def write(lexicon):

@@ -160,6 +160,27 @@ Two implementation facts worth not rediscovering:
 - A sentence split into eight controls is announced as eight controls, so
   `chipify` puts the whole sentence on the container as `aria-label`.
 
+## Sentence schemas
+
+`.schema` is a one-row table diagramming a sentence frame — one cell per
+position, particles written as themselves, open positions dashed. Built for the
+home page's `S RI V A O`, and meant to be reused wherever a construction is
+introduced.
+
+    <table class="schema"><tr>
+    <td class="slot">subject</td>
+    <td><span class="pk">ri</span></td>
+    ...
+
+The author marks only the placeholders: a plain `<td>` is a literal word. A
+`<th>` row labels the columns, and a `tr.schema-eg` row sets a gloss or
+translation under the frame in the same columns.
+
+**Particle cells are deliberately not filled with the accent color.** They hold
+live word chips, and an open chip marks itself by turning accent — which it
+cannot do on an accent ground. They get `--bg-tint` and a solid border instead,
+against the placeholders' dashed one. Checked open, and in both themes.
+
 ## Vocab (`/vocab/`)
 
 One page, client-side, over `lexicon.json` — no per-entry pages (decided
@@ -182,6 +203,17 @@ the one in JavaScript. One implementation, hash permalinks.
   makes a permalink land *on* the word rather than beside it. Typing does not:
   `open` is cleared on input, so an entry does not pop open under the cursor
   because what you have typed so far happens to spell a word.
+- **Every related word in an open entry is an ordinary word chip** — the roots
+  of a compound's parse, and the compounds under "Used in" — opening the
+  standard popover rather than navigating to that entry (decided 2026-08-19;
+  they navigated at first). By the time a reader is on this page, a dotted
+  underline has meant "tap for the tile" everywhere else on the site, and one
+  that moves the page instead is a surprise; the tile's own "Full entry" link
+  is still the way through. `wordChip()` emits a bare `.pk` span and lets the
+  `scanChips(box)` that already runs over a freshly opened detail box build the
+  chip, so there is one chip implementation, not two. This retired
+  `relatedChip`, the `go()` that searched for the tapped word, and the
+  `.vocab-rel` CSS that was hand-copying the chip's dotted underline.
 - **Expanding a row does not rewrite the hash.** Opening one result of a search
   is not a different search; the entry's own Permalink is the link to it opened.
 - Nothing pushes history — a reader stepping through six compounds should not
@@ -195,6 +227,19 @@ the one in JavaScript. One implementation, hash permalinks.
   The scroll aligns the row to the top, not the center — an open entry can be
   taller than the viewport — offset by the measured height of the two sticky
   bars.
+- **The kind row and the category row are independent** (decided 2026-08-19).
+  Categories used to be a roots-only column, so the page tried to afford the
+  category chips only under All and Roots: they were dead under Compounds, and
+  picking a category under All and then switching to Compounds left a chip
+  highlighted that was no longer applied. Rather than police that, the data
+  grew up — `compounds.tsv` and `names.tsv` now carry their own `categories`
+  column (see `CLAUDE.md`), every entry in `lexicon.json` ships a `cats` list,
+  and neither row clears or disables the other.
+- **A root is filed under its category heading; a compound is not.** With a
+  category chosen, the browse list shows that category's roots under its
+  heading and then the matching compounds, names and loans under their own kind
+  headings. Filing a compound under each of its categories would list the same
+  word two or three times in one browse.
 - **The empty state is the lexicon browsed by category**, roots under their
   `category` headings in `roots.tsv` order (editorial, so not sorted), then
   Compounds, Names and Loans under their own. A dictionary you can read down

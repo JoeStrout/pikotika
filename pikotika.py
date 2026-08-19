@@ -144,6 +144,16 @@ def split_alternatives(text):
     return [e.strip() for e in entries if e.strip()]
 
 
+def split_categories(text):
+    """A `categories` field from compounds.tsv or names.tsv as its category names.
+
+    Semicolon-separated, and a comma is not a separator: "Places, arts,
+    appearance" is one category.  Roots carry a single `category` instead, so
+    this is only for the two tables where a word can sit in more than one place.
+    """
+    return [c.strip() for c in (text or "").split(";") if c.strip()]
+
+
 def cover_keys(entry):
     """The lookup keys for one `covers` entry.
 
@@ -186,6 +196,9 @@ class Tables:
         self.form2name = {}       # form, case-folded -> english name
         self.name_forms = {}      # form, exactly as written -> english name
         self.name_kind = {}       # form -> "name" or "loan" (names.tsv `kind`)
+        self.compound_cats = {}   # compound gloss -> [category, ...]
+        self.name_cats = {}       # name/loan form -> [category, ...]
+        self.category_order = []  # roots.tsv `category` values, in table order
         self.compound_roots = {}  # gloss -> [root gloss, ...]
         self.corpus = []          # corpus.tsv rows, in file order
         self._load(directory)
@@ -197,6 +210,13 @@ class Tables:
                     continue
                 self.gloss2root[r["gloss"]] = r
                 self.form2gloss[r["form"]] = r["gloss"]
+                # The order is editorial -- body and life first, grammar words
+                # last -- so it is kept as the table gives it, not sorted.  This
+                # is the whole category vocabulary: compounds.tsv and names.tsv
+                # pick from it and may not invent one.
+                cat = (r.get("category") or "").strip()
+                if cat and cat not in self.category_order:
+                    self.category_order.append(cat)
                 if r["han"]:
                     self.han2gloss[r["han"]] = r["gloss"]
                 alias = (r.get("gloss2") or "").strip()
@@ -239,6 +259,8 @@ class Tables:
                 roots = self.gloss_roots(r["gloss"])
                 if roots:
                     self.compound_roots[r["gloss"]] = roots
+                self.compound_cats[r["gloss"]] = split_categories(
+                    r.get("categories"))
 
         corpus_path = os.path.join(d, "corpus.tsv")
         if os.path.exists(corpus_path):
@@ -257,6 +279,8 @@ class Tables:
                     # proper nouns and the sanctioned loan register share the
                     # table; Vocab filters them apart, so keep which is which
                     self.name_kind[r["form"]] = (r.get("kind") or "name").strip()
+                    self.name_cats[r["form"]] = split_categories(
+                        r.get("categories"))
 
     # -- root-level accessors -------------------------------------------------
 

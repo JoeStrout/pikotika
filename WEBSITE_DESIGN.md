@@ -93,7 +93,7 @@ reader can tap any word to see its gloss and hear it before they have learned
 anything. That interaction *is* the demonstration: the language is transparent, and
 letting someone poke at it proves that faster than a paragraph claiming it.
 
-### Vocab (`/vocab/`)
+# (`/vocab/`)
 
 A single client-side search page over roots + compounds + names, not three pages.
 One search box, one result list, a filter chip row (`roots` / `compounds` /

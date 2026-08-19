@@ -1,39 +1,39 @@
-EN	form	kind	note
-English	Inkiris	name	cf. Malay Inggris, Arabic al-Ingilīziyya
-Elena	Erena	name	
-Marta	Marta	name	already legal unchanged
-Lisbon	Rispon	name	
-Karel	Karer	name	
-Ana	Ana	name	already legal unchanged
-Tomas	Tomas	name	already legal unchanged
-Tom	Tom	name	already legal unchanged
-Sofia	Sovia	name	
-Petr	Peter	name	Czech syllabic r resolved with a vowel
-Marek	Mareku	name	bare final -k not licensed; vowel added
-Joe	Yo	name	
-Mary	Mari	name	already legal, just respelled
-Canada	Kanata	name	
-penicillin	penisirin	loan	l -> r; ll simplified
-Strout	Sutorauto	name	str- onset cluster resolved by epenthesis
-Peper	Peper	name	
-Pavel	Paver	name	
-Jan	Yan	name	
-Italia	Itaria	name	
-Alice	Aris	name	l -> r; final -ce -> -s
-Bob	Popu	name	no b; b -> p, and bare final stop not licensed, vowel added
-Carla	Karra	name	c -> k; l -> r
-Dan	Tan	name	no d; d -> t
-Eve	Ivu	name	to the sound /iv/; bare final -v not licensed, vowel added
-Fumi	Vumi	name	no f; f -> v
-Gita	Kita	name	no g; g -> k
-Hal	Ar	name	no h; h dropped, l -> r
-Ivan	Ivan	name	already legal unchanged
-Kim	Kim	name	already legal unchanged
-Lena	Rena	name	l -> r; cf. Elena -> Erena
-Mira	Mira	name	already legal unchanged
-Nils	Nirus	name	l -> r; -rs coda not licensed, vowel added
-Omar	Omar	name	already legal unchanged
-Pia	Pia	name	already legal unchanged
-meter	metoru	loan	bare *meter* would collide with metar "metal"; cf. Japanese metoru
-liter	ritoru	loan	no l; l -> r
-gram	kuramu	loan	no g; gr- cluster resolved by epenthesis
+EN	form	kind	categories	note
+English	Inkiris	name	Places, arts, appearance	cf. Malay Inggris, Arabic al-Ingilīziyya
+Elena	Erena	name	People and society	
+Marta	Marta	name	People and society	already legal unchanged
+Lisbon	Rispon	name	Places, arts, appearance	
+Karel	Karer	name	People and society	
+Ana	Ana	name	People and society	already legal unchanged
+Tomas	Tomas	name	People and society	already legal unchanged
+Tom	Tom	name	People and society	already legal unchanged
+Sofia	Sovia	name	People and society	
+Petr	Peter	name	People and society	Czech syllabic r resolved with a vowel
+Marek	Mareku	name	People and society	bare final -k not licensed; vowel added
+Joe	Yo	name	People and society	
+Mary	Mari	name	People and society	already legal, just respelled
+Canada	Kanata	name	Places, arts, appearance	
+penicillin	penisirin	loan	Body and life	l -> r; ll simplified
+Strout	Sutorauto	name	People and society	str- onset cluster resolved by epenthesis
+Peper	Peper	name	People and society	
+Pavel	Paver	name	People and society	
+Jan	Yan	name	People and society	
+Italia	Itaria	name	Places, arts, appearance	
+Alice	Aris	name	People and society	l -> r; final -ce -> -s
+Bob	Popu	name	People and society	no b; b -> p, and bare final stop not licensed, vowel added
+Carla	Karra	name	People and society	c -> k; l -> r
+Dan	Tan	name	People and society	no d; d -> t
+Eve	Ivu	name	People and society	to the sound /iv/; bare final -v not licensed, vowel added
+Fumi	Vumi	name	People and society	no f; f -> v
+Gita	Kita	name	People and society	no g; g -> k
+Hal	Ar	name	People and society	no h; h dropped, l -> r
+Ivan	Ivan	name	People and society	already legal unchanged
+Kim	Kim	name	People and society	already legal unchanged
+Lena	Rena	name	People and society	l -> r; cf. Elena -> Erena
+Mira	Mira	name	People and society	already legal unchanged
+Nils	Nirus	name	People and society	l -> r; -rs coda not licensed, vowel added
+Omar	Omar	name	People and society	already legal unchanged
+Pia	Pia	name	People and society	already legal unchanged
+meter	metoru	loan	Quantity	bare *meter* would collide with metar "metal"; cf. Japanese metoru
+liter	ritoru	loan	Quantity	no l; l -> r
+gram	kuramu	loan	Quantity	no g; gr- cluster resolved by epenthesis

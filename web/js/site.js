@@ -458,6 +458,14 @@
       popover.focus();
       return;
     }
+    /* "Full entry" leaves for the word's own page.  On /vocab/ that is a hash
+       away, so nothing unloads and the box would otherwise sit there while the
+       page scrolls out from under it -- looking like it moved rather than like
+       it stayed.  Not prevented: the link still follows. */
+    if (event.target.closest && event.target.closest('.wordpop-link')) {
+      closePopover();
+      return;
+    }
     if (popover && !popover.hidden && !event.target.closest('.wordpop')) {
       closePopover();
     }
@@ -505,7 +513,7 @@
        standing in compounds.tsv; the reader has no use for that distinction. */
     ['compound', 'Compounds', ['compound', 'phrase']],
     ['name', 'Names', ['name']],
-    ['loan', 'Loans', ['loan']]
+    ['loan', 'Loan words', ['loan']]
   ];
 
   var KIND_LABEL = {
@@ -580,9 +588,12 @@
       return want.indexOf(entry.kind) >= 0;
     }
 
+    /* Every kind of word carries categories now -- roots one apiece from
+       roots.tsv, compounds and names a semicolon list of their own -- so the
+       filter is the same question for all of them. */
     function inCategory(entry) {
       if (!category) return true;
-      return entry.cat === category;
+      return !!entry.cats && entry.cats.indexOf(category) >= 0;
     }
 
     function all() {
@@ -612,9 +623,12 @@
     }
 
     /* With nothing typed the page is a table of contents rather than a wall:
-       roots under their `category` headings in table order, then the other
-       kinds under their own.  A dictionary you can read down is worth more on
-       arrival than an empty box. */
+       roots under their category headings in table order, then the other kinds
+       under their own.  A dictionary you can read down is worth more on arrival
+       than an empty box.
+
+       A chosen category narrows every section, roots and compounds alike; the
+       headings are the same ones, just shorter. */
     function browsed() {
       var list = all();
       var groups = [];
@@ -639,10 +653,14 @@
         var entry = list[i];
         if (!inKind(entry) || !inCategory(entry)) continue;
         var isRoot = entry.kind === 'root' || entry.kind === 'particle';
-        if (isRoot) group(entry.cat || 'Uncategorized').items.push(entry);
-        else if (category) continue;
+        /* A root heads one category, so the browse list files it under that
+           one.  A compound may sit in several and is not filed under each --
+           it goes in its kind's section, where a reader looking for compounds
+           expects it. */
+        if (isRoot) group((entry.cats && entry.cats[0]) || 'Uncategorized')
+                      .items.push(entry);
         else group(KIND_LABEL[entry.kind] === 'compound' ? 'Compounds' :
-                   entry.kind === 'loan' ? 'Loans' : 'Names').items.push(entry);
+                   entry.kind === 'loan' ? 'Loan words' : 'Names').items.push(entry);
       }
 
       return groups.filter(function (g) { return g.items.length; });
@@ -650,15 +668,18 @@
 
     /* -- rendering -------------------------------------------------------- */
 
-    function relatedChip(form, label) {
-      var chip = document.createElement('button');
-      chip.type = 'button';
-      chip.className = 'vocab-rel pk';
-      /* Already a control, and scanChips runs over this panel; opt it out or
-         the word inside gets chipped into a button within a button. */
-      chip.dataset.check = 'off';
-      chip.textContent = label || form;
-      chip.addEventListener('click', function () { go(form); });
+    /* Every related word in an open entry -- the roots of its parse, and the
+       compounds it is used in -- is an ordinary word chip, opening the standard
+       popover rather than navigating (decided 2026-08-19).  By the time a
+       reader reaches this page a dotted underline has meant "tap for the tile"
+       everywhere else on the site, and one that instead moves the page is a
+       surprise; the tile's own "Full entry" link is still the way through.
+       Written as a bare .pk span so scanChips() builds the chip -- same markup,
+       styling, keyboard and popover as a word in a sentence. */
+    function wordChip(form) {
+      var chip = document.createElement('span');
+      chip.className = 'pk';
+      chip.textContent = form;
       return chip;
     }
 
@@ -683,7 +704,7 @@
 
       var meta = [];
       if (entry.strokes) meta.push(entry.strokes + ' strokes');
-      if (entry.cat) meta.push(entry.cat);
+      if (entry.cats) meta.push(entry.cats.join(' · '));
       if (entry.level) meta.push('Level ' + entry.level);
       meta.push(KIND_LABEL[entry.kind] || entry.kind);
       var metaEl = document.createElement('span');
@@ -697,7 +718,7 @@
         parse.className = 'vocab-parse';
         entry.parts.forEach(function (p, i) {
           if (i) parse.appendChild(document.createTextNode(' + '));
-          parse.appendChild(relatedChip(p.form));
+          parse.appendChild(wordChip(p.form));
           var g = document.createElement('span');
           g.className = 'gloss';
           g.textContent = ' (' + p.gloss + ')';
@@ -733,7 +754,7 @@
         row.className = 'vocab-rels';
         entry['in'].forEach(function (form, i) {
           if (i) row.appendChild(document.createTextNode(' '));
-          row.appendChild(relatedChip(form));
+          row.appendChild(wordChip(form));
         });
         used.appendChild(row);
         box.appendChild(used);
@@ -971,13 +992,6 @@
       show(scroll);
     }
 
-    /* Tapping a root inside a compound, or a compound in "used in", searches
-       for it -- the same state its permalink would produce. */
-    function go(form) {
-      setHash(form || '');
-      fromUrl(true);
-    }
-
     /* -- the chip rows ---------------------------------------------------- */
 
     function chips(row, items, current, onPick) {
@@ -997,18 +1011,19 @@
       chips(kindRow, KINDS.map(function (k) { return [k[0], k[1]]; }), kind,
             function (value) {
               kind = value;
-              if (kind !== 'all' && kind !== 'root') category = '';
               drawChips();
               render();
             });
 
-      /* Categories are a property of roots, so the row is only up when roots
-         are in scope at all. */
+      /* The two rows are independent: a category applies to every kind of word,
+         so neither row ever clears or disables the other.  They used to --
+         categories were a roots-only column -- which left the category chips
+         dead under Compounds and, worse, left one highlighted but unapplied
+         when you switched to Compounds with a category already picked. */
       var cats = [['', 'All categories']].concat(
         (data && data.categories || []).map(function (c) { return [c, c]; }));
-      var showCats = data && (kind === 'all' || kind === 'root');
-      catRow.hidden = !showCats;
-      if (showCats) {
+      catRow.hidden = !data;
+      if (data) {
         chips(catRow, cats, category, function (value) {
           category = value;
           drawChips();

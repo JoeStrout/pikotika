@@ -57,7 +57,7 @@
 | group; team | men | 众 | set, collection, crowd |
 | manner; road | moto | 方 | way, method, path, route |
 | name; label | nomen | 名 | title |
-| part; portion | parte | 分 | piece, member |
+| part; portion | parte | 分 | piece, member; decimal point; minute |
 | person; one who | omo | 人 | human, agent |
 | place; location | roko | 所 | area, spot |
 | sequence; series | orten | 序 | order, rank, turn, position in a series |
