@@ -4,6 +4,16 @@
 (function () {
   'use strict';
 
+  /* lexicon.json and the two audio indexes are rebuilt in place, so they need
+     the same cache-busting the stylesheet and this file get.  The clips
+     themselves carry a content hash in the filename and do not.  Read off this
+     script's own tag while it is still the currently-executing script. */
+  var DATA_V = (function () {
+    var tag = document.currentScript;
+    var v = tag && tag.getAttribute('data-data-version');
+    return v ? '?v=' + v : '';
+  })();
+
   /* --- theme toggle ------------------------------------------------------
      Three states, not two: "light", "dark", and unset (follow the system).
      The toggle flips to whichever is the opposite of what is showing now, so
@@ -91,7 +101,7 @@
 
   function loadLexicon() {
     if (!lexiconWanted) {
-      lexiconWanted = fetch('/data/lexicon.json')
+      lexiconWanted = fetch('/data/lexicon.json' + DATA_V)
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (data) { lexicon = data; return lexicon; })
         .catch(function () { return null; });
@@ -128,6 +138,10 @@
        schema, say.  The build skips checking it; we skip chipping it, or it
        becomes a row of buttons that can never open anything. */
     if (root.dataset.check === 'off') return;
+    /* data-chip="off" is the other half: real Pikotika, checked by the build,
+       but not made tappable -- for a .pk inside a link, where a chip would be a
+       control nested in a control and one tap would mean two things. */
+    if (root.dataset.chip === 'off') return;
     root.dataset.chipped = '1';
 
     /* A whole sentence broken into eight buttons is announced as eight
@@ -191,7 +205,7 @@
 
   function loadIndex(kind) {
     if (!audio.wanted[kind]) {
-      audio.wanted[kind] = fetch('/audio/' + kind + '.json')
+      audio.wanted[kind] = fetch('/audio/' + kind + '.json' + DATA_V)
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (map) {
           audio.index[kind] = map && map.clips;

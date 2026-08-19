@@ -288,7 +288,9 @@ def build_files(name: str, items, force: bool) -> dict:
 
 def word_items(tables, limit=None):
     lexicon, _ = gen_lexicon.build(tables)
-    forms = sorted({entry["form"] for entry in lexicon.values()})
+    # lexicon["words"] is keyed by the lowercased form; entry["form"] is how the
+    # word is written, which is what a chip asks for -- "Tom", not "tom".
+    forms = sorted({entry["form"] for entry in lexicon["words"].values()})
     voices = assign_voices(forms)
     if limit:
         forms = forms[:limit]
@@ -296,19 +298,11 @@ def word_items(tables, limit=None):
 
 
 def sentence_items(tables, limit=None):
-    """Corpus lines plus anything a page says.  Corpus first, so a sentence that
-    appears in both keeps its corpus form."""
-    import csv
+    """The site's utterances, from build.audio_sentences() -- which the build
+    also checks the shipped clips against, so the two cannot drift."""
     import build
-    with (ROOT / "corpus.tsv").open(encoding="utf-8", newline="") as fh:
-        rows = list(csv.DictReader(fh, delimiter="\t",
-                                   quoting=csv.QUOTE_NONE, quotechar=None))
-    seen, items = set(), []
-    for latin in [(r.get("latin") or "").strip() for r in rows] + build.page_sentences():
-        if not latin or latin in seen:
-            continue
-        seen.add(latin)
-        items.append(latin)
+
+    items = build.audio_sentences()
     voices = assign_voices(items)
     items = [(t, t, voices[t]) for t in items]
     return items[:limit] if limit else items

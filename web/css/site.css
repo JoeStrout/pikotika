@@ -742,3 +742,124 @@ p { margin: 0 0 1.1em; }
   cursor: pointer;
 }
 .vocab-morebtn:hover { background: var(--bg-tint); }
+
+/* --- Topics (/topics/) ---------------------------------------------------
+   The index is a card grid grouped in three; a topic page is ordinary prose
+   with a back link at each end.  Navigation between topics goes through the
+   index on purpose -- see build.py:TOPIC_GROUPS. */
+
+.topic-group { margin: 0 0 2.5rem; }
+.topic-group h2 {
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 .75rem;
+}
+
+.topic-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: .75rem;
+}
+
+.topic-card > a,
+.topic-card > div {
+  display: flex;
+  align-items: flex-start;
+  gap: .8rem;
+  height: 100%;
+  padding: .9rem 1rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+}
+
+.topic-card > a:hover {
+  border-color: var(--accent-deep);
+  background: var(--bg-tint);
+}
+.topic-card > a:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 2px;
+}
+
+/* Fixed-size icon, then everything else in one column.  The icon is a flex
+   item rather than a grid cell spanning the rows: a spanning item's height is
+   shared out among the rows it crosses, which pushed the text apart. */
+.topic-icon {
+  flex: 0 0 auto;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.topic-icon-han {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--text-muted);
+  background: var(--bg-tint);
+  border-radius: 10px;
+}
+
+.topic-text { display: flex; flex-direction: column; }
+
+.topic-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+.topic-card > a .topic-name { color: var(--link); }
+.topic-card > a:hover .topic-name { color: var(--link-hover); }
+
+/* The card's Pikotika name.  Not a chip -- see build.py:topic_cards; a control
+   inside the card's link would make one tap mean two things. */
+.topic-pk {
+  font-size: .95rem;
+  color: var(--text-muted);
+  margin: .1rem 0 .35rem;
+}
+
+.topic-blurb { font-size: .9rem; color: var(--text-muted); }
+
+.topic-card.is-soon > div { opacity: .62; box-shadow: none; }
+.topic-soon {
+  margin-top: .4rem;
+  font-size: .7rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.topic-back { font-size: .9rem; margin: 0 0 1.5rem; }
+.topic-back.is-end { margin: 2.5rem 0 0; }
+
+/* Swatch lists.  --sw is the color; the chip carries a border so that a white
+   or near-background swatch is still a visible object in both themes. */
+.swatches {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: .6rem;
+}
+
+.swatch { display: flex; flex-direction: column; gap: .15rem; }
+.swatch .sw {
+  height: 3rem;
+  border-radius: 8px;
+  background: var(--sw);
+  border: 1px solid var(--border-strong);
+  margin-bottom: .25rem;
+}
+.swatch .en { font-size: .9rem; }
+.swatch .gloss { font-size: .85rem; }
+

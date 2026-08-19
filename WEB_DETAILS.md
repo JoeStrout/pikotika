@@ -39,6 +39,16 @@ with a `?v=<content hash>` (`asset_version`), because the dev server sends no
 brand-new tab — which looks exactly like a code change having no effect.
 (Observed in Chrome; the fix is engine-independent.)
 
+**The data files carry a version too** (`data_version`, added 2026-08-19).
+`lexicon.json`, `audio/words.json` and `audio/sentences.json` are rebuilt in
+place under the same names, so a browser that cached yesterday's copy keeps
+using it -- and the symptom is not an error but a word or a sentence that
+silently has no audio, because the index it was added to is the stale one. The
+version is a hash of all three, injected as `data-data-version` on the
+`site.js` tag and read back by `DATA_V` in site.js from
+`document.currentScript`. The clips and the pages do not need it: a clip has a
+content hash in its filename, and an HTML page is not cached that way.
+
 `build.py` fails rather than shipping something wrong: an unfilled template
 field, a Han character with no glyph, or a Pikotika form that is not real.
 
@@ -273,6 +283,64 @@ by walking every contiguous run of each word's roots (`subruns`), which is the
 same question `pikotika.contains_run` answers, asked once instead of per word.
 The file is 196 KB raw, 46 KB gzipped.
 
+## Topics (`/topics/`)
+
+An index of cards plus one page per topic at `/topics/<slug>/`. The seventeen
+slugs are `WEBSITE_DESIGN.md`'s, and they are also `corpus.tsv`'s `topic`
+values, so a page and the sentences that support it are named the same thing.
+
+**Navigation between topics is hub and spoke** (decided 2026-08-19). Every
+topic page carries a "← Back to Topics" link at the top and the bottom, added
+by `topic_pages()` rather than written into each fragment, and there is nothing
+else. The alternative considered was a strip of all seventeen topics under the
+header of every page, which puts the whole section one tap away from anywhere;
+it was passed over as a row of chips competing with the content on a page whose
+own content is the point, and because the index — cards, icons, three groups —
+is a better place to choose from than a chip row. Worth revisiting if readers
+turn out to move sideways a lot.
+
+- `build.py:TOPIC_GROUPS` is the whole table: three groups, and per topic a
+  slug, its Pikotika name, a label, a Han glyph, and one line of what you can
+  say. The label and the line are also the page's `<title>` and its meta/`og:`
+  description.
+- **Every card carries the topic's Pikotika name**, so browsing the index
+  teaches seventeen words. Fourteen were already in the lexicon; the three that
+  were not are coined in `compounds.tsv` — **oratika** *hour-say* 'clock time',
+  **tempokarta** *time-page* 'calendar', and **ventomoto** *air-manner*
+  'weather'. Each fills a real gap rather than existing only as a label.
+- **The name is checked but not chipped**, via `data-chip="off"` — the other
+  half of `data-check="off"`. The card is a link, and a word chip inside it
+  would be a control nested in a control, where one tap means two things. The
+  build still parses the form, so a typo'd name fails the build.
+- **A topic is written when `web/pages/topics/<slug>.html` exists.** There is no
+  second list to keep in step: the page appears, its card becomes a link, and
+  until then the card renders inert and marked *not written yet*. An index of
+  seventeen cards where four work is honest; seventeen links where thirteen 404
+  is not, and thirteen empty pages are worse.
+- **Icons are art if it has been drawn and the Han character if it has not.**
+  `topic_icon()` looks for `web/images/topics/<slug>.svg`, then `.png`; drop the
+  file in and rebuild, and nothing here needs editing. They go in
+  `web/images/topics/`, not beside the fragment in `web/pages/topics/` — only
+  `STATIC_DIRS` is copied to the output, so an image next to the prose would
+  never reach the site. The Han fallback is a
+  real placeholder, not a gap — it is the character of a root at the middle of
+  the topic.
+- `authored_pages()` is now the one definition of the reader-facing pages, used
+  by `check_forms`, by `page_sentences` (so topic-page examples get audio like
+  any other), and by the build. Topic pages could not be rendered without being
+  checked and spoken even if someone wanted them to be.
+- The index gets `main_class="wide"`; the measure column is for prose, and a
+  card grid in it is two columns at most.
+- `nav_html` marks a section by prefix, so Topics stays lit on `/topics/colors/`.
+
+**The colors page is the first one written**, and it is the shape the others
+should follow: the six roots as swatches, the seven built colors as swatches
+showing their parse, then the grammar in one paragraph, then corpus sentences
+as ordinary `.example` blocks so chips and the play button come for free. The
+swatch list is `.swatches`; each `<li>` carries the color as `--sw`, and the
+band has a border so a near-background swatch is still an object in both
+themes.
+
 ## Audio
 
 Generated at build time by Kokoro running locally; the site does no
@@ -325,6 +393,24 @@ multi-word `.pk` string on the site, since an example on a page is not
 necessarily a corpus line. `build.py` keeps its `fontTools` import inside
 `check_fonts` so that `gen_audio` can import it from the `pikotika`
 environment, which has Kokoro but not fontTools.
+
+**`build.py:check_audio` warns when the clips no longer match the site.**
+`build.audio_sentences()` is the one definition of what needs a clip -- corpus
+lines, then anything a page says -- and `gen_audio.sentence_items` renders
+exactly that list, so the two cannot drift. The build compares it against
+`web/audio/sentences.json` and names what is missing and what is now unused.
+
+It warns rather than fails: generating audio needs Kokoro and the `pikotika`
+environment, and a hard failure would leave anyone without that environment
+unable to build the site at all. It has to be loud because the failure is
+invisible -- a sentence with no clip still gets a play button, which disables
+itself when tapped.
+
+**Editing a sentence is the case that bites**, not adding one. Clips are keyed
+by exact text, so a corrected line leaves its old clip behind and arrives with
+none; the check found one already shipped that way. `gen_audio` does not delete
+the orphan, so a clip named in the warning as no longer used has to be removed
+by hand.
 
 **Sentence play buttons** are added by `addSentencePlayers()` to any `.example`
 line of two or more words, keyed on the line's exact text. The button is a

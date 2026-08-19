@@ -54,6 +54,142 @@ PAGES = [
      "Why a two-hundred-root auxiliary language is worth building."),
 ]
 
+# --- Topics ----------------------------------------------------------------
+# Seventeen situation-shaped pages under /topics/, grouped for the index.  A
+# topic is written when web/pages/topics/<slug>.html exists; until then its
+# card still appears, marked as not yet written, so the index shows the real
+# shape of the section instead of a grid of links that 404.
+#
+# Navigation between topics is deliberately a hub and spoke (decided
+# 2026-08-19): every topic page carries a "Back to Topics" link at the top and
+# the bottom, added by the build, and nothing else.  A strip of all seventeen
+# on every page was the alternative; it moves more of the section into reach
+# but costs a row of chips on a page whose own content is the point, and the
+# index -- cards, icons, groups -- is a better place to choose from than a
+# chip row.  Reconsider if readers turn out to move sideways a lot.
+#
+#   slug, its Pikotika name, label, Han glyph (the fallback icon), and one
+#   line of what you can say.  The Pikotika name is a word chip like any other,
+#   so the build checks it and tapping it opens the entry -- the index teaches
+#   seventeen words just by being browsed.
+TOPIC_GROUPS = [
+    ("Getting by", [
+        ("numbers", "mesurtika", "Numbers", "\u4e00",
+         "Counting, prices, and how many \u2014 with a reader that says any number aloud."),
+        ("time", "oratika", "Telling time", "\u523b",
+         "Clock time, half past, and early, late, and now."),
+        ("dates", "tempokarta", "Dates and weekdays", "\u66dc",
+         "Weekdays, months, and a live calendar in Pikotika names."),
+        ("seasons", "anyoparte", "Seasons", "\u6728",
+         "The four seasons, and the shape of the year."),
+        ("money", "moni", "Money and shopping", "\u8d1d",
+         "How much, too expensive, and paying for it."),
+        ("travel", "veniire", "Travel and directions", "\u884c",
+         "Getting there: left and right, near and far, and how you are going."),
+        ("lodging", "tormikase", "Lodging", "\u5e8a",
+         "A room for the night \u2014 checking in, keys, and what is included."),
+    ]),
+    ("People", [
+        ("meeting", "sarve", "Meeting people", "\u4f1a",
+         "Hello, your name, and where you are from."),
+        ("smalltalk", "pikotika", "Small talk", "\u8a00",
+         "The small talk the language is named for."),
+        ("pleasantries", "pamtika", "Pleasantries and filler", "\u6069",
+         "Please, thank you, sorry, and the words that fill a pause."),
+        ("family", "parimen", "Family", "\u4eb2",
+         "Parents, children, spouses, and who belongs to whom."),
+        ("feelings", "senti", "Feelings", "\u5fc3",
+         "Happy, tired, angry, surprised \u2014 and asking after someone."),
+        ("health", "sana", "Health and the body", "\u533b",
+         "Where it hurts, and how to ask for help."),
+    ]),
+    ("The world", [
+        ("food", "komi", "Food and eating", "\u98df",
+         "Eating, drinking, ordering, and the compounds that name every dish."),
+        ("colors", "koror", "Colors", "\u8272",
+         "Six color roots, and every other color built out of them."),
+        ("weather", "ventomoto", "Weather", "\u96e8",
+         "Rain, wind, sun, and hot and cold."),
+        ("names", "nomen", "Names and loanwords", "\u540d",
+         "Your own name in Pikotika, and the words it borrows outright."),
+    ]),
+]
+
+TOPICS_URL = "/topics/"
+
+# Where the index's cards get spliced into web/pages/topics.html.
+TOPIC_CARDS_MARK = "<!--TOPIC-CARDS-->"
+
+
+def topic_fragment_path(slug: str) -> Path:
+    return WEB / "pages" / "topics" / f"{slug}.html"
+
+
+def topic_icon(slug: str, han: str) -> str:
+    """Art if it has been drawn, the Han character if it has not.
+
+    Dropping web/images/topics/<slug>.svg in and rebuilding is the whole of
+    adding an icon; nothing here needs editing for it."""
+    for ext in ("svg", "png"):
+        if (WEB / "images" / "topics" / f"{slug}.{ext}").is_file():
+            return (f'<img class="topic-icon" src="/images/topics/{slug}.{ext}"'
+                    f' alt="" width="72" height="72">')
+    return f'<span class="topic-icon topic-icon-han han" aria-hidden="true">{han}</span>'
+
+
+def topic_cards() -> str:
+    """The index: one card per topic, grouped, with the unwritten ones inert."""
+    out = []
+    for group, topics in TOPIC_GROUPS:
+        out.append('<section class="topic-group">')
+        out.append(f"  <h2>{group}</h2>")
+        out.append('  <ul class="topic-cards">')
+        for slug, pk, label, han, blurb in topics:
+            icon = topic_icon(slug, han)
+            body = (f'{icon}\n        <span class="topic-text">'
+                    f'\n          <span class="topic-name">{label}</span>'
+                    f'\n          <span class="pk topic-pk" data-chip="off">{pk}</span>'
+                    f'\n          <span class="topic-blurb">{blurb}</span>')
+            if topic_fragment_path(slug).is_file():
+                inner = (f'<a href="{TOPICS_URL}{slug}/">\n        {body}'
+                         f'\n        </span>\n      </a>')
+                cls = "topic-card"
+            else:
+                inner = (f'<div>\n        {body}'
+                         f'\n          <span class="topic-soon">not written yet</span>'
+                         f'\n        </span>\n      </div>')
+                cls = "topic-card is-soon"
+            out.append(f'    <li class="{cls}">{inner}</li>')
+        out.append("  </ul>")
+        out.append("</section>")
+    return "\n".join(out)
+
+
+BACK_TO_TOPICS = ('<p class="topic-back"><a href="/topics/">'
+                  '\u2190 Back to Topics</a></p>')
+
+
+def topic_pages() -> list:
+    """(url, content, <title>, description) for every topic page written.
+
+    The back links are added here rather than written into each fragment, so a
+    topic page is just its content and the navigation cannot drift page to
+    page."""
+    pages = []
+    for _group, topics in TOPIC_GROUPS:
+        for slug, _pk, label, _han, blurb in topics:
+            path = topic_fragment_path(slug)
+            if not path.is_file():
+                continue
+            body = path.read_text(encoding="utf-8").strip("\n")
+            content = "\n\n".join([BACK_TO_TOPICS, body,
+                                    BACK_TO_TOPICS.replace(
+                                        'topic-back"', 'topic-back is-end"')])
+            pages.append((f"{TOPICS_URL}{slug}/", content,
+                          f"{label} \u2014 Pikotika", blurb))
+    return pages
+
+
 # Built, but deliberately not in the navigation: pages for us, not for readers.
 # `fragment` is a callable here rather than a filename under web/pages/.
 UNLISTED = [
@@ -98,7 +234,9 @@ def render(template: str, **fields) -> str:
 def nav_html(current_url: str) -> str:
     lines = []
     for label, url, *_ in PAGES:
-        current = ' aria-current="page"' if url == current_url else ""
+        # A topic page is still "in" Topics: match the section, not the URL.
+        here = current_url == url or (url != "/" and current_url.startswith(url))
+        current = ' aria-current="page"' if here else ""
         lines.append(f'      <li><a href="{url}"{current}>{label}</a></li>')
     return "\n".join(lines)
 
@@ -150,6 +288,20 @@ def pk_strings(fragment: str):
     return parser.found
 
 
+def authored_pages() -> list:
+    """(url, content, <title>, description) for every reader-facing page.
+
+    One list, used for the form check, for the audio, and for the build, so a
+    page cannot be rendered without being checked or spoken."""
+    pages = []
+    for _label, url, fragment, title_tag, description in PAGES:
+        content = (WEB / "pages" / fragment).read_text(encoding="utf-8")
+        if url == TOPICS_URL:
+            content = content.replace(TOPIC_CARDS_MARK, topic_cards())
+        pages.append((url, content, title_tag, description))
+    return pages + topic_pages()
+
+
 def page_sentences() -> list:
     """Every multi-word Pikotika string on the site, in page order.
 
@@ -157,12 +309,63 @@ def page_sentences() -> list:
     is not necessarily a corpus line -- and gen_audio reads them from here so
     there is one definition of what the site says out loud."""
     out = []
-    for _, _, fragment, _, _ in PAGES:
-        text = (WEB / "pages" / fragment).read_text(encoding="utf-8")
+    for _url, text, _title, _description in authored_pages():
         for string, _line in pk_strings(text):
             if len(string.split()) > 1 and string not in out:
                 out.append(string)
     return out
+
+
+def audio_sentences() -> list:
+    """Every utterance that needs a clip: corpus lines, then anything a page
+    says.  Corpus first, so a sentence that appears in both keeps its corpus
+    form.  gen_audio renders exactly this list, and check_audio verifies that
+    what shipped still matches it -- one definition, two readers."""
+    import csv
+    import pikotika
+
+    with (ROOT / "corpus.tsv").open(encoding="utf-8", newline="") as fh:
+        rows = list(csv.DictReader(fh, **pikotika.TSV))
+    wanted = []
+    for latin in [(r.get("latin") or "").strip() for r in rows] + page_sentences():
+        if latin and latin not in wanted:
+            wanted.append(latin)
+    return wanted
+
+
+def check_audio() -> None:
+    """Warn when the shipped clips no longer match the sentences on the site.
+
+    Audio is generated by a separate pass that needs Kokoro and the `pikotika`
+    environment, so this cannot fail the build -- anyone without that
+    environment could then never build the site at all.  It has to be loud
+    instead, because the failure is invisible: a sentence with no clip still
+    gets a play button, and the button just disables itself when tapped.
+
+    Editing a sentence is the case that bites.  The clip is keyed by the exact
+    text, so a corrected line leaves its old clip behind and arrives with
+    none."""
+    index = WEB / "audio" / "sentences.json"
+    if not index.is_file():
+        print("  ! no web/audio/sentences.json -- run gen_audio.py")
+        return
+    import json
+
+    clips = json.loads(index.read_text(encoding="utf-8"))["clips"]
+    wanted = audio_sentences()
+    missing = [t for t in wanted if t not in clips]
+    stale = [t for t in clips if t not in wanted]
+    if not missing and not stale:
+        return
+
+    print(f"  ! audio is out of date: {len(wanted)} sentences on the site, "
+          f"{len(clips)} clips")
+    for label, items in (("no clip", missing), ("clip no longer used", stale)):
+        for text in items[:6]:
+            print(f"      {label}: {text}")
+        if len(items) > 6:
+            print(f"      ... and {len(items) - 6} more with {label}")
+    print("    fix: micromamba run -n pikotika python gen_audio.py")
 
 
 def check_forms(tables, sources) -> list:
@@ -214,9 +417,9 @@ def build() -> None:
     check_fonts()
 
     tables = pikotika.Tables()
-    fragments = {fragment: (WEB / "pages" / fragment).read_text(encoding="utf-8")
-                 for _, _, fragment, _, _ in PAGES}
-    forms = check_forms(tables, sorted(fragments.items()))
+    authored = authored_pages()
+    forms = check_forms(tables, [(url, content)
+                                 for url, content, _t, _d in authored])
     lexicon, unresolved = gen_lexicon.build(tables, forms)
     if unresolved:
         raise SystemExit(f"cannot build a lexicon entry for: {unresolved}")
@@ -242,11 +445,16 @@ def build() -> None:
     template = (WEB / "templates" / "base.html").read_text(encoding="utf-8")
     css_version = asset_version("css/site.css")
     js_version = asset_version("js/site.js")
+    # The lexicon and the two audio indexes are rebuilt in place under the same
+    # names, so they need the same cache-busting; site.js reads this off its own
+    # script tag.  Computed after gen_lexicon.write above, or it would hash the
+    # previous build's lexicon.
+    data_version = asset_version("data/lexicon.json", "audio/words.json",
+                                 "audio/sentences.json")
 
     import importlib
 
-    pages = [(url, fragments[fragment], title_tag, description)
-             for _, url, fragment, title_tag, description in PAGES]
+    pages = list(authored)
     pages += [(url, importlib.import_module(module).fragment(),
                title_tag, description)
               for url, module, title_tag, description in UNLISTED]
@@ -261,7 +469,9 @@ def build() -> None:
             nav=nav_html(url),
             css_version=css_version,
             js_version=js_version,
-            main_class="",
+            data_version=data_version,
+            # The topic index is a card grid; the measure column is for prose.
+            main_class="wide" if url == TOPICS_URL else "",
             content=content.rstrip("\n"),
         )
         target = OUT / url.lstrip("/") / "index.html"
@@ -269,6 +479,7 @@ def build() -> None:
         target.write_text(html, encoding="utf-8")
         print(f"  {url}")
 
+    check_audio()
     print(f"built {len(pages)} pages into {OUT}/")
 
 

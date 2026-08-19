@@ -111,6 +111,7 @@ summer	hot-time	Time direction	3	4
 should	if-good	Grammar and logic	4	4
 winter	cold-time	Time direction	4	4
 grief	big-not-happy	Feelings	1	
+clock time; time of day	hour-say	Time direction	1	
 false; untrue; if (counterfactual)	not-true	Grammar and logic	1	
 serene; relaxed; peaceful	small-happy	Feelings	1	
 second (of time)	small-part	Time direction	1	
@@ -134,6 +135,7 @@ relative clause marker	RI-TE	Particles;Grammar and logic	3
 redo; remake; do again	again-make	Verbs	3	
 review; re-examine; look over again	again-see	Verbs	3	
 fly; flight	air-go	Verbs	3	
+weather	air-manner	Nature	3	
 potato	earth-grain	Food	3	
 last; final; the end (of a series)	finish-sequence	General heads;Time direction	3	
 alcohol (usually wine)	fire-water	Food	3	
@@ -191,6 +193,7 @@ step (in a procedure)	sequence-part	General heads	3
 sand; gravel	small-stone	Nature;Material	3	
 sunny	sun-air	Nature;Qualities	3	
 third (in a series); 3rd	three-sequence	Quantity	3	
+calendar	time-page	Time direction;Made things	3	
 schedule; timetable	time-sequence	General heads;Time direction	3	
 experience; experienced	try-know	Verbs;Qualities	3	
 search; look for; seek	try-see	Verbs	3	

@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-641 terms
+645 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -85,6 +85,7 @@
 | busy | many-work | muropus | 多力 |
 | by the way | other-about | artopi | 別件 |
 | bye | sorry-go | pertonire | 悔行 |
+| calendar | time-page | tempokarta | 时片 |
 | call | electric-say | vortotika | 電言 |
 | call to mind | again-know | repesape | 又知 |
 | calm | not-anger | nonraye | 不怒 |
@@ -105,6 +106,7 @@
 | choice | choose-thing | erikekosa | 选物 |
 | cinema | picture-home | piturkase | 画户 |
 | circle | round-line | rotunrine | 丸糸 |
+| clock time | hour-say | oratika | 刻言 |
 | cloud | rain-air | ruvavento | 雨风 |
 | cloudy | rain-air | ruvavento | 雨风 |
 | coast | water-edge | akurante | 水边 |
@@ -564,6 +566,7 @@
 | tie | same-become | samtiven | 同成 |
 | tight-lipped | close-mouth | vinpuka | 閉口 |
 | till | straight-to | retover | 直向 |
+| time of day | hour-say | oratika | 刻言 |
 | time off | not-work-time | nonopustempo | 不力时 |
 | timetable | time-sequence | tempoorten | 时序 |
 | today | this-sun | tisyan | 此日 |
@@ -615,6 +618,7 @@
 | watch TV | electric-see | vortovite | 電見 |
 | we | I-group | ekomen | 己众 |
 | wear | cloth-have | ropatene | 衣有 |
+| weather | air-manner | ventomoto | 风方 |
 | Wednesday | water-weekday | akuyom | 水曜 |
 | week | seven-sun | senseyan | 7日 |
 | weekend | seven-sun-finish | senseyanvin | 7日閉 |
