@@ -24,6 +24,54 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "web" / "data" / "lexicon.json"
 
 
+def subruns(parts):
+    """Every contiguous run of `parts`, longest first, as tuples.
+
+    `contains_run` asks "do these roots appear in that word, side by side?", so
+    an index keyed on every such run answers it by lookup.  613 entries against
+    376 corpus rows is small either way; what this really buys is that the
+    corpus is walked once instead of once per word."""
+    n = len(parts)
+    for i in range(n):
+        for j in range(i + 1, n + 1):
+            yield tuple(parts[i:j])
+
+
+def usage_index(t):
+    """(sentences, run -> sentence indices) over the whole corpus.
+
+    Sentences are shipped once in a list and referred to by index.  Written into
+    each entry instead, the common roots would carry the same string dozens of
+    times and the file would be several times its size."""
+    sentences, by_run = [], {}
+    for row in t.corpus:
+        index = len(sentences)
+        sentences.append([row["latin"], row["EN"]])
+        for word in row["gloss"].split():
+            parts = t.gloss_roots(word)
+            if not parts:
+                continue
+            for run in subruns(parts):
+                by_run.setdefault(run, set()).add(index)
+    return sentences, by_run
+
+
+def compound_index(t):
+    """run -> the Latin forms of the standing compounds built around it.
+
+    A compound never lists itself, which is the `!= parts` in `compound_hits`;
+    here that is the run that spans the whole word."""
+    by_run = {}
+    for gloss, parts in t.compound_roots.items():
+        form = P.join_latin([t.form_of(g) for g in parts])
+        whole = tuple(parts)
+        for run in subruns(parts):
+            if run == whole:
+                continue
+            by_run.setdefault(run, set()).add(form)
+    return by_run
+
+
 def part_entry(gloss, t):
     """One root of a compound, as the popover shows it in the literal parse."""
     row = t.gloss2root.get(gloss)
@@ -37,8 +85,11 @@ def part_entry(gloss, t):
     }
 
 
-def entry_for(gloss, t, kind):
-    """A lexicon entry for one gloss word (a single root or a compound)."""
+def entry_for(gloss, t, kind, usage=None):
+    """A lexicon entry for one gloss word (a single root or a compound).
+
+    `usage` is (sentences_by_run, compounds_by_run) from the indexes above; pass
+    it and the entry also carries where the word is used."""
     words = P.parse_gloss(gloss, t)
     if words is None:
         return None
@@ -70,6 +121,26 @@ def entry_for(gloss, t, kind):
         # full entry, not for a chip you tapped in the middle of a sentence.
         if row and row.get("mnemonic"):
             entry["mnemonic"] = row["mnemonic"]
+        # The Vocab page searches the sense range and groups by `category`, so
+        # both ride along; strokes is for the Han character in the detail view.
+        # `covers` holds only what the glosses do not already name, so what
+        # ships is the joined range -- see pikotika.root_covers.
+        if row:
+            entry["covers"] = P.root_covers(row)
+            for key, out in (("category", "cat"),
+                             ("strokes", "strokes"), ("gloss2", "gloss2")):
+                if row.get(key):
+                    entry[out] = row[key]
+
+    if usage:
+        by_sentence, by_compound = usage
+        run = tuple(t.gloss_roots(gloss) or ())
+        used_in = sorted(by_compound.get(run, ()))
+        if used_in:
+            entry["in"] = used_in
+        examples = sorted(by_sentence.get(run, ()))
+        if examples:
+            entry["ex"] = examples
     return entry
 
 
@@ -79,12 +150,25 @@ def name_entries(t):
         # in the same table and both stay in Latin inside Han text
         yield form, {
             "form": form,
-            "kind": "name",
+            "kind": t.name_kind.get(form, "name"),
             "gloss": english,
             "en": english,
             "han": "",
             "level": "",
         }
+
+
+def categories(t):
+    """The `category` values of roots.tsv, in the order the table gives them.
+
+    Vocab groups its browse list by these, and the table's order is editorial --
+    body and life first, grammar words last -- so it is kept, not sorted."""
+    out = []
+    for row in t.gloss2root.values():
+        cat = row.get("category")
+        if cat and cat not in out:
+            out.append(cat)
+    return out
 
 
 def build(t, extra_forms=()):
@@ -94,15 +178,17 @@ def build(t, extra_forms=()):
     example built in running speech is not a dictionary entry.  Those get
     resolved here so that every chip on the site has something to open."""
     words = {}
+    sentences, by_sentence = usage_index(t)
+    usage = (by_sentence, compound_index(t))
 
     for gloss in t.gloss2root:
         kind = "particle" if t.is_particle(gloss) else "root"
-        entry = entry_for(gloss, t, kind)
+        entry = entry_for(gloss, t, kind, usage)
         if entry:
             words[entry["form"].lower()] = entry
 
     for gloss in t.compound_by_gloss:
-        entry = entry_for(gloss, t, "compound")
+        entry = entry_for(gloss, t, "compound", usage)
         if entry:
             words.setdefault(entry["form"].lower(), entry)
 
@@ -118,19 +204,20 @@ def build(t, extra_forms=()):
             unresolved.append(form)
             continue
         gloss = P.render_gloss(parsed, t)
-        entry = entry_for(gloss, t, "phrase")
+        entry = entry_for(gloss, t, "phrase", usage)
         if entry is None:
             unresolved.append(form)
             continue
         entry["form"] = form
         words[form.lower()] = entry
 
-    return words, unresolved
+    return {"words": words, "sentences": sentences,
+            "categories": categories(t)}, unresolved
 
 
-def write(words):
+def write(lexicon):
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    payload = {"count": len(words), "words": words}
+    payload = dict(lexicon, count=len(lexicon["words"]))
     OUT.write_text(json.dumps(payload, ensure_ascii=False,
                               separators=(",", ":"), sort_keys=True) + "\n",
                    encoding="utf-8")
@@ -141,7 +228,7 @@ if __name__ == "__main__":
     tables = P.Tables()
     lexicon, missing = build(tables)
     path = write(lexicon)
-    print(f"{len(lexicon)} words -> {path.relative_to(ROOT)} "
-          f"({path.stat().st_size:,} bytes)")
+    print(f"{len(lexicon['words'])} words, {len(lexicon['sentences'])} sentences "
+          f"-> {path.relative_to(ROOT)} ({path.stat().st_size:,} bytes)")
     if missing:
         raise SystemExit(f"unresolved: {missing}")

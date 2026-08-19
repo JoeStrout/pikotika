@@ -146,6 +146,74 @@ Two implementation facts worth not rediscovering:
 - A sentence split into eight controls is announced as eight controls, so
   `chipify` puts the whole sentence on the container as `aria-label`.
 
+## Vocab (`/vocab/`)
+
+One page, client-side, over `lexicon.json` — no per-entry pages (decided
+2026-08-19; `WEBSITE_DESIGN.md` writes the permalink as `/vocab/riso`, and what
+shipped is `/vocab/#riso`). Generating ~613 directories would have given real
+paths, but at the cost of a second renderer for a full entry in Python beside
+the one in JavaScript. One implementation, hash permalinks.
+
+- **The hash is the search box** (decided 2026-08-19, after two worse tries).
+  `/vocab/#riso` puts *riso* in the box and searches for it; typing a search
+  writes itself back to the hash. A link and a search can therefore never
+  describe two different pages. `fromUrl()` is the single path used on load, on
+  `hashchange`, and after a related word is tapped.
+  - The first attempt read the hash *only* as an entry to expand, so arriving
+    at `/vocab/#komivakeomo` while "spicy" was still typed changed the URL and
+    nothing else — the entry was filtered out of the list.
+  - The second cleared the search instead and scrolled the full 613-row browse
+    list to the word, which is more confusing than just searching for it.
+- **A hash that names a form exactly also opens that entry**, which is what
+  makes a permalink land *on* the word rather than beside it. Typing does not:
+  `open` is cleared on input, so an entry does not pop open under the cursor
+  because what you have typed so far happens to spell a word.
+- **Expanding a row does not rewrite the hash.** Opening one result of a search
+  is not a different search; the entry's own Permalink is the link to it opened.
+- Nothing pushes history — a reader stepping through six compounds should not
+  have to press Back six times — so `setHash()` uses `replaceState`, which also
+  does not fire `hashchange`, so writing the hash cannot loop back into reading
+  it. A kind or category chip can still hide the linked word, which is what
+  `reveal()` clears.
+- **`history.scrollRestoration = 'manual'`** when arriving on a hash. The row
+  does not exist until the fetch lands, by which time the browser has already
+  restored the scroll position of a page that was still empty, i.e. the top.
+  The scroll aligns the row to the top, not the center — an open entry can be
+  taller than the viewport — offset by the measured height of the two sticky
+  bars.
+- **The empty state is the lexicon browsed by category**, roots under their
+  `category` headings in `roots.tsv` order (editorial, so not sorted), then
+  Compounds, Names and Loans under their own. A dictionary you can read down
+  beats an empty box on arrival.
+- **English matches only at a word boundary; the Latin form matches anywhere.**
+  *price* contains *rice*, and a search for rice that turns up **moni** is worse
+  than no result — but compounds are written solid, so "riso" has to find
+  **yororiso** by plain substring. `score()` holds the ranking. The page's own
+  example is *medicine* → **sana**, which is genuinely a `covers`-only hit;
+  *rice* is not, being **riso**'s `gloss2`.
+- **The sentence list opens at 8.** **ri** is in 279 corpus sentences and
+  **eko** in 133; printed whole, the commonest words — the ones a beginner opens
+  first — become the longest pages on the site. Compounds are not capped: the
+  worst case is **non** at 27, and each is one word.
+- Sentences are rendered as `.example` blocks, the same markup the rest of the
+  site uses, so chipping and the play button come for free. `chipify` works on a
+  detached node but `addSentencePlayers` queries the document, so it runs after
+  `render()` has appended the list, not inside the row builder.
+- **The controls bar measures the header** rather than hard-coding its height in
+  two media queries that would then have to be kept in step (the mobile nav is
+  two rows, the desktop one).
+
+`gen_lexicon.py` carries what the detail view needs: the joined sense range
+(`root_covers`, since the `covers` column holds only what the glosses do not
+already name), `cat`, `strokes`
+and `gloss2` on roots, `in` (the compounds built around this word) and `ex`
+(corpus sentence indices) on both roots and compounds. **Sentences ship once in
+a top-level array and are referred to by index** — written into each entry, the
+common roots would carry the same string dozens of times. Both indexes are built
+by walking every contiguous run of each word's roots (`subruns`), which is the
+same question `pikotika.contains_run` answers, asked once instead of per word.
+The file is 196 KB raw, 46 KB gzipped.
+
 ## Audio
 
 Generated at build time by Kokoro running locally; the site does no

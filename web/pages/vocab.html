@@ -1,12 +1,29 @@
 <h1>Vocab</h1>
-<p class="lede">Every root, compound, name, and loanword, searchable.</p>
-<div class="placeholder">
-  <h2>Vocab content goes here</h2>
-  <ul>
-    <li>One search box over roots, compounds, names, and loans together</li>
-    <li>Filter chips by kind and by category</li>
-    <li>Matching on gloss, gloss2, Latin form, Han character, and the <em>covers</em> list</li>
-    <li>A detail view per entry, with the compounds and corpus sentences that use it</li>
-    <li>Permalinks like <code>/vocab/riso</code></li>
-  </ul>
+<p class="lede">Every root, compound, name, and loanword, searchable. Matching
+runs over the English, the Pikotika, the Han character, and every sense a root
+covers — so <em>medicine</em> finds <span class="pk" data-check="off">sana</span>,
+whose glosses are <span class="gloss">heal</span> and
+<span class="gloss">health</span>.</p>
+
+<div class="vocab" id="vocab">
+  <div class="vocab-controls">
+    <label class="vocab-search">
+      <span class="vs-label">Search the lexicon</span>
+      <input id="vocab-q" type="search" autocomplete="off" autocapitalize="off"
+             spellcheck="false" placeholder="medicine, sana, 医, heal…">
+    </label>
+    <div class="vocab-chips" id="vocab-kinds" role="group"
+         aria-label="Filter by kind"></div>
+    <div class="vocab-chips vocab-cats" id="vocab-cats" role="group"
+         aria-label="Filter roots by category"></div>
+  </div>
+
+  <p class="vocab-count" id="vocab-count" role="status" aria-live="polite"></p>
+  <div class="vocab-results" id="vocab-results"></div>
+
+  <noscript>
+    <p class="vocab-none">Vocab search runs in the browser, so it needs
+    JavaScript. The tables it reads are in the
+    <a href="https://github.com/JoeStrout/pikotika">repository</a>.</p>
+  </noscript>
 </div>

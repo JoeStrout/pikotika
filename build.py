@@ -213,7 +213,7 @@ def build() -> None:
     if unresolved:
         raise SystemExit(f"cannot build a lexicon entry for: {unresolved}")
     path = gen_lexicon.write(lexicon)
-    print(f"  {len(forms)} words checked; {len(lexicon)} in "
+    print(f"  {len(forms)} words checked; {len(lexicon['words'])} in "
           f"{path.relative_to(ROOT)}")
 
     if OUT.exists():

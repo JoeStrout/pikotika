@@ -185,6 +185,7 @@ class Tables:
         self.names = {}           # english name -> form
         self.form2name = {}       # form, case-folded -> english name
         self.name_forms = {}      # form, exactly as written -> english name
+        self.name_kind = {}       # form -> "name" or "loan" (names.tsv `kind`)
         self.compound_roots = {}  # gloss -> [root gloss, ...]
         self.corpus = []          # corpus.tsv rows, in file order
         self._load(directory)
@@ -253,6 +254,9 @@ class Tables:
                     # names.tsv (Erena) but most lookup sites fold case first
                     self.form2name[r["form"].lower()] = r["EN"]
                     self.name_forms[r["form"]] = r["EN"]
+                    # proper nouns and the sanctioned loan register share the
+                    # table; Vocab filters them apart, so keep which is which
+                    self.name_kind[r["form"]] = (r.get("kind") or "name").strip()
 
     # -- root-level accessors -------------------------------------------------
 
@@ -833,6 +837,19 @@ def root_glosses(root):
                                  (root.get("gloss2") or "").strip()) if g)
 
 
+def root_covers(root):
+    """A root's full sense range for display: gloss, gloss2, then `covers`.
+
+    The column holds only the senses the two glosses do not already name -- for
+    eleven roots that leaves it blank -- so anything showing a reader what a
+    root spans joins all three rather than printing the column alone.  Sense
+    groups inside `covers` keep their semicolons.
+    """
+    named = [root["gloss"], (root.get("gloss2") or "").strip()]
+    rest = (root.get("covers") or "").strip()
+    return ", ".join([g for g in named if g] + ([rest] if rest else []))
+
+
 def english_match(words, t):
     """Exact English equivalents, when the whole query is one root or compound."""
     words = [w for w in expand_numerals(words) if not is_punct(w)]
@@ -845,7 +862,7 @@ def english_match(words, t):
     hits = list(t.compound_by_gloss.get(gloss, []))
     if len(word) == 1 and gloss in t.gloss2root:
         root = t.gloss2root[gloss]
-        hits.append("%s  (root: %s)" % (root_glosses(root), root["covers"]))
+        hits.append("%s  (root: %s)" % (root_glosses(root), root_covers(root)))
     return hits
 
 

@@ -131,12 +131,15 @@ def root_cards(gloss, t):
         sys.exit("no root %r in roots.tsv" % gloss)
     if (root.get("category") or "").strip() == PARTICLES:
         return                # particles are taught by the grammar, not by drill
-    latin, han, covers = root["form"], root["han"], root["covers"]
+    latin, han = root["form"], root["han"]
     names = pikotika.root_glosses(root)
-    yield card(["# " + names, "### " + covers],
+    # `covers` is only what the two glosses do not already name, and for eleven
+    # roots that is nothing -- so the line goes away rather than sitting blank
+    extra = ["### " + root["covers"]] if root["covers"].strip() else []
+    yield card(["# " + names] + extra,
                ["# " + latin, "## " + han])
     yield card(["# " + latin],
-               ["# " + names, "### " + covers, "## " + han])
+               ["# " + names] + extra + ["## " + han])
 
 
 def compound_cards(english, t):

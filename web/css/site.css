@@ -524,3 +524,173 @@ p { margin: 0 0 1.1em; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* --- Vocab (/vocab/) -----------------------------------------------------
+   The whole section is one page: a search box, two chip rows, and a list that
+   is either the search results or the lexicon browsed by category.  Entries
+   expand in place, so nothing here is a second page layout. */
+
+.vocab-controls {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: .75rem 0 .6rem;
+  margin-bottom: .5rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.vocab-search { display: block; }
+.vocab-search .vs-label {
+  display: block;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-bottom: .25rem;
+}
+.vocab-search input {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: .5rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+.vocab-search input:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 1px;
+}
+
+.vocab-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .5rem;
+}
+.vocab-cats { font-size: .85em; }
+
+.vocab-chip {
+  font: inherit;
+  font-size: .85rem;
+  line-height: 1;
+  padding: .35rem .6rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.vocab-chip:hover { background: var(--bg-tint); }
+.vocab-chip[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent-deep);
+}
+
+.vocab-count { color: var(--text-muted); font-size: .85rem; margin: 0 0 .5rem; }
+
+.vocab-group { margin: 0 0 1.5rem; }
+.vocab-gh {
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 .3rem;
+}
+
+.vocab-list { list-style: none; margin: 0; padding: 0; }
+.vocab-row { border-bottom: 1px solid var(--border); }
+.vocab-row.is-open { background: var(--bg-tint); }
+
+/* One row is one control.  A grid rather than flex so the Han column lines up
+   down the whole list, including the many entries that have no character. */
+.vocab-head {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) minmax(2.5rem, auto) 1fr;
+  align-items: baseline;
+  gap: .6rem;
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  padding: .45rem .3rem;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+.vocab-head:hover { background: var(--bg-tint); }
+.vocab-han {
+  font-family: var(--font-han);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.vocab-en { color: var(--text-muted); }
+
+/* In the open row the English is the definition, not a list column -- give it
+   the weight to be read first, since everything below it is detail about a
+   meaning you have to have already. */
+.vocab-row.is-open .vocab-en {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.vocab-detail { padding: .3rem .3rem 1rem; }
+.vocab-dhead {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-bottom: .4rem;
+}
+.vocab-parse { margin: .35rem 0 0; }
+.vocab-dfield { margin: .35rem 0 0; font-size: .9rem; }
+.vocab-dlabel { color: var(--text-muted); }
+.vocab-dmeta { font-size: .8rem; color: var(--text-muted); }
+
+.vocab-section { margin-top: 1rem; }
+.vocab-dh {
+  font-size: .8rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 .35rem;
+}
+.vocab-rels { margin: 0; display: flex; flex-wrap: wrap; gap: .3rem .5rem; }
+
+/* A related word is a button that has to read as the word it names -- the same
+   bargain the sentence chips strike, so it wears the same dotted underline. */
+.vocab-rel {
+  font: inherit;
+  font-weight: 550;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-underline-offset: 3px;
+}
+.vocab-rel:hover { text-decoration-color: var(--accent-deep); }
+
+.vocab-section .example { margin: .5rem 0; }
+.vocab-dlink { margin: 1rem 0 0; font-size: .8rem; }
+.vocab-none { color: var(--text-muted); }
+
+@media (max-width: 32rem) {
+  .vocab-head { grid-template-columns: minmax(5.5rem, auto) auto 1fr; gap: .4rem; }
+}
+
+.vocab-more { margin: .6rem 0 0; }
+.vocab-morebtn {
+  font: inherit;
+  font-size: .85rem;
+  padding: .3rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.vocab-morebtn:hover { background: var(--bg-tint); }

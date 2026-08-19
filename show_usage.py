@@ -103,7 +103,7 @@ def main(argv):
         return 1
 
     print(f'{t.form_of(gloss)} = {gloss} '
-          f'({t.gloss2root[gloss].get("covers", "")})\n')
+          f'({pikotika.root_covers(t.gloss2root[gloss])})\n')
     show('compounds', compound_uses(gloss, t))
     show('corpus', corpus_uses(gloss, t))
     return 0
