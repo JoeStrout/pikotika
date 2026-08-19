@@ -390,20 +390,6 @@ that slot gets its edges shaved.
 
 ### The link preview image
 
-**One fix outstanding.** `apple-touch-icon.png` currently has transparent corners,
-inherited from the circular master. iOS does not honor transparency in home-screen
-icons — it composites them on **black**, so the result is a yellow circle in a black
-square. The fix is to use the maskable treatment at 180×180: full-bleed gradient,
-no alpha, since iOS applies its own rounded-rect mask anyway. `icon-maskable-512.png`
-downscaled is exactly right.
-
-The other files check out: the maskable icon bleeds to all four corners at full
-opacity with its ink inside a 192px radius (safe limit 205), and `icon-192`/`icon-512`
-keep their transparent corners, which is correct for the non-maskable slots.
-
-`og-image.png` is the one entry above that is *not* the icon, and it deserves its
-own treatment because it is the most-seen image on the site by a wide margin.
-
 **What it is.** When anyone pastes `pikotika.org` into Reddit, Discord, Slack,
 Mastodon, iMessage, WhatsApp, or a Google result, the receiving app fetches the page
 and reads its `<meta>` tags to build a preview card. `og:image` is the picture on
@@ -411,30 +397,6 @@ that card. Every one of those platforms is a place we expect the site to be shar
 and on most of them the image occupies more visual space than the title and
 description combined. It is the site's first impression far more often than the
 site itself is.
-
-**Why not the icon.** 1200×630 is a 1.91:1 letterbox. A square glyph centered in it
-leaves two-thirds of the card as empty background, which reads as a broken or
-missing image rather than as a deliberate one — and several platforms crop toward a
-square for their compact layouts, so an image that is mostly margin gets cropped to
-pure margin. The wordmark, being wide, fills the space naturally and says the
-language's name in the one place a reader will actually see it.
-
-**Spec.**
-
-- **1200×630 PNG**, non-transparent, on the site's own background color — light or
-  dark is a design call, but pick one and keep it, since the card renders against
-  the chat app's background, not ours.
-- **Keep everything meaningful inside the center 1200×600**, and inset the wordmark
-  a further ~10% from all edges. Facebook, Slack, and Discord each crop slightly
-  differently, and iMessage rounds the corners.
-- **Text must survive at 400px wide.** Many clients display the card at a third of
-  its native size. This is the real constraint, and it means the card carries the
-  wordmark and at most four or five words — *a tiny language for real conversation*
-  — never a paragraph.
-- **Under 1 MB**, ideally under 300 KB. Some clients silently skip images over
-  ~1 MB, and Twitter/X historically capped at 5 MB.
-- **Absolute URL** in the tag. Relative paths are the single most common reason a
-  card renders blank: `<meta property="og:image" content="https://pikotika.org/og-image.png">`.
 
 **The tags that go with it**, in every page's `<head>`:
 

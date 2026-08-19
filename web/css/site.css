@@ -402,7 +402,31 @@ p { margin: 0 0 1.1em; }
 .wordpop-form { font-size: 1.1rem; }
 .wordpop-han { font-family: var(--font-han); color: var(--text-muted); }
 .wordpop-en { margin: .25rem 0 0; }
-.wordpop-parse { margin: .15rem 0 0; font-size: .9rem; }
+.wordpop-parse { margin: .3rem 0 0; font-size: .9rem; }
+.wordpop-partgloss { font-size: .95em; }
+
+/* The roots of a compound are chips like any other, but inside a box that is
+   already an overlay -- the dotted underline is the only affordance there is
+   room for, so it is drawn a little stronger than in running text. */
+.wordpop-part {
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.wordpop-part:hover { text-decoration-color: var(--accent-deep); }
+
+/* A mnemonic is an aside, not the entry: quieter and smaller than the gloss
+   above it, so the eye still lands on the meaning first. */
+.wordpop-mnemonic {
+  margin: .3rem 0 0;
+  font-size: .82rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
 .wordpop-none { margin: 0; color: var(--text-muted); }
 
 .wordpop-foot {

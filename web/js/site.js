@@ -291,8 +291,25 @@
     popover.className = 'wordpop';
     popover.hidden = true;
     popover.setAttribute('role', 'dialog');
+    popover.tabIndex = -1;
     document.body.appendChild(popover);
     return popover;
+  }
+
+  /* Mnemonics are written with *asterisks* around the letters that echo the
+     Pikotika form.  Build the <em>s as nodes -- the text is data, and this is
+     not a place to hand a string to innerHTML. */
+  function appendEmphasis(el, text) {
+    text.split('*').forEach(function (chunk, i) {
+      if (!chunk) return;
+      if (i % 2) {
+        var em = document.createElement('em');
+        em.textContent = chunk;
+        el.appendChild(em);
+      } else {
+        el.appendChild(document.createTextNode(chunk));
+      }
+    });
   }
 
   function fill(entry, form) {
@@ -328,12 +345,32 @@
     el.appendChild(en);
 
     if (entry.parts) {
+      /* The literal parse, with every root tappable in place: a compound is
+         the one place a learner most wants to step sideways into its pieces. */
       var parse = document.createElement('p');
-      parse.className = 'wordpop-parse gloss';
-      parse.textContent = entry.parts.map(function (p) {
-        return p.gloss;
-      }).join('-');
+      parse.className = 'wordpop-parse';
+      entry.parts.forEach(function (p, i) {
+        if (i) parse.appendChild(document.createTextNode(' + '));
+        var part = document.createElement('span');
+        part.className = 'wordpop-part pk';
+        /* Already a control; keep scanChips from chipping it into another. */
+        part.dataset.check = 'off';
+        part.setAttribute('role', 'button');
+        part.tabIndex = 0;
+        part.dataset.w = p.form.toLowerCase();
+        part.textContent = p.form;
+        parse.appendChild(part);
+        var g = document.createElement('span');
+        g.className = 'wordpop-partgloss gloss';
+        g.textContent = ' (' + p.gloss + ')';
+        parse.appendChild(g);
+      });
       el.appendChild(parse);
+    } else if (entry.mnemonic) {
+      var hint = document.createElement('p');
+      hint.className = 'wordpop-mnemonic';
+      appendEmphasis(hint, entry.mnemonic);
+      el.appendChild(hint);
     }
 
     var foot = document.createElement('div');
@@ -382,17 +419,23 @@
     el.style.top = (top + window.scrollY) + 'px';
   }
 
+  /* Show `form` in the popover anchored at `anchor`.  Stepping from a compound
+     into one of its roots keeps the anchor -- the box stays where the reader is
+     already looking, and the chip that opened it stays the one marked open. */
+  function showFor(form, anchor) {
+    loadLexicon().then(function (words) {
+      if (openFor !== anchor) return;
+      fill(words && words[form], form);
+      place(anchor);
+    });
+  }
+
   function openChip(button) {
     if (openFor === button) { closePopover(); return; }
     closePopover();
     openFor = button;
     button.setAttribute('aria-expanded', 'true');
-    var form = button.dataset.w;
-    loadLexicon().then(function (words) {
-      if (openFor !== button) return;
-      fill(words && words[form], form);
-      place(button);
-    });
+    showFor(button.dataset.w, button);
   }
 
   document.addEventListener('click', function (event) {
@@ -404,6 +447,15 @@
           selection.toString().trim().length > 1) return;
       event.preventDefault();
       openChip(chip);
+      return;
+    }
+    var part = event.target.closest && event.target.closest('.wordpop-part');
+    if (part && openFor) {
+      /* fill() rebuilds the box, so the element just activated is about to stop
+         existing; park focus on the popover so the keyboard stays inside it. */
+      event.preventDefault();
+      showFor(part.dataset.w, openFor);
+      popover.focus();
       return;
     }
     if (popover && !popover.hidden && !event.target.closest('.wordpop')) {
@@ -420,6 +472,13 @@
       if (chip) {
         event.preventDefault();
         openChip(chip);
+        return;
+      }
+      var part = event.target.closest && event.target.closest('.wordpop-part');
+      if (part && openFor) {
+        event.preventDefault();
+        showFor(part.dataset.w, openFor);
+        popover.focus();
       }
     }
   });

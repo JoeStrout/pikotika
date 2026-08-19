@@ -65,6 +65,11 @@ def entry_for(gloss, t, kind):
     else:
         row = t.gloss2root.get(gloss)
         entry["en"] = P.root_glosses(row) if row else gloss
+        # A root has no parse to show, so the popover shows its mnemonic
+        # instead.  The etymology column stays out of the lexicon: it is for a
+        # full entry, not for a chip you tapped in the middle of a sentence.
+        if row and row.get("mnemonic"):
+            entry["mnemonic"] = row["mnemonic"]
     return entry
 
 

@@ -102,6 +102,23 @@ still there and still reads.
   compounds — the parsed roots. The parse is precomputed on purpose: `segment()`
   has real linking-`e` and name-matching rules, and a JavaScript port would be a
   second implementation to keep honest.
+- **The popover's third line is the parse for a compound and the mnemonic for a
+  root** — never both, since a root has no parse and a compound has no mnemonic
+  of its own. The parse reads **piko** *(small)* + **tempo** *(time)*, and each
+  root in it is itself tappable: the box refills in place, keeping the original
+  chip as its anchor and as the word marked open, so stepping into a root does
+  not move the box out from under the reader. The gloss shown is the *primary*
+  gloss of each root (`gloss_roots` normalizes), so `all-choose` displays as
+  *every* + *choose*.
+- **`roots.tsv` has both a `mnemonic` and an `etymology` column.** Only the
+  mnemonic ships in `lexicon.json`: a chip tapped mid-sentence wants one catchy
+  line, and the etymology belongs on the full entry page. Mnemonics mark the
+  echoing letters with `*asterisks*`, which `appendEmphasis()` turns into `<em>`
+  nodes — built as DOM, not handed to `innerHTML`.
+- **A mnemonic must not begin with a `"`.** `private/detidy.py` reads a leading
+  quote as a Numbers cell wrapper and strips it, so `"corpse"` silently becomes
+  `corpse`. Use italics for a one-word mnemonic instead. Quotes inside a
+  mnemonic are safe.
 - `web/js/site.js`, "word chips" section: the scanner, and the popover.
   `window.pikotika.scanChips(scope)` is exposed for pages that build markup
   after load (Vocab results, the Tools converter).
