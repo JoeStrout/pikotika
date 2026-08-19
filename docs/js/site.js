@@ -216,6 +216,33 @@
     return audio.wanted[kind];
   }
 
+  /* A word has a clip only if gen_audio made one -- person names deliberately
+     have none (build.py:wants_audio), and a button that cannot play anything
+     is worse than no button.  So the button is added once the index says there
+     is something to play, rather than added and then disabled.
+
+     The key is the form exactly as written: words.json is keyed by display
+     form, so a name is "Tom", not "tom". */
+  function addWordPlayer(parent, form) {
+    return loadIndex('words').then(function (index) {
+      if (!index || !index[form]) return null;
+      var speak = document.createElement('button');
+      speak.type = 'button';
+      speak.className = 'wordpop-speak';
+      speak.setAttribute('aria-label', 'Play ' + form);
+      speak.textContent = PLAY_GLYPH;
+      speak.addEventListener('click', function () {
+        play('words', form, speak);
+      });
+      /* Inserted at the front, not appended: the rest of the row is built
+         synchronously while this waits on the index, and the button belongs
+         before the level and the link, as it did when it was built inline. */
+      parent.insertBefore(speak, parent.firstChild);
+      return speak;
+    });
+  }
+
+
   function clipBuffer(kind, key) {
     var cached = audio.buffers[kind + ' ' + key];
     if (cached) return Promise.resolve(cached);
@@ -390,15 +417,7 @@
     var foot = document.createElement('div');
     foot.className = 'wordpop-foot';
 
-    var speak = document.createElement('button');
-    speak.type = 'button';
-    speak.className = 'wordpop-speak';
-    speak.setAttribute('aria-label', 'Play ' + entry.form);
-    speak.textContent = PLAY_GLYPH;
-    speak.addEventListener('click', function () {
-      play('words', entry.form.toLowerCase(), speak);
-    });
-    foot.appendChild(speak);
+    addWordPlayer(foot, entry.form);
 
     if (entry.level) {
       var level = document.createElement('span');
@@ -666,6 +685,11 @@
       for (var i = 0; i < list.length; i++) {
         var entry = list[i];
         if (!inKind(entry) || !inCategory(entry)) continue;
+        /* The thousands of given names poured in from CMUdict are findable by
+           search and by permalink, but they are not part of the dictionary a
+           reader scrolls -- listed, they would bury every other kind of word.
+           A curated name (Aras, Kanata) still browses. */
+        if (entry.bulk) continue;
         var isRoot = entry.kind === 'root' || entry.kind === 'particle';
         /* A root heads one category, so the browse list files it under that
            one.  A compound may sit in several and is not filed under each --
@@ -706,15 +730,7 @@
          opens with instead is what the row could not fit. */
       var head = document.createElement('div');
       head.className = 'vocab-dhead';
-      var speak = document.createElement('button');
-      speak.type = 'button';
-      speak.className = 'wordpop-speak';
-      speak.setAttribute('aria-label', 'Play ' + entry.form);
-      speak.textContent = PLAY_GLYPH;
-      speak.addEventListener('click', function () {
-        play('words', entry.form.toLowerCase(), speak);
-      });
-      head.appendChild(speak);
+      addWordPlayer(head, entry.form);
 
       var meta = [];
       if (entry.strokes) meta.push(entry.strokes + ' strokes');
@@ -1075,9 +1091,88 @@
     });
   }
 
+
+  /* --- name adapter (/topics/names/) --------------------------------------
+     The rules live in adapt.js, which is also what build.py:check_adapter runs
+     under node against names.tsv.  This is only the wiring.
+
+     A recorded adaptation beats the rules: names.tsv is what speakers have
+     agreed on, and several of its entries follow the *sound* of a name, which
+     spelling alone cannot reach.  The record is already in lexicon.json, keyed
+     by the English it came from. */
+
+  function initAdapter() {
+    var box = document.getElementById('adapter');
+    if (!box || !window.pikotikaAdapt) return;
+
+    var input = document.getElementById('adapter-in');
+    var out = document.getElementById('adapter-out');
+    var stepsEl = document.getElementById('adapter-steps');
+    var note = document.getElementById('adapter-note');
+    var recorded = null;
+
+    /* The lexicon is only needed to check for a standing adaptation, so the
+       rules answer immediately and the record corrects it a moment later if
+       there is one.  Fetched on the first keystroke, not on page load: a
+       reader who scrolls past the box should not pay for it. */
+    var asked = false;
+
+    function wantRecords() {
+      if (asked) return;
+      asked = true;
+      loadLexicon().then(function (payload) {
+        if (!payload || !payload.words) return;
+        recorded = {};
+        Object.keys(payload.words).forEach(function (key) {
+          var entry = payload.words[key];
+          if (entry.kind !== 'name' && entry.kind !== 'loan') return;
+          String(entry.en || '').split(';').forEach(function (en) {
+            en = en.trim().toLowerCase();
+            if (en) recorded[en] = entry;
+          });
+        });
+        run();
+      });
+    }
+
+    function run() {
+      var text = input.value.trim();
+      if (text) wantRecords();
+      out.textContent = '';
+      stepsEl.textContent = '';
+      note.textContent = '';
+      if (!text) return;
+
+      var entry = recorded && recorded[text.toLowerCase()];
+      var result = window.pikotikaAdapt.adaptName(text);
+      var form = entry ? entry.form : result.form;
+      if (!form) return;
+
+      var chip = document.createElement('span');
+      chip.className = 'pk';
+      chip.textContent = form;
+      out.appendChild(chip);
+      if (entry) scanChips(out);
+
+      if (entry) {
+        note.textContent = 'A standing adaptation — this one is already ' +
+          'recorded, so it beats what the rules alone would give' +
+          (result.form && result.form !== form ? ' (' + result.form + ').' : '.');
+      } else if (result.steps.length) {
+        stepsEl.textContent = result.steps.join(' · ');
+      } else {
+        stepsEl.textContent = 'Already legal Pikotika — nothing had to change.';
+      }
+    }
+
+    input.addEventListener('input', run);
+    run();
+  }
+
   scanChips();
   addSentencePlayers();
   initVocab();
+  initAdapter();
 
   /* Pages that build their own markup -- Vocab results, the Tools converter --
      add .pk elements after this ran, so they need a way to chip them. */

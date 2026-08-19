@@ -159,7 +159,17 @@ def entry_for(gloss, t, kind, usage=None):
 
 
 def name_entries(t):
-    for form, english in sorted(t.name_forms.items()):
+    # Curated rows first: a poured name can spell the same word as a hand-made
+    # one (Mitar the name against mitar the loan, Tom against Dom/Thom/Tome),
+    # and since `words` is keyed by the case-folded form, whichever comes first
+    # is the entry the site shows.  The curated row is the one that was
+    # deliberate.
+    ordered = sorted(t.name_forms, key=lambda f: (bool(t.name_origin.get(f)), f))
+    for form in ordered:
+        canonical = t.name_forms[form]
+        # Show every English name the form answers to, not just the one that
+        # parsing round-trips through.
+        english = t.name_english.get(form, canonical)
         # names.tsv marks the sanctioned loan register with kind=loan; both ride
         # in the same table and both stay in Latin inside Han text
         entry = {
@@ -172,6 +182,11 @@ def name_entries(t):
         }
         if t.name_cats.get(form):
             entry["cats"] = list(t.name_cats[form])
+        # Poured rows are searchable but not browsable: there are thousands of
+        # them, and a browse list they appeared in would stop being a
+        # dictionary you can read down.
+        if t.name_origin.get(form):
+            entry["bulk"] = 1
         yield form, entry
 
 

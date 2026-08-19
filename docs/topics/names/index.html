@@ -1,0 +1,262 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Names and loanwords — Pikotika</title>
+<meta name="description" content="Your own name in Pikotika, and the words it borrows outright.">
+
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<meta name="theme-color" content="#FFFC00" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16150F" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pikotika">
+
+<meta property="og:site_name" content="Pikotika">
+<meta property="og:title" content="Names and loanwords — Pikotika">
+<meta property="og:description" content="Your own name in Pikotika, and the words it borrows outright.">
+<meta property="og:image" content="https://pikotika.org/images/og-image.png">
+<meta property="og:url" content="https://pikotika.org/topics/names/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="/css/site.css?v=148763fdc7">
+<script>
+/* Set the theme before first paint, so there is no flash of the wrong one. */
+(function () {
+  try {
+    var t = localStorage.getItem('pk-theme');
+    if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+  } catch (e) {}
+})();
+</script>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="/" aria-label="Pikotika home">
+      <picture>
+        <source srcset="/images/Title_Dark.png" media="(prefers-color-scheme: dark)" id="wordmark-dark">
+        <img src="/images/Title_Light.png" alt="Pikotika" width="822" height="225">
+      </picture>
+    </a>
+
+    <button class="theme-toggle" id="theme-toggle" type="button"
+            aria-label="Switch between light and dark theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g class="rays"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></g></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </div>
+
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="/">Overview</a></li>
+      <li><a href="/vocab/">Vocab</a></li>
+      <li><a href="/grammar/">Grammar</a></li>
+      <li><a href="/topics/" aria-current="page">Topics</a></li>
+      <li><a href="/tools/">Tools</a></li>
+      <li><a href="/learn/">Learn</a></li>
+      <li><a href="/why/">Why</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="">
+<p class="topic-back"><a href="/topics/">← Back to Topics</a></p>
+
+<h1>Names and loanwords</h1>
+
+<p class="lede">Pikotika writes names in its own fifteen letters, so every name
+gets said the same way by everyone who reads it. Yours is probably already
+close — and where it isn't, the changes are small and regular.</p>
+
+<h2>Your name in Pikotika</h2>
+
+<div class="adapter" id="adapter">
+  <label class="adapter-label" for="adapter-in">Type a name or a word</label>
+  <input id="adapter-in" type="text" autocomplete="off" autocapitalize="words"
+         spellcheck="false" placeholder="Alice">
+  <p class="adapter-out" id="adapter-out" aria-live="polite"></p>
+  <p class="adapter-steps" id="adapter-steps"></p>
+  <p class="adapter-note" id="adapter-note"></p>
+</div>
+
+<p class="adapter-fallback">We have a database of common first names, but for anything not in that set, this tool works by <em>spelling</em>.  A real adaptation follows the <em>sound</em> — so if you know how your name or word is pronounced and the two disagree, your ears win.</p>
+
+<h2>Doing it in your head</h2>
+
+<p>Two passes. First swap out the sounds Pikotika doesn't have; then fix any
+syllable that still isn't legal.</p>
+
+<h3>First, the sounds</h3>
+
+<p>Ten consonants means the missing ones move to their nearest neighbor — and
+that neighbor is always already inside the letter's range, so the result still
+sounds like your name.</p>
+
+<table class="rules">
+  <tr><th>Change</th><th>Example</th></tr>
+  <tr><td><code>b</code> → <code>p</code>, <code>d</code> → <code>t</code>,
+      <code>g</code> → <code>k</code></td>
+      <td>Bob → <span class="pk">Popu</span></td></tr>
+  <tr><td><code>l</code> → <code>r</code></td>
+      <td>Elena → <span class="pk">Erana</span></td></tr>
+  <tr><td><code>f</code> → <code>v</code>, <code>z</code> → <code>s</code></td>
+      <td>Sofia → <span class="pk">Sovia</span></td></tr>
+  <tr><td><code>j</code> → <code>y</code></td>
+      <td>Jan → <span class="pk">Yan</span></td></tr>
+  <tr><td><code>c</code> → <code>k</code>, or <code>s</code> before
+      <code>e</code> or <code>i</code></td>
+      <td>penicillin → <span class="pk">penasiran</span></td></tr>
+  <tr><td><code>h</code>, and any silent letter, simply drops</td>
+      <td>Hal → <span class="pk">Ar</span></td></tr>
+  <tr><td><code>sh</code>, <code>ch</code>, <code>th</code> → <code>s</code> or
+      <code>t</code>, whichever is closer</td>
+      <td>Alice → <span class="pk">Aras</span></td></tr>
+</table>
+
+<h3>Then, the syllables</h3>
+
+<p>A syllable starts with at most one consonant and ends with at most
+<code>n</code> <code>m</code> <code>s</code> <code>r</code> — so anything else
+needs a vowel to break it up. Use <code>u</code>, except after <code>t</code>,
+where <code>o</code> sounds more natural.</p>
+
+<table class="rules">
+  <tr><th>Situation</th><th>Example</th></tr>
+  <tr><td>a cluster at the start gets the first consonant its own vowel</td>
+      <td>Strout → <span class="pk">Sutorauto</span></td></tr>
+  <tr><td>a word ending in <code>p</code> <code>t</code> <code>k</code> takes a
+      vowel after it</td>
+      <td>Marek → <span class="pk">Mareku</span></td></tr>
+  <tr><td>a coda that isn't licensed is broken open</td>
+      <td>Nils → <span class="pk">Nirus</span></td></tr>
+</table>
+
+<p>Pikotika has no diphthongs, so a vowel pair is simply two syllables:
+<span class="pk">Sutorauto</span> is <b>Su-to-RA-u-to</b>.</p>
+
+<h2>Some that are already settled</h2>
+
+<p>Names that come up often are worth agreeing on, and those are recorded — the
+converter above reaches for the record before it reaches for the rules.</p>
+
+<table class="rules">
+  <tr><th>From</th><th>Pikotika</th><th>What changed</th></tr>
+  <tr><td>Joe</td><td><span class="pk">Yo</span></td>
+      <td><code>j</code> → <code>y</code> (which can make a "zh" sound, like Jacques in French)</td></tr>
+  <tr><td>Mary</td><td><span class="pk">Meri</span></td>
+      <td>Pikotise "e" makes the "ay" sound</td></tr>
+  <tr><td>Alice</td><td><span class="pk">Aras</span></td>
+      <td><code>l</code> → <code>r</code>, and a schwa the spelling hides</td></tr>
+  <tr><td>Bob</td><td><span class="pk">Popu</span></td>
+      <td>no <code>b</code>, and no bare final stop</td></tr>
+  <tr><td>Canada</td><td><span class="pk">Kanata</span></td>
+      <td><code>c</code> → <code>k</code>, <code>d</code> → <code>t</code></td></tr>
+  <tr><td>Lisbon</td><td><span class="pk">Rispan</span></td>
+      <td><code>l</code> → <code>r</code>, <code>b</code> → <code>p</code></td></tr>
+</table>
+
+<h2>Saying whose name it is</h2>
+
+<p>A name usually stands on its own. When it would help to say what kind of
+thing it names — the first time it comes up, or when it sounds like an ordinary
+word — put the category word in front of it, as a separate word.</p>
+
+<div class="example">
+  <p class="en">How do you know Carla?</p>
+  <span class="pk">Tu ri sape a Karra in kermoto?</span>
+</div>
+
+<div class="example">
+  <p class="en">Yes, under Lena.</p>
+  <span class="pk">Si, in nomen Rena.</span>
+</div>
+
+<p>It earns its keep when the name spells an ordinary word. Hal is
+<span class="pk">Ar</span>, and <span class="pk">ar</span> is also the word for
+'other' — which capitalization sorts out mid-sentence, but not at the start of
+one, where every word is capitalized anyway; and not in speech.  So to be clear, you might add <span class="pk">omo</span> to make it clear this is a person's name; think of it as "the person Hal":</p>
+
+<div class="example">
+  <p class="en">Someone else is coming.</p>
+  <span class="pk">Ar ri veni.</span>
+</div>
+
+<div class="example">
+  <p class="en">Hal is coming.</p>
+  <span class="pk">Omo Ar ri veni.</span>
+</div>
+
+<p>Places take the same treatment, and a city is worth naming as one the first
+time it comes up:</p>
+
+<div class="example">
+  <p class="en">I'm going to Lisbon.</p>
+  <span class="pk">Eko ri ire ver sitas Rispan.</span>
+</div>
+
+<p>The useful category words are <span class="pk">omo</span> (person),
+<span class="pk">roko</span> (place), <span class="pk">sitas</span> (city),
+<span class="pk">nasyon</span> (country), <span class="pk">komparroko</span>
+(shop), and <span class="pk">komparmen</span> (company).</p>
+
+<p>It's fine to omit these words whenever the meaning is clear; leaving it off is never curt or rude.</p>
+
+<h2>Loanwords</h2>
+
+<p>Words borrowed outright are written the same way, and used sparingly — only
+where the word is likely to be known everywhere. In practice that means
+technical terms, product names, and metric units. They are ordinary lowercase
+words, unlike person and place names, which are capitalized.</p>
+
+<table class="rules">
+  <tr><th>From</th><th>Pikotika</th><th>Why</th></tr>
+  <tr><td>penicillin</td><td><span class="pk">penasiran</span></td>
+      <td>the rules, applied</td></tr>
+  <tr><td>meter</td><td><span class="pk">mitar</span></td>
+      <td>the sound, not the spelling: /ˈmitər/</td></tr>
+  <tr><td>liter</td><td><span class="pk">ritar</span></td>
+      <td><code>l</code> → <code>r</code></td></tr>
+  <tr><td>gram</td><td><span class="pk">kuram</span></td>
+      <td><code>g</code> → <code>k</code>, and <code>gr-</code> broken open</td></tr>
+</table>
+
+<h2>In use</h2>
+
+<div class="example">
+  <p class="en">I'm Alice.</p>
+  <span class="pk">Eko ri Aras.</span>
+</div>
+
+<div class="example">
+  <p class="en">Hi Alice.</p>
+  <span class="pk">Kontensarve, Aras.</span>
+</div>
+
+<div class="example">
+  <p class="en">Tom can't remember where he put his wallet.</p>
+  <span class="pk">Tom ri non kan sapetene a tisomo ri seta a monivaso in kerroko.</span>
+</div>
+
+<p class="topic-back is-end"><a href="/topics/">← Back to Topics</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-tagline">A tiny language for real conversation.</p>
+    <ul class="footer-links">
+      <li><a href="https://reddit.com/r/pikotika">Subreddit</a></li>
+      <li><a href="https://discord.gg/">Discord</a></li>
+      <li><a href="https://github.com/JoeStrout/pikotika">Source</a></li>
+    </ul>
+    <p class="footer-legal">
+      Pikotika is free to use, teach, and build on, under
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC&nbsp;BY&nbsp;4.0</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="/js/adapt.js?v=752f723690"></script>
+<script src="/js/site.js?v=85d8aed3f0"
+        data-data-version="a64854a989"></script>

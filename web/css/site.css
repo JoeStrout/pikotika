@@ -863,3 +863,79 @@ p { margin: 0 0 1.1em; }
 .swatch .en { font-size: .9rem; }
 .swatch .gloss { font-size: .85rem; }
 
+
+/* --- name adapter (/topics/names/) --------------------------------------- */
+
+.adapter {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem 1.1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--bg-tint);
+}
+
+.adapter-label {
+  display: block;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-bottom: .3rem;
+}
+
+.adapter input {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: .5rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+.adapter input:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 1px;
+}
+
+/* Reserve the line so the box does not jump the moment you start typing. */
+.adapter-out {
+  min-height: 2.4rem;
+  margin: .7rem 0 0;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.adapter-steps,
+.adapter-note {
+  margin: .35rem 0 0;
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+.adapter-note { color: var(--accent-deep); }
+
+.adapter-fallback { font-size: .9rem; color: var(--text-muted); }
+
+/* --- rule tables --------------------------------------------------------- */
+
+.rules {
+  border-collapse: collapse;
+  width: 100%;
+  margin: .75rem 0 1.5rem;
+  font-size: .95rem;
+}
+.rules th {
+  text-align: left;
+  font-size: .75rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 0 .6rem .35rem 0;
+  border-bottom: 1px solid var(--border-strong);
+}
+.rules td {
+  padding: .45rem .6rem .45rem 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.rules td:last-child, .rules th:last-child { padding-right: 0; }
+.rules code { font-size: .95em; }

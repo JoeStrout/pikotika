@@ -195,9 +195,16 @@ class Tables:
         self.names = {}           # english name -> form
         self.form2name = {}       # form, case-folded -> english name
         self.name_forms = {}      # form, exactly as written -> english name
+        # ...and the full semicolon list for the same form, for display.  The
+        # two differ once a form answers to several names: parsing needs one
+        # canonical name that round-trips back to this form, while a dictionary
+        # entry wants to show all of them.
+        self.name_english = {}    # form, exactly as written -> "Aaron; Ellen; ..."
+
         self.name_kind = {}       # form -> "name" or "loan" (names.tsv `kind`)
         self.compound_cats = {}   # compound gloss -> [category, ...]
         self.name_cats = {}       # name/loan form -> [category, ...]
+        self.name_origin = {}     # form -> "" (curated) or "cmudict" (poured)
         self.category_order = []  # roots.tsv `category` values, in table order
         self.compound_roots = {}  # gloss -> [root gloss, ...]
         self.corpus = []          # corpus.tsv rows, in file order
@@ -271,16 +278,40 @@ class Tables:
         if os.path.exists(names_path):
             with open(names_path, encoding="utf-8") as fh:
                 for r in csv.DictReader(fh, **TSV):
-                    self.names[r["EN"].strip().lower()] = r["form"]
+                    # One form can answer to several English names -- Pikotika
+                    # draws fewer distinctions, so Aaron, Aron, Ellen and Helen
+                    # are all Eran -- and they share the EN cell, semicolon
+                    # separated, exactly as in compounds.tsv.
+                    for english in r["EN"].split(";"):
+                        english = english.strip().lower()
+                        if english:
+                            self.names[english] = r["form"]
+                    # Two rows can share a form -- a poured row for Dom, Thom
+                    # and Tome spells the same Tom a curated row already does.
+                    # The english -> form direction above takes them all; every
+                    # form-keyed map below keeps the FIRST row, which is the
+                    # curated one, since gen_names.py writes those first.
+                    if r["form"] in self.name_forms:
+                        continue
                     # keyed lowercase: a proper name's form is capitalized in
-                    # names.tsv (Erena) but most lookup sites fold case first
-                    self.form2name[r["form"].lower()] = r["EN"]
-                    self.name_forms[r["form"]] = r["EN"]
+                    # names.tsv (Erana) but most lookup sites fold case first.
+                    # Only the first English name goes here: this is the
+                    # direction gloss notation is rendered from, and it has to
+                    # come back through self.names to the same form, so it must
+                    # be one name rather than the whole semicolon list.
+                    self.form2name[r["form"].lower()] = r["EN"].split(";")[0].strip()
+                    self.name_forms[r["form"]] = r["EN"].split(";")[0].strip()
+                    self.name_english[r["form"]] = r["EN"].strip()
                     # proper nouns and the sanctioned loan register share the
                     # table; Vocab filters them apart, so keep which is which
                     self.name_kind[r["form"]] = (r.get("kind") or "name").strip()
                     self.name_cats[r["form"]] = split_categories(
                         r.get("categories"))
+                    # `origin` says where the row came from: blank for a
+                    # curated adaptation, "cmudict" for one poured in by
+                    # gen_names.py.  The site browses the first and only
+                    # searches the second.
+                    self.name_origin[r["form"]] = (r.get("origin") or "").strip()
 
     # -- root-level accessors -------------------------------------------------
 

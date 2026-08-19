@@ -8,7 +8,7 @@ purpose: the goal was to find out what the language cannot yet say, not to compo
 sentences it already handles well.  Notes on what turned out to be hard are collected
 at the end, under [Notes on gaps and awkwardness](#notes-on-gaps-and-awkwardness).
 
-Names used here: **Aris** (Alice), **Popu** (Bob), **Karra** (Carla), **Tan** (Dan),
+Names used here: **Aras** (Alice), **Popu** (Bob), **Karra** (Carla), **Tan** (Dan),
 **Ivu** (Eve), **Vumi** (Fumi), **Kita** (Gita), **Ar** (Hal), **Ivan** (Ivan),
 **Yo** (Jo), **Kim** (Kim), **Rena** (Lena), **Sorpe** (Mira), **Nirus** (Nils),
 **Omar** (Omar), **Pia** (Pia).
@@ -18,10 +18,10 @@ Names used here: **Aris** (Alice), **Popu** (Bob), **Karra** (Carla), **Tan** (D
 ## 1. Meeting a stranger at a party
 
 Alice: Hello! I don't think we've met. I'm Alice.
-> **Novasarve! Eko ri non pensa a ekomen ri sarve vin. Eko ri Aris.**
+> **Novasarve! Eko ri non pensa a ekomen ri sarve vin. Eko ri Aras.**
 
 Bob: Hi Alice. I'm Bob. Nice to meet you.
-> **Kontensarve, Aris. Eko ri Popu. Eko ri konten sarve a tu.**
+> **Kontensarve, Aras. Eko ri Popu. Eko ri konten sarve a tu.**
 
 Alice: How do you know Carla?
 > **Tu ri sape a Karra in kermoto?**
@@ -166,7 +166,7 @@ Server: Very good. It will be about fifteen minutes.
 ## 5. Asking directions to a train station
 
 Ivan: Excuse me, do you speak English?
-> **Perton. Tu ri tika a Inkiris, ker?**
+> **Perton. Tu ri tika a Inkuris, ker?**
 
 Local: A little. Slowly, please.
 > **Piko. Pam nonveros tika.**

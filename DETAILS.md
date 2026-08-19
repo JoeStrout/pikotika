@@ -291,13 +291,20 @@ summers ago'.
 
 Proper nouns (names) as well as loan words like "penicillin" are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotika phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.
 
+**Adaptation follows the sound of a name, not its spelling.**  English spelling
+hides the vowel more often than not: *meter* is said /ˈmitər/, so it is **mitar** and
+not "meter", which our vowels would read as *may-tair*.  *liter* is **ritar** for the
+same reason, and the two rhyme in Pikotika exactly as they do in English.  Where a
+name is already recorded in `names.tsv`, that row carries the pronunciation it was
+derived from.
+
 **First, the sounds.**  Our alphabet has only ten consonants, so the missing ones move to their nearest neighbor -- which is always a sound already inside that letter's tolerance range, so the result still sounds right:
 
 - `b` → `p`, `d` → `t`, `g` → `k` (Canada → **Kanata**)
-- `l` → `r` (Elena → **Erena**, Pavel → **Paver**)
+- `l` → `r` (Elena → **Erana**, Pavel → **Pavar**)
 - `f` → `v`, `z` → `s` (Sofia → **Sovia**)
 - `j` → `y` (Jan → **Yan**)
-- `c` → `k`, or `s` before `e` or `i` (penicillin → **Penisirin**)
+- `c` → `k`, or `s` before `e` or `i` (penicillin → **penasiran**)
 - `h`, and any silent letter, simply drops (Johnson → **Yonson**)
 - `sh`, `ch`, `th` → `s` or `t`, whichever is closer
 
@@ -305,7 +312,7 @@ Proper nouns (names) as well as loan words like "penicillin" are always written 
 
 - a cluster at the start of a word or syllable is broken open by giving the first consonant its own vowel, while the second keeps whatever vowel already followed it: `st-` becomes **suta-**, **sute-**, **suto-** and so on, depending on the name (Strout → **Sutorauto**, Smith → **Sumis**, Brenda → **Purenta**)
 - a word ending in `p`, `t`, or `k` takes a vowel after it, since bare final stops aren't allowed (Marek → **Mareku**)
-- a name with no vowel to carry a syllable gets one (Petr → **Peter**)
+- a name with no vowel to carry a syllable gets one, inserted the same way
 
 Note also that Pikotika has no diphthongs, so a vowel pair like `ou` or `au` simply becomes two syllables.
 
@@ -314,7 +321,7 @@ Some examples will help illustrate.
 | English | Pikotika | What changed |
 |---|---|---|
 | Joe | **Yo** | `j` → `y` |
-| Mary | **Mari** | already legal, just respelled |
+| Mary | **Meri** | the vowel of *dress*, which the spelling hides |
 | Mark | **Marku** | vowel added after the final `k` |
 | Brenda | **Purenta** | `b` → `p`, `d` → `t`, `br` broken open |
 | Smith | **Sumis** | `sm` broken open, `th` → `s` |
@@ -334,12 +341,12 @@ Loan words (words taken directly from another language, usually English) should 
 
 | English | Pikotika |
 |---|---|
-| penicillin | penicillin |
-| meter | metoru |
-| liter | ritoru |
-| gram | kuramu |
+| penicillin | penasiran |
+| meter | meter |
+| liter | riter |
+| gram | kuram |
 
-(Note that *meter* adds an extra "u" sound to the end, like in Japanese, to avoid sounding like **metar** (metal); *liter* and *gram* do the same for consistency.  The extra "u" is not necessary except to avoid confusion, as in this case.)
+(A loan takes no extra vowel on the end beyond what the syllable rules require.  **meter** and **metar** ('metal') differ by a single vowel and are allowed to; Pikotika has other such pairs, and adding a syllable to every loan that came near an existing word would cost more than it saved.)
 
 ## Inventing Compounds
 
@@ -401,7 +408,7 @@ A prepositional phrase goes at the **end** of a sentence or clause, after the ob
 
 Note that **kum** is 'and' when it joins two like things and 'with' when it opens a phrase of its own, exactly as in English: *bread and water* against *come with me*.
 
-**kum** is only ever accompaniment, never means.  For means, manner, or route, use **in ... moto** (内 ... 方, 'in ... way'): **in akukaro moto** 'by ship', **in Rispon moto** 'via Lisbon'.  Its question form is **in kermoto**, 'how'.
+**kum** is only ever accompaniment, never means.  For means, manner, or route, use **in ... moto** (内 ... 方, 'in ... way'): **in akukaro moto** 'by ship', **in Rispan moto** 'via Lisbon'.  Its question form is **in kermoto**, 'how'.
 
 
 ### Joining and Explaining

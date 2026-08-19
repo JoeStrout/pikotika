@@ -192,13 +192,13 @@ single additions may not fix:
 
 ### Metric sub-unit prefixes
 
-Metric units are handled by loan words (**metoru**, **ritoru**, **kuramu** in
+Metric units are handled by loan words (**meter**, **riter**, **kuram** in
 `names.tsv`), and the *kilo-* prefix needs nothing new: **kiru** 'thousand' already
-gives **tets kiru metoru** '3 km', whose literal reading "three thousand meters" is
+gives **tets kiru meter** '3 km', whose literal reading "three thousand meters" is
 arithmetically exact.  Mandarin builds 千米 the same way.
 
 What is not covered is the other direction.  Decimals reach it in writing -- 3 mm is
-**0.003 metoru** -- but nobody says that out loud, and small measurements are common
+**0.003 meter** -- but nobody says that out loud, and small measurements are common
 in shops and repairs.  Mandarin's answer is native fraction words (厘 'hundredth',
 毫 'thousandth') rather than borrowed *centi-* and *milli-*, which suggests that if
 this gap bites, the fix is one Pikotika fraction root usable everywhere, not two

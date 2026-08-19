@@ -287,10 +287,11 @@ def build_files(name: str, items, force: bool) -> dict:
 
 
 def word_items(tables, limit=None):
-    lexicon, _ = gen_lexicon.build(tables)
-    # lexicon["words"] is keyed by the lowercased form; entry["form"] is how the
-    # word is written, which is what a chip asks for -- "Tom", not "tom".
-    forms = sorted({entry["form"] for entry in lexicon["words"].values()})
+    """The site's words, from build.audio_words() -- the lexicon plus anything
+    written only in page prose, which is the same list check_audio verifies."""
+    import build
+
+    forms = build.audio_words()
     voices = assign_voices(forms)
     if limit:
         forms = forms[:limit]

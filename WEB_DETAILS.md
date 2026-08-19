@@ -341,6 +341,85 @@ swatch list is `.swatches`; each `<li>` carries the color as `--sw`, and the
 band has a border so a near-background swatch is still an object in both
 themes.
 
+## The name adapter (`web/js/adapt.js`)
+
+**The first implementation of name adaptation anywhere in the repo** (written
+2026-08-19). `pikotika.py` does not adapt names; it looks them up in
+`names.tsv`. The rules were only prose in `DETAILS.md` §"Proper Nouns and Loan
+Words" until the `/topics/names/` converter needed to run them.
+
+- **Two paths in.** `adaptPhones()` takes ARPAbet and is the real one --
+  adaptation follows sound, and `names.tsv` now records the pronunciation each
+  form came from. `adaptName()` takes spelling, because spelling is all a
+  visitor can type; it is the fallback for a name nobody has recorded, and the
+  page labels it as such. The gap between them is exactly English orthography:
+  *meter* by letters is "meter", which Pikotika reads *may-tair*; by sound it
+  is **mitar**.
+- **A recorded adaptation beats the rules.** `names.tsv` is what speakers have
+  agreed on, and it is already in `lexicon.json` keyed by the English it came
+  from, so the converter looks there first and says when it did — showing the
+  rules-only form in parentheses, which is more interesting than hiding it.
+- **`build.py:check_adapter` re-derives every row of `names.tsv` from its own
+  `phones` column**, under node. The adapter is the one piece of the language living only in
+  JavaScript, so it has no Python twin to check against; `names.tsv` is better
+  ground truth anyway, being authored rather than derived. 30 of 38 rows fall
+  out of the rules. The other 8 are listed in `ADAPTER_EXCEPTIONS` with a
+  reason each, so a change that breaks a name the adapter used to get right
+  still fails the build -- and one that *fixes* an exception fails too, asking
+  for it to be removed from the list.
+- The check skips with a note when node is missing, so a contributor without it
+  can still build.
+- **`AA` is the one phone Pikotika hears two ways**, and the spelling breaks
+  the tie. It is the vowel of *father*, which is `a`'s target, and also the
+  vowel of *lot* -- and `o` is defined as *go* "or the o in long", the same
+  sound for most English speakers. Both readings are correct, so *Tom* and
+  *Bob* keep their `o` while *Marta* and *Carla* keep their `a`. Letters are
+  matched to phones by position, counting vowels in each, so *Tomas* (OW-AA
+  against o-a) gets it right; where the counts disagree, the tie-break is
+  skipped.
+- **A syllabification bug found by *English***: the coda is the consonant
+  sitting against the *preceding* vowel, and `fixMedial` was keeping the last
+  legal one instead of the first. *inkris* came out **inukuris** rather than
+  **inkuris** -- `n` is a legal coda and `k` is not, so `k` is what needs a
+  vowel.
+- **The exceptions are all sound, not spelling** (*English*, *Joe*,
+  *Strout*, *Eve*). It was eight until 2026-08-19, when the other four went
+  away rather than being tolerated: the loans lost the extra `-u` they had
+  been carrying (**metoru** → **meter**, **ritoru** → **riter**, **kuramu** →
+  **kuram**), and *Petr*, whose adaptation disagreed with `DETAILS.md`'s own
+  helper-vowel rule, was replaced by *Peter*, which needs no adaptation at
+  all. An exception list is worth having precisely because it makes that kind
+  of residue visible enough to argue with.
+- **`gen_names.py` pours common given names into `names.tsv`**, adapted from
+  their CMUdict pronunciation by the same `adapt.js` the site runs. CMUdict is
+  the pronunciations and nothing else -- it does not say which of its 135,166
+  entries are names, and *sandwich* and *smith* look alike to it -- so the name
+  list is NLTK's names corpus, intersected with it: 4,873 names, which collapse
+  to **3,342 forms** because Pikotika draws fewer distinctions than English.
+  Sources are cached in gitignored `private/names-src/`; the script is run by
+  hand, not by the build, and `check_adapter` re-derives every poured row from
+  its own phones exactly as it does a curated one.
+- **Poured names are searchable but not browsable.** Each carries `bulk: 1` in
+  `lexicon.json`, and the Vocab browse list skips them: listed, three thousand
+  names would bury every other kind of word in a page whose empty state is
+  meant to be read down. Search and permalinks reach them normally, so
+  `/vocab/#Eran` opens *Aaron; Aron; Ellen; Helen*. The browse list still shows
+  617 entries, as it did before the pour.
+- **A curated row outranks a poured one wherever they collide**, in two places
+  that both had to learn it: `pikotika.Tables` keeps the first row for each
+  form (curated rows are written first), and `gen_lexicon.name_entries` yields
+  curated names before poured ones. Without either, the poured *Mitar*
+  (Michal, Mitchell) displaced the loan **mitar** 'meter' and took its audio
+  with it, and *Tom* became Dom/Thom/Tome. The extra English names still
+  resolve: typing *Dom* finds **Tom**.
+- `adapt.js` is a second script tag (`adapt_version`), not part of `site.js`,
+  so node can `require` it. It is dependency-free and defines
+  `window.pikotikaAdapt` in the browser. The Tools converter will want the same
+  module.
+- One trap, already sprung: `''.indexOf(anything)` is `0`, so a naive
+  `VOWELS.indexOf(c) >= 0` reports **true** at the end of a word. That made
+  *Mary* come out as **Maruyu**. `isVowel` and `isCoda` test the length first.
+
 ## Audio
 
 Generated at build time by Kokoro running locally; the site does no
@@ -406,11 +485,35 @@ unable to build the site at all. It has to be loud because the failure is
 invisible -- a sentence with no clip still gets a play button, which disables
 itself when tapped.
 
-**Editing a sentence is the case that bites**, not adding one. Clips are keyed
-by exact text, so a corrected line leaves its old clip behind and arrives with
-none; the check found one already shipped that way. `gen_audio` does not delete
-the orphan, so a clip named in the warning as no longer used has to be removed
-by hand.
+**Editing an utterance is the case that bites**, not adding one. Clips are
+keyed by exact text, so a corrected line leaves its old clip behind and arrives
+with none; the check found one already shipped that way. `gen_audio` does not
+delete the orphan, so a clip named in the warning as no longer used has to be
+removed by hand.
+
+**Person names get no clip** (decided 2026-08-19). `names.tsv` is meant to
+grow to thousands of them, and each would cost ~7 KB of generated audio for a
+word whose pronunciation is entirely regular and spelled out in front of the
+reader. Place names and loans keep theirs, being vocabulary rather than
+labels; `build.py:wants_audio` discriminates on the `People and society`
+category, which is already there and already means this.
+
+**So the play button is added only when there is something to play.**
+`addWordPlayer()` waits for the clip index and inserts the button if the form
+is in it -- inserted at the front, since the rest of the row is built
+synchronously while it waits. Tapping **Aras** gets a popover with no button;
+**Rispan** and **mitar** get one.
+
+That work turned up a bug of its own: the popover asked for
+`entry.form.toLowerCase()`, but `words.json` is keyed by the display form, so
+**every name's audio had always been a silent no-op** -- invisible until now
+because every other form is already lowercase.
+
+**The check covers words as well as sentences**, and that half earned itself
+immediately: `gen_audio.word_items` was building its own lexicon *without* the
+forms that appear only in page prose, so **monivaso** -- written on the names
+page, in no table -- had no clip and nobody knew. `build.audio_words()` is now
+the definition for both, as `audio_sentences()` already was.
 
 **Sentence play buttons** are added by `addSentencePlayers()` to any `.example`
 line of two or more words, keyed on the line's exact text. The button is a
