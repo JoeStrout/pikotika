@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="564.93" height="505" viewBox="0, 0, 564.93, 505">
+  <defs>
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="848" y1="694" x2="848" y2="1199">
+      <stop offset="0" stop-color="#FFFBCE"/>
+      <stop offset="1" stop-color="#FFFC00"/>
+    </linearGradient>
+  </defs>
+  <g id="Icons" transform="translate(-565.535, -694)">
+    <path d="M848,1199 C691.999,1199 565.535,1085.952 565.535,946.5 C565.535,807.048 691.999,694 848,694 C1004.001,694 1130.465,807.048 1130.465,946.5 C1130.465,1085.952 1004.001,1199 848,1199 z" fill="url(#Gradient_1)"/>
+    <text transform="matrix(1, 0, 0, 1, 848, 946.5)">
+      <tspan x="-240" y="87.5" font-family="HiraMinProN-W6" font-size="240" fill="#212121">小言</tspan>
+    </text>
+  </g>
+</svg>

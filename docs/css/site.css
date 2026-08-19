@@ -1,0 +1,696 @@
+/* ---------------------------------------------------------------------------
+   Pikotika — site styles
+
+   Palette lives entirely in custom properties on :root.  Light is the base
+   definition; dark is redefined twice, once for the system preference and once
+   for an explicit [data-theme="dark"], so the toggle wins in both directions.
+   --------------------------------------------------------------------------- */
+
+/* --- the Han face --------------------------------------------------------
+   One file, not two.  Pikotika Han is a subset of Noto Sans CJK JP built by
+   gen_han_font.py: every character the language uses, including the ⊢ and ⇒
+   particles, so a line of Han never picks up a second typeface partway
+   through.  23 KB a weight.  See web/fonts/OFL.txt.
+
+   No unicode-range: the font covers exactly what .han needs and nothing else,
+   so anything outside it -- a name, which stays in Latin on purpose -- falls
+   through to the stack below by itself. */
+
+@font-face {
+  font-family: "Pikotika Han";
+  src: url("/fonts/pikotika-han-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pikotika Han";
+  src: url("/fonts/pikotika-han-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg:            #FFFDF3;
+  --bg-tint:       #FFFAE0;
+  --surface:       #FFFFFF;
+  --text:          #1B1A14;
+  --text-muted:    #6E6A55;
+  --border:        #E8E2C6;
+  --border-strong: #D6CEA6;
+  --accent:        #FFE800;
+  --accent-deep:   #B08900;
+  --accent-ink:    #1B1A14;
+  --link:          #8A6A00;
+  --link-hover:    #5E4800;
+  --shadow:        0 1px 2px rgba(27, 26, 20, .06), 0 4px 16px rgba(27, 26, 20, .05);
+
+  --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+                  ui-serif, serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --font-han: "Pikotika Han", "Hiragino Sans", "Noto Sans JP", "Yu Gothic",
+              sans-serif;
+
+  --measure: 38rem;
+  --wide: 64rem;
+  --pad: 1.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:            #15140E;
+    --bg-tint:       #1E1C13;
+    --surface:       #1E1C13;
+    --text:          #F3F0E1;
+    --text-muted:    #A29D84;
+    --border:        #34301F;
+    --border-strong: #4A4429;
+    --accent:        #FFE800;
+    --accent-deep:   #FFE800;
+    --accent-ink:    #15140E;
+    --link:          #F0CE3C;
+    --link-hover:    #FFE800;
+    --shadow:        0 1px 2px rgba(0, 0, 0, .4), 0 4px 16px rgba(0, 0, 0, .3);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg:            #15140E;
+  --bg-tint:       #1E1C13;
+  --surface:       #1E1C13;
+  --text:          #F3F0E1;
+  --text-muted:    #A29D84;
+  --border:        #34301F;
+  --border-strong: #4A4429;
+  --accent:        #FFE800;
+  --accent-deep:   #FFE800;
+  --accent-ink:    #15140E;
+  --link:          #F0CE3C;
+  --link-hover:    #FFE800;
+  --shadow:        0 1px 2px rgba(0, 0, 0, .4), 0 4px 16px rgba(0, 0, 0, .3);
+}
+
+/* --- reset-ish ----------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 9.5rem;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--link-hover); }
+
+:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: .6rem 1rem;
+  z-index: 100;
+}
+.skip:focus { left: 0; }
+
+/* --- header -------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* collapses on scroll (mobile only) */
+  height: 4.25rem;
+  overflow: hidden;
+  transition: height .18s ease, opacity .18s ease;
+}
+
+.wordmark { display: block; line-height: 0; }
+.wordmark img {
+  width: auto;
+  height: 2.1rem;
+}
+
+.theme-toggle {
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--text); border-color: var(--border-strong); }
+.theme-toggle svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; }
+.theme-toggle .icon-moon { display: none; }
+
+/* Show the moon whenever the page is currently dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: block; }
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+:root[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
+/* --- nav ----------------------------------------------------------------- */
+
+.site-nav {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 0 var(--pad) .4rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .25rem;
+}
+
+.site-nav a {
+  display: block;
+  text-align: center;
+  padding: .45rem .3rem;
+  border-radius: 7px;
+  font-size: .875rem;
+  font-weight: 550;
+  letter-spacing: .01em;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.site-nav a:hover { color: var(--text); background: var(--bg-tint); }
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  border-bottom-color: var(--accent-deep);
+  background: var(--bg-tint);
+}
+
+/* Mobile: the wordmark row collapses once you scroll, leaving just the nav. */
+@media (max-width: 47.99em) {
+  body.scrolled .header-inner {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  /* One row: wordmark | nav | toggle, on a rail that matches the content. */
+  .site-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0 max(var(--pad), calc((100vw - var(--wide)) / 2));
+  }
+  .header-inner {
+    display: contents;   /* wordmark and toggle become grid items */
+  }
+  .wordmark { grid-column: 1; }
+  .wordmark img { height: 2rem; }
+  .site-nav  { grid-column: 2; max-width: none; margin: 0; padding: 0; }
+  .theme-toggle { grid-column: 3; }
+
+  .site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: .15rem;
+  }
+  .site-nav a { padding: .45rem .7rem; font-size: .9375rem; }
+  .site-header { min-height: 3.75rem; }
+}
+
+/* --- main ---------------------------------------------------------------- */
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem var(--pad) 4rem;
+}
+
+main.wide { max-width: var(--wide); }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+h1 { font-size: clamp(1.9rem, 1.4rem + 2.2vw, 2.6rem); margin: 0 0 .4em; }
+h2 { font-size: 1.4rem; margin: 2.2em 0 .5em; }
+h3 { font-size: 1.1rem; margin: 1.8em 0 .4em; }
+
+p { margin: 0 0 1.1em; }
+
+.lede {
+  font-size: 1.1875rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin-bottom: 1.8em;
+}
+
+/* --- placeholder --------------------------------------------------------- */
+
+.placeholder {
+  border: 1px dashed var(--border-strong);
+  border-radius: 10px;
+  background: var(--bg-tint);
+  padding: 1.25rem 1.25rem .5rem;
+  margin: 2rem 0;
+}
+.placeholder h2 { margin-top: 0; font-size: 1rem; letter-spacing: .04em;
+                  text-transform: uppercase; color: var(--text-muted);
+                  font-family: var(--font-body); font-weight: 650; }
+.placeholder ul { margin: 0 0 1rem; padding-left: 1.1rem; }
+.placeholder li { margin-bottom: .35em; }
+
+/* --- language bits (first pass; the word chip comes later) --------------- */
+
+.pk {
+  font-weight: 550;
+  font-size: 1.03em;
+  letter-spacing: .005em;
+}
+
+.gloss { font-style: italic; color: var(--text-muted); }
+
+.han {
+  font-family: var(--font-han);
+  /* CJK metrics are tall; without this a Han line pushes its neighbors apart. */
+  line-height: 1.5;
+}
+
+.example {
+  border-left: 3px solid var(--accent);
+  padding: .1rem 0 .1rem 1rem;
+  margin: 1.5rem 0;
+}
+.example .en { color: var(--text-muted); margin: 0 0 .2em; }
+.example .pk { display: block; font-size: 1.15rem; margin: 0; }
+
+/* The play button sits on the same baseline as the sentence it speaks.  The
+   row is built by JavaScript, so nothing here applies until it runs. */
+.example-line { display: flex; align-items: baseline; gap: .5rem; }
+.example-line .pk { display: inline; }
+
+.example-speak {
+  flex: none;
+  font: inherit;
+  font-size: .8rem;
+  line-height: 1;
+  padding: .3rem .55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.example-speak:hover:not([disabled]) {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+.example-speak[disabled] { opacity: .4; cursor: default; }
+.example-speak.loading { opacity: .5; cursor: progress; }
+
+/* --- word chips ---------------------------------------------------------
+   A chip is a button that has to look like nothing but the word it contains,
+   so all of the button is reset away and a dotted underline is the only mark
+   -- the convention Duolingo has taught most readers to read as "tap this".
+
+   Every chip is underlined, including on an all-Pikotika line where that means
+   every word carries dots.  WEBSITE_DESIGN.md proposed setting it once at block
+   level there instead; the continuous rule read as one long link rather than as
+   a row of separate tappable words, which is the opposite of what it is for.
+
+   These are created by JavaScript at page load (see site.js), so nothing here
+   applies until it runs; a reader without JavaScript sees ordinary text. */
+
+/* A span with role="button" (see site.js) -- so it needs no button reset, and
+   it stays selectable, which a real <button> is not. */
+.pk .w {
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.pk .w:hover { text-decoration-color: var(--accent-deep); }
+.pk .w[aria-expanded="true"] { background: var(--accent); color: var(--accent-ink); }
+
+.wordpop {
+  position: absolute;
+  z-index: 40;
+  width: max-content;
+  max-width: min(22rem, calc(100vw - 2rem));
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: .7rem .85rem;
+  font-size: .95rem;
+}
+
+.wordpop-head { display: flex; align-items: baseline; gap: .5rem; }
+.wordpop-form { font-size: 1.1rem; }
+.wordpop-han { font-family: var(--font-han); color: var(--text-muted); }
+.wordpop-en { margin: .25rem 0 0; }
+.wordpop-parse { margin: .3rem 0 0; font-size: .9rem; }
+.wordpop-partgloss { font-size: .95em; }
+
+/* The roots of a compound are chips like any other, but inside a box that is
+   already an overlay -- the dotted underline is the only affordance there is
+   room for, so it is drawn a little stronger than in running text. */
+.wordpop-part {
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.wordpop-part:hover { text-decoration-color: var(--accent-deep); }
+
+/* A mnemonic is an aside, not the entry: quieter and smaller than the gloss
+   above it, so the eye still lands on the meaning first. */
+.wordpop-mnemonic {
+  margin: .3rem 0 0;
+  font-size: .82rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.wordpop-none { margin: 0; color: var(--text-muted); }
+
+.wordpop-foot {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-top: .6rem;
+  padding-top: .5rem;
+  border-top: 1px solid var(--border);
+  font-size: .85rem;
+}
+
+.wordpop-speak {
+  font: inherit;
+  line-height: 1;
+  padding: .25rem .5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-tint);
+  color: var(--text);
+  cursor: pointer;
+}
+.wordpop-speak[disabled] { opacity: .4; cursor: default; }
+.wordpop-speak:hover:not([disabled]) { background: var(--accent); }
+/* The first press fetches the whole sprite; say so rather than looking dead. */
+.wordpop-speak.loading { opacity: .5; cursor: progress; }
+.wordpop-level { color: var(--text-muted); }
+.wordpop-link { margin-left: auto; }
+
+/* --- Han specimen (/specimen/) ------------------------------------------- */
+
+.glyphs {
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+  gap: .5rem;
+}
+
+.glyph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .15rem;
+  padding: .6rem .3rem .5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.glyph .han { font-size: 2rem; line-height: 1.1; }
+.glyph-label { font-size: .8rem; color: var(--text-muted); }
+.glyph-sub { font-size: .75rem; color: var(--text-muted); opacity: .75; }
+
+.specimen-line { font-size: 1.5rem; margin: .75rem 0; }
+.specimen-weight {
+  font-family: var(--font-body);
+  font-size: .8rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: .75rem;
+}
+
+/* --- footer -------------------------------------------------------------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-tint);
+  margin-top: 4rem;
+  padding: 2.5rem var(--pad);
+  font-size: .9375rem;
+}
+
+.footer-inner { max-width: var(--wide); margin: 0 auto; }
+
+.footer-tagline {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0 0 .8em;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 0 0 1.2em;
+  padding: 0;
+}
+
+.footer-legal { color: var(--text-muted); margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* --- Vocab (/vocab/) -----------------------------------------------------
+   The whole section is one page: a search box, two chip rows, and a list that
+   is either the search results or the lexicon browsed by category.  Entries
+   expand in place, so nothing here is a second page layout. */
+
+.vocab-controls {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: .75rem 0 .6rem;
+  margin-bottom: .5rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.vocab-search { display: block; }
+.vocab-search .vs-label {
+  display: block;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-bottom: .25rem;
+}
+.vocab-search input {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: .5rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+.vocab-search input:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 1px;
+}
+
+.vocab-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .5rem;
+}
+.vocab-cats { font-size: .85em; }
+
+.vocab-chip {
+  font: inherit;
+  font-size: .85rem;
+  line-height: 1;
+  padding: .35rem .6rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.vocab-chip:hover { background: var(--bg-tint); }
+.vocab-chip[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent-deep);
+}
+
+.vocab-count { color: var(--text-muted); font-size: .85rem; margin: 0 0 .5rem; }
+
+.vocab-group { margin: 0 0 1.5rem; }
+.vocab-gh {
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 .3rem;
+}
+
+.vocab-list { list-style: none; margin: 0; padding: 0; }
+.vocab-row { border-bottom: 1px solid var(--border); }
+.vocab-row.is-open { background: var(--bg-tint); }
+
+/* One row is one control.  A grid rather than flex so the Han column lines up
+   down the whole list, including the many entries that have no character. */
+.vocab-head {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) minmax(2.5rem, auto) 1fr;
+  align-items: baseline;
+  gap: .6rem;
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  padding: .45rem .3rem;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+.vocab-head:hover { background: var(--bg-tint); }
+.vocab-han {
+  font-family: var(--font-han);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.vocab-en { color: var(--text-muted); }
+
+/* In the open row the English is the definition, not a list column -- give it
+   the weight to be read first, since everything below it is detail about a
+   meaning you have to have already. */
+.vocab-row.is-open .vocab-en {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.vocab-detail { padding: .3rem .3rem 1rem; }
+.vocab-dhead {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-bottom: .4rem;
+}
+.vocab-parse { margin: .35rem 0 0; }
+.vocab-dfield { margin: .35rem 0 0; font-size: .9rem; }
+.vocab-dlabel { color: var(--text-muted); }
+.vocab-dmeta { font-size: .8rem; color: var(--text-muted); }
+
+.vocab-section { margin-top: 1rem; }
+.vocab-dh {
+  font-size: .8rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 .35rem;
+}
+.vocab-rels { margin: 0; display: flex; flex-wrap: wrap; gap: .3rem .5rem; }
+
+/* A related word is a button that has to read as the word it names -- the same
+   bargain the sentence chips strike, so it wears the same dotted underline. */
+.vocab-rel {
+  font: inherit;
+  font-weight: 550;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-underline-offset: 3px;
+}
+.vocab-rel:hover { text-decoration-color: var(--accent-deep); }
+
+.vocab-section .example { margin: .5rem 0; }
+.vocab-dlink { margin: 1rem 0 0; font-size: .8rem; }
+.vocab-none { color: var(--text-muted); }
+
+@media (max-width: 32rem) {
+  .vocab-head { grid-template-columns: minmax(5.5rem, auto) auto 1fr; gap: .4rem; }
+}
+
+.vocab-more { margin: .6rem 0 0; }
+.vocab-morebtn {
+  font: inherit;
+  font-size: .85rem;
+  padding: .3rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.vocab-morebtn:hover { background: var(--bg-tint); }

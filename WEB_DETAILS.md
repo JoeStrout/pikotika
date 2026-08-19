@@ -17,7 +17,21 @@ rather than `/grammar.html`.
 | `web/templates/base.html` | the only template; `{{field}}` placeholders |
 | `web/{css,js,images,fonts,data}/` | copied to the output as-is |
 | `build.py` | the whole build; `PAGES` is the nav, titles, and routing |
-| `site/` | output — **gitignored, never edited, rebuilt from scratch** |
+| `docs/` | output — **never edited by hand, rebuilt from scratch, and committed** |
+
+**Deploying is `python3 build.py` and a push** (decided 2026-08-19). GitHub
+Pages publishes from a branch, and a branch source may be the repository root or
+`docs/` and nothing else — which is why the output directory is named `docs/`
+rather than `site/`, and why it is committed rather than ignored. `web/CNAME`
+holds the custom domain and `web/.nojekyll` turns off the Jekyll pass a
+branch-published site otherwise gets; `STATIC_FILES` copies both to the output
+root, since `STATIC_DIRS` only handles directories.
+
+The cost of this choice, taken knowingly: **nothing checks that you rebuilt.**
+The site is generated from `roots.tsv`, `compounds.tsv` and `corpus.tsv`, so a
+commit that edits a table without a rebuild silently publishes the old lexicon.
+A GitHub Actions workflow building on push would make that impossible, and is
+the alternative if the staleness ever bites.
 
 `python3 build.py --serve` builds and serves on :8000. CSS and JS are linked
 with a `?v=<content hash>` (`asset_version`), because the dev server sends no

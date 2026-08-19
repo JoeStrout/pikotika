@@ -5,8 +5,8 @@ Everything the site shows is either a hand-written fragment in web/pages/ or,
 later, generated from the .tsv tables.  There is no framework and no bundler:
 the output is plain files at real URLs, one directory per section.
 
-    python3 build.py            build into site/
-    python3 build.py --serve    build, then serve site/ on :8000
+    python3 build.py            build into docs/
+    python3 build.py --serve    build, then serve docs/ on :8000
 """
 
 import argparse
@@ -21,7 +21,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 WEB = ROOT / "web"
-OUT = ROOT / "site"
+# docs/ rather than site/ because GitHub Pages, publishing from a branch, will
+# serve the repository root or docs/ and nothing else.  The directory is
+# committed: deploying is `python3 build.py` and a push.
+OUT = ROOT / "docs"
 
 SITE_URL = "https://pikotika.org"
 
@@ -60,6 +63,11 @@ UNLISTED = [
 ]
 
 STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio"]
+
+# Loose files copied to the output root.  CNAME is what keeps the custom domain
+# attached across a redeploy; .nojekyll turns off the Jekyll pass that branch
+# published Pages otherwise runs, which would drop anything beginning with `_`.
+STATIC_FILES = ["CNAME", ".nojekyll"]
 
 
 def asset_version(*parts: str) -> str:
@@ -226,6 +234,11 @@ def build() -> None:
             shutil.copytree(src, OUT / name,
                             ignore=shutil.ignore_patterns(".DS_Store", "*.swp"))
 
+    for name in STATIC_FILES:
+        src = WEB / name
+        if src.is_file():
+            shutil.copy2(src, OUT / name)
+
     template = (WEB / "templates" / "base.html").read_text(encoding="utf-8")
     css_version = asset_version("css/site.css")
     js_version = asset_version("js/site.js")
@@ -270,7 +283,7 @@ def serve(port: int = 8000) -> None:
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--serve", action="store_true", help="serve site/ after building")
+    ap.add_argument("--serve", action="store_true", help="serve docs/ after building")
     ap.add_argument("--port", type=int, default=8000)
     args = ap.parse_args()
     build()

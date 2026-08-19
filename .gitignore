@@ -30,5 +30,5 @@ env/
 # private tools & notes
 private
 
-# built site
-site/
+# The built site lives in docs/ and IS committed -- GitHub Pages serves it from
+# there.  Rebuild before you commit; nothing checks that you did.
