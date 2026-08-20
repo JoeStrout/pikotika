@@ -1,15 +1,23 @@
 # Pikotika Compounds
 
-645 terms
+661 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
 | % | in-hundred | inkaton | 内百 |
+| 1000000th | million-sequence | mironorten | 兆序 |
+| 1000th | thousand-sequence | kiruorten | 千序 |
+| 100th | hundred-sequence | katonorten | 百序 |
+| 10th | ten-sequence | tekasorten | 十序 |
 | 1st | one-sequence | wunorten | 一序 |
 | 2nd | two-sequence | pitsorten | 2序 |
 | 3rd | three-sequence | tetsorten | 3序 |
 | 4th | four-sequence | watsorten | 4序 |
 | 5th | five-sequence | kinsorten | 5序 |
+| 6th | six-sequence | siksorten | 6序 |
+| 7th | seven-sequence | sensorten | 7序 |
+| 8th | eight-sequence | otsorten | 8序 |
+| 9th | nine-sequence | noksorten | 9序 |
 | abroad | out-country | eksenasyon | 外国 |
 | ache | sick-feel | marasenti | 病心 |
 | actually | in-true | inves | 内真 |
@@ -158,6 +166,7 @@
 | east | map-right | maparem | 図右 |
 | easy | not-hard | nonsorin | 不硬 |
 | egg | bird-child | avisnino | 鳥子 |
+| eighth (in a series) | eight-sequence | otsorten | 8序 |
 | election | all-choose | panerike | 全选 |
 | electric light | electric-sun | vortoyan | 電日 |
 | electronic map | electric-map | vortomapa | 電図 |
@@ -261,6 +270,7 @@
 | horse | vehicle-animal | karopeste | 车匹 |
 | hotel | sleep-home | tormikase | 床户 |
 | how | what-manner | kermoto | 何方 |
+| hundredth (in a series) | hundred-sequence | katonorten | 百序 |
 | hungry | food-want | komivori | 食求 |
 | hurt | sick-feel | marasenti | 病心 |
 | ice cream | cold-milk | rikusraten | 冷乳 |
@@ -328,6 +338,7 @@
 | menu | food-sequence | komiorten | 食序 |
 | messy | not-sequence | nonorten | 不序 |
 | midday | middle-sun | metseyan | 中日 |
+| millionth (in a series) | million-sequence | mironorten | 兆序 |
 | mist | water-air | akuvento | 水风 |
 | moment | small-time | pikotempo | 小时 |
 | Monday | month-weekday | meseyom | 月曜 |
@@ -342,6 +353,7 @@
 | never | no-time | nemtempo | 无时 |
 | next | after-sequence | tarorten | 后序 |
 | night | no-sun | nemyan | 无日 |
+| ninth (in a series) | nine-sequence | noksorten | 9序 |
 | no one | no-person | nemomo | 无人 |
 | nobody | no-person | nemomo | 无人 |
 | noon | middle-sun | metseyan | 中日 |
@@ -484,6 +496,7 @@
 | serene | small-happy | pikokonten | 小楽 |
 | servant | help-person | serviomo | 助人 |
 | settle | choose-finish | erikevin | 选閉 |
+| seventh (in a series) | seven-sequence | sensorten | 7序 |
 | shame | me-bad-feel | ekomarumsenti | 己悪心 |
 | she | this-person | tisomo | 此人 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
@@ -495,6 +508,7 @@
 | significant | heavy-necessary | pesaneses | 重要 |
 | silent | close-mouth | vinpuka | 閉口 |
 | sister | same-parent-woman | samparivema | 同亲女 |
+| sixth (in a series) | six-sequence | siksorten | 6序 |
 | slow | not-fast | nonveros | 不早 |
 | slowly | not-fast | nonveros | 不早 |
 | small talk | small-say | pikotika | 小言 |
@@ -544,6 +558,7 @@
 | tears | see-water | viteaku | 見水 |
 | telephone | electric-say | vortotika | 電言 |
 | television | electric-see | vortovite | 電見 |
+| tenth (in a series) | ten-sequence | tekasorten | 十序 |
 | test (of knowledge) | know-try | sapetentar | 知試 |
 | text | write-say | kitatika | 写言 |
 | that | not-this | nontis | 不此 |
@@ -561,6 +576,7 @@
 | third (in a series) | three-sequence | tetsorten | 3序 |
 | thirsty | drink-want | pipevori | 飲求 |
 | those | not-this | nontis | 不此 |
+| thousandth (in a series) | thousand-sequence | kiruorten | 千序 |
 | Thursday | plant-weekday | arpoyom | 木曜 |
 | ticket gate | money-door | moniporta | 贝門 |
 | tie | same-become | samtiven | 同成 |

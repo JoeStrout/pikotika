@@ -12,6 +12,7 @@ Run it in the `pikotika` environment, which has Kokoro and ffmpeg:
 Two shapes come out, because two different things play the audio:
 
     web/audio/words/*.m4a      + words.json      one file per word
+    web/audio/numbers/*.m4a    + numbers.json    the number reader's vocabulary
     web/audio/sentences/*.m4a  + sentences.json  one file per sentence
 
 A sprite is right when something will play many clips out of a known set -- a
@@ -60,6 +61,11 @@ OUT_DIR = ROOT / "web" / "audio"
 # Dialogs and stories will pick by character instead -- hence voice_for() rather
 # than a constant.
 WORD_VOICES = ("af_sky", "bm_george")
+
+# The number reader chains clips together, so its set is one voice throughout.
+# Alternating would change speaker four times inside `tekas pits kiru, tets
+# katon wats tekas kins`, which is one number.
+NUMBER_VOICE = "af_sky"
 
 SPEED = 1.0
 
@@ -298,6 +304,21 @@ def word_items(tables, limit=None):
     return [(form, form, voices[form]) for form in forms]
 
 
+def number_items(tables, limit=None):
+    """The words the /topics/numbers/ reader chains together.
+
+    A reading is unbounded -- there is no clip for 12345 and never can be -- so
+    this is the one place on the site where an utterance is stitched from word
+    clips rather than spoken whole.  Rendered again here, in a single voice,
+    rather than reusing the two-voice `words` set."""
+    import build
+
+    forms = build.audio_numbers()
+    if limit:
+        forms = forms[:limit]
+    return [(form, form, NUMBER_VOICE) for form in forms]
+
+
 def sentence_items(tables, limit=None):
     """The site's utterances, from build.audio_sentences() -- which the build
     also checks the shipped clips against, so the two cannot drift."""
@@ -325,6 +346,8 @@ def main() -> None:
         formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--words", action="store_true", help="words only")
     ap.add_argument("--sentences", action="store_true", help="sentences only")
+    ap.add_argument("--numbers", action="store_true",
+                    help="the number reader's clips only")
     ap.add_argument("--limit", type=int, help="only the first N of each (smoke test)")
     ap.add_argument("--force", action="store_true", help="ignore the WAV cache")
     ap.add_argument("--no-encode", action="store_true",
@@ -333,13 +356,19 @@ def main() -> None:
 
     ph.check_symbols()
     tables = pikotika.Tables(str(ROOT))
-    both = not (args.words or args.sentences)
+    both = not (args.words or args.sentences or args.numbers)
 
     if args.words or both:
         items = word_items(tables, args.limit)
         print(f"words: {len(items)}")
         report(items)
         build_files("words", items, args.force)
+
+    if args.numbers or both:
+        items = number_items(tables, args.limit)
+        print(f"numbers: {len(items)}")
+        report(items)
+        build_files("numbers", items, args.force)
 
     if args.sentences or both:
         items = sentence_items(tables, args.limit)

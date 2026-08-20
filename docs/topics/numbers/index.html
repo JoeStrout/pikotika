@@ -1,0 +1,300 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Numbers — Pikotika</title>
+<meta name="description" content="Counting, prices, and how many — with a reader that says any number aloud.">
+
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<meta name="theme-color" content="#FFFC00" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16150F" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pikotika">
+
+<meta property="og:site_name" content="Pikotika">
+<meta property="og:title" content="Numbers — Pikotika">
+<meta property="og:description" content="Counting, prices, and how many — with a reader that says any number aloud.">
+<meta property="og:image" content="https://pikotika.org/images/og-image.png">
+<meta property="og:url" content="https://pikotika.org/topics/numbers/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="/css/site.css?v=d7efc4247e">
+<script>
+/* Set the theme before first paint, so there is no flash of the wrong one. */
+(function () {
+  try {
+    var t = localStorage.getItem('pk-theme');
+    if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+  } catch (e) {}
+})();
+</script>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="/" aria-label="Pikotika home">
+      <picture>
+        <source srcset="/images/Title_Dark.png" media="(prefers-color-scheme: dark)" id="wordmark-dark">
+        <img src="/images/Title_Light.png" alt="Pikotika" width="822" height="225">
+      </picture>
+    </a>
+
+    <button class="theme-toggle" id="theme-toggle" type="button"
+            aria-label="Switch between light and dark theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g class="rays"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></g></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </div>
+
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="/">Overview</a></li>
+      <li><a href="/vocab/">Vocab</a></li>
+      <li><a href="/grammar/">Grammar</a></li>
+      <li><a href="/topics/" aria-current="page">Topics</a></li>
+      <li><a href="/tools/">Tools</a></li>
+      <li><a href="/learn/">Learn</a></li>
+      <li><a href="/why/">Why</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="">
+<p class="topic-back"><a href="/topics/">← Back to Topics</a></p>
+
+<h1>Numbers</h1>
+
+<p class="lede">Pikotika writes numbers in the digits you already use, so there
+is nothing to learn about writing them. All you learn is how to say them — ten
+digit words, four words for the powers of ten, and one pattern with no
+exceptions in it.</p>
+
+<h2>Say any number</h2>
+
+<div class="reader" id="numreader">
+  <label class="reader-label" for="numreader-in">Type a number</label>
+  <input id="numreader-in" type="text" inputmode="decimal" autocomplete="off"
+         spellcheck="false" placeholder="12345">
+  <div class="reader-out" id="numreader-out" aria-live="polite"></div>
+  <p class="reader-note" id="numreader-note"></p>
+  <p class="reader-try">Try <button type="button" class="reader-eg">42</button>
+    <button type="button" class="reader-eg">2026</button>
+    <button type="button" class="reader-eg">1.25</button>
+    <button type="button" class="reader-eg">3/4</button>
+    <button type="button" class="reader-eg">50%</button>
+    <button type="button" class="reader-eg">7th</button></p>
+</div>
+
+<h2>The ten digits</h2>
+
+<p>Every digit from two to nine ends in a <code>-ts</code>, <code>-ks</code>, or <code>-ns</code>, so a run of them is easy to hear apart from the words around it.</p>
+
+<ul class="digits">
+  <li><span class="num">0</span> <span class="pk">nem</span>
+      <span class="han">无</span></li>
+  <li><span class="num">1</span> <span class="pk">wun</span>
+      <span class="han">一</span></li>
+  <li><span class="num">2</span> <span class="pk">pits</span></li>
+  <li><span class="num">3</span> <span class="pk">tets</span></li>
+  <li><span class="num">4</span> <span class="pk">wats</span></li>
+  <li><span class="num">5</span> <span class="pk">kins</span></li>
+  <li><span class="num">6</span> <span class="pk">siks</span></li>
+  <li><span class="num">7</span> <span class="pk">sens</span></li>
+  <li><span class="num">8</span> <span class="pk">ots</span></li>
+  <li><span class="num">9</span> <span class="pk">noks</span></li>
+</ul>
+
+
+<h2>And four more words</h2>
+
+<ul class="digits digits-scale">
+  <li><span class="num">10</span> <span class="pk">tekas</span>
+      <span class="han">十</span></li>
+  <li><span class="num">100</span> <span class="pk">katon</span>
+      <span class="han">百</span></li>
+  <li><span class="num">1000</span> <span class="pk">kiru</span>
+      <span class="han">千</span></li>
+  <li><span class="num">1000000</span> <span class="pk">miron</span>
+      <span class="han">兆</span></li>
+</ul>
+
+<p>That is the whole vocabulary. Fourteen words say every number there is.</p>
+
+<p class="aside">Japanese and Korean readers: 兆 here is a million, 10<sup>6</sup>,
+not 10<sup>12</sup>. Pikotika groups by thousands, the way the metric prefixes
+do, so 兆 lines up with <em>mega-</em>.</p>
+
+<h2>Putting them together</h2>
+
+<p> Count the hundreds, then say <span class="pk">katon</span>. Count the tens, then say <span class="pk">tekas</span>.There are no special words for eleven
+through nineteen, nor for twenty, thirty, forty: twenty is simply
+<em>two tens</em>.</p>
+
+<table class="rules">
+  <tr><th>Number</th><th>Said</th><th>Literally</th></tr>
+  <tr><td>11</td><td><span class="pk">tekas wun</span></td>
+      <td class="gloss">ten one</td></tr>
+  <tr><td>20</td><td><span class="pk">pits tekas</span></td>
+      <td class="gloss">two ten</td></tr>
+  <tr><td>35</td><td><span class="pk">tets tekas kins</span></td>
+      <td class="gloss">three ten five</td></tr>
+  <tr><td>100</td><td><span class="pk">katon</span></td>
+      <td class="gloss">hundred</td></tr>
+  <tr><td>500</td><td><span class="pk">kins katon</span></td>
+      <td class="gloss">five hundred</td></tr>
+  <tr><td>678</td><td><span class="pk">siks katon sens tekas ots</span></td>
+      <td class="gloss">six hundred seven ten eight</td></tr>
+</table>
+
+<p>Notice 100 and 11: you leave the <span class="pk">wun</span> off in front of
+a power of ten. <em>One hundred</em> is just <span class="pk">katon</span>;
+saying <span class="pk">wun katon</span> is not wrong, but it's longer than it needs to be.</p>
+
+<p>Past a thousand nothing changes except that the groups get a comma, which is
+a pause when you say it aloud:</p>
+
+<div class="example">
+  <p class="en">12345</p>
+  <span class="pk">tekas pits kiru, tets katon wats tekas kins</span>
+</div>
+
+<p><strong>Write no thousands separators.</strong> Half the world puts a comma
+where the other half puts a period, so Pikotika writes <b>12345</b> and leaves
+the gap out. The period is always the decimal point.</p>
+
+<h2>Parts of a number</h2>
+
+<p>Four small extensions, each one word.</p>
+
+<table class="rules">
+  <tr><th>Written</th><th>Said</th><th>What the extra word is</th></tr>
+  <tr><td>1.25</td><td><span class="pk">wun parte pits kins</span></td>
+      <td><span class="pk">parte</span> <span class="gloss">part</span> is the
+          decimal point; the digits after it are read one at a time</td></tr>
+  <tr><td>3/4</td><td><span class="pk">tets in wats</span></td>
+      <td><span class="pk">in</span> is the same everyday word as English
+          <em>in</em> — three in four</td></tr>
+  <tr><td>50%</td><td><span class="pk">kins tekas inkaton</span></td>
+      <td><span class="pk">inkaton</span>
+          <span class="gloss">in-hundred</span> is a percent: the fraction whose
+          denominator everyone already knows</td></tr>
+  <tr><td><span class="pk">kinsorten</span></td>
+      <td><span class="pk">kinsorten</span></td>
+      <td><span class="pk">orten</span> <span class="gloss">sequence</span> on
+          the end makes an ordinal — fifth. The one number written in letters,
+          because it is a single compound word</td></tr>
+</table>
+
+<p>A fraction is written with a slash, just as in English: <b>3/4</b>.  To read out loud, just read the slash as <span class="pk">in</span>.  Note that
+<span class="pk">in</span> is doing nothing special here — it is the ordinary
+preposition, and <em>three in four</em> is what 3/4 means.</p>
+
+<p>Ordinals are the one number written in letters, because each is a single
+compound word. Every one you are likely to want is a standing word —
+<span class="pk">wunorten</span>, <span class="pk">pitsorten</span>,
+<span class="pk">tetsorten</span> and so on up through
+<span class="pk">tekasorten</span>, plus
+<span class="pk">katonorten</span>, <span class="pk">kiruorten</span> and
+<span class="pk">mironorten</span> — and they keep working inside a larger
+number, since only the last word takes the suffix: 21st is
+<span class="pk">pits tekas wunorten</span>.</p>
+
+<h2>Counting things</h2>
+
+<p>A number is an ordinary modifier, so it goes straight in front of what it
+counts. Nothing agrees with it, and there is no plural to remember.</p>
+
+<div class="example">
+  <p class="en">Two nights.</p>
+  <span class="pk">2 nemyan.</span>
+</div>
+
+<div class="example">
+  <p class="en">One room, one bed.</p>
+  <span class="pk">1 kamar, 1 tormi.</span>
+</div>
+
+<p>You may write the number as a digit or as its word — <span class="pk">2
+nemyan</span> and <span class="pk">pits nemyan</span> are the same two nights,
+said the same way. Digits are the usual choice, and the only choice once the
+number is long.</p>
+
+<p>For an amount you are not counting exactly, three ordinary words do the
+work: <span class="pk">nem</span> <span class="gloss">no</span>,
+<span class="pk">mur</span> <span class="gloss">many</span>, and
+<span class="pk">pan</span> <span class="gloss">all</span>. To ask, use
+<span class="pk">ker mesur</span> — <em>what amount</em> — or, for a price,
+<span class="pk">ker moni</span>.</p>
+
+<div class="example">
+  <p class="en">How much are the bananas?</p>
+  <span class="pk">Ronkayoropomo ri ker moni?</span>
+</div>
+
+<div class="example">
+  <p class="en">Twenty each, or a hundred for six.</p>
+  <span class="pk">20 moni por wun, sive 100 moni por 6.</span>
+</div>
+
+<div class="example">
+  <p class="en">Six bananas and four apples — one hundred sixty.</p>
+  <span class="pk">6 ronkayoropomo kum 4 rotunpomo: 160 moni.</span>
+</div>
+
+<h2>Numbers in the wild</h2>
+
+<div class="example">
+  <p class="en">There's a 30% chance of rain.</p>
+  <span class="pk">Ri 30 inkaton ruva pos.</span>
+</div>
+
+<div class="example">
+  <p class="en">How old are you?</p>
+  <span class="pk">Tu anyoturan ri ker?</span>
+</div>
+
+<div class="example">
+  <p class="en">I'm 34 years old.</p>
+  <span class="pk">Eko anyoturan ri 34.</span>
+</div>
+
+<div class="example">
+  <p class="en">Room twelve, up the stairs, on the right.</p>
+  <span class="pk">Kamar 12, sur in surmoto, in rem.</span>
+</div>
+
+<div class="example">
+  <p class="en">The numbers are all there.</p>
+  <span class="pk">Pan mesurtika ri in kitakarta.</span>
+</div>
+
+<p>Clock times, dates, and years all reuse exactly these words with one more
+word standing in for the punctuation — <span class="pk">ora</span> for the
+colon, and <span class="pk">anyo</span>, <span class="pk">mese</span> and
+<span class="pk">yan</span> for a year, a month and a day. Those get their own
+pages, under Telling time and Dates and weekdays.</p>
+
+<p class="topic-back is-end"><a href="/topics/">← Back to Topics</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-tagline">A tiny language for real conversation.</p>
+    <ul class="footer-links">
+      <li><a href="https://reddit.com/r/pikotika">Subreddit</a></li>
+      <li><a href="https://discord.gg/">Discord</a></li>
+      <li><a href="https://github.com/JoeStrout/pikotika">Source</a></li>
+    </ul>
+    <p class="footer-legal">
+      Pikotika is free to use, teach, and build on, under
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC&nbsp;BY&nbsp;4.0</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="/js/adapt.js?v=f895f368ae"></script>
+<script src="/js/numbers.js?v=9f45ac8d66"></script>
+<script src="/js/site.js?v=b805957b1d"
+        data-data-version="0f96931280"></script>

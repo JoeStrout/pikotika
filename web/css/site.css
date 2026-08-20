@@ -939,3 +939,110 @@ p { margin: 0 0 1.1em; }
 }
 .rules td:last-child, .rules th:last-child { padding-right: 0; }
 .rules code { font-size: .95em; }
+
+/* --- the number reader (/topics/numbers/) --------------------------------
+   Same box as the name adapter, with room reserved under the input for the
+   reading and its gloss, so the box does not jump on the first keystroke. */
+
+.reader {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem 1.1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--bg-tint);
+}
+
+.reader-label {
+  display: block;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-bottom: .3rem;
+}
+
+.reader input {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: .5rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+.reader input:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 1px;
+}
+
+/* Reserved, so the box does not jump the moment you start typing. */
+.reader-out { min-height: 3.4rem; margin-top: .7rem; }
+
+.reader-say {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.reader-say .pk { font-size: 1.5rem; line-height: 1.25; }
+.reader-speak { flex: none; }
+
+.reader-gloss { margin: .2rem 0 0; font-size: .95rem; }
+
+.reader-note {
+  margin: .5rem 0 0;
+  font-size: .85rem;
+  color: var(--text-muted);
+  min-height: 1.2em;
+}
+
+.reader-try { margin: .6rem 0 0; font-size: .85rem; color: var(--text-muted); }
+.reader-eg {
+  font: inherit;
+  font-size: .95em;
+  margin: .15rem .1rem;
+  padding: .1rem .5rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--link);
+  cursor: pointer;
+}
+.reader-eg:hover { background: var(--accent); color: var(--accent-ink);
+                   border-color: var(--accent); }
+
+/* The digit tables: the numeral, the word, and the character where there is
+   one.  A fixed numeral column keeps the words in a straight line, which is
+   what makes the list scannable as a table rather than read as prose. */
+.digits {
+  list-style: none;
+  margin: 1rem 0 1.25rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: .35rem 1rem;
+}
+.digits li {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  padding: .2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.digits .num {
+  flex: none;
+  min-width: 3.2ch;
+  text-align: right;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+.digits .han { margin-left: auto; color: var(--text-muted); }
+.digits-scale { grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
+.digits-scale .num { min-width: 7ch; }
+
+.aside {
+  font-size: .9rem;
+  color: var(--text-muted);
+  border-left: 3px solid var(--border-strong);
+  padding-left: .9rem;
+  margin: 1.25rem 0;
+}

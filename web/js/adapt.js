@@ -1,6 +1,6 @@
 /* Adapting a foreign name or word to Pikotika phonology.
  *
- * The rules are DETAILS.md, "Proper Nouns and Loan Words": first swap the
+ * The rules are pikotika.org/topics/names/, the page this runs on: first swap the
  * sounds we do not have, then fix the syllables that are still illegal.  This
  * is the first implementation of them anywhere -- pikotika.py does not adapt
  * names, it only looks them up in names.tsv.

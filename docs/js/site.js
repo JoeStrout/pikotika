@@ -281,6 +281,49 @@
     });
   }
 
+  /* Several clips end to end, on the AudioContext's own clock.
+
+     This is the one thing on the site that is stitched rather than spoken
+     whole -- see the number reader below.  Scheduling against currentTime
+     rather than chaining `onended` handlers is what keeps the joins even:
+     `onended` fires on the main thread and inherits whatever jank is there.
+     The clips come from a set rendered in a single voice, so the seam is a
+     word boundary and not a change of speaker. */
+
+  var CHAIN_GAP = 0.05;       /* between two words */
+  var CHAIN_PAUSE = 0.28;     /* at a comma, where a reader takes a breath */
+
+  function playSequence(kind, steps, button) {
+    var Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    if (!audio.ctx) audio.ctx = new Ctx();
+    if (audio.ctx.state === 'suspended') audio.ctx.resume();
+
+    /* A second tap replaces the first reading rather than talking over it. */
+    (audio.chain || []).forEach(function (s) { try { s.stop(); } catch (e) {} });
+    audio.chain = [];
+
+    button.classList.add('loading');
+    Promise.all(steps.map(function (step) {
+      return step.pause ? null : clipBuffer(kind, step.key);
+    })).then(function (buffers) {
+      button.classList.remove('loading');
+      var at = audio.ctx.currentTime + 0.06;
+      steps.forEach(function (step, i) {
+        if (step.pause) { at += step.pause; return; }
+        var buffer = buffers[i];
+        if (!buffer) return;
+        var source = audio.ctx.createBufferSource();
+        source.buffer = buffer;
+        source.connect(audio.ctx.destination);
+        source.start(at);
+        audio.chain.push(source);
+        at += buffer.duration + CHAIN_GAP;
+      });
+      if (!audio.chain.length) button.disabled = true;
+    });
+  }
+
   /* --- sentence play buttons ---------------------------------------------
      A whole example, spoken as one utterance -- generated in a single Kokoro
      pass, not stitched from the word clips, which would come out as a robotic
@@ -1169,10 +1212,95 @@
     run();
   }
 
+  /* --- the number reader (/topics/numbers/) -------------------------------
+     Type a number, see how it is said, hear it.  A reading is unbounded --
+     there is no clip for 12345 and never can be -- so this alone plays a
+     chain of word clips, from the single-voice `numbers` set.
+
+     The reading is chipped like any other Pikotika on the site, so every word
+     of it opens the usual tile.  That works because a reading is only ever
+     made of the fourteen number words plus, for an ordinal, a standing
+     compound: 1st through 10th are in compounds.tsv, so `tekas wunorten` is
+     two real entries.  (`katonorten` and its two larger siblings are not
+     recorded yet, so those open a "no entry" tile; recording them fixes that
+     and gives them a one-word clip -- see build.py:ordinal_glosses.)
+
+     The box shows the reading and its gloss and nothing else.  It briefly also
+     printed a "written" line, from when a fraction was written **3 in 4**;
+     numbers are written in digits, so that line only restated the input. */
+
+  function initNumbers() {
+    var box = document.getElementById('numreader');
+    if (!box || !window.pikotikaNumbers) return;
+
+    var input = document.getElementById('numreader-in');
+    var out = document.getElementById('numreader-out');
+    var note = document.getElementById('numreader-note');
+
+    function say(result) {
+      var steps = [];
+      result.words.forEach(function (w) {
+        if (w.sep) { steps.push({ pause: CHAIN_PAUSE }); return; }
+        w.a.forEach(function (form) { steps.push({ key: form }); });
+      });
+      return steps;
+    }
+
+    function render(andPlay) {
+      var typed = input.value.replace(/[\s,]/g, '');
+      var result = window.pikotikaNumbers.read(typed);
+      out.textContent = '';
+      note.textContent = result.ok ? (result.note || '') : (result.error || '');
+      if (!result.ok) return;
+
+      var line = document.createElement('div');
+      line.className = 'reader-say';
+      var said = document.createElement('span');
+      said.className = 'pk';
+      said.textContent = result.latin;
+      line.appendChild(said);
+      scanChips(line);
+
+      var speak = document.createElement('button');
+      speak.type = 'button';
+      speak.className = 'example-speak reader-speak';
+      speak.setAttribute('aria-label', 'Play ' + result.latin);
+      speak.textContent = PLAY_GLYPH;
+      var steps = say(result);
+      speak.addEventListener('click', function () {
+        playSequence('numbers', steps, speak);
+      });
+      line.appendChild(speak);
+      out.appendChild(line);
+
+      var gloss = document.createElement('p');
+      gloss.className = 'gloss reader-gloss';
+      gloss.textContent = result.gloss;
+      out.appendChild(gloss);
+
+      if (andPlay) playSequence('numbers', steps, speak);
+    }
+
+    input.addEventListener('input', function () { render(false); });
+
+    /* A suggestion is already a tap, so it may as well be the gesture that
+       unlocks the audio -- press "3/4" and you hear it. */
+    var examples = box.querySelectorAll('.reader-eg');
+    for (var i = 0; i < examples.length; i++) {
+      examples[i].addEventListener('click', function (e) {
+        input.value = e.currentTarget.textContent;
+        render(true);
+      });
+    }
+
+    render(false);
+  }
+
   scanChips();
   addSentencePlayers();
   initVocab();
   initAdapter();
+  initNumbers();
 
   /* Pages that build their own markup -- Vocab results, the Tools converter --
      add .pk elements after this ran, so they need a way to chip them. */

@@ -387,6 +387,7 @@ def check_audio(lexicon) -> None:
         "sentences": audio_sentences(),
         "words": sorted({e["form"] for e in lexicon["words"].values()
                          if wants_audio(e)}),
+        "numbers": audio_numbers(),
     }
     for kind, texts in wanted.items():
         index = WEB / "audio" / f"{kind}.json"
@@ -481,6 +482,161 @@ def check_adapter() -> None:
           f"recorded pronunciation, {len(ADAPTER_EXCEPTIONS)} exceptions")
 
 
+# --- the number reader (/topics/numbers/) ----------------------------------
+# Every word a reading can be made of: the ten digits, the four named powers of
+# ten, and the four words that join them -- the decimal point, `in` for a
+# fraction, `in-hundred` for a percentage, and `sequence` for an ordinal.
+# Written as glosses and resolved through the tables, so it is the same list
+# pikotika.py counts with, and audio_numbers below is derived from it rather
+# than typed out again.
+NUMBER_GLOSSES = ["part", "in", "in-hundred", "sequence"]
+
+
+def ordinal_glosses(tables) -> list:
+    """The ordinals that have a standing compound: `one-sequence` and friends.
+
+    Read out of compounds.tsv rather than listed here, because that is what
+    decides the question -- an ordinal with an entry is one word and gets one
+    clip, and `tets orten` said as two clips is exactly what having the entry
+    is for.  Recording `hundred-sequence` later therefore gives *hundredth* a
+    clip too; the build will then ask for `numbers.js` to be told about it, via
+    the vocabulary check in check_numbers."""
+    import pikotika
+
+    numerals = set(pikotika.DIGITS.values())
+    return sorted(gloss for gloss in tables.compound_by_gloss
+                  if gloss.endswith("-sequence")
+                  and gloss[:-len("-sequence")] in numerals)
+
+
+def number_forms(tables) -> list:
+    import pikotika
+
+    glosses = (list(dict.fromkeys(pikotika.DIGITS.values())) + NUMBER_GLOSSES
+               + ordinal_glosses(tables))
+    return sorted({pikotika.render_latin(pikotika.parse_gloss(g, tables), tables)
+                   for g in glosses})
+
+
+def audio_numbers() -> list:
+    """The clips the number reader chains together.
+
+    A reading is unbounded -- there is no clip for `12345` and never can be --
+    so this is the one thing on the site that is stitched from word clips
+    rather than spoken whole.  They are therefore rendered again in a single
+    voice: the site-wide word clips alternate between two speakers, which over
+    `tekas pits kiru, tets katon wats tekas kins` would change speaker four
+    times in one number."""
+    import pikotika
+
+    return number_forms(pikotika.Tables())
+
+
+# What the number reader is checked over: every shape it accepts, at every
+# size where the reading changes shape.  Small numbers are enumerated because
+# that is where the special cases live (the dropped multiplier at 10, 100, and
+# 1000); past that it is one per decade plus a handful of awkward ones.
+def number_checks() -> list:
+    cases = [str(n) for n in range(0, 121)]
+    cases += [str(n) for n in (200, 500, 510, 678, 999, 1000, 1001, 1010, 1100,
+                               2026, 9999, 10000, 12345, 100000, 999999,
+                               1000000, 1000001, 1234567, 10000000, 999999999,
+                               1000000000, 1000000000000, 12345678901234)]
+    cases += ["0.5", "1.25", "3.14159", "0.007", "12.5", "1000.001"]
+    cases += ["3/4", "1/2", "7/8", "2/3", "22/7", "1/1000"]
+    cases += ["1%", "50%", "7.5%", "100%", "3/100", "0.5%", "1000%"]
+    cases += ["1st", "2nd", "3rd", "7th", "10th", "11th", "21st", "42nd",
+              "100th", "101st", "1000th", "1000000th", "12345th"]
+    return cases
+
+
+def check_numbers(tables) -> None:
+    """Check web/js/numbers.js against pikotika.py, over every shape it reads.
+
+    The reader is a port -- pikotika.counting_words and decimal_words already
+    say how a numeral is read -- and a port is a second implementation, so the
+    two get run over the same inputs on every build.  The comparison goes
+    through the *written* form the port produces, so the check covers both
+    halves of what it claims: that `3/4` is written **3 in 4**, and that
+    **3 in 4** is said `tets in wats`.
+
+    Needs node, and skips with a note when there is none, exactly as
+    check_adapter does."""
+    import json
+    import shutil
+    import subprocess
+
+    import pikotika
+
+    node = shutil.which("node")
+    if not node:
+        print("  (no node -- skipping the number reader check)")
+        return
+
+    cases = number_checks()
+    driver = """
+      const numbers = require(process.argv[1]);
+      console.log(JSON.stringify({
+        vocabulary: numbers.vocabulary(),
+        read: JSON.parse(process.argv[2]).map(function (s) {
+          return numbers.read(s);
+        })
+      }));
+    """
+    proc = subprocess.run(
+        [node, "-e", driver, str(WEB / "js" / "numbers.js"), json.dumps(cases)],
+        capture_output=True, text=True)
+    if proc.returncode:
+        raise SystemExit("the number reader would not run:\n" + proc.stderr.strip())
+
+    result = json.loads(proc.stdout)
+    problems = []
+    # The clips are generated from number_forms(); if the reader can say a word
+    # that is not in it, that word is silent and nothing else would notice.
+    want = number_forms(tables)
+    if result["vocabulary"] != want:
+        extra = [f for f in result["vocabulary"] if f not in want]
+        short = [f for f in want if f not in result["vocabulary"]]
+        problems.append(
+            f"numbers.js and build.number_forms disagree about what the reader "
+            f"can say: {extra} only in numbers.js (those would be silent -- "
+            f"nothing renders a clip for them), {short} only in build.py "
+            f"(those would be clips nothing plays; if one is a newly recorded "
+            f"ordinal, ORDINAL_CLIPS in numbers.js needs it)")
+    for case, got in zip(cases, result["read"]):
+        if not got.get("ok"):
+            problems.append(f"{case}: the reader refused it "
+                            f"({got.get('error', 'no reason given')})")
+            continue
+        fail = {}
+        words = pikotika.parse_latin(got["spelled"], tables, fail)
+        if words is None:
+            problems.append(f"{case}: spells out {got['spelled']!r}, which is "
+                            f"not Pikotika ({fail.get('token')!r})")
+            continue
+        spoken = pikotika.expand_numerals(words)
+        for label, want in (("latin", pikotika.render_latin(spoken, tables)),
+                            ("gloss", pikotika.render_gloss(spoken, tables)),
+                            ("han", pikotika.render_han(words, tables))):
+            if got[label] != want:
+                problems.append(f"{case}: {label} is {got[label]!r} in "
+                                f"numbers.js, {want!r} in pikotika.py")
+        # pikotika.py reads `/` and `%` as well, so most cases can also be
+        # compared as typed, with no spelled-out form in between.  An ordinal
+        # cannot: `7th` is English, and only its reading is Pikotika.
+        raw = pikotika.parse_latin(case, tables)
+        if raw is not None:
+            said = pikotika.render_latin(pikotika.expand_numerals(raw), tables)
+            if said != got["latin"]:
+                problems.append(f"{case}: read as typed, pikotika.py says "
+                                f"{said!r} where numbers.js says {got['latin']!r}")
+    if problems:
+        raise SystemExit("the number reader disagrees with pikotika.py:\n  "
+                         + "\n  ".join(problems))
+    print(f"  number reader: {len(cases)} numbers read the same in "
+          f"numbers.js and pikotika.py")
+
+
 def check_forms(tables, sources) -> list:
     """Parse every Pikotika string on the site; fail on a form that is not real.
 
@@ -531,6 +687,7 @@ def build() -> None:
     check_adapter()
 
     tables = pikotika.Tables()
+    check_numbers(tables)
     authored = authored_pages()
     forms = check_forms(tables, [(url, content)
                                  for url, content, _t, _d in authored])
@@ -560,12 +717,13 @@ def build() -> None:
     css_version = asset_version("css/site.css")
     js_version = asset_version("js/site.js")
     adapt_version = asset_version("js/adapt.js")
+    numbers_version = asset_version("js/numbers.js")
     # The lexicon and the two audio indexes are rebuilt in place under the same
     # names, so they need the same cache-busting; site.js reads this off its own
     # script tag.  Computed after gen_lexicon.write above, or it would hash the
     # previous build's lexicon.
     data_version = asset_version("data/lexicon.json", "audio/words.json",
-                                 "audio/sentences.json")
+                                 "audio/sentences.json", "audio/numbers.json")
 
     import importlib
 
@@ -585,6 +743,7 @@ def build() -> None:
             css_version=css_version,
             js_version=js_version,
             adapt_version=adapt_version,
+            numbers_version=numbers_version,
             data_version=data_version,
             # The topic index is a card grid; the measure column is for prose.
             main_class="wide" if url == TOPICS_URL else "",

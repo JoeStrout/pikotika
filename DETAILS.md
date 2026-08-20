@@ -1,3 +1,13 @@
+<!-- Migrated to pikotika.org and deleted from here (see WEBSITE_DESIGN.md,
+     "DETAILS.md is migrated, not mirrored"): there is one home for each fact,
+     and it is now the page, not this file.
+
+       Numbers                      -> /topics/numbers/
+       Colors                       -> /topics/colors/
+       Proper Nouns and Loan Words  -> /topics/names/
+
+     The pages are built from web/pages/topics/*.html; edit the language there. -->
+
 ## Pronunciation
 
 Pikotika uses 10 consonants and 5 vowels, designed to be forgiving; that is, even if your accent is different from mine, we can still easily understand each other.
@@ -71,109 +81,9 @@ Proper names are written in Latin as above, and numbers are written using Arabic
 
 If you're not already used to Chinese or Japanese, this form may seem arcane.  You don't need to learn it right away.  But keep in mind, there are fewer than 200 characters to learn, and once you have them, it's both space-efficient and very quick to read.  It can also be written vertically, for example on signs or in comics.  Note that in this case, the particles do NOT rotate; they keep their standard orientation (just like the Han characters, but unlike some bits of Japanese notation).
 
-## Numbers
-
-Numbers in Pikotika are written using Arabic numerals, like **123** and **2026**.  So the only thing you need to learn is how to say them out loud (or understand them when heard).
-
-First, the digits:
-
-| Digit | Reading |
-|---|---|
-| 0 | **nem** |
-| 1 | **wun** |
-| 2 | **pits** |
-| 3 | **tets** |
-| 4 | **wats** |
-| 5 | **kins** |
-| 6 | **siks** |
-| 7 | **sens** |
-| 8 | **ots** |
-| 9 | **noks** |
-
-And, the named powers of ten:
-
-| Value | Reading |
-|---|---|
-| 10 | **tekas** |
-| hundred | **katon** |
-| thousand | **kiru** |
-| million | **miron** |
-
-The number reading system is very similar to English and Romance languages, and similar to Japanese.  The only difference from English is that while English (and related languages) have unique words for 11-19 as well as 20, 30, 40, etc., Pikotika uses a simple and regular pattern: 20 is "two tens", 30 is "three tens", and so on.  (The only difference from Japanese is that it groups in thousands and millions rather than ten-thousands.)
-
-| Value | Reading |
-|---|---|
-| 11 | **tekas wun** |
-| 20 | **pits tekas** |
-| 35 | **tets tekas kins** |
-
-As numbers get larger, you just do the same thing, making use of **katon** (hundred), **kiru** (thousand), and **miron** (million) as needed.  Note that you can omit **wun** before a power of ten.
-
-| Value | Reading |
-|---|---|
-| 500 | **kins katon** |
-| 510 | **kins katon tekas** |
-| 678 | **siks katon sens tekas ots** |
-| 12345 | **tekas pits kiru, tets katon wats tekas kins** |
-
-Use no thousands separators when writing Pikotika numbers (the world can't agree on whether `,` or `.` should be used for this purpose, so just leave them out).
-
-### Decimals, fractions, percent, and ordinals
-
-Decimals use `.` for the decimal point.  For example, one and a quarter would be written **1.25**.  The `.` is pronounced **parte**, so **1.25** is read **wun parte pits kins**.  
-
-Fractions separate the numerator and denominator with 'in' (a root word that happens to be the same in English and Pikotika).  So **3 in 4** is simply 3/4.  A percentage, written as a fraction, would be something like '50 in 100' -- but there is a standard compound of 'in 100', **inkaton**, meaning 'percent'.  So you can write **50 inkaton** (or in Han, **50内百**) for this.
-
-For ordinal numbers (first, second, etc.), just append **orten** ('sequence') to the number.  For example, 5th would be five-sequence or **kinsorten**.
-
-### Han Characters
-
-Even though numbers are normally written in Arabic numerals, the numbers zero and one, as well as the powers of ten, _do_ have Han characters, for when you use them as words (e.g. "you're one in a million").  
-
-| Value | Reading | Han |
-|---|---|---|
-| 0 | **nem** | 无 |
-| 1 | **wun** | 一 |
-| ten | **tekas** | 十 |
-| hundred | **katon** | 百 |
-| thousand | **kiru** | 千 |
-| million | **miron** | 兆 |
-
-Japanese readers, please note that 兆 in Pikotika means million (10^6), not trillion (10^12).  This follows the Chinese convention associated with the metric "mega" prefix.
-
-## Colors
-
-Pikotika has six basic color roots, plus the root **koror** 'color' itself.
-
-| Meaning | Gloss | Pikotika | Han |
-|---|---|---|---|
-| red, warm hue | *red* | **rus** | 赤 |
-| blue, cool hue | *blue* | **asur** | 青 |
-| green | *green* | **verte** | 緑 |
-| yellow, golden | *yellow* | **yoro** | 黄 |
-| white, pale | *white* | **anka** | 白 |
-| black, dark | *black* | **nero** | 黒 |
-| color, hue | *color* | **koror** | 色 |
-
-Note the broadness of **anka** and **nero**; these are as much about lightness and darkness as about white and black.  So a pale grey shirt is reasonably **anka** and a dark navy one **nero**.
-
-Other colors are built as compounds:
-
-| Meaning | Gloss | Pikotika | Han |
-|---|---|---|---|
-| orange | *red-yellow* | **rusyoro** | 赤黄 |
-| pink | *red-white* | **rusanka** | 赤白 |
-| purple | *red-blue* | **rusasur** | 赤青 |
-| cyan | *blue-green* | **asurverte** | 青緑 |
-| grey | *stone-color* | **rapiskoror** | 岩色 |
-| brown | *earth-color* | **terakoror** | 土色 |
-| tan/beige | *grain-color* | **risokoror** | 米色 |
-
-If you really need to specify a finer shade, you can mix your own color: *black-red-blue* would be understood as a dark purple; *yellow-green* would be a yellowish green (and *green-yellow* would be a greenish yellow!).  But the colors above are standard.
-
 ## Telling Time
 
-Clock times are written with digits and a colon, and read with **ora** (hour) standing in for the colon -- exactly as **parte** stands in for the decimal point.
+Clock times are written with digits and a colon, and read with **ora** (hour) standing in for the colon -- exactly as **parte** stands in for the decimal point (see [Numbers](https://pikotika.org/topics/numbers/)).
 
 | Written | Read | Meaning |
 |---|---|---|
@@ -287,67 +197,6 @@ summers ago'.
 > 内 火时 玩来行, 尔 ⊢ 行 向 何所?
 > 'Where are you going for summer vacation?'
 
-## Proper Nouns and Loan Words
-
-Proper nouns (names) as well as loan words like "penicillin" are always written using our restricted Latin alphabet, as closely as they can be rendered in Pikotika phonology.  Adapting a name takes two passes: first swap out any sounds we don't have, then fix up any syllables that still aren't legal.
-
-**Adaptation follows the sound of a name, not its spelling.**  English spelling
-hides the vowel more often than not: *meter* is said /ˈmitər/, so it is **mitar** and
-not "meter", which our vowels would read as *may-tair*.  *liter* is **ritar** for the
-same reason, and the two rhyme in Pikotika exactly as they do in English.  Where a
-name is already recorded in `names.tsv`, that row carries the pronunciation it was
-derived from.
-
-**First, the sounds.**  Our alphabet has only ten consonants, so the missing ones move to their nearest neighbor -- which is always a sound already inside that letter's tolerance range, so the result still sounds right:
-
-- `b` → `p`, `d` → `t`, `g` → `k` (Canada → **Kanata**)
-- `l` → `r` (Elena → **Erana**, Pavel → **Pavar**)
-- `f` → `v`, `z` → `s` (Sofia → **Sovia**)
-- `j` → `y` (Jan → **Yan**)
-- `c` → `k`, or `s` before `e` or `i` (penicillin → **penasiran**)
-- `h`, and any silent letter, simply drops (Johnson → **Yonson**)
-- `sh`, `ch`, `th` → `s` or `t`, whichever is closer
-
-**Then, the syllables.**  Pikotika allows no consonant clusters at the start of a syllable, and only `n m s r ns ts ks` at the end, so anything else needs a vowel inserted to break it up.  Use `u`, except after `t`, where `o` sounds more natural:
-
-- a cluster at the start of a word or syllable is broken open by giving the first consonant its own vowel, while the second keeps whatever vowel already followed it: `st-` becomes **suta-**, **sute-**, **suto-** and so on, depending on the name (Strout → **Sutorauto**, Smith → **Sumis**, Brenda → **Purenta**)
-- a word ending in `p`, `t`, or `k` takes a vowel after it, since bare final stops aren't allowed (Marek → **Mareku**)
-- a name with no vowel to carry a syllable gets one, inserted the same way
-
-Note also that Pikotika has no diphthongs, so a vowel pair like `ou` or `au` simply becomes two syllables.
-
-Some examples will help illustrate.
-
-| English | Pikotika | What changed |
-|---|---|---|
-| Joe | **Yo** | `j` → `y` |
-| Mary | **Meri** | the vowel of *dress*, which the spelling hides |
-| Mark | **Marku** | vowel added after the final `k` |
-| Brenda | **Purenta** | `b` → `p`, `d` → `t`, `br` broken open |
-| Smith | **Sumis** | `sm` broken open, `th` → `s` |
-| Johnson | **Yonson** | `j` → `y`, silent `h` dropped |
-| Strout | **Sutorauto** | `str` broken open, `ou` split into two syllables |
-
-Standing adaptations -- names that come up often enough to be worth agreeing on -- are recorded in `names.tsv`.
-
-In general, it's not necessary to precede any suffix word with a name.  However, you might precede it with **omo** (person), **roko** (place), **sitas** (city), **nasyon** (country), **komparroko** (shop/establishment), or **komparmen** (company), as a separate word, in these cases:
-
-1. You're using a name for the first time in a conversation, and you want to be very clear whether this is a person, place, etc.  Example: **komparmen Apuru** = 'the company Apple'; **omo Sumis** = 'the person Smith'.
-2. The name happens to sound the same as some Pikotika word, and might be confusing.  Example: Li (a common surname) sounds like **ri** (the particle), so you might use **omo Ri** = 'the person Li'.
-
-The category word is optional; you can leave it off and say just **Sumis** when the meaning is clear.  It is never considered curt or rude to do so.
-
-Loan words (words taken directly from another language, usually English) should be used sparingly, and only where it is likely to be widely known throughout the world.  These are generally technical or product names, or metric units, like these:
-
-| English | Pikotika |
-|---|---|
-| penicillin | penasiran |
-| meter | meter |
-| liter | riter |
-| gram | kuram |
-
-(A loan takes no extra vowel on the end beyond what the syllable rules require.  **meter** and **metar** ('metal') differ by a single vowel and are allowed to; Pikotika has other such pairs, and adding a syllable to every loan that came near an existing word would cost more than it saved.)
-
 ## Inventing Compounds
 
 Making new words in Pikotika is easy, and follows this principle:
@@ -374,7 +223,7 @@ Compounds that have caught on and become standard words are collected in [COMPOU
 
 Modifiers (adjectives and adverbs) come before the word they modify (the base noun or verb): **tuke komi** = 'sweet food'.  This is just like how the initial roots in a compound word modify the final root; the only difference here is that they're multiple words, describing something rather than naming a specific concept.
 
-The one exception to this modifier-first rule is in naming things: here the proper noun comes _after_ the category word (if any), like **omo Sumis**, 'the person Smith'.  See the Proper Nouns section for details.
+The one exception to this modifier-first rule is in naming things: here the proper noun comes _after_ the category word (if any), like **omo Sumis**, 'the person Smith'.  See [Names and loanwords](https://pikotika.org/topics/names/) for details.
 
 Possession is shown the same way; the possessor comes before (modifies) the object.  Example: **eko sanaomo** is 'my doctor'.
 

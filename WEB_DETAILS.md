@@ -289,6 +289,16 @@ An index of cards plus one page per topic at `/topics/<slug>/`. The seventeen
 slugs are `WEBSITE_DESIGN.md`'s, and they are also `corpus.tsv`'s `topic`
 values, so a page and the sentences that support it are named the same thing.
 
+**`DETAILS.md` is emptied as pages are written**, as `WEBSITE_DESIGN.md` asks:
+its Numbers, Colors, and Proper Nouns and Loan Words sections were deleted once
+`/topics/numbers/`, `/topics/colors/` and `/topics/names/` covered them, and a
+comment at the head of the file records where each one went. The two
+cross-references from sections that stayed now link to the pages, and the
+comments in `pikotika.py`, `phonemes.py`, `numbers.js` and `adapt.js` that used
+to cite a `DETAILS.md` section cite the page instead. Nothing reads
+`DETAILS.md` at build time, so this cannot break a build -- which is exactly
+why a stale citation in it would go unnoticed.
+
 **Navigation between topics is hub and spoke** (decided 2026-08-19). Every
 topic page carries a "← Back to Topics" link at the top and the bottom, added
 by `topic_pages()` rather than written into each fragment, and there is nothing
@@ -333,20 +343,150 @@ turn out to move sideways a lot.
   card grid in it is two columns at most.
 - `nav_html` marks a section by prefix, so Topics stays lit on `/topics/colors/`.
 
-**The colors page is the first one written**, and it is the shape the others
-should follow: the six roots as swatches, the seven built colors as swatches
+**Three topic pages are written so far**: colors, names and numbers. Colors is
+the shape the plain ones should follow, and numbers the shape of one with a
+tool in it -- the tool first, under a one-paragraph lede, then the reference
+that explains what the tool just did.
+
+Colors: the six roots as swatches, the seven built colors as swatches
 showing their parse, then the grammar in one paragraph, then corpus sentences
 as ordinary `.example` blocks so chips and the play button come for free. The
 swatch list is `.swatches`; each `<li>` carries the color as `--sw`, and the
 band has a border so a near-background swatch is still an object in both
 themes.
 
+Numbers: the reader, then `.digits` -- a grid of numeral, word and character,
+with a fixed-width numeral column so the words line up and the list reads as a
+table rather than as prose. `.reader` is the name adapter's box with three
+lines reserved under the input, and `.aside` is a bordered note for the sort of
+aside that is only for some readers (兆 is a million here, not a trillion).
+
+## The number reader (`web/js/numbers.js`)
+
+The interactive half of `/topics/numbers/`: type a number, see how it is said,
+hear it. Unlike the name adapter, this one is **a port, not a first
+implementation** -- `pikotika.counting_words` and `decimal_words` already say
+how a numeral is read -- so it gets the conformance test `WEBSITE_DESIGN.md`
+asks for.
+
+- `build.py:check_numbers` runs both implementations over
+  `build.number_checks()` (170 numbers: every integer to 120, where the special
+  cases live, then one per decade, plus decimals, fractions, percentages and
+  ordinals) and fails the build on any disagreement in Latin, gloss or Han.
+  **The comparison goes through the reader's `spelled` form** -- the reading
+  written out in words. Nobody writes that (a number is written in digits,
+  `3/4` with a slash), but `parse_latin` can read it and `3/4` it cannot, so it
+  is the only bridge between a JavaScript reading and a Python one.
+- **The module takes no position on how a number is written**, only on how it
+  is said. That was not true at first: it returned a `written` form and the
+  page printed it, from when `DETAILS.md` had fractions written **3 in 4**.
+- **Most cases are now also compared as typed.** `pikotika.py` learned `/` and
+  `%` (see below), so `check_numbers` parses the raw case as well and checks
+  that both implementations read it the same. An ordinal is the exception:
+  `7th` is English, and only its reading is Pikotika.
+- **Han is checked too**, and it is where the reading gets interesting: a free
+  `wun` renders as `1` but a bound one as 一, so **21st** is `2 十 一序`.
+- `build.number_forms()` is the reader's whole vocabulary -- the ten digits, the
+  four powers of ten, and `parte` / `in` / `inkaton` / `orten` -- derived from
+  `pikotika.DIGITS` rather than typed out. `check_numbers` asserts that
+  `numbers.js:vocabulary()` agrees with it, because a word the reader can say
+  that is not in that list would simply be **silent**, and nothing else would
+  notice.
+- Integers go through `BigInt`, so the port matches Python's unbounded ints
+  instead of going fuzzy at 2^53. Input is capped at 24 digits: nothing breaks
+  past that (a million millions is `miron miron`), but the reading is no longer
+  something anyone would say.
+- **Negatives are refused with a note**, not adapted. There is no settled
+  Pikotika word for a minus sign, and the reader is not the place to invent
+  one.
+- A denominator of 100 is read as a percentage: `50/100` and `50%` are the same
+  answer.
+
+### Its audio is the one thing on the site that is stitched
+
+`GAME_DESIGN.md` and the Audio section below both say sentences are generated
+whole, never concatenated from word clips, because each word carries its own
+stress and final fall. That still holds -- but a reading is **unbounded**.
+There is no clip for `12345` and there never can be, so the reader chains word
+clips and takes the seams.
+
+- **A third clip set, `numbers`** (`gen_audio.number_items`,
+  `web/audio/numbers/` + `numbers.json`), 31 clips, ~180 KB. Rendered again
+  rather than reusing the `words` set, because that set alternates between two
+  voices -- which over `tekas pits kiru, tets katon wats tekas kins` would
+  change speaker four times inside one number. `NUMBER_VOICE` is one voice for
+  the whole set.
+- `site.js:playSequence` schedules the clips against `AudioContext.currentTime`
+  rather than chaining `onended` handlers: `onended` fires on the main thread
+  and would inherit whatever jank is there, which on a chain is audible as
+  uneven gaps. `CHAIN_GAP` between words, `CHAIN_PAUSE` at the comma pikotika
+  puts before a thousands group. A second press stops the first reading rather
+  than talking over it.
+- Tapping one of the **Try** chips fills the box *and* plays, since the tap is
+  already the user gesture that unlocks the `AudioContext`.
+- **The reading is chipped like any other Pikotika on the site.** That works
+  because a reading is only ever the fourteen number words plus, for an
+  ordinal, one compound -- and **every ordinal is a standing compound**, 1st
+  through 10th and 100th, 1000th and 1000000th, which is the complete set
+  because a reading always ends in a digit or a scale word. So `tekas wunorten`
+  is two real entries and there is no chip on the page that opens nothing.
+- **An ordinal with a standing compound gets one clip, not two.**
+  `numbers.js:ORDINAL_CLIPS` is the set, and `suffix()` emits `a: [form]` for a
+  member and `a: [digit, 'orten']` otherwise. It matters: `sensorten` is a
+  0.94 s clip against 0.69 + 0.75 s of two separately-stressed words, which is
+  audibly two words and not one. The last word of *any* ordinal reading is one
+  of these, so 12345th ends in a single `kinsorten` like 5th does, and nothing
+  chains.
+- `build.py:ordinal_glosses` reads the set **out of compounds.tsv** rather than
+  listing it, so an ordinal recorded on one side and not the other fails the
+  build -- a form claimed in `numbers.js` with no clip is simply silent, and
+  `check_numbers` names both directions of the mismatch.
+
+### `pikotika.py` reads `/` and `%` too
+
+Added after the page settled on writing a fraction **3/4** and a percentage
+**50%** rather than spelling them **3 in 4** and **50 inkaton**. The tool is
+internal, but a converter that cannot read the notation its own site teaches is
+a trap for a later session.
+
+`fraction_words` and `percent_words` join `decimal_words` and `clock_words`
+under `numeral_words`, which is the single hook both `parse_latin` and
+`parse_han` go through -- so the notation works in every direction at once, and
+`3/4` renders back as `3/4` in Latin and Han while reading as `tets in wats`.
+**A denominator of 100 folds to `inkaton`**, so `50/100` and `50%` give the
+same reading, which is what the web reader already did.
+
+`phonemes.NUMERAL` grew the same two marks, so a sentence with `30%` in it is
+spoken as `tets tekas inkaton` instead of being handed to an English voice as
+"thirty percent".
+
+### A numeral in a sentence had never been spoken right
+
+Found while writing the page, and older than it: `phonemes.py` passed digits
+through untouched, so Kokoro -- an English model being handed an Arabic numeral
+-- said them **in English**. Every corpus clip with a digit in it had been
+saying "twenty moni por wun" since the audio pipeline was built.
+
+`phonemes.spell_numerals` now expands a free-standing numeral to its reading
+before anything is phonemized, which is where the fix belongs: `phonemes.py` is
+the one description of how the language sounds, and the sound of **20** is
+`pits tekas`. The run has to be free-standing -- a digit bound inside a
+compound is part of that word -- which is the same test
+`pikotika.numeral_words` applies.
+
+The trap this sprang: **clips are cached by their text, and the text did not
+change.** Both `private/audio-cache/` and the encoded `.m4a` had to be deleted
+for every utterance containing a digit before `gen_audio` would re-render them;
+`build_files` skips an `.m4a` that already exists. 24 sentences were affected.
+
 ## The name adapter (`web/js/adapt.js`)
 
 **The first implementation of name adaptation anywhere in the repo** (written
 2026-08-19). `pikotika.py` does not adapt names; it looks them up in
 `names.tsv`. The rules were only prose in `DETAILS.md` §"Proper Nouns and Loan
-Words" until the `/topics/names/` converter needed to run them.
+Words" until the `/topics/names/` converter needed to run them -- and that
+section has since been migrated into the page and deleted, so the page and this
+module are now the only statement of them.
 
 - **Two paths in.** `adaptPhones()` takes ARPAbet and is the real one --
   adaptation follows sound, and `names.tsv` now records the pronunciation each
@@ -441,6 +581,7 @@ It carries its own ffmpeg, so the encode does not depend on whatever is on
 | `gen_audio.py` | renders clips, builds the sprites |
 | `private/audio-cache/` | WAVs keyed by voice and utterance; gitignored |
 | `web/audio/words/*.m4a` + `words.json` | one file per word |
+| `web/audio/numbers/*.m4a` + `numbers.json` | the number reader's 31 words, one voice |
 | `web/audio/sentences/*.m4a` + `sentences.json` | one file per sentence |
 
 `phonemes.py` was lifted out of the `private/speak.py` prototype, which now
@@ -545,5 +686,8 @@ exists yet.
 
 The header audio toggle, and slow ("turtle") variants — Kokoro takes a speed
 parameter, so those are a second generation pass rather than `playbackRate`,
-which pitch-shifts. Vocab search, the grammar and topic pages, and the Tools
-converter are all still placeholders.
+which pitch-shifts. Vocab search is built; the grammar pages and the Tools
+converter are still placeholders, as are fourteen of the seventeen topics.
+The Tools "number and date reader" `WEBSITE_DESIGN.md` asks for can reuse
+`numbers.js` as it stands, and wants clock times and dates added to it --
+`pikotika.clock_words` is already there to port and to check against.

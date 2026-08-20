@@ -76,7 +76,7 @@ DIGITS = {"0": "no", "1": "one", "2": "two", "3": "three", "4": "four",
           "10": "ten", "100": "hundred", "1000": "thousand",
           "1000000": "million"}
 
-# DETAILS.md "## Numbers" gives the reading of any integer: positional, largest
+# pikotika.org/topics/numbers/ gives the reading of any integer: positional, largest
 # scale first, with the multiplier left off a leading scale word (11 is `ten one`,
 # not `one ten one`; 500 is `five hundred` but 100 is just `hundred`).  A thousands
 # or millions group is set off from the rest by a comma -- 12345 is read
@@ -452,6 +452,38 @@ def clock_words(word):
         (counting_words(int(minute)) if int(minute) else [])
 
 
+# A fraction is written with a slash, as in English, and read with `in` between
+# the two numbers: **3/4** is `three in four`.  `in` is the ordinary preposition
+# doing its ordinary job, so there is no special word here.
+FRACTION_MARK = "in"
+
+# A percentage is a fraction whose denominator is already agreed on, and 'in a
+# hundred' is a standing compound, so **50%** is `five ten in-hundred` -- as is
+# **50/100**, written the long way.
+PERCENT_WORD = ["in", "hundred"]
+PERCENT_DENOMINATOR = 100
+
+
+def fraction_words(word):
+    """'3/4' -> [[three], [in], [four]].  None if not a written fraction."""
+    top, slash, bottom = word.partition("/")
+    if not slash or not top.isdigit() or not bottom.isdigit():
+        return None
+    if int(bottom) == PERCENT_DENOMINATOR:
+        return counting_words(int(top)) + [list(PERCENT_WORD)]
+    return counting_words(int(top)) + [[FRACTION_MARK]] + \
+        counting_words(int(bottom))
+
+
+def percent_words(word):
+    """'50%' -> [[five], [ten], [in, hundred]].  None if not a percentage."""
+    if not word.endswith("%"):
+        return None
+    body = word[:-1]
+    amount = counting_words(int(body)) if body.isdigit() else decimal_words(body)
+    return amount + [list(PERCENT_WORD)] if amount else None
+
+
 def numeral_words(word):
     """The several words a written numeral is read as, or None if it is not one.
 
@@ -460,12 +492,13 @@ def numeral_words(word):
     """
     if word.isdigit():
         return counting_words(int(word))
-    return decimal_words(word) or clock_words(word)
+    return (decimal_words(word) or clock_words(word)
+            or fraction_words(word) or percent_words(word))
 
 
 # A numeral is written with digits but read as several words, and the two must not
 # be confused: 1.25 is *read* `one part two five` but stays **1.25** on the page, in
-# Latin and Han alike (DETAILS.md, "## Numbers").  So a written numeral is kept as
+# Latin and Han alike (pikotika.org/topics/numbers/).  So a written numeral is kept as
 # one word carrying both -- the digits it was written with, and the words it is read
 # as -- and each notation takes the half it needs.  Deriving the digits back from the
 # reading is what loses `.` and `:`, and turns 12345 into `十 2 千, 3 百 4 十 5`.

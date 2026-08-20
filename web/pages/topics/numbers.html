@@ -1,0 +1,211 @@
+<h1>Numbers</h1>
+
+<p class="lede">Pikotika writes numbers in the digits you already use, so there
+is nothing to learn about writing them. All you learn is how to say them — ten
+digit words, four words for the powers of ten, and one pattern with no
+exceptions in it.</p>
+
+<h2>Say any number</h2>
+
+<div class="reader" id="numreader">
+  <label class="reader-label" for="numreader-in">Type a number</label>
+  <input id="numreader-in" type="text" inputmode="decimal" autocomplete="off"
+         spellcheck="false" placeholder="12345">
+  <div class="reader-out" id="numreader-out" aria-live="polite"></div>
+  <p class="reader-note" id="numreader-note"></p>
+  <p class="reader-try">Try <button type="button" class="reader-eg">42</button>
+    <button type="button" class="reader-eg">2026</button>
+    <button type="button" class="reader-eg">1.25</button>
+    <button type="button" class="reader-eg">3/4</button>
+    <button type="button" class="reader-eg">50%</button>
+    <button type="button" class="reader-eg">7th</button></p>
+</div>
+
+<h2>The ten digits</h2>
+
+<p>Every digit from two to nine ends in a <code>-ts</code>, <code>-ks</code>, or <code>-ns</code>, so a run of them is easy to hear apart from the words around it.</p>
+
+<ul class="digits">
+  <li><span class="num">0</span> <span class="pk">nem</span>
+      <span class="han">无</span></li>
+  <li><span class="num">1</span> <span class="pk">wun</span>
+      <span class="han">一</span></li>
+  <li><span class="num">2</span> <span class="pk">pits</span></li>
+  <li><span class="num">3</span> <span class="pk">tets</span></li>
+  <li><span class="num">4</span> <span class="pk">wats</span></li>
+  <li><span class="num">5</span> <span class="pk">kins</span></li>
+  <li><span class="num">6</span> <span class="pk">siks</span></li>
+  <li><span class="num">7</span> <span class="pk">sens</span></li>
+  <li><span class="num">8</span> <span class="pk">ots</span></li>
+  <li><span class="num">9</span> <span class="pk">noks</span></li>
+</ul>
+
+
+<h2>And four more words</h2>
+
+<ul class="digits digits-scale">
+  <li><span class="num">10</span> <span class="pk">tekas</span>
+      <span class="han">十</span></li>
+  <li><span class="num">100</span> <span class="pk">katon</span>
+      <span class="han">百</span></li>
+  <li><span class="num">1000</span> <span class="pk">kiru</span>
+      <span class="han">千</span></li>
+  <li><span class="num">1000000</span> <span class="pk">miron</span>
+      <span class="han">兆</span></li>
+</ul>
+
+<p>That is the whole vocabulary. Fourteen words say every number there is.</p>
+
+<p class="aside">Japanese and Korean readers: 兆 here is a million, 10<sup>6</sup>,
+not 10<sup>12</sup>. Pikotika groups by thousands, the way the metric prefixes
+do, so 兆 lines up with <em>mega-</em>.</p>
+
+<h2>Putting them together</h2>
+
+<p> Count the hundreds, then say <span class="pk">katon</span>. Count the tens, then say <span class="pk">tekas</span>.There are no special words for eleven
+through nineteen, nor for twenty, thirty, forty: twenty is simply
+<em>two tens</em>.</p>
+
+<table class="rules">
+  <tr><th>Number</th><th>Said</th><th>Literally</th></tr>
+  <tr><td>11</td><td><span class="pk">tekas wun</span></td>
+      <td class="gloss">ten one</td></tr>
+  <tr><td>20</td><td><span class="pk">pits tekas</span></td>
+      <td class="gloss">two ten</td></tr>
+  <tr><td>35</td><td><span class="pk">tets tekas kins</span></td>
+      <td class="gloss">three ten five</td></tr>
+  <tr><td>100</td><td><span class="pk">katon</span></td>
+      <td class="gloss">hundred</td></tr>
+  <tr><td>500</td><td><span class="pk">kins katon</span></td>
+      <td class="gloss">five hundred</td></tr>
+  <tr><td>678</td><td><span class="pk">siks katon sens tekas ots</span></td>
+      <td class="gloss">six hundred seven ten eight</td></tr>
+</table>
+
+<p>Notice 100 and 11: you leave the <span class="pk">wun</span> off in front of
+a power of ten. <em>One hundred</em> is just <span class="pk">katon</span>;
+saying <span class="pk">wun katon</span> is not wrong, but it's longer than it needs to be.</p>
+
+<p>Past a thousand nothing changes except that the groups get a comma, which is
+a pause when you say it aloud:</p>
+
+<div class="example">
+  <p class="en">12345</p>
+  <span class="pk">tekas pits kiru, tets katon wats tekas kins</span>
+</div>
+
+<p><strong>Write no thousands separators.</strong> Half the world puts a comma
+where the other half puts a period, so Pikotika writes <b>12345</b> and leaves
+the gap out. The period is always the decimal point.</p>
+
+<h2>Parts of a number</h2>
+
+<p>Four small extensions, each one word.</p>
+
+<table class="rules">
+  <tr><th>Written</th><th>Said</th><th>What the extra word is</th></tr>
+  <tr><td>1.25</td><td><span class="pk">wun parte pits kins</span></td>
+      <td><span class="pk">parte</span> <span class="gloss">part</span> is the
+          decimal point; the digits after it are read one at a time</td></tr>
+  <tr><td>3/4</td><td><span class="pk">tets in wats</span></td>
+      <td><span class="pk">in</span> is the same everyday word as English
+          <em>in</em> — three in four</td></tr>
+  <tr><td>50%</td><td><span class="pk">kins tekas inkaton</span></td>
+      <td><span class="pk">inkaton</span>
+          <span class="gloss">in-hundred</span> is a percent: the fraction whose
+          denominator everyone already knows</td></tr>
+  <tr><td><span class="pk">kinsorten</span></td>
+      <td><span class="pk">kinsorten</span></td>
+      <td><span class="pk">orten</span> <span class="gloss">sequence</span> on
+          the end makes an ordinal — fifth. The one number written in letters,
+          because it is a single compound word</td></tr>
+</table>
+
+<p>A fraction is written with a slash, just as in English: <b>3/4</b>.  To read out loud, just read the slash as <span class="pk">in</span>.  Note that
+<span class="pk">in</span> is doing nothing special here — it is the ordinary
+preposition, and <em>three in four</em> is what 3/4 means.</p>
+
+<p>Ordinals are the one number written in letters, because each is a single
+compound word. Every one you are likely to want is a standing word —
+<span class="pk">wunorten</span>, <span class="pk">pitsorten</span>,
+<span class="pk">tetsorten</span> and so on up through
+<span class="pk">tekasorten</span>, plus
+<span class="pk">katonorten</span>, <span class="pk">kiruorten</span> and
+<span class="pk">mironorten</span> — and they keep working inside a larger
+number, since only the last word takes the suffix: 21st is
+<span class="pk">pits tekas wunorten</span>.</p>
+
+<h2>Counting things</h2>
+
+<p>A number is an ordinary modifier, so it goes straight in front of what it
+counts. Nothing agrees with it, and there is no plural to remember.</p>
+
+<div class="example">
+  <p class="en">Two nights.</p>
+  <span class="pk">2 nemyan.</span>
+</div>
+
+<div class="example">
+  <p class="en">One room, one bed.</p>
+  <span class="pk">1 kamar, 1 tormi.</span>
+</div>
+
+<p>You may write the number as a digit or as its word — <span class="pk">2
+nemyan</span> and <span class="pk">pits nemyan</span> are the same two nights,
+said the same way. Digits are the usual choice, and the only choice once the
+number is long.</p>
+
+<p>For an amount you are not counting exactly, three ordinary words do the
+work: <span class="pk">nem</span> <span class="gloss">no</span>,
+<span class="pk">mur</span> <span class="gloss">many</span>, and
+<span class="pk">pan</span> <span class="gloss">all</span>. To ask, use
+<span class="pk">ker mesur</span> — <em>what amount</em> — or, for a price,
+<span class="pk">ker moni</span>.</p>
+
+<div class="example">
+  <p class="en">How much are the bananas?</p>
+  <span class="pk">Ronkayoropomo ri ker moni?</span>
+</div>
+
+<div class="example">
+  <p class="en">Twenty each, or a hundred for six.</p>
+  <span class="pk">20 moni por wun, sive 100 moni por 6.</span>
+</div>
+
+<div class="example">
+  <p class="en">Six bananas and four apples — one hundred sixty.</p>
+  <span class="pk">6 ronkayoropomo kum 4 rotunpomo: 160 moni.</span>
+</div>
+
+<h2>Numbers in the wild</h2>
+
+<div class="example">
+  <p class="en">There's a 30% chance of rain.</p>
+  <span class="pk">Ri 30 inkaton ruva pos.</span>
+</div>
+
+<div class="example">
+  <p class="en">How old are you?</p>
+  <span class="pk">Tu anyoturan ri ker?</span>
+</div>
+
+<div class="example">
+  <p class="en">I'm 34 years old.</p>
+  <span class="pk">Eko anyoturan ri 34.</span>
+</div>
+
+<div class="example">
+  <p class="en">Room twelve, up the stairs, on the right.</p>
+  <span class="pk">Kamar 12, sur in surmoto, in rem.</span>
+</div>
+
+<div class="example">
+  <p class="en">The numbers are all there.</p>
+  <span class="pk">Pan mesurtika ri in kitakarta.</span>
+</div>
+
+<p>Clock times, dates, and years all reuse exactly these words with one more
+word standing in for the punctuation — <span class="pk">ora</span> for the
+colon, and <span class="pk">anyo</span>, <span class="pk">mese</span> and
+<span class="pk">yan</span> for a year, a month and a day. Those get their own
+pages, under Telling time and Dates and weekdays.</p>

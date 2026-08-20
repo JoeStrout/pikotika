@@ -137,6 +137,7 @@ review; re-examine; look over again	again-see	Verbs	3
 fly; flight	air-go	Verbs	3	
 weather	air-manner	Nature	3	
 potato	earth-grain	Food	3	
+eighth (in a series); 8th	eight-sequence	Quantity	3	
 last; final; the end (of a series)	finish-sequence	General heads;Time direction	3	
 alcohol (usually wine)	fire-water	Food	3	
 fifth (in a series); 5th	five-sequence	Quantity	3	
@@ -152,6 +153,7 @@ vegetables	green-food	Food	3
 park	green-place	Places, arts, appearance;Nature	3	
 green light (permission); go-ahead	green-say	Grammar and logic	3	
 cat; pet	home-animal	Nature	3	
+hundredth (in a series); 100th	hundred-sequence	Quantity	3	
 percent; per cent; %	in-hundred	Quantity	3	
 remember; retain; keep in mind; memory	know-have	Verbs	3	
 test (of knowledge); exam; quiz	know-try	Verbs	3	
@@ -165,12 +167,14 @@ north	map-up	Space and direction	3
 shame	me-bad-feel	Feelings	3	
 pride	me-good-feel	Feelings	3	
 coin	metal-money	People and society;Material	3	
+millionth (in a series); 1000000th	million-sequence	Quantity	3	
 price; fee; cost	money-amount	People and society;Quantity	3	
 earn	money-get	Verbs;People and society	3	
 concert hall	music-home	Places, arts, appearance	3	
 musical instrument	music-tool	Made things;Places, arts, appearance	3	
 business card	name-page	Made things	3	
 list; roster; register	name-sequence	General heads	3	
+ninth (in a series); 9th	nine-sequence	Quantity	3	
 gluten-free food	no-yellow-grain-food	Food	3	
 not enough; insufficient	not-all	Quantity	3	
 random; disordered; messy	not-sequence	Qualities	3	
@@ -190,8 +194,12 @@ tomato	red-fruit	Food	3
 road map; roadmap	road-map	Made things	3	
 language; tongue (language)	say-manner	People and society	3	
 step (in a procedure)	sequence-part	General heads	3	
+seventh (in a series); 7th	seven-sequence	Quantity	3	
+sixth (in a series); 6th	six-sequence	Quantity	3	
 sand; gravel	small-stone	Nature;Material	3	
 sunny	sun-air	Nature;Qualities	3	
+tenth (in a series); 10th	ten-sequence	Quantity	3	
+thousandth (in a series); 1000th	thousand-sequence	Quantity	3	
 third (in a series); 3rd	three-sequence	Quantity	3	
 calendar	time-page	Time direction;Made things	3	
 schedule; timetable	time-sequence	General heads;Time direction	3	

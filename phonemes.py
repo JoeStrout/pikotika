@@ -106,6 +106,41 @@ def word_phonemes(word):
     return "".join(out)
 
 
+# A numeral is *written* in digits and *said* in words -- **20 moni** is `pits
+# tekas moni` (pikotika.org/topics/numbers/) -- so the digits have to be spelled out
+# before anything is phonemized.  Left alone they reach the engine as digits,
+# which is an English text-to-speech model being handed an Arabic numeral: it
+# says "twenty", in English, in the middle of a Pikotika sentence.
+#
+# The run must be free-standing.  A digit bound inside a compound is part of
+# that word and stays a digit, which is the same test pikotika.numeral_words
+# applies.  The marks that can sit inside one are the decimal point, the colon
+# of a clock time, and the slash of a fraction; `%` closes one.
+NUMERAL = re.compile(r"(?<![0-9A-Za-z])\d+(?:[./:]\d+)?%?(?![0-9A-Za-z])")
+
+_tables = None
+
+
+def _tables_once():
+    global _tables
+    if _tables is None:
+        _tables = pikotika.Tables()
+    return _tables
+
+
+def spell_numerals(latin):
+    """`Kamar 12, sur` -> `Kamar tekas pits, sur`.
+
+    The comma pikotika puts between a thousands group and the rest survives
+    into the phonemes, where Kokoro reads it as the pause it is."""
+    def spell(match):
+        words = pikotika.numeral_words(match.group(0))
+        if words is None:
+            return match.group(0)
+        return pikotika.render_latin(words, _tables_once())
+    return NUMERAL.sub(spell, latin)
+
+
 def to_phonemes(latin):
     """A line of Latin Pikotika -> a line of phonemes, punctuation intact.
 
@@ -113,7 +148,8 @@ def to_phonemes(latin):
     question marks as prosody, which is most of what makes a sentence sound
     like a sentence rather than a list of words.
     """
-    return re.sub(r"[a-zA-Z]+", lambda m: word_phonemes(m.group(0)), latin)
+    return re.sub(r"[a-zA-Z]+", lambda m: word_phonemes(m.group(0)),
+                  spell_numerals(latin))
 
 
 ALPHABET = set(CONSONANTS) | set(VOWELS)
