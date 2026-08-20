@@ -152,8 +152,8 @@ def main() -> None:
     for form, names in merged.items():
         name = names[0]
         # A name that spells an existing word is kept, not dropped: case tells
-        # them apart everywhere but sentence-initially, where DETAILS.md's own
-        # answer is to write `omo Mira`.  Counted, though -- it is worth knowing
+        # them apart everywhere but sentence-initially, where
+        # pikotika.org/topics/names/ answers by writing `omo Mira`.  Counted, though -- it is worth knowing
         # how often the two collide.
         if pikotika.segment(form.lower(), tables) is not None:
             shadowed.append(f"{name} -> {form}")

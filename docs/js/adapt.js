@@ -184,7 +184,8 @@
      gives, so that is what this takes; build-time tooling feeds it in and the
      result is recorded in names.tsv.
 
-     The vowel map is the pronunciation table in DETAILS.md read backwards --
+     The vowel map is the pronunciation table at pikotika.org/grammar/pronunciation/
+     read backwards --
      Pikotika `e` is the vowel of *they*, so English EY lands there and IY lands
      on `i`, which is where *meter* and *Peter* get their first vowel. */
 

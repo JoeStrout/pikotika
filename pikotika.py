@@ -56,8 +56,8 @@ TSV = dict(delimiter="\t", quoting=csv.QUOTE_NONE, quotechar=None)
 # a second thing to keep in sync, which is how the old LI/E/PI naming drifted.
 # roots.tsv uses these as the gloss keys too, so the mapping is the identity
 # and is kept only so the two roles stay visibly distinct.
-# **rite** is a fourth particle spelled out of two others (DETAILS.md, "Subordinate
-# Clauses"), so it costs no root and needs no character of its own.  It is not in
+# **rite** is a fourth particle spelled out of two others
+# (pikotika.org/grammar/relative/), so it costs no root and needs no character of its own.  It is not in
 # roots.tsv; this table is folded into the root tables at load time so that every
 # accessor -- is_particle, form_of, han_of -- treats it like any other particle.
 COMPOUND_PARTICLES = {
@@ -421,7 +421,7 @@ def is_punct_text(s):
 
 # A decimal is written with digits but spoken as several words: the `.` is `part`,
 # and the digits after it are read one at a time -- **1.25** is `one part two five`
-# (DETAILS.md).  So a decimal token parses into that many words and renders as that
+# (pikotika.org/topics/numbers/).  So a decimal token parses into that many words and renders as that
 # many words; only the written digit form is one token.
 DECIMAL_POINT = "part"
 
@@ -693,12 +693,13 @@ def segment(form, t, raw=None):
 def name_wins(token, start, t):
     """Does a capitalized token stand for a name rather than for roots?
 
-    Names are capitalized in every notation (see DETAILS.md, Writing Systems),
+    Names are capitalized in every notation (pikotika.org/grammar/writing/),
     so case alone separates Mira the name from **mira** 'surprise'.  The one
     place it cannot is the start of a sentence, where every word is capitalized:
     there the root wins, and the name is only the fallback for a token no roots
     can spell.  Write **omo Mira** to force the name -- which is exactly the
-    disambiguation DETAILS.md prescribes for a name that collides with a word.
+    disambiguation pikotika.org/topics/names/ prescribes for a name that
+    collides with a word.
     """
     if not token[:1].isupper():
         return False

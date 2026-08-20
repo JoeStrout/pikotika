@@ -39,8 +39,8 @@ VOWELS = {"a": "ɑ", "e": "e", "i": "i", "o": "o", "u": "u"}
 
 STRESS = "ˈ"
 
-# Two positional variants, both of them readings DETAILS.md already lists as
-# correct for the letter.  Each is written into the word as a placeholder before
+# Two positional variants, both of them readings pikotika.org/grammar/pronunciation/
+# already lists as correct for the letter.  Each is written into the word as a placeholder before
 # the letters are looked up, so that the tables above stay a plain one-to-one
 # map and the variants are visibly the exceptions they are.
 VELAR_N = True      # `n` is 'ng' before p, t or k
@@ -49,7 +49,7 @@ INITIAL_Y = True    # `y` is 'zh' (the s of 'measure') at the start of a word
 MARKS = {"\0": "ŋ", "\1": "ʒ"}
 
 # The three particles lean on the neighboring word and take no stress of their
-# own (DETAILS.md, "Stressed syllable").  `rite` is a word and does take one.
+# own (pikotika.org/grammar/pronunciation/).  `rite` is a word and does take one.
 CLITICS = {"ri", "a", "te"}
 
 # -- transcription -----------------------------------------------------------

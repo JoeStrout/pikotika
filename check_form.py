@@ -19,16 +19,17 @@ important, and the order below is roughly the order in which a candidate dies:
    in the impact section, not here.
 
 2. **Collision**, exact and fuzzy.  Exact is obvious.  Fuzzy is not: the
-   pronunciation table in DETAILS.md gives every letter a *range* of correct
-   sounds, and two ranges can overlap, so two spellings can be one word in some
-   speaker's mouth.  `v` covers [v] and [f]; `w` covers [w] and [v]; so **arvo**
-   and **arwo** are the same word to anyone who takes the [v] option, and, worse,
-   **arvo** and **arpo** are the same word to a Spanish speaker, for whom the [b]
-   inside `p` and the [v] inside `v` are one sound.  This test is the one that
+   pronunciation table at pikotika.org/grammar/pronunciation/ gives every
+   letter a *range* of correct sounds, and two ranges can overlap, so two
+   spellings can be one word in some speaker's mouth.  `v` covers [v] and [f];
+   `w` covers [w] and [v]; so **arvo** and **arwo** are the same word to anyone
+   who takes the [v] option, and, worse, **arvo** and **arpo** are the same
+   word to a Spanish speaker, for whom the [b] inside `p` and the [v] inside
+   `v` are one sound.  This test is the one that
    most often kills an otherwise attractive candidate, and it is impossible to
    run reliably by eye.
 
-3. **Consonant structure.**  DETAILS.md says a word should be recognizable from
+3. **Consonant structure.**  That page says a word should be recognizable from
    its consonants alone, with vowels as a secondary cue.  Taken seriously, that
    makes two roots with the same consonants in the same places near-homophones
    however different they look on the page -- **ranko** 'white' and **ronka**
@@ -77,7 +78,7 @@ CONSONANTS = 'ptkvsrmnwy'
 CODAS = set('nmsr')
 FINAL_CLUSTERS = set(pikotika.CLUSTERS)
 
-# What each letter may be pronounced as, from the tables in DETAILS.md.  Two
+# What each letter may be pronounced as, from the pronunciation page.  Two
 # letters are confusable when these sets intersect -- not when the letters look
 # alike.  Written out in full rather than reduced to the one overlapping pair,
 # so that changing the pronunciation table changes the answer here too.

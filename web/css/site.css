@@ -1274,3 +1274,39 @@ p { margin: 0 0 1.1em; }
 .grammar-steps .grammar-next { margin-left: auto; text-align: right; }
 
 .summary-to { color: var(--text-muted); }
+
+/* --- parse it yourself ---------------------------------------------------
+   Every grammar page ends with two or three sentences to work out, each with
+   its answer behind a <details> the reader opens.  A native disclosure rather
+   than scripted, so the answers are still reachable with JavaScript off --
+   and, because a closed <details> is not searchable in some browsers, the
+   English is the only thing hidden: the Pikotika stays on the page. */
+
+.practice {
+  margin: 2.5rem 0 0;
+  padding: 1rem 1.2rem 1.2rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--bg-tint);
+}
+.practice h2 { margin-top: 0; }
+.practice > p { color: var(--text-muted); font-size: .95rem; }
+
+.practice ol { margin: 0; padding-left: 1.4rem; }
+.practice li { margin-bottom: 1rem; }
+.practice li:last-child { margin-bottom: 0; }
+.practice .pk { font-size: 1.1rem; }
+
+.practice details { margin-top: .25rem; font-size: .95rem; }
+.practice summary {
+  cursor: pointer;
+  width: fit-content;
+  color: var(--link);
+  font-size: .85rem;
+}
+.practice summary:hover { color: var(--link-hover); }
+.practice details p { margin: .3rem 0 0; }
+
+/* A Han line inside an example block.  It is not .pk: the form check parses
+   .pk as Latin, and chips and audio are keyed to the Latin line above it. */
+.example .han { display: block; color: var(--text-muted); margin-top: .15rem; }

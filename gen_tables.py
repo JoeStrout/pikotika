@@ -93,7 +93,7 @@ def render_roots(groups):
     for category, rows in groups:
         out += [f'## {category} ({len(rows)})', '']
         # both glosses in one cell: a learner memorizes the pair, and either
-        # one may be written in gloss notation (see DETAILS.md, "Gloss")
+        # one may be written in gloss notation (pikotika.org/grammar/writing/)
         out += table(['Gloss', 'Latin', 'Han', 'Covers'],
                      [(glosses(r), r.get('form'), r.get('han'),
                        r.get('covers')) for r in rows])

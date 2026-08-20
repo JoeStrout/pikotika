@@ -310,6 +310,65 @@ by walking every contiguous run of each word's roots (`subruns`), which is the
 same question `pikotika.contains_run` answers, asked once instead of per word.
 The file is 196 KB raw, 46 KB gzipped.
 
+## Grammar (`/grammar/`)
+
+An index plus twenty pages at `/grammar/<slug>/`, the slugs and grouping from
+`GRAMMAR_PLAN.md`.  The machinery is Topics' with two differences, both because
+**Grammar is read in order and Topics is not**: the index is a numbered list
+rather than a card grid (a grammar point has no natural picture, and the Han
+fallback that stands in for a missing topic icon would be arbitrary), and every
+page carries prev/next as well as the back link.  `grammar_steps()` walks the
+*written* pages, so an unwritten one is simply skipped rather than linked into.
+
+- `build.py:GRAMMAR_GROUPS` is the whole table: five groups, and per page a
+  slug, a title, and one line of what it answers.  That line is also the page's
+  meta/`og:` description, stripped of markup.
+- **A page is written when `web/pages/grammar/<slug>.html` exists**, exactly as
+  a topic is.  Until then its index entry renders inert and marked.
+- **`soften_grammar_links` demotes a link to an unwritten page to plain text.**
+  The index's "short version" links into the section by name and the pages
+  arrived one at a time; rather than author those links twice, the build turns
+  the ones that would 404 into `.link-soon` spans.  It runs over every authored
+  page, so a cross-reference between grammar pages is safe to write ahead of
+  the page it points at.
+- **All twenty are now written** (2026-08-20), so nothing is currently
+  softened.  The mechanism stays: it is what makes adding a twenty-first page,
+  or reordering, a one-file edit.
+
+**House shape of a page**, followed by all twenty: an `<h1>`, a `.lede`
+paragraph, then tables wherever a table will do the work of a paragraph, with
+`.example` blocks for anything that wants audio and word chips.  Examples are
+drawn from `corpus.tsv` where one fits, which is why the section added only 68
+new sentence clips: a corpus line already has its clip, its topic tag, and a
+second reader.
+
+**`.practice` is the new shared component** -- the two or three sentences to
+parse yourself that `WEBSITE_DESIGN.md` asks each page to end with.  Answers
+are behind a native `<details>`, not script, so they survive JavaScript being
+off; the Pikotika stays visible and only the English is hidden, since a closed
+`<details>` is not always reachable by the browser's find-in-page.
+
+**A Han line in an example block is `.han`, not `.pk`.**  `check_forms` parses
+every `.pk` string as Latin, so Han inside one fails the build.  Only
+`/grammar/writing/` shows Han lines at all -- the four-notation example block
+with a toggle that `WEBSITE_DESIGN.md` describes is not built, and until it is,
+Han on every page would be noise on nineteen of them.
+
+**Still missing from `/grammar/pronunciation/`**: `GRAMMAR_PLAN.md` asks for
+audio of one word said several equally-correct ways.  `gen_audio` renders one
+clip per utterance from `phonemes.py`, which is the single description of how
+the language sounds, so alternate readings would need a second mechanism -- a
+per-clip IPA override -- rather than a new page.  The page states the ranges in
+a table instead.
+
+**`DETAILS.md` has not been emptied of these sections yet.**  Every claim on
+the twenty pages was written from it and checked against it, but the deletion
+the design doc calls for is held: `CLAUDE.md`'s standing working rule is to
+read `DETAILS.md` in full as the authoritative spec, and cutting the Grammar,
+Pronunciation, Writing Systems and Inventing Compounds sections out of it
+without settling what the file becomes would leave that rule pointing at a
+husk.  What is left to migrate is listed in `GRAMMAR_PLAN.md`.
+
 ## Topics (`/topics/`)
 
 An index of cards plus one page per topic at `/topics/<slug>/`. The seventeen
@@ -875,8 +934,8 @@ Many of the icons used on the site (for example, on the topic cards) are Twemoji
 
 The header audio toggle, and slow ("turtle") variants — Kokoro takes a speed
 parameter, so those are a second generation pass rather than `playbackRate`,
-which pitch-shifts. Vocab search is built; the grammar pages and the Tools
-converter are still placeholders, as are fourteen of the seventeen topics.
+which pitch-shifts. Vocab search and all twenty grammar pages are built; the
+Tools converter is still a placeholder, as are twelve of the seventeen topics.
 The Tools "number and date reader" `WEBSITE_DESIGN.md` asks for can reuse
 `numbers.js` as it stands, including its `readClock`; what is still missing
 there is dates -- years, months and weekdays -- which want `/topics/dates/`
