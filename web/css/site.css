@@ -1310,3 +1310,29 @@ p { margin: 0 0 1.1em; }
 /* A Han line inside an example block.  It is not .pk: the form check parses
    .pk as Latin, and chips and audio are keyed to the Latin line above it. */
 .example .han { display: block; color: var(--text-muted); margin-top: .15rem; }
+
+/* --- an illustration beside a paragraph ----------------------------------
+   A flex row rather than a float: the image is as tall as several lines, so a
+   float would hang past its paragraph and into whatever follows, and every
+   such block would then need clearing. */
+
+.beside {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 1rem 0;
+}
+.beside p { margin-top: 0; }
+.beside img { flex: none; max-width: 100%; height: auto; }
+
+/* Below the measure a 157px image leaves the text about 160px to run in, which
+   is two or three words a line.  Stack instead. */
+@media (max-width: 32rem) {
+  .beside { flex-direction: column; align-items: center; }
+  .beside p { margin-bottom: .25rem; }
+}
+
+/* A list beside the image needs its markers inside the flex column, not
+   hanging into the gap. */
+.beside ol, .beside ul { margin: 0; }
+.beside > div > :last-child { margin-bottom: 0; }
