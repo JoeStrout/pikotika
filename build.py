@@ -117,6 +117,202 @@ TOPIC_GROUPS = [
 
 TOPICS_URL = "/topics/"
 
+# --- Grammar ---------------------------------------------------------------
+# Twenty pages under /grammar/, in five groups, per GRAMMAR_PLAN.md.  Unlike
+# Topics, the order is a reading order: a beginner who works down the list can
+# stop after "Making a sentence" and already say things.  That is why the
+# entries are an <ol> and why each page carries prev/next as well as a back
+# link -- Topics deliberately has no sideways navigation, and Grammar is the
+# case that comes out the other way.
+#
+# A page is written when web/pages/grammar/<slug>.html exists; until then its
+# entry renders inert and marked, exactly as an unwritten topic card does, so
+# the index shows the true shape of the section instead of links that 404.
+#
+#   slug, title, and one line of what the page answers.  No icons: a grammar
+#   point has no natural picture, and the Han character that stands in for a
+#   missing topic icon would be arbitrary here.
+GRAMMAR_GROUPS = [
+    ("Speaking and writing", [
+        ("pronunciation", "Pronunciation",
+         "Ten consonants and five vowels \u2014 and the wide range of accents "
+         "that are all equally correct."),
+        ("writing", "Pikotika in written form",
+         "The common Latin writing you've already seen, and two alternatives "
+         "for special occasions."),
+    ]),
+    ("Making a sentence", [
+        ("structure", "Basic sentence structure",
+         "The four slots available to every sentence, and the particles that mark them."),
+        ("nouns", "Nouns and pronouns",
+         "No articles, no plurals, no gender, no case \u2014 and what stands in "
+         "their place."),
+        ("predicate", "Describing the subject",
+         "What can follow <span class=\"pk\" data-chip=\"off\">ri</span>, and "
+         "why the language needs no word for \u2018is\u2019."),
+        ("prepositions", "Prepositional phrases",
+         "In, to, from, with, for \u2014 where the phrase goes, and when it is "
+         "the whole thing you are saying."),
+        ("negation", "Negation",
+         "<span class=\"pk\" data-chip=\"off\">non</span> and "
+         "<span class=\"pk\" data-chip=\"off\">nem</span>, and the difference "
+         "between \u2018not happy\u2019 and \u2018sad\u2019."),
+        ("questions", "Questions and answers",
+         "Put <span class=\"pk\" data-chip=\"off\">ker</span> where the answer "
+         "belongs. Nothing else moves."),
+        ("nosubject", "Commands and indefinite subjects",
+         "Two kinds of sentence with no subject: \u2018Stop!\u2019 and "
+         "\u2018It\u2019s stopping.\u2019"),
+    ]),
+    ("Building phrases", [
+        ("modifiers", "Modifiers (adjectives and adverbs)",
+         "Adjective, adverb, and possessive are one operation, and it always "
+         "comes before the word it modifies."),
+        ("modifier-order", "Stacking modifiers",
+         "Which modifier sits nearest the noun \u2014 and why you almost "
+         "certainly know already."),
+        ("te", "Grouping with TE",
+         "The rare particle that moves the boundary between the modifiers and "
+         "the word they modify."),
+        ("compounds", "Coining new words",
+         "Close up the spaces and you have a new word. How Pikotika grows "
+         "without growing."),
+    ]),
+    ("Time and possibility", [
+        ("aspect", "Time and aspect",
+         "Past, future, beginning, finished, still going \u2014 all without "
+         "touching the verb."),
+        ("mood", "Can, want, must",
+         "Five short words that carry ability, wish, permission, and "
+         "obligation."),
+        ("conditions", "Conditions and counterfactuals",
+         "If, and if only: how to open a condition and how to deny it."),
+    ]),
+    ("Putting it together", [
+        ("joining", "And, or, but, because",
+         "Three joining words that work at any size, and how to give a reason."),
+        ("comparison", "Comparison",
+         "More, less, and the same \u2014 with \u2018from all\u2019 doing the "
+         "work of a superlative."),
+        ("subordinate", "Subordinate clauses",
+         "A whole sentence used as the object of a verb, and where it ends."),
+        ("relative", "Relative clauses",
+         "\u2018The animal that the person ate\u2019 \u2014 two ways to hang a "
+         "clause on a noun."),
+    ]),
+]
+
+GRAMMAR_URL = "/grammar/"
+
+# Where the index's list gets spliced into web/pages/grammar.html.
+GRAMMAR_INDEX_MARK = "<!--GRAMMAR-INDEX-->"
+
+
+def grammar_fragment_path(slug: str) -> Path:
+    return WEB / "pages" / "grammar" / f"{slug}.html"
+
+
+def grammar_index() -> str:
+    """The index: one entry per page, grouped, with the unwritten ones inert."""
+    out = []
+    for group, entries in GRAMMAR_GROUPS:
+        out.append('<section class="grammar-group">')
+        out.append(f"  <h2>{group}</h2>")
+        out.append('  <ol class="grammar-list">')
+        for slug, title, blurb in entries:
+            body = (f'<span class="grammar-name">{title}</span>'
+                    f'\n        <span class="grammar-blurb">{blurb}</span>')
+            if grammar_fragment_path(slug).is_file():
+                inner = (f'<a href="{GRAMMAR_URL}{slug}/">{body}</a>')
+                cls = "grammar-item"
+            else:
+                inner = (f'<div>{body}'
+                         f'\n        <span class="grammar-soon">'
+                         f'coming soon!</span></div>')
+                cls = "grammar-item is-soon"
+            out.append(f'    <li class="{cls}">{inner}</li>')
+        out.append("  </ol>")
+        out.append("</section>")
+    return "\n".join(out)
+
+
+BACK_TO_GRAMMAR = ('<p class="topic-back"><a href="/grammar/">'
+                   '\u2190 Back to Grammar</a></p>')
+
+
+def grammar_written() -> list:
+    """(slug, title) for the pages that exist, in reading order."""
+    return [(slug, title)
+            for _group, entries in GRAMMAR_GROUPS
+            for slug, title, _blurb in entries
+            if grammar_fragment_path(slug).is_file()]
+
+
+def grammar_steps(written: list, i: int) -> str:
+    """Prev/next for one page.  Grammar is read in order and the groups make
+    that order explicit, so each page offers the neighbors as well as the way
+    back up.  Unwritten pages are simply not in the sequence -- the reader is
+    walked from one finished page to the next rather than into a 404."""
+    links = []
+    if i > 0:
+        slug, title = written[i - 1]
+        links.append(f'<a class="grammar-prev" href="{GRAMMAR_URL}{slug}/">'
+                     f'\u2190 {title}</a>')
+    if i < len(written) - 1:
+        slug, title = written[i + 1]
+        links.append(f'<a class="grammar-next" href="{GRAMMAR_URL}{slug}/">'
+                     f'{title} \u2192</a>')
+    if not links:
+        return ""
+    return ('<nav class="grammar-steps" aria-label="Grammar pages">'
+            + "".join(links) + "</nav>")
+
+
+def soften_grammar_links(content: str) -> str:
+    """Turn a link to an unwritten grammar page into plain text.
+
+    The index's summary links into the section by name, and those pages arrive
+    one at a time.  Rather than authoring the links twice -- once now as text,
+    once later as anchors -- the build demotes the ones that would 404, on the
+    same principle as the inert index entry: an honest dead end beats a link
+    that goes nowhere."""
+    written = {slug for slug, _title in grammar_written()}
+
+    def demote(m):
+        if m.group(1) in written:
+            return m.group(0)
+        return f'<span class="link-soon">{m.group(2)}</span>'
+
+    return re.sub(r'<a href="/grammar/([a-z-]+)/">(.*?)</a>', demote, content,
+                  flags=re.S)
+
+
+def grammar_pages() -> list:
+    """(url, content, <title>, description) for every grammar page written.
+
+    The back link and the prev/next strip are added here rather than written
+    into each fragment, so a page is just its content and the navigation
+    cannot drift page to page."""
+    written = grammar_written()
+    blurbs = {slug: blurb
+              for _group, entries in GRAMMAR_GROUPS
+              for slug, _title, blurb in entries}
+    pages = []
+    for i, (slug, title) in enumerate(written):
+        body = grammar_fragment_path(slug).read_text(encoding="utf-8").strip("\n")
+        content = "\n\n".join([BACK_TO_GRAMMAR, body,
+                                grammar_steps(written, i),
+                                BACK_TO_GRAMMAR.replace(
+                                    'topic-back"', 'topic-back is-end"')])
+        # The blurb doubles as the meta description; it is already one line of
+        # what the page answers, which is exactly what a search result wants.
+        description = re.sub(r"<[^>]+>", "", blurbs[slug])
+        pages.append((f"{GRAMMAR_URL}{slug}/", content,
+                      f"{title} \u2014 Pikotika", description))
+    return pages
+
+
+
 # Where the index's cards get spliced into web/pages/topics.html.
 TOPIC_CARDS_MARK = "<!--TOPIC-CARDS-->"
 
@@ -156,7 +352,7 @@ def topic_cards() -> str:
                 cls = "topic-card"
             else:
                 inner = (f'<div>\n        {body}'
-                         f'\n          <span class="topic-soon">not written yet</span>'
+                         f'\n          <span class="topic-soon">coming soon!</span>'
                          f'\n        </span>\n      </div>')
                 cls = "topic-card is-soon"
             out.append(f'    <li class="{cls}">{inner}</li>')
@@ -298,8 +494,12 @@ def authored_pages() -> list:
         content = (WEB / "pages" / fragment).read_text(encoding="utf-8")
         if url == TOPICS_URL:
             content = content.replace(TOPIC_CARDS_MARK, topic_cards())
+        if url == GRAMMAR_URL:
+            content = content.replace(GRAMMAR_INDEX_MARK, grammar_index())
         pages.append((url, content, title_tag, description))
-    return pages + topic_pages()
+    pages += topic_pages() + grammar_pages()
+    return [(url, soften_grammar_links(content), title_tag, description)
+            for url, content, title_tag, description in pages]
 
 
 def page_sentences() -> list:

@@ -749,7 +749,8 @@ p { margin: 0 0 1.1em; }
    index on purpose -- see build.py:TOPIC_GROUPS. */
 
 .topic-group { margin: 0 0 2.5rem; }
-.topic-group h2 {
+.topic-group h2,
+.grammar-group h2 {
   font-size: .8rem;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -1185,3 +1186,91 @@ p { margin: 0 0 1.1em; }
 .seasons .en { font-size: .9rem; }
 .seasons .gloss { font-size: .85rem; }
 .seasons .han { font-size: .95rem; color: var(--text-muted); }
+
+
+/* --- Grammar (/grammar/) -------------------------------------------------
+   The index is a grouped list rather than Topics' card grid: a grammar point
+   has no natural picture, and the order is a reading order, so the entries are
+   an <ol> and each page carries prev/next as well as a back link.  See
+   build.py:GRAMMAR_GROUPS. */
+
+.summary {
+  margin: 0 0 2.5rem;
+  padding-left: 1.4rem;
+}
+.summary li { margin-bottom: .9rem; }
+.summary strong { font-weight: 600; }
+.summary a { white-space: nowrap; }
+
+.grammar-group { margin: 0 0 2.25rem; }
+
+.grammar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.grammar-item > a,
+.grammar-item > div {
+  display: block;
+  padding: .7rem .2rem .75rem;
+  border-bottom: 1px solid var(--border);
+  color: inherit;
+  text-decoration: none;
+}
+
+.grammar-item > a:hover { background: var(--bg-tint); }
+.grammar-item > a:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: -2px;
+}
+
+.grammar-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+.grammar-item > a .grammar-name { color: var(--link); }
+.grammar-item > a:hover .grammar-name { color: var(--link-hover); }
+
+.grammar-blurb {
+  display: block;
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-top: .15rem;
+}
+
+.grammar-item.is-soon > div { opacity: .62; }
+.grammar-soon {
+  display: inline-block;
+  margin-top: .3rem;
+  font-size: .7rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* A link to a page that has not been written yet, demoted to plain text by
+   build.py:soften_grammar_links so it cannot 404. */
+.link-soon {
+  color: var(--text-muted);
+  border-bottom: 1px dotted var(--border);
+}
+
+/* Prev/next.  Wraps to two rows on a narrow screen rather than squeezing two
+   long page titles onto one line. */
+.grammar-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .6rem 1.5rem;
+  margin: 2.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: .9rem;
+}
+.grammar-steps .grammar-next { margin-left: auto; text-align: right; }
+
+.summary-to { color: var(--text-muted); }
