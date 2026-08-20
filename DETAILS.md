@@ -5,6 +5,8 @@
        Numbers                      -> /topics/numbers/
        Colors                       -> /topics/colors/
        Proper Nouns and Loan Words  -> /topics/names/
+       Telling Time                 -> /topics/time/
+       Seasons                      -> /topics/seasons/
 
      The pages are built from web/pages/topics/*.html; edit the language there. -->
 
@@ -81,39 +83,6 @@ Proper names are written in Latin as above, and numbers are written using Arabic
 
 If you're not already used to Chinese or Japanese, this form may seem arcane.  You don't need to learn it right away.  But keep in mind, there are fewer than 200 characters to learn, and once you have them, it's both space-efficient and very quick to read.  It can also be written vertically, for example on signs or in comics.  Note that in this case, the particles do NOT rotate; they keep their standard orientation (just like the Han characters, but unlike some bits of Japanese notation).
 
-## Telling Time
-
-Clock times are written with digits and a colon, and read with **ora** (hour) standing in for the colon -- exactly as **parte** stands in for the decimal point (see [Numbers](https://pikotika.org/topics/numbers/)).
-
-| Written | Read | Meaning |
-|---|---|---|
-| **9:00** | **noks ora** | 9 o'clock |
-| **9:30** | **noks ora tets tekas** | 9:30 |
-| **15:45** | **tekas kins ora wats tekas kins** | 15:45 |
-
-We don't need to say "minute" in this case; the number after **ora** is understood to be minutes.  You can use the 24-hour clock, or you can clarify a 12-hour time by putting the part of day in front:
-
-| Pikotika | Han | Meaning |
-|---|---|---|
-| **suryan** | 上日 | morning (*up-sun*) |
-| **metseyan** | 中日 | noon, midday (*middle-sun*) |
-| **yan** | 日 | day, daytime |
-| **tunyan** | 下日 | afternoon, evening (*down-sun*) |
-| **nemyan** | 无日 | night (*no-sun*) |
-
-So **suryan noks ora** is 9 in the morning, and **nemyan noks ora** is 9 at night.  
-
-To speak of a *length* of time rather than a point in it, add **turan** (間, interval) after the amount.  So **noks ora** is 9 o'clock, but **noks ora turan** is "for nine hours"; **wun senseyan turan** is "for a week."  For smaller intervals, use **parte turan** for minutes, and **pikoparte turan** for seconds.
-
-For an approximate time, **pikotempo** (小时, *small-time*) is a moment (and does not need **turan**).  Finally, here are some words for referring to 'now' or generically in the past/future.
-
-| Pikotika | Han | Meaning |
-|---|---|---|
-| **tistempo** | 此时 | now |
-| **yertempo** | 前时 | in the past |
-| **tartempo** | 后时 | in the future |
-
-
 ## Dates and Days of the Week
 
 You name a calendar year in Pikotika with the year number plus **anyo** (年, 'year').  Example: **2026 anyo**, written 2026年 in Han characters, would be read **pits kiru pits tekas siks anyo**.  (Notice that when writing in Han form, no space is needed after the number; this is an exception to the usual rule of separating words with spaces or particles.)
@@ -122,7 +91,7 @@ Months use the same pattern: rather than having unique names, as in English, mon
 
 Do the same for days of the month, using **yan** (日, 'day'): write **1 yan** through **31 yan** (1日 to 31日 in Han form).
 
-A month name stays two words; it is not written solid as a compound.  So **pits mese** is February, and 'for two months' is **pits mese turan** -- **turan** is what marks a length of time, exactly as it does everywhere else (see Telling Time above), so there is nothing for a compound to disambiguate.
+A month name stays two words; it is not written solid as a compound.  So **pits mese** is February, and 'for two months' is **pits mese turan** -- **turan** is what marks a length of time, exactly as it does everywhere else (see [Telling time](https://pikotika.org/topics/time/)), so there is nothing for a compound to disambiguate.
 
 To specify a date or partial date, just write these out in year, month, day order.  As a shortcut for full dates when using Latin form, you can also separate the numbers with hyphens (i.e. ISO date format).  The examples below show the possible ways to write "August 9th", "August 2026", and "August 9th, 2026".
 
@@ -168,34 +137,6 @@ For any other distance, count the days and add **yer** ('ago') or **tar** ('from
 | **kins yan tar** | 5日后 | five days from now |
 | **tets senseyan yer** | 3 7日前 | three weeks ago |
 
-
-## Seasons
-
-A season is an **anyoparte** (年分, *year-part*), and the four seasons are named as follows.
-
-| Meaning | Gloss | Pikotika | Han |
-|---|---|---|---|
-| spring | *plant-time* | **arpotempo** | 木时 |
-| summer | *hot-time* | **wotempo** | 火时 |
-| autumn, fall | *fruit-time* | **pomotempo** | 果时 |
-| winter | *cold-time* | **rikustempo** | 冷时 |
-
-Much of the world has a wet and a dry season, and those are named the
-same way:
-
-| Meaning | Gloss | Pikotika | Han |
-|---|---|---|---|
-| rainy season, wet season | *rain-time* | **ruvatempo** | 雨时 |
-| dry season | *not-rain-time* | **nonruvatempo** | 不雨时 |
-
-To say when something happens, use **in** as with any other time: **in wotempo** ('in
-summer').  **tis wotempo** is 'this summer'.  To count seasons forward or back, add
-**yer** or **tar** at the end, exactly as with days: **pits wotempo yer** is 'two
-summers ago'.
-
-> **In wotempo yuveniire, tu ri ire ver kerroko?**
-> 内 火时 玩来行, 尔 ⊢ 行 向 何所?
-> 'Where are you going for summer vacation?'
 
 ## Inventing Compounds
 

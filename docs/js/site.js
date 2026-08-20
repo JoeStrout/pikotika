@@ -396,6 +396,17 @@
     });
   }
 
+  /* What to print as the headword.  For everything but a numeral that is the
+     form itself; a numeral is written in digits and said in words, so its
+     entry carries the reading as `say` and that is what a reader wants to see
+     -- tapping **7** should answer with **sens**, not with another 7.  The
+     digits are still on screen: they are the chip that was tapped, and they
+     are the Han line beside this.  `say` is computed by gen_lexicon from
+     pikotika.expand_numerals, so there is no numeral reader in here. */
+  function headword(entry) {
+    return entry.say || entry.form;
+  }
+
   function fill(entry, form) {
     var el = ensurePopover();
     el.textContent = '';
@@ -413,7 +424,7 @@
     head.className = 'wordpop-head';
     var word = document.createElement('span');
     word.className = 'wordpop-form pk';
-    word.textContent = entry.form;
+    word.textContent = headword(entry);
     head.appendChild(word);
     if (entry.han) {
       var han = document.createElement('span');
@@ -936,7 +947,7 @@
 
       var form = document.createElement('span');
       form.className = 'vocab-form pk';
-      form.textContent = entry.form;
+      form.textContent = headword(entry);
       head.appendChild(form);
 
       var han = document.createElement('span');
@@ -1296,11 +1307,157 @@
     render(false);
   }
 
+  /* --- the clock (/topics/time/) ------------------------------------------
+     Three fields and a clock face.  The reading is the 12-hour one, since
+     that is what the fields say and it is what a speaker would actually say
+     -- the part of the day in front, which is Pikotika's am/pm -- with the
+     24-hour reading under it as the other way to say the same moment.
+
+     The hands are the same SVG lines rotated, which is also why the face is
+     drawn in the page rather than built here: without JavaScript the page
+     still shows a clock, it just does not move. */
+
+  function initClock() {
+    var box = document.getElementById('clock');
+    if (!box || !window.pikotikaNumbers) return;
+
+    var hourSel = document.getElementById('clock-hour');
+    var minSel = document.getElementById('clock-minute');
+    var halfSel = document.getElementById('clock-half');
+    var out = document.getElementById('clock-out');
+    var note = document.getElementById('clock-note');
+    var hourHand = document.getElementById('clock-hand-hour');
+    var minHand = document.getElementById('clock-hand-minute');
+
+    function fill(select, values, pad) {
+      for (var i = 0; i < values.length; i++) {
+        var opt = document.createElement('option');
+        opt.value = String(values[i]);
+        opt.textContent = pad && values[i] < 10 ? '0' + values[i]
+                                                : String(values[i]);
+        select.appendChild(opt);
+      }
+    }
+
+    var hours = [], minutes = [], i;
+    for (i = 1; i <= 12; i++) hours.push(i);
+    for (i = 0; i < 60; i++) minutes.push(i);
+    fill(hourSel, hours, false);
+    fill(minSel, minutes, true);
+
+    /* The fields are a 12-hour clock; everything downstream works in 24. */
+    function hour24() {
+      var h = Number(hourSel.value) % 12;
+      return halfSel.value === 'pm' ? h + 12 : h;
+    }
+
+    function setFields(h24, minute) {
+      hourSel.value = String(h24 % 12 || 12);
+      minSel.value = String(minute);
+      halfSel.value = h24 >= 12 ? 'pm' : 'am';
+    }
+
+    /* One line: the reading, with a button that plays it as a chain of the
+       single-voice number clips -- the same stitching the number reader does,
+       and for the same reason: there is no clip for a whole time. */
+    function sayLine(result, className, label) {
+      var line = document.createElement('div');
+      line.className = className;
+      if (label) {
+        var lead = document.createElement('span');
+        lead.className = 'clock-lead';
+        lead.textContent = label;
+        line.appendChild(lead);
+      }
+      var said = document.createElement('span');
+      said.className = 'pk';
+      said.textContent = result.latin;
+      line.appendChild(said);
+      scanChips(line);
+
+      var steps = [];
+      result.words.forEach(function (w) {
+        if (w.sep) { steps.push({ pause: CHAIN_PAUSE }); return; }
+        w.a.forEach(function (form) { steps.push({ key: form }); });
+      });
+      var speak = document.createElement('button');
+      speak.type = 'button';
+      speak.className = 'example-speak reader-speak';
+      speak.setAttribute('aria-label', 'Play ' + result.latin);
+      speak.textContent = PLAY_GLYPH;
+      speak.addEventListener('click', function () {
+        playSequence('numbers', steps, speak);
+      });
+      line.appendChild(speak);
+      return { line: line, steps: steps, button: speak };
+    }
+
+    function render(andPlay) {
+      var h = hour24();
+      var minute = Number(minSel.value);
+      var text = h + ':' + (minute < 10 ? '0' + minute : minute);
+      var said = window.pikotikaNumbers.readClock(text, { hour12: true });
+      var full = window.pikotikaNumbers.readClock(text);
+
+      /* The hour hand moves with the minutes, or half past would look like
+         the hour exactly. */
+      var minAngle = minute * 6;
+      var hourAngle = (h % 12) * 30 + minute * 0.5;
+      minHand.setAttribute('transform', 'rotate(' + minAngle + ' 100 100)');
+      hourHand.setAttribute('transform', 'rotate(' + hourAngle + ' 100 100)');
+
+      out.textContent = '';
+      note.textContent = '';
+      if (!said.ok) { note.textContent = said.error; return; }
+
+      var main = sayLine(said, 'reader-say');
+      out.appendChild(main.line);
+
+      var gloss = document.createElement('p');
+      gloss.className = 'gloss reader-gloss';
+      gloss.textContent = said.gloss;
+      out.appendChild(gloss);
+
+      out.appendChild(sayLine(full, 'clock-alt',
+                              'On the 24-hour clock: ').line);
+
+      note.textContent = minute
+        ? 'Written ' + text + ' — the hour, then ora, then the minutes.'
+        : 'Written ' + text + ' — on the hour, the minutes go unsaid.';
+
+      if (andPlay) playSequence('numbers', main.steps, main.button);
+    }
+
+    [hourSel, minSel, halfSel].forEach(function (el) {
+      el.addEventListener('change', function () { render(false); });
+    });
+
+    var examples = box.querySelectorAll('.reader-eg');
+    for (i = 0; i < examples.length; i++) {
+      examples[i].addEventListener('click', function (e) {
+        var want = e.currentTarget.getAttribute('data-time');
+        if (want === 'now') {
+          var d = new Date();
+          setFields(d.getHours(), d.getMinutes());
+        } else {
+          var parts = want.split(':');
+          setFields(Number(parts[0]), Number(parts[1]));
+        }
+        render(true);
+      });
+    }
+
+    var now = new Date();
+    setFields(now.getHours(), now.getMinutes());
+    render(false);
+  }
+
   scanChips();
   addSentencePlayers();
   initVocab();
   initAdapter();
   initNumbers();
+  initClock();
 
   /* Pages that build their own markup -- Vocab results, the Tools converter --
      add .pk elements after this ran, so they need a way to chip them. */

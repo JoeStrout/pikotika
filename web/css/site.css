@@ -1039,6 +1039,12 @@ p { margin: 0 0 1.1em; }
 .digits-scale { grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
 .digits-scale .num { min-width: 7ch; }
 
+/* The same list with a word where the numeral would be -- the parts of the
+   day, and now/past/future -- so the columns have to hold a gloss, not two
+   digits. */
+.digits-words { grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+.digits-words .en { color: var(--text-muted); }
+
 .aside {
   font-size: .9rem;
   color: var(--text-muted);
@@ -1046,3 +1052,136 @@ p { margin: 0 0 1.1em; }
   padding-left: .9rem;
   margin: 1.25rem 0;
 }
+
+/* --- the clock (/topics/time/) -------------------------------------------
+   The reader box with three fields on one side and a clock face on the
+   other.  The face is drawn in the page and only its hands are moved from
+   JavaScript, so the picture survives with scripting off. */
+
+/* Three lines under the fields, so the box does not jump on the first change. */
+.clock .reader-out { min-height: 5.4rem; }
+
+.clock-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* The fields sit against the face and the reading runs the full width under
+   both -- a reading is long, and squeezing it into a column beside the clock
+   wraps the play button onto its own line. */
+.clock-fields {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  flex: 1 1 14rem;
+  align-self: center;
+}
+.clock-field { flex: 1 1 5rem; min-width: 4.5rem; }
+
+.clock-fields select {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: .45rem .5rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+.clock-fields select:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 1px;
+}
+
+.clock-face {
+  flex: none;
+  width: 11rem;
+  height: 11rem;
+}
+.clock-rim { fill: var(--surface); stroke: var(--border-strong); stroke-width: 2; }
+.clock-ticks line { stroke: var(--border-strong); stroke-width: 2.5; }
+.clock-nums text {
+  fill: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+.clock-hand {
+  stroke: var(--text);
+  stroke-linecap: round;
+  /* Short, so a jump across the dial reads as the hands turning. */
+  transition: transform .25s ease-out;
+}
+.clock-hand-hour { stroke-width: 6; }
+.clock-hand-minute { stroke-width: 4; stroke: var(--accent-deep); }
+.clock-pin { fill: var(--text); }
+
+@media (prefers-reduced-motion: reduce) {
+  .clock-hand { transition: none; }
+}
+
+/* Wrapped, the face is alone on its line; center it rather than leaving it
+   against the left edge under three fields. */
+@media (max-width: 32rem) {
+  .clock-grid { justify-content: center; }
+  .clock-face { width: 10rem; height: 10rem; }
+}
+
+/* The other way to say the same moment, under the reading proper. */
+.clock-alt {
+  display: flex;
+  align-items: baseline;
+  gap: .4rem;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+  font-size: .95rem;
+}
+.clock-alt .clock-lead { color: var(--text-muted); font-size: .85rem; }
+
+/* --- seasons (/topics/seasons/) ------------------------------------------
+   The swatch grid with a picture where the color band goes.  A season has no
+   color to show, but it does have a look, and six small images say what six
+   glosses would take a paragraph to. */
+
+.seasons {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  display: grid;
+  /* Two columns, not auto-fill.  There are four seasons and they want to read
+     as two rows of two; auto-fill fits three across the measure column and
+     leaves winter alone on a second row, which looks like an accident. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .9rem;
+}
+
+/* One column only where two would crowd -- a narrow phone. */
+@media (max-width: 24rem) {
+  .seasons { grid-template-columns: 1fr; }
+}
+
+.seasons li {
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+  align-items: flex-start;
+}
+
+.seasons img {
+  width: 72px;
+  height: 72px;
+  max-width: 100%;
+  margin-bottom: .3rem;
+  border-radius: 8px;
+  /* The art is drawn for a light ground; a tint keeps it from floating on the
+     dark one without needing a second set of files. */
+  background: var(--bg-tint);
+  border: 1px solid var(--border);
+}
+
+.seasons .en { font-size: .9rem; }
+.seasons .gloss { font-size: .85rem; }
+.seasons .han { font-size: .95rem; color: var(--text-muted); }

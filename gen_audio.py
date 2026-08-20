@@ -60,12 +60,23 @@ OUT_DIR = ROOT / "web" / "audio"
 # Word tiles alternate between them so the learner is not tuned to one speaker.
 # Dialogs and stories will pick by character instead -- hence voice_for() rather
 # than a constant.
-WORD_VOICES = ("af_sky", "bm_george")
+#
+# af_heart replaced af_sky throughout on 2026-08-20: af_sky puts a consonantal
+# onset in front of some vowel-initial words, so **ora** came out "dora" -- and
+# `ora` is every clock time on /topics/time/.  The artifact is the voice's, not
+# any one set's, so the swap had to be everywhere rather than in NUMBER_VOICE
+# alone: `ora` was on af_sky in the word set too, and half the sentence clips
+# that say a time with it.  Fixing only the reader would have put a clean
+# **ora** in the clock and a "dora" in the chip directly above it.
+WORD_VOICES = ("af_heart", "bm_george")
 
 # The number reader chains clips together, so its set is one voice throughout.
 # Alternating would change speaker four times inside `tekas pits kiru, tets
 # katon wats tekas kins`, which is one number.
-NUMBER_VOICE = "af_sky"
+#
+# This is a separate constant so a chained reading has one speaker, not so the
+# casting can differ; keep it whichever of WORD_VOICES is the female voice.
+NUMBER_VOICE = "af_heart"
 
 SPEED = 1.0
 
@@ -89,22 +100,30 @@ UNSAFE = re.compile(r"[^a-z0-9]+")
 
 
 def assign_voices(keys) -> dict:
-    """Split the set evenly between the two voices, stably.
+    """Give each utterance a voice, by its own hash.  Order-independent.
 
-    Not hash parity: that is only even on average, and over 613 words it drifts
-    a couple of standard deviations off -- 54/46 in practice, which is visibly
-    not the even split asked for.  Instead the keys are ordered by their hash
-    (an arbitrary but fixed order, so neither voice ends up with all the short
-    words or all of one letter) and cut at the median, which is exact.
+    A key's voice depends on nothing but the key, so **adding an utterance
+    never moves an existing one**, and the assignment generalizes to any number
+    of voices by widening WORD_VOICES.
 
-    Still stable as the lexicon grows: adding a coinage shifts the median by
-    half a slot, so at most a word or two changes voice and needs re-rendering,
-    rather than the half of the corpus that re-hashing would reassign.
+    This replaced an exact median split on 2026-08-20.  That version sorted the
+    keys by hash and cut the list in half, to guarantee a 50/50 share -- hash
+    parity was rejected for coming out 54/46 over 613 words.  The flaw is that
+    *the cut moves*: adding one corpus row shifts the median by half a slot and
+    reassigns whatever sits next to it.  A reassigned clip already has an
+    `.m4a`, `build_files` skips a file that exists, and so it keeps the old
+    voice under an index that claims the new one -- silently, with no error and
+    with check_audio still passing.  It happened on every corpus addition since
+    the pipeline was built; adding one sentence left six clips stale.
+
+    An approximate share is worth far more than an exact one here, and the
+    approximation is not even bad: measured at the changeover, 312/305 over the
+    words and 211/210 over the sentences.  The 54/46 that motivated the median
+    cut was a smaller sample being read as a trend.
     """
-    ordered = sorted(keys, key=lambda k: hashlib.sha1(k.encode("utf-8")).digest())
-    half = len(ordered) // 2
-    return {key: (WORD_VOICES[0] if i < half else WORD_VOICES[1])
-            for i, key in enumerate(ordered)}
+    return {key: WORD_VOICES[int(hashlib.sha1(key.encode("utf-8")).hexdigest(), 16)
+                             % len(WORD_VOICES)]
+            for key in keys}
 
 
 def cache_path(voice: str, text: str) -> Path:

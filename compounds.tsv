@@ -110,12 +110,15 @@ number; numeral; digit	amount-say	Quantity	3	4
 summer	hot-time	Time direction	3	4
 should	if-good	Grammar and logic	4	4
 winter	cold-time	Time direction	4	4
+in the future	after-time	Time direction	1	
+in the past	before-time	Time direction	1	
 grief	big-not-happy	Feelings	1	
 clock time; time of day	hour-say	Time direction	1	
 false; untrue; if (counterfactual)	not-true	Grammar and logic	1	
 serene; relaxed; peaceful	small-happy	Feelings	1	
 second (of time)	small-part	Time direction	1	
 small talk; chat; Pikotika (the language)	small-say	People and society	1	
+now; at present	this-time	Time direction	1	
 ship; boat	water-vehicle	Made things	1	
 ugly	bad-see	Qualities;Places, arts, appearance	2	
 guest; visitor; customer	come-person	People and society	2	
@@ -361,7 +364,7 @@ sport; athletics	body-play	Verbs;Body and life	5
 knife (knife or scissors)	break-tool	Made things	5	
 border (of a country); frontier	country-edge	People and society;Space and direction	5	
 door handle	door-hand	Made things	5	
-evening	down-sun	Time direction	5	
+evening; afternoon	down-sun	Time direction	5	
 voyage; long journey	far-come-go	Space and direction	5	
 flat bread	flat-grain-food	Food	5	
 disk	flat-round	Shape	5	

@@ -46,8 +46,23 @@ using it -- and the symptom is not an error but a word or a sentence that
 silently has no audio, because the index it was added to is the stale one. The
 version is a hash of all three, injected as `data-data-version` on the
 `site.js` tag and read back by `DATA_V` in site.js from
-`document.currentScript`. The clips and the pages do not need it: a clip has a
-content hash in its filename, and an HTML page is not cached that way.
+`document.currentScript`. An HTML page does not need it, not being cached that
+way.
+
+**The clips are not covered, and the reason first given here was wrong**
+(corrected 2026-08-20). It said a clip carries a content hash in its filename.
+It does not: `gen_audio.cache_path` hashes the *utterance text*, so the name is
+stable across any change to the audio for that text. Re-render at a different
+voice or a different speed and `ora-1d7d2b95.m4a` keeps its URL and changes its
+bytes -- which is precisely what a cache is entitled to ignore. Anyone holding
+the old file, browser or CDN, goes on playing the old voice.
+
+Left alone for now, deliberately: a voice swap is rare, Pages caches assets for
+about ten minutes, and the clips are fetched on first press rather than
+precached. But **if a service worker ever precaches audio, this becomes a real
+staleness bug**, and the fix is to fold the audio into a version query the way
+the data files are, or to hash the encoded bytes into the name and let
+`check_audio` clean up the orphans that would then exist.
 
 `build.py` fails rather than shipping something wrong: an unfilled template
 field, a Han character with no glyph, or a Pikotika form that is not real.
@@ -78,6 +93,18 @@ the design doc's actual worry.
 - Reproducibility needed `recalcTimestamp = False` (`stable()`): fontTools
   stamps `head.modified` with the current time on save, which otherwise makes
   every rebuild a fresh binary in git.
+- **The compressed bytes also depend on the brotli version**, which nothing
+  pins (found 2026-08-20). WOFF2 is brotli-compressed, so the same font
+  compresses to a different file under a different compressor: moving the
+  build from the base environment's brotli 1.0.9 to `pikotika`'s 1.2.0 grew
+  the regular face 23,564 → 23,608 bytes. **The font was unchanged** — same
+  table set, same glyph order, and the decompressed sfnt byte-for-byte equal;
+  only the packing differed. Regenerated under 1.2.0 and committed on that
+  date, and two consecutive runs there are byte-identical, so the anti-churn
+  property `stable()` exists for still holds. What "reproducible" means here
+  is therefore *given the same fontTools and brotli* — check those two before
+  concluding that a woff2 diff means the font changed. The test that settles
+  it is comparing the decompressed sfnt, not the file.
 - **Adding a root with a new Han character** is the one thing `vendor/` cannot
   cover. `gen_han_font.py` falls back to the full face, says so, and tells you
   to re-cut: `python3 gen_han_font.py --vendor`, then commit `vendor/`. That is
@@ -290,8 +317,9 @@ slugs are `WEBSITE_DESIGN.md`'s, and they are also `corpus.tsv`'s `topic`
 values, so a page and the sentences that support it are named the same thing.
 
 **`DETAILS.md` is emptied as pages are written**, as `WEBSITE_DESIGN.md` asks:
-its Numbers, Colors, and Proper Nouns and Loan Words sections were deleted once
-`/topics/numbers/`, `/topics/colors/` and `/topics/names/` covered them, and a
+its Numbers, Colors, Proper Nouns and Loan Words, and Telling Time sections
+were deleted once `/topics/numbers/`, `/topics/colors/`, `/topics/names/` and
+`/topics/time/` covered them, and a
 comment at the head of the file records where each one went. The two
 cross-references from sections that stayed now link to the pages, and the
 comments in `pikotika.py`, `phonemes.py`, `numbers.js` and `adapt.js` that used
@@ -343,10 +371,11 @@ turn out to move sideways a lot.
   card grid in it is two columns at most.
 - `nav_html` marks a section by prefix, so Topics stays lit on `/topics/colors/`.
 
-**Three topic pages are written so far**: colors, names and numbers. Colors is
-the shape the plain ones should follow, and numbers the shape of one with a
-tool in it -- the tool first, under a one-paragraph lede, then the reference
-that explains what the tool just did.
+**Five topic pages are written so far**: colors, names, numbers, seasons and
+time. Colors is the shape the plain ones should follow, and numbers the shape
+of one with a tool in it -- the tool first, under a one-paragraph lede, then
+the reference that explains what the tool just did. Time follows numbers, and
+seasons follows colors.
 
 Colors: the six roots as swatches, the seven built colors as swatches
 showing their parse, then the grammar in one paragraph, then corpus sentences
@@ -360,6 +389,19 @@ with a fixed-width numeral column so the words line up and the list reads as a
 table rather than as prose. `.reader` is the name adapter's box with three
 lines reserved under the input, and `.aside` is a bordered note for the sort of
 aside that is only for some readers (兆 is a million here, not a trillion).
+
+Time: the same box with three `<select>` fields and a clock face in it
+(`.clock-grid`, `.clock-face`), then the colon rule, the parts of the day as a
+`.digits-words` list -- the digit list with a word where the numeral goes --
+and the rest as ordinary tables and examples. See The clock below.
+
+Seasons: `.swatches` with a picture where the color band goes (`.seasons`), the
+four seasons and then the wet/dry pair, then one table of `in` / `tis` /
+`yer`-`tar` and two corpus sentences. The art is 72×72 PNGs in `web/images/`,
+drawn for a light ground, so `.seasons img` puts `--bg-tint` behind them rather
+than needing a second set of files for dark mode. It is the shortest page in
+the section on purpose: the whole topic is six compounds built from roots the
+reader already has.
 
 ## The number reader (`web/js/numbers.js`)
 
@@ -479,6 +521,35 @@ change.** Both `private/audio-cache/` and the encoded `.m4a` had to be deleted
 for every utterance containing a digit before `gen_audio` would re-render them;
 `build_files` skips an `.m4a` that already exists. 24 sentences were affected.
 
+## The clock (`/topics/time/`)
+
+Three `<select>` fields -- hour, minute, AM/PM -- an SVG clock face beside
+them, and the reading under both.
+
+- **The face is drawn in `time.html`; JavaScript only rotates the hands.**
+  Twelve ticks, twelve numerals, two `<line>`s and a pin, so the picture is
+  still there with scripting off. The hour hand carries the minutes
+  (`hour * 30 + minute * 0.5`), or half past would point straight at the hour.
+- **The fields are a 12-hour clock and everything downstream is 24-hour.**
+  The reading shown first is the 12-hour one, because that is what the fields
+  say and what a speaker would say: Pikotika has no am/pm, so the part of the
+  day goes in front. The 24-hour reading follows it as the other way to say
+  the same moment, with a play button of its own.
+- **Where the parts of the day begin and end is stated once**, in
+  `numbers.js:daypart`, and nothing outside it depends on the seams:
+  `metseyan` is the noon hour, `suryan` runs 5 to 11, `tunyan` 13 to 20, and
+  `nemyan` the rest. `check_numbers` verifies that a 12-hour reading opens with
+  one of the four and that the rest of it is what `pikotika.py` reads the
+  12-hour digits as -- everything but *which* part, which is an editorial call
+  and has no Python twin to check against.
+- **It plays through the number reader's clip set**, chained the same way and
+  for the same reason: there is no clip for a whole time. `CLOCK_GLOSSES` in
+  `build.py` adds `ora` and the four parts of the day to `number_forms`, so
+  `gen_audio` renders them in `NUMBER_VOICE` with the digits.
+- The reading is a numeral, so **Han keeps the digits**: `readClock` returns
+  `下日 3:45`, never a spelled-out 刻. That is `pikotika.numeral_word` in
+  JavaScript, and `check_numbers` compares the two.
+
 ## The name adapter (`web/js/adapt.js`)
 
 **The first implementation of name adaptation anywhere in the repo** (written
@@ -575,6 +646,32 @@ ffmpeg 9, plus `kokoro-onnx` and `sounddevice` from pip):
 It carries its own ffmpeg, so the encode does not depend on whatever is on
 `PATH` — the base one is 4.2.2.
 
+**`pikotika` now runs the whole project, not only the audio** (2026-08-20).
+It was missing `fonttools` (which `build.py:check_fonts` and `gen_han_font.py`
+need) and the Python brotli binding (which writing a woff2 needs), so the two
+halves of the build lived in different interpreters and each failed loudly in
+the other's — `ModuleNotFoundError: fontTools` from the audio env, `kokoro_onnx`
+from base. Fixed by installing them there:
+
+    micromamba install -n pikotika -c conda-forge fonttools=4.51.0 brotli-python
+
+Two things that cost time: conda-forge's **`brotli`** is the C library and the
+Python binding is the separate **`brotli-python`**, so installing the obvious
+name leaves the import still failing; and `fonttools` is pinned to base's
+4.51.0 rather than taken latest, since the font output depends on it (see The
+Han font above).
+
+Verified before switching over: every module compiles under 3.12, and a site
+built under `pikotika` is **byte-identical** to one built under base's 3.8.8 —
+diffed whole, `docs/` against `docs/`. The base environment still works and is
+not going anywhere, but nothing requires it now.
+
+This retires the reason `build.py` imports `fontTools` *inside* `check_fonts`
+rather than at the top: that was so `gen_audio` could `import build` from an
+environment without it. Harmless to keep, and worth keeping — it is one less
+thing that has to be true about a contributor's environment — but it is no
+longer load-bearing here.
+
 | file | what |
 |---|---|
 | `phonemes.py` | Pikotika → IPA. The one description of how the language sounds. |
@@ -590,16 +687,102 @@ drops symbols outside its vocabulary *silently*, so a divergence between the
 tool and the build would surface as a missing sound and no error.
 `check_symbols()` guards the vocabulary itself.
 
-**Voices.** `af_sky` and `bm_george`, chosen by ear over the full set
+**Voices.** `af_heart` and `bm_george`, chosen by ear over the full set
 (`af_nicole` is unusable). Word tiles alternate between them so the learner is
 not tuned to one speaker; dialogs and stories will pick by character instead,
 which is why `assign_voices()` is a function rather than a constant.
 
-The split is **exact, not hashed**. Hash parity is only even on average and came
-out 54/46 over 613 words. Instead the keys are ordered by hash — arbitrary but
-fixed, so neither voice collects all the short words — and cut at the median.
-Still stable as the lexicon grows: measured, adding five coinages moves 0–2
-words to the other voice, against the ~half a re-hash would reassign.
+**`af_heart` replaced `af_sky` on 2026-08-20, everywhere at once.** `af_sky`
+puts a consonantal onset in front of some vowel-initial words — **ora** came
+out "dora" — which is fatal on `/topics/time/`, where `ora` is every clock
+time on the page. Confirmed by ear in `private/speak.py` as a property of the
+voice, not of one clip.
+
+The reason it could not be fixed in `NUMBER_VOICE` alone, which is the change
+that first suggests itself: **the artifact belongs to the voice, and `ora` was
+on `af_sky` in the word set too**, along with half the sentence clips that say
+a time. Swapping only the reader would have put a clean **ora** in the clock
+and a "dora" in the word chip directly above it. `NUMBER_VOICE` is a separate
+constant so a *chained* reading has one speaker throughout, not so its casting
+can differ; keep it whichever of `WORD_VOICES` is the female voice.
+
+The swap itself reassigns nothing. `assign_voices` decides by tuple position,
+not by voice name, so every word on `af_sky` became `af_heart` and the 50/50
+split and the male voice's half were untouched.
+
+**Changing a voice does not re-encode anything on its own, and the failure is
+silent.** A clip's filename hashes the *utterance text*, not the audio, so the
+new rendering wants the file that is already there — and `build_files` skips
+an `.m4a` that exists. Run naked, the swap rewrote the three JSON indexes to
+say `af_heart`, with `af_heart`'s durations, over 552 `.m4a` files that were
+still `af_sky`. Nothing errors, nothing is missing, and `check_audio` is happy,
+because it compares the index against what the site *wants* and the index is
+correct; what is wrong is the bytes underneath it. It was caught by `ffprobe`
+disagreeing with the index: `aku` indexed at 0.528 s, 0.708 s on disk, file
+dated two days earlier.
+
+So the recipe is **delete, then render**: remove the `.m4a` for every clip the
+index assigns to the changed voice, then run `gen_audio` again. The second run
+is cheap — the WAV cache is keyed by voice and utterance and was filled by the
+first one, so it is an ffmpeg pass, not Kokoro inference. Verify by mtime and
+byte total rather than by exit code (words fell 4.15 MB → 3.87 MB), and spot
+check a clip of each voice: the untouched half must still be the old files.
+
+This is the same trap as the edited-utterance one below, and the same trap the
+digits fix sprang. **`private/audio-cache/` is keyed by voice, so it does not
+protect you here** — it was a clean miss, rendered correctly, and the stale
+half is downstream of it in the encode.
+
+**It used to happen on ordinary corpus additions too**, which is what got the
+voice assignment changed. See below.
+
+**So verify by content, not by exit code.** `private/check_clips.py` compares
+each index entry's duration against `ffprobe` on the file it names; a stale
+clip disagrees, because it is a different performance of the same words.
+`--fix` deletes what it finds, and `gen_audio.py` then re-renders exactly
+those. Run it after any change to the voices — `check_audio` will not tell
+you, since it only asks whether the index covers what the site wants, and that
+was `ok` throughout every failure of this kind.
+
+A durable fix for the remaining case would be to **put the voice in the clip's
+filename hash**: a reassignment becomes a new name, the old file a real orphan,
+and `check_audio`'s existing orphan reporting catches it with no new machinery.
+Not done — the cost is renaming ~1,000 committed files, and with the
+assignment now stable (below) the only thing left that can trigger it is a
+deliberate voice change, which is rare and which you already know you are
+doing.
+
+**The voice assignment is a plain hash, not an exact split** (changed
+2026-08-20). `assign_voices` hashes the utterance and takes it mod the number
+of voices, so a key's voice depends on nothing but the key.
+
+It used to sort the keys by hash and cut the list at the median, to guarantee
+an exact 50/50 — hash parity had been rejected for coming out 54/46 over 613
+words. The flaw is that **the cut moves**. Adding one corpus row shifts the
+median by half a slot and reassigns whatever sits beside it, and a reassigned
+clip goes stale by the route above: it already has an `.m4a`, so the new voice
+reaches the index and never the disk. Adding the party sentence took sentences
+from 416 to 417 and silently left six clips speaking their old voice —
+`Tarsarve.`, `Panomo ri tika a tis.` and four others, none of them touched by
+the edit that caused it. It had been happening on every corpus addition since
+the pipeline was built.
+
+So the docstring's old stability claim read exactly backwards: "adding five
+coinages moves 0–2 words to the other voice" was offered as the *cheap* case,
+and it is cheap only if those 0–2 files actually get re-encoded, which they did
+not.
+
+An approximate share is worth much more than an exact one, and the
+approximation is not even bad — measured at the changeover, **312/305** over
+the words and **211/210** over the sentences. The 54/46 that motivated the
+median cut was a smaller sample read as a trend. The change also generalizes:
+a third or fourth example voice is now just a longer `WORD_VOICES`.
+
+The changeover itself moved 499 clips, so `web/audio/{words,sentences}/` was
+emptied and rendered from scratch rather than patched — with the assignment
+changing under them, a delete-what-is-stale pass would have had to be right
+about all 499. `numbers/` was left alone: it is `NUMBER_VOICE` throughout and
+never goes through `assign_voices`.
 
 **Files, not sprites, for everything the site plays.** `GAME_DESIGN.md`
 specifies sprites throughout; that is right for a lesson, which plays many clips
@@ -611,8 +794,9 @@ for a single file. `build_sprite()` is kept, unused, for the course.
 Sentences come from `corpus.tsv` plus `build.page_sentences()` — every
 multi-word `.pk` string on the site, since an example on a page is not
 necessarily a corpus line. `build.py` keeps its `fontTools` import inside
-`check_fonts` so that `gen_audio` can import it from the `pikotika`
-environment, which has Kokoro but not fontTools.
+`check_fonts` so that `gen_audio` can `import build` from an environment
+without fontTools — which `pikotika` no longer is (see Environment above), so
+this is now belt and braces rather than a requirement.
 
 **`build.py:check_audio` warns when the clips no longer match the site.**
 `build.audio_sentences()` is the one definition of what needs a clip -- corpus
@@ -682,6 +866,11 @@ gesture that permits resuming the `AudioContext`. Lessons that autoplay will
 need the unlock moved to their start button, and a header audio toggle; neither
 exists yet.
 
+## Twemoji
+
+Many of the icons used on the site (for example, on the topic cards) are Twemoji, sourced from: https://twemoji-cheatsheet.vercel.app/
+
+
 ## Not built yet
 
 The header audio toggle, and slow ("turtle") variants — Kokoro takes a speed
@@ -689,5 +878,6 @@ parameter, so those are a second generation pass rather than `playbackRate`,
 which pitch-shifts. Vocab search is built; the grammar pages and the Tools
 converter are still placeholders, as are fourteen of the seventeen topics.
 The Tools "number and date reader" `WEBSITE_DESIGN.md` asks for can reuse
-`numbers.js` as it stands, and wants clock times and dates added to it --
-`pikotika.clock_words` is already there to port and to check against.
+`numbers.js` as it stands, including its `readClock`; what is still missing
+there is dates -- years, months and weekdays -- which want `/topics/dates/`
+written first.

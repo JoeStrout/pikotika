@@ -9,7 +9,11 @@
  * denominator, `inkaton` when the denominator is 100; an ordinal appends
  * `orten` to the last word of the reading.
  *
- * This is a port of pikotika.py's counting_words / decimal_words, and a port
+ * `readClock` reads a clock time the same way, with `ora` standing in for the
+ * colon; it drives the clock on pikotika.org/topics/time/.
+ *
+ * This is a port of pikotika.py's counting_words / decimal_words / clock_words,
+ * and a port
  * is a second implementation, so build.py:check_numbers runs both over the
  * same inputs on every build and fails on any disagreement.
  *
@@ -48,6 +52,21 @@
   var OVER = { f: 'in', g: 'in', h: '内', a: ['in'] };
   var PERCENT = { f: 'inkaton', g: 'in-hundred', h: '内百', a: ['inkaton'] };
   var ORDINAL = { f: 'orten', g: 'sequence', h: '序', a: ['orten'] };
+
+  /* A clock time is written with digits and a colon, and read with `ora`
+     standing in for the colon exactly as `parte` stands in for the decimal
+     point.  Minutes of :00 go unsaid.  See pikotika.org/topics/time/. */
+  var HOUR = { f: 'ora', g: 'hour', h: '刻', a: ['ora'] };
+
+  /* The parts of the day, which is how a 12-hour time is disambiguated: there
+     is no am/pm word, you say which part of the day you are in.  The ranges
+     are an editorial call -- `tunyan` is 'afternoon, evening' and runs to
+     nightfall, `metseyan` is the noon hour itself -- and nothing outside this
+     table depends on where the seams fall. */
+  var MORNING = { f: 'suryan', g: 'up-sun', h: '上日', a: ['suryan'] };
+  var MIDDAY = { f: 'metseyan', g: 'middle-sun', h: '中日', a: ['metseyan'] };
+  var AFTERNOON = { f: 'tunyan', g: 'down-sun', h: '下日', a: ['tunyan'] };
+  var NIGHT = { f: 'nemyan', g: 'no-sun', h: '无日', a: ['nemyan'] };
 
   var COMMA = { sep: ',' };
 
@@ -265,6 +284,60 @@
     };
   }
 
+  /* --- reading a clock time ------------------------------------------------
+     A port of pikotika.clock_words, and checked against it the same way the
+     rest of this module is. */
+
+  var CLOCK = /^(\d{1,2}):([0-5]\d)$/;
+
+  /* Which part of the day an hour of the 24-hour clock falls in. */
+  function daypart(hour) {
+    if (hour === 12) return MIDDAY;
+    if (hour >= 5 && hour < 12) return MORNING;
+    if (hour > 12 && hour < 21) return AFTERNOON;
+    return NIGHT;
+  }
+
+  /* A clock time, written on the 24-hour clock.  With `{ hour12: true }` it
+     is read the way a speaker would say it on a 12-hour clock instead: the
+     part of the day in front, and the hour counted 1 to 12.
+
+     Returns { ok, kind, hour, minute, words, latin, gloss, han, written },
+     where `written` is the digits as they are read -- 15:45 on the 24-hour
+     clock, 3:45 on the 12-hour one. */
+  function readClock(input, opts) {
+    var text = String(input == null ? '' : input).replace(/\s/g, '');
+    var m = CLOCK.exec(text);
+    if (!m) {
+      return { ok: false, error: 'Try a clock time: 9:00, 15:45.' };
+    }
+    var hour = Number(m[1]);
+    var minute = Number(m[2]);
+    if (hour > 23) {
+      return { ok: false, error: 'An hour runs from 0 to 23.' };
+    }
+
+    var part = null;
+    var shown = hour;
+    if (opts && opts.hour12) {
+      part = daypart(hour);
+      shown = hour % 12 || 12;
+    }
+    var words = counting(BigInt(shown)).concat([HOUR]);
+    if (minute) words = words.concat(counting(BigInt(minute)));
+    if (part) words = [part].concat(words);
+
+    var written = shown + ':' + m[2];
+    return {
+      ok: true, kind: 'clock', hour: hour, minute: minute, words: words,
+      latin: latin(words), gloss: gloss(words),
+      /* Han keeps the digits, as every written numeral does -- the colon is
+         on the page, and `ora` is only how it is said aloud. */
+      han: (part ? part.h + ' ' : '') + written,
+      written: written
+    };
+  }
+
   /* Every form the reader can ever say -- what gen_audio renders a clip for.
      Derived rather than listed, so a change to the tables above cannot leave
      a word of a reading silent. */
@@ -272,12 +345,16 @@
     var forms = [];
     DIGITS.forEach(function (d) { forms.push(d[0]); });
     SCALES.forEach(function (s) { forms.push(s[1]); });
-    [POINT, OVER, PERCENT, ORDINAL].forEach(function (t) { forms.push(t.f); });
+    [POINT, OVER, PERCENT, ORDINAL, HOUR,
+     MORNING, MIDDAY, AFTERNOON, NIGHT].forEach(function (t) {
+      forms.push(t.f);
+    });
     Object.keys(ORDINAL_CLIPS).forEach(function (f) { forms.push(f); });
     return forms.sort();
   }
 
   exports.read = read;
+  exports.readClock = readClock;
   exports.counting = counting;
   exports.vocabulary = vocabulary;
   exports.MAX_DIGITS = MAX_DIGITS;

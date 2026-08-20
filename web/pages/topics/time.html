@@ -1,0 +1,296 @@
+<h1>Telling time</h1>
+
+<p class="lede">A clock time is the numbers you already know with one word in
+the middle. <span class="pk">ora</span> stands where the colon is, and that is
+the whole of it — nine o'clock is <span class="pk">noks ora</span>.</p>
+
+<h2>Any time on the clock</h2>
+
+<div class="reader clock" id="clock">
+  <div class="clock-grid">
+    <div class="clock-fields">
+      <div class="clock-field">
+        <label class="reader-label" for="clock-hour">Hour</label>
+        <select id="clock-hour"></select>
+      </div>
+      <div class="clock-field">
+        <label class="reader-label" for="clock-minute">Minute</label>
+        <select id="clock-minute"></select>
+      </div>
+      <div class="clock-field">
+        <label class="reader-label" for="clock-half">AM/PM</label>
+        <select id="clock-half">
+          <option value="am">AM</option>
+          <option value="pm">PM</option>
+        </select>
+      </div>
+    </div>
+
+    <svg class="clock-face" viewBox="0 0 200 200" role="img"
+         aria-labelledby="clock-face-title">
+      <title id="clock-face-title">A clock face showing the time entered</title>
+      <circle class="clock-rim" cx="100" cy="100" r="96"/>
+      <g class="clock-ticks">
+        <line x1="142.5" y1="26.4" x2="146.5" y2="19.5"/>
+        <line x1="173.6" y1="57.5" x2="180.5" y2="53.5"/>
+        <line x1="185.0" y1="100.0" x2="193.0" y2="100.0"/>
+        <line x1="173.6" y1="142.5" x2="180.5" y2="146.5"/>
+        <line x1="142.5" y1="173.6" x2="146.5" y2="180.5"/>
+        <line x1="100.0" y1="185.0" x2="100.0" y2="193.0"/>
+        <line x1="57.5" y1="173.6" x2="53.5" y2="180.5"/>
+        <line x1="26.4" y1="142.5" x2="19.5" y2="146.5"/>
+        <line x1="15.0" y1="100.0" x2="7.0" y2="100.0"/>
+        <line x1="26.4" y1="57.5" x2="19.5" y2="53.5"/>
+        <line x1="57.5" y1="26.4" x2="53.5" y2="19.5"/>
+        <line x1="100.0" y1="15.0" x2="100.0" y2="7.0"/>
+      </g>
+      <g class="clock-nums">
+        <text x="136.5" y="36.8">1</text>
+        <text x="163.2" y="63.5">2</text>
+        <text x="173.0" y="100.0">3</text>
+        <text x="163.2" y="136.5">4</text>
+        <text x="136.5" y="163.2">5</text>
+        <text x="100.0" y="173.0">6</text>
+        <text x="63.5" y="163.2">7</text>
+        <text x="36.8" y="136.5">8</text>
+        <text x="27.0" y="100.0">9</text>
+        <text x="36.8" y="63.5">10</text>
+        <text x="63.5" y="36.8">11</text>
+        <text x="100.0" y="27.0">12</text>
+      </g>
+      <line class="clock-hand clock-hand-hour" id="clock-hand-hour"
+            x1="100" y1="100" x2="100" y2="48"/>
+      <line class="clock-hand clock-hand-minute" id="clock-hand-minute"
+            x1="100" y1="100" x2="100" y2="26"/>
+      <circle class="clock-pin" cx="100" cy="100" r="4.5"/>
+    </svg>
+  </div>
+
+  <div class="reader-out" id="clock-out" aria-live="polite"></div>
+  <p class="reader-note" id="clock-note"></p>
+  <p class="reader-try">Try <button type="button" class="reader-eg" data-time="now">now</button>
+    <button type="button" class="reader-eg" data-time="9:00">9:00 AM</button>
+    <button type="button" class="reader-eg" data-time="12:00">noon</button>
+    <button type="button" class="reader-eg" data-time="15:45">3:45 PM</button>
+    <button type="button" class="reader-eg" data-time="23:30">11:30 PM</button></p>
+</div>
+
+<h2>The colon is <span class="pk">ora</span></h2>
+
+<p>Write a time in digits, exactly as you already do. To say it, read the hour,
+say <span class="pk">ora</span>, and read the minutes. Nothing stands for
+"minutes" — a number after <span class="pk">ora</span> can only be minutes.</p>
+
+<table class="rules">
+  <tr><th>Written</th><th>Said</th><th>Literally</th></tr>
+  <tr><td>9:00</td><td><span class="pk">noks ora</span></td>
+      <td class="gloss">nine hour</td></tr>
+  <tr><td>9:30</td><td><span class="pk">noks ora tets tekas</span></td>
+      <td class="gloss">nine hour three ten</td></tr>
+  <tr><td>15:45</td><td><span class="pk">tekas kins ora wats tekas kins</span></td>
+      <td class="gloss">ten five hour four ten five</td></tr>
+</table>
+
+<p>A time on the hour says no minutes at all: <b>9:00</b> is simply
+<span class="pk">noks ora</span>. There is no "half
+past", no "quarter to", and no counting down from the next hour — half past nine
+is <b>9:30</b>, said as <span class="pk">noks ora tets tekas</span>.</p>
+
+<h2>Morning, noon, and night</h2>
+
+<p>Pikotika has no direct equivalent of AM/PM.  Instead, either use the 24-hour clock, or say which part of the day you are in and put it <em>in front</em> of the time.</p>
+
+<ul class="digits digits-words">
+  <li><span class="pk">suryan</span> <span class="en">morning</span>
+      <span class="han">上日</span></li>
+  <li><span class="pk">metseyan</span> <span class="en">noon, midday</span>
+      <span class="han">中日</span></li>
+  <li><span class="pk">yan</span> <span class="en">day, daytime</span>
+      <span class="han">日</span></li>
+  <li><span class="pk">tunyan</span> <span class="en">afternoon, evening</span>
+      <span class="han">下日</span></li>
+  <li><span class="pk">nemyan</span> <span class="en">night</span>
+      <span class="han">无日</span></li>
+</ul>
+
+<p>Each is the sun in a position — <em>up-sun</em>, <em>middle-sun</em>,
+<em>down-sun</em>, <em>no-sun</em> — so they're easy to remember. <span class="pk">suryan noks ora</span> is nine in the
+morning; <span class="pk">nemyan noks ora</span> is nine at night.</p>
+
+<div class="example">
+  <p class="en">The party starts at 7 PM.</p>
+  <span class="pk">Yumen ri apa in tunyan 7 ora.</span>
+</div>
+
+<h2>Asking</h2>
+
+<p>Questions move nothing. Put <span class="pk">ker</span>
+<span class="gloss">what</span> in the slot the answer belongs in, and the
+sentence is otherwise a statement.</p>
+
+<div class="example">
+  <p class="en">What time is it?</p>
+  <span class="pk">Ora ri ker?</span>
+</div>
+
+<p>For <em>at</em> what time, the standing compound is
+<span class="pk">kerora</span> <span class="gloss">what-hour</span>, sitting
+where a time would sit.</p>
+
+<div class="example">
+  <p class="en">What time does the music start?</p>
+  <span class="pk">Musi ri apa in kerora?</span>
+</div>
+
+<div class="example">
+  <p class="en">Do you know when the train leaves?</p>
+  <span class="pk">Tu ri sape a rinekaro ri eksire in kerora, ker?</span>
+</div>
+
+<p>To say <em>when</em> something happens, put the time in a prepositional
+phrase at the end with <span class="pk">in</span>, exactly as you would any
+other place or time.</p>
+
+<div class="example">
+  <p class="en">Please come at seven.</p>
+  <span class="pk">Pam veni in sens ora.</span>
+</div>
+
+<div class="example">
+  <p class="en">Yes, from six to nine, in that room there.</p>
+  <span class="pk">Si, vons 6 ora ver 9 ora, in nontis kamar.</span>
+</div>
+
+<h2>Describing duration</h2>
+
+<p>A clock time is a point in the day. For a <em>length</em> of time, add
+<span class="pk">turan</span> <span class="gloss">interval</span> after the
+amount. That one word is the whole difference:
+<span class="pk">noks ora</span> is nine o'clock, and
+<span class="pk">noks ora turan</span> is nine hours.</p>
+
+<table class="rules">
+  <tr><th>Pikotika</th><th>Literally</th><th>Meaning</th></tr>
+  <tr><td><span class="pk">tets ora turan</span></td>
+      <td class="gloss">three hour interval</td><td>for three hours</td></tr>
+  <tr><td><span class="pk">tekas parte turan</span></td>
+      <td class="gloss">ten part interval</td><td>ten minutes</td></tr>
+  <tr><td><span class="pk">tets tekas pikoparte turan</span></td>
+      <td class="gloss">three ten small-part interval</td><td>thirty seconds</td></tr>
+  <tr><td><span class="pk">wun senseyan turan</span></td>
+      <td class="gloss">one seven-sun interval</td><td>for a week</td></tr>
+</table>
+
+<p>A minute is a <span class="pk">parte</span> <span class="gloss">part</span>
+— a part of an hour — and a second is a
+<span class="pk">pikoparte</span> <span class="gloss">small-part</span>. Both
+need <span class="pk">turan</span> to be a duration.</p>
+
+<div class="example">
+  <p class="en">Walk five minutes.</p>
+  <span class="pk">Pam 5 parte turan kampaire.</span>
+</div>
+
+<div class="example">
+  <p class="en">It will be about fifteen minutes.</p>
+  <span class="pk">Pos 15 parte turan.</span>
+</div>
+
+<div class="example">
+  <p class="en">You had water five minutes ago.</p>
+  <span class="pk">5 parte yer, tu ri pipe a aku.</span>
+</div>
+
+<p>When you do not want to be exact at all, there is
+<span class="pk">pikotempo</span> <span class="gloss">small-time</span>, a
+moment or a little while — and it takes no <span class="pk">turan</span>,
+being a length already.</p>
+
+<h2>Now, earlier, later</h2>
+
+<p>Three compounds place you on the timeline, and two bare roots do the rest.
+<span class="pk">yer</span> is <em>before, ago, early</em> and
+<span class="pk">tar</span> is <em>after, from now, late</em> — the same two
+words whether you are counting hours or apologizing for the delay.</p>
+
+<ul class="digits digits-words">
+  <li><span class="pk">tistempo</span> <span class="en">now</span>
+      <span class="han">此时</span></li>
+  <li><span class="pk">yertempo</span> <span class="en">in the past</span>
+      <span class="han">前时</span></li>
+  <li><span class="pk">tartempo</span> <span class="en">in the future</span>
+      <span class="han">后时</span></li>
+</ul>
+
+<p>These name a <em>stretch</em> of time, not a point in it, so they do two
+things the bare roots cannot. They can be what a sentence is about:</p>
+
+<div class="example">
+  <p class="en">Think about the future.</p>
+  <span class="pk">Pam pensa a tartempo.</span>
+</div>
+
+<p>And they can open a sentence to set when it happens — which, since time is
+stated once and then assumed, is all the tense you need. Notice there is no
+verb here at all:</p>
+
+<div class="example">
+  <p class="en">This used to be a school.</p>
+  <span class="pk">Yertempo, tis ri imparroko.</span>
+</div>
+
+<p>For counting days rather than naming an era, use
+<span class="pk">yer</span> and <span class="pk">tar</span> after the amount
+— <span class="pk">2 yan yer</span> is two days ago.</p>
+
+<div class="example">
+  <p class="en">It's late.</p>
+  <span class="pk">Ora ri tar.</span>
+</div>
+
+<div class="example">
+  <p class="en">We'll finish by four.</p>
+  <span class="pk">4 ora yer, ekomen ri vin.</span>
+</div>
+
+<div class="example">
+  <p class="en">From now on, please tell me sooner.</p>
+  <span class="pk">Vons tistempo, pam mas veros tika ver eko.</span>
+</div>
+
+<p class="aside">Counting whole days forward and back —
+<span class="pk">yantar</span> <span class="gloss">sun-after</span> for
+tomorrow, <span class="pk">2 yan yer</span> for two days ago — works the same
+way, and lives on the Dates and weekdays page with the weekday names and the
+months.</p>
+
+<h2>More examples</h2>
+
+<div class="example">
+  <p class="en">The shop opens at eight.</p>
+  <span class="pk">Ri apa a komparroko in ots ora.</span>
+</div>
+
+<div class="example">
+  <p class="en">But come at seven and we can eat first.</p>
+  <span class="pk">Sets pam veni in 7 ora, kum ekomen ri kan yer komi.</span>
+</div>
+
+<div class="example">
+  <p class="en">One more question — do you know when the train to the airport
+    leaves?</p>
+  <span class="pk">Wun mas kertika: metarrinekaro ver ventokaroroko ri eksire in kerora?</span>
+</div>
+
+<div class="example">
+  <p class="en">Leave now, or you'll miss the train.</p>
+  <span class="pk">Pam eksire in tistempo, sive tu ri perti a metarrinekaro.</span>
+</div>
+
+<div class="example">
+  <p class="en">Time goes fast.</p>
+  <span class="pk">Tempo ri veros ire.</span>
+</div>
+
+<p>The numbers themselves — every digit, and how they stack up past ten — are
+on the <a href="/topics/numbers/">Numbers</a> page.</p>

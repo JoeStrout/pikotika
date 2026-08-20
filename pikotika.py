@@ -437,7 +437,7 @@ def decimal_words(word):
 
 # A clock time is written the same way, with `hour` standing in for the colon:
 # **9:30** is `nine hour three ten`, and :00 minutes go unsaid -- **9:00** is just
-# **noks ora** (DETAILS.md, "Telling Time").
+# **noks ora** (pikotika.org/topics/time/).
 CLOCK_MARK = "hour"
 
 

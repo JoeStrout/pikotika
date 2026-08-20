@@ -266,6 +266,28 @@ def build(t, extra_forms=()):
             unresolved.append(form)
             continue
         entry["form"] = form
+        # A numeral is written in digits and *said* in words, and the entry so
+        # far carries only the digits -- `entry_for` renders Latin from the
+        # gloss, and the gloss of a numeral is the numeral.  Tapping **7** then
+        # opened a tile reading "7 7 / seven; 7", which manages to say seven
+        # four times and never says **sens**.  So a numeral records what it is
+        # read as, and the tile shows that as the headword.
+        #
+        # Derived here rather than in JavaScript on purpose: reading a numeral
+        # is `pikotika.expand_numerals`, which knows the dropped multiplier,
+        # the linking `e`, and clock and fraction marks.  numbers.js is already
+        # one port of that and is kept honest by check_numbers; a third
+        # implementation inside a popover would not be.
+        said = P.render_latin(P.expand_numerals(parsed), t)
+        if said != form:
+            entry["say"] = said
+            # With the headword now the reading, a multi-word numeral would
+            # otherwise show the digits nowhere at all: `en` for one of these
+            # falls back to the gloss, so **15** read as a Vocab row without a
+            # chip beside it for context.  A single digit is unaffected -- `7`
+            # takes its English from the **sens** row, which already says both.
+            if entry.get("en") == gloss:
+                entry["en"] = form
         words[form.lower()] = entry
 
     check_compounds(t)

@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-661 terms
+666 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -25,6 +25,7 @@
 | adventure | danger-play | timoyu | 危玩 |
 | adventure trip | danger-come-go | timoveniire | 危来行 |
 | adventurer | danger-play-person | timoyuomo | 危玩人 |
+| afternoon | down-sun | tunyan | 下日 |
 | age | year-interval | anyoturan | 年間 |
 | aged | year-big | anyomeka | 年大 |
 | airplane | air-vehicle | ventokaro | 风车 |
@@ -49,6 +50,7 @@
 | ask for | want-say | voritika | 求言 |
 | astonishment | big-surprise | mekasorpe | 大奇 |
 | at last | in-finish | invin | 内閉 |
+| at present | this-time | tistempo | 此时 |
 | at what o'clock | what-hour | kerora | 何刻 |
 | athletics | body-play | korpoyu | 体玩 |
 | attend to | think-give | pensatonar | 思与 |
@@ -279,6 +281,8 @@
 | illegal | not-law | nonreke | 不法 |
 | important | heavy-necessary | pesaneses | 重要 |
 | in the end | in-finish | invin | 内閉 |
+| in the future | after-time | tartempo | 后时 |
+| in the past | before-time | yertempo | 前时 |
 | in truth | in-true | inves | 内真 |
 | incidentally | other-about | artopi | 別件 |
 | inquire | what-say | kertika | 何言 |
@@ -360,6 +364,7 @@
 | north | map-up | mapasur | 図上 |
 | not enough | not-all | nonpan | 不全 |
 | nothing | no-thing | nemkosa | 无物 |
+| now | this-time | tistempo | 此时 |
 | nowhere | no-place | nemroko | 无所 |
 | nuisance | head-sick | testamara | 头病 |
 | number | amount-say | mesurtika | 寸言 |

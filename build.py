@@ -491,6 +491,11 @@ def check_adapter() -> None:
 # than typed out again.
 NUMBER_GLOSSES = ["part", "in", "in-hundred", "sequence"]
 
+# The clock on /topics/time/ chains the same clips, so its own few words are
+# rendered into the same single-voice set: `hour` for the colon, and the four
+# parts of the day, which is how a 12-hour time says which half it is in.
+CLOCK_GLOSSES = ["hour", "up-sun", "middle-sun", "down-sun", "no-sun"]
+
 
 def ordinal_glosses(tables) -> list:
     """The ordinals that have a standing compound: `one-sequence` and friends.
@@ -513,7 +518,7 @@ def number_forms(tables) -> list:
     import pikotika
 
     glosses = (list(dict.fromkeys(pikotika.DIGITS.values())) + NUMBER_GLOSSES
-               + ordinal_glosses(tables))
+               + CLOCK_GLOSSES + ordinal_glosses(tables))
     return sorted({pikotika.render_latin(pikotika.parse_gloss(g, tables), tables)
                    for g in glosses})
 
@@ -550,6 +555,15 @@ def number_checks() -> list:
     return cases
 
 
+# The clock (/topics/time/) is checked over every hour of the 24, on the hour
+# and on the half hour -- where :00 goes unsaid, and where the 12-hour reading
+# turns over -- plus the minutes whose reading has a shape of its own.
+def clock_checks() -> list:
+    cases = [f"{h}:{m:02d}" for h in range(24) for m in (0, 30)]
+    cases += [f"9:{m:02d}" for m in (1, 5, 9, 10, 11, 15, 20, 45, 59)]
+    return cases
+
+
 def check_numbers(tables) -> None:
     """Check web/js/numbers.js against pikotika.py, over every shape it reads.
 
@@ -574,17 +588,22 @@ def check_numbers(tables) -> None:
         return
 
     cases = number_checks()
+    clocks = clock_checks()
     driver = """
       const numbers = require(process.argv[1]);
+      const input = JSON.parse(process.argv[2]);
       console.log(JSON.stringify({
         vocabulary: numbers.vocabulary(),
-        read: JSON.parse(process.argv[2]).map(function (s) {
-          return numbers.read(s);
+        read: input.numbers.map(function (s) { return numbers.read(s); }),
+        clock: input.clocks.map(function (s) { return numbers.readClock(s); }),
+        clock12: input.clocks.map(function (s) {
+          return numbers.readClock(s, { hour12: true });
         })
       }));
     """
     proc = subprocess.run(
-        [node, "-e", driver, str(WEB / "js" / "numbers.js"), json.dumps(cases)],
+        [node, "-e", driver, str(WEB / "js" / "numbers.js"),
+         json.dumps({"numbers": cases, "clocks": clocks})],
         capture_output=True, text=True)
     if proc.returncode:
         raise SystemExit("the number reader would not run:\n" + proc.stderr.strip())
@@ -630,11 +649,49 @@ def check_numbers(tables) -> None:
             if said != got["latin"]:
                 problems.append(f"{case}: read as typed, pikotika.py says "
                                 f"{said!r} where numbers.js says {got['latin']!r}")
+    # The clock is the same port over pikotika.clock_words.  The 24-hour
+    # reading is compared outright; the 12-hour one is compared to the reading
+    # of the 12-hour digits it says it is showing, with a part-of-day word in
+    # front -- which checks everything but *which* part of the day, and leaves
+    # where those seams fall stated once, in numbers.js.
+    dayparts = {pikotika.render_latin(pikotika.parse_gloss(g, tables), tables)
+                for g in CLOCK_GLOSSES if g.endswith("-sun")}
+    for case, got, got12 in zip(clocks, result["clock"], result["clock12"]):
+        if not got.get("ok") or not got12.get("ok"):
+            problems.append(f"{case}: the clock refused it "
+                            f"({got.get('error', 'no reason given')})")
+            continue
+        words = pikotika.parse_latin(case, tables)
+        spoken = pikotika.expand_numerals(words)
+        for label, want in (("latin", pikotika.render_latin(spoken, tables)),
+                            ("gloss", pikotika.render_gloss(spoken, tables)),
+                            ("han", pikotika.render_han(words, tables))):
+            if got[label] != want:
+                problems.append(f"{case}: {label} is {got[label]!r} in "
+                                f"numbers.js, {want!r} in pikotika.py")
+        hour, _, minute = case.partition(":")
+        want12 = f"{int(hour) % 12 or 12}:{minute}"
+        if got12["written"] != want12:
+            problems.append(f"{case}: on the 12-hour clock numbers.js shows "
+                            f"{got12['written']!r}, not {want12!r}")
+            continue
+        part, _, rest = got12["latin"].partition(" ")
+        if part not in dayparts:
+            problems.append(f"{case}: the 12-hour reading opens with {part!r}, "
+                            f"which is not one of {sorted(dayparts)}")
+            continue
+        said = pikotika.render_latin(
+            pikotika.expand_numerals(pikotika.parse_latin(want12, tables)),
+            tables)
+        if rest != said:
+            problems.append(f"{case}: the 12-hour reading is {rest!r} after "
+                            f"{part!r}, where {want12} reads {said!r}")
+
     if problems:
         raise SystemExit("the number reader disagrees with pikotika.py:\n  "
                          + "\n  ".join(problems))
-    print(f"  number reader: {len(cases)} numbers read the same in "
-          f"numbers.js and pikotika.py")
+    print(f"  number reader: {len(cases)} numbers and {len(clocks)} clock "
+          f"times read the same in numbers.js and pikotika.py")
 
 
 def check_forms(tables, sources) -> list:
