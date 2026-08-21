@@ -1,0 +1,30 @@
+<h1>Tile Match</h1>
+
+<p class="lede">Mahjong solitaire over the Pikotika roots. Every root is two
+tiles &mdash; one with its two English meanings, one with its written form in
+Latin and Han. Clear the board by matching them.</p>
+
+<p>A tile can only be taken when nothing sits on top of it and one of its long
+sides is open, exactly as in the paper game. Forty-one Level&nbsp;1 roots make
+forty-eight pairs, so a few roots turn up twice.</p>
+
+<div class="tm" id="tm">
+  <div class="tm-bar">
+    <button type="button" class="tm-btn" id="tm-new">New game</button>
+    <button type="button" class="tm-btn" id="tm-hint">Hint</button>
+    <button type="button" class="tm-btn" id="tm-undo">Undo</button>
+    <button type="button" class="tm-btn" id="tm-shuffle">Shuffle</button>
+    <button type="button" class="tm-btn" id="tm-free" aria-pressed="false">Highlight free tiles</button>
+    <span class="tm-count" id="tm-count"></span>
+  </div>
+
+  <p class="tm-status" id="tm-status" role="status" aria-live="polite">Loading the roots&hellip;</p>
+
+  <div class="tm-scroll" id="tm-scroll">
+    <div class="tm-stage" id="tm-stage">
+      <div class="tm-board" id="tm-board"></div>
+    </div>
+  </div>
+</div>
+
+<noscript><p>This one needs JavaScript.</p></noscript>

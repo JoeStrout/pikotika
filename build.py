@@ -394,6 +394,25 @@ UNLISTED = [
      "actually came from that font."),
 ]
 
+# Also out of the navigation, but hand-written like any other page and checked
+# like one: these go through authored_pages(), so a bad form in one fails the
+# build.  UNLISTED above is for pages a generator emits; this is for prose.
+UNLISTED_PAGES = [
+    ("/games/tilematch/", "games/tilematch.html",
+     "Tile Match — Pikotika",
+     "Mahjong solitaire over the Pikotika roots: match each root's English "
+     "meanings to its written form."),
+]
+
+# The measure column is for prose.  The topic index is a card grid and the
+# tile game is a board; both want the wide column.
+MAIN_CLASS = {"/topics/": "wide", "/games/tilematch/": "wide"}
+
+# Per-page css and js, linked only on the page that needs them.  The board game
+# is 500 lines of neither, and every other page would otherwise pay for it.
+PAGE_CSS = {"/games/tilematch/": "css/tilematch.css"}
+PAGE_JS = {"/games/tilematch/": "js/tilematch.js"}
+
 STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio"]
 
 # Loose files copied to the output root.  CNAME is what keeps the custom domain
@@ -496,6 +515,9 @@ def authored_pages() -> list:
             content = content.replace(TOPIC_CARDS_MARK, topic_cards())
         if url == GRAMMAR_URL:
             content = content.replace(GRAMMAR_INDEX_MARK, grammar_index())
+        pages.append((url, content, title_tag, description))
+    for url, fragment, title_tag, description in UNLISTED_PAGES:
+        content = (WEB / "pages" / fragment).read_text(encoding="utf-8")
         pages.append((url, content, title_tag, description))
     pages += topic_pages() + grammar_pages()
     return [(url, soften_grammar_links(content), title_tag, description)
@@ -989,6 +1011,17 @@ def build() -> None:
     data_version = asset_version("data/lexicon.json", "audio/words.json",
                                  "audio/sentences.json", "audio/numbers.json")
 
+    def page_asset(table, url, tag):
+        """A <link> or <script> for a page that has its own css or js, and the
+        empty string for the pages that do not.  Versioned like the sitewide
+        assets, and for the same reason."""
+        path = table.get(url)
+        if not path:
+            return ""
+        # The newline lives here rather than in the template, so a page with no
+        # asset of this kind leaves no blank line behind in the output.
+        return "\n" + tag % (path, asset_version(path))
+
     import importlib
 
     pages = list(authored)
@@ -1009,8 +1042,11 @@ def build() -> None:
             adapt_version=adapt_version,
             numbers_version=numbers_version,
             data_version=data_version,
-            # The topic index is a card grid; the measure column is for prose.
-            main_class="wide" if url == TOPICS_URL else "",
+            main_class=MAIN_CLASS.get(url, ""),
+            page_css=page_asset(
+                PAGE_CSS, url, '<link rel="stylesheet" href="/%s?v=%s">'),
+            page_scripts=page_asset(
+                PAGE_JS, url, '<script src="/%s?v=%s"></script>'),
             content=content.rstrip("\n"),
         )
         target = OUT / url.lstrip("/") / "index.html"

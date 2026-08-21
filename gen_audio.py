@@ -70,6 +70,35 @@ OUT_DIR = ROOT / "web" / "audio"
 # **ora** in the clock and a "dora" in the chip directly above it.
 WORD_VOICES = ("af_heart", "bm_george")
 
+# Utterances cast by hand, overriding assign_voices.
+#
+# Keyed by **exact utterance text**, and it must stay that way: matching
+# substrings would drag the nine sentence clips containing *pomo* onto another
+# speaker to fix a fault they do not have.  A word is only wrong here as a
+# whole one-word clip -- af_heart says **pomo** cleanly inside a sentence.
+#
+# Before adding an entry, check that the destination voice says the word right.
+# An override is only a fix if it is, and the two voices do not fail on the
+# same words.
+VOICE_OVERRIDES = {
+    # af_heart puts a trailing "-eh" on these -- **pomo** as "pomo-eh" -- as
+    # though a syllable had been appended.  They are every -o and -u word it
+    # owns whose final vowel rises; the fault is inaudible on -a and -e, where
+    # the vowel is already front.  See "The trailing -eh" below for the two
+    # fixes that were tried first and did not work.
+    "pomo": "bm_george",
+    "pammoto": "bm_george",
+    "omo": "bm_george",
+    "risowoaku": "bm_george",
+    "puru": "bm_george",
+    "woaku": "bm_george",
+
+    # A different fault, and the reason this dict is not just about that one:
+    # af_heart says **wo** as "wuh" rather than with a long o, with no rise
+    # involved at all.
+    "wo": "bm_george",
+}
+
 # The number reader chains clips together, so its set is one voice throughout.
 # Alternating would change speaker four times inside `tekas pits kiru, tets
 # katon wats tekas kins`, which is one number.
@@ -121,8 +150,10 @@ def assign_voices(keys) -> dict:
     words and 211/210 over the sentences.  The 54/46 that motivated the median
     cut was a smaller sample being read as a trend.
     """
-    return {key: WORD_VOICES[int(hashlib.sha1(key.encode("utf-8")).hexdigest(), 16)
-                             % len(WORD_VOICES)]
+    return {key: VOICE_OVERRIDES.get(
+                key,
+                WORD_VOICES[int(hashlib.sha1(key.encode("utf-8")).hexdigest(), 16)
+                            % len(WORD_VOICES)])
             for key in keys}
 
 
@@ -283,14 +314,35 @@ def build_files(name: str, items, force: bool) -> dict:
         raise SystemExit("ffmpeg is not on the path; run under the pikotika "
                          "environment")
 
-    index, total = {}, 0
+    # What the last build produced, to catch a clip whose voice has changed.
+    # The .m4a is named from the utterance text alone, so a voice change does
+    # not change the filename -- and skipping a file that already exists would
+    # then leave the old voice on disk under an index claiming the new one,
+    # silently, with check_audio still passing.  That is not hypothetical: it
+    # is the bug the median-split assignment used to cause on every corpus
+    # addition (see assign_voices), and it is what a VOICE_OVERRIDES entry
+    # would otherwise do the moment it was added.  The index records the voice
+    # each file was built with, so it is the thing to compare against.
+    previous = {}
+    index_path = OUT_DIR / f"{name}.json"
+    if index_path.exists():
+        try:
+            previous = json.loads(index_path.read_text(encoding="utf-8")).get("clips", {})
+        except (ValueError, OSError):
+            previous = {}
+
+    index, total, revoiced = {}, 0, 0
     for i, (key, text, voice) in enumerate(items, 1):
         wav = render(text, voice, force)
         data, rate = read_wav(wav)
         data = trim(data, rate)
         stem = cache_path(voice, text).stem
         target = out_dir / f"{stem}.m4a"
-        if force or not target.exists():
+        prior = previous.get(key)
+        stale = bool(prior) and len(prior) > 2 and prior[2] != voice
+        if stale:
+            revoiced += 1
+        if force or not target.exists() or stale:
             tmp = out_dir / f"{stem}.wav"
             write_wav(tmp, data.astype(np.float32) / 32767.0, rate)
             subprocess.run([ffmpeg, "-y", "-loglevel", "error", "-i", str(tmp),
@@ -307,7 +359,8 @@ def build_files(name: str, items, force: bool) -> dict:
         json.dumps({"kind": "files", "clips": index}, ensure_ascii=False,
                    sort_keys=True, separators=(",", ":")) + "\n",
         encoding="utf-8")
-    print(f"  {name}: {len(index)} files, {total:,} bytes total")
+    print(f"  {name}: {len(index)} files, {total:,} bytes total"
+          + (f", {revoiced} re-encoded after a voice change" if revoiced else ""))
     return index
 
 

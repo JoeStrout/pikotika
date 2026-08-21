@@ -261,23 +261,47 @@
     }).catch(function () { return null; });
   }
 
-  function play(kind, key, button) {
+  /* Created and resumed inside the click, which is the user gesture browsers
+     require before any audio starts -- iOS wants it inside the handler, not
+     merely after it.  Returns null where there is no Web Audio at all. */
+  function unlock() {
     var Ctx = window.AudioContext || window.webkitAudioContext;
-    if (!Ctx) return;
-    /* Created and resumed inside the click, which is the user gesture browsers
-       require before any audio starts -- iOS wants it inside, not merely
-       after. */
+    if (!Ctx) return null;
     if (!audio.ctx) audio.ctx = new Ctx();
     if (audio.ctx.state === 'suspended') audio.ctx.resume();
+    return audio.ctx;
+  }
 
+  function startClip(buffer) {
+    var source = audio.ctx.createBufferSource();
+    source.buffer = buffer;
+    source.connect(audio.ctx.destination);
+    source.start();
+    return source;
+  }
+
+  function play(kind, key, button) {
+    if (!unlock()) return;
     button.classList.add('loading');
     clipBuffer(kind, key).then(function (buffer) {
       button.classList.remove('loading');
       if (!buffer) { button.disabled = true; return; }
-      var source = audio.ctx.createBufferSource();
-      source.buffer = buffer;
-      source.connect(audio.ctx.destination);
-      source.start();
+      startClip(buffer);
+    });
+  }
+
+  /* Speak a word with no play control attached to it.  The tile game says the
+     root when its written face is tapped, and there is no button there to show
+     a loading state on or to disable on failure -- the tile is the control,
+     and it has a game to run.  Silence is the right failure here. */
+  function playWord(form) {
+    if (!unlock()) return;
+    clipBuffer('words', form).then(function (buffer) {
+      if (!buffer) return;
+      /* A tap replaces what the last tap is still saying rather than talking
+         over it, which two quick taps otherwise would. */
+      if (audio.word) { try { audio.word.stop(); } catch (e) {} }
+      audio.word = startClip(buffer);
     });
   }
 
@@ -294,10 +318,7 @@
   var CHAIN_PAUSE = 0.28;     /* at a comma, where a reader takes a breath */
 
   function playSequence(kind, steps, button) {
-    var Ctx = window.AudioContext || window.webkitAudioContext;
-    if (!Ctx) return;
-    if (!audio.ctx) audio.ctx = new Ctx();
-    if (audio.ctx.state === 'suspended') audio.ctx.resume();
+    if (!unlock()) return;
 
     /* A second tap replaces the first reading rather than talking over it. */
     (audio.chain || []).forEach(function (s) { try { s.stop(); } catch (e) {} });
@@ -1464,4 +1485,8 @@
   window.pikotika = window.pikotika || {};
   window.pikotika.scanChips = scanChips;
   window.pikotika.addSentencePlayers = addSentencePlayers;
+  /* Exposed so a page-specific script -- the tile game -- reads the lexicon
+     through the same cached, DATA_V-stamped fetch rather than a second one. */
+  window.pikotika.loadLexicon = loadLexicon;
+  window.pikotika.playWord = playWord;
 })();

@@ -746,6 +746,87 @@ drops symbols outside its vocabulary *silently*, so a divergence between the
 tool and the build would surface as a missing sound and no error.
 `check_symbols()` guards the vocabulary itself.
 
+### The trailing "-eh"
+
+**`af_heart` says seven words wrong as isolated clips** (2026-08-21), and they
+are cast onto `bm_george` by hand through `gen_audio.VOICE_OVERRIDES`. Six are
+one fault — **pomo**, **pammoto**, **omo**, **risowoaku**, **puru**, **woaku**
+come out with a trailing "-eh", as though a syllable had been appended. The
+seventh, **wo**, is unrelated: it is "wuh" rather than a long o, a vowel gotten
+wrong rather than anything added.
+
+The six are every `-o` and `-u` word `af_heart` owns whose final vowel rises.
+The fault is inaudible on `-a` and `-e`, where the vowel is already front, so
+this is not a list that will grow much — but a new `-o` or `-u` root on that
+voice is worth a listen.
+
+**It only happens to a one-word clip.** `af_heart` says **pomo** cleanly inside
+a sentence, and cleanly at the *end* of one. Which is why the override is keyed
+by exact utterance text and must stay that way: matching substrings would drag
+the nine sentence clips containing *pomo* onto another speaker to fix a fault
+they do not have. It is also why this is not the `af_sky` case below — nothing
+is wrong with `af_heart`, and swapping it out wholesale would be a large change
+to fix seven clips.
+
+**Check the destination before adding an entry.** The two voices do not fail on
+the same words, but they do not succeed on the same ones either: `bm_george`
+*rises* on `-o` words as a rule (median +87 Hz against `af_heart`'s −183) and
+sounds perfectly clean doing it. **tempo** and **pomowoaku** were the spot
+checks, being his own `-o` words and common ones.
+
+#### Two fixes that did not work, so nobody tries them twice
+
+Both were pursued far enough to be sure, and both are recorded here rather than
+left as dead code in `gen_audio.py`.
+
+- **Terminal punctuation does nothing.** The theory was prosodic: a bare word's
+  phoneme string is `pˈomo` and a sentence's is `... pˈomo.`, so a one-word
+  utterance was getting continuation intonation. It fits the measurements
+  exactly — isolated `-o`/`-u` words on `af_heart` run a median −168 Hz of
+  final spectral-centroid movement against −2 Hz for the same words ending a
+  sentence, and **pomo** alone is +322 Hz against −528 Hz ending `Tis ri yoro
+  pomo.` It is still wrong: adding `.`, `...` or `,` changes the audio not at
+  all. Kokoro wants following *sounds*, not a following mark.
+- **A carrier phrase works aloud and not on disk.** Recording the word the way
+  a phonetician does — `pomo... eko`, then cutting the carrier off — genuinely
+  fixes how **pomo** sounds *in the phrase*. But the cut clip still has the
+  "-eh", just shorter. So what fixed it for the listener was hearing `eko`
+  afterwards, not any change in how `pomo` was rendered. The machinery worked;
+  the premise did not. (It also could not have shipped as built: `eko` begins
+  with a vowel, so `bm_george` ran the two words together with no gap to cut
+  at. A stop-initial carrier would have fixed that, and would not have fixed
+  the actual problem.)
+
+Trimming the last 50–120 ms off the clip was the third idea and was not pursued
+past a listen: the artifact does not sit in a clean 80 ms window, and cutting
+far enough to remove it takes real vowel with it.
+
+**What this all means about the artifact**: it is baked into how `af_heart`
+renders that final vowel in that position, not a prosodic effect that context
+or punctuation can steer. Hence a different voice, which is the one thing that
+was known to work from the first report.
+
+#### On measuring it
+
+The metric used throughout was spectral centroid per 20 ms frame, comparing the
+mean of the last three voiced frames against the middle third. **It is a
+within-word A/B measure and not a cross-word ranker**, and it was used as the
+latter at first, which wasted a round:
+
+- Ranking across final vowels is meaningless — a front vowel legitimately has a
+  higher centroid, so `-o` words must be compared only with `-o` words. Done
+  wrong, it put **pomo** 10th of 198; done right, it is 1st of 55.
+- Even within a vowel it produced false positives: `ventokaro` and
+  `metarrinekaro` measure high and sound fine.
+- It flagged **wo**, but for the wrong reason — that word has no rise at all.
+- It was exactly right on `af_heart`'s `-u` words: three with a positive rise,
+  and those three were the three heard as wrong.
+- It correctly called the carrier a non-fix (+322 → +272, "barely moved"),
+  which the ear then confirmed.
+
+So: use it to compare two renderings of the same word, and never to decide
+whether a word is bad. Only listening does that.
+
 **Voices.** `af_heart` and `bm_george`, chosen by ear over the full set
 (`af_nicole` is unusable). Word tiles alternate between them so the learner is
 not tuned to one speaker; dialogs and stories will pick by character instead,
@@ -780,12 +861,27 @@ correct; what is wrong is the bytes underneath it. It was caught by `ffprobe`
 disagreeing with the index: `aku` indexed at 0.528 s, 0.708 s on disk, file
 dated two days earlier.
 
-So the recipe is **delete, then render**: remove the `.m4a` for every clip the
+The recipe *was* **delete, then render**: remove the `.m4a` for every clip the
 index assigns to the changed voice, then run `gen_audio` again. The second run
 is cheap — the WAV cache is keyed by voice and utterance and was filled by the
 first one, so it is an ffmpeg pass, not Kokoro inference. Verify by mtime and
 byte total rather than by exit code (words fell 4.15 MB → 3.87 MB), and spot
 check a clip of each voice: the untouched half must still be the old files.
+
+**`build_files` now does the delete step itself** (2026-08-21). Each index row
+already records the voice a clip was built with as its third element, so the
+build reads the previous index and re-encodes any clip whose recorded voice is
+not the one now assigned — and says how many it did. Nothing else reads that
+field: `site.js` takes `clip[0]` and `check_audio` takes only the keys. This is
+what makes a `VOICE_OVERRIDES` entry land at all; without it the override is a
+silent no-op, since the `.m4a` is named from the utterance text and the old
+file would simply be kept. That
+retires the manual recipe above, and with it a class of bug that had sprung
+three times (the af_sky swap, the median-split reassignments, the digits fix)
+and is invisible every time, since the index is *correct* and only the bytes
+under it are wrong. Keep the verification habit anyway: the guard covers a
+changed voice, not a changed rendering under the same voice, which still has
+no signal in the filename at all.
 
 This is the same trap as the edited-utterance one below, and the same trap the
 digits fix sprang. **`private/audio-cache/` is keyed by voice, so it does not
@@ -924,6 +1020,166 @@ fetched on first press and kept once decoded; that press is also the user
 gesture that permits resuming the `AudioContext`. Lessons that autoplay will
 need the unlock moved to their start button, and a header audio toggle; neither
 exists yet.
+
+## Tile Match (`/games/tilematch/`)
+
+A Mahjong-solitaire board over the roots, at `/games/tilematch/`.  Not linked
+from anywhere yet -- it is out for playtesting, and whether it earns a place in
+the navigation is the thing being tested.
+
+**The pair is a root's two halves, not two identical tiles**: one tile carries
+the `gloss` and `gloss2` in English, its partner the Latin form and the Han
+character.  So taking a pair is one retrieval, and a board is 96 of them.  Only
+Level 1 is dealt for now; the levels are already in `lexicon.json`, so opening
+it up is a picker, not a data change.
+
+- **Level 1 has 41 roots and the board holds 48 pairs, so seven roots are dealt
+  twice** -- which is easier (two ways to place each of those) and gives those
+  seven an extra exposure.  Which seven changes every game.  The particle is
+  excluded for free: `ri` ships as `kind: "particle"`, so filtering to
+  `kind === "root"` already drops it.
+- **The data is `lexicon.json`, through `window.pikotika.loadLexicon`** --
+  exposed by `site.js` for this -- so the game shares the one cached,
+  `DATA_V`-stamped fetch the word chips already make rather than opening a
+  second one.  Nothing was added to the build for it.
+- **Tiles overlap by exactly their own drawn thickness** -- 19px of side on
+  the left, 18px under the bottom, measured off the art -- so the step is
+  109x160 rather than 128x178.  Within a layer every tile's sides are hidden
+  under its neighbours and the layer reads as one flat surface of faces; a side
+  that *is* showing therefore means something, which is the whole point.  It
+  means either nothing is beside the tile (so it is open on that side) or the
+  tile is sitting on top of the layer below.  Between them that is the set a
+  player is hunting for, and it is now visible at a glance instead of having to
+  be worked out from the stack.  The first version spaced the tiles out at full
+  art size, and every tile looked equally raised.
+- **The overlap makes paint order load-bearing.**  A tile hides the left side
+  of the tile to its right and the bottom side of the tile above it, so within
+  a layer z rises going down the board and falls going right -- down-and-left
+  is nearer the viewer, which is where the art puts the thickness.  Between
+  layers the layer wins outright: `z * 10000 + y * 100 + (30 - x)`, and x is
+  even and at most 22 so the two lower terms cannot run into each other.
+  The refusal shake had to become a `translateX` at the same time; as a
+  `margin-left` it slid the tile under the neighbour painted over its left
+  side.
+- **Geometry is in half-tiles.**  A tile is 2 units by 2 units, so a coordinate
+  may be odd and a layer can sit half a tile off the one below.  `layout()` is
+  four centered rectangles, 60 + 24 + 8 + 4.  Blocking is the paper game's:
+  nothing overlapping from above (checked against *every* higher layer, not
+  just the next one -- a tile two layers up still sits on this one once the
+  one between is gone), and at least one long side clear.
+- **The deal is built backwards, so a board is always solvable**: take any two
+  tiles that *would* be free, call them a pair, remove them, repeat.  Reversing
+  that removal order is a winning line.  The player is free to depart from it,
+  which is what Shuffle is for.
+- **Shuffle redeals rather than permuting.**  This was the first version and it
+  was wrong: a permutation can land on a board with no move in it at all -- two
+  tiles stacked on each other, the lower unreachable and the only match for the
+  one above -- and no amount of reshuffling fixes that, so the game was simply
+  over.  Running the same backwards deal over the remaining places instead
+  makes the rest solvable again, which is the whole point of offering the
+  button.  Measured with a bot that just follows the Hint button: before, a
+  stuck game needed seven shuffles apiece and some were unwinnable; after, a
+  stuck board takes exactly one.
+- **The last two tiles are always takeable**, whatever the blocking rule would
+  say.  Every removal takes one meaning tile and one form tile of the same
+  root, so when two are left they are necessarily each other's partner: there
+  is no wrong pairing left for the rule to rule out, and no puzzle left for it
+  to make.  Without this the game has a dead end that Shuffle cannot fix, and
+  redealing is not the answer -- a final pair stacked one on the other can
+  never be redealt into a solvable board, because those two places *are* the
+  board, and no layout with two layers avoids it.  This was not theoretical:
+  400 bot playthroughs hit it 42 times, and every single occurrence was at
+  exactly one pair left, which is what says the rule is only ever doing harm
+  there.  With it, 400 of 400 clear.
+- **"Highlight free tiles" is a toggle in the button bar**, off by default and
+  remembered in `localStorage` (`pk-tilematch-free`) the way the theme is -- a
+  player who wants the assist wants it next time too, and every touch of
+  storage is guarded, since a private window can throw outright.  It darkens
+  every tile that *cannot* be played rather than lighting the ones that can:
+  there are far fewer free tiles than blocked ones, so lighting them would mean
+  painting the exception, and a board where most tiles are highlighted reads as
+  noise.  `refresh()` drives it off the free set it already computes for the
+  move counter, since that is the same question asked once.
+- **The dim is a `filter` on the whole tile, not an overlay on its face.**  Two
+  reasons, both found by looking: the tile art has transparent corners, so an
+  overlay rectangle would paint outside the tile's shape; and darkening only
+  the face would leave a blocked tile's *sides* at full brightness, which is
+  the one thing the overlap layout uses to say "playable".  So the per-layer
+  drop shadow moved from an inline `filter` to a `--tm-shadow` custom property
+  that defaults to the no-op `opacity(1)`, and the two effects compose as
+  `filter: var(--tm-shadow) brightness(.78) saturate(.85)`.
+- **Accent means "on" in this bar, not "hovered"** -- the same split the vocab
+  chips use.  The buttons' hover was accent-filled before the toggle existed,
+  which would have made the one control with a real on-state indistinguishable
+  from any button under the mouse; hover is `--bg-tint` now.
+- **A shake means "not a pair", so it fires only on a real attempt** -- a
+  meaning tile against a form tile.  Picking a second meaning tile is changing
+  your mind about the first, not a wrong guess, and does not shake.
+- **Tapping a written face says the root out loud**, through
+  `window.pikotika.playWord` -- a second thing `site.js` now exposes for this
+  page.  Binding the form to the meaning is what the game is for, and the sound
+  is part of the form; all 41 Level 1 roots already have a clip in the `words`
+  set, so nothing was generated for it.  Only the written face speaks, not the
+  meaning face, and since every pair has exactly one of each, a player hears
+  each root exactly once per pair however they tap.
+  - **Speaking is for picking a tile up, so deselecting is silent.**  A second
+    tap on the selected tile takes the first one back, and hearing the root
+    again would say something happened when nothing did.
+  - **Being refused is not the same as taking it back**, so a blocked tile
+    still speaks as well as shaking: tapping a tile you cannot take *yet* is a
+    good moment to hear it, and refusing the *move* is no reason to refuse the
+    *word*.  Which is why the deselect test comes first and the blocking check
+    second, rather than one early return covering both.
+  - `playWord` exists rather than reusing `play(kind, key, button)` because
+    that one wants a button to put a loading state on and to disable when a
+    clip is missing.  A tile is not that button: it is the game's own control
+    and has a game to run, so silence is the right failure.  The shared parts
+    came out as `unlock()` (the AudioContext creation and resume that has to
+    happen inside the click -- iOS wants it *inside* the handler, not merely
+    after) and `startClip()`; `play` and `playSequence` now use them too,
+    which removed the third copy of that preamble.
+  - **A tap stops what the last tap is still saying** rather than talking over
+    it, which two quick taps otherwise would.  The single-word `play` path does
+    not do this and still does not: a page with one play button per word is not
+    somewhere anyone taps twice in half a second.
+  - There is no way to mute it, because there is no site-wide audio toggle yet
+    (see **Not built yet**).  A per-game one would be a third button in a bar
+    that already has a toggle pattern to copy.
+- **Every match prints the root**: form, character, both glosses, and the
+  mnemonic with its `*asterisks*` rendered as `<em>`, the same as the word
+  popover does.  That line is the learning half of the game; the board is the
+  reason to keep going.
+- **The tile face is a light cream in both themes.**  It is a printed object,
+  not a surface of the page, so its ink is dark either way and nothing inside a
+  tile uses the palette custom properties.  `web/images/mahjong-tile.png` is
+  128x178 with the drawn thickness down and to the left, which is why higher
+  layers step *up and right*: that is where the art says the top face is.  The
+  flat top is inset 19 / 2 / 3 / 18, measured off the png.
+- **The whole board is drawn at the art's own pixel scale and then scaled once,
+  as a transform on `.tm-board`.**  So the type sizes are in tile pixels and
+  one number resizes everything.  Gloss size comes off the longest word on the
+  tile; the ladder was set by measuring, not guessing -- the widest Level 1
+  gloss is *excuse me*, and it lands inside the 106-pixel face with room.
+- **The scroller escapes the measure column to the full window, from
+  JavaScript.**  The tiles carry words, not symbols, so how big the board may
+  be *is* how legible it is.  The CSS `100vw` full-bleed trick was tried first
+  and is wrong here: `100vw` includes the scrollbar, so the page overflows
+  horizontally by that much.  `documentElement.clientWidth` does not.
+- Tiles are real `<button>`s, unlike the word chips -- the reason chips are
+  spans is that a sentence made of buttons cannot be drag-selected, and a board
+  is not prose.
+
+**Two build hooks were added for it**, both general:
+
+- `UNLISTED_PAGES` -- hand-written pages kept out of the navigation but run
+  through `authored_pages()` like any other, so their forms are checked.
+  `UNLISTED` above it is for pages a *generator* emits, which is a different
+  thing.
+- `PAGE_CSS` / `PAGE_JS` -- per-page stylesheets and scripts, versioned exactly
+  as the sitewide ones are, filled into `{{page_css}}` and `{{page_scripts}}`
+  in the template.  The game is 500 lines of each and every other page would
+  otherwise pay for it.  `main_class` became a `MAIN_CLASS` table at the same
+  time, rather than a second special case beside the topic index.
 
 ## Twemoji
 

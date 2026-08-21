@@ -1,0 +1,165 @@
+/* ---------------------------------------------------------------------------
+   Tile Match  —  /games/tilematch/
+
+   Loaded only on that page (build.py:PAGE_CSS).  Everything here is measured
+   in the tile art's own pixels: web/images/mahjong-tile.png is 128x178, and
+   the whole board is drawn at that scale and then scaled once, as a unit, by
+   a transform on .tm-board.  So one number changes the board's size and
+   nothing inside it has to know.
+
+   The tile face is a light cream in both themes -- it is a printed object, not
+   a surface of the page -- so its ink is dark either way and none of the
+   palette custom properties are used inside a tile.
+   --------------------------------------------------------------------------- */
+
+.tm { margin: 2rem 0; }
+
+.tm-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+}
+
+.tm-btn {
+  font: inherit;
+  font-size: .95rem;
+  padding: .4rem .85rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.tm-btn:hover:not([disabled]) { background: var(--bg-tint); border-color: var(--border-strong); }
+.tm-btn[disabled] { opacity: .45; cursor: default; }
+/* Accent means "on", not "hovered" -- the same split the vocab chips use, so
+   the one toggle in this bar cannot be mistaken for a button under the mouse. */
+.tm-btn[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent-deep);
+}
+
+.tm-count { margin-left: auto; color: var(--text-muted); font-size: .9rem; }
+
+/* Reserved height, so a match message appearing does not shove the board. */
+.tm-status {
+  min-height: 2.6em;
+  margin: 0 0 .5rem;
+  padding: .4rem .6rem;
+  background: var(--bg-tint);
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+  font-size: .95rem;
+}
+.tm-status .tm-form { font-weight: 700; }
+.tm-status .tm-han { font-family: var(--font-han); }
+.tm-status .tm-mnem { color: var(--text-muted); }
+
+/* The board escapes the measure column to the full viewport: the tiles carry
+   words, not symbols, so how big the board may be *is* how legible it is.
+   Wider than the viewport on a narrow screen, it scrolls rather than shrinking
+   the lettering past reading. */
+.tm-scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* .tm-stage carries the *scaled* size so the page lays out around it;
+   .tm-board is always full size and is scaled into that box. */
+.tm-stage { position: relative; }
+.tm-board {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+}
+
+.tm-tile {
+  position: absolute;
+  width: 128px;
+  height: 178px;
+  padding: 0;
+  border: 0;
+  background: url("/images/mahjong-tile.png") no-repeat center / 100% 100%;
+  cursor: pointer;
+  font: inherit;
+  color: #23201a;
+  -webkit-tap-highlight-color: transparent;
+  /* A no-op filter by default so the two effects always compose: the per-layer
+     shadow is set on this property from JS, and the dim appends to it.  The
+     tile art has transparent corners, so darkening has to be a filter on the
+     element -- an overlay rectangle would paint outside the tile's shape. */
+  --tm-shadow: opacity(1);
+  filter: var(--tm-shadow);
+}
+
+/* Highlight free tiles: everything that cannot be played recedes.  Applied to
+   the whole tile rather than just its face, so a blocked tile with an open
+   side does not go on flashing that side at the player. */
+.tm-tile.tm-dim { filter: var(--tm-shadow) brightness(.78) saturate(.85); }
+.tm-tile:focus-visible { outline: none; }
+.tm-tile.tm-out { display: none; }
+
+/* The face: the flat top of the art, which sits up and to the right of the
+   drawn thickness.  Measured off the png. */
+.tm-face {
+  position: absolute;
+  top: 2px; left: 19px; right: 3px; bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  text-align: center;
+  line-height: 1.15;
+  overflow: hidden;
+}
+
+.tm-en { font-weight: 600; }
+.tm-en .tm-en2 { font-weight: 500; color: #6a6152; }
+.tm-latin { font-weight: 700; letter-spacing: .01em; }
+.tm-hanbig { font-family: var(--font-han); font-size: 60px; line-height: 1; }
+
+/* Selection, hint and refusal all paint on the face only, so the tile's drawn
+   thickness never lights up as if it were part of the top. */
+.tm-tile::after {
+  content: "";
+  position: absolute;
+  top: 2px; left: 19px; right: 3px; bottom: 18px;
+  pointer-events: none;
+  background: transparent;
+}
+.tm-tile.tm-sel::after,
+.tm-tile:focus-visible::after { background: rgba(255, 232, 0, .45); box-shadow: inset 0 0 0 3px #b08900; }
+.tm-tile.tm-hint::after { background: rgba(96, 200, 120, .40); box-shadow: inset 0 0 0 3px #2f7d46; }
+
+/* translateX, not margin-left: tiles overlap by their own drawn thickness, so
+   nudging one sideways in the flow would slide it under the neighbour that is
+   painted over its left side.  A transform moves the painted tile itself. */
+.tm-tile.tm-no { animation: tm-shake .3s; }
+@keyframes tm-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.tm-tile.tm-go {
+  transition: opacity .22s ease-out, transform .22s ease-out;
+  opacity: 0;
+  transform: scale(1.18);
+  pointer-events: none;
+}
+
+.tm-status.tm-won {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-left-color: var(--accent-deep);
+  font-weight: 650;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tm-tile.tm-go, .tm-tile.tm-no { transition: none; animation: none; }
+}

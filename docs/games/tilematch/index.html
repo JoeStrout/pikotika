@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Learn — Pikotika</title>
-<meta name="description" content="A free Pikotika course with no account and no login. Fifty short lessons.">
+<title>Tile Match — Pikotika</title>
+<meta name="description" content="Mahjong solitaire over the Pikotika roots: match each root's English meanings to its written form.">
 
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
 <link rel="icon" href="/images/favicon-32.png" sizes="32x32">
@@ -12,14 +12,15 @@
 <meta name="apple-mobile-web-app-title" content="Pikotika">
 
 <meta property="og:site_name" content="Pikotika">
-<meta property="og:title" content="Learn — Pikotika">
-<meta property="og:description" content="A free Pikotika course with no account and no login. Fifty short lessons.">
+<meta property="og:title" content="Tile Match — Pikotika">
+<meta property="og:description" content="Mahjong solitaire over the Pikotika roots: match each root's English meanings to its written form.">
 <meta property="og:image" content="https://pikotika.org/images/og-image.png">
-<meta property="og:url" content="https://pikotika.org/learn/">
+<meta property="og:url" content="https://pikotika.org/games/tilematch/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="stylesheet" href="/css/site.css?v=9a217162b9">
+<link rel="stylesheet" href="/css/tilematch.css?v=4279750d4a">
 <script>
 /* Set the theme before first paint, so there is no flash of the wrong one. */
 (function () {
@@ -55,26 +56,43 @@
       <li><a href="/grammar/">Grammar</a></li>
       <li><a href="/topics/">Topics</a></li>
       <li><a href="/tools/">Tools</a></li>
-      <li><a href="/learn/" aria-current="page">Learn</a></li>
+      <li><a href="/learn/">Learn</a></li>
       <li><a href="/why/">Why</a></li>
     </ul>
   </nav>
 </header>
 
-<main id="main" class="">
-<h1>Learn</h1>
-<p class="lede">A free course, with no account and no login. About fifty lessons
-of five to eight minutes each, and you can read a real sentence after the first
-one.</p>
-<div class="placeholder">
-  <h2>Learn content goes here</h2>
-  <ul>
-    <li>The level map, and a Start button</li>
-    <li>Five levels, about ten lessons each</li>
-    <li>Stories — the dialogs, readable and playable</li>
-    <li>SRS decks and printable root cards to download</li>
-  </ul>
+<main id="main" class="wide">
+<h1>Tile Match</h1>
+
+<p class="lede">Mahjong solitaire over the Pikotika roots. Every root is two
+tiles &mdash; one with its two English meanings, one with its written form in
+Latin and Han. Clear the board by matching them.</p>
+
+<p>A tile can only be taken when nothing sits on top of it and one of its long
+sides is open, exactly as in the paper game. Forty-one Level&nbsp;1 roots make
+forty-eight pairs, so a few roots turn up twice.</p>
+
+<div class="tm" id="tm">
+  <div class="tm-bar">
+    <button type="button" class="tm-btn" id="tm-new">New game</button>
+    <button type="button" class="tm-btn" id="tm-hint">Hint</button>
+    <button type="button" class="tm-btn" id="tm-undo">Undo</button>
+    <button type="button" class="tm-btn" id="tm-shuffle">Shuffle</button>
+    <button type="button" class="tm-btn" id="tm-free" aria-pressed="false">Highlight free tiles</button>
+    <span class="tm-count" id="tm-count"></span>
+  </div>
+
+  <p class="tm-status" id="tm-status" role="status" aria-live="polite">Loading the roots&hellip;</p>
+
+  <div class="tm-scroll" id="tm-scroll">
+    <div class="tm-stage" id="tm-stage">
+      <div class="tm-board" id="tm-board"></div>
+    </div>
+  </div>
 </div>
+
+<noscript><p>This one needs JavaScript.</p></noscript>
 </main>
 
 <footer class="site-footer">
@@ -96,3 +114,4 @@ one.</p>
 <script src="/js/numbers.js?v=d0f1e926e6"></script>
 <script src="/js/site.js?v=4c46242829"
         data-data-version="b8830de1a0"></script>
+<script src="/js/tilematch.js?v=23cb2818ab"></script>
