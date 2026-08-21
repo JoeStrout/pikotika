@@ -328,6 +328,7 @@ This is a sea creature.	this RI big water TE animal.	Tis ri meka aku te peste.	�
 She's a business owner who is small.	this-person RI small buy-group have-person.	Tisomo ri piko komparmen teneomo.	此人 ⊢ 小 買众 有人.	4	smalltalk
 She's a small-business owner.	this-person RI small buy-group TE have-person.	Tisomo ri piko komparmen te teneomo.	此人 ⊢ 小 買众 > 有人.	4	smalltalk
 I want that big red ball.	I RI want A not-this big red round.	Eko ri vori a nontis meka rus rotun.	己 ⊢ 求 ⇒ 不此 大 赤 丸.	4	colors
+I have a black-and-white picture.	I RI have A black and white picture.	Eko ri tene a nero kum anka pitur.	己 ⊢ 有 ⇒ 黒 并 白 画.	4	colors
 She's a happier person.	this-person RI more happy person.	Tisomo ri mas konten omo.	此人 ⊢ 更 楽 人.	2	
 It's a tea shop that is green.	this RI green plant-water buy-place.	Tis ri verte arpoaku komparroko.	此 ⊢ 緑 木水 買所.	4	colors;food
 It's a green-tea shop.	this RI green plant-water TE buy-place.	Tis ri verte arpoaku te komparroko.	此 ⊢ 緑 木水 > 買所.	4	food
