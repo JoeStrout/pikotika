@@ -83,7 +83,7 @@ Are you staying the night?	you RI sleep in this city, what?	Tu ri tormi in tis s
 Yes, at Carla's place.	yes, in Carla home.	Si, in Karra kase.	是, 内 Karra 户.	3	lodging;names
 I'll drive back tomorrow.	sun-after, I RI vehicle-go back.	Yantar, eko ri karoire rets.	日后, 己 ⊢ 车行 反.	4	travel;dates
 Morning.	good up-sun.	Pona suryan.	好 上日.	2	pleasantries
-How was your weekend?	you seven-sun-finish RI what?	Tu senseyanvin ri ker?	尔 7日閉 ⊢ 何?	2	smalltalk;dates
+How was your weekend?	you seven-sun-finish RI what-manner?	Tu senseyanvin ri kermoto?	尔 7日閉 ⊢ 何方?	3	smalltalk;dates
 Too short.	up-degree small.	Surmesur piko.	上寸 小.	3	smalltalk
 Good, actually.	good, in-true.	Pona, inves.	好, 内真.	1	smalltalk
 I finally fixed my bicycle.	in-finish, I RI heal A me leg-vehicle.	Invin, eko ri sana a eko kampakaro.	内閉, 己 ⊢ 医 ⇒ 己 足车.	4	smalltalk
@@ -202,11 +202,13 @@ No problem.	no bad-thing.	Nem marumkosa.	无 悪物.	2	pleasantries
 It's been so long.	big long interval finish!	Meka ronka turan vin!	大 长 間 閉!	3	meeting;smalltalk
 How are you?	you RI good, what?	Tu ri pona, ker?	尔 ⊢ 好, 何?	1	pleasantries
 Busy, but good.	many-work, but good.	Muropus, sets pona.	多力, 但 好.	3	smalltalk;feelings
-How's the new job?	you new work RI what?	Tu nova opus ri ker?	尔 初 力 ⊢ 何?	2	smalltalk
+What is your new job?	you new work RI what?	Tu nova opus ri ker?	尔 初 力 ⊢ 何?	2	smalltalk
+I'm a teacher.	I RI learn-give-person.	Eko ri impartonaromo.	己 ⊢ 学与人.	4	smalltalk
+How's the new job?	you new work RI what-manner?	Tu nova opus ri kermoto?	尔 初 力 ⊢ 何方?	3	smalltalk
 Hard at first, but now I like it.	in before, hard; but this-time I RI like A this.	In yer, sorin; sets tistempo eko ri kusta a tis.	内 前, 硬; 但 此时 己 ⊢ 愛 ⇒ 此.	4	smalltalk;feelings
 The people are kind.	person RI good-feel.	Omo ri ponasenti.	人 ⊢ 好心.	3	smalltalk;feelings
 That's the important thing.	this RI heavy-necessary thing.	Tis ri pesaneses kosa.	此 ⊢ 重要 物.	4	smalltalk
-How are the children?	you child RI what?	Tu nino ri ker?	尔 子 ⊢ 何?	1	family;smalltalk
+How are your children?	you child RI what-manner?	Tu nino ri kermoto?	尔 子 ⊢ 何方?	3	family;smalltalk
 Big!	big!	Meka!	大!	1	family
 The little one started school this year.	this year, small child RI begin go to learn-place.	Tis anyo, piko nino ri apa ire ver imparroko.	此 年, 小 子 ⊢ 开 行 向 学所.	4	family;dates
 No!	not!	Non!	不!	1	smalltalk
@@ -359,7 +361,7 @@ The station is between the shop and the river.	vehicle-place RI middle buy-place
 Please pick one of these.	please choose A one middle this.	Pam erike a wun mets tis.	乞 选 ⇒ 1 中 此.	4	
 Is there a doctor among us?	RI heal-person middle I-group, what?	Ri sanaomo mets ekomen, ker?	⊢ 医人 中 己众, 何?	4	health
 Please bring me a menu.	please have-come A food-sequence to me.	Pam teneveni a komiorten ver eko.	乞 有来 ⇒ 食序 向 己.	3	food
-What does the label say?	name RI say A what?	Nomen ri tika a ker?	名 ⊢ 言 ⇒ 何?	2	money;food
+What does the label say?	label RI say A what?	Nomen ri tika a ker?	名 ⊢ 言 ⇒ 何?	2	money;food
 Can you give me a hand?	you RI can hand-give to me, what?	Tu ri kan manutonar ver eko, ker?	尔 ⊢ 能 手与 向 己, 何?	5	pleasantries
 The boss gave us the green light.	work-head RI green-say to I-group.	Opustesta ri vertetika ver ekomen.	力头 ⊢ 緑言 向 己众.	4	smalltalk;colors
 No ice, please.	no cold, please.	Nem rikus, pam.	无 冷, 乞.	4	food

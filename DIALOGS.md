@@ -55,7 +55,7 @@ Alice: Yes, at Carla's place. I'll drive back tomorrow.
 ## 2. Two coworkers catching up on Monday
 
 Dan: Morning. How was your weekend?
-> **Pona suryan. Tu senseyanvin ri ker?**
+> **Pona suryan. Tu senseyanvin ri kermoto?**
 
 Eve: Too short. Yours?
 > **Surmesur piko. Kum tu, ker?**
@@ -313,8 +313,14 @@ Lena: No problem. Thank you.
 Mira: Hey! It's been so long. How are you?
 > **E, Nirus! Meka ronka turan vin! Tu ri pona, ker?**
 
-Nils: Busy, but good. And you? How's the new job?
+Nils: Busy, but good. And you? What is your new job?
 > **Muropus, sets pona. Kum tu, ker? Tu nova opus ri ker?**
+
+Mira: I'm a teacher.
+> **Eko ri impartonaromo.**
+
+Nils: How's the new job?
+> **Tu nova opus ri kermoto?**
 
 Mira: Hard at first, but now I like it. The people are kind.
 > **In yer, sorin; sets tistempo eko ri kusta a tis. Omo ri ponasenti.**
@@ -323,7 +329,7 @@ Nils: That's the important thing.
 > **Tis ri pesaneses kosa.**
 
 Mira: How are the children?
-> **Tu nino ri ker?**
+> **Tu nino ri kermoto?**
 
 Nils: Big! The little one started school this year.
 > **Meka! Tis anyo, piko nino ri apa ire ver imparroko.**
