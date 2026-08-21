@@ -224,7 +224,7 @@
 | down; below | tun | 下 | low, bottom, under |
 | edge; margin | rante | 边 | side, border, boundary, rim, shore |
 | far; distant | ron | 遠 | remote |
-| from; source | vons | 从 | origin, out of |
+| from; than | vons | 从 | source, origin, out of |
 | hole; gap | vuko | 穴 | opening, empty space within |
 | in; at | in | 内 | inside, within |
 | left | sini | 左 | left-hand side, west (with `map`) |

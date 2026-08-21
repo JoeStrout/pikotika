@@ -142,7 +142,7 @@ back	behind	Space and direction	rear, reverse (front = `not-back`)	rets	反	*let
 down	below	Space and direction	low, bottom, under	tun	下	a *tun*nel goes down	English *down*	3	3	5
 edge	margin	Space and direction	side, border, boundary, rim, shore	rante	边	stand at the edge and *rant*	German/Dutch *Rand*, Swedish *rand*; English *rim*	5	5	4
 far	distant	Space and direction	remote	ron	遠	*lon*g gone, far away	Latin *longe*, Italian *lontano*, French *loin*	13	1	5
-from	source	Space and direction	origin, out of	vons	从	a *fon*t is a source, from which things spring	Latin *fons* "source" — coda cluster restores the clipped hook	4	12	2
+from	than	Space and direction	source, origin, out of	vons	从	a *fon*t is a source, from which things spring	Latin *fons* "source" — coda cluster restores the clipped hook	4	12	2
 hole	gap	Space and direction	opening, empty space within	vuko	穴	oh *fuko*, there's hole blocking my way!	Italian buco; Latin cavus	5	1	5
 in	at	Space and direction	inside, within	in	内	*in*	Latin *in*	4	52	1
 left		Space and direction	left-hand side, west (with `map`)	sini	左	have you *seen* my left hand?	Latin *sinistra*, Italian/Spanish *sinistra/siniestra*; English *sinister*	5	3	5

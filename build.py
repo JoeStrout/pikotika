@@ -909,8 +909,15 @@ def check_forms(tables, sources) -> list:
             words = pikotika.parse_latin(text, tables, fail)
             if words is None:
                 token = fail.get("token", text)
-                problems.append(f"{label}:{line}: no such word {token!r}  "
-                                f"in {text!r}")
+                glossed = pikotika.parse_gloss(text, tables)
+                if glossed is not None:
+                    latin = pikotika.render_latin(glossed, tables)
+                    problems.append(f"{label}:{line}: gloss notation in a .pk "
+                                    f"span -- {text!r} is the gloss; the Latin "
+                                    f"is {latin!r}")
+                else:
+                    problems.append(f"{label}:{line}: no such word {token!r}  "
+                                    f"in {text!r}")
                 continue
             for word in words:
                 if not pikotika.is_punct(word):

@@ -19,17 +19,17 @@ I was told this.	RI say A this to me.	Ri tika a tis ver eko.	⊢ 言 ⇒ 此 向
 Is this allowed?	RI law A this, what?	Ri reke a tis, ker?	⊢ 法 ⇒ 此, 何?	5	travel
 It's not allowed.	RI not law.	Ri non reke.	⊢ 不 法.	5	travel
 Payment is required.	RI must give A money.	Ri neses tonar a moni.	⊢ 要 与 ⇒ 贝.	4	money
-This one is better than that one.	this RI more good from not-this.	Tis ri mas pona vons nontis.	此 ⊢ 更 好 从 不此.	2	
-It's worse than that one.	this RI more not-good from not-this.	Tis ri mas nonpona vons nontis.	此 ⊢ 更 不好 从 不此.	2	
-It's cheaper than in the city.	this RI more small money from city.	Tis ri mas piko moni vons sitas.	此 ⊢ 更 小 贝 从 市.	4	money
-It's cheaper here than at home.	in this-place this RI more small money from in home.	In tisroko tis ri mas piko moni vons in kase.	内 此所 此 ⊢ 更 小 贝 从 内 户.	3	money
+This one is better than that one.	this RI more good than not-this.	Tis ri mas pona vons nontis.	此 ⊢ 更 好 从 不此.	2	
+It's worse than that one.	this RI more not-good than not-this.	Tis ri mas nonpona vons nontis.	此 ⊢ 更 不好 从 不此.	2	
+It's cheaper than in the city.	this RI more small money than city.	Tis ri mas piko moni vons sitas.	此 ⊢ 更 小 贝 从 市.	4	money
+It's cheaper here than at home.	in this-place this RI more small money than in home.	In tisroko tis ri mas piko moni vons in kase.	内 此所 此 ⊢ 更 小 贝 从 内 户.	3	money
 It's as good as it was.	this RI same good from before-thing.	Tis ri sam pona vons yerkosa.	此 ⊢ 同 好 从 前物.	3	
-It's the oldest.	this RI more old from all.	Tis ri mas vetus vons pan.	此 ⊢ 更 古 从 全.	5	
+It's the oldest.	this RI more old than all.	Tis ri mas vetus vons pan.	此 ⊢ 更 古 从 全.	5	
 I'm better now.	I RI more good in this-time.	Eko ri mas pona in tistempo.	己 ⊢ 更 好 内 此时.	2	health
 Do you have a bigger room?	you RI have A more big room, what?	Tu ri tene a mas meka kamar, ker?	尔 ⊢ 有 ⇒ 更 大 室, 何?	3	lodging
-It's less important than that one.	this RI not-more heavy-necessary from not-this.	Tis ri nonmas pesaneses vons nontis.	此 ⊢ 不更 重要 从 不此.	4	
-It's not more important than that one.	this RI not more heavy-necessary from not-this.	Tis ri non mas pesaneses vons nontis.	此 ⊢ 不 更 重要 从 不此.	4	
-It's the least important.	this RI not-more heavy-necessary from all.	Tis ri nonmas pesaneses vons pan.	此 ⊢ 不更 重要 从 全.	4	
+It's less important than that one.	this RI not-more heavy-necessary than not-this.	Tis ri nonmas pesaneses vons nontis.	此 ⊢ 不更 重要 从 不此.	4	
+It's not more important than that one.	this RI not more heavy-necessary than not-this.	Tis ri non mas pesaneses vons nontis.	此 ⊢ 不 更 重要 从 不此.	4	
+It's the least important.	this RI not-more heavy-necessary than all.	Tis ri nonmas pesaneses vons pan.	此 ⊢ 不更 重要 从 全.	4	
 Hello (when meeting someone new)	new-meet.	Novasarve.	初会.	1	pleasantries;meeting
 Hello	happy-meet.	Kontensarve.	楽会.	1	pleasantries
 Take care (parting).	good go.	Pona ire.	好 行.	1	pleasantries
@@ -93,7 +93,7 @@ I rode it twenty kilometers on Sunday.	in sun-weekday, I RI vehicle-put A this i
 Nice.	good.	Pona.	好.	1	smalltalk
 I did nothing.	I RI make A no.	Eko ri vake a nem.	己 ⊢ 作 ⇒ 无.	2	smalltalk
 I slept, I ate, I watched three movies.	I RI sleep, food, and see A 3 picture.	Eko ri tormi, komi, kum vite a 3 pitur.	己 ⊢ 床, 食, 并 見 ⇒ 3 画.	4	smalltalk
-That sounds better than working.	this RI more good from work.	Tis ri mas pona vons opus.	此 ⊢ 更 好 从 力.	2	smalltalk
+That sounds better than working.	this RI more good than work.	Tis ri mas pona vons opus.	此 ⊢ 更 好 从 力.	2	smalltalk
 It was.	true.	Ves.	真.	1	smalltalk
 Is the boss in today?	this-sun, work-head RI in work-room, what?	Tisyan, opustesta ri in opuskamar, ker?	此日, 力头 ⊢ 内 力室, 何?	4	smalltalk
 She's traveling until Thursday.	this-person RI vehicle-go straight-to plant-weekday.	Tisomo ri karoire retover arpoyom.	此人 ⊢ 车行 直向 木曜.	4	dates;travel
@@ -345,7 +345,7 @@ I want to try eating meat.	I RI want A try A food A meat.	Eko ri vori a tentar a
 I like to read comic books.	I RI like A write-see A picture-many-page.	Eko ri kusta a kitavite a piturmurkarta.	己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.	4	smalltalk;feelings
 How old are you?	you year-interval RI what?	Tu anyoturan ri ker?	尔 年間 ⊢ 何?	3	meeting;numbers
 I'm 34 years old.	me year-interval RI 34.	Eko anyoturan ri 34.	己 年間 ⊢ 34.	3	meeting;numbers
-My boss is younger than me.	me work-head RI more year-small from me.	Eko opustesta ri mas anyopiko vons eko.	己 力头 ⊢ 更 年小 从 己.	4	smalltalk
+My boss is younger than me.	me work-head RI more year-small than me.	Eko opustesta ri mas anyopiko vons eko.	己 力头 ⊢ 更 年小 从 己.	4	smalltalk
 My older sister will be visiting for the holidays.	in not-work-time, me more year-big same-parent-woman RI come.	In nonopustempo, eko mas anyomeka samparivema ri veni.	内 不力时, 己 更 年大 同亲女 ⊢ 来.	3	family;dates
 Would you like anything else?	you RI want A other-thing, what?	Tu ri vori a arkosa, ker?	尔 ⊢ 求 ⇒ 別物, 何?	5	money;food
 I hope I can find it, or else I'll have to buy a new one.	I RI want A I RI can again-get A this; or I RI must buy A new thing.	Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.	己 ⊢ 求 ⇒ 己 ⊢ 能 又取 ⇒ 此; 或 己 ⊢ 要 買 ⇒ 初 物.	5	money
@@ -355,7 +355,7 @@ Can I ride a horse here?	I RI can vehicle-put A vehicle-animal in this-place, wh
 The child jumped into the water.	child RI leg-up-go to water.	Nino ri kampasurire ver aku.	子 ⊢ 足上行 向 水.	4	family
 Prices are going up.	money-amount RI up-go.	Monimesur ri surire.	贝寸 ⊢ 上行.	3	money
 Turn left at the next corner.	please bend to left in after-sequence bend-place.	Pam kurva ver sini in tarorten kurvaroko.	乞 弓 向 左 内 后序 弓所.	5	travel
-I prefer tea to coffee.	I RI more like A plant-water from black-drink.	Eko ri mas kusta a arpoaku vons neropipe.	己 ⊢ 更 愛 ⇒ 木水 从 黒飲.	3	food;feelings
+I prefer tea to coffee.	I RI more like A plant-water than black-drink.	Eko ri mas kusta a arpoaku vons neropipe.	己 ⊢ 更 愛 ⇒ 木水 从 黒飲.	3	food;feelings
 I would rather walk.	I RI more like A leg-go.	Eko ri mas kusta a kampaire.	己 ⊢ 更 愛 ⇒ 足行.	4	travel;feelings
 The station is between the shop and the river.	vehicle-place RI middle buy-place and long-water.	Karoroko ri mets komparroko kum ronkaaku.	车所 ⊢ 中 買所 并 长水.	4	travel
 Please pick one of these.	please choose A one middle this.	Pam erike a wun mets tis.	乞 选 ⇒ 1 中 此.	4	
