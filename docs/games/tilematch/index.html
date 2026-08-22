@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="stylesheet" href="/css/site.css?v=9a217162b9">
-<link rel="stylesheet" href="/css/tilematch.css?v=4279750d4a">
+<link rel="stylesheet" href="/css/tilematch.css?v=869a17be5e">
 <script>
 /* Set the theme before first paint, so there is no flash of the wrong one. */
 (function () {
@@ -70,8 +70,9 @@ tiles &mdash; one with its two English meanings, one with its written form in
 Latin and Han. Clear the board by matching them.</p>
 
 <p>A tile can only be taken when nothing sits on top of it and one of its long
-sides is open, exactly as in the paper game. Forty-one Level&nbsp;1 roots make
-forty-eight pairs, so a few roots turn up twice.</p>
+sides is open, exactly as in the paper game. Pick a level and the board is dealt
+from its roots; no level has quite the forty-eight it takes to fill the board, so
+the rest come from the level before &mdash; a little revision with every game.</p>
 
 <div class="tm" id="tm">
   <div class="tm-bar">
@@ -90,6 +91,14 @@ forty-eight pairs, so a few roots turn up twice.</p>
       <div class="tm-board" id="tm-board"></div>
     </div>
   </div>
+
+  <dialog class="tm-dialog" id="tm-level">
+    <form method="dialog">
+      <h2>Which level?</h2>
+      <p class="tm-dialog-lede">The board is dealt from that level&rsquo;s roots.</p>
+      <div class="tm-levels" id="tm-levels"></div>
+    </form>
+  </dialog>
 </div>
 
 <noscript><p>This one needs JavaScript.</p></noscript>
@@ -113,5 +122,5 @@ forty-eight pairs, so a few roots turn up twice.</p>
 <script src="/js/adapt.js?v=8f602064c8"></script>
 <script src="/js/numbers.js?v=d0f1e926e6"></script>
 <script src="/js/site.js?v=4c46242829"
-        data-data-version="b8830de1a0"></script>
-<script src="/js/tilematch.js?v=23cb2818ab"></script>
+        data-data-version="0fcbc1e093"></script>
+<script src="/js/tilematch.js?v=ced07839be"></script>

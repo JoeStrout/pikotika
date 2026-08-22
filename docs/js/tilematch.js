@@ -2,14 +2,18 @@
    Tile Match  —  /games/tilematch/
 
    Mahjong solitaire where the pair is a root's meaning and a root's form: one
-   tile reads `happy / pleased`, its partner reads 楽 / konten.  Level 1 has 41
-   roots and the board holds 48 pairs, so seven roots are dealt twice -- which
-   makes the puzzle a little easier and gives those seven an extra exposure.
+   tile reads `happy / pleased`, its partner reads 楽 / konten.  The board holds
+   48 pairs.
 
    Geometry is in half-tiles.  A tile is 2 units by 2 units, so a coordinate
    may be odd, and a layer can sit half a tile off the one below it.  Blocking
    is the paper game's: nothing overlapping from above, and at least one long
    side clear.
+
+   A game is dealt from one level's roots.  No level has the 48 the board wants
+   -- they run 36 to 41 -- so the rest are drawn at random from the level below,
+   which puts a little revision in every game; Level 1, with nothing below it,
+   deals some of its roots twice instead.
 
    The deal is built backwards and is therefore always solvable: take any two
    tiles that would be free, call them a pair, remove them, repeat.  Reversing
@@ -40,16 +44,26 @@
   var STEP_X = TILE_W - 19, STEP_Y = TILE_H - 18;
   var UNIT_X = STEP_X / 2, UNIT_Y = STEP_Y / 2;
 
-  var LAYER_DX = 9, LAYER_DY = -11; /* higher layers step up and right, the way
-                                       the drawn thickness says the light falls */
+  /* Higher layers step up and right, the way the drawn thickness says the light
+     falls.  Exact stacking would be (19, -18) -- that is the offset at which a
+     tile's drawn underside lands precisely on the face of the tile below,
+     since the top face is inset 19 from the left and 18 from the bottom.  The
+     board is drawn shallower than that on purpose: at the true offset a four
+     layer stack walks 57px right and 54px up, which on a 12-wide bottom layer
+     leans the whole board.  12 is the shallowest that still reads as a step. */
+  var LAYER_DX = 18, LAYER_DY = -18;
   var PAD = 16;
-  var LEVEL = '1';
+  var LEVELS = ['1', '2', '3', '4', '5'];
+  var LEVEL_KEY = 'pk-tilematch-level';
 
   var tiles = [];        /* every position, in DOM order; faces are reassigned */
-  var roots = [];        /* the Level 1 roots, from lexicon.json */
+  var byLevel = {};      /* level -> its roots, from lexicon.json */
+  var level = '1';       /* the level the current board was dealt from */
   var btnUndo = document.getElementById('tm-undo');
   var btnShuffle = document.getElementById('tm-shuffle');
   var btnFree = document.getElementById('tm-free');
+  var dialog = document.getElementById('tm-level');
+  var levelBox = document.getElementById('tm-levels');
   var FREE_KEY = 'pk-tilematch-free';
   var showFree = false;
   var selected = null;
@@ -175,13 +189,22 @@
     return order;
   }
 
-  /* n roots for n pairs, every root at least once and the surplus taken from
-     the front of a shuffled list, so which roots double up changes each game. */
-  function rootPool(n) {
-    var pool = shuffled(roots);
-    var out = pool.slice();
-    for (var i = 0; out.length < n; i++) out.push(pool[i % pool.length]);
-    return shuffled(out);
+  /* n roots for n pairs.  Every root of the chosen level goes in once, and the
+     shortfall -- the board wants 48 and no level has more than 41 -- is drawn
+     at random from the level below, then the one below that if it is still
+     short.  Level 1 has nothing beneath it, so it deals some of its own roots
+     twice; that is easier (two ways to place each) and gives those roots an
+     extra exposure.  Which roots are borrowed or doubled changes every game. */
+  function rootPool(n, lv) {
+    var own = byLevel[lv] || [];
+    var out = shuffled(own);
+    var below = LEVELS.indexOf(lv);
+    while (out.length < n && below > 0) {
+      below--;
+      out = out.concat(shuffled(byLevel[LEVELS[below]] || []).slice(0, n - out.length));
+    }
+    for (var i = 0; out.length < n; i++) out.push(own[i % own.length]);
+    return shuffled(out.slice(0, n));
   }
 
   /* --- drawing a face ---------------------------------------------------- */
@@ -304,10 +327,44 @@
     btnShuffle.disabled = !left;
     status.classList.toggle('tm-won', !left);
     if (!left) {
-      say([text('Cleared — every Level 1 root, both ways round. Play again?')]);
+      say([text('Cleared — Level ' + level + ', every root both ways round.'),
+           text(' '), playAgainButton()]);
     } else if (!moves.length) {
       say([text('No move left on the board. Shuffle the rest and keep going.')]);
     }
+  }
+
+  /* A wrong guess is the best moment to be told the answer, so the refusal
+     line answers both tiles rather than only saying no: the form tile gets its
+     meanings, the meaning tile gets its form.  In the order they were tapped,
+     since that is the order the player is holding them in.  This is why a
+     shake fires only on a real attempt -- there is nothing to teach when the
+     two tiles are both meanings. */
+  function sideOf(t) {
+    if (t.face === 'pk') {
+      return [text(t.root.form, 'tm-form'),
+              text(' means ‘' + meanings(t.root).join(', ') + '’')];
+    }
+    return [text('‘' + meanings(t.root).join(', ') + '’ is '),
+            text(t.root.form, 'tm-form')];
+  }
+
+  function notAPair(a, b) {
+    return [text('Not a pair: ')]
+      .concat(sideOf(a), [text('; ')], sideOf(b), [text('.')]);
+  }
+
+  /* The win line ends in the way out of it, rather than asking "play again?"
+     and leaving the player to find the button in the bar above the board they
+     have just emptied.  It opens the same picker New game does, so choosing a
+     different level is one press from finishing one. */
+  function playAgainButton() {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'tm-btn tm-again';
+    b.textContent = 'Play again';
+    b.addEventListener('click', function () { askLevel(); });
+    return b;
   }
 
   function clearHint() {
@@ -395,7 +452,7 @@
        changing your mind about the first, not a wrong guess. */
     if (selected && selected.face !== t.face) {
       refuse(t);
-      say([text('Not a pair.')]);
+      say(notAPair(selected, t));
     }
     select(t);
   }
@@ -425,11 +482,12 @@
     });
   }
 
-  function newGame() {
+  function newGame(lv) {
+    if (lv) level = lv;
     var order = null;
     for (var i = 0; i < 60 && !order; i++) order = dealOrder(tiles);
     if (!order) { say([text('Could not deal this layout — reload the page.')]); return; }
-    assign(rootPool(order.length), order);
+    assign(rootPool(order.length, level), order);
     tiles.forEach(function (t) {
       t.out = false;
       t.el.classList.remove('tm-out', 'tm-go', 'tm-sel', 'tm-hint', 'tm-no');
@@ -437,7 +495,7 @@
     undoStack = [];
     select(null);
     hintPair = 0;
-    say([text('Match each root’s meanings to its written form.')]);
+    say([text('Level ' + level + ' — match each root’s meanings to its written form.')]);
     refresh();
   }
 
@@ -489,6 +547,61 @@
 
   function storedShowFree() {
     try { return localStorage.getItem(FREE_KEY) === '1'; } catch (e) { return false; }
+  }
+
+  /* --- the level picker --------------------------------------------------- */
+
+  function storedLevel() {
+    var v;
+    try { v = localStorage.getItem(LEVEL_KEY); } catch (e) { return ''; }
+    return LEVELS.indexOf(v) >= 0 ? v : '';
+  }
+
+  /* One button per level, captioned with where its tiles come from: a player
+     choosing Level 4 should know before they press it that a quarter of the
+     board is Level 3 revision.  Built once, from the lexicon, so a level that
+     grows a root does not need the caption edited. */
+  function buildPicker() {
+    LEVELS.forEach(function (lv) {
+      var own = (byLevel[lv] || []).length;
+      var b = document.createElement('button');
+      b.type = 'submit';                 /* method="dialog": sets returnValue */
+      b.className = 'tm-level';
+      b.value = lv;
+      var name = document.createElement('span');
+      name.className = 'tm-level-name';
+      name.textContent = 'Level ' + lv;
+      var note = document.createElement('span');
+      note.className = 'tm-level-note';
+      var short = 48 - own;
+      note.textContent = own + ' roots' + (
+        short <= 0 ? '' :
+        lv === '1' ? ', ' + short + ' of them dealt twice'
+                   : ' + ' + short + ' from Level ' + (Number(lv) - 1));
+      b.appendChild(name);
+      b.appendChild(note);
+      levelBox.appendChild(b);
+    });
+  }
+
+  /* Escape (or any close without a choice) leaves the board that is already
+     dealt alone -- which is why start() deals one before ever opening this. */
+  function askLevel() {
+    if (!dialog || !dialog.showModal) { newGame(); return; }
+    LEVELS.forEach(function (lv, i) {
+      levelBox.children[i].setAttribute('aria-pressed', lv === level ? 'true' : 'false');
+    });
+    dialog.returnValue = '';
+    dialog.showModal();
+    var current = levelBox.children[LEVELS.indexOf(level)];
+    if (current) current.focus();
+  }
+
+  function chosen() {
+    var lv = dialog.returnValue;
+    if (LEVELS.indexOf(lv) < 0) return;
+    try { localStorage.setItem(LEVEL_KEY, lv); } catch (e) {}
+    newGame(lv);
   }
 
   /* --- size -------------------------------------------------------------- */
@@ -557,11 +670,12 @@
 
   /* --- go ---------------------------------------------------------------- */
 
-  document.getElementById('tm-new').addEventListener('click', newGame);
+  document.getElementById('tm-new').addEventListener('click', function () { askLevel(); });
   document.getElementById('tm-hint').addEventListener('click', hint);
   document.getElementById('tm-undo').addEventListener('click', undo);
   document.getElementById('tm-shuffle').addEventListener('click', shuffleBoard);
   btnFree.addEventListener('click', function () { setShowFree(!showFree, true); });
+  if (dialog) dialog.addEventListener('close', chosen);
   window.addEventListener('resize', fit);
 
   function start(lexicon) {
@@ -569,17 +683,22 @@
       say([text('Could not load the roots. Reload the page?')]);
       return;
     }
+    LEVELS.forEach(function (lv) { byLevel[lv] = []; });
     Object.keys(lexicon.words).forEach(function (key) {
       var w = lexicon.words[key];
       /* `kind` already separates the three particles out; only roots here. */
-      if (w.kind === 'root' && w.level === LEVEL) roots.push(w);
+      if (w.kind === 'root' && LEVELS.indexOf(w.level) >= 0) byLevel[w.level].push(w);
     });
-    if (roots.length < 2) { say([text('No Level 1 roots in the lexicon.')]); return; }
+    if (byLevel['1'].length < 2) { say([text('No roots in the lexicon.')]); return; }
     makeBoard();
     fit();
     showFree = storedShowFree();
     btnFree.setAttribute('aria-pressed', showFree ? 'true' : 'false');
-    newGame();
+    if (levelBox) buildPicker();
+    /* Deal the remembered level first and *then* ask, so the picker always has
+       a playable board behind it and dismissing it is not a dead end. */
+    newGame(storedLevel() || '1');
+    askLevel();
   }
 
   if (window.pikotika && window.pikotika.loadLexicon) {

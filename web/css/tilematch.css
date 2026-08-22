@@ -163,3 +163,55 @@
 @media (prefers-reduced-motion: reduce) {
   .tm-tile.tm-go, .tm-tile.tm-no { transition: none; animation: none; }
 }
+
+/* The level picker.  A native <dialog>, so the modality, the backdrop and the
+   Escape key are the browser's; only the look is ours.  Dismissing it leaves
+   the board already dealt behind it, so it is never a dead end. */
+.tm-dialog {
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 1.25rem 1.4rem 1.4rem;
+  max-width: 22rem;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .35);
+}
+.tm-dialog::backdrop { background: rgba(0, 0, 0, .45); }
+.tm-dialog h2 { margin: 0 0 .2rem; font-size: 1.25rem; }
+.tm-dialog-lede { margin: 0 0 .9rem; color: var(--text-muted); font-size: .9rem; }
+
+.tm-levels { display: flex; flex-direction: column; gap: .45rem; }
+
+.tm-level {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .1rem;
+  font: inherit;
+  text-align: left;
+  padding: .5rem .8rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--bg-tint);
+  color: var(--text);
+  cursor: pointer;
+}
+.tm-level:hover { border-color: var(--accent-deep); }
+/* Accent means "on" here too: the level the current board was dealt from. */
+.tm-level[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent-deep);
+}
+.tm-level-name { font-weight: 650; }
+.tm-level-note { font-size: .85rem; color: var(--text-muted); }
+.tm-level[aria-pressed="true"] .tm-level-note { color: inherit; opacity: .8; }
+
+/* The win line ends in its own way out, so the button sits inside the status
+   strip and has to read against the accent fill that strip takes when won. */
+.tm-again { margin-left: .4rem; padding: .15rem .7rem; font-size: .9rem; }
+.tm-status.tm-won .tm-again {
+  background: var(--accent-ink);
+  color: var(--accent);
+  border-color: var(--accent-ink);
+}

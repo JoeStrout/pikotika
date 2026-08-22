@@ -5,8 +5,9 @@ tiles &mdash; one with its two English meanings, one with its written form in
 Latin and Han. Clear the board by matching them.</p>
 
 <p>A tile can only be taken when nothing sits on top of it and one of its long
-sides is open, exactly as in the paper game. Forty-one Level&nbsp;1 roots make
-forty-eight pairs, so a few roots turn up twice.</p>
+sides is open, exactly as in the paper game. Pick a level and the board is dealt
+from its roots; no level has quite the forty-eight it takes to fill the board, so
+the rest come from the level before &mdash; a little revision with every game.</p>
 
 <div class="tm" id="tm">
   <div class="tm-bar">
@@ -25,6 +26,14 @@ forty-eight pairs, so a few roots turn up twice.</p>
       <div class="tm-board" id="tm-board"></div>
     </div>
   </div>
+
+  <dialog class="tm-dialog" id="tm-level">
+    <form method="dialog">
+      <h2>Which level?</h2>
+      <p class="tm-dialog-lede">The board is dealt from that level&rsquo;s roots.</p>
+      <div class="tm-levels" id="tm-levels"></div>
+    </form>
+  </dialog>
 </div>
 
 <noscript><p>This one needs JavaScript.</p></noscript>

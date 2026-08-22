@@ -1029,15 +1029,29 @@ the navigation is the thing being tested.
 
 **The pair is a root's two halves, not two identical tiles**: one tile carries
 the `gloss` and `gloss2` in English, its partner the Latin form and the Han
-character.  So taking a pair is one retrieval, and a board is 96 of them.  Only
-Level 1 is dealt for now; the levels are already in `lexicon.json`, so opening
-it up is a picker, not a data change.
+character.  So taking a pair is one retrieval, and a board is 96 of them.
 
-- **Level 1 has 41 roots and the board holds 48 pairs, so seven roots are dealt
-  twice** -- which is easier (two ways to place each of those) and gives those
-  seven an extra exposure.  Which seven changes every game.  The particle is
-  excluded for free: `ri` ships as `kind: "particle"`, so filtering to
-  `kind === "root"` already drops it.
+- **The level is chosen per game, in a modal picker** -- on first load, on New
+  game, and from a **Play again** button that the win line itself ends in.  It
+  is a native `<dialog>`, so the backdrop, the modality and Escape are the
+  browser's and only the look is ours.  **A board is dealt before the picker
+  ever opens**, at the level remembered in `localStorage`
+  (`pk-tilematch-level`, guarded like `pk-tilematch-free`), so dismissing the
+  dialog is never a dead end -- there is always a playable board behind it, and
+  Escape simply means "the one I had is fine".
+- **No level fills the board, so the rest come from the level below.**  The
+  levels run 36 to 41 roots against 48 pairs.  Every root of the chosen level
+  is dealt once and the shortfall -- 8 to 12 tiles -- is drawn at random from
+  the level beneath, which puts a little revision in every game and changes
+  which roots are revised each time.  **Level 1 has nothing beneath it and so
+  doubles seven of its own roots**, as it always did: that is easier (two ways
+  to place each) and gives those seven an extra exposure.  Each level's picker
+  button says which of the two it is getting, computed from the lexicon rather
+  than written out, so a level that grows a root does not need the caption
+  edited.  The particle is excluded for free: `ri` ships as
+  `kind: "particle"`, so filtering to `kind === "root"` already drops it.
+  Every root of every level already has a clip in the `words` set, so opening
+  the levels up generated no audio.
 - **The data is `lexicon.json`, through `window.pikotika.loadLexicon`** --
   exposed by `site.js` for this -- so the game shares the one cached,
   `DATA_V`-stamped fetch the word chips already make rather than opening a
@@ -1115,6 +1129,13 @@ it up is a picker, not a data change.
 - **A shake means "not a pair", so it fires only on a real attempt** -- a
   meaning tile against a form tile.  Picking a second meaning tile is changing
   your mind about the first, not a wrong guess, and does not shake.
+  - **The refusal answers both tiles** rather than only saying no: *Not a pair:
+    **tene** means 'have, own'; 'you' is **tu**.*  A wrong guess is the best
+    moment to be told, and the two tiles between them are exactly the two
+    retrievals that just failed.  They are named in the order they were tapped,
+    since that is the order the player is holding them in.  This is the other
+    half of why the shake fires only on a real attempt: two meaning tiles have
+    nothing to teach each other.
 - **Tapping a written face says the root out loud**, through
   `window.pikotika.playWord` -- a second thing `site.js` now exposes for this
   page.  Binding the form to the meaning is what the game is for, and the sound
@@ -1155,11 +1176,23 @@ it up is a picker, not a data change.
   128x178 with the drawn thickness down and to the left, which is why higher
   layers step *up and right*: that is where the art says the top face is.  The
   flat top is inset 19 / 2 / 3 / 18, measured off the png.
+  - **The per-layer step is (12, -12)**, shallower than the projection's own
+    (19, -18).  That larger pair is the exact one -- the top face is inset 19
+    from the left and 18 from the bottom, so a tile offset by it lands its
+    drawn underside precisely on the face below -- but four layers of it walk
+    the top of the stack 57px right and 54px up, which visibly leans a board
+    whose bottom layer is twelve tiles wide.  It was 9 / -11 first, which was
+    too shallow to read as a step at all; 12 is the compromise, and the two
+    numbers are equal because at that size nobody is measuring the projection,
+    only seeing whether the layer lifted.
 - **The whole board is drawn at the art's own pixel scale and then scaled once,
   as a transform on `.tm-board`.**  So the type sizes are in tile pixels and
   one number resizes everything.  Gloss size comes off the longest word on the
   tile; the ladder was set by measuring, not guessing -- the widest Level 1
-  gloss is *excuse me*, and it lands inside the 106-pixel face with room.
+  gloss is *excuse me*, and it lands inside the 106-pixel face with room.  The
+  later levels reach eleven characters (*in order to*); the ladder's bottom
+  rung already covers them, and the face wraps rather than clipping, which two
+  gloss lines have the height for.
 - **The scroller escapes the measure column to the full window, from
   JavaScript.**  The tiles carry words, not symbols, so how big the board may
   be *is* how legible it is.  The CSS `100vw` full-bleed trick was tried first
