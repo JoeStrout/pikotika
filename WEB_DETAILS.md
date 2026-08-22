@@ -182,6 +182,14 @@ Two implementation facts worth not rediscovering:
   instead; built, it read as one long link across the sentence rather than as a
   row of separately tappable words. Dots per word is also what the Duolingo
   convention the doc cites actually looks like.
+- **The dots are set with longhands, never the `text-decoration` shorthand.**
+  WebKit's shorthand parser takes a single line keyword and nothing else, so
+  `text-decoration: underline dotted` is dropped whole in Safari — which showed
+  as chips with no underline at all in Safari 17 while Chrome and Firefox looked
+  right, and with the `text-decoration-color` and `-thickness` longhands after
+  it still applying, so the computed color looked correct and only
+  `text-decoration-line` was `none` (found 2026-08-22). Write
+  `text-decoration-line` and `text-decoration-style` separately.
 - Worth knowing if that is ever revisited: **`text-decoration` does not paint
   through a `<button>` child.** A block-level underline has to be a
   `border-bottom`; as `text-decoration` on the container it silently renders

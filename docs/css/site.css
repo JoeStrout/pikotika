@@ -439,7 +439,13 @@ p { margin: 0 0 1.1em; }
 .pk .w {
   cursor: pointer;
   border-radius: 3px;
-  text-decoration: underline dotted;
+  /* Longhands, not the `text-decoration: underline dotted` shorthand:
+     WebKit's shorthand parser takes only a single line keyword, and drops
+     the whole declaration when a style is added -- so Safari 17 rendered
+     no underline at all while the color and thickness below still applied.
+     Chrome and Firefox parse the shorthand fine, which is what hid it. */
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
   text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
@@ -475,7 +481,9 @@ p { margin: 0 0 1.1em; }
 .wordpop-part {
   cursor: pointer;
   border-radius: 3px;
-  text-decoration: underline dotted;
+  /* Longhands for Safari -- see the note on .pk .w above. */
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
   text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
