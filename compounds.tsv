@@ -93,6 +93,7 @@ purple	red-blue	Color	3	3
 pink	red-white	Color	3	3
 pig	red-white-animal	Nature	3	3
 orange	red-yellow	Color	3	3
+likewise; similarly	same-manner	Grammar and logic	3	
 brother	same-parent-man	People and society	3	3
 sister	same-parent-woman	People and society	3	3
 look like; resemble; take after; look alike	same-see	Verbs;Qualities	3	3
@@ -368,7 +369,7 @@ evening; afternoon	down-sun	Time direction	5
 voyage; long journey	far-come-go	Space and direction	5	
 flat bread	flat-grain-food	Food	5	
 disk	flat-round	Shape	5	
-collect; gather	group-join	Verbs	5	
+collect; gather	group-join	Verbs	2	
 lend a hand; help out	hand-give	Verbs;People and society	5	
 headache; nuisance	head-sick	Body and life	5	
 pet dog	home-dog	Nature	5	
@@ -391,7 +392,7 @@ someone else; another person; others	other-person	Grammar and logic;People and s
 somewhere else; elsewhere	other-place	Grammar and logic;Space and direction	5	
 something else; anything else	other-thing	Grammar and logic	5	
 abroad; foreign; overseas	out-country	People and society;Space and direction	5	
-junction; intersection; crossroads	road-join	Space and direction;Places, arts, appearance	5	
+junction; intersection; crossroads	road-join	Space and direction;Places, arts, appearance	3	
 window	see-hole	Made things	5	
 pain; hurt; ache	sick-feel	Body and life	5	
 annoyance	small-anger	Feelings	5	

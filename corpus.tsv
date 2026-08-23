@@ -68,7 +68,7 @@ Hi Alice.	happy-meet, Alice.	Kontensarve, Aras.	楽会, Aras.	1	meeting;names
 I'm Bob.	I RI Bob.	Eko ri Popu.	己 ⊢ Popu.	1	meeting;names
 Nice to meet you.	I RI happy meet A you.	Eko ri konten sarve a tu.	己 ⊢ 楽 会 ⇒ 尔.	2	meeting;pleasantries
 How do you know Carla?	you RI know A Carla in what-manner?	Tu ri sape a Karra in kermoto?	尔 ⊢ 知 ⇒ Karra 内 何方?	3	meeting;names
-We work together.	I-group RI and work.	Ekomen ri kum opus.	己众 ⊢ 并 力.	2	meeting;smalltalk
+We work together.	I-group RI join work.	Ekomen ri yunta opus.	己众 ⊢ 合 力.	2	meeting;smalltalk
 And you?	and you, what?	Kum tu, ker?	并 尔, 何?	1	pleasantries
 She's my sister.	this-person RI me same-parent-woman.	Tisomo ri eko samparivema.	此人 ⊢ 己 同亲女.	3	family
 Really?	true, what?	Ves, ker?	真, 何?	1	smalltalk
@@ -283,6 +283,7 @@ I have eaten.	I RI food finish.	Eko ri komi vin.	己 ⊢ 食 閉.	1	food
 I am still eating.	I RI food remain.	Eko ri komi sista.	己 ⊢ 食 止.	4	food
 I am still here.	I RI in this-place remain.	Eko ri in tisroko sista.	己 ⊢ 内 此所 止.	4	
 I could have gone.	I RI can go finish.	Eko ri kan ire vin.	己 ⊢ 能 行 閉.	2	
+You could have told me.	you RI can say to I finish.	Tu ri kan tika ver eko vin.	尔 ⊢ 能 言 向 己 閉.	2	
 I might have gone.	I RI if go finish.	Eko ri pos ire vin.	己 ⊢ 可 行 閉.	4	
 I should have gone.	I RI if-good go finish.	Eko ri pospona ire vin.	己 ⊢ 可好 行 閉.	4	
 I must have gone.	I RI must go finish.	Eko ri neses ire vin.	己 ⊢ 要 行 閉.	4	
@@ -315,11 +316,12 @@ If it's too expensive, I won't buy it.	if this RI up-degree money, this-reason I
 If you want, I'll bring water.	if you RI want, this-reason I RI have-come A water.	Pos tu ri vori, tisrason eko ri teneveni a aku.	可 尔 ⊢ 求, 此故 己 ⊢ 有来 ⇒ 水.	4	food
 If you build it, they will come.	if you RI make A this, this-reason not-this-person RI come.	Pos tu ri vake a tis, tisrason nontisomo ri veni.	可 尔 ⊢ 作 ⇒ 此, 此故 不此人 ⊢ 来.	4	
 If there's no hot water, tell the staff.	if RI no hot water, this-reason please say to help-person.	Pos ri nem wo aku, tisrason pam tika ver serviomo.	可 ⊢ 无 火 水, 此故 乞 言 向 助人.	4	lodging
-If you come tomorrow, we can eat together.	if you RI come sun-after, this-reason I-group RI can and food.	Pos tu ri veni yantar, tisrason ekomen ri kan kum komi.	可 尔 ⊢ 来 日后, 此故 己众 ⊢ 能 并 食.	4	dates;food
+If you come tomorrow, we can eat together.	if you RI come sun-after, this-reason I-group RI can join food.	Pos tu ri veni yantar, tisrason ekomen ri kan yunta komi.	可 尔 ⊢ 来 日后, 此故 己众 ⊢ 能 合 食.	4	dates;food
 If it isn't spicy, the child will eat it.	if this RI not hot-taste, this-reason child RI food A this.	Pos tis ri non wosapor, tisrason nino ri komi a tis.	可 此 ⊢ 不 火味, 此故 子 ⊢ 食 ⇒ 此.	4	food;family
 If I had known, I would have come earlier.	not-true I RI know finish, this-reason I RI come before finish.	Nonves eko ri sape vin, tisrason eko ri veni yer vin.	不真 己 ⊢ 知 閉, 此故 己 ⊢ 来 前 閉.	4	
 If the shop were open, we could buy food.	not-true buy-place RI open, this-reason I-group RI can buy A food.	Nonves komparroko ri apa, tisrason ekomen ri kan kompar a komi.	不真 買所 ⊢ 开, 此故 己众 ⊢ 能 買 ⇒ 食.	4	money;food
 If I had a car, I would drive.	not-true I RI have A vehicle, this-reason I RI vehicle-go.	Nonves eko ri tene a karo, tisrason eko ri karoire.	不真 己 ⊢ 有 ⇒ 车, 此故 己 ⊢ 车行.	4	travel
+If I had eaten, I wouldn't be hungry now.	not-true I RI food finish, this-reason I RI not food-want this-time.	Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.	不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.	4	food;health
 I want a red fruit.	I RI want A red fruit.	Eko ri vori a rus pomo.	己 ⊢ 求 ⇒ 赤 果.	3	colors;food
 This is a yellow fruit.	this RI yellow fruit.	Tis ri yoro pomo.	此 ⊢ 黄 果.	3	colors;food
 We're going to my father's house.	I-group RI go to me man-parent home.	Ekomen ri ire ver eko viropari kase.	己众 ⊢ 行 向 己 男亲 户.	3	family

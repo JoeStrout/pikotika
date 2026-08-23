@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-666 terms
+668 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -313,6 +313,7 @@
 | light (in weight) | not-heavy | nonpesa | 不重 |
 | lightning | air-electric | ventovorto | 风電 |
 | lightweight | not-heavy | nonpesa | 不重 |
+| likewise | same-manner | sammoto | 同方 |
 | line (of people) | person-sequence | omoorten | 人序 |
 | list | name-sequence | nomenorten | 名序 |
 | loan | interval-give | turantonar | 間与 |
@@ -512,6 +513,7 @@
 | should | if-good | pospona | 可好 |
 | significant | heavy-necessary | pesaneses | 重要 |
 | silent | close-mouth | vinpuka | 閉口 |
+| similarly | same-manner | sammoto | 同方 |
 | sister | same-parent-woman | samparivema | 同亲女 |
 | sixth (in a series) | six-sequence | siksorten | 6序 |
 | slow | not-fast | nonveros | 不早 |

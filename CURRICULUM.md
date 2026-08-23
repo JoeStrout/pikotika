@@ -61,9 +61,9 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 
 ---
 ## Level 2
-### 39 more roots (total: 81)
+### 40 more roots (total: 82)
 
-A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, get, more, drink, for, fast, thank, like, can, woman, man, seven, from, only, three, four, near, name, about, five, middle, six, eight, nine, ten, interval
+A, see, up, no, work, animal, come, write, have, parent, make, bad, but, music, get, more, drink, for, fast, thank, like, can, woman, man, seven, from, only, three, four, near, name, about, five, middle, six, eight, nine, ten, interval, join
 
 ### 40 more compounds
 
@@ -132,9 +132,9 @@ beautiful, breakfast, bring, carry, cook (person), swim, discover, eye, father, 
 
 ---
 ## Level 3
-### 39 more roots (total: 120)
+### 39 more roots (total: 121)
 
-black, blue, green, red, white, yellow, grain, sweet, sequence, manner, again, every, same, map, page, room, tool, metal, stone, air, earth, hot, TE, money, color, home, long, hundred, many, amount, million, thousand, month, weekday, year, feel, know, play, try
+black, blue, green, red, white, yellow, grain, sweet, sequence, manner, again, every, same, map, page, room, tool, metal, stone, air, earth, hot, TE, money, color, home, long, hundred, many, amount, million, thousand, month, weekday, year, feel, know, play, try, join
 
 ### 45 more compounds
 
@@ -201,7 +201,7 @@ next, recover, repeat, airplane, airport, everyone, everywhere, everything, alwa
 
 ---
 ## Level 4
-### 40 more roots (total: 160)
+### 40 more roots (total: 161)
 
 head, heal, leg, mouth, taste, meat, milk, if, reason, box, cloth, door, electric, picture, rain, city, cold, fear, hard, heavy, bend, line, round, straight, back, edge, become, buy, choose, fight, give, sound, help, learn, necessary, begin, put, remain, sleep, think
 
@@ -260,9 +260,9 @@ The aspect word (**apa**, **vin**, or **sista**) comes after the whole predicate
 
 ---
 ## Level 5
-### 36 more roots (total: 196, all roots in the language)
+### 35 more roots (total: 196, all roots in the language)
 
-body, hand, life, sick, stomach, anger, surprise, tired, or, other, key, table, toilet, oil, salt, bird, bug, dog, country, friend, law, marry, art, temple, clean, old, flat, down, far, hole, left, right, agree, break, join, lose
+body, hand, life, sick, stomach, anger, surprise, tired, or, other, key, table, toilet, oil, salt, bird, bug, dog, country, friend, law, marry, art, temple, clean, old, flat, down, far, hole, left, right, agree, break, lose
 
 ### 40 more compounds
 

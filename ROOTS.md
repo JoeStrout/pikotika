@@ -83,7 +83,7 @@
 | other; different | ar | 別 | else |
 | please; politeness | pam | 乞 | request marker |
 | reason; because | rason | 故 | cause; why = `what-reason` |
-| same; equal | sam | 同 | like, as, similar, together |
+| same; equal | sam | 同 | like, as, similar |
 | this; current | tis | 此 | present, the current/indicated one |
 | what; question | ker | 何 | which, any, whichever |
 | yes; assent | si | 是 | affirm, correct-response |
@@ -266,7 +266,7 @@
 | go; movement | ire | 行 | move, travel, proceed |
 | have; own | tene | 有 | hold, possess, keep |
 | help; serve | servi | 助 | assist, care for |
-| join; connect | yunta | 合 | combine, attach, unite, link, mix |
+| join; connect | yunta | 合 | combine, attach, unite, link, mix, together |
 | know; knowledge | sape | 知 | be informed of, information |
 | learn; study | impar | 学 | acquire knowledge |
 | lose; misplace | perti | 失 | lost, miss |
