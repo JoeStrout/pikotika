@@ -923,7 +923,11 @@ p { margin: 0 0 1.1em; }
 
 .adapter-fallback { font-size: .9rem; color: var(--text-muted); }
 
-/* --- rule tables --------------------------------------------------------- */
+/* --- rule tables ---------------------------------------------------------
+   .rules states something: a paradigm, an inventory of words, a conversion
+   rule.  .examples below is its twin, for a table whose left column is running
+   Pikotika that the other columns translate.  They start out identical on
+   purpose; the two names are what lets them drift apart. */
 
 .rules {
   border-collapse: collapse;
@@ -948,6 +952,34 @@ p { margin: 0 0 1.1em; }
 }
 .rules td:last-child, .rules th:last-child { padding-right: 0; }
 .rules code { font-size: .95em; }
+
+/* --- example tables ------------------------------------------------------
+   A clone of .rules (see above), for tables that show worked examples rather
+   than state a rule.  Keep the two in sync only where you mean to. */
+
+.examples {
+  border-collapse: collapse;
+  width: 100%;
+  margin: .75rem 0 1.5rem;
+  font-size: .95rem;
+}
+.examples th {
+  text-align: left;
+  font-size: .75rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 0 .6rem .35rem 0;
+  border-bottom: 1px solid var(--border-strong);
+}
+.examples td {
+  padding: .45rem .6rem .45rem 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.examples td:last-child, .examples th:last-child { padding-right: 0; }
+.examples code { font-size: .95em; }
 
 /* --- the number reader (/topics/numbers/) --------------------------------
    Same box as the name adapter, with room reserved under the input for the
