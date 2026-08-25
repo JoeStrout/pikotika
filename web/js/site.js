@@ -1516,4 +1516,7 @@
      through the same cached, DATA_V-stamped fetch rather than a second one. */
   window.pikotika.loadLexicon = loadLexicon;
   window.pikotika.playWord = playWord;
+  /* The Tools converter fetches a data file of its own, and wants the same
+     cache-busting the lexicon gets rather than a second answer to the question. */
+  window.pikotika.dataVersion = DATA_V;
 })();

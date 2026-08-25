@@ -1182,6 +1182,203 @@ p { margin: 0 0 1.1em; }
 }
 .clock-alt .clock-lead { color: var(--text-muted); font-size: .85rem; }
 
+/* --- the converter (/tools/) ---------------------------------------------
+   The reader box again, with a textarea instead of an input -- a query here is
+   a sentence as often as a word -- and the four readings as a two-column list.
+   The label column is narrow and fixed so the readings line up under each
+   other, which is the whole point of printing all four at once.
+
+   Unlike the other reader boxes, this one reserves nothing and fits what is in
+   it.  Those boxes answer with a fixed number of lines, so holding the space
+   open keeps them from jumping on the first keystroke; this one answers with
+   between one and four rows of unpredictable length, and reserving the worst
+   case would leave an empty box gaping under the field. */
+
+.converter textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  padding: .5rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  /* The field grows to its content from tools.js, so there is nothing to drag
+     a handle for and nothing to scroll. */
+  resize: none;
+  overflow: hidden;
+}
+.converter textarea:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 1px;
+}
+
+.converter-out {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: .25rem .6rem;
+  margin: .7rem 0 0;
+  align-content: start;
+}
+/* An empty box still has margins; these two are empty most of the time. */
+.converter-out:empty { display: none; }
+.converter .reader-note { min-height: 0; }
+.converter .reader-note:empty { display: none; }
+.converter-out dt {
+  font-size: .8rem;
+  color: var(--text-muted);
+  padding-top: .15rem;
+}
+.converter-out dd { margin: 0; }
+.converter-out .pk { font-size: 1.15rem; }
+.converter-out .han { font-size: 1.15rem; }
+.converter-out .en { color: var(--text-muted); }
+
+/* The sentence diagram, drawn from web/js/syntax.js.
+
+   The classic nested-list tree: each <li> is a node, and the connectors are
+   borders on ::before / ::after rather than SVG.  Drawn this way it reflows,
+   inherits the theme, and -- the reason that matters here -- its leaves are
+   ordinary spans, so a word chip works inside one exactly as it does in a
+   sentence anywhere else on the site.
+
+   The tree is unlabeled, so an internal node is a junction: a dot where the
+   lines meet and nothing to read. */
+
+.converter-tree { margin: .9rem 0 0; }
+.converter-tree:empty { display: none; }
+
+.tree {
+  /* A tree is as wide as the sentence is long, and a phone is not.  Scrolling
+     the diagram is right; scrolling the page sideways is not. */
+  overflow-x: auto;
+  padding: .3rem 0 .2rem;
+}
+
+.tree ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 14px 0 0;
+  position: relative;
+  width: max-content;
+  min-width: 100%;
+}
+
+.tree li {
+  position: relative;
+  list-style: none;
+  padding: 14px 5px 0;
+  text-align: center;
+}
+
+/* The two halves of the horizontal bar above a node, and the stem down to it. */
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 14px;
+  border-top: 1px solid var(--border-strong);
+}
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid var(--border-strong);
+}
+/* The outer half of the bar over the first and last child would hang in the
+   air, so it is trimmed and the corner rounded. */
+.tree li:first-child::before,
+.tree li:last-child::after { border: 0 none; }
+.tree li:last-child::before { border-right: 1px solid var(--border-strong);
+                              border-radius: 0 6px 0 0; }
+.tree li:first-child::after { border-radius: 6px 0 0 0; }
+/* An only child is both the first and the last, so the two rules above fight:
+   the first clears ::before and the second puts a border-right back on it,
+   which draws as a stub of line hanging beside the stem.  It needs neither --
+   the stem from the parent is the whole connection. */
+.tree li:only-child::before,
+.tree li:only-child::after { display: none; }
+.tree li:only-child { padding-top: 0; }
+/* The root has no parent to hang from. */
+.tree > ul > li { padding-top: 0; }
+.tree > ul > li::before,
+.tree > ul > li::after { display: none; }
+
+/* The stem from a junction down to its own children. */
+.tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 14px;
+  border-left: 1px solid var(--border-strong);
+}
+
+.tree-join {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  vertical-align: middle;
+}
+
+.tree .pk { white-space: nowrap; font-size: .95rem; }
+
+/* A named junction -- te or rite -- sits where the dot would, so it reads as
+   the joint it is rather than as a word in the row of words below it. */
+/* An empty slot, drawn the way /grammar/structure/'s schema draws one: dashed
+   and italic, so it reads as a place rather than as a word. */
+.tree-empty {
+  display: inline-block;
+  font-size: .8rem;
+  font-style: italic;
+  color: var(--text-muted);
+  padding: 0 .35rem;
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.tree-name {
+  font-size: .8rem !important;
+  color: var(--text-muted);
+  padding: 0 .25rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--bg);
+}
+
+/* One line each, and the whole card is the link: a tool is a place to go, not
+   a sentence with a word in it worth clicking on its own. */
+.tool-links {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: .6rem;
+}
+.tool-links a {
+  display: block;
+  padding: .7rem .9rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  background: var(--bg-tint);
+  color: inherit;
+  text-decoration: none;
+}
+.tool-links a:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+.tool-links strong { color: var(--link); }
+
 /* --- seasons (/topics/seasons/) ------------------------------------------
    The swatch grid with a picture where the color band goes.  A season has no
    color to show, but it does have a look, and six small images say what six

@@ -411,7 +411,11 @@ MAIN_CLASS = {"/topics/": "wide", "/games/tilematch/": "wide"}
 # Per-page css and js, linked only on the page that needs them.  The board game
 # is 500 lines of neither, and every other page would otherwise pay for it.
 PAGE_CSS = {"/games/tilematch/": "css/tilematch.css"}
-PAGE_JS = {"/games/tilematch/": "js/tilematch.js"}
+# A page may want more than one script: the Tools converter is the ported
+# conversion core plus the wiring that drives the box, and the core is loaded
+# here rather than sitewide because only this page uses it.
+PAGE_JS = {"/games/tilematch/": ["js/tilematch.js"],
+           "/tools/": ["js/convert.js", "js/syntax.js", "js/tools.js"]}
 
 STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio"]
 
@@ -916,6 +920,198 @@ def check_numbers(tables) -> None:
           f"times read the same in numbers.js and pikotika.py")
 
 
+# --- the converter (/tools/) -----------------------------------------------
+# Extra queries the tables do not already supply: the written numerals, which
+# are read rather than looked up, and a handful of shapes worth pinning down --
+# a name that collides with a root, a particle stuck to a character that has to
+# be refused, a word that is in no table at all.
+CONVERT_EXTRAS = [
+    "0", "7", "12", "20", "100", "1234", "12345", "1000000",
+    "1.25", "9:30", "12:00", "3/4", "50%", "50/100", "2026",
+    "Ri mur erikekosa.", "RI no bad-thing.", "\u22a2 \u65e0 \u60aa\u7269.",
+    "arpoaku komparroko", "Ri 2-go-paper.", "\u6c34",
+    "Mira", "mira", "omo Mira", "gibberishxyz", "",
+]
+
+
+def convert_checks(tables) -> list:
+    """Every string the converter should be asked to convert.
+
+    The tables are the corpus in all four notations, every compound by gloss,
+    by English and in both scripts, every root by gloss, alias, form, character
+    and each of its `covers` entries, and every name by form and by English --
+    which is a few thousand comparisons of already-authored material and costs
+    nothing."""
+    import csv
+
+    import pikotika
+
+    cases = list(CONVERT_EXTRAS)
+
+    def add(text):
+        if text and text.strip():
+            cases.append(text)
+
+    def rows(name):
+        with (ROOT / name).open(encoding="utf-8", newline="") as fh:
+            return list(csv.DictReader(fh, **pikotika.TSV))
+
+    for r in rows("corpus.tsv"):
+        for column in ("EN", "gloss", "latin", "han"):
+            add(r.get(column))
+
+    for r in rows("compounds.tsv"):
+        add(r["gloss"])
+        for english in pikotika.split_alternatives(r["EN"]):
+            add(english)
+        words = pikotika.parse_gloss(r["gloss"], tables)
+        add(pikotika.render_latin(words, tables))
+        add(pikotika.render_han(words, tables))
+
+    for r in rows("roots.tsv"):
+        if not r["form"]:
+            continue
+        add(r["gloss"])
+        add(r["form"])
+        add(r["han"])
+        if r.get("gloss2"):
+            add("_".join(r["gloss2"].split()))
+        for entry in pikotika.split_covers(r["covers"]):
+            for key in pikotika.cover_keys(entry):
+                add(key)
+
+    for r in rows("names.tsv"):
+        if not r["form"]:
+            continue
+        add(r["form"])
+        for english in r["EN"].split(";"):
+            add(english)
+
+    return cases
+
+
+def python_convert(text, tables) -> dict:
+    """What convert.js:lookup should say about `text`, said by pikotika.py."""
+    import pikotika
+
+    fail = {}
+    words, notation = pikotika.parse(text, tables, fail)
+    if not words:
+        return {"ok": False, "token": fail.get("token"),
+                "error": "not in roots.tsv, compounds.tsv or names.tsv"
+                if "token" not in fail else
+                (fail.get("why")
+                 or "is not in roots.tsv, compounds.tsv or names.tsv")}
+    return {"ok": True, "notation": notation,
+            "gloss": pikotika.render_gloss(words, tables),
+            "latin": pikotika.render_latin(words, tables),
+            "han": pikotika.render_han(words, tables),
+            "english": pikotika.english_match(words, tables),
+            "level": pikotika.max_level(words, tables)}
+
+
+def check_convert(tables) -> None:
+    """Check web/js/convert.js against pikotika.py, over everything authored.
+
+    The converter is the flagship tool and the one page that has to hold the
+    whole language in the browser, so it is a port -- Pyodide would cost several
+    megabytes and take the offline story with it.  A port is a second
+    implementation, so the two get run over the same queries on every build and
+    the build fails on any disagreement, in any of the four notations, about the
+    reading or about which token a bad query died on.
+
+    Only the algorithms are ported: gen_convert.py dumps the tables themselves
+    out of pikotika.Tables, so nothing here can disagree about what a root is.
+
+    Needs node, and skips with a note when there is none, exactly as
+    check_adapter does."""
+    import json
+    import shutil
+    import subprocess
+    import tempfile
+
+    import gen_convert
+
+    node = shutil.which("node")
+    if not node:
+        print("  (no node -- skipping the converter check)")
+        return
+
+    cases = convert_checks(tables)
+    payload = gen_convert.build(tables)
+    driver = """
+      const convert = require(process.argv[1]);
+      const input = JSON.parse(require('fs').readFileSync(process.argv[2], 'utf8'));
+      const tables = convert.tables(input.payload);
+      console.log(JSON.stringify(input.cases.map(function (text) {
+        return convert.lookup(text, tables);
+      })));
+    """
+    # Through a file rather than argv: the tables and the corpus together run to
+    # a few hundred kilobytes, which is comfortably past what a command line
+    # takes on some systems.
+    with tempfile.NamedTemporaryFile("w", suffix=".json", encoding="utf-8",
+                                     delete=False) as fh:
+        json.dump({"payload": payload, "cases": cases}, fh, ensure_ascii=False)
+        handoff = fh.name
+    try:
+        proc = subprocess.run(
+            [node, "-e", driver, str(WEB / "js" / "convert.js"), handoff],
+            capture_output=True, text=True)
+    finally:
+        Path(handoff).unlink()
+    if proc.returncode:
+        raise SystemExit("the converter would not run:\n" + proc.stderr.strip())
+
+    got = json.loads(proc.stdout)
+    problems = []
+    for text, have in zip(cases, got):
+        want = python_convert(text, tables)
+        if have == want:
+            continue
+        differs = sorted(set(want) | set(have))
+        detail = "; ".join(f"{k}: pikotika.py says {want.get(k)!r}, "
+                           f"convert.js says {have.get(k)!r}"
+                           for k in differs if want.get(k) != have.get(k))
+        problems.append(f"{text!r}: {detail}")
+        if len(problems) >= 10:
+            break
+    if problems:
+        raise SystemExit("convert.js disagrees with pikotika.py:\n  "
+                         + "\n  ".join(problems))
+    print(f"  converter: {len(cases):,} queries agree with pikotika.py")
+
+
+def check_syntax() -> None:
+    """Run tests/syntax_test.js, the sentence bracketer's own suite.
+
+    web/js/syntax.js is the site's only statement of Pikotika *syntax* -- it
+    turns a sentence into the tree the converter diagrams -- and unlike the
+    other JS here it has no Python twin to check against, because pikotika.py
+    stops at words.  So its check is its own suite, run on every build rather
+    than by hand: 77 cases lifted out of web/pages/grammar/*.html, plus a pass
+    over every corpus sentence that verifies the bracketing loses no word.
+
+    Needs node, and skips with a note when there is none, exactly as
+    check_adapter does."""
+    import shutil
+    import subprocess
+
+    node = shutil.which("node")
+    if not node:
+        print("  (no node -- skipping the sentence bracketer check)")
+        return
+
+    proc = subprocess.run([node, str(ROOT / "tests" / "syntax_test.js"),
+                           "--corpus"], capture_output=True, text=True)
+    if proc.returncode:
+        raise SystemExit("the sentence bracketer disagrees with the grammar "
+                         "pages:\n" + (proc.stdout + proc.stderr).strip())
+    for line in proc.stdout.strip().splitlines():
+        if line.strip():
+            print("  " + line.strip())
+
+
 def check_forms(tables, sources) -> list:
     """Parse every Pikotika string on the site; fail on a form that is not real.
 
@@ -966,6 +1162,7 @@ def check_fonts() -> None:
 
 
 def build() -> None:
+    import gen_convert
     import gen_lexicon
     import pikotika
 
@@ -974,6 +1171,8 @@ def build() -> None:
 
     tables = pikotika.Tables()
     check_numbers(tables)
+    check_convert(tables)
+    check_syntax()
     authored = authored_pages()
     forms = check_forms(tables, [(url, content)
                                  for url, content, _t, _d in authored])
@@ -983,6 +1182,11 @@ def build() -> None:
     path = gen_lexicon.write(lexicon)
     print(f"  {len(forms)} words checked; {len(lexicon['words'])} in "
           f"{path.relative_to(ROOT)}")
+    # The converter's own tables, which only /tools/ fetches.  Written before
+    # the static copy below, since that is what puts it in docs/.
+    convert_path = gen_convert.write(gen_convert.build(tables))
+    print(f"  converter tables -> {convert_path.relative_to(ROOT)} "
+          f"({convert_path.stat().st_size:,} bytes)")
 
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -1008,19 +1212,21 @@ def build() -> None:
     # names, so they need the same cache-busting; site.js reads this off its own
     # script tag.  Computed after gen_lexicon.write above, or it would hash the
     # previous build's lexicon.
-    data_version = asset_version("data/lexicon.json", "audio/words.json",
-                                 "audio/sentences.json", "audio/numbers.json")
+    data_version = asset_version("data/lexicon.json", "data/convert.json",
+                                 "audio/words.json", "audio/sentences.json",
+                                 "audio/numbers.json")
 
     def page_asset(table, url, tag):
         """A <link> or <script> for a page that has its own css or js, and the
         empty string for the pages that do not.  Versioned like the sitewide
         assets, and for the same reason."""
-        path = table.get(url)
-        if not path:
-            return ""
+        paths = table.get(url) or []
+        if isinstance(paths, str):
+            paths = [paths]
         # The newline lives here rather than in the template, so a page with no
         # asset of this kind leaves no blank line behind in the output.
-        return "\n" + tag % (path, asset_version(path))
+        return "".join("\n" + tag % (path, asset_version(path))
+                       for path in paths)
 
     import importlib
 

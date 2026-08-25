@@ -19,7 +19,7 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="stylesheet" href="/css/site.css?v=95a8319f84">
+<link rel="stylesheet" href="/css/site.css?v=ef989d3fac">
 <script>
 /* Set the theme before first paint, so there is no flash of the wrong one. */
 (function () {
@@ -63,16 +63,56 @@
 
 <main id="main" class="">
 <h1>Tools</h1>
+
 <p class="lede">Everything here runs in your browser. Nothing is sent anywhere.</p>
-<div class="placeholder">
-  <h2>Tools content goes here</h2>
-  <ul>
-    <li>Converter — English, gloss, Latin, and Han, in any direction</li>
-    <li>Name adapter — see your own name in Pikotika, one substitution at a time</li>
-    <li>Number and date reader</li>
-    <li>Han ↔ Latin toggle for any pasted text</li>
-  </ul>
+
+<h2>Converter</h2>
+
+<div class="reader converter" id="converter">
+  <label class="reader-label" for="converter-in">Type or paste anything —
+    English (word), gloss, Latin, or Han</label>
+  <textarea id="converter-in" rows="2" autocomplete="off" autocapitalize="off"
+            spellcheck="false" placeholder="Ri mur erikekosa."></textarea>
+  <dl class="converter-out" id="converter-out" aria-live="polite"></dl>
+  <div class="converter-tree" id="converter-tree"></div>
+  <p class="reader-note" id="converter-note"></p>
+  <p class="reader-try">Try
+    <button type="button" class="reader-eg">cat</button>
+    <button type="button" class="reader-eg">Ri mur erikekosa.</button>
+    <button type="button" class="reader-eg">⊢ 无 悪物.</button>
+    <button type="button" class="reader-eg">I RI thank A you.</button>
+    <button type="button" class="reader-eg">1234</button>
+    <button type="button" class="reader-eg">arpoaku komparroko</button>
+    <button type="button" class="reader-eg">Alice</button>
+    <button type="button" class="reader-eg">Ri kompar a arpoaku rite komparroko ri vin</button></p>
 </div>
+
+<p>You do not have to say which notation you are writing in — the converter
+works it out and writes all four back. That covers pasting Han and getting
+Latin, and pasting Latin and getting Han, in the same box. Tap any word of the
+Latin line to open its entry and hear it.</p>
+
+<p>English goes in one word or phrase at a time: it looks up a root, a standing
+compound, or a name, not a sentence. Pikotika (in Latin, gloss, or Han form) can take a full sentence.</p>
+
+<h2>More tools</h2>
+
+<p>Three of these live on the topic pages that explain what they do, which is
+where they are most use.</p>
+
+<ul class="tool-links">
+  <li><a href="/topics/names/#adapter"><strong>Name adapter</strong>
+      — type your own name and watch the two passes run, one substitution at a
+      time.</a></li>
+  <li><a href="/topics/numbers/#numreader"><strong>Number reader</strong>
+      — any number, however long, said out loud: decimals, fractions,
+      percentages and ordinals too.</a></li>
+  <li><a href="/topics/time/#clock"><strong>Clock reader</strong>
+      — set a time and hear it both ways, on a twelve-hour clock and a
+      twenty-four-hour one.</a></li>
+  <li><a href="/vocab/"><strong>Vocab search</strong>
+      — every root, compound, name and loanword, searchable and filterable.</a></li>
+</ul>
 </main>
 
 <footer class="site-footer">
@@ -92,5 +132,8 @@
 
 <script src="/js/adapt.js?v=8f602064c8"></script>
 <script src="/js/numbers.js?v=d0f1e926e6"></script>
-<script src="/js/site.js?v=ca91a509ce"
-        data-data-version="a8b53b5a2b"></script>
+<script src="/js/site.js?v=878eda1a90"
+        data-data-version="4f2bd975dc"></script>
+<script src="/js/convert.js?v=ecb6895711"></script>
+<script src="/js/syntax.js?v=5b4cc870a1"></script>
+<script src="/js/tools.js?v=f3d2ef647b"></script>

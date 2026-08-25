@@ -710,11 +710,238 @@ module are now the only statement of them.
   resolve: typing *Dom* finds **Tom**.
 - `adapt.js` is a second script tag (`adapt_version`), not part of `site.js`,
   so node can `require` it. It is dependency-free and defines
-  `window.pikotikaAdapt` in the browser. The Tools converter will want the same
-  module.
+  `window.pikotikaAdapt` in the browser. The Tools converter is built the same
+  way -- see The converter below -- though it loads as a page script rather
+  than sitewide.
 - One trap, already sprung: `''.indexOf(anything)` is `0`, so a naive
   `VOWELS.indexOf(c) >= 0` reports **true** at the end of a word. That made
   *Mary* come out as **Maruyu**. `isVowel` and `isCoda` test the length first.
+
+## The converter (`/tools/`)
+
+The flagship tool, and the one page that has to hold the whole language in the
+browser: type English, gloss, Latin or Han and get all four back.
+`WEBSITE_DESIGN.md` asked for four tools here; three of them were already
+written as the interactive halves of topic pages, so `/tools/` is the converter
+plus a card each linking to those. The fourth it asked for, a Han ↔ Latin
+toggle, is what the converter does in two of its four directions and needed
+nothing of its own.
+
+**It is a port, not Pyodide.** `pikotika.py` is ~1,000 lines and running it in
+the browser costs several megabytes and takes the offline story with it. So the
+parse/render core is `web/js/convert.js`, and being a second implementation it
+gets the conformance test the design brief asked for.
+
+- **Only the algorithms are ported.** A port has two halves that can drift, and
+  the tables are not worth porting: `gen_convert.py` dumps
+  `pikotika.Tables` to `web/data/convert.json` -- the same maps, built by the
+  same code -- and `convert.js` builds none of its own. What
+  `build.py:check_convert` then measures is the algorithms alone, which is
+  where drift actually lives.
+- **`check_convert` runs 13,016 queries** through both implementations and
+  compares the whole answer: the three renderings, the English equivalents, the
+  hardest root level, which notation it was read as, and -- for a query that
+  fails -- which token it died on. The inputs are `build.convert_checks`: every
+  corpus row in all four notations, every compound by gloss, by English and in
+  both scripts, every root by gloss, alias, form, character and each `covers`
+  entry, and every name by form and by English, plus `CONVERT_EXTRAS` for the
+  written numerals and a few shapes worth pinning (**Mira** the name against
+  **mira** the root, a particle stuck to a character, a word in no table).
+  Needs node, and skips with a note when there is none, as the other two checks
+  do.
+- The cases go to node **through a file**, not argv: the tables and the corpus
+  together are a few hundred kilobytes, past what a command line takes.
+- **Two disagreements it caught while being written**, both in the tables
+  rather than the algorithms, and both now settled by dumping what Python
+  actually holds:
+  - `english_match` prints a "(root: ...)" line for a **particle** too, so the
+    dump carries `en` and `covers` for all 197 rows rather than the 193.
+  - `Tables.form2name` is keyed lowercase and is *not* first-wins, though
+    `name_forms` beside it is: two rows whose forms differ only in case are two
+    rows, and the last written takes the key. That is why **meter** converts to
+    *Michal*'s **Mitar** rather than to the loan **mitar** -- the poured name
+    row is written after the curated loan. Worth knowing, and arguably worth
+    changing in `pikotika.py`; changed there it changes here for free, since
+    this file is a dump and not a second opinion.
+
+**The wiring is `web/js/tools.js`, a page script.** `PAGE_JS` learned to take a
+list for it -- `/tools/` loads `convert.js` and then `tools.js` -- because
+convert.json is 144 KB and only this page wants it, so neither the module nor
+the data belongs in the sitewide tags the way `adapt.js` and `numbers.js` do.
+It reaches the sitewide helpers through `window.pikotika`, which gained
+`dataVersion` so the fetch is cache-busted the same way the lexicon's is.
+
+- **The box shows the four readings and nothing else.** `lookup()` also answers
+  which notation the query was read as and how hard its roots are, and neither
+  earned a line. The notation is misleading: the parser tries gloss first and
+  gloss notation accepts a bare English name, so *Alice* came back "read as
+  gloss" and a numeral came back as whichever notation was asked first -- true,
+  and useless to say, since the four lines already show what the query was
+  understood as. The root level is a fact about the course, which is not what
+  anyone is at this box for. Both are still returned and `check_convert` still
+  compares them against `pikotika.py`.
+- **It reserves nothing and fits its content**, which is the one place it parts
+  company with the reader boxes it borrows its styling from. Those answer with
+  a fixed number of lines, so holding the space open stops them jumping on the
+  first keystroke; this one answers with between one and four rows of
+  unpredictable length, and reserving the worst case would leave an empty box
+  gaping under the field. `.converter-out` and the note hide themselves while
+  empty (`:empty { display: none }`), and `tools.js:autosize` grows the textarea
+  to its content -- `height = auto` before reading `scrollHeight`, or the field
+  only ever measures the height it already has and never shrinks back.
+- **The query rides in the hash**, as it does on Vocab and for the same reason:
+  a conversion is worth linking someone to. `replaceState`, so trying six
+  sentences does not mean pressing Back six times.
+- Only the Latin line is chipped. Chips look words up by lowercased form, so
+  gloss (*home-animal*) and Han would open nothing.
+
+## The sentence diagram (`web/js/syntax.js`)
+
+The converter draws any query with **ri** in it as a tree. `syntax.js` does the
+bracketing and `tools.js:drawTree` draws it.
+
+**It is the site's only statement of Pikotika syntax.** `pikotika.py` stops at
+words -- `parse` returns a flat list and nothing more -- so unlike the
+converter and the number reader this is not a port and has no Python twin to
+check against. Written in JavaScript first and only, on the same footing as
+`adapt.js`. Its check is its own suite (see below).
+
+- **Latin in.** It is what the converter already produces from any of the four
+  notations, and what a word chip looks a word up by, so the pipeline is: any
+  notation -> `convert.js` -> Latin -> `syntax.js` -> tree.
+- **A particle names the node it makes; nothing else is labeled.** A particle
+  is the word that *facilitates* a join, not a thing being joined, so all four
+  sit at their joins rather than in the row of words: **ri** holds a subject and
+  a predicate, **a** a verb and its object, **te** a modifier and its head,
+  **rite** a clause and its noun. `ri(Eko a(vite nino))`. That leaves every leaf
+  a content word.
+
+  Beyond the particles there are no labels at all. Pikotika roots have no part
+  of speech (`/grammar/predicate/`: the same root is a noun in one slot and a
+  verb in another), so writing "verb" over a node would claim something the
+  language does not. An unnamed node is a junction -- a dot where the lines
+  meet -- and that is all it says.
+- **A compound is one node.** They are written solid in Latin, so they arrive
+  as one token and stay one; breaking **kasepeste** into *home* + *animal*
+  would diagram the etymology rather than the sentence.
+- **A node is `{w: word}` or `{c: [children]}`,** plus, on a named one, `n` and
+  `at`. `bracket()` writes a leaf as its word, an unnamed branch as `(a b)`, and
+  a named one as `ri(a b)` -- which is what the tests compare, a tree being hard
+  to eyeball and a string not.
+- **`at` is the slot the name is spoken before**, 1 in the ordinary case and 0
+  where the first slot is empty. `bracket()` writes that empty slot as `_`, so
+  `Ri(_ ruva)` -- a sentence with no subject at all (`/grammar/nosubject/`) --
+  cannot be confused with `ri(ruva)`, which would be one with no predicate. The
+  blank is a fact about the sentence, not a gap in the notation, and `words()`
+  reads the name back out in that position so the bracketing still reconstructs
+  the sentence in order.
+- **`rite` names its node where the modifier and the head *meet*,** not where
+  the clause is reduced -- the head is whatever the right-branching modifier
+  rule hands it, and that is not known yet at reduction time. So the clause
+  travels as a token carrying `rel`, and `stackRight` does the naming.
+- This was not the first shape. **te** was flat (`(mod te head)`) and **rite**
+  paired the clause with the particle and hung that off the head
+  (`(((Ri ...) rite) komparroko)`), which reads as the clause modifying
+  **rite** -- technically a parse, but not how anyone thinks of it. Naming the
+  node fixed both, and the same argument then applied to **ri** and **a**,
+  which were still ordinary children. Matching the linear order of the sentence
+  was considered and dropped: the schema on `/grammar/structure/` shows the
+  particles as cells in a row, but a tree is not a row.
+
+### What the closed classes are, and the two calls that are judgment
+
+The particles, the eleven prepositions, the joining words, the aspect markers
+and the degree words are written out in the module rather than looked up: they
+are grammar, not vocabulary, and a parser that had to fetch the lexicon to find
+its own boundaries would be neither offline-capable nor testable on the command
+line. Two of those sets required a decision the grammar pages leave open:
+
+- **`meka` and `piko` are not treated as degree words.** They are ('very',
+  'slightly'), but they are equally the ordinary adjectives 'big' and 'small',
+  and `/grammar/modifier-order/` names *meka rus rotun* as "one real ambiguity"
+  settled by context and stress -- neither of which a parser has. Left out,
+  they group right like any modifier, which is the reading that page's own
+  example takes ('that big red ball'). **mas**, **nonmas** and **surmesur** are
+  unambiguous and do bind tightly to the word after them.
+- **`kum` is 'with' only where there is no object.** It is both 'and' and
+  'with' (`/grammar/joining/`, `/grammar/prepositions/`), and the two are
+  genuinely ambiguous: *tene a nero kum anka pitur* joins two colors inside the
+  object, while *komi kum tu* opens a phrase. Decided once for the whole
+  predicate and passed down, or the object's own recursion sees no **a** in
+  front of it and answers differently. Inside a phrase it always joins, which
+  keeps *mets komparroko kum ronkaaku* one phrase rather than two.
+
+### The suite is the check (`tests/syntax_test.js`)
+
+    node tests/syntax_test.js            77 cases
+    node tests/syntax_test.js --corpus   and every corpus sentence
+    node tests/syntax_test.js --show 'Eko ri vite a nino.'
+
+`build.py:check_syntax` runs it with `--corpus` on every build and fails on a
+non-zero exit, so it cannot rot. Skips with a note when node is missing, as the
+other JS checks do.
+
+**Every case is lifted from `web/pages/grammar/*.html` or `corpus.tsv`**, not
+invented, so a failure is a disagreement with the spec rather than with
+somebody's idea of it. The corpus pass is not an assertion -- there is no
+authored bracketing to compare against -- but `parse()` refuses any bracketing
+that loses or moves a word, and all **301** corpus sentences containing **ri**
+come through clean. The other 105 are commands and fragments with no **ri**,
+which have no frame to draw and are not diagrammed.
+
+Four things the pages state precisely enough to implement, and which the cases
+pin down:
+
+- **`rite` reaches back over one clause**, not to the start of the sentence:
+  "at most one verb with its objects, **ri**, and one subject". It crosses an
+  **a** (objects are part of it) but stops at one once it has taken its **ri**.
+  The clause is then replaced by a single token carrying its finished subtree,
+  so nothing downstream mistakes its **ri** for the outer clause's.
+- **te-groups combine leftward.** That is the particle's whole job, and it is
+  what makes *verte arpoaku te komparroko te teneomo* the owner of a green-tea
+  shop rather than a shop-owner who is green tea.
+- **A preposition ahead of the `a` belongs to the head.** An object clause
+  "runs to the end" and there is "no way back out of it", so a phrase that
+  would otherwise trail sits in front instead -- *voritika ver komivakeomo a
+  tis ri ...*, where the phrase names the cook. A preposition *after* the `a`
+  trails and comes off first, unless the object is itself a clause.
+- **A joined clause after a comma is swallowed** when an object clause is open.
+  `/grammar/subordinate/` warns about exactly this and says to use a semicolon;
+  the parser models the swallow rather than reading the intended grouping,
+  because showing it is the point -- a diagram that quietly repaired the
+  sentence would hide the mistake that page tells you to avoid.
+
+### Drawing it (`tools.js:drawTree`, `.tree` in site.css)
+
+The classic nested-list tree: each node is an `<li>`, and the connectors are
+borders on `::before` / `::after` rather than SVG. Drawn that way it reflows,
+inherits the theme, and -- the reason that settled it -- its leaves are
+ordinary spans, so a word chip works inside one exactly as it does anywhere
+else on the site.
+
+- **An empty first slot is drawn, not skipped.** A sentence with no subject
+  really does have one -- "there *is* a subject, but it's unspecified"
+  (`/grammar/nosubject/`) -- so the slot is filled with an italic *indefinite*,
+  dashed and muted the way `/grammar/structure/`'s schema draws an open slot.
+  It is the renderer's word, not the parser's: `syntax.js` records the empty
+  slot as `at: 0` and stays free of English UI strings, and the placeholder is
+  not a `.pk`, since a chip on an English word would open nothing.
+
+  This also removed every single-child node in practice, which is what had been
+  drawing a stub of stray line: an only child is both `:first-child` and
+  `:last-child`, so the rule clearing `::before` and the rule putting a
+  `border-right` back on it were fighting. `li:only-child` now hides both --
+  the stem from the parent is the whole connection -- so the bug is gone even
+  where a single-child node does occur.
+- **Only words get `.pk`** -- leaves, and the name at a named junction. A `.pk`
+  around a branch would nest, and `chipify` would wrap the same words twice.
+  A named junction being a `.pk` means the particle opens its own entry from the
+  spot in the tree where it is doing the joining.
+- The whole tree carries `role="img"` and an `aria-label` of the sentence:
+  reading out every junction would not help anyone.
+- `.tree` scrolls sideways on its own. A tree is as wide as the sentence is
+  long and a phone is not; scrolling the diagram is right, scrolling the page
+  is not.
 
 ## Audio
 
@@ -1249,9 +1476,9 @@ Many of the icons used on the site (for example, on the topic cards) are Twemoji
 
 The header audio toggle, and slow ("turtle") variants — Kokoro takes a speed
 parameter, so those are a second generation pass rather than `playbackRate`,
-which pitch-shifts. Vocab search and all twenty grammar pages are built; the
-Tools converter is still a placeholder, as are twelve of the seventeen topics.
-The Tools "number and date reader" `WEBSITE_DESIGN.md` asks for can reuse
-`numbers.js` as it stands, including its `readClock`; what is still missing
-there is dates -- years, months and weekdays -- which want `/topics/dates/`
-written first.
+which pitch-shifts. Vocab search, all twenty grammar pages and the Tools
+converter are built; twelve of the seventeen topics are still placeholders.
+The one thing `WEBSITE_DESIGN.md` asks for under Tools that is not there is
+**dates** -- the "number and date reader" reads numbers and clock times, which
+`numbers.js` already did, but years, months and weekdays want `/topics/dates/`
+written first, and `DETAILS.md` still holds that section.
