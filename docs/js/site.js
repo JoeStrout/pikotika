@@ -849,6 +849,33 @@
         box.appendChild(hint);
       }
 
+      /* A word whose job is grammar -- a particle, a pronoun, a question
+         word -- is only half explained by its gloss; the rest is on the pages
+         that teach the construction.  Several of them, for a word like
+         **vons** that carries two: they are listed most central first, and a
+         reader takes whichever they just met.  The line sits with the other
+         one-line facts, above the sections. */
+      var slugs = (entry.topic || []).filter(function (slug) {
+        return data.topics && data.topics[slug];
+      });
+      if (slugs.length) {
+        var topic = document.createElement('p');
+        topic.className = 'vocab-dfield';
+        var tlabel = document.createElement('span');
+        tlabel.className = 'vocab-dlabel';
+        tlabel.textContent = slugs.length === 1 ? 'Grammar topic: '
+                                                : 'Grammar topics: ';
+        topic.appendChild(tlabel);
+        slugs.forEach(function (slug, i) {
+          if (i) topic.appendChild(document.createTextNode(', '));
+          var ta = document.createElement('a');
+          ta.href = '/grammar/' + slug + '/';
+          ta.textContent = data.topics[slug];
+          topic.appendChild(ta);
+        });
+        box.appendChild(topic);
+      }
+
       if (entry['in'] && entry['in'].length) {
         var used = document.createElement('div');
         used.className = 'vocab-section';

@@ -259,6 +259,24 @@ the one in JavaScript. One implementation, hash permalinks.
   chip, so there is one chip implementation, not two. This retired
   `relatedChip`, the `go()` that searched for the tapped word, and the
   `.vocab-rel` CSS that was hand-copying the chip's dotted underline.
+- **A grammar word links to the pages that teach it** (added 2026-08-25). The
+  open entry for **rite**, **vons** or **ker** carries a "Grammar topic:" line
+  above the sections, linking to `/grammar/<slug>/`. What a particle or a
+  question word means is a construction, not a gloss, and the entry was
+  otherwise a dead end. The list is `gen_lexicon.GRAMMAR_TOPIC`, form → slugs,
+  49 words over 15 pages; the *titles* come from `build.GRAMMAR_GROUPS`, so the
+  label is the one the page and the Grammar index carry, and `grammar_topics()`
+  fails the build on a form or a slug that does not exist.
+  - **A word may name more than one page, most central first.** One each was
+    the first cut and it was the wrong economy: **vons** is the preposition
+    *from* and the *than* of every comparison, and which one the reader wants
+    is whichever they just met. **vin** names three. The list stays *teaching*
+    pages — a page that merely uses the word in an example does not earn a
+    link.
+  - Ordinary vocabulary is left out entirely: the test is whether the word does
+    grammatical work, not whether a grammar page mentions it. The forms also
+    have to be in the standing lexicon — **nontisomo** is written only in page
+    prose, so it cannot be tagged (the check is what caught it).
 - **Expanding a row does not rewrite the hash.** Opening one result of a search
   is not a different search; the entry's own Permalink is the link to it opened.
 - Nothing pushes history — a reader stepping through six compounds should not

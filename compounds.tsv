@@ -233,6 +233,7 @@ smell	air-taste	Body and life	4
 election	all-choose	People and society;Verbs	4	
 return (something); give back; hand back	back-give	Verbs	4	
 return; go back	back-go	Verbs;Space and direction	4	
+return; come back	back-come	Verbs;Space and direction	4	
 change (money returned)	back-money	People and society;Quantity	4	
 reply; answer; respond; response	back-say	Verbs	4	
 unlucky; unfortunate; unfortunately	bad-if	Qualities	4	

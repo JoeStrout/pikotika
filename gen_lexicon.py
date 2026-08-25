@@ -228,6 +228,114 @@ def check_categories(t):
         raise SystemExit("gen_lexicon: " + "; ".join(lines))
 
 
+# The words whose job *is* grammar, and the pages that teach each one.  A chip
+# for **rite** or **vons** is worth little on its own -- what the reader wants
+# next is the page where the construction is explained -- so the Vocab entry
+# carries a link to it.  Keyed by Latin form, which is what `words` is keyed by;
+# `grammar_topics` fails the build on a form or a slug that does not exist, so a
+# renamed page or a retired compound cannot leave a dead link behind.
+#
+# **A word may name more than one page, most central first** (decided
+# 2026-08-25; it was one page each at first).  **vons** is the preposition
+# *from* and the *than* of every comparison, and a reader who taps it wants
+# whichever of those they just met -- picking one for them was the wrong
+# economy.  The list stays a list of *teaching* pages, though: a page that
+# merely uses the word in an example does not earn a link, or **vin** would
+# name half the section.
+#
+# Ordinary vocabulary is left out entirely -- the test is whether the word does
+# grammatical work, not whether a grammar page mentions it.
+GRAMMAR_TOPIC = {
+    # Particles and pronouns
+    "ri":        ["structure", "nosubject", "subordinate"],
+    "a":         ["structure", "subordinate"],
+    "te":        ["te", "relative"],
+    "rite":      ["relative", "te"],
+    "eko":       ["nouns"],
+    "tu":        ["nouns"],
+    "tis":       ["nouns", "relative"],
+    "nontis":    ["nouns"],
+    "tisomo":    ["nouns"],
+    "ekomen":    ["nouns"],
+
+    # Prepositions
+    "in":        ["prepositions"],
+    "ver":       ["prepositions"],
+    "vons":      ["prepositions", "comparison"],
+    "por":       ["prepositions"],
+    "topi":      ["prepositions"],
+    "sur":       ["prepositions"],
+    "tun":       ["prepositions"],
+    "nir":       ["prepositions"],
+    "eks":       ["prepositions"],
+    "mets":      ["prepositions"],
+
+    # Negation, questions, commands
+    "non":       ["negation", "questions"],
+    "nem":       ["negation"],
+    "ker":       ["questions", "relative"],
+    "keromo":    ["questions"],
+    "kerroko":   ["questions"],
+    "kertempo":  ["questions"],
+    "kermoto":   ["questions"],
+    "kerrason":  ["questions"],
+    "si":        ["questions"],
+    "pam":       ["nosubject"],
+
+    # Modifiers and comparison
+    "mas":       ["comparison", "modifier-order"],
+    "nonmas":    ["comparison", "modifier-order"],
+    "sam":       ["comparison"],
+    "surmesur":  ["modifier-order"],
+
+    # Time, mood, conditions
+    "apa":       ["aspect"],
+    "vin":       ["aspect", "mood", "conditions"],
+    "sista":     ["aspect"],
+    "yer":       ["aspect"],
+    "tar":       ["aspect"],
+    "kan":       ["mood", "conditions"],
+    "neses":     ["mood"],
+    "pospona":   ["mood", "conditions"],
+    "pos":       ["conditions", "mood"],
+    "nonves":    ["conditions", "negation"],
+
+    # Joining
+    "kum":       ["joining", "prepositions"],
+    "sive":      ["joining"],
+    "sets":      ["joining"],
+    "rason":     ["joining"],
+    "tisrason":  ["joining", "conditions"],
+}
+
+
+def grammar_topics(words):
+    """Tag each grammar word with its pages, and return slug -> page title.
+
+    The titles come from `build.GRAMMAR_GROUPS`, so the label in an entry is the
+    one the page and the Grammar index carry; imported here rather than at the
+    top because build.py imports this module."""
+    import build
+
+    titles = {slug: title
+              for _group, pages in build.GRAMMAR_GROUPS for slug, title, _b in pages}
+    topics, missing = {}, []
+    for form, slugs in GRAMMAR_TOPIC.items():
+        entry = words.get(form)
+        if entry is None:
+            missing.append("no such word: " + form)
+            continue
+        for slug in slugs:
+            if slug not in titles or not build.grammar_fragment_path(slug).is_file():
+                missing.append("no such grammar page: " + slug)
+                continue
+            topics[slug] = titles[slug]
+            entry.setdefault("topic", []).append(slug)
+    if missing:
+        raise SystemExit("gen_lexicon: " + "; ".join(sorted(set(missing))))
+    return topics
+
+
 def build(t, extra_forms=()):
     """The standing lexicon, plus any word only page prose uses.
 
@@ -292,7 +400,8 @@ def build(t, extra_forms=()):
 
     check_compounds(t)
     check_categories(t)
-    return {"words": words, "sentences": sentences,
+    topics = grammar_topics(words)
+    return {"words": words, "sentences": sentences, "topics": topics,
             "categories": list(t.category_order)}, unresolved
 
 

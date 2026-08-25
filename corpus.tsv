@@ -30,6 +30,7 @@ Do you have a bigger room?	you RI have A more big room, what?	Tu ri tene a mas m
 It's less important than that one.	this RI not-more heavy-necessary than not-this.	Tis ri nonmas pesaneses vons nontis.	此 ⊢ 不更 重要 从 不此.	4	
 It's not more important than that one.	this RI not more heavy-necessary than not-this.	Tis ri non mas pesaneses vons nontis.	此 ⊢ 不 更 重要 从 不此.	4	
 It's the least important.	this RI not-more heavy-necessary than all.	Tis ri nonmas pesaneses vons pan.	此 ⊢ 不更 重要 从 全.	4	
+From the airport, the train is faster than the bus.	from air-vehicle-place, metal-line-vehicle RI more fast than many-person-vehicle.	Vons ventokaroroko, metarrinekaro ri mas veros vons muromokaro.	从 风车所, 金糸车 ⊢ 更 早 从 多人车.	4	travel
 Hello (when meeting someone new)	new-meet.	Novasarve.	初会.	1	pleasantries;meeting
 Hello	happy-meet.	Kontensarve.	楽会.	1	pleasantries
 Take care (parting).	good go.	Pona ire.	好 行.	1	pleasantries
@@ -295,9 +296,16 @@ I want you to come.	I RI want A you RI come.	Eko ri vori a tu ri veni.	己 ⊢ �
 I ask the cook to make it not spicy.	I RI want-say to food-make-person A this RI become not hot-taste.	Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.	己 ⊢ 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.	4	food
 I think you would like it.	I RI think A you RI like A this.	Eko ri pensa a tu ri kusta a tis.	己 ⊢ 思 ⇒ 尔 ⊢ 愛 ⇒ 此.	4	feelings
 Whatever you have, send me that.	you RI have A what-thing, please give A this to me.	Tu ri tene a kerkosa, pam tonar a tis ver eko.	尔 ⊢ 有 ⇒ 何物, 乞 与 ⇒ 此 向 己.	4	
-Please wait until I get back.	I RI back come in what-hour, please remain straight-to this.	Eko ri rets veni in kerora, pam sista retover tis.	己 ⊢ 反 来 内 何刻, 乞 止 直向 此.	4	
+Please wait until I get back.	I RI back-come in what-hour, please remain straight-to this.	Eko ri retseveni in kerora, pam sista retover tis.	己 ⊢ 反 来 内 何刻, 乞 止 直向 此.	4	
 the animal the person ate	person RI food RI-TE animal.	Omo ri komi rite peste.	人 ⊢ 食 ⊢> 匹.	3	food
 Send me what you have.	please give A you RI have RI-TE thing to me.	Pam tonar a tu ri tene rite kosa ver eko.	乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己.	4	
+The shop that sells tea is closed.	RI buy A plant-water RI-TE buy-place RI close.	Ri kompar a arpoaku rite komparroko ri vin.	⊢ 買 ⇒ 木水 ⊢> 買所 ⊢ 閉.	4	money;food
+The shop where I bought tea is closed.	I RI buy A plant-water RI-TE buy-place RI close.	Eko ri kompar a arpoaku rite komparroko ri vin.	己 ⊢ 買 ⇒ 木水 ⊢> 買所 ⊢ 閉.	4	money;food
+The food you made is very good.	you RI make RI-TE food RI big good.	Tu ri vake rite komi ri meka pona.	尔 ⊢ 作 ⊢> 食 ⊢ 大 好.	3	food
+I know the woman you met.	I RI know A you RI meet RI-TE woman.	Eko ri sape a tu ri sarve rite vema.	己 ⊢ 知 ⇒ 尔 ⊢ 会 ⊢> 女.	3	meeting
+The train that goes to the airport leaves at nine.	RI go to air-vehicle-place RI-TE metal-line-vehicle RI out-go in 9 hour.	Ri ire ver ventokaroroko rite metarrinekaro ri eksire in 9 ora.	⊢ 行 向 风车所 ⊢> 金糸车 ⊢ 外行 内 9 刻.	4	travel;time
+The place where we ate is near the river.	I-group RI food RI-TE place RI near long-water.	Ekomen ri komi rite roko ri nir ronkaaku.	己众 ⊢ 食 ⊢> 所 ⊢ 近 长水.	3	food;travel
+The key you gave me is on the table.	you RI give to me RI-TE key RI on table.	Tu ri tonar ver eko rite yave ri sur tapur.	尔 ⊢ 与 向 己 ⊢> 錠 ⊢ 上 机.	5	lodging
 It's stopping!	RI remain!	Ri sista!	⊢ 止!	4	
 Stop!	remain!	Sista!	止!	4	
 All is good.	all RI good.	Pan ri pona.	全 ⊢ 好.	3	pleasantries
