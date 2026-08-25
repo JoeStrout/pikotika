@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-668 terms
+672 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -123,6 +123,7 @@
 | coffee | black-drink | neropipe | 黒飲 |
 | coin | metal-money | metarmoni | 金贝 |
 | collect | group-join | menyunta | 众合 |
+| come back | back-come | retseveni | 反来 |
 | comic book | picture-many-page | piturmurkarta | 画多片 |
 | comics | picture-many-page | piturmurkarta | 画多片 |
 | company | buy-group | komparmen | 買众 |
@@ -376,6 +377,7 @@
 | office | work-room | opuskamar | 力室 |
 | old (in years) | year-big | anyomeka | 年大 |
 | on that note | near-about | nirtopi | 近件 |
+| on what day of the week | what-weekday | keryom | 何曜 |
 | on what occasion | what-time | kertempo | 何时 |
 | option | choose-thing | erikekosa | 选物 |
 | orange | red-yellow | rusyoro | 赤黄 |
@@ -470,6 +472,7 @@
 | rethink | again-think | repepensa | 又思 |
 | retrieve | again-get | repetoma | 又取 |
 | return | back-go | retsire | 反行 |
+| return | back-come | retseveni | 反来 |
 | return (something) | back-give | retsetonar | 反与 |
 | review | again-see | repevite | 又見 |
 | rice (white rice) | white-grain | ankariso | 白米 |
@@ -651,6 +654,7 @@
 | well-balanced | heal-think | sanapensa | 医思 |
 | west | map-left | mapasini | 図左 |
 | wet season | rain-time | ruvatempo | 雨时 |
+| what day | what-weekday | keryom | 何曜 |
 | what time | what-hour | kerora | 何刻 |
 | whatever | what-thing | kerkosa | 何物 |
 | wheat | yellow-grain | yororiso | 黄米 |

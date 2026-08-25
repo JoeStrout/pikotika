@@ -1,0 +1,334 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dates and weekdays — Pikotika</title>
+<meta name="description" content="Weekdays, months, and a live calendar in Pikotika names.">
+
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<meta name="theme-color" content="#FFFC00" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16150F" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pikotika">
+
+<meta property="og:site_name" content="Pikotika">
+<meta property="og:title" content="Dates and weekdays — Pikotika">
+<meta property="og:description" content="Weekdays, months, and a live calendar in Pikotika names.">
+<meta property="og:image" content="https://pikotika.org/images/og-image.png">
+<meta property="og:url" content="https://pikotika.org/topics/dates/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="/css/site.css?v=c60c32a0be">
+<script>
+/* Set the theme before first paint, so there is no flash of the wrong one. */
+(function () {
+  try {
+    var t = localStorage.getItem('pk-theme');
+    if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+  } catch (e) {}
+})();
+</script>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="/" aria-label="Pikotika home">
+      <picture>
+        <source srcset="/images/Title_Dark.png" media="(prefers-color-scheme: dark)" id="wordmark-dark">
+        <img src="/images/Title_Light.png" alt="Pikotika" width="822" height="225">
+      </picture>
+    </a>
+
+    <button class="theme-toggle" id="theme-toggle" type="button"
+            aria-label="Switch between light and dark theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g class="rays"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></g></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </div>
+
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="/">Overview</a></li>
+      <li><a href="/vocab/">Vocab</a></li>
+      <li><a href="/grammar/">Grammar</a></li>
+      <li><a href="/topics/" aria-current="page">Topics</a></li>
+      <li><a href="/tools/">Tools</a></li>
+      <li><a href="/learn/">Learn</a></li>
+      <li><a href="/why/">Why</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="">
+<p class="topic-back"><a href="/topics/">← Back to Topics</a></p>
+
+<h1>Dates and weekdays</h1>
+
+<p class="lede">There are no month names to learn. A date is three numbers with
+one word after each — <span class="pk">anyo</span> for the year,
+<span class="pk">mese</span> for the month, <span class="pk">yan</span> for the
+day — so August is simply <b>8 mese</b>, the eighth month.</p>
+
+<h2>Any date on the calendar</h2>
+
+<div class="reader calendar" id="calendar">
+  <div class="cal-fields">
+    <div class="cal-field cal-field-year">
+      <label class="reader-label" for="cal-year">Year</label>
+      <input type="number" id="cal-year" min="1" max="9999" step="1"
+             inputmode="numeric">
+    </div>
+    <div class="cal-field">
+      <label class="reader-label" for="cal-month">Month</label>
+      <select id="cal-month"></select>
+    </div>
+    <div class="cal-field">
+      <label class="reader-label" for="cal-day">Day</label>
+      <select id="cal-day"></select>
+    </div>
+  </div>
+
+  <div class="cal-month">
+    <div class="cal-head">
+      <button type="button" class="cal-step" id="cal-prev"
+              aria-label="The month before">&#x2039;</button>
+      <div class="cal-title">
+        <span class="cal-title-pk" id="cal-title-pk"></span>
+        <span class="cal-title-en" id="cal-title-en"></span>
+      </div>
+      <button type="button" class="cal-step" id="cal-next"
+              aria-label="The month after">&#x203a;</button>
+    </div>
+
+    <table class="cal-grid">
+      <thead>
+        <tr>
+          <th><span class="cal-han">&#x65e5;</span><span class="cal-root">yan</span></th>
+          <th><span class="cal-han">&#x6708;</span><span class="cal-root">mese</span></th>
+          <th><span class="cal-han">&#x706b;</span><span class="cal-root">wo</span></th>
+          <th><span class="cal-han">&#x6c34;</span><span class="cal-root">aku</span></th>
+          <th><span class="cal-han">&#x6728;</span><span class="cal-root">arpo</span></th>
+          <th><span class="cal-han">&#x91d1;</span><span class="cal-root">metar</span></th>
+          <th><span class="cal-han">&#x571f;</span><span class="cal-root">tera</span></th>
+        </tr>
+      </thead>
+      <tbody id="cal-body"></tbody>
+    </table>
+  </div>
+
+  <div class="reader-out" id="cal-out" aria-live="polite"></div>
+  <p class="reader-note" id="cal-note"></p>
+  <p class="reader-try">Try <button type="button" class="reader-eg" data-date="today">today</button>
+    <button type="button" class="reader-eg" data-date="tomorrow">tomorrow</button>
+    <button type="button" class="reader-eg" data-date="2026-01-01">New Year</button>
+    <button type="button" class="reader-eg" data-date="2026-08-09">9 August 2026</button></p>
+</div>
+
+<p>Every column of that grid is a weekday named for what stands over it, and
+every day in it is a number. Tap one to hear the whole date read out.</p>
+
+<h2>Year, month, day</h2>
+
+<p>Write the numbers largest first — year, then month, then day — and put the
+right word after each. Nothing is optional and nothing is abbreviated: the word
+is what tells you which number you just heard.</p>
+
+<ul class="digits digits-words">
+  <li><span class="pk">anyo</span> <span class="en">year</span>
+      <span class="han">&#x5e74;</span></li>
+  <li><span class="pk">mese</span> <span class="en">month, moon</span>
+      <span class="han">&#x6708;</span></li>
+  <li><span class="pk">yan</span> <span class="en">day, sun</span>
+      <span class="han">&#x65e5;</span></li>
+</ul>
+
+<p>Say as much of a date as you need. A month on its own is
+<b>8 mese</b>; a month and a day is <b>8 mese 9 yan</b>; the whole thing is
+<b>2026 anyo 8 mese 9 yan</b>.</p>
+
+<table class="rules">
+  <tr><th>Written</th><th>Said</th><th>Meaning</th></tr>
+  <tr><td>8 mese</td><td><span class="pk">ots mese</span></td>
+      <td>August</td></tr>
+  <tr><td>8 mese 9 yan</td><td><span class="pk">ots mese noks yan</span></td>
+      <td>August 9th</td></tr>
+  <tr><td>2026 anyo</td>
+      <td><span class="pk">pits kiru, pits tekas siks anyo</span></td>
+      <td>2026</td></tr>
+</table>
+
+<p>In Han the numbers close up against their words —
+<span class="han">2026&#x5e74;8&#x6708;9&#x65e5;</span> — which is the one
+place a numeral takes no space after it. In Latin writing you may also use the
+ISO shorthand, <b>2026-08-09</b>. All three are the same date and are read
+aloud identically; how you write it changes nothing about how you say it.</p>
+
+<h2>The seven days</h2>
+
+<p>Each weekday is a thing plus <span class="pk">yom</span>
+<span class="gloss">weekday</span>. The set is the classical one — the sun, the
+moon, and the five elements — and the Han characters are exactly those used in
+Japanese and Korean.</p>
+
+<table class="rules">
+  <tr><th>Day</th><th>Pikotika</th><th>Literally</th><th>Han</th></tr>
+  <tr><td>Sunday</td><td><span class="pk">yanyom</span></td>
+      <td class="gloss">sun-weekday</td><td class="han">&#x65e5;&#x66dc;</td></tr>
+  <tr><td>Monday</td><td><span class="pk">meseyom</span></td>
+      <td class="gloss">moon-weekday</td><td class="han">&#x6708;&#x66dc;</td></tr>
+  <tr><td>Tuesday</td><td><span class="pk">woyom</span></td>
+      <td class="gloss">fire-weekday</td><td class="han">&#x706b;&#x66dc;</td></tr>
+  <tr><td>Wednesday</td><td><span class="pk">akuyom</span></td>
+      <td class="gloss">water-weekday</td><td class="han">&#x6c34;&#x66dc;</td></tr>
+  <tr><td>Thursday</td><td><span class="pk">arpoyom</span></td>
+      <td class="gloss">plant-weekday</td><td class="han">&#x6728;&#x66dc;</td></tr>
+  <tr><td>Friday</td><td><span class="pk">metaryom</span></td>
+      <td class="gloss">metal-weekday</td><td class="han">&#x91d1;&#x66dc;</td></tr>
+  <tr><td>Saturday</td><td><span class="pk">terayom</span></td>
+      <td class="gloss">earth-weekday</td><td class="han">&#x571f;&#x66dc;</td></tr>
+</table>
+
+<p>Two of the seven read oddly if you come at them from the English element
+names: <span class="pk">wo</span> is <em>fire</em> and also <em>hot</em>, and
+<span class="pk">arpo</span> is <em>wood</em> and any other plant. The
+characters are the familiar <span class="han">&#x706b;</span> and
+<span class="han">&#x6728;</span> all the same.</p>
+
+<p>A weekday is a time word like any other, so it takes
+<span class="pk">in</span>:</p>
+
+<div class="example">
+  <p class="en">The shop is closed on Sunday.</p>
+  <span class="pk">Komparroko ri vin in yanyom.</span>
+</div>
+
+<p>Seven of them make a <span class="pk">senseyan</span>
+<span class="gloss">seven-sun</span>, a week, and the last of them is the
+<span class="pk">senseyanvin</span> <span class="gloss">seven-sun-finish</span>,
+the weekend.</p>
+
+<h2>Today, yesterday, tomorrow</h2>
+
+<p>Three compounds name the days around the one you are standing in.</p>
+
+<ul class="digits digits-words">
+  <li><span class="pk">yanyer</span> <span class="en">yesterday</span>
+      <span class="han">&#x65e5;&#x524d;</span></li>
+  <li><span class="pk">tisyan</span> <span class="en">today</span>
+      <span class="han">&#x6b64;&#x65e5;</span></li>
+  <li><span class="pk">yantar</span> <span class="en">tomorrow</span>
+      <span class="han">&#x65e5;&#x540e;</span></li>
+</ul>
+
+<p>For any other distance, count the days and put
+<span class="pk">yer</span> <span class="gloss">before</span> or
+<span class="pk">tar</span> <span class="gloss">after</span> at the end. The
+same pattern counts weeks, months and years.</p>
+
+<table class="examples">
+  <tr><th>Pikotika</th><th>Literally</th><th>Meaning</th></tr>
+  <tr><td><span class="pk">2 yan yer</span></td>
+      <td class="gloss">2 sun before</td><td>two days ago</td></tr>
+  <tr><td><span class="pk">5 yan tar</span></td>
+      <td class="gloss">5 sun after</td><td>five days from now</td></tr>
+  <tr><td><span class="pk">3 senseyan yer</span></td>
+      <td class="gloss">3 seven-sun before</td><td>three weeks ago</td></tr>
+  <tr><td><span class="pk">2 anyo tar</span></td>
+      <td class="gloss">2 year after</td><td>in two years</td></tr>
+</table>
+
+<p class="aside">Coming <em>after</em> the amount is what makes these count from
+now. In front of a unit, the same two words point at whatever you were just
+talking about instead: <span class="pk">yeryan</span> is the day before
+<em>that</em> one, and <span class="pk">tar mese</span> is the month after it.</p>
+
+<div class="example">
+  <p class="en">Two days ago I was in Lisbon.</p>
+  <span class="pk">2 yan yer, eko ri in sitas Rispan.</span>
+</div>
+
+<h2>Asking</h2>
+
+<p>As everywhere else, a question puts a <span class="pk">ker</span> word in the
+slot the answer belongs in and leaves the sentence alone.</p>
+
+<table class="rules">
+  <tr><th>Word</th><th>Literally</th><th>Asks for</th></tr>
+  <tr><td><span class="pk">keryom</span></td><td class="gloss">what-weekday</td>
+      <td>which day of the week</td></tr>
+  <tr><td><span class="pk">kertempo</span></td><td class="gloss">what-time</td>
+      <td>when, on what occasion</td></tr>
+  <tr><td><span class="pk">ker yan</span></td><td class="gloss">what sun</td>
+      <td>which day of the month</td></tr>
+</table>
+
+<div class="example">
+  <p class="en">What day is it today?</p>
+  <span class="pk">Tisyan ri keryom?</span>
+</div>
+
+<div class="example">
+  <p class="en">Today is Tuesday.</p>
+  <span class="pk">Tisyan ri woyom.</span>
+</div>
+
+<div class="example">
+  <p class="en">When does the museum close?</p>
+  <span class="pk">Artikase ri vin in kertempo?</span>
+</div>
+
+<h2>More examples</h2>
+
+<div class="example">
+  <p class="en">We arrive on August 9th, 2026.</p>
+  <span class="pk">Ekomen ri veni in 2026 anyo 8 mese 9 yan.</span>
+</div>
+
+<div class="example">
+  <p class="en">I'm leaving on the 25th.</p>
+  <span class="pk">Eko ri eksire in 25 yan.</span>
+</div>
+
+<div class="example">
+  <p class="en">I don't work on the weekend.</p>
+  <span class="pk">Eko ri non opus in senseyanvin.</span>
+</div>
+
+<div class="example">
+  <p class="en">How many days are you staying?</p>
+  <span class="pk">Tu ri sista in ker yan?</span>
+</div>
+
+<div class="example">
+  <p class="en">See you next week.</p>
+  <span class="pk">Tarsarve in tar senseyan.</span>
+</div>
+
+<p>The numbers themselves are on the <a href="/topics/numbers/">Numbers</a>
+page, the clock is on <a href="/topics/time/">Telling time</a>, and the four
+divisions of the year are under <a href="/topics/seasons/">Seasons</a>.</p>
+
+<p class="topic-back is-end"><a href="/topics/">← Back to Topics</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-tagline">A tiny language for real conversation.</p>
+    <ul class="footer-links">
+      <li><a href="https://reddit.com/r/pikotika">Subreddit</a></li>
+      <li><a href="https://discord.gg/">Discord</a></li>
+      <li><a href="https://github.com/JoeStrout/pikotika">Source</a></li>
+    </ul>
+    <p class="footer-legal">
+      Pikotika is free to use, teach, and build on, under
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC&nbsp;BY&nbsp;4.0</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="/js/adapt.js?v=8f602064c8"></script>
+<script src="/js/numbers.js?v=bf2b182434"></script>
+<script src="/js/site.js?v=5eda8209de"
+        data-data-version="e00f2a59ec"></script>

@@ -722,6 +722,11 @@ NUMBER_GLOSSES = ["part", "in", "in-hundred", "sequence"]
 # parts of the day, which is how a 12-hour time says which half it is in.
 CLOCK_GLOSSES = ["hour", "up-sun", "middle-sun", "down-sun", "no-sun"]
 
+# The calendar on /topics/dates/ does the same for a date: three numbers with
+# one word after each.  `sun` is the day, and it is already in the clip set as
+# part of `up-sun` and friends only as a compound, so it needs its own.
+DATE_GLOSSES = ["year", "month", "sun"]
+
 
 def ordinal_glosses(tables) -> list:
     """The ordinals that have a standing compound: `one-sequence` and friends.
@@ -744,7 +749,7 @@ def number_forms(tables) -> list:
     import pikotika
 
     glosses = (list(dict.fromkeys(pikotika.DIGITS.values())) + NUMBER_GLOSSES
-               + CLOCK_GLOSSES + ordinal_glosses(tables))
+               + CLOCK_GLOSSES + DATE_GLOSSES + ordinal_glosses(tables))
     return sorted({pikotika.render_latin(pikotika.parse_gloss(g, tables), tables)
                    for g in glosses})
 
@@ -790,6 +795,17 @@ def clock_checks() -> list:
     return cases
 
 
+# The calendar (/topics/dates/) is checked over the shapes a date reading can
+# take: the turn of a year, a month and a day of one digit and of two, the
+# leap day, and every month of the twelve -- which is every month word there
+# is, months having no names of their own.
+def date_checks() -> list:
+    cases = ["2026-08-09", "2026-08-25", "1-1-1", "999-12-31", "1000-01-01",
+             "2000-02-29", "2026-12-31", "2026-01-01", "1970-07-04"]
+    cases += [f"2026-{m:02d}-15" for m in range(1, 13)]
+    return cases
+
+
 def check_numbers(tables) -> None:
     """Check web/js/numbers.js against pikotika.py, over every shape it reads.
 
@@ -815,6 +831,7 @@ def check_numbers(tables) -> None:
 
     cases = number_checks()
     clocks = clock_checks()
+    dates = date_checks()
     driver = """
       const numbers = require(process.argv[1]);
       const input = JSON.parse(process.argv[2]);
@@ -824,12 +841,13 @@ def check_numbers(tables) -> None:
         clock: input.clocks.map(function (s) { return numbers.readClock(s); }),
         clock12: input.clocks.map(function (s) {
           return numbers.readClock(s, { hour12: true });
-        })
+        }),
+        date: input.dates.map(function (s) { return numbers.readDate(s); })
       }));
     """
     proc = subprocess.run(
         [node, "-e", driver, str(WEB / "js" / "numbers.js"),
-         json.dumps({"numbers": cases, "clocks": clocks})],
+         json.dumps({"numbers": cases, "clocks": clocks, "dates": dates})],
         capture_output=True, text=True)
     if proc.returncode:
         raise SystemExit("the number reader would not run:\n" + proc.stderr.strip())
@@ -913,11 +931,38 @@ def check_numbers(tables) -> None:
             problems.append(f"{case}: the 12-hour reading is {rest!r} after "
                             f"{part!r}, where {want12} reads {said!r}")
 
+    # The calendar has no counterpart in pikotika.py -- an ISO date is a way of
+    # writing, not a Pikotika word, and only numbers.js reads one.  So the
+    # comparison runs through the everyday written form the reader says it is
+    # showing: pikotika.py reads `2026 anyo 8 mese 9 yan`, numbers.js reads
+    # `2026-08-09`, and the two have to say the same thing.  That also checks
+    # the written form itself, which is the half a reader copies.
+    for case, got in zip(dates, result["date"]):
+        if not got.get("ok"):
+            problems.append(f"{case}: the calendar refused it "
+                            f"({got.get('error', 'no reason given')})")
+            continue
+        words = pikotika.parse_latin(got["written"], tables, fail := {})
+        if words is None:
+            problems.append(f"{case}: numbers.js writes it {got['written']!r}, "
+                            f"which is not Pikotika ({fail.get('token')!r})")
+            continue
+        spoken = pikotika.expand_numerals(words)
+        # Han is compared with the spaces taken out: a date closes up against
+        # its unit -- 2026年8月9日 -- and that is the only place a numeral does.
+        for label, want in (("latin", pikotika.render_latin(spoken, tables)),
+                            ("gloss", pikotika.render_gloss(spoken, tables)),
+                            ("han", pikotika.render_han(words, tables)
+                                    .replace(" ", ""))):
+            if got[label] != want:
+                problems.append(f"{case}: {label} is {got[label]!r} in "
+                                f"numbers.js, {want!r} in pikotika.py")
+
     if problems:
         raise SystemExit("the number reader disagrees with pikotika.py:\n  "
                          + "\n  ".join(problems))
-    print(f"  number reader: {len(cases)} numbers and {len(clocks)} clock "
-          f"times read the same in numbers.js and pikotika.py")
+    print(f"  number reader: {len(cases)} numbers, {len(clocks)} clock times "
+          f"and {len(dates)} dates read the same in numbers.js and pikotika.py")
 
 
 # --- the converter (/tools/) -----------------------------------------------

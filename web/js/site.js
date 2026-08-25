@@ -1355,6 +1355,47 @@
     render(false);
   }
 
+  /* One line of a reading, with a button that plays it as a chain of the
+     single-voice number clips -- the same stitching the number reader does,
+     and for the same reason: there is no clip for a whole time or a whole
+     date.  `leadClass` names the label span because the clock and the calendar
+     style their own; `text` is what to show when that is not the spelled-out
+     reading, as it is for a date, which is written in digits and said in
+     words. */
+
+  function readingLine(result, className, opts) {
+    opts = opts || {};
+    var line = document.createElement('div');
+    line.className = className;
+    if (opts.label) {
+      var lead = document.createElement('span');
+      lead.className = opts.leadClass || 'clock-lead';
+      lead.textContent = opts.label;
+      line.appendChild(lead);
+    }
+    var said = document.createElement('span');
+    said.className = 'pk';
+    said.textContent = opts.text || result.latin;
+    line.appendChild(said);
+    scanChips(line);
+
+    var steps = [];
+    result.words.forEach(function (w) {
+      if (w.sep) { steps.push({ pause: CHAIN_PAUSE }); return; }
+      w.a.forEach(function (form) { steps.push({ key: form }); });
+    });
+    var speak = document.createElement('button');
+    speak.type = 'button';
+    speak.className = 'example-speak reader-speak';
+    speak.setAttribute('aria-label', 'Play ' + result.latin);
+    speak.textContent = PLAY_GLYPH;
+    speak.addEventListener('click', function () {
+      playSequence('numbers', steps, speak);
+    });
+    line.appendChild(speak);
+    return { line: line, steps: steps, button: speak };
+  }
+
   /* --- the clock (/topics/time/) ------------------------------------------
      Three fields and a clock face.  The reading is the 12-hour one, since
      that is what the fields say and it is what a speaker would actually say
@@ -1405,41 +1446,6 @@
       halfSel.value = h24 >= 12 ? 'pm' : 'am';
     }
 
-    /* One line: the reading, with a button that plays it as a chain of the
-       single-voice number clips -- the same stitching the number reader does,
-       and for the same reason: there is no clip for a whole time. */
-    function sayLine(result, className, label) {
-      var line = document.createElement('div');
-      line.className = className;
-      if (label) {
-        var lead = document.createElement('span');
-        lead.className = 'clock-lead';
-        lead.textContent = label;
-        line.appendChild(lead);
-      }
-      var said = document.createElement('span');
-      said.className = 'pk';
-      said.textContent = result.latin;
-      line.appendChild(said);
-      scanChips(line);
-
-      var steps = [];
-      result.words.forEach(function (w) {
-        if (w.sep) { steps.push({ pause: CHAIN_PAUSE }); return; }
-        w.a.forEach(function (form) { steps.push({ key: form }); });
-      });
-      var speak = document.createElement('button');
-      speak.type = 'button';
-      speak.className = 'example-speak reader-speak';
-      speak.setAttribute('aria-label', 'Play ' + result.latin);
-      speak.textContent = PLAY_GLYPH;
-      speak.addEventListener('click', function () {
-        playSequence('numbers', steps, speak);
-      });
-      line.appendChild(speak);
-      return { line: line, steps: steps, button: speak };
-    }
-
     function render(andPlay) {
       var h = hour24();
       var minute = Number(minSel.value);
@@ -1458,7 +1464,7 @@
       note.textContent = '';
       if (!said.ok) { note.textContent = said.error; return; }
 
-      var main = sayLine(said, 'reader-say');
+      var main = readingLine(said, 'reader-say');
       out.appendChild(main.line);
 
       var gloss = document.createElement('p');
@@ -1466,8 +1472,8 @@
       gloss.textContent = said.gloss;
       out.appendChild(gloss);
 
-      out.appendChild(sayLine(full, 'clock-alt',
-                              'On the 24-hour clock: ').line);
+      out.appendChild(readingLine(full, 'clock-alt',
+                                  { label: 'On the 24-hour clock: ' }).line);
 
       note.textContent = minute
         ? 'Written ' + text + ' — the hour, then ora, then the minutes.'
@@ -1500,12 +1506,308 @@
     render(false);
   }
 
+  /* --- the calendar (/topics/dates/) --------------------------------------
+     A date field, the month drawn around whatever it holds, and the reading of
+     that date under both.  Tapping a day picks it; the arrows only turn the
+     page of the calendar, leaving the picked date alone, which is what every
+     calendar does and what keeps the reading from changing under a browse.
+
+     Built entirely here rather than half in the page, as the clock is: a month
+     grid depends on which month, so there is no still picture of it to draw.
+     With scripting off the box is the date field alone. */
+
+  function initCalendar() {
+    var box = document.getElementById('calendar');
+    if (!box || !window.pikotikaNumbers) return;
+
+    var yearField = document.getElementById('cal-year');
+    var monthSel = document.getElementById('cal-month');
+    var daySel = document.getElementById('cal-day');
+    var body = document.getElementById('cal-body');
+    var titlePk = document.getElementById('cal-title-pk');
+    var titleEn = document.getElementById('cal-title-en');
+    var out = document.getElementById('cal-out');
+    var note = document.getElementById('cal-note');
+
+    /* Sunday first, so the columns run 日 月 火 水 木 金 土 -- the order the
+       names themselves are in. */
+    var WEEKDAYS = ['yanyom', 'meseyom', 'woyom', 'akuyom',
+                    'arpoyom', 'metaryom', 'terayom'];
+    var MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June',
+                     'July', 'August', 'September', 'October', 'November',
+                     'December'];
+
+    /* Dates are handled as {y, m, d} with m counted 1-12, and turned into a
+       Date only to ask the two questions a calendar has -- what weekday, and
+       how long is this month.  Local noon, so a timezone cannot walk a date
+       onto the day before it. */
+    function at(date) {
+      /* setFullYear afterwards because the two-digit years 0-99 are read as
+         1900-1999 by the Date constructor, and a year is typed here. */
+      var d = new Date(date.y, date.m - 1, date.d, 12);
+      d.setFullYear(date.y);
+      return d;
+    }
+
+    function iso(date) {
+      return String(date.y).padStart(4, '0') + '-' +
+             String(date.m).padStart(2, '0') + '-' +
+             String(date.d).padStart(2, '0');
+    }
+
+    function parseIso(text) {
+      var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text || ''));
+      if (!m) return null;
+      var date = { y: Number(m[1]), m: Number(m[2]), d: Number(m[3]) };
+      if (date.m < 1 || date.m > 12) return null;
+      if (date.d < 1 || date.d > daysIn(date.y, date.m)) return null;
+      return date;
+    }
+
+    function today() {
+      var now = new Date();
+      return { y: now.getFullYear(), m: now.getMonth() + 1, d: now.getDate() };
+    }
+
+    function daysIn(year, month) {
+      return at({ y: year, m: month + 1, d: 0 }).getDate();
+    }
+
+    function shift(date, days) {
+      var d = at(date);
+      d.setDate(d.getDate() + days);
+      return { y: d.getFullYear(), m: d.getMonth() + 1, d: d.getDate() };
+    }
+
+    function same(a, b) {
+      return a && b && a.y === b.y && a.m === b.m && a.d === b.d;
+    }
+
+    var picked = today();
+    var view = { y: picked.y, m: picked.m };
+
+    /* --- the three fields ---
+       Numbers, not names: a month in Pikotika *is* its number, and the English
+       name is on the line under the grid for anyone who wants it. */
+
+    function fill(select, count, keep) {
+      select.textContent = '';
+      for (var n = 1; n <= count; n++) {
+        var opt = document.createElement('option');
+        opt.value = String(n);
+        opt.textContent = String(n);
+        select.appendChild(opt);
+      }
+      select.value = String(Math.min(keep, count));
+    }
+
+    function setFields(date) {
+      yearField.value = String(date.y);
+      fill(monthSel, 12, date.m);
+      fill(daySel, daysIn(date.y, date.m), date.d);
+    }
+
+    /* Null while the year is mid-edit or out of range, which is the state a
+       part-typed year is in; the day is clamped instead, since dropping from
+       31 to a short month is an ordinary thing to do and losing the date over
+       it would not be. */
+    function readFields() {
+      var year = Math.floor(Number(yearField.value));
+      if (!yearField.value || !isFinite(year) || year < 1 || year > 9999) {
+        return null;
+      }
+      var month = Number(monthSel.value);
+      return { y: year, m: month,
+               d: Math.min(Number(daySel.value), daysIn(year, month)) };
+    }
+
+    /* --- the month grid --- */
+
+    function drawMonth() {
+      var now = today();
+      var first = at({ y: view.y, m: view.m, d: 1 }).getDay();
+      var length = daysIn(view.y, view.m);
+
+      /* Chipped fresh on every turn of the month: chipify marks what it has
+         done and would otherwise leave the new month as plain text.  The class
+         is added here rather than in the page so that with scripting off there
+         is no empty .pk span for the build to try to parse. */
+      titlePk.textContent = view.y + ' anyo ' + view.m + ' mese';
+      titlePk.className = 'cal-title-pk pk';
+      delete titlePk.dataset.chipped;
+      titlePk.removeAttribute('aria-label');
+      scanChips(titlePk.parentNode);
+      titleEn.textContent = MONTHS_EN[view.m - 1] + ' ' + view.y;
+
+      body.textContent = '';
+      var day = 1;
+      while (day <= length) {
+        var row = document.createElement('tr');
+        for (var col = 0; col < 7; col++) {
+          var cell = document.createElement('td');
+          var empty = (day === 1 && col < first) || day > length;
+          if (!empty) {
+            cell.appendChild(dayButton({ y: view.y, m: view.m, d: day }, now));
+            day++;
+          }
+          row.appendChild(cell);
+        }
+        body.appendChild(row);
+      }
+    }
+
+    function dayButton(date, now) {
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'cal-day';
+      button.textContent = date.d;
+      if (same(date, now)) button.classList.add('is-today');
+      if (same(date, picked)) {
+        button.classList.add('is-picked');
+        button.setAttribute('aria-current', 'date');
+      }
+      button.setAttribute('aria-label', iso(date));
+      button.addEventListener('click', function () {
+        pick(date, true);
+      });
+      return button;
+    }
+
+    /* --- the reading --- */
+
+    function render(andPlay) {
+      var date = window.pikotikaNumbers.readDate(iso(picked));
+      out.textContent = '';
+      note.textContent = '';
+      if (!date.ok) { note.textContent = date.error; return; }
+
+      /* The digits are what you write; the words are what you say.  So the
+         line shows the written form and the button plays the reading. */
+      var main = readingLine(date, 'reader-say', { text: date.written });
+      out.appendChild(main.line);
+
+      var gloss = document.createElement('p');
+      gloss.className = 'gloss reader-gloss';
+      gloss.textContent = date.gloss;
+      out.appendChild(gloss);
+
+      out.appendChild(weekdayLine(at(picked).getDay()));
+
+      var han = document.createElement('div');
+      han.className = 'cal-alt';
+      var hanLead = document.createElement('span');
+      hanLead.className = 'cal-lead';
+      hanLead.textContent = 'In Han: ';
+      han.appendChild(hanLead);
+      var glyphs = document.createElement('span');
+      glyphs.className = 'han';
+      glyphs.textContent = date.han;
+      han.appendChild(glyphs);
+      out.appendChild(han);
+
+      note.textContent = 'Written ' + iso(picked) +
+        ' — the same date in ISO shorthand, read exactly the same way.';
+
+      if (andPlay) playSequence('numbers', main.steps, main.button);
+    }
+
+    /* The weekday is a lexicon word with a clip of its own, so it gets a word
+       player rather than a place in the chain -- the number clips are a single
+       voice and the word clips alternate between two, and one line should not
+       change speaker halfway. */
+    function weekdayLine(index) {
+      var form = WEEKDAYS[index];
+      var line = document.createElement('div');
+      line.className = 'cal-alt';
+      var lead = document.createElement('span');
+      lead.className = 'cal-lead';
+      /* Named relative to today where there is a word for it: the calendar is
+         standing on a particular day and so is the reader. */
+      lead.textContent = relative() || 'Weekday: ';
+      line.appendChild(lead);
+      var word = document.createElement('span');
+      word.className = 'pk';
+      word.textContent = form;
+      line.appendChild(word);
+      scanChips(line);
+
+      var speak = document.createElement('button');
+      speak.type = 'button';
+      speak.className = 'example-speak reader-speak';
+      speak.setAttribute('aria-label', 'Play ' + form);
+      speak.textContent = PLAY_GLYPH;
+      speak.addEventListener('click', function () {
+        play('words', form, speak);
+      });
+      line.appendChild(speak);
+      return line;
+    }
+
+    function relative() {
+      var now = today();
+      if (same(picked, now)) return 'Today, ';
+      if (same(picked, shift(now, -1))) return 'Yesterday, ';
+      if (same(picked, shift(now, 1))) return 'Tomorrow, ';
+      return null;
+    }
+
+    /* --- picking --- */
+
+    function pick(date, andPlay) {
+      picked = date;
+      view = { y: date.y, m: date.m };
+      setFields(date);
+      drawMonth();
+      render(andPlay);
+    }
+
+    /* `change`, not `input`: the year is typed a digit at a time, and on
+       `input` a half-typed 2026 would walk the calendar through the years 2,
+       20 and 202 on the way.  The selects and the spinner fire `change` at
+       once, so only the typed year waits for a blur. */
+    [yearField, monthSel, daySel].forEach(function (el) {
+      el.addEventListener('change', function () {
+        var date = readFields();
+        if (date) pick(date, false);
+      });
+    });
+
+    document.getElementById('cal-prev').addEventListener('click', function () {
+      step(-1);
+    });
+    document.getElementById('cal-next').addEventListener('click', function () {
+      step(1);
+    });
+
+    /* Counted from a zero-based month so the arithmetic wraps in both
+       directions and by any distance, not just the one step the arrows take. */
+    function step(months) {
+      var m = view.m - 1 + months;
+      view = { y: view.y + Math.floor(m / 12), m: ((m % 12) + 12) % 12 + 1 };
+      drawMonth();
+    }
+
+    var examples = box.querySelectorAll('.reader-eg');
+    for (var i = 0; i < examples.length; i++) {
+      examples[i].addEventListener('click', function (e) {
+        var want = e.currentTarget.getAttribute('data-date');
+        var date = want === 'today' ? today()
+                 : want === 'tomorrow' ? shift(today(), 1)
+                 : parseIso(want);
+        if (date) pick(date, true);
+      });
+    }
+
+    pick(picked, false);
+  }
+
   scanChips();
   addSentencePlayers();
   initVocab();
   initAdapter();
   initNumbers();
   initClock();
+  initCalendar();
 
   /* Pages that build their own markup -- Vocab results, the Tools converter --
      add .pk elements after this ran, so they need a way to chip them. */

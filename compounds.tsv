@@ -102,6 +102,7 @@ Sunday	sun-weekday	Time direction	3	3
 too [much]; excessively	up-degree	Grammar and logic;Quantity	3	3
 Wednesday	water-weekday	Time direction	3	3
 how	what-manner	Grammar and logic	3	3
+what day; on what day of the week	what-weekday	Grammar and logic;Time direction	3	3
 rice (white rice)	white-grain	Food	3	3
 wheat	yellow-grain	Food	3	3
 whatever; whichever thing	what-thing	Grammar and logic	1	4

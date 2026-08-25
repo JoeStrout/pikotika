@@ -10,7 +10,9 @@
  * `orten` to the last word of the reading.
  *
  * `readClock` reads a clock time the same way, with `ora` standing in for the
- * colon; it drives the clock on pikotika.org/topics/time/.
+ * colon; it drives the clock on pikotika.org/topics/time/.  `readDate` reads an
+ * ISO date as year `anyo`, month `mese`, day `yan`, and drives the calendar on
+ * pikotika.org/topics/dates/.
  *
  * This is a port of pikotika.py's counting_words / decimal_words / clock_words,
  * and a port
@@ -67,6 +69,14 @@
   var MIDDAY = { f: 'metseyan', g: 'middle-sun', h: '中日', a: ['metseyan'] };
   var AFTERNOON = { f: 'tunyan', g: 'down-sun', h: '下日', a: ['tunyan'] };
   var NIGHT = { f: 'nemyan', g: 'no-sun', h: '无日', a: ['nemyan'] };
+
+  /* A date is written year, then month, then day, with one word after each
+     number: `anyo`, `mese`, `yan`.  Months have no names of their own -- 8
+     mese *is* August -- so the whole calendar is the digits already known plus
+     these three words.  See pikotika.org/topics/dates/. */
+  var YEAR = { f: 'anyo', g: 'year', h: '\u5e74', a: ['anyo'] };
+  var MONTH = { f: 'mese', g: 'month', h: '\u6708', a: ['mese'] };
+  var DAY = { f: 'yan', g: 'sun', h: '\u65e5', a: ['yan'] };
 
   var COMMA = { sep: ',' };
 
@@ -338,6 +348,48 @@
     };
   }
 
+  /* --- reading a date ------------------------------------------------------
+     Written ISO, because that is the one date format that is the same
+     everywhere and the one the calendar hands us; `written` gives it back in
+     the everyday Pikotika form, which is the same three numbers with a word
+     after each.  There is nothing to port here -- pikotika.py has no ISO
+     reader -- so build.py:check_numbers checks this against pikotika.py's
+     reading of `written` instead, which is the same comparison from the other
+     end. */
+
+  var DATE = /^(\d{1,4})-(\d{1,2})-(\d{1,2})$/;
+
+  /* Returns { ok, kind, year, month, day, words, latin, gloss, han, written }.
+     The day is not checked against the length of the month: this reads what it
+     is given, and whoever asks the question knows whether February had 29. */
+  function readDate(input) {
+    var text = String(input == null ? '' : input).trim();
+    var m = DATE.exec(text);
+    if (!m) {
+      return { ok: false, error: 'Try a date: 2026-08-09.' };
+    }
+    var year = Number(m[1]), month = Number(m[2]), day = Number(m[3]);
+    if (month < 1 || month > 12) {
+      return { ok: false, error: 'A month runs from 1 to 12.' };
+    }
+    if (day < 1 || day > 31) {
+      return { ok: false, error: 'A day runs from 1 to 31.' };
+    }
+
+    var words = counting(BigInt(year)).concat([YEAR])
+      .concat(counting(BigInt(month))).concat([MONTH])
+      .concat(counting(BigInt(day))).concat([DAY]);
+
+    return {
+      ok: true, kind: 'date', year: year, month: month, day: day,
+      words: words, latin: latin(words), gloss: gloss(words),
+      /* In Han a date closes up -- 2026\u5e748\u67089\u65e5 -- which is the one place a
+         numeral takes no space after it. */
+      han: year + '\u5e74' + month + '\u6708' + day + '\u65e5',
+      written: year + ' anyo ' + month + ' mese ' + day + ' yan'
+    };
+  }
+
   /* Every form the reader can ever say -- what gen_audio renders a clip for.
      Derived rather than listed, so a change to the tables above cannot leave
      a word of a reading silent. */
@@ -346,7 +398,8 @@
     DIGITS.forEach(function (d) { forms.push(d[0]); });
     SCALES.forEach(function (s) { forms.push(s[1]); });
     [POINT, OVER, PERCENT, ORDINAL, HOUR,
-     MORNING, MIDDAY, AFTERNOON, NIGHT].forEach(function (t) {
+     MORNING, MIDDAY, AFTERNOON, NIGHT,
+     YEAR, MONTH, DAY].forEach(function (t) {
       forms.push(t.f);
     });
     Object.keys(ORDINAL_CLIPS).forEach(function (f) { forms.push(f); });
@@ -355,6 +408,7 @@
 
   exports.read = read;
   exports.readClock = readClock;
+  exports.readDate = readDate;
   exports.counting = counting;
   exports.vocabulary = vocabulary;
   exports.MAX_DIGITS = MAX_DIGITS;

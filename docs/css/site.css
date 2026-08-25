@@ -1182,6 +1182,149 @@ p { margin: 0 0 1.1em; }
 }
 .clock-alt .clock-lead { color: var(--text-muted); font-size: .85rem; }
 
+/* --- the calendar (/topics/dates/) ---------------------------------------
+   A date field, the month drawn around whatever it holds, and the reading
+   under both.  The grid is a real table: seven weekdays are seven columns of
+   a header row, and a screen reader should hear them that way.
+
+   Unlike the clock, this one is built entirely from JavaScript -- a month
+   depends on which month, so there is nothing sensible to draw in the page
+   itself.  With scripting off the box is the date field alone, which still
+   says what the page is about. */
+
+.calendar .reader-out { min-height: 6.6rem; }
+
+/* Three fields, in the order the language says them: year, then month, then
+   day.  A native date input was the obvious control and is the wrong one here
+   -- it renders in the viewer's locale, so it argues with the page on the one
+   point the page is making, and it brings a second calendar popup to sit on
+   top of the big one. */
+.cal-fields {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  max-width: 22rem;
+}
+.cal-field { flex: 1 1 4rem; min-width: 3.8rem; }
+.cal-field-year { flex: 1 1 6rem; }
+
+.calendar .cal-field input,
+.calendar .cal-field select {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: .45rem .5rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+.calendar .cal-field select:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 1px;
+}
+
+.cal-month {
+  margin-top: .9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: .5rem .55rem .65rem;
+}
+
+.cal-head {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.cal-title {
+  flex: 1 1 auto;
+  text-align: center;
+  line-height: 1.2;
+}
+.cal-title-pk {
+  display: block;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.cal-title-en {
+  display: block;
+  font-size: .8rem;
+  color: var(--text-muted);
+}
+
+.cal-step {
+  flex: none;
+  font: inherit;
+  font-size: 1.3rem;
+  line-height: 1;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--link);
+  cursor: pointer;
+}
+.cal-step:hover { background: var(--accent); color: var(--accent-ink);
+                  border-color: var(--accent); }
+.cal-step:focus-visible { outline: 2px solid var(--accent-deep);
+                          outline-offset: 1px; }
+
+.cal-grid {
+  width: 100%;
+  margin-top: .5rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.cal-grid th {
+  padding: .2rem 0 .35rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--border);
+}
+/* The column heads teach the seven names in the space a weekday abbreviation
+   normally gets: the character over the root that distinguishes it, with the
+   full compound spelled out in the table below the widget. */
+.cal-han { display: block; font-family: var(--font-han); font-size: 1rem; }
+.cal-root { display: block; font-size: .7rem; color: var(--text-muted); }
+
+.cal-grid td { padding: 1px; }
+
+.cal-day {
+  width: 100%;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  padding: .4rem 0;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+}
+.cal-day:hover { background: var(--bg-tint); border-color: var(--border-strong); }
+.cal-day:focus-visible { outline: 2px solid var(--accent-deep);
+                         outline-offset: -1px; }
+/* Today is outlined, the chosen day is filled -- they are different claims and
+   are often the same square. */
+.cal-day.is-today { border-color: var(--accent-deep); }
+.cal-day.is-picked {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: var(--surface);
+  font-weight: 600;
+}
+
+/* The weekday, the Han form, and today-relative name, under the reading. */
+.cal-alt {
+  display: flex;
+  align-items: baseline;
+  gap: .4rem;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+  font-size: .95rem;
+}
+.cal-alt .cal-lead { color: var(--text-muted); font-size: .85rem; }
+
 /* --- the converter (/tools/) ---------------------------------------------
    The reader box again, with a textarea instead of an input -- a query here is
    a sentence as often as a word -- and the four readings as a two-column list.
