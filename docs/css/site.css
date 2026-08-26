@@ -286,6 +286,17 @@ h3 { font-size: 1.1rem; margin: 1.8em 0 .4em; }
 
 p { margin: 0 0 1.1em; }
 
+/* Bulleted lists breathe.  Space between the items, not below the last one, so
+   the gap after the list stays the ul's own margin -- and a child combinator so
+   an <ol> nested in a <ul> keeps its own tighter spacing.  The four lists that
+   are really layouts space themselves with grid/flex `gap`, where a margin
+   would fight the gap rather than add to it, so they opt out below. */
+ul > li + li { margin-top: .4em; }
+.site-nav ul > li + li,
+.digits > li + li,
+.seasons > li + li,
+.tree li + li { margin-top: 0; }
+
 .lede {
   font-size: 1.1875rem;
   line-height: 1.55;

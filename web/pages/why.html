@@ -1,13 +1,62 @@
 <h1>Why Pikotika</h1>
 <p class="lede">Why a two-hundred-root auxiliary language is worth building, what
-it is for, and what it is not trying to replace.</p>
-<div class="placeholder">
-  <h2>The essay goes here</h2>
-  <ul>
-    <li>The argument for a small, learnable-in-a-weekend shared language</li>
-    <li>What Pikotika is for, and what it is not</li>
-    <li>How it was designed, and from what evidence</li>
-    <li>The license, the repository, and how to contribute a coinage</li>
-    <li>Where the speakers are — subreddit and Discord</li>
-  </ul>
+it is for, and why it is worth your time.</p>
+
+<h2>The Need</h2>
+
+<p>There are over 7000 distinct languages spoken around the world today.  Even the most accomplished polyglot can never hope to speak more than a handful of these.  And while English is commonly taught in many places, it is a quite difficult language, and many people are not comfortable speaking it.</p>
+
+<p>This creates a barrier to communication between people in different parts of the world.  You can feel this on the Internet, where Discord servers are often conducted in just one language (usually English), and speakers of other languages are excluded.  You can feel it even more when you travel to places where you and the locals may have no language in common, and even simple interactions like ordering at a restaurant can be a challenge.</p>
+
+<p>This presents the need for an <i>auxiliary language</i> (or <i>auxlang</i>) — a secondary language used for communication between people who don't have any other language in common.</p>
+
+<h2>Other auxlangs</h2>
+
+<p>The most famous auxlang is <em>Esperanto</em>, developed in 1887.  It's the world's most widely spoken artificial language, and particularly for European speakers, it's reasonably easy to learn as real languages go.  But learning Esperanto is still a very large task that requires a serious commitment.  There are thousands of root words that must be memorized, along with large tables of correlatives, participles, and assemblies of suffixes to be learned.</p>
+
+<p>There is a tiny constructed language called <em>Toki Pona</em> that's much easier to learn, but it has serious and intentional limitations as an auxlang.  It was designed to encourage simplicity of thought, rather than for clear communication.  So it has no way of practical way to express common numbers, dates, addresses, schedules, and other concepts frequently needed in the real world; and attempts to fix these problems are rejected because they run counter to the language's purpose.</p>
+
+<p>Each of these prior achievements have important lessons we can learn from, while at the same time, they leave open a niche for a language that is both tiny and practical.</p>
+
+<h2>The Vision for Pikotika</h2>
+
+<p>Informed by attempts to use Esperanto and Toki Pona (as well as others), the design goals for Pikotika were clear:</p>
+
+<ul>
+<li><em>Tiny and easy to learn</em>: there should be under 200 or so root words to memorize; these should be chosen with mental hooks for speakers of both Eastern and Western languages; and grammar should be kept as simple as possible, with no tables of conjugations, affixes, or exceptions to learn.</li>
+
+<li><em>Practical for everyday use</em>: the language should be designed from the beginning not to restrict how we think, but to allow us to express things we might actually need to say: dates, times, prices, directions, and questions and answers that would occur in travel, while shopping, when meeting someone new, and while catching up with a friend.</li>
+</ul>
+
+<h2>How Pikotika was designed</h2>
+
+<p>Pikotika was carefully engineered to achieve the two seemingly contradictory goals above.  Semantic analysis over corpora (realistic text/dialog samples) was used to establish a minimal set of root concepts and grammatical constructions needed.  The concepts were mapped onto root words through an iterative process that included consideration of how those concepts are expressed in major Western languages (including English, Spanish, French, German, and historical Latin) and Eastern languages (especially Mandarin, Japanese, and Korean, but also others).</p>
+
+<p>A phonology was chosen that would be easy for speakers all over the world: no tonal distinctions, only five common vowels, and minimal phoneme distinctions that would be difficult for large populations (like separating <code>r</code> and <code>l</code>, which would be tricky for Japanese speakers).</p>
+
+<p>Root forms were then chosen based primarily on Western etemology, but each root is also assigned a Han form that will be familiar to CJK (Chinese/Japanese/Korean) speakers.  (You don't need to memorize those Han forms; they are mainly there as a mnemonic aid for learners who already know them.)  We started with over 600 roots, but (again through an iterative process) whittled this down to fewer than 200 that could do the bulk of the work, with remaining concepts expressible through simple compounds.</p>
+
+<p>While no root is over two syllables — particularly important when compounding — we followed the initial assignment with a further optimization: root frequency was measured over a translated corpus, and the most common roots were given even shorter forms.  Consideration was also given to the way common roots fit next to each other in compound words.  The result is a smoother, less awkwardly verbose language.</p>
+
+<p>When it comes to grammar, Pikotika most closely resembles Mandarin, which is beautifully simple: no verb tense, in-place question words, pluralization implied or stated via a "group" morpheme, and other features make grammar almost a non-issue.  It also follows Chinese's word order, while borrowing some ideas (most notably the topic marker, expressed as <span class="pk">ri</span> in Pikotika) from Japanese.  The result is a grammar that is mostly a long list of things learners <i>don't</i> have to worry about; and in a way that will seem right at home to billions of people in the world.</p>
+
+<h2>Why YOU should learn Pikotika</h2>
+
+<p>So, sure, Pikotika is one of the world's easiest languages to learn.  And yes, if you learn it, you can say all sorts of useful, real-world things in it.  But the chances that you're going to run into another Pikotika speaker while you're traveling are admittedly quite small.  So why bother?</p>
+
+<p>There are good reasons why learning Pikotika is worth the effort:</p>
+
+<ul>
+<li>Growing evidence shows that learning a new language is good for the brain (<a href="https://pubmed.ncbi.nlm.nih.gov/34867264/">Ware et al 2021</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8035279">Bialystok 2021</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/33142773/">Pikhart & Klimova 2020</a>).</li>
+<li>You'll be able to communicate with other Pikotika users from all over the world, via Reddit and Discord, even if they don't speak English (and you don't speak their native language).</li>
+<li><i>Someday</i>, perhaps, Pikotika will spread widely enough that you really can travel the world and meet other speakers and use it as a practical way to communicate.  Your participation brings that day a little bit closer.
+<li>Learning a language is <i>fun</i>, especially when it's as easy as Pikotika makes it!</li>
+</ul>
+
+</p>The <a href="/learn">Learn</a> tab at the top of this website presents organized lessons and games that will have you speaking and reading Pikotika within minutes, and mastery can be achieved in weeks.  You'll feel a sense of accomplishment with your new skill that no amount of social media scrolling or TV reality shows can produce.</p>
+
+<div class="example">
+  <span class="pk" style="font-size: 1.6rem">Pona yu!</span>
+  <span class="han" style="color:#888888">好 玩!</span>
+  <p class="en">Have fun!</p>
 </div>
