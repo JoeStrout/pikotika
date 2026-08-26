@@ -85,7 +85,7 @@ plant	flower	Nature	tree, wood	arpo	木	*arbo*retum, full of trees and other pla
 rain		Nature	precipitation	ruva	雨	rain drumming on the *roof*	Spanish *lluvia*, Latin *pluvia*; restored — scored rank 43 in the corpora, above `sun`	8	9	4
 sun	day	Nature	light, daytime, 24-hour period, bright	yan	日	*yan*g: the bright sunny side ☯	Mandarin 阳 *yang* "sun, bright"; Japanese 陽	4	41	1
 water	liquid	Nature	fluid, wet	aku	水	*aqu*a, *aqu*atic	*aqua, agua*	4	51	1
-A		Particles	object boundary	a	⇒	*a*im *a*t the *o*bject	Spanish personal *a*, which marks objects: *veo **a** Juan*		100	2
+A		Particles	object boundary	a	⇒	*a*im *a*t the *o*bject	Spanish personal *a*, which marks objects: *veo **a** Juan*		100	1
 RI		Particles	predicate boundary	ri	⊢	*ri*ght here the predicate starts	predicate boundary; no etymology, deliberately neutral		279	1
 TE		Particles	modification, head follows	te	>	*the* head follows	Mandarin 的 *de*, Italian/Spanish *di/de* — the same job in both		8	3
 child	offspring	People and society	young of	nino	子	Spanish *niño*	Spanish *niño*	3	14	1

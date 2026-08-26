@@ -2,8 +2,30 @@
 
 Design notes for the Pikotika learning website: a free, account-free course that
 takes a learner through the five levels of `CURRICULUM.md`. This document records
-decisions and their reasons. It is not a spec for a finished implementation, and
-nothing here has been built yet.
+decisions and their reasons.
+
+> **Superseded in part, 2026-08-26 — read `WEB_DETAILS.md` §Learn for what was
+> actually built.** Levels 1-3 now exist at `/learn/`, and three things here
+> were decided the other way:
+>
+> - **One task type, not six.** A card is self-graded — prompt, spacebar, ✓ or
+>   ✗ — because that is what makes a card *fast*, and because a tile bank hands
+>   back the recall the card was there to drive. "Sentence build", "compound
+>   forge", "comprehension MC" and "listening" are not built. Production is
+>   still drilled: a card can say *say this sentence in Pikotika*, with no tiles
+>   offered and nobody checking.
+> - **The explanations are the pages that already exist.** A lesson links to
+>   one of the twenty grammar pages or seven topic pages instead of carrying its
+>   own explanation screen, which retires the "Grammar lesson design" open
+>   question below. The order is `build.py:GRAMMAR_GROUPS`, not `CURRICULUM.md`.
+> - **No story lessons, and no audio sprites.** `DIALOGS.md` stays a reading
+>   page rather than a gated lesson type, so `check_level.py` was not needed.
+>   Sentence cards are drawn from `corpus.tsv`, where every line already has its
+>   clip, so the course added no audio at all and needs no per-lesson bundle.
+>
+> What survives intact: no accounts, no timers or hearts, nothing locked, the
+> URL as the progress pointer, no cross-session SRS, and spacing as a
+> build-time decision. Those sections are still live and still right.
 
 The hard part of the course is vocabulary. Each level introduces about 40 roots,
 and memorizing them is the work; the grammar, by comparison, is small and regular.

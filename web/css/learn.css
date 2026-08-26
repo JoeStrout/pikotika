@@ -1,0 +1,287 @@
+/* The course: the map on /learn/ and the deck on every lesson page.
+   Loaded only on those, since nothing else on the site has a deck in it. */
+
+/* `hidden` is how the deck puts things away -- the Start button once it has
+   been pressed, the Show answer button once the card is turned over -- and
+   the attribute's own `display: none` is only a UA default, which *any*
+   display rule beats.  Several rules here set one.  So hidden is made to win
+   outright, once, rather than every rule below having to remember to say
+   `:not([hidden])`.  Without this the Start button stays on screen under the
+   deck it just opened, which is exactly what it looked like. */
+[hidden] { display: none !important; }
+
+/* --- the course map ------------------------------------------------------
+   Five headings and fifty small buttons.  Everything is live from the first
+   visit -- there is no gate here -- so the map's whole job is to show the
+   shape of the course and where you left off. */
+
+.course-map { margin: 2rem 0 2.5rem; }
+
+.course-level { margin-bottom: 1.75rem; }
+.course-level h2 { margin-bottom: .6rem; }
+
+.course-lessons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.course-lesson a {
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+  min-width: 4.5rem;
+  padding: .45rem .7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+.course-lesson a:hover {
+  background: var(--bg-tint);
+  border-color: var(--accent-deep);
+}
+
+.course-num { font-weight: 600; font-size: .95rem; }
+.course-title { color: var(--text-muted); font-size: .8rem; }
+
+/* A review is the end of a level, so it is the wide one on the row. */
+.course-lesson.is-review a { min-width: 9rem; }
+
+/* Done is a mark, not a state change: the lesson is exactly as clickable as
+   it was, and the check says so without dimming it. */
+.course-lesson.is-done a { border-color: var(--accent-deep); }
+.course-lesson.is-done .course-num::after {
+  content: " \2713";
+  color: var(--accent-deep);
+}
+
+.learn-resume { margin: 1.5rem 0; }
+
+/* --- shared button ------------------------------------------------------- */
+
+.button {
+  display: inline-block;
+  font: inherit;
+  font-size: .95rem;
+  padding: .5rem 1.1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover { background: var(--bg-tint); border-color: var(--accent-deep); }
+
+/* --- the lesson page ----------------------------------------------------- */
+
+.lesson-tag {
+  margin: 0 0 .2rem;
+  color: var(--text-muted);
+  font-size: .85rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.lesson-read {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--bg-tint);
+}
+.lesson-read p { margin: 0 0 .4rem; }
+.lesson-read p:last-child { margin-bottom: 0; color: var(--text-muted); font-size: .9rem; }
+.lesson-read-label {
+  font-size: .8rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* The word table is .rules with a ground under it: it is the one table on the
+   site a reader scans across rather than down, and with no rules and no tint
+   the header stopped lining up with anything. */
+.lesson-words {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.lesson-words th {
+  padding: .5rem .8rem;
+  background: var(--bg-tint);
+  border-bottom: 1px solid var(--border-strong);
+}
+.lesson-words td {
+  padding: .5rem .8rem;
+  border-bottom: 1px solid var(--border);
+}
+.lesson-words tr:last-child td { border-bottom: 0; }
+.lesson-words th:last-child, .lesson-words td:last-child { padding-right: .8rem; }
+.lesson-words .pk { font-size: 1.1rem; }
+.lesson-words .han { font-size: 1.2rem; }
+.lesson-words td:last-child { color: var(--text-muted); }
+
+/* A level review lists sixty to eighty-five words, so it shows the forms
+   alone, four to a row.  Every one is a chip; a meaning is one tap away. */
+.lesson-words.is-grid td {
+  width: 25%;
+  text-align: center;
+}
+.lesson-words.is-grid td:last-child { padding-right: .8rem; }
+
+.lesson-hint, .lesson-note {
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+.lesson-hint { margin: .5rem 0 -.25rem; }
+.lesson-note {
+  margin: -.75rem 0 1.5rem;
+  padding-left: .8rem;
+  border-left: 2px solid var(--border-strong);
+}
+
+/* --- the deck ------------------------------------------------------------
+   One card at a time, and nothing else on screen: the prompt, the answer once
+   it is turned over, and two ways to grade it.  No timer and no score -- the
+   deck is meant to be put down. */
+
+.lesson-deck { margin: 1rem 0 2rem; }
+
+.deck-bar {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+.deck-fill {
+  height: 100%;
+  width: 0;
+  background: var(--accent-deep);
+  transition: width .2s ease-out;
+}
+.deck-count { margin: .4rem 0 1rem; color: var(--text-muted); font-size: .85rem; }
+
+.deck-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .6rem;
+  /* A fixed floor so the card does not jump when it is turned over: the
+     answer is taller than the prompt, and a deck that resizes under the
+     cursor is a deck that gets misgraded. */
+  min-height: 11rem;
+  padding: 1.5rem 1.2rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.deck-kind {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .8rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.deck-prompt { font-size: 1.4rem; }
+.deck-prompt p { margin: 0; }
+.deck-en { margin: 0; }
+
+.deck-answer {
+  padding-top: .8rem;
+  border-top: 1px solid var(--border);
+}
+.deck-word { display: block; font-size: 1.6rem; font-weight: 600; }
+.deck-han { margin: .3rem 0 0; font-size: 1.3rem; }
+/* The third line: a root's mnemonic, a compound's parse, a sentence's gloss.
+   Quieter than the answer above it -- it is the thing that makes the answer
+   stick, not the answer. */
+.deck-hint {
+  margin: .5rem 0 0;
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+.deck-hint em { font-style: normal; color: var(--text); font-weight: 600; }
+
+.deck-controls {
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.deck-grade {
+  font: inherit;
+  font-size: .95rem;
+  padding: .5rem 1.1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Red and green are the one place on the site where color carries meaning by
+   itself, so neither is left to do it alone: each button also has its mark
+   (a cross, a check) and its own word.  The tints are held light enough to
+   stay a wash behind text rather than a filled control, in both themes. */
+.deck-miss { color: var(--miss-ink); border-color: var(--miss-line); }
+.deck-hit  { color: var(--hit-ink);  border-color: var(--hit-line); }
+.deck-miss:hover { background: var(--miss-tint); }
+.deck-hit:hover  { background: var(--hit-tint); }
+
+:root {
+  --miss-ink:  #A32B1F;
+  --miss-line: #E0A79F;
+  --miss-tint: #FBEBE8;
+  --hit-ink:   #1F6B3A;
+  --hit-line:  #9FCFB0;
+  --hit-tint:  #E8F6EC;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --miss-ink:  #F0938A;
+    --miss-line: #6B342D;
+    --miss-tint: #2A1714;
+    --hit-ink:   #86D3A2;
+    --hit-line:  #2C5A3C;
+    --hit-tint:  #14251A;
+  }
+}
+:root[data-theme="dark"] {
+  --miss-ink:  #F0938A;
+  --miss-line: #6B342D;
+  --miss-tint: #2A1714;
+  --hit-ink:   #86D3A2;
+  --hit-line:  #2C5A3C;
+  --hit-tint:  #14251A;
+}
+
+/* The keys are hover tags (`title` on each button), not print on them: the
+   card's job is to show one prompt, and three key names beside it were three
+   more things to read.  Nothing to style -- the browser draws the tooltip. */
+
+/* The deck and the finished screen are siblings, one of them hidden -- see
+   learn.js.  Neither needs a box of its own; the card already has one. */
+.deck-body, .deck-end { display: block; }
+
+.deck-start { display: block; margin: 0 auto; }
+
+.deck-end { text-align: center; }
+.deck-done { font-size: 1.2rem; margin: 1.5rem 0; }
+.deck-again, .deck-next { margin: 0 .35rem; }
+
+@media (max-width: 30rem) {
+  .deck-prompt { font-size: 1.2rem; }
+  .deck-controls { flex-direction: column; }
+}

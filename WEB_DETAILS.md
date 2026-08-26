@@ -488,6 +488,162 @@ than needing a second set of files for dark mode. It is the shortest page in
 the section on purpose: the whole topic is six compounds built from roots the
 reader already has.
 
+## Learn (`/learn/`)
+
+A course map plus one page per lesson at `/learn/<level>/<n>/`, and a level
+review at `/learn/<level>/review/`.  Levels 1-3 are built: 27 lessons and 3
+reviews, 657 cards.
+
+**The course is generated from one hand-authored table.**  `lessons.tsv` says,
+per lesson, a page to go read and a list of new items; `gen_lessons.py` turns
+that into `web/data/lessons.json`, and `build.py:learn_pages()` renders the
+static half.  Nothing about a lesson is typed twice -- the new-word table, the
+link's title, the deck, and the level review's word list all come out of the
+tables.
+
+- **A lesson is: some new words, optionally one page to read, and a small deck.**
+  The explanations are the twenty grammar pages and the seven topic pages,
+  which were already written; a lesson that has one links to it rather than
+  restating it.  27 of the 30 lessons in Levels 1-3 carry 5-7 new items and
+  8-12 cards.
+- **Grammar pages are assigned in `GRAMMAR_GROUPS` order** (decided
+  2026-08-26), spread across the levels rather than clustered: Level 1 gets
+  pronunciation, writing, structure, nouns, predicate; Level 2 gets
+  prepositions, negation, questions, nosubject, modifiers; Level 3 gets
+  modifier-order, te, compounds.  Topic pages slot in where their vocabulary
+  lands instead.  `check_lessons.py` reads the page list out of
+  `build.page_titles()`, so a lesson pointing at a renamed or unwritten page
+  fails the build.
+  - The one cost, taken knowingly: `/grammar/structure/` is Level 1 lesson 5
+    and is *about* `S ri V a O`, so **`a` had to move to Level 1** (one cell in
+    `roots.tsv`; Level 1 is 43 roots and Level 2 is 39).  A pleasant side
+    effect -- eight corpus sentences dropped to `root_level` 1, including
+    **Nino ri vori a aku**, which is that page's own first practice sentence.
+- **`[hidden] { display: none !important }` is load-bearing here.**  The deck
+  puts things away with the `hidden` attribute -- the Start button once it is
+  pressed, Show answer once the card is turned over -- and the attribute's own
+  `display: none` is a UA default that *any* display rule beats.  Several rules
+  in learn.css set one.  The symptom was the Start button sitting on screen
+  under the deck it had just opened.
+- **A lesson may carry a `note`**, rendered under its word table: the thing
+  that has to be said once and never again.  Lesson 1.1's says the Han column
+  can be ignored.  It is a column in `lessons.tsv` rather than prose in the
+  fragment because there are no lesson fragments -- the pages are generated.
+- **A level review shows the forms alone, four to a row.**  Sixty to
+  eighty-five words with Han and meanings is a wall, and a wall does not get
+  read; the bare forms fit on a screen, and every one is a chip, so a meaning
+  is one tap away.  That is what makes the review page usable as the thing to
+  come back to.
+- **Nothing is ever locked.**  Every lesson is a live link from the first
+  visit.  `localStorage` holds `pk-learn-done`, a set of finished lesson ids,
+  and it is used for two things: a checkmark on the map and where the resume
+  button points.  A cleared store costs a row of checkmarks, not a course.
+  The URL is the real pointer -- a lesson is bookmarkable and resumes on
+  another device by pasting a link, with no account involved.
+
+### The card is self-graded, and that is the design
+
+Decided 2026-08-26, and it supersedes `GAME_DESIGN.md`'s six task types.
+Prompt, spacebar, did I get it, next: a card takes a few seconds and a deck
+clears in a couple of minutes.  Tile assembly costs half a minute a card --
+and worse, it hands back the recall the card was there to drive, since picking
+**pomo** out of six tiles is recognition wearing production's clothes.  So the
+card asks for the answer out loud, unaided, and then shows it.  Nobody is
+marking, and a learner drilling alone has no reason to cheat.
+
+Three kinds, and the deck is mostly the first:
+
+**A card is one item asked from either side, not two cards** (decided
+2026-08-26).  `k` says only what is *on* the card -- `word` for a root or a
+compound, `sent` for a whole sentence -- and `Deck.present()` flips the
+direction every time that card is dealt.  A card opens asking for production
+(English -> Pikotika, the harder way, and the one the learner has just read the
+answer to on the page above) and comes back asking for recognition.  Clearing
+still takes two right answers, so **a card that clears has been had in both
+directions** -- which is what makes the flip cost no extra card.  Dealing is
+what flips it, never grading: otherwise a card graded without being dealt would
+come back the same way round.
+
+- **A particle's prompt is its `covers` string**, not its gloss: *RI* glosses
+  as itself, so "predicate boundary" -> **ri** is the only card there is to
+  make.
+- **The card's third line follows the popover's rule** -- the mnemonic for a
+  root, the parse for a compound, never both, since a root has no parse and a
+  compound has no mnemonic of its own.  It was the root's *gloss* at first,
+  which on a Pikotika -> English card printed the English that was already one
+  line above it.  A sentence's third line is its gloss notation, which shows
+  how it is put together rather than repeating what it says.
+- **The mnemonic shows on both directions, and this is the only place on the
+  site it is ever seen** apart from a tapped chip -- which is the argument for
+  putting it here: a card is exactly the moment a mnemonic is wanted.  The
+  `*asterisks*` go through `site.js:appendEmphasis`, now exposed on
+  `window.pikotika`, rather than a second reader for them in learn.js.
+  `tests/learn_test.js` fails a card with an empty `hint`, since a root whose
+  mnemonic cell went blank would otherwise just show a blank line.
+- **The Pikotika side is chipped as an answer and not as a prompt.**  Tapping
+  a chip opens the gloss, which when the Pikotika is the *prompt* is the
+  answer.  `scanChips` runs over the answer only.
+- **Space turns the card over; the arrows grade it.**  Space used to double as
+  "got it", which made the deck one key -- and made a doubled space, which is
+  an easy thing to do on a keyboard, silently claim a card the learner had not
+  looked at yet.  Grading is deliberately a different key from revealing.
+  (`x` remains a synonym for the left arrow.)
+- **The keys are hover tags, not print on the buttons** (decided 2026-08-26).
+  The shortcuts are what make a card take a few seconds rather than half a
+  minute, so they have to be discoverable -- but set in a `<kbd>` beside each
+  label they were three more things to read on a screen whose whole job is to
+  show one prompt.  They are `title` attributes now, plus `aria-keyshortcuts`
+  for a screen reader, which cannot hover.
+- **Spacing is a build-time decision.**  There is no cross-session scheduler
+  (`GAME_DESIGN.md`'s reasoning, kept): a visitor who returns after a month
+  should meet a lesson, not a debt.  So review is *placed* -- each deck carries
+  four items drawn from 2 to 8 lessons back, seeded from the lesson id so a
+  rebuild produces the same deck.
+- **Sentence cards come only from `corpus.tsv`**, and only sentences every
+  root of which has been taught.  That is what makes them free: a corpus line
+  already has its clip, so the course added no audio at all.  A lesson leads
+  with what it has just unlocked.  Three lessons in Levels 1-3 unlock nothing
+  and get a shorter deck, which is left alone deliberately -- a rest, not a
+  bug.
+- **Within a sitting the queue is Leitner**: a card clears at two right answers
+  running, a miss resets it to zero, a right-but-not-cleared card goes back
+  five and a missed one back two.  The bar counts cleared cards, so missing
+  does not advance it.
+
+### What checks it
+
+Three layers, because the deck is the one part of the site with no Python twin
+and no page prose for `check_forms` to parse.
+
+- **`check_lessons.py`** validates the plan against the tables: every reference
+  resolves, no item is taught twice, a level's items are exactly its roots and
+  its compounds, every compound's roots are taught no later than the compound,
+  and every page exists.  It walks the plan through `gen_lessons.Course.walk()`
+  rather than reimplementing it -- what a learner knows by lesson N decides
+  both what may be validated and what may be put on a card, and those two must
+  not be able to disagree.
+- **`build.py:check_lessons`** runs that, then parses every card's `form`
+  through `pikotika.parse_latin`.  A card is the one place on the site where
+  Pikotika ships as JSON rather than as page prose.
+- **`tests/learn_test.js`** is the queue's own suite, run on every build, plus
+  a pass over every built deck checking it terminates.  A deck that could loop
+  is not a wrong answer, it is a page the learner cannot leave.
+- **`tests/deck_dom_test.js`** drives a whole sitting -- start, turn over,
+  grade, finish, run again, and the map's marks -- against a hundred-line DOM
+  shim.  Not jsdom: the site takes no npm dependencies, and the alternative to
+  a shim is no test at all.  Be clear about what it buys.  It proves the
+  *wiring*; it proves nothing about rendering, layout, focus, or the audio
+  unlock, which still want a browser and a person.
+
+**`lessons.json` is in `data_version`.**  It is rebuilt in place under the same
+name, so without that a browser would go on serving yesterday's deck -- and
+the symptom is not an error but the wrong lesson, quietly.
+
+**Levels 4 and 5 are not built**, and the block is data rather than code:
+`compounds.tsv`'s `assigned_level` is filled for 7 of Level 4's 45 compounds
+and none of Level 5's 40.  Roots are fully levelled.  Filling those in extends
+`lessons.tsv` and nothing else needs to change.
+
 ## The number reader (`web/js/numbers.js`)
 
 The interactive half of `/topics/numbers/`: type a number, see how it is said,

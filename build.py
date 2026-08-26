@@ -386,6 +386,234 @@ def topic_pages() -> list:
     return pages
 
 
+# --- Learn -----------------------------------------------------------------
+# The course: five levels of nine lessons and a review, at /learn/<level>/<n>/
+# and /learn/<level>/review/.  `lessons.tsv` says what each lesson teaches and
+# gen_lessons.py turns that into web/data/lessons.json; the pages here are the
+# static half -- the new words, the page to go read, and the mount point the
+# deck is built into.
+#
+# The URL is the progress pointer (decided 2026-08-26, from GAME_DESIGN.md):
+# a lesson is bookmarkable and resumable on another device by pasting a link,
+# with no account involved.  localStorage holds only which lessons have been
+# finished, and only to mark them on the map -- **nothing is ever locked**.
+# A learner who clears their storage loses a row of checkmarks, not a course.
+
+LEARN_URL = "/learn/"
+
+# Where the course map gets spliced into web/pages/learn.html.
+LEARN_MAP_MARK = "<!--COURSE-MAP-->"
+
+
+def lessons_plan() -> list:
+    """Every row of lessons.tsv, in order."""
+    import gen_lessons
+
+    return gen_lessons.read_tsv(gen_lessons.LESSONS_TSV)
+
+
+def lesson_url(level: str, n: str) -> str:
+    """/learn/1/5/ for a lesson, /learn/1/review/ for a level review.
+
+    `review` rather than `10`: the review is not a tenth lesson, and a reader
+    looking at the URL should be able to tell which one they are on."""
+    return f"{LEARN_URL}{level}/{'review' if n == 'R' else n}/"
+
+
+def lesson_label(row: dict) -> str:
+    """What the map's button says: "2.3", or "Level 2 Review"."""
+    if row["lesson"] == "R":
+        return f"Level {row['level']} Review"
+    return f"{row['level']}.{row['lesson']}"
+
+
+def page_titles() -> dict:
+    """url -> (title, blurb) for every page a lesson can send a learner to.
+
+    Read out of GRAMMAR_GROUPS and TOPIC_GROUPS rather than repeated in
+    lessons.tsv, so the link a lesson shows is the title the page itself
+    carries and the two cannot drift."""
+    out = {}
+    for _group, entries in GRAMMAR_GROUPS:
+        for slug, title, blurb in entries:
+            out[f"{GRAMMAR_URL}{slug}/"] = (title, re.sub(r"<[^>]+>", "", blurb))
+    for _group, topics in TOPIC_GROUPS:
+        for slug, _pk, label, _han, blurb in topics:
+            out[f"{TOPICS_URL}{slug}/"] = (label, blurb)
+    return out
+
+
+def course_map() -> str:
+    """The whole course on one screen: a heading per level, a button per lesson.
+
+    Deliberately plain.  Everything is a live link from the first visit --
+    there is no gate to open and nothing to unlock -- so the map's only job is
+    to show the shape of the course and where you left off.  learn.js adds the
+    `is-done` marks from localStorage; without JavaScript it is still a
+    complete, working index."""
+    rows = lessons_plan()
+    levels = []
+    for row in rows:
+        if not levels or levels[-1][0] != row["level"]:
+            levels.append((row["level"], []))
+        levels[-1][1].append(row)
+
+    out = ['<div class="course-map">']
+    for level, entries in levels:
+        out.append('  <section class="course-level">')
+        out.append(f"    <h2>Level {level}</h2>")
+        out.append('    <ol class="course-lessons">')
+        for row in entries:
+            url = lesson_url(row["level"], row["lesson"])
+            cls = "course-lesson is-review" if row["lesson"] == "R" else "course-lesson"
+            # A review's own title is "Level 2 Review", which under a
+            # heading that already says Level 2 would be said twice on one
+            # button.  The button says what it is; the heading says where.
+            if row["lesson"] == "R":
+                num, title = "Review", f"all of Level {row['level']}"
+            else:
+                num, title = lesson_label(row), row["title"]
+            out.append(f'      <li class="{cls}" data-lesson="{row["level"]}.{row["lesson"]}">'
+                       f'<a href="{url}"><span class="course-num">{num}</span>'
+                       f'<span class="course-title">{title}</span></a></li>')
+        out.append("    </ol>")
+        out.append("  </section>")
+    out.append("</div>")
+    return "\n".join(out)
+
+
+BACK_TO_LEARN = ('<p class="topic-back"><a href="/learn/">'
+                 '\u2190 Back to the course</a></p>')
+
+
+def lesson_steps(rows: list, i: int) -> str:
+    """Prev/next along the course.  A lesson is a step in a sequence, and the
+    map is two taps away otherwise."""
+    links = []
+    if i > 0:
+        row = rows[i - 1]
+        links.append(f'<a class="grammar-prev" href'
+                     f'="{lesson_url(row["level"], row["lesson"])}">'
+                     f'\u2190 {lesson_label(row)}</a>')
+    if i < len(rows) - 1:
+        row = rows[i + 1]
+        links.append(f'<a class="grammar-next" href'
+                     f'="{lesson_url(row["level"], row["lesson"])}">'
+                     f'{lesson_label(row)} \u2192</a>')
+    if not links:
+        return ""
+    return ('<nav class="grammar-steps" aria-label="Lessons">'
+            + "".join(links) + "</nav>")
+
+
+LESSON_WORD_COLUMNS = 4     # words per row in a level review's grid
+
+
+def lesson_words_table(words: list) -> str:
+    """The new words, laid out to be read before the deck starts.
+
+    Every form is an ordinary `.pk` span, so the build checks it, a tap opens
+    its entry, and the word already has audio -- the three things the rest of
+    the site gets for free and this page should not reimplement."""
+    out = ['<table class="rules lesson-words">',
+           "  <tr><th>Word</th><th>Han</th><th>Meaning</th></tr>"]
+    for word in words:
+        english = ", ".join(word["en"])
+        out.append(f'  <tr><td><span class="pk">{word["form"]}</span></td>'
+                   f'<td class="han">{word["han"]}</td>'
+                   f"<td>{english}</td></tr>")
+    out.append("</table>")
+    return "\n".join(out)
+
+
+def lesson_words_grid(words: list) -> str:
+    """A level's whole vocabulary, four to a row and Pikotika only.
+
+    Sixty to eighty-five words with their Han and their meanings is a wall,
+    and a wall is not something anyone reads down.  The bare forms fit on one
+    screen, which is what makes the page usable as the thing to come back to
+    -- and every one of them is a chip, so a word that has gone means one tap
+    rather than a column that has to be printed for all of them."""
+    out = ['<table class="rules lesson-words is-grid">']
+    for i in range(0, len(words), LESSON_WORD_COLUMNS):
+        row = words[i:i + LESSON_WORD_COLUMNS]
+        cells = "".join(f'<td><span class="pk">{word["form"]}</span></td>'
+                        for word in row)
+        cells += "<td></td>" * (LESSON_WORD_COLUMNS - len(row))
+        out.append(f"  <tr>{cells}</tr>")
+    out.append("</table>")
+    return "\n".join(out)
+
+
+def learn_pages() -> list:
+    """(url, content, <title>, description) for every lesson and level review.
+
+    The deck itself is not in the HTML: `.lesson-deck` is an empty mount that
+    learn.js fills from lessons.json.  What *is* in the HTML is everything a
+    reader needs with scripting off -- the new words, their Han, their
+    meanings, and the link to the page to go read."""
+    import gen_lessons
+
+    course = gen_lessons.build()
+    rows = lessons_plan()
+    titles = page_titles()
+    pages = []
+
+    for i, lesson in enumerate(course["lessons"]):
+        url = lesson_url(str(lesson["level"]), lesson["n"])
+        row = rows[i]
+        # For a review the <h1> already reads "Level 1 Review", so the tag
+        # above it says only where in the course this is.
+        heading = ("Level %d" % lesson["level"] if lesson["review"]
+                   else "Level %d \u00b7 Lesson %s" % (lesson["level"], lesson["n"]))
+        parts = [BACK_TO_LEARN,
+                 f'<p class="lesson-tag">{heading}</p>',
+                 f'<h1>{lesson["title"]}</h1>']
+
+        if lesson["review"]:
+            parts.append('<p class="lede">Everything this level taught, and a '
+                         'deck over all of it.  Nothing new here \u2014 this is '
+                         'the one to come back to.</p>')
+        elif lesson["page"]:
+            title, blurb = titles[lesson["page"]]
+            parts.append(
+                '<div class="lesson-read">\n'
+                f'  <p class="lesson-read-label">Read this first</p>\n'
+                f'  <p><a href="{lesson["page"]}">{title}</a> \u2014 {blurb}</p>\n'
+                "  <p>Come back here when you have read it.</p>\n"
+                "</div>")
+
+        parts.append("<h2>%s</h2>" % ("Words in this level" if lesson["review"]
+                                      else "New words"))
+        if lesson["review"]:
+            parts.append('<p class="lesson-hint">Tap any word you have lost.</p>')
+            parts.append(lesson_words_grid(lesson["words"]))
+        else:
+            parts.append(lesson_words_table(lesson["words"]))
+        # `note` is for the thing that has to be said once and never again --
+        # what the Han column is for, in lesson 1.1 -- which belongs beside
+        # the table it is about rather than in the lede or on a grammar page.
+        if lesson["note"]:
+            parts.append(f'<p class="lesson-note">{lesson["note"]}</p>')
+
+        parts.append('<h2>Practice</h2>')
+        parts.append(
+            f'<div class="lesson-deck" data-lesson="{lesson["id"]}">\n'
+            "  <noscript><p>The flashcards need JavaScript.  The words above "
+            "are the whole lesson without it.</p></noscript>\n"
+            "</div>")
+        parts.append(lesson_steps(rows, i))
+        parts.append(BACK_TO_LEARN.replace('topic-back"', 'topic-back is-end"'))
+
+        description = ("Level %d review: %s." % (lesson["level"], lesson["title"])
+                       if lesson["review"] else
+                       "Pikotika lesson %s: %s." % (lesson["id"], lesson["title"]))
+        pages.append((url, "\n\n".join(parts),
+                      f"{lesson_label(row)} {lesson['title']} \u2014 Pikotika",
+                      description))
+    return pages
+
+
 # Built, but deliberately not in the navigation: pages for us, not for readers.
 # `fragment` is a callable here rather than a filename under web/pages/.
 UNLISTED = [
@@ -416,6 +644,16 @@ PAGE_CSS = {"/games/tilematch/": "css/tilematch.css"}
 # here rather than sitewide because only this page uses it.
 PAGE_JS = {"/games/tilematch/": ["js/tilematch.js"],
            "/tools/": ["js/convert.js", "js/syntax.js", "js/tools.js"]}
+
+# The course map and every lesson run the same deck, so their entries are
+# generated from lessons.tsv rather than typed out -- adding a lesson is an
+# edit to that file and nothing else.
+for _row in lessons_plan():
+    _learn_url = lesson_url(_row["level"], _row["lesson"])
+    PAGE_CSS[_learn_url] = "css/learn.css"
+    PAGE_JS[_learn_url] = ["js/learn.js"]
+PAGE_CSS[LEARN_URL] = "css/learn.css"
+PAGE_JS[LEARN_URL] = ["js/learn.js"]
 
 STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio"]
 
@@ -519,11 +757,13 @@ def authored_pages() -> list:
             content = content.replace(TOPIC_CARDS_MARK, topic_cards())
         if url == GRAMMAR_URL:
             content = content.replace(GRAMMAR_INDEX_MARK, grammar_index())
+        if url == LEARN_URL:
+            content = content.replace(LEARN_MAP_MARK, course_map())
         pages.append((url, content, title_tag, description))
     for url, fragment, title_tag, description in UNLISTED_PAGES:
         content = (WEB / "pages" / fragment).read_text(encoding="utf-8")
         pages.append((url, content, title_tag, description))
-    pages += topic_pages() + grammar_pages()
+    pages += topic_pages() + grammar_pages() + learn_pages()
     return [(url, soften_grammar_links(content), title_tag, description)
             for url, content, title_tag, description in pages]
 
@@ -1157,6 +1397,69 @@ def check_syntax() -> None:
             print("  " + line.strip())
 
 
+def check_lessons(tables) -> None:
+    """Validate lessons.tsv, then run the deck queue's own suite over the
+    decks that were just built.
+
+    Two things can go wrong here that nothing else would notice.  A lesson
+    plan can drift from the tables -- teach a compound before its roots, spend
+    a level's budget twice, name a word that no longer exists -- which
+    check_lessons.py answers.  And a deck can be built that never clears,
+    which is not a wrong answer but a page the learner cannot leave; that is
+    what tests/learn_test.js walks every deck for.
+
+    The node half skips with a note when there is no node, exactly as
+    check_adapter and check_syntax do."""
+    import shutil
+    import subprocess
+
+    import check_lessons as checker
+
+    problems = checker.validate()
+    if problems:
+        raise SystemExit("lessons.tsv disagrees with the tables:\n  "
+                         + "\n  ".join(problems))
+
+    import gen_lessons
+
+    course = gen_lessons.build()
+    path = gen_lessons.write(course)
+    cards = sum(len(lesson["cards"]) for lesson in course["lessons"])
+    print(f"  {len(course['lessons'])} lessons, {cards} cards -> "
+          f"{Path(path).relative_to(ROOT)}")
+
+    # Every form a card shows has to be a real one.  The words come straight
+    # out of the tables and the sentences out of corpus.tsv, so this should
+    # never fire -- but a card is the one place on the site where Pikotika is
+    # shipped as JSON rather than as page prose, which check_forms cannot see.
+    import pikotika
+
+    bad = []
+    for lesson in course["lessons"]:
+        for card in lesson["cards"]:
+            try:
+                pikotika.parse_latin(card["form"], tables)
+            except Exception as exc:
+                bad.append(f"{lesson['id']}: {card['form']!r} -- {exc}")
+    if bad:
+        raise SystemExit("a card shows a form that is not real:\n  "
+                         + "\n  ".join(bad))
+
+    node = shutil.which("node")
+    if not node:
+        print("  (no node -- skipping the deck queue check)")
+        return
+    proc = subprocess.run([node, str(ROOT / "tests" / "learn_test.js"),
+                           "--deck", str(path)],
+                          capture_output=True, text=True)
+    if proc.returncode:
+        raise SystemExit("the course deck failed its own suite:\n"
+                         + (proc.stdout + proc.stderr).strip())
+    for line in proc.stdout.strip().splitlines():
+        if line.strip():
+            print("  " + line.strip())
+
+
 def check_forms(tables, sources) -> list:
     """Parse every Pikotika string on the site; fail on a form that is not real.
 
@@ -1218,6 +1521,7 @@ def build() -> None:
     check_numbers(tables)
     check_convert(tables)
     check_syntax()
+    check_lessons(tables)
     authored = authored_pages()
     forms = check_forms(tables, [(url, content)
                                  for url, content, _t, _d in authored])
@@ -1253,11 +1557,14 @@ def build() -> None:
     js_version = asset_version("js/site.js")
     adapt_version = asset_version("js/adapt.js")
     numbers_version = asset_version("js/numbers.js")
-    # The lexicon and the two audio indexes are rebuilt in place under the same
-    # names, so they need the same cache-busting; site.js reads this off its own
-    # script tag.  Computed after gen_lexicon.write above, or it would hash the
-    # previous build's lexicon.
+    # The lexicon, the course, and the audio indexes are all rebuilt in place
+    # under the same names, so they need the same cache-busting; site.js reads
+    # this off its own script tag.  Computed after gen_lexicon.write above, or
+    # it would hash the previous build's lexicon.  lessons.json belongs here for
+    # the same reason as the rest: a stale deck is not an error, it is yesterday's
+    # lesson served in silence.
     data_version = asset_version("data/lexicon.json", "data/convert.json",
+                                 "data/lessons.json",
                                  "audio/words.json", "audio/sentences.json",
                                  "audio/numbers.json")
 

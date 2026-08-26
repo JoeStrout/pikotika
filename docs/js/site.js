@@ -293,10 +293,14 @@
   /* Speak a word with no play control attached to it.  The tile game says the
      root when its written face is tapped, and there is no button there to show
      a loading state on or to disable on failure -- the tile is the control,
-     and it has a game to run.  Silence is the right failure here. */
-  function playWord(form) {
+     and it has a game to run.  Silence is the right failure here.
+
+     `kind` selects the clip set, defaulting to `words`.  The course's cards
+     turn over onto a whole sentence as often as onto a word, and a card is
+     not a play control either -- turning it over is what speaks. */
+  function playWord(form, kind) {
     if (!unlock()) return;
-    clipBuffer('words', form).then(function (buffer) {
+    clipBuffer(kind || 'words', form).then(function (buffer) {
       if (!buffer) return;
       /* A tap replaces what the last tap is still saying rather than talking
          over it, which two quick taps otherwise would. */
@@ -1848,6 +1852,9 @@
      through the same cached, DATA_V-stamped fetch rather than a second one. */
   window.pikotika.loadLexicon = loadLexicon;
   window.pikotika.playWord = playWord;
+  /* The course's cards show a root's mnemonic, which is the same asterisked
+     string the popover renders -- one reader for it, not two. */
+  window.pikotika.appendEmphasis = appendEmphasis;
   /* The Tools converter fetches a data file of its own, and wants the same
      cache-busting the lexicon gets rather than a second answer to the question. */
   window.pikotika.dataVersion = DATA_V;

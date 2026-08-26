@@ -1,5 +1,5 @@
 # I; me
-### self, I, me, own, identity
+### self, own, identity
 ---
 # eko
 ## 己
@@ -7,11 +7,11 @@
 # eko
 ---
 # I; me
-### self, I, me, own, identity
+### self, own, identity
 ## 己
 ===
 # what; question
-### question, which, any, whichever
+### which, any, whichever
 ---
 # ker
 ## 何
@@ -19,11 +19,11 @@
 # ker
 ---
 # what; question
-### question, which, any, whichever
+### which, any, whichever
 ## 何
 ===
 # this; current
-### this, present, the current/indicated one
+### present, the current/indicated one
 ---
 # tis
 ## 此
@@ -31,11 +31,11 @@
 # tis
 ---
 # this; current
-### this, present, the current/indicated one
+### present, the current/indicated one
 ## 此
 ===
 # in; at
-### inside, at, within
+### inside, within
 ---
 # in
 ## 内
@@ -43,11 +43,11 @@
 # in
 ---
 # in; at
-### inside, at, within
+### inside, within
 ## 内
 ===
 # you
-### you, addressee
+### addressee
 ---
 # tu
 ## 尔
@@ -55,11 +55,11 @@
 # tu
 ---
 # you
-### you, addressee
+### addressee
 ## 尔
 ===
 # not; opposite
-### no, un-, opposite, negation, without
+### no, un-, negation, without
 ---
 # non
 ## 不
@@ -67,11 +67,11 @@
 # non
 ---
 # not; opposite
-### no, un-, opposite, negation, without
+### no, un-, negation, without
 ## 不
 ===
 # good; pleasant
-### good, well, fine, pleasant
+### well, fine
 ---
 # pona
 ## 好
@@ -79,11 +79,11 @@
 # pona
 ---
 # good; pleasant
-### good, well, fine, pleasant
+### well, fine
 ## 好
 ===
 # please; politeness
-### please, request marker, politeness
+### request marker
 ---
 # pam
 ## 乞
@@ -91,11 +91,11 @@
 # pam
 ---
 # please; politeness
-### please, request marker, politeness
+### request marker
 ## 乞
 ===
 # and; with
-### and, with, also, plus
+### also, plus
 ---
 # kum
 ## 并
@@ -103,11 +103,11 @@
 # kum
 ---
 # and; with
-### and, with, also, plus
+### also, plus
 ## 并
 ===
 # to; toward
-### toward, into, direction of motion
+### into, direction of motion
 ---
 # ver
 ## 向
@@ -115,11 +115,11 @@
 # ver
 ---
 # to; toward
-### toward, into, direction of motion
+### into, direction of motion
 ## 向
 ===
 # big; very
-### big, large, great, intense, very
+### large, great, intense
 ---
 # meka
 ## 大
@@ -127,11 +127,11 @@
 # meka
 ---
 # big; very
-### big, large, great, intense, very
+### large, great, intense
 ## 大
 ===
 # finish; close
-### close, shut, finish, end, conclude
+### shut, end, conclude
 ---
 # vin
 ## 閉
@@ -139,11 +139,11 @@
 # vin
 ---
 # finish; close
-### close, shut, finish, end, conclude
+### shut, end, conclude
 ## 閉
 ===
 # go; movement
-### go, move, travel, proceed, movement
+### move, travel, proceed
 ---
 # ire
 ## 行
@@ -151,11 +151,11 @@
 # ire
 ---
 # go; movement
-### go, move, travel, proceed, movement
+### move, travel, proceed
 ## 行
 ===
 # thing; matter
-### thing, object, item, matter
+### object, item
 ---
 # kosa
 ## 物
@@ -163,11 +163,11 @@
 # kosa
 ---
 # thing; matter
-### thing, object, item, matter
+### object, item
 ## 物
 ===
 # group; team
-### group, set, collection, team, crowd
+### set, collection, crowd
 ---
 # men
 ## 众
@@ -175,11 +175,11 @@
 # men
 ---
 # group; team
-### group, set, collection, team, crowd
+### set, collection, crowd
 ## 众
 ===
 # yes; assent
-### yes, assent, affirm, correct-response
+### affirm, correct-response
 ---
 # si
 ## 是
@@ -187,11 +187,11 @@
 # si
 ---
 # yes; assent
-### yes, assent, affirm, correct-response
+### affirm, correct-response
 ## 是
 ===
 # say; word
-### say, speak, tell, word, speech, message
+### speak, tell, speech, message
 ---
 # tika
 ## 言
@@ -199,11 +199,11 @@
 # tika
 ---
 # say; word
-### say, speak, tell, word, speech, message
+### speak, tell, speech, message
 ## 言
 ===
 # one; 1
-### one, single, first, alone, the very
+### single, first, alone, the very
 ---
 # wun
 ## 一
@@ -211,11 +211,11 @@
 # wun
 ---
 # one; 1
-### one, single, first, alone, the very
+### single, first, alone, the very
 ## 一
 ===
 # two; 2
-### two, 2, pair, both
+### pair, both
 ---
 # pits
 ## 2
@@ -223,11 +223,11 @@
 # pits
 ---
 # two; 2
-### two, 2, pair, both
+### pair, both
 ## 2
 ===
 # before; ago
-### before, earlier, prior, in the past, early, already
+### earlier, prior, in the past, early, already
 ---
 # yer
 ## 前
@@ -235,11 +235,11 @@
 # yer
 ---
 # before; ago
-### before, earlier, prior, in the past, early, already
+### earlier, prior, in the past, early, already
 ## 前
 ===
 # water; liquid
-### water, liquid, fluid, wet
+### fluid, wet
 ---
 # aku
 ## 水
@@ -247,11 +247,11 @@
 # aku
 ---
 # water; liquid
-### water, liquid, fluid, wet
+### fluid, wet
 ## 水
 ===
 # sun; day
-### sun, light, day, daytime, 24-hour period, bright
+### light, daytime, 24-hour period, bright
 ---
 # yan
 ## 日
@@ -259,11 +259,11 @@
 # yan
 ---
 # sun; day
-### sun, light, day, daytime, 24-hour period, bright
+### light, daytime, 24-hour period, bright
 ## 日
 ===
 # want; wish
-### want, desire, wish, hope
+### desire, hope
 ---
 # vori
 ## 求
@@ -271,11 +271,11 @@
 # vori
 ---
 # want; wish
-### want, desire, wish, hope
+### desire, hope
 ## 求
 ===
 # small; slight
-### small, little, slight, minor
+### little, minor
 ---
 # piko
 ## 小
@@ -283,11 +283,11 @@
 # piko
 ---
 # small; slight
-### small, little, slight, minor
+### little, minor
 ## 小
 ===
 # after; later
-### after, later, subsequent, future, late
+### subsequent, future, late
 ---
 # tar
 ## 后
@@ -295,11 +295,11 @@
 # tar
 ---
 # after; later
-### after, later, subsequent, future, late
+### subsequent, future, late
 ## 后
 ===
 # person; one who
-### person, human, one who, agent
+### human, agent
 ---
 # omo
 ## 人
@@ -307,11 +307,11 @@
 # omo
 ---
 # person; one who
-### person, human, one who, agent
+### human, agent
 ## 人
 ===
 # part; portion
-### part, piece, portion, member
+### piece, member; decimal point; minute
 ---
 # parte
 ## 分
@@ -319,11 +319,11 @@
 # parte
 ---
 # part; portion
-### part, piece, portion, member
+### piece, member; decimal point; minute
 ## 分
 ===
 # vehicle; car
-### vehicle, car, craft, conveyance
+### craft, conveyance
 ---
 # karo
 ## 车
@@ -331,11 +331,11 @@
 # karo
 ---
 # vehicle; car
-### vehicle, car, craft, conveyance
+### craft, conveyance
 ## 车
 ===
 # food; eat
-### food, eat, meal, nourishment
+### meal, nourishment
 ---
 # komi
 ## 食
@@ -343,11 +343,11 @@
 # komi
 ---
 # food; eat
-### food, eat, meal, nourishment
+### meal, nourishment
 ## 食
 ===
 # true; correct
-### true, correct, right, of course, evidently
+### right, of course, evidently
 ---
 # ves
 ## 真
@@ -355,11 +355,11 @@
 # ves
 ---
 # true; correct
-### true, correct, right, of course, evidently
+### right, of course, evidently
 ## 真
 ===
 # hour; o'clock
-### hour, clock-time unit
+### clock-time unit
 ---
 # ora
 ## 刻
@@ -367,11 +367,11 @@
 # ora
 ---
 # hour; o'clock
-### hour, clock-time unit
+### clock-time unit
 ## 刻
 ===
 # place; location
-### place, location, area, spot
+### area, spot
 ---
 # roko
 ## 所
@@ -379,11 +379,11 @@
 # roko
 ---
 # place; location
-### place, location, area, spot
+### area, spot
 ## 所
 ===
 # time; occasion
-### time, occasion, when, period
+### when, period
 ---
 # tempo
 ## 时
@@ -391,11 +391,11 @@
 # tempo
 ---
 # time; occasion
-### time, occasion, when, period
+### when, period
 ## 时
 ===
 # child; offspring
-### child, offspring, young of
+### young of
 ---
 # nino
 ## 子
@@ -403,11 +403,11 @@
 # nino
 ---
 # child; offspring
-### child, offspring, young of
+### young of
 ## 子
 ===
 # plant; flower
-### plant, tree, flower, wood
+### tree, wood
 ---
 # arpo
 ## 木
@@ -415,11 +415,11 @@
 # arpo
 ---
 # plant; flower
-### plant, tree, flower, wood
+### tree, wood
 ## 木
 ===
 # fruit; result
-### fruit, berry, seed; result, outcome
+### berry, seed; outcome
 ---
 # pomo
 ## 果
@@ -427,11 +427,11 @@
 # pomo
 ---
 # fruit; result
-### fruit, berry, seed; result, outcome
+### berry, seed; outcome
 ## 果
 ===
 # meet; encounter
-### meet, encounter, run into, come together with
+### run into, come together with
 ---
 # sarve
 ## 会
@@ -439,11 +439,11 @@
 # sarve
 ---
 # meet; encounter
-### meet, encounter, run into, come together with
+### run into, come together with
 ## 会
 ===
 # new; fresh
-### new, young, recent, fresh
+### young, recent
 ---
 # nova
 ## 初
@@ -451,11 +451,11 @@
 # nova
 ---
 # new; fresh
-### new, young, recent, fresh
+### young, recent
 ## 初
 ===
 # happy; pleased
-### happy, glad, pleased, joy
+### glad, joy
 ---
 # konten
 ## 楽
@@ -463,11 +463,11 @@
 # konten
 ---
 # happy; pleased
-### happy, glad, pleased, joy
+### glad, joy
 ## 楽
 ===
 # sorry; excuse me
-### sorry, apology, regret, excuse me
+### apology, regret
 ---
 # perton
 ## 悔
@@ -475,11 +475,11 @@
 # perton
 ---
 # sorry; excuse me
-### sorry, apology, regret, excuse me
+### apology, regret
 ## 悔
 ===
 # out; beyond
-### outside, external, beyond
+### outside, external
 ---
 # eks
 ## 外
@@ -487,7 +487,7 @@
 # eks
 ---
 # out; beyond
-### outside, external, beyond
+### outside, external
 ## 外
 ===
 # see you later
@@ -818,13 +818,13 @@ child and I RI food-want
 ---
 # Nino ri piko.
 ## 子 ⊢ 小.
-child RI not-big
+child RI small
 ===
 # Nino ri piko.
 ---
 # The child is small.
 ## 子 ⊢ 小.
-child RI not-big
+child RI small
 ===
 # You are happy.
 ---

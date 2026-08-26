@@ -29,7 +29,7 @@ see you later, ready, hungry, hello, finally, actually, Hello (someone new), tha
 |---|---|---|
 | I'm good. | I RI good | **Eko ri pona.** |
 | The child and I are hungry. | child and I RI food-want | **Nino kum eko ri komivori.** |
-| The child is small. | child RI not-big | **Nino ri piko.** |
+| The child is small. | child RI small | **Nino ri piko.** |
 | You are happy. | you RI happy | **Tu ri konten.** |
 | I am sorry. | I RI sorry | **Eko ri perton.** |
 | You are right. | you RI true | **Tu ri ves.** |

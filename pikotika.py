@@ -564,7 +564,7 @@ def literal(tok):
 # character depends on the use.  §8's bound/free test separates them: free-standing
 # `one` is counting (118 of 135 uses: "one small-time", "one new-man"), bound `one`
 # is not ("one-way", "one-price", "self-one-time").  `no` gets no such rule -- its
-# free-standing uses are "none", not zero ("no not-good-thing", "no other-person"),
+# free-standing uses are "none", not zero ("no bad-thing", "no other-person"),
 # so it stays 无 throughout.  two..nine never lead a double life and stay digits.
 DIGIT_WHEN_FREE = {"one": "1"}
 FREE_DIGIT_TO_GLOSS = {v: k for k, v in DIGIT_WHEN_FREE.items()}

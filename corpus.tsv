@@ -13,14 +13,14 @@ The shop opens at eight.	buy-place RI open in eight hour.	Komparroko ri apa in o
 Someone is coming.	RI come.	Ri veni.	⊢ 来.	2	
 They say the doctor is coming.	not-this-person RI say A heal-person RI come.	Nontisomo ri tika a sanaomo ri veni.	不此人 ⊢ 言 ⇒ 医人 ⊢ 来.	4	health
 They say time is money.	RI say A time RI money.	Ri tika a tempo ri moni.	⊢ 言 ⇒ 时 ⊢ 贝.	3	
-English is spoken here.	RI say A English in this-place.	Ri tika a Inkuris in tisroko.	⊢ 言 ⇒ Inkuris 内 此所.	2	travel
+English is spoken here.	RI say A English in this-place.	Ri tika a Inkuris in tisroko.	⊢ 言 ⇒ Inkuris 内 此所.	1	travel
 Food is sold here.	RI buy A food in this-place.	Ri kompar a komi in tisroko.	⊢ 買 ⇒ 食 内 此所.	4	food
-I was told this.	RI say A this to me.	Ri tika a tis ver eko.	⊢ 言 ⇒ 此 向 己.	2	
+I was told this.	RI say A this to me.	Ri tika a tis ver eko.	⊢ 言 ⇒ 此 向 己.	1	
 Is this allowed?	RI law A this, what?	Ri reke a tis, ker?	⊢ 法 ⇒ 此, 何?	5	travel
 It's not allowed.	RI not law.	Ri non reke.	⊢ 不 法.	5	travel
 Payment is required.	RI must give A money.	Ri neses tonar a moni.	⊢ 要 与 ⇒ 贝.	4	money
 This one is better than that one.	this RI more good than not-this.	Tis ri mas pona vons nontis.	此 ⊢ 更 好 从 不此.	2	
-It's worse than that one.	this RI more not-good than not-this.	Tis ri mas nonpona vons nontis.	此 ⊢ 更 不好 从 不此.	2	
+It's worse than that one.	this RI more bad than not-this.	Tis ri mas marum vons nontis.	此 ⊢ 更 悪 从 不此.	2	
 It's cheaper than in the city.	this RI more small money than city.	Tis ri mas piko moni vons sitas.	此 ⊢ 更 小 贝 从 市.	4	money
 It's cheaper here than at home.	in this-place this RI more small money than in home.	In tisroko tis ri mas piko moni vons in kase.	内 此所 此 ⊢ 更 小 贝 从 内 户.	3	money
 It's as good as it was.	this RI same good than before-thing.	Tis ri sam pona vons yerkosa.	此 ⊢ 同 好 从 前物.	3	
@@ -38,7 +38,7 @@ Sorry/oops/excuse me.	sorry.	Perton.	悔.	1	pleasantries;feelings
 Goodbye.	sorry-out-go.	Pertoneksire.	悔外行.	1	pleasantries
 I'm good.	I RI good.	Eko ri pona.	己 ⊢ 好.	1	pleasantries
 The child and I are hungry.	child and I RI food-want.	Nino kum eko ri komivori.	子 并 己 ⊢ 食求.	1	food;family;feelings
-The child is small.	child RI not-big.	Nino ri nonmeka.	子 ⊢ 不大.	1	family
+The child is small.	child RI small.	Nino ri piko.	子 ⊢ 小.	1	family
 You are happy.	you RI happy.	Tu ri konten.	尔 ⊢ 楽.	1	feelings
 I am sorry.	I RI sorry.	Eko ri perton.	己 ⊢ 悔.	1	pleasantries;feelings
 You are right.	you RI true.	Tu ri ves.	尔 ⊢ 真.	1	
@@ -67,7 +67,7 @@ I don't think we've met.	I RI not think A I-group RI meet finish.	Eko ri non pen
 I'm Alice.	I RI Alice.	Eko ri Aras.	己 ⊢ Aras.	1	meeting;names
 Hi Alice.	happy-meet, Alice.	Kontensarve, Aras.	楽会, Aras.	1	meeting;names
 I'm Bob.	I RI Bob.	Eko ri Popu.	己 ⊢ Popu.	1	meeting;names
-Nice to meet you.	I RI happy meet A you.	Eko ri konten sarve a tu.	己 ⊢ 楽 会 ⇒ 尔.	2	meeting;pleasantries
+Nice to meet you.	I RI happy meet A you.	Eko ri konten sarve a tu.	己 ⊢ 楽 会 ⇒ 尔.	1	meeting;pleasantries
 How do you know Carla?	you RI know A Carla in what-manner?	Tu ri sape a Karra in kermoto?	尔 ⊢ 知 ⇒ Karra 内 何方?	3	meeting;names
 We work together.	I-group RI join work.	Ekomen ri yunta opus.	己众 ⊢ 合 力.	2	meeting;smalltalk
 And you?	and you, what?	Kum tu, ker?	并 尔, 何?	1	pleasantries
@@ -100,7 +100,7 @@ Is the boss in today?	this-sun, work-head RI in work-room, what?	Tisyan, opustes
 She's traveling until Thursday.	this-person RI vehicle-go straight-to plant-weekday.	Tisomo ri karoire retover arpoyom.	此人 ⊢ 车行 直向 木曜.	4	dates;travel
 Then I think this week will be easy.	but, I RI think A this seven-sun RI not-hard.	Sets, eko ri pensa a tis senseyan ri nonsorin.	但, 己 ⊢ 思 ⇒ 此 7日 ⊢ 不硬.	4	dates
 Good morning!	good up-sun!	Pona suryan!	好 上日!	2	pleasantries
-What would you like?	you RI want A what?	Tu ri vori a ker?	尔 ⊢ 求 ⇒ 何?	2	money
+What would you like?	you RI want A what?	Tu ri vori a ker?	尔 ⊢ 求 ⇒ 何?	1	money
 How much are the bananas?	long-yellow-fruit RI what money?	Ronkayoropomo ri ker moni?	长黄果 ⊢ 何 贝?	3	money;food;numbers
 Twenty each, or a hundred for six.	20 money for one, or 100 money for 6.	20 moni por wun, sive 100 moni por 6.	20 贝 為 1, 或 100 贝 為 6.	5	money;numbers
 I'll take six.	I RI get A 6.	Eko ri toma a 6.	己 ⊢ 取 ⇒ 6.	2	money;numbers
@@ -124,7 +124,7 @@ The soup is also very good.	and water-food RI big good.	Kum akukomi ri meka pona
 I don't eat fish.	I RI not food A water-animal.	Eko ri non komi a akupeste.	己 ⊢ 不 食 ⇒ 水匹.	2	food
 Do you have anything without meat?	you RI have A not meat food, what?	Tu ri tene a non karne komi, ker?	尔 ⊢ 有 ⇒ 不 肉 食, 何?	4	food
 Yes — we have a rice dish with vegetables and eggs.	yes. I-group RI have A white-grain food and green-food and bird-child.	Si. Ekomen ri tene a ankariso komi kum vertekomi kum avisnino.	是. 己众 ⊢ 有 ⇒ 白米 食 并 緑食 并 鳥子.	5	food
-I'll have that.	I RI want A this.	Eko ri vori a tis.	己 ⊢ 求 ⇒ 此.	2	food
+I'll have that.	I RI want A this.	Eko ri vori a tis.	己 ⊢ 求 ⇒ 此.	1	food
 And I'll have the fish, please.	and I RI want A water-animal, please.	Kum eko ri vori a akupeste, pam.	并 己 ⊢ 求 ⇒ 水匹, 乞.	2	food
 Is it spicy?	this RI hot-taste, what?	Tis ri wosapor, ker?	此 ⊢ 火味, 何?	4	food
 A little.	small.	Piko.	小.	1	food
@@ -135,7 +135,7 @@ Cold or warm?	cold or hot, what?	Rikus sive wo, ker?	冷 或 火, 何?	5	food
 Cold, please.	cold, please.	Rikus, pam.	冷, 乞.	4	food
 Very good.	big good.	Meka pona.	大 好.	1	food
 It will be about fifteen minutes.	if 15 part interval.	Pos 15 parte turan.	可 15 分 間.	4	time;numbers
-Excuse me, do you speak English?	sorry. you RI say A English, what?	Perton. Tu ri tika a Inkuris, ker?	悔. 尔 ⊢ 言 ⇒ Inkuris, 何?	2	travel;pleasantries
+Excuse me, do you speak English?	sorry. you RI say A English, what?	Perton. Tu ri tika a Inkuris, ker?	悔. 尔 ⊢ 言 ⇒ Inkuris, 何?	1	travel;pleasantries
 Slowly, please.	please not-fast say.	Pam nonveros tika.	乞 不早 言.	2	travel
 Where is the train station?	line-vehicle-place RI what-place?	Rinekaroroko ri kerroko?	糸车所 ⊢ 何所?	4	travel
 Go straight to that big tree, then turn left.	please straight go to not-this big plant, after please bend to left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.	乞 直 行 向 不此 大 木, 后 乞 弓 向 左.	5	travel
@@ -158,7 +158,7 @@ You had water five minutes ago.	5 part before, you RI drink A water.	5 parte yer
 I'm thirsty again.	I RI more drink-want.	Eko ri mas pipevori.	己 ⊢ 更 飲求.	2	food;health;feelings
 All right, a little.	good, small.	Pona, piko.	好, 小.	1	family
 Then sleep.	after, please sleep.	Tar, pam tormi.	后, 乞 床.	4	family;health
-Will you tell me a story?	you RI say A say-thing to me, what?	Tu ri tika a tikakosa ver eko, ker?	尔 ⊢ 言 ⇒ 言物 向 己, 何?	2	family
+Will you tell me a story?	you RI say A say-thing to me, what?	Tu ri tika a tikakosa ver eko, ker?	尔 ⊢ 言 ⇒ 言物 向 己, 何?	1	family
 A short one.	small say-thing.	Piko tikakosa.	小 言物.	1	family
 About the big fish!	about big water-animal!	Topi meka akupeste!	件 大 水匹!	2	family
 I told you that one last night.	1 no-sun before, I RI say A this to you.	1 nemyan yer, eko ri tika a tis ver tu.	1 无日 前, 己 ⊢ 言 ⇒ 此 向 尔.	2	family;dates
@@ -238,7 +238,7 @@ Go get some coffee.	please go get A black-drink.	Pam ire toma a neropipe.	乞 �
 We'll finish by four.	4 hour before, I-group RI finish.	4 ora yer, ekomen ri vin.	4 刻 前, 己众 ⊢ 閉.	2	time;numbers
 Do you know when the train leaves?	you RI know A line-vehicle RI out-go in what-hour, what?	Tu ri sape a rinekaro ri eksire in kerora, ker?	尔 ⊢ 知 ⇒ 糸车 ⊢ 外行 内 何刻, 何?	4	travel;time
 I see the child.	I RI see A child.	Eko ri vite a nino.	己 ⊢ 見 ⇒ 子.	2	family
-The child wants water.	child RI want A water.	Nino ri vori a aku.	子 ⊢ 求 ⇒ 水.	2	family;food
+The child wants water.	child RI want A water.	Nino ri vori a aku.	子 ⊢ 求 ⇒ 水.	1	family;food
 We'll get the food soon.	I-group RI fast get A food.	Ekomen ri veros toma a komi.	己众 ⊢ 早 取 ⇒ 食.	2	food
 My mother makes good food.	me woman-parent RI make A good food.	Eko vemapari ri vake a pona komi.	己 女亲 ⊢ 作 ⇒ 好 食.	2	family;food
 Please come with me.	please come and me.	Pam veni kum eko.	乞 来 并 己.	2	
