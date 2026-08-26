@@ -288,11 +288,22 @@ p { margin: 0 0 1.1em; }
 
 /* Bulleted lists breathe.  Space between the items, not below the last one, so
    the gap after the list stays the ul's own margin -- and a child combinator so
-   an <ol> nested in a <ul> keeps its own tighter spacing.  The four lists that
-   are really layouts space themselves with grid/flex `gap`, where a margin
-   would fight the gap rather than add to it, so they opt out below. */
+   an <ol> nested in a <ul> keeps its own tighter spacing.
+
+   Everything below opts out: those <ul>s are layouts, not prose.  A grid or
+   flex list already spaces itself with `gap`, and a margin-top does not merge
+   with the gap -- it shifts the item down inside its own cell, so every item
+   but the first sinks and the row stops lining up.  `.vocab-list` is not a
+   grid, but its rows are separated by borders and a gap would break the rule
+   into dashes.  A new list laid out this way has to be added here. */
 ul > li + li { margin-top: .4em; }
 .site-nav ul > li + li,
+.footer-links > li + li,
+.glyphs > li + li,
+.topic-cards > li + li,
+.swatches > li + li,
+.tool-links > li + li,
+.vocab-list > li + li,
 .digits > li + li,
 .seasons > li + li,
 .tree li + li { margin-top: 0; }
