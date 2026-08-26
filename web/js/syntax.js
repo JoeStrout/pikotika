@@ -167,6 +167,18 @@
      signal, not a constituent. What survives is which token ended a sentence
      and which was followed by a comma, both of which the parse needs. */
 
+  /* A dialog line opens with a speaker label -- `Aras: si, pam.` -- naming who
+     says it, so a conversation can be cast to more than one voice (see
+     gen_audio.SPEAKER_VOICES).  The label is not part of the sentence, and
+     left in it would be read as the head of the subject: `Komparomo: Tis ri 7
+     moni.` diagrams as the two-word subject *Komparomo Tis*.  So it is peeled
+     off before lexing and handed back on the result for a caller that wants
+     to show who is speaking.  Mirrors pikotika.split_speaker(); the shape of
+     the label is defined in one sentence in both places -- one word, a colon,
+     a space, at the very start -- so that a colon anywhere else stays
+     ordinary punctuation. */
+  var SPEAKER = /^([A-Za-z][A-Za-z0-9]*):\s+/;
+
   function lex(text) {
     var out = [];
     String(text).split(/\s+/).forEach(function (raw) {
@@ -536,7 +548,12 @@
 
   function parse(text, opts) {
     opts = opts || {};
-    var tokens = lex(text);
+    var speaker = null;
+    var said = String(text).replace(SPEAKER, function (all, name) {
+      speaker = name;
+      return '';
+    });
+    var tokens = lex(said);
     if (!tokens.length) return { ok: false, error: 'nothing to parse' };
 
     var trees = split(tokens).map(function (run) {
@@ -552,13 +569,14 @@
       return { ok: false, error: 'the bracketing lost or moved a word: ' +
                want.join(' ') + ' -> ' + flat.join(' ') };
     }
-    return { ok: true, sentences: trees };
+    return { ok: true, sentences: trees, speaker: speaker };
   }
 
   /* Does this text have a clause worth diagramming? A command has no **ri**
      and no subject, so there is no frame to draw. */
   function diagrammable(text) {
-    return lex(text).some(function (t) { return t.k === 'ri'; });
+    return lex(String(text).replace(SPEAKER, '')).some(
+      function (t) { return t.k === 'ri'; });
   }
 
   exports.parse = parse;

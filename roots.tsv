@@ -62,7 +62,7 @@ door	gate	Made things	entrance, portal	porta	門	*porta*l	Latin porta, Spanish p
 electric	digital	Made things	electricity, electronic, powered	vorto	電	*volt*s make it go	Italian volta, volt	13	4	4
 key	lock	Made things	to lock or unlock	yave	錠	*shove* the key into the lock	Spanish llave, Italian chiave	16	2	5
 map	plan	Made things	chart, diagram, layout	mapa	図	*map, a* plan for the building	English *map*, Spanish/Portuguese/Polish/Russian *mapa/mapa/mapa/карта→mapa*	7	8	3
-page	document	Made things	paper, card, ticket	karta	片	buy a *card* from the gift card *cart*	*carta, card, chart*	4	7	3
+page	card	Made things	paper, document, ticket	karta	片	buy a *card* from the gift card *cart*	*carta, card, chart*	4	7	3
 picture	image	Made things	photo, drawing, film	pitur	画	*pictur*e	Spanish pintura, Latin pictura	8	3	4
 room	chamber	Made things	interior space within a building	kamar	室	I feel *calmer* in my own room	Spanish camara, Italian camera	9	11	3
 table	desk	Made things	counter, flat surface	tapur	机	*tap your* fingers on the table	Latin tabula; Latin mensa	6	0	5
@@ -102,7 +102,7 @@ you		People and society	addressee	tu	尔	et *tu*, Brute (and you, Brutus)?	*tu, 
 art	craft	Places, arts, appearance	artwork, creative craft	arti	芸	an *arti*st makes *art*	Latin ars, artis	7	1	5
 city	town	Places, arts, appearance	urban place	sitas	市	*cities*	Latin *civitas*; Spanish *ciudad*; French *cite*; English *city*	5	5	4
 color	hue	Places, arts, appearance		koror	色	*color*	*color, colore*	6	3	3
-home	house	Places, arts, appearance	dwelling, household	kase	户	mi *casa*, my house	*casa*	4	13	3
+home	institution	Places, arts, appearance	dwelling, household, house, building	kase	户	mi *casa*, my house	*casa*	4	13	3
 music	song	Places, arts, appearance	melody	musi	曲	*musi*c	*music, música*	6	7	2
 temple	church	Places, arts, appearance	shrine, sacred place	temper	寺	a *temp*le *temper*s the soul	Latin templum; Latin fanum	6	0	5
 bad	wrong	Qualities	poor, unpleasant	marum	悪	careful with those paintings; if you *mar 'em*, that's bad	Latin malum	11	8	2
@@ -151,7 +151,7 @@ near	almost	Space and direction	close, beside, next to, nearly	nir	近	*near*	En
 out	beyond	Space and direction	outside, external	eks	外	*ex*it — out you go, to the space beyond!	Latin *ex-*, Spanish *ex-*	5	7	1
 right		Space and direction	right-hand side, east (with `map`)	rem	右	*rem*ember: *r* is for *r*ight	⚠ no etymology — see §9	5	2	5
 to	toward	Space and direction	into, direction of motion	ver	向	s*wer*ve toward it *ver*y hard	French *vers*, Italian *verso* "toward"	6	27	1
-up	above	Space and direction	high, top, over	sur	上	the *sur*face is on top	French *sur*, *super-*	3	18	2
+up	on	Space and direction	above, high, top, over	sur	上	the *sur*face is on top	French *sur*, *super-*	3	18	2
 after	later	Time direction	subsequent, future, late	tar	后	*tar*dy — after the bell means you're late	Spanish *tarde*, English *tardy* "late"	6	18	1
 before	ago	Time direction	earlier, prior, in the past, early, already	yer	前	*yer*sterday — a day ago, before today	Spanish *ayer*, French *hier* "yesterday"	9	20	1
 finish	close	Time direction	shut, end, conclude	vin	閉	photo *fin*ish ends the race	Latin *finis*, Spanish *fin*, Italian *fine*	11	33	1

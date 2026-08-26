@@ -999,6 +999,44 @@ drops symbols outside its vocabulary *silently*, so a divergence between the
 tool and the build would surface as a missing sound and no error.
 `check_symbols()` guards the vocabulary itself.
 
+### Casting a dialog (2026-08-25)
+
+A corpus line may open with a **speaker label** — `Aras: Si, pam.` — naming who
+says it, and the label picks the voice. It is a corpus convention, not a piece
+of the language, so it is peeled off at three places and defined in one:
+
+| where | what it does |
+|---|---|
+| `pikotika.SPEAKER_LABEL` / `split_speaker()` | the definition: one word, a colon, a space, at the very start |
+| `gen_tables.sentence_case` | raises the word *after* the label, which would otherwise stay lowercase |
+| `gen_audio.SPEAKER_VOICES` | maps the label to a Kokoro voice; the label is stripped before rendering |
+| `web/js/syntax.js` | strips it before lexing and returns it as `speaker` |
+
+The label is deliberately narrow — a colon anywhere else stays ordinary
+punctuation, so `6 ronkayoropomo kum 4 rotunpomo: 160 moni.` is untouched.
+
+**The clip's key keeps the label; only the spoken text loses it.** The key is
+the sentence as the site displays it and as `build.audio_sentences()` lists it,
+so keying on the stripped line would collapse two speakers' identical replies
+onto one clip and cast them both in one voice.
+
+**`syntax.js` has to strip it too, or the diagram is wrong** — not merely
+cluttered. Left in, `Komparomo: Tis ri 7 moni.` lexes as a two-word subject,
+*Komparomo Tis*, "the shopkeeper this", and the bracketer's no-word-lost
+invariant still passes because nothing was lost. This is the whole reason the
+label is a parse concern and not just an audio one.
+
+A line with no label is cast by `assign_voices` exactly as before, so the
+existing corpus is untouched. A label with **no entry** in `SPEAKER_VOICES` is
+reported and falls back to the hash — a typo'd name is the same class of quiet
+wrong-voice bug that the median-split assignment used to cause.
+
+**Only `af_heart` and `bm_george` have been auditioned.** The rest of Kokoro's
+set is unvetted against the vowel inventory, and the known faults are specific
+(the trailing "-eh" below; `af_sky`'s "dora" for **ora**). `bf_emma` is in the
+table because a two-woman scene needs a second woman, and she has not been
+listened to yet.
+
 ### The trailing "-eh"
 
 **`af_heart` says seven words wrong as isolated clips** (2026-08-21), and they

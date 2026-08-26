@@ -353,6 +353,18 @@
      The button sits beside the line rather than inside it: inside, it would be
      swept into the sentence's own aria-label and into anything copied. */
 
+  function speakButton(key) {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'example-speak';
+    button.setAttribute('aria-label', 'Play the sentence');
+    button.textContent = PLAY_GLYPH;
+    button.addEventListener('click', function () {
+      play('sentences', key, button);
+    });
+    return button;
+  }
+
   function addSentencePlayers() {
     var lines = document.querySelectorAll('.example .pk');
     for (var i = 0; i < lines.length; i++) {
@@ -366,16 +378,34 @@
       row.className = 'example-line';
       line.parentNode.insertBefore(row, line);
       row.appendChild(line);
+      row.appendChild(speakButton(key));
+    }
+    addDialogPlayers();
+  }
 
-      var button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'example-speak';
-      button.setAttribute('aria-label', 'Play the sentence');
-      button.textContent = PLAY_GLYPH;
-      (function (k, b) {
-        b.addEventListener('click', function () { play('sentences', k, b); });
-      })(key, button);
-      row.appendChild(button);
+  /* --- dialog play buttons ------------------------------------------------
+     A dialog table is a column of lines, so its buttons are a column too --
+     and a column of controls reads as one only if it is straight.  So here
+     the button goes in a cell of its own *before* the line, where every other
+     example on the site puts it after: placed after the text, each button
+     would land wherever its own line happened to end, which down twelve lines
+     of different lengths is a scatter rather than a control.
+
+     The cell is in the markup rather than made here, so that the header and
+     the body still agree on how many columns there are when this never
+     runs. */
+
+  function addDialogPlayers() {
+    var cells = document.querySelectorAll('.dialog td.speak');
+    for (var i = 0; i < cells.length; i++) {
+      var cell = cells[i];
+      if (cell.dataset.player) continue;
+      var line = cell.parentNode.querySelector('.pk');
+      if (!line) continue;
+      var key = line.textContent.trim();
+      if (key.split(/\s+/).length < 2) continue;
+      cell.dataset.player = '1';
+      cell.appendChild(speakButton(key));
     }
   }
 

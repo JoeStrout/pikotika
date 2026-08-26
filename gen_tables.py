@@ -22,6 +22,7 @@ form or character.
 
 import csv
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -180,14 +181,34 @@ LATIN = 'latin'
 HAN = 'han'
 
 
+# A row often holds more than one sentence, and every one of them begins with
+# a capital -- not only the first.  A run of dots counts as an ending, since
+# `Eko ri non sape... Tis ri ker moni?` is two sentences with a pause between
+# them.  A semicolon is deliberately absent: it joins clauses rather than
+# ending a sentence, so `...a tis; sive eko ri...` stays lowercase, as it does
+# in English.
+NEXT_SENTENCE = re.compile(r'([.?!\u3002\uff1f\uff01]+\s+)([a-z])')
+
+
 def sentence_case(text):
     """Latin notation capitalizes a sentence; gloss notation does not.
 
     The particles are the reason this is done here and not in pikotika.py:
     they are *RI* in gloss and **ri** in Latin, so a sentence-initial *RI*
     renders lowercase and only a whole-sentence view knows to raise it.
+
+    A dialog line opens with a speaker label -- `Aras: si, pam.` -- and both
+    the label and the sentence it introduces are sentence-initial, so both are
+    raised.  Without this the real first word of every spoken line would come
+    out lowercase, since the label has taken the position the rule looks at.
+    See gen_audio.SPEAKER_VOICES for what the label is for.
     """
-    return text[:1].upper() + text[1:]
+    text = text[:1].upper() + text[1:]
+    label = pikotika.SPEAKER_LABEL.match(text)
+    if label:
+        cut = label.end()
+        text = text[:cut] + text[cut:cut + 1].upper() + text[cut + 1:]
+    return NEXT_SENTENCE.sub(lambda m: m.group(1) + m.group(2).upper(), text)
 
 
 def render_corpus(rows, fields, t):

@@ -58,8 +58,7 @@ OUT_DIR = ROOT / "web" / "audio"
 # differ in how well they take the vowel set rather than merely in timbre.
 # These two were chosen by ear over the full set; af_nicole is unusable.
 # Word tiles alternate between them so the learner is not tuned to one speaker.
-# Dialogs and stories will pick by character instead -- hence voice_for() rather
-# than a constant.
+# A dialog picks by character instead -- see SPEAKER_VOICES below.
 #
 # af_heart replaced af_sky throughout on 2026-08-20: af_sky puts a consonantal
 # onset in front of some vowel-initial words, so **ora** came out "dora" -- and
@@ -106,6 +105,34 @@ VOICE_OVERRIDES = {
 # This is a separate constant so a chained reading has one speaker, not so the
 # casting can differ; keep it whichever of WORD_VOICES is the female voice.
 NUMBER_VOICE = "af_heart"
+
+# Who says a dialog line, and in whose voice.
+#
+# A corpus line may open with a speaker label -- `Aras: Si, pam.` -- and the
+# label picks the voice.  It never reaches Kokoro: `sentence_items` strips it
+# before the words are rendered, so nobody hears a name announced.  It does
+# stay in the clip's *key*, because the key is the sentence as the site shows
+# it and as `build.audio_sentences()` lists it; keying on the stripped line
+# would put two speakers' identical replies on one clip.
+#
+# A label may be a name or a role word -- the shopkeeper below is cast as what
+# he is, since the dialog never gives him a name.  A line with no label is cast
+# by `assign_voices` as before, and a label with no entry here is reported
+# rather than silently hash-cast: a typo'd name is exactly the kind of quiet
+# wrong-voice bug the median-split assignment used to cause.
+#
+# **Audition a voice before adding it.**  Only af_heart and bm_george have been
+# heard over the whole corpus; the rest of Kokoro's set is unvetted against the
+# vowel inventory, and the two known faults are specific -- a trailing "-eh" on
+# a final -o or -u (af_heart) and a consonantal onset before a vowel-initial
+# word (af_sky's "dora" for **ora**).  bf_emma is here because a two-woman
+# scene needs a second woman; listen to her -o words before trusting her.
+SPEAKER_VOICES = {
+    "Aras": "af_bella",
+    "Meri": "af_sarah",
+    "Komparomo": "am_adam",
+    "Tikakosaomo": "bm_lewis"
+}
 
 SPEED = 1.0
 
@@ -393,13 +420,27 @@ def number_items(tables, limit=None):
 
 def sentence_items(tables, limit=None):
     """The site's utterances, from build.audio_sentences() -- which the build
-    also checks the shipped clips against, so the two cannot drift."""
+    also checks the shipped clips against, so the two cannot drift.
+
+    A dialog line is cast by its speaker label and rendered without it; every
+    other line is cast by hash, as before.  The key stays the full line either
+    way, so nothing here changes what the site asks for.
+    """
     import build
 
     items = build.audio_sentences()
     voices = assign_voices(items)
-    items = [(t, t, voices[t]) for t in items]
-    return items[:limit] if limit else items
+    cast, unknown = [], []
+    for text in items:
+        speaker, said = pikotika.split_speaker(text)
+        voice = SPEAKER_VOICES.get(speaker) if speaker else None
+        if speaker and voice is None:
+            unknown.append(speaker)
+            voice = voices[text]
+        cast.append((text, said, voice or voices[text]))
+    for name in sorted(set(unknown)):
+        print(f"  ! no voice for speaker {name!r}; add it to SPEAKER_VOICES")
+    return cast[:limit] if limit else cast
 
 
 def report(items) -> None:

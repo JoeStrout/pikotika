@@ -981,6 +981,23 @@ p { margin: 0 0 1.1em; }
 .examples td:last-child, .examples th:last-child { padding-right: 0; }
 .examples code { font-size: .95em; }
 
+/* --- a dialog table ------------------------------------------------------
+   .examples with its two columns held to half the width each.  The point of
+   the pairing here is that a reader covers one column and works across to the
+   other, so the fold has to sit in the same place on every row rather than
+   wherever the longest line happens to put it. */
+
+.examples.dialog { table-layout: fixed; }
+.examples.dialog th, .examples.dialog td { width: 50%; }
+
+/* Column one is the play buttons (site.js:addDialogPlayers), narrow and
+   ahead of the line rather than after it, so they stack into a straight
+   column instead of following the ragged right edge of the Pikotika. */
+.examples.dialog th.speak, .examples.dialog td.speak {
+  width: 2.8rem;
+  padding-right: .4rem;
+}
+
 /* --- the number reader (/topics/numbers/) --------------------------------
    Same box as the name adapter, with room reserved under the input for the
    reading and its gloss, so the box does not jump on the first keystroke. */

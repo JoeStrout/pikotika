@@ -37,6 +37,7 @@ list is for defects in the code):
 
 import csv
 import os
+import re
 import readline
 import sys
 
@@ -50,6 +51,24 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # one cell no longer requotes every other line.  A cell holding a tab would be
 # unwritable, and csv raises rather than corrupting the file.
 TSV = dict(delimiter="\t", quoting=csv.QUOTE_NONE, quotechar=None)
+
+# A dialog line in corpus.tsv may open with a speaker label -- `Aras: si, pam.`
+# -- naming who says it, so a conversation can be cast to more than one voice.
+# The label is not part of the sentence: gen_audio strips it before the words
+# reach the synthesizer and reads the voice off it, and gen_tables raises the
+# word after it, since the label has taken the position the sentence-initial
+# capital rule looks at.
+#
+# One word, then a colon and a space, at the very start.  That is deliberately
+# narrow: a colon anywhere else is ordinary punctuation, so
+# `6 ronkayoropomo kum 4 rotunpomo: 160 moni.` is left alone.
+SPEAKER_LABEL = re.compile(r"^([A-Za-z][A-Za-z0-9]*): +")
+
+
+def split_speaker(text):
+    """(speaker, what they say) for a dialog line, (None, text) otherwise."""
+    found = SPEAKER_LABEL.match(text)
+    return (found.group(1), text[found.end():]) if found else (None, text)
 
 # Particle names in gloss form are the particles' own pronunciations, upper-cased:
 # ri / a / te.  This is the whole point — a name that is not the pronunciation is

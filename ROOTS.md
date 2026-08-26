@@ -99,7 +99,7 @@
 | electric; digital | vorto | 電 | electricity, electronic, powered |
 | key; lock | yave | 錠 | to lock or unlock |
 | map; plan | mapa | 図 | chart, diagram, layout |
-| page; document | karta | 片 | paper, card, ticket |
+| page; card | karta | 片 | paper, document, ticket |
 | picture; image | pitur | 画 | photo, drawing, film |
 | room; chamber | kamar | 室 | interior space within a building |
 | table; desk | tapur | 机 | counter, flat surface |
@@ -164,7 +164,7 @@
 | art; craft | arti | 芸 | artwork, creative craft |
 | city; town | sitas | 市 | urban place |
 | color; hue | koror | 色 |  |
-| home; house | kase | 户 | dwelling, household |
+| home; institution | kase | 户 | dwelling, household, house, building |
 | music; song | musi | 曲 | melody |
 | temple; church | temper | 寺 | shrine, sacred place |
 
@@ -233,7 +233,7 @@
 | out; beyond | eks | 外 | outside, external |
 | right | rem | 右 | right-hand side, east (with `map`) |
 | to; toward | ver | 向 | into, direction of motion |
-| up; above | sur | 上 | high, top, over |
+| up; on | sur | 上 | above, high, top, over |
 
 ## Time direction (8)
 

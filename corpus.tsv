@@ -9,7 +9,7 @@ It might rain.	RI if rain.	Ri pos ruva.	⊢ 可 雨.	4	weather
 The road is closed.	road RI close.	Moto ri vin.	方 ⊢ 閉.	3	travel
 The road has been closed.	RI close A road.	Ri vin a moto.	⊢ 閉 ⇒ 方.	3	travel
 My luggage has been lost.	RI lose A me go-box.	Ri perti a eko irevaso.	⊢ 失 ⇒ 己 行皿.	5	travel
-The shop opens at eight.	RI open A buy-place in eight hour.	Ri apa a komparroko in ots ora.	⊢ 开 ⇒ 買所 内 8 刻.	4	money;time
+The shop opens at eight.	buy-place RI open in eight hour.	Komparroko ri apa in ots ora.	買所 ⊢ 开 内 8 刻.	4	money;time
 Someone is coming.	RI come.	Ri veni.	⊢ 来.	2	
 They say the doctor is coming.	not-this-person RI say A heal-person RI come.	Nontisomo ri tika a sanaomo ri veni.	不此人 ⊢ 言 ⇒ 医人 ⊢ 来.	4	health
 They say time is money.	RI say A time RI money.	Ri tika a tempo ri moni.	⊢ 言 ⇒ 时 ⊢ 贝.	3	
@@ -78,7 +78,7 @@ Everybody says that.	every-person RI say A this.	Panomo ri tika a tis.	全人 �
 She looks like our father, and I look like our mother.	this-person RI same-see A I-group man-parent, but I RI same-see A I-group woman-parent.	Tisomo ri samvite a ekomen viropari, sets eko ri samvite a ekomen vemapari.	此人 ⊢ 同見 ⇒ 己众 男亲, 但 己 ⊢ 同見 ⇒ 己众 女亲.	3	family
 That explains it.	this RI reason.	Tis ri rason.	此 ⊢ 故.	4	smalltalk
 Do you live here in the city?	you RI life in this city, what?	Tu ri viva in tis sitas, ker?	尔 ⊢ 生 内 此 市, 何?	5	meeting;smalltalk
-No, I live about two hours north. I came just for the party.	not. I RI life in two hour interval to up. I RI come only for play-group.	Non. eko ri viva in pits ora turan ver sur. eko ri veni son por yumen.	不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.	5	smalltalk;travel
+No, I live about two hours north. I came just for the party.	not. I RI life in two hour interval to up. I RI come only for play-group.	Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.	不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.	5	smalltalk;travel
 That's a long way.	this RI long road.	Tis ri ronka moto.	此 ⊢ 长 方.	3	travel
 Are you staying the night?	you RI sleep in this city, what?	Tu ri tormi in tis sitas, ker?	尔 ⊢ 床 内 此 市, 何?	4	lodging
 Yes, at Carla's place.	yes, in Carla home.	Si, in Karra kase.	是, 内 Karra 户.	3	lodging;names
@@ -108,7 +108,7 @@ Are they sweet?	this RI sweet, what?	Tis ri tuke, ker?	此 ⊢ 甘, 何?	3	food
 Very sweet.	big sweet.	Meka tuke.	大 甘.	3	food
 Try one.	please taste A one.	Pam sapor a wun.	乞 味 ⇒ 1.	4	food
 And these red ones — what are they?	and this red thing RI what?	Kum tis rus kosa ri ker?	并 此 赤 物 ⊢ 何?	3	colors;food
-Apples. From the mountains. They're not sweet; they're a little sour.	round-fruit, from up-earth. this RI not sweet; this RI small not-sweet.	Rotunpomo, vons surtera. tis ri non tuke; tis ri piko nontuke.	丸果, 从 上土. 此 ⊢ 不 甘; 此 ⊢ 小 不甘.	4	food
+Apples. From the mountains. They're not sweet; they're a little sour.	round-fruit, from up-earth. this RI not sweet; this RI small not-sweet.	Rotunpomo, vons surtera. Tis ri non tuke; tis ri piko nontuke.	丸果, 从 上土. 此 ⊢ 不 甘; 此 ⊢ 小 不甘.	4	food
 I like sour.	I RI like A not-sweet.	Eko ri kusta a nontuke.	己 ⊢ 愛 ⇒ 不甘.	3	food;feelings
 Give me four.	please give A 4.	Pam tonar a 4.	乞 与 ⇒ 4.	4	money;numbers
 Six bananas and four apples — one hundred sixty.	6 long-yellow-fruit and 4 round-fruit: 160 money.	6 ronkayoropomo kum 4 rotunpomo: 160 moni.	6 长黄果 并 4 丸果: 160 贝.	4	money;numbers;food
@@ -123,7 +123,7 @@ The fish is fresh.	water-animal RI new.	Akupeste ri nova.	水匹 ⊢ 初.	2	food
 The soup is also very good.	and water-food RI big good.	Kum akukomi ri meka pona.	并 水食 ⊢ 大 好.	1	food
 I don't eat fish.	I RI not food A water-animal.	Eko ri non komi a akupeste.	己 ⊢ 不 食 ⇒ 水匹.	2	food
 Do you have anything without meat?	you RI have A not meat food, what?	Tu ri tene a non karne komi, ker?	尔 ⊢ 有 ⇒ 不 肉 食, 何?	4	food
-Yes — we have a rice dish with vegetables and eggs.	yes. I-group RI have A white-grain food and green-food and bird-child.	Si. ekomen ri tene a ankariso komi kum vertekomi kum avisnino.	是. 己众 ⊢ 有 ⇒ 白米 食 并 緑食 并 鳥子.	5	food
+Yes — we have a rice dish with vegetables and eggs.	yes. I-group RI have A white-grain food and green-food and bird-child.	Si. Ekomen ri tene a ankariso komi kum vertekomi kum avisnino.	是. 己众 ⊢ 有 ⇒ 白米 食 并 緑食 并 鳥子.	5	food
 I'll have that.	I RI want A this.	Eko ri vori a tis.	己 ⊢ 求 ⇒ 此.	2	food
 And I'll have the fish, please.	and I RI want A water-animal, please.	Kum eko ri vori a akupeste, pam.	并 己 ⊢ 求 ⇒ 水匹, 乞.	2	food
 Is it spicy?	this RI hot-taste, what?	Tis ri wosapor, ker?	此 ⊢ 火味, 何?	4	food
@@ -135,7 +135,7 @@ Cold or warm?	cold or hot, what?	Rikus sive wo, ker?	冷 或 火, 何?	5	food
 Cold, please.	cold, please.	Rikus, pam.	冷, 乞.	4	food
 Very good.	big good.	Meka pona.	大 好.	1	food
 It will be about fifteen minutes.	if 15 part interval.	Pos 15 parte turan.	可 15 分 間.	4	time;numbers
-Excuse me, do you speak English?	sorry. you RI say A English, what?	Perton. tu ri tika a Inkuris, ker?	悔. 尔 ⊢ 言 ⇒ Inkuris, 何?	2	travel;pleasantries
+Excuse me, do you speak English?	sorry. you RI say A English, what?	Perton. Tu ri tika a Inkuris, ker?	悔. 尔 ⊢ 言 ⇒ Inkuris, 何?	2	travel;pleasantries
 Slowly, please.	please not-fast say.	Pam nonveros tika.	乞 不早 言.	2	travel
 Where is the train station?	line-vehicle-place RI what-place?	Rinekaroroko ri kerroko?	糸车所 ⊢ 何所?	4	travel
 Go straight to that big tree, then turn left.	please straight go to not-this big plant, after please bend to left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.	乞 直 行 向 不此 大 木, 后 乞 弓 向 左.	5	travel
@@ -296,7 +296,7 @@ I want you to come.	I RI want A you RI come.	Eko ri vori a tu ri veni.	己 ⊢ �
 I ask the cook to make it not spicy.	I RI want-say to food-make-person A this RI become not hot-taste.	Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.	己 ⊢ 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.	4	food
 I think you would like it.	I RI think A you RI like A this.	Eko ri pensa a tu ri kusta a tis.	己 ⊢ 思 ⇒ 尔 ⊢ 愛 ⇒ 此.	4	feelings
 Whatever you have, send me that.	you RI have A what-thing, please give A this to me.	Tu ri tene a kerkosa, pam tonar a tis ver eko.	尔 ⊢ 有 ⇒ 何物, 乞 与 ⇒ 此 向 己.	4	
-Please wait until I get back.	I RI back-come in what-hour, please remain straight-to this.	Eko ri retseveni in kerora, pam sista retover tis.	己 ⊢ 反 来 内 何刻, 乞 止 直向 此.	4	
+Please wait until I get back.	I RI back-come in what-hour, please remain straight-to this.	Eko ri retseveni in kerora, pam sista retover tis.	己 ⊢ 反来 内 何刻, 乞 止 直向 此.	4	
 the animal the person ate	person RI food RI-TE animal.	Omo ri komi rite peste.	人 ⊢ 食 ⊢> 匹.	3	food
 Send me what you have.	please give A you RI have RI-TE thing to me.	Pam tonar a tu ri tene rite kosa ver eko.	乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己.	4	
 The shop that sells tea is closed.	RI buy A plant-water RI-TE buy-place RI close.	Ri kompar a arpoaku rite komparroko ri vin.	⊢ 買 ⇒ 木水 ⊢> 買所 ⊢ 閉.	4	money;food
@@ -382,7 +382,7 @@ Iced tea, please.	cold-plant-water, please.	Rikusarpoaku, pam.	冷木水, 乞.	4
 It is snowing.	RI cold-rain.	Ri rikusruva.	⊢ 冷雨.	4	weather
 I like my present job.	I RI like A me this work.	Eko ri kusta a eko tis opus.	己 ⊢ 愛 ⇒ 己 此 力.	2	smalltalk;feelings
 From now on, please tell me sooner.	from this-time, please more fast say to me.	Vons tistempo, pam mas veros tika ver eko.	从 此时, 乞 更 早 言 向 己.	2	smalltalk
-I am tired. I need to go to bed!	I RI tired. I RI must sleep!	Eko ri kansa. eko ri neses tormi!	己 ⊢ 疲. 己 ⊢ 要 床!	5	health;feelings
+I am tired. I need to go to bed!	I RI tired. I RI must sleep!	Eko ri kansa. Eko ri neses tormi!	己 ⊢ 疲. 己 ⊢ 要 床!	5	health;feelings
 I need to charge my phone.	I RI must sleep A me electric-say.	Eko ri neses tormi a eko vortotika.	己 ⊢ 要 床 ⇒ 己 電言.	4	travel
 Unfortunately, the food supplies gave out before the end of winter.	bad-if, cold-time-finish before, have-food RI finish.	Marumpos, rikustempovin yer, tenekomi ri vin.	悪可, 冷时閉 前, 有食 ⊢ 閉.	4	food;seasons
 Why do I have to tell them?	I RI must say to not-this-person, what-reason?	Eko ri neses tika ver nontisomo, kerrason?	己 ⊢ 要 言 向 不此人, 何故?	4	
@@ -405,3 +405,16 @@ I don't want to think about the past.	I RI not want A think A before-time.	Eko r
 This used to be a school.	before-time, this RI learn-place.	Yertempo, tis ri imparroko.	前时, 此 ⊢ 学所.	4	time
 In the future, everything will be easier.	after-time, all RI more not-hard.	Tartempo, pan ri mas nonsorin.	后时, 全 ⊢ 更 不硬.	4	time
 Please stop the car.	please remain A vehicle.	Pam sista a karo.	乞 止 ⇒ 车.	4	travel
+Alice: Mary, look at this!  It's so cute!	Alice: Mary, see A this! this RI big good-see!	Aras: Meri, vite a tis! Tis ri meka ponavite!	Aras: Meri, 見 ⇒ 此! 此 ⊢ 大 好見!	2	money
+Mary: It is!  You should buy it.	Mary: yes, true! you RI if-good buy A this.	Meri: Si, ves! Tu ri pospona kompar a tis.	Meri: 是, 真! 尔 ⊢ 可好 買 ⇒ 此.	4	money
+Alice: I don't know...  How much is this?	Alice: I RI not know... this RI what money?	Aras: Eko ri non sape... Tis ri ker moni?	Aras: 己 ⊢ 不 知... 此 ⊢ 何 贝?	3	money
+Shopkeeper: That's 7 dollars.	buy-person: this RI 7 money.	Komparomo: Tis ri 7 moni.	買人: 此 ⊢ 7 贝.	4	money
+Mary: 7 dollars is cheap!  And I think it would look good on you.	Mary: 7 money RI small-money! and I RI think A this RI good-see up you.	Meri: 7 moni ri pikomoni! Kum eko ri pensa a tis ri ponavite sur tu.	Meri: 7 贝 ⊢ 小贝! 并 己 ⊢ 思 ⇒ 此 ⊢ 好見 上 尔.	4	money
+Alice: OK, I'll take it!	Alice: good, I RI get A this!	Aras: Pona, eko ri toma a tis!	Aras: 好, 己 ⊢ 取 ⇒ 此!	2	money
+Shopkeeper: Very good.  Cash or card?	buy-person: big good. hand-money or money-card, what?	Komparomo: Meka pona. Manumoni sive monikarta, ker?	買人: 大 好. 手贝 或 贝片, 何?	5	money
+Narrator: Alice looks in her wallet.	say-thing-person: Alice RI see in money-box.	Tikakosaomo: Aras ri vite in monivaso.	言物人: Aras ⊢ 見 内 贝皿.	4	money
+Alice: Cash — here's 10 dollars.	Alice: hand-money. this RI 10 money.	Aras: Manumoni. Tis ri 10 moni.	Aras: 手贝. 此 ⊢ 10 贝.	5	money
+Shopkeeper: Thank you...  three dollars change.  Do you need a bag?	buy-person: thank... 3 back-money. you RI must A buy-box, what?	Komparomo: Mersi... 3 retsemoni. Tu ri neses a komparvaso, ker?	買人: 恩... 3 反贝. 尔 ⊢ 要 ⇒ 買皿, 何?	4	money
+Alice: Yes please.	Alice: yes, please.	Aras: Si, pam.	Aras: 是, 乞.	1	money
+Shopkeeper: Here you go.  Please come again!	buy-person: this RI for you. please again come!	Komparomo: Tis ri por tu. Pam repe veni!	買人: 此 ⊢ 為 尔. 乞 又 来!	4	money
+Can I help you?	I RI can help A you, what?	Eko ri kan servi a tu, ker?	己 ⊢ 能 助 ⇒ 尔, 何?	4	pleasantries;smalltalk

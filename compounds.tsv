@@ -11,6 +11,7 @@ that; those	not-this	Grammar and logic	1	1
 depart; leave (depart)	out-go	Verbs;Space and direction	1	1
 tea	plant-water	Food	1	1
 story; tale	say-thing	Places, arts, appearance	1	1
+narrator; storyteller	say-thing-person	People and society;Places, arts, appearance	1	
 moment	small-time	Time direction	1	1
 bye	sorry-go	People and society;Verbs	1	1
 goodbye	sorry-out-go	People and society;Verbs	1	1
@@ -76,6 +77,7 @@ airplane	air-vehicle	Made things	3	3
 airport	air-vehicle-place	Places, arts, appearance	3	3
 previous; preceding; former; the one before	before-sequence	General heads	3	3
 gale; strong wind	big-air	Nature	3	3
+expensive; costly; pricey	big-money	Qualities;People and society	3	
 coffee	black-drink	Food	3	3
 cyan	blue-green	Color	3	3
 brown	earth-color	Color	3	3
@@ -87,7 +89,10 @@ always	every-time	Grammar and logic;Time direction	3	3
 Tuesday	fire-weekday	Time direction	3	3
 tan; beige	grain-color	Color	3	3
 Friday	metal-weekday	Time direction	3	3
+payment card; bank card	money-card	Made things;People and society	3	
+bank	money-home	Places, arts, appearance;People and society	3	
 Monday	month-weekday	Time direction	3	3
+free; free of charge	no-money	Qualities;People and society	3	
 Thursday	plant-weekday	Time direction	3	3
 purple	red-blue	Color	3	3
 pink	red-white	Color	3	3
@@ -97,6 +102,7 @@ likewise; similarly	same-manner	Grammar and logic	3
 brother	same-parent-man	People and society	3	3
 sister	same-parent-woman	People and society	3	3
 look like; resemble; take after; look alike	same-see	Verbs;Qualities	3	3
+cheap; inexpensive	small-money	Qualities;People and society	3	
 grey	stone-color	Color	3	3
 Sunday	sun-weekday	Time direction	3	3
 too [much]; excessively	up-degree	Grammar and logic;Quantity	3	3
@@ -137,6 +143,8 @@ horse; mount	vehicle-animal	Nature	2
 work day; business day	work-sun	Time direction	2	
 text; writing (text)	write-say	Made things;Verbs	2	
 relative clause marker	RI-TE	Particles;Grammar and logic	3	
+credit; debt	after-money	People and society	3	
+credit card	after-money-card	Made things;People and society	3	
 redo; remake; do again	again-make	Verbs	3	
 review; re-examine; look over again	again-see	Verbs	3	
 fly; flight	air-go	Verbs	3	
@@ -177,7 +185,7 @@ price; fee; cost	money-amount	People and society;Quantity	3
 earn	money-get	Verbs;People and society	3	
 concert hall	music-home	Places, arts, appearance	3	
 musical instrument	music-tool	Made things;Places, arts, appearance	3	
-business card	name-page	Made things	3	
+business card	name-card	Made things	3	
 list; roster; register	name-sequence	General heads	3	
 ninth (in a series); 9th	nine-sequence	Quantity	3	
 gluten-free food	no-yellow-grain-food	Food	3	
@@ -245,6 +253,7 @@ storm; downpour	big-rain	Nature	4
 loud	big-sound	Qualities	4	
 beach; seashore	big-water-edge	Nature;Places, arts, appearance	4	
 black market	black-buy-place	Places, arts, appearance;People and society	4	
+shopping bag	buy-box	Made things	4	
 company; corporation; firm	buy-group	People and society	4	
 business plan	buy-group-map	People and society;Made things	4	
 vendor; shopkeeper	buy-person	People and society	4	
@@ -310,6 +319,7 @@ polygon	many-bend	Shape	4
 train	metal-line-vehicle	Made things	4	
 cow	milk-animal	Nature	4	
 beef	milk-animal-meat	Food	4	
+wallet; purse	money-box	Made things	4	
 turnstile; ticket gate	money-door	Made things	4	
 peace	no-fight	People and society	4	
 brave	not-fear	Qualities	4	
@@ -373,6 +383,8 @@ flat bread	flat-grain-food	Food	5
 disk	flat-round	Shape	5	
 collect; gather	group-join	Verbs	2	
 lend a hand; help out	hand-give	Verbs;People and society	5	
+cash	hand-money	People and society	5	
+debit card	hand-money-card	Made things;People and society	5	
 headache; nuisance	head-sick	Body and life	5	
 pet dog	home-dog	Nature	5	
 password	key-say	Made things	5	

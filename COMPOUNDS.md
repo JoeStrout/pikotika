@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-672 terms
+692 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -62,6 +62,8 @@
 | baggage | go-box | irevaso | 行皿 |
 | ballot | choose-page | erikekarta | 选片 |
 | banana | long-yellow-fruit | ronkayoropomo | 长黄果 |
+| bank | money-home | monikase | 贝户 |
+| bank card | money-card | monikarta | 贝片 |
 | be defeated | not-up-become | nonsurtiven | 不上成 |
 | be dressed in | cloth-have | ropatene | 衣有 |
 | be in love with | big-like | mekakusta | 大愛 |
@@ -88,7 +90,7 @@
 | brother | same-parent-man | sampariviro | 同亲男 |
 | brown | earth-color | terakoror | 土色 |
 | bus | many-person-vehicle | muromokaro | 多人车 |
-| business card | name-page | nomenkarta | 名片 |
+| business card | name-card | nomenkarta | 名片 |
 | business day | work-sun | opusyan | 力日 |
 | business plan | buy-group-map | komparmenmapa | 買众図 |
 | business trip | work-come-go | opusveniire | 力来行 |
@@ -102,6 +104,7 @@
 | careful | danger-see | timovite | 危見 |
 | carpet | earth-cloth | teraropa | 土衣 |
 | carry | have-go | teneire | 有行 |
+| cash | hand-money | manumoni | 手贝 |
 | cast a ballot | choose-say | eriketika | 选言 |
 | cat | home-animal | kasepeste | 户匹 |
 | caution | danger-see | timovite | 危見 |
@@ -110,6 +113,7 @@
 | change (money returned) | back-money | retsemoni | 反贝 |
 | changing room | cloth-try-room | ropatentarkamar | 衣試室 |
 | chat | small-say | pikotika | 小言 |
+| cheap | small-money | pikomoni | 小贝 |
 | checkup | heal-try | sanatentar | 医試 |
 | chicken (meat) | bird-meat | aviskarne | 鳥肉 |
 | chili pepper | hot-taste-thing | wosaporkosa | 火味物 |
@@ -137,9 +141,12 @@
 | corporation | buy-group | komparmen | 買众 |
 | corridor | go-room | irekamar | 行室 |
 | cost | money-amount | monimesur | 贝寸 |
+| costly | big-money | mekamoni | 大贝 |
 | course of study | learn-sequence | imparorten | 学序 |
 | courtesy | please-manner | pammoto | 乞方 |
 | cow | milk-animal | ratenpeste | 乳匹 |
+| credit | after-money | tarmoni | 后贝 |
+| credit card | after-money-card | tarmonikarta | 后贝片 |
 | crime | not-law-work | nonrekeopus | 不法力 |
 | crossroads | road-join | motoyunta | 方合 |
 | cry | see-water | viteaku | 見水 |
@@ -149,6 +156,8 @@
 | cyan | blue-green | asurverte | 青緑 |
 | dance | music-movement | musiire | 曲行 |
 | day off | not-work-sun | nonopusyan | 不力日 |
+| debit card | hand-money-card | manumonikarta | 手贝片 |
+| debt | after-money | tarmoni | 后贝 |
 | decision | choose-finish | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
 | digit | amount-say | mesurtika | 寸言 |
@@ -190,6 +199,7 @@
 | exercise | heal-movement | sanaire | 医行 |
 | expect | not-surprise | nonsorpe | 不奇 |
 | expedition | danger-come-go | timoveniire | 危来行 |
+| expensive | big-money | mekamoni | 大贝 |
 | experience | try-know | tentarsape | 試知 |
 | experienced | try-know | tentarsape | 試知 |
 | experiment | try-work | tentaropus | 試力 |
@@ -223,7 +233,9 @@
 | former | before-sequence | yerorten | 前序 |
 | fourth (in a series) | four-sequence | watsorten | 4序 |
 | frank | straight-say | retotika | 直言 |
+| free | no-money | nemmoni | 无贝 |
 | free | not-work | nonopus | 不力 |
+| free of charge | no-money | nemmoni | 无贝 |
 | Friday | metal-weekday | metaryom | 金曜 |
 | fried | oil-make | orenvake | 油作 |
 | fried rice | oil-white-grain | orenankariso | 油白米 |
@@ -286,6 +298,7 @@
 | in the past | before-time | yertempo | 前时 |
 | in truth | in-true | inves | 内真 |
 | incidentally | other-about | artopi | 別件 |
+| inexpensive | small-money | pikomoni | 小贝 |
 | inquire | what-say | kertika | 何言 |
 | instruct | learn-give | impartonar | 学与 |
 | instructor | learn-give-person | impartonaromo | 学与人 |
@@ -356,6 +369,7 @@
 | mud | water-earth | akutera | 水土 |
 | museum | art-home | artikase | 芸户 |
 | musical instrument | music-tool | musiuter | 曲工 |
+| narrator | say-thing-person | tikakosaomo | 言物人 |
 | never | no-time | nemtempo | 无时 |
 | next | after-sequence | tarorten | 后序 |
 | night | no-sun | nemyan | 无日 |
@@ -392,6 +406,7 @@
 | party (celebration) | play-group | yumen | 玩众 |
 | password | key-say | yavetika | 錠言 |
 | pay attention | think-give | pensatonar | 思与 |
+| payment card | money-card | monikarta | 贝片 |
 | peace | no-fight | nempatar | 无争 |
 | peaceful | small-happy | pikokonten | 小楽 |
 | peanut | earth-hard-fruit | terasorinpomo | 土硬果 |
@@ -420,6 +435,7 @@
 | prevail | up-become | surtiven | 上成 |
 | previous | before-sequence | yerorten | 前序 |
 | price | money-amount | monimesur | 贝寸 |
+| pricey | big-money | mekamoni | 大贝 |
 | pride | me-good-feel | ekoponasenti | 己好心 |
 | problem | bad-thing | marumkosa | 悪物 |
 | proof | try-true | tentarves | 試真 |
@@ -427,6 +443,7 @@
 | provisions | have-food | tenekomi | 有食 |
 | public transit | line-vehicle | rinekaro | 糸车 |
 | purple | red-blue | rusasur | 赤青 |
+| purse | money-box | monivaso | 贝皿 |
 | put in order | sequence-put | ortenseta | 序坐 |
 | quadrilateral | four-bend | watsekurva | 4弓 |
 | quarrel | say-fight | tikapatar | 言争 |
@@ -512,6 +529,7 @@
 | ship | water-vehicle | akukaro | 水车 |
 | shop | buy-place | komparroko | 買所 |
 | shopkeeper | buy-person | komparomo | 買人 |
+| shopping bag | buy-box | komparvaso | 買皿 |
 | shore | water-edge | akurante | 水边 |
 | should | if-good | pospona | 可好 |
 | significant | heavy-necessary | pesaneses | 重要 |
@@ -548,6 +566,7 @@
 | stores | have-food | tenekomi | 有食 |
 | storm | big-rain | mekaruva | 大雨 |
 | story | say-thing | tikakosa | 言物 |
+| storyteller | say-thing-person | tikakosaomo | 言物人 |
 | strong wind | big-air | mekavento | 大风 |
 | stubborn | hard-head | sorintesta | 硬头 |
 | study again | again-learn | repeimpar | 又学 |
@@ -637,6 +656,7 @@
 | wait around | time-remain | temposista | 时止 |
 | waiter | help-person | serviomo | 助人 |
 | walk | leg-go | kampaire | 足行 |
+| wallet | money-box | monivaso | 贝皿 |
 | war | big-fight | mekapatar | 大争 |
 | warn | danger-say | timotika | 危言 |
 | warning | danger-say | timotika | 危言 |
