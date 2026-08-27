@@ -6,7 +6,7 @@ heal	health	Body and life	cure, medicine, repair	sana	医	back to *san*e and *sa
 leg	foot	Body and life	walking limb	kampa	足	legs take you *camp*ing	*gamba, jambe*	7	5	4
 life	alive	Body and life	live, birth, grow	viva	生	*viva* la vida!	*viva, vivo, vital*	5	2	5
 mouth	opening	Body and life	lips, bodily opening	puka	口	*puck*er up	Italian bocca, Spanish boca; poka was displaced	3	4	4
-sick	hurt	Body and life	ill, diseased, damaged, defective, hurting	mara	病	a night*mar*e leaves you sick	*mal, malady, malade*	10	2	5
+sick	hurt	Body and life	ill, diseased, damaged, defective, hurting	mara	病	a night*mar*e leaves you sick	*mal, malady, malade*	10	2	4
 stomach	belly	Body and life	gut, abdomen	venter	胃	food *enter*s the *venter*	Latin venter; Italian pancia	9	0	5
 taste	flavor	Body and life	savor	sapor	味	delicious syrup tastes like *sap or* something	Latin sapor, Spanish sabor	8	9	4
 black	dark	Color	dark-valued	nero	黒	*Nero* fiddled till Rome went black	Italian nero, Latin niger	11	2	3
@@ -28,7 +28,7 @@ meat		Food	flesh food, animal protein	karne	肉	*carni*vores eat meat	Latin caro
 milk	dairy	Food	cream	raten	乳	*rotten* milk turns into delicious cheese	Italian latte, Latin lac	8	4	4
 sweet	sugar	Food	dessert-quality	tuke	甘	sweet enough to *tuck* into	*dulce, dolce*	5	8	3
 group	team	General heads	set, collection, crowd	men	众	a whole group of *men* forming a team	Mandarin 们 *-men*, the plural suffix; English *many*	6	31	1
-manner	road	General heads	way, method, path, route	moto	方	the *moto*rway is a road	*modo, mode, method*	4	11	3
+manner	road	General heads	way, method, path, route	moto	方	the *moto*rway is a road	*modo, mode, method*	4	11	2
 name	label	General heads	title	nomen	名	*nomen*clature is naming	Latin nomen	6	2	2
 part	portion	General heads	piece, member; decimal point; minute	parte	分	*part*	*parte, part*	4	13	1
 person	one who	General heads	human, agent	omo	人	h*omo* sapiens — a person	*homo, hombre, uomo*	2	50	1
