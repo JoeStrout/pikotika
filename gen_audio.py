@@ -131,7 +131,8 @@ SPEAKER_VOICES = {
     "Aras": "af_bella",
     "Meri": "af_sarah",
     "Komparomo": "am_adam",
-    "Tikakosaomo": "bm_lewis"
+    "Tikakosaomo": "bm_lewis",
+    "Rokoomo": "bm_george"
 }
 
 SPEED = 1.0
@@ -359,11 +360,25 @@ def build_files(name: str, items, force: bool) -> dict:
             previous = {}
 
     index, total, revoiced = {}, 0, 0
+    stems = {}
     for i, (key, text, voice) in enumerate(items, 1):
         wav = render(text, voice, force)
         data, rate = read_wav(wav)
         data = trim(data, rate)
-        stem = cache_path(voice, text).stem
+        # Named from the key, not from the spoken text.  The two differ for a
+        # dialog line, whose key keeps the speaker label that `sentence_items`
+        # strips before rendering -- so **Meka mersi!** in the corpus and
+        # **Aras: Meka mersi!** on a page speak the same words but are two
+        # entries here.  Naming by the spoken text collapsed them onto one
+        # file: the first written won, the second skipped over an existing
+        # target, and the index then claimed af_bella for a clip holding
+        # bm_george.  The render cache is still keyed by text and voice, so the
+        # shared words are still only synthesized once per voice.
+        stem = cache_path(voice, key).stem
+        if stems.setdefault(stem, key) != key:
+            raise SystemExit(
+                f"gen_audio: {key!r} and {stems[stem]!r} both want "
+                f"{stem}.m4a -- one would silently overwrite the other")
         target = out_dir / f"{stem}.m4a"
         prior = previous.get(key)
         stale = bool(prior) and len(prior) > 2 and prior[2] != voice

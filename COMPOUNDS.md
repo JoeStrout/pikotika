@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-692 terms
+706 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -58,6 +58,7 @@
 | attention | think-give | pensatonar | 思与 |
 | attentive | think-give | pensatonar | 思与 |
 | author | write-person | kitaomo | 写人 |
+| auto shop | vehicle-heal-place | karosanaroko | 车医所 |
 | autumn | fruit-time | pomotempo | 果时 |
 | baggage | go-box | irevaso | 行皿 |
 | ballot | choose-page | erikekarta | 选片 |
@@ -182,9 +183,11 @@
 | election | all-choose | panerike | 全选 |
 | electric light | electric-sun | vortoyan | 電日 |
 | electronic map | electric-map | vortomapa | 電図 |
+| elevator | up-down-room | surtunkamar | 上下室 |
 | ellipse | long-round | ronkarotun | 长丸 |
 | elsewhere | other-place | arroko | 別所 |
 | enemy | not-friend | nonami | 不朋 |
+| escalator | electric-up-road | vortosurmoto | 電上方 |
 | essential | heavy-necessary | pesaneses | 重要 |
 | evening | down-sun | tunyan | 下日 |
 | eventually | in-finish | invin | 内閉 |
@@ -308,6 +311,7 @@
 | jump | leg-up-go | kampasurire | 足上行 |
 | junction | road-join | motoyunta | 方合 |
 | keep in mind | know-have | sapetene | 知有 |
+| kilometer | thousand-meter | kirumitar | 千mitar |
 | kind (good-hearted) | good-feel | ponasenti | 好心 |
 | kindness | good-feel | ponasenti | 好心 |
 | knife (knife or scissors) | break-tool | rompeuter | 切工 |
@@ -324,6 +328,7 @@
 | lend a hand | hand-give | manutonar | 手与 |
 | less | not-more | nonmas | 不更 |
 | library | many-page-home | murkartakase | 多片户 |
+| lift | up-down-room | surtunkamar | 上下室 |
 | light (in weight) | not-heavy | nonpesa | 不重 |
 | lightning | air-electric | ventovorto | 风電 |
 | lightweight | not-heavy | nonpesa | 不重 |
@@ -331,6 +336,8 @@
 | line (of people) | person-sequence | omoorten | 人序 |
 | list | name-sequence | nomenorten | 名序 |
 | loan | interval-give | turantonar | 間与 |
+| local | place-person | rokoomo | 所人 |
+| local person | place-person | rokoomo | 所人 |
 | long journey | far-come-go | ronveniire | 遠来行 |
 | look alike | same-see | samvite | 同見 |
 | look for | try-see | tentarvite | 試見 |
@@ -403,6 +410,8 @@
 | owner | have-person | teneomo | 有人 |
 | pain | sick-feel | marasenti | 病心 |
 | park | green-place | verteroko | 緑所 |
+| parking garage | vehicle-place | karoroko | 车所 |
+| parking lot | vehicle-place | karoroko | 车所 |
 | party (celebration) | play-group | yumen | 玩众 |
 | password | key-say | yavetika | 錠言 |
 | pay attention | think-give | pensatonar | 思与 |
@@ -454,6 +463,7 @@
 | rage | big-anger | mekaraye | 大怒 |
 | raincoat | rain-cloth | ruvaropa | 雨衣 |
 | rainy season | rain-time | ruvatempo | 雨时 |
+| ramp | up-road | surmoto | 上方 |
 | random | not-sequence | nonorten | 不序 |
 | re-examine | again-see | repevite | 又見 |
 | read | write-see | kitavite | 写見 |
@@ -476,6 +486,7 @@
 | remake | again-make | repevake | 又作 |
 | remember | know-have | sapetene | 知有 |
 | rent | interval-buy | turankompar | 間買 |
+| repair garage | vehicle-heal-place | karosanaroko | 车医所 |
 | repeat | again-say | repetika | 又言 |
 | reply | back-say | retsetika | 反言 |
 | report | write-page | kitakarta | 写片 |
@@ -561,6 +572,8 @@
 | spring (season) | plant-time | arpotempo | 木时 |
 | square | four-bend | watsekurva | 4弓 |
 | staff (person) | help-person | serviomo | 助人 |
+| staircase | up-road | surmoto | 上方 |
+| stairs | up-road | surmoto | 上方 |
 | station | vehicle-place | karoroko | 车所 |
 | step (in a procedure) | sequence-part | ortenparte | 序分 |
 | stores | have-food | tenekomi | 有食 |
@@ -662,6 +675,7 @@
 | warning | danger-say | timotika | 危言 |
 | watch out | danger-see | timovite | 危見 |
 | watch TV | electric-see | vortovite | 電見 |
+| way up | up-road | surmoto | 上方 |
 | we | I-group | ekomen | 己众 |
 | wear | cloth-have | ropatene | 衣有 |
 | weather | air-manner | ventomoto | 风方 |

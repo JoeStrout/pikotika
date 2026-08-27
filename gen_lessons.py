@@ -95,8 +95,16 @@ class Course:
         self.root = {row["gloss"]: row for row in self.roots}
         self.compound = {row["gloss"]: row for row in self.compounds}
         self.english_names = set()
+        # The sanctioned loans, which are the one kind of name that may sit
+        # inside a hyphenated gloss word (**kirumitar**, thousand-meter).  Like
+        # any name they teach no root, so they gate no lesson -- see roots_of.
+        self.loan_tokens = set()
         for row in self.names:
-            self.english_names.update(e.strip() for e in row["EN"].split(";"))
+            english = [e.strip() for e in row["EN"].split(";")]
+            self.english_names.update(english)
+            if (row.get("kind") or "").strip() == "loan":
+                self.loan_tokens.update(english)
+                self.loan_tokens.add(row["form"])
 
     # --- reading gloss notation ------------------------------------------
 
@@ -119,6 +127,9 @@ class Course:
             return set()
         parts = set()
         for piece in word.split("-"):
+            # a loan inside a compound is still a name: no root, no gate
+            if piece in self.loan_tokens:
+                continue
             if piece not in self.alias:
                 return None
             parts.add(self.alias[piece])

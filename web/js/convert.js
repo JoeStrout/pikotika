@@ -106,6 +106,7 @@
       nameForms: {},    // form, exactly as written -> its canonical English
       form2name: {},    // form, lowercased -> its canonical English
       nameEnglish: {},  // form -> every English name it answers to
+      loans: {},        // lowercase token -> the English key `names` renders through
       corpus: payload.corpus || []
     };
 
@@ -136,6 +137,14 @@
          in case are two rows here, so the last one written takes the key.  That
          is what pikotika.py does, and the converter has to agree with it. */
       t.form2name[form.toLowerCase()] = canonical;
+      /* The loan register, reachable from gloss notation -- see loanOf. */
+      if (row[2] === 'loan') {
+        t.loans[form.toLowerCase()] = canonical;
+        english.split(';').forEach(function (one) {
+          one = one.trim().toLowerCase();
+          if (one) t.loans[one] = canonical;
+        });
+      }
     });
     return t;
   }
@@ -163,6 +172,15 @@
   }
 
   /* The English name a token spells, in either notation; null if neither. */
+  /* The English key for a sanctioned loan, or null.  Case is what separates
+     the two registers: **mitar** the metric unit is an ordinary lowercase
+     word, Mitar the adaptation of Michal is a capitalized name, and they are
+     otherwise homographs.  splitGlossWord is what enforces that. */
+  function loanOf(t, token) {
+    var english = t.loans[token.toLowerCase()];
+    return english === undefined ? null : english;
+  }
+
   function nameOf(t, token) {
     var form = t.names[token.toLowerCase()];
     if (form !== undefined) return t.form2name[form.toLowerCase()];
@@ -372,6 +390,19 @@
       }
       var gloss = rootGloss(t, piece);
       if (gloss !== null) { parts.push(gloss); continue; }
+      /* A loan is an ordinary lowercase word, so it can never pass nameWins'
+         capital test, and **kirumitar** had no way to be written in gloss
+         notation at all.  Taken ahead of the name branch so lowercase
+         **mitar** reaches the metric unit rather than Mitar (Michal).
+
+         Only inside a hyphenated word, which is the one place the notation is
+         certain: a Latin compound is written solid, so a hyphen can only be
+         gloss.  A loan standing alone stays Latin to the converter. */
+      var loan = loanOf(t, piece);
+      if (loan !== null && pieces.length > 1 && piece[0] === piece[0].toLowerCase()) {
+        parts.push(name(loan));
+        continue;
+      }
       /* "Joe" by its English spelling, "Yo" by its Pikotika form. */
       var english = nameOf(t, piece);
       if (english !== null && nameWins(piece, start && !n, t)) {
@@ -638,10 +669,13 @@
     var real = expandNumerals(words).filter(function (w) { return !isPunct(w); });
     if (real.length !== 1) return [];
     var word = real[0];
-    if (word.some(isToken)) {
+    /* A bare name or numeral has no gloss entry, only its own English.  A
+       compound that merely *contains* one still does -- **kirumitar** is
+       thousand-meter -- so only an all-token word takes this path. */
+    if (word.every(isToken)) {
       return word.filter(isName).map(literal);
     }
-    var gloss = word.join('-');
+    var gloss = renderGloss([word], t);
     var hits = (t.compoundEn[gloss] || []).slice();
     if (word.length === 1 && has(t.roots, gloss)) {
       var root = t.roots[gloss];

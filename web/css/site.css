@@ -1607,6 +1607,67 @@ ul > li + li { margin-top: .4em; }
 .seasons .han { font-size: .95rem; color: var(--text-muted); }
 
 
+/* --- the compass (/topics/travel/) ---------------------------------------
+   The four map- words set where they point, around the rose.  Reading the
+   picture *is* the mnemonic: mapasur is north because north is up on a map,
+   so the words have to sit in their own directions to say so.
+
+   The rose is a background-image, not a <picture>.  It has a light and a dark
+   file, and a matching <source> outranks the <img> -- which would beat the
+   theme toggle, the very thing site.js has to undo for the wordmark.  Here the
+   same three selectors that carry the palette carry the file, so an explicit
+   toggle wins in both directions with no JavaScript at all. */
+
+.compass {
+  display: grid;
+  grid-template-areas:
+    ".  n     ."
+    "w  rose  e"
+    ".  s     .";
+  grid-template-columns: 1fr auto 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: .7rem 1rem;
+  margin: 1.5rem 0;
+}
+
+.compass-n { grid-area: n; }
+.compass-s { grid-area: s; }
+
+/* The side columns are 1fr so that the rose sits dead centre however wide the
+   two words run.  That leaves each word centred in a column much wider than
+   itself, drifting away from the art -- so pull them to the inside edge and
+   let the column gap alone say how close they sit. */
+.compass-w { grid-area: w; justify-self: end; }
+.compass-e { grid-area: e; justify-self: start; }
+
+.compass-rose {
+  grid-area: rose;
+  width: 159px;
+  height: 157px;
+  max-width: 100%;
+  background: center / contain no-repeat
+              url("/images/compass_rose_light.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .compass-rose {
+    background-image: url("/images/compass_rose_dark.png");
+  }
+}
+:root[data-theme="dark"] .compass-rose {
+  background-image: url("/images/compass_rose_dark.png");
+}
+
+/* The rose is decorative once the words are read; on a narrow phone the row
+   of east/west plus the art is what overflows first, so shrink the art and
+   keep the four words where they are. */
+@media (max-width: 26rem) {
+  .compass { gap: .5rem .5rem; }
+  .compass-rose { width: 110px; height: 109px; }
+}
+
+
 /* --- Grammar (/grammar/) -------------------------------------------------
    The index is a grouped list rather than Topics' card grid: a grammar point
    has no natural picture, and the order is a reading order, so the entries are

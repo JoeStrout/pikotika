@@ -221,6 +221,12 @@ class Tables:
         self.name_english = {}    # form, exactly as written -> "Aaron; Ellen; ..."
 
         self.name_kind = {}       # form -> "name" or "loan" (names.tsv `kind`)
+        # The loan register, reachable from gloss notation.  A loan is written
+        # lowercase, so it can never pass name_wins' capital test; this is the
+        # index split_gloss_word consults instead.  Keyed by every lowercase
+        # token that names the loan -- its English and its own form -- and
+        # valued with the one English key self.names renders back through.
+        self.loans = {}           # lowercase token -> english key in self.names
         self.compound_cats = {}   # compound gloss -> [category, ...]
         self.name_cats = {}       # name/loan form -> [category, ...]
         self.name_origin = {}     # form -> "" (curated) or "cmudict" (poured)
@@ -331,6 +337,13 @@ class Tables:
                     # gen_names.py.  The site browses the first and only
                     # searches the second.
                     self.name_origin[r["form"]] = (r.get("origin") or "").strip()
+                    if self.name_kind[r["form"]] == "loan":
+                        english = self.name_forms[r["form"]]
+                        self.loans[r["form"].lower()] = english
+                        for alt in r["EN"].split(";"):
+                            alt = alt.strip().lower()
+                            if alt:
+                                self.loans[alt] = english
 
     # -- root-level accessors -------------------------------------------------
 
@@ -388,6 +401,17 @@ class Tables:
         if english is not None:
             return self.form2name[english.lower()]
         return self.form2name.get(token.lower())
+
+    def loan_of(self, token):
+        """The English key for a sanctioned loan, or None.
+
+        Accepts the English ("meter") and the Pikotika form ("mitar"), as
+        name_of does.  Case is what separates the two registers: **mitar** the
+        metric unit is an ordinary lowercase word, Mitar the adaptation of
+        Michal is a capitalized name, and they are otherwise homographs.  The
+        caller is what enforces that -- see split_gloss_word.
+        """
+        return self.loans.get(token.lower())
 
 
 # ---------------------------------------------------------------------------
@@ -642,7 +666,8 @@ def parse_gloss(text, t, fail=None):
 def split_gloss_word(word, t, words, start, fail):
     """One hyphenated gloss word as its list of glosses, or None."""
     parts = []
-    for n, piece in enumerate(word.split("-")):
+    pieces = word.split("-")
+    for n, piece in enumerate(pieces):
         if piece.isdigit():
             if piece in DIGITS:
                 parts.append(DIGITS[piece])
@@ -653,6 +678,25 @@ def split_gloss_word(word, t, words, start, fail):
         gloss = t.root_gloss(piece)
         if gloss is not None:
             parts.append(gloss)
+            continue
+        # A loan is an ordinary lowercase word (names.tsv `kind` = loan), so
+        # it can never pass name_wins' capital test, and **kirumitar** had no
+        # way to be written in gloss notation at all.  Take it here, ahead of
+        # the name branch, so lowercase **mitar** reaches the metric unit
+        # rather than Mitar, the adaptation of Michal, which it collides with.
+        #
+        # Only inside a hyphenated word, which is the one place the notation is
+        # certain: a Latin compound is written solid, so a hyphen can only be
+        # gloss.  A loan standing alone stays what it was -- Latin to the
+        # converter, and already a lexicon entry via gen_lexicon.name_entries --
+        # so this claims the compound case and disturbs nothing else.
+        #
+        # A loan opening a sentence is capitalized like any other word and so
+        # falls through to the name; write it mid-sentence, or spell the name
+        # out as **omo Mitar**, exactly as /topics/names/ prescribes.
+        loan = t.loan_of(piece)
+        if loan is not None and len(pieces) > 1 and not piece[:1].isupper():
+            parts.append(name_token(loan))
             continue
         # "Joe" by its English spelling, "Yo" by its Pikotika form
         name = t.name_of(piece)
@@ -964,9 +1008,12 @@ def english_match(words, t):
     if len(words) != 1:
         return []
     word = words[0]
-    if any(isinstance(g, tuple) for g in word):
+    # A bare name or numeral has no gloss entry, only its own English.  A
+    # compound that merely *contains* one still does, though -- **kirumitar**
+    # is thousand-meter -- so only an all-token word takes this path.
+    if all(isinstance(g, tuple) for g in word):
         return [literal(g) for g in word if is_name(g)]
-    gloss = "-".join(word)
+    gloss = render_gloss([word], t)
     hits = list(t.compound_by_gloss.get(gloss, []))
     if len(word) == 1 and gloss in t.gloss2root:
         root = t.gloss2root[gloss]

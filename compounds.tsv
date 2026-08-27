@@ -17,7 +17,7 @@ bye	sorry-go	People and society;Verbs	1	1
 goodbye	sorry-out-go	People and society;Verbs	1	1
 he; she; him; her; they (people); them (people)	this-person	Grammar and logic;People and society	1	1
 drive; travel by vehicle	vehicle-go	Verbs;Made things	1	1
-station	vehicle-place	Places, arts, appearance	1	1
+station; parking garage; parking lot	vehicle-place	Places, arts, appearance	1	1
 request; ask for	want-say	Verbs	1	1
 sea	big-water	Nature	1	2
 meal (a sitting); mealtime	food-time	Food;Time direction	1	2
@@ -123,6 +123,7 @@ in the past	before-time	Time direction	1
 grief	big-not-happy	Feelings	1	
 clock time; time of day	hour-say	Time direction	1	
 false; untrue; if (counterfactual)	not-true	Grammar and logic	1	
+local; local person	place-person	People and society;Places, arts, appearance	1	
 serene; relaxed; peaceful	small-happy	Feelings	1	
 second (of time)	small-part	Time direction	1	
 small talk; chat; Pikotika (the language)	small-say	People and society	1	
@@ -212,6 +213,7 @@ sixth (in a series); 6th	six-sequence	Quantity	3
 sand; gravel	small-stone	Nature;Material	3	
 sunny	sun-air	Nature;Qualities	3	
 tenth (in a series); 10th	ten-sequence	Quantity	3	
+kilometer	thousand-meter	Quantity;Space and direction	3	
 thousandth (in a series); 1000th	thousand-sequence	Quantity	3	
 third (in a series); 3rd	three-sequence	Quantity	3	
 calendar	time-page	Time direction;Made things	3	
@@ -222,6 +224,7 @@ proof; evidence; verify; confirm	try-true	Verbs;Grammar and logic	3
 experiment	try-work	Verbs	3	
 second (in a series); 2nd	two-sequence	Quantity	3	
 mountain	up-earth	Nature	3	
+stairs; staircase; ramp; way up	up-road	Space and direction;Made things	3	
 fog; mist	water-air	Nature	3	
 mud	water-earth	Nature	3	
 porridge; congee	water-grain	Food	3	
@@ -276,6 +279,7 @@ electronic map	electric-map	Made things	4
 telephone; phone; call	electric-say	Made things	4	
 television; watch TV	electric-see	Made things	4	
 lamp; electric light	electric-sun	Made things	4	
+escalator	electric-up-road	Made things;Space and direction	4	
 adventure trip; expedition	danger-come-go	Space and direction;Qualities	4	
 adventure	danger-play	Verbs;Qualities	4	
 adventurer	danger-play-person	People and society	4	
@@ -360,6 +364,7 @@ wait a while; wait around	time-remain	Verbs;Time direction	4
 practice; rehearse; rehearsal	try-learn	Verbs	4	
 win; prevail	up-become	Verbs	4	
 winner	up-become-person	People and society	4	
+auto shop; repair garage	vehicle-heal-place	Places, arts, appearance;Made things	4	
 ride; go by vehicle	vehicle-put	Verbs;Made things	4	
 glass (drinking vessel)	water-box	Made things	4	
 shore; coast; riverbank	water-edge	Nature;Space and direction	4	
@@ -410,3 +415,4 @@ junction; intersection; crossroads	road-join	Space and direction;Places, arts, a
 window	see-hole	Made things	5	
 pain; hurt; ache	sick-feel	Body and life	5	
 annoyance	small-anger	Feelings	5	
+elevator; lift	up-down-room	Made things;Space and direction	5	

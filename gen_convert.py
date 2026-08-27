@@ -58,7 +58,15 @@ def build(t):
         import csv
         for r in csv.DictReader(fh, **P.TSV):
             if r["form"]:
-                names.append([r["form"], r["EN"].strip()])
+                row = [r["form"], r["EN"].strip()]
+                # The sanctioned loan register rides in the same table and is
+                # told apart only by `kind`, which gloss parsing now needs (a
+                # loan is lowercase, so nameWins can never take it).  Carried
+                # as a third cell on the few rows that have it rather than on
+                # all 3,379, which are otherwise pairs.
+                if (r.get("kind") or "").strip() == "loan":
+                    row.append("loan")
+                names.append(row)
 
     return {
         "roots": roots,

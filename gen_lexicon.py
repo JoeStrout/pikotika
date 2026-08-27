@@ -198,8 +198,21 @@ def check_compounds(t):
     point" and "minute".  That is what a root's `covers` column is for, and a
     sense recorded in the wrong table is a sense the root's own entry does not
     show."""
-    bad = [gloss for gloss in t.compound_by_gloss
-           if len(t.gloss_roots(gloss) or ()) < 2]
+    bad = []
+    for gloss in t.compound_by_gloss:
+        roots = t.gloss_roots(gloss)
+        if roots is None:
+            # Not roots all the way through.  A sanctioned loan may be one of
+            # a compound's components -- **kirumitar** is thousand-meter --
+            # and counts as one for this rule, though gloss_roots has nothing
+            # to say about it.  A piece that is neither root nor loan is a
+            # table error, and gen_tables' parse_or_die is what reports that.
+            pieces = gloss.split("-")
+            if not all(t.root_gloss(x) or t.loan_of(x) for x in pieces):
+                continue
+            roots = pieces
+        if len(roots) < 2:
+            bad.append(gloss)
     if bad:
         raise SystemExit(
             "gen_lexicon: compounds.tsv row is a single root, not a compound: "
