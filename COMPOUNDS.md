@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-728 terms
+751 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -20,6 +20,7 @@
 | 9th | nine-sequence | noksorten | 9序 |
 | abroad | out-country | eksenasyon | 外国 |
 | ache | sick-feel | marasenti | 病心 |
+| act on what one knows | know-make | sapevake | 知作 |
 | actually | in-true | inves | 内真 |
 | adore | big-like | mekakusta | 大愛 |
 | adventure | danger-play | timoyu | 危玩 |
@@ -41,6 +42,8 @@
 | anticipate | not-surprise | nonsorpe | 不奇 |
 | anything else | other-thing | arkosa | 別物 |
 | anyway | other-about | artopi | 別件 |
+| apply knowledge | know-make | sapevake | 知作 |
+| aptitude | learn-can | imparkan | 学能 |
 | argue | say-fight | tikapatar | 言争 |
 | army | fight-group | patarmen | 争众 |
 | arrange | before-make | yervake | 前作 |
@@ -92,6 +95,7 @@
 | bread | grain-food | risokomi | 米食 |
 | break | not-work-time | nonopustempo | 不力时 |
 | breakfast | up-sun-food | suryankomi | 上日食 |
+| bright | fast-see | verosvite | 早見 |
 | bring | have-come | teneveni | 有来 |
 | brother | same-parent-man | sampariviro | 同亲男 |
 | brown | earth-color | terakoror | 土色 |
@@ -127,6 +131,7 @@
 | cinema | picture-home | piturkase | 画户 |
 | circle | round-line | rotunrine | 丸糸 |
 | cleaner | clean-person | puruomo | 清人 |
+| clever | fast-see | verosvite | 早見 |
 | clock time | hour-say | oratika | 刻言 |
 | cloud | rain-air | ruvavento | 雨风 |
 | cloudy | rain-air | ruvavento | 雨风 |
@@ -194,6 +199,7 @@
 | ellipse | long-round | ronkarotun | 长丸 |
 | elsewhere | other-place | arroko | 別所 |
 | enemy | not-friend | nonami | 不朋 |
+| erudition | many-know | mursape | 多知 |
 | escalator | electric-up-road | vortosurmoto | 電上方 |
 | essential | heavy-necessary | pesaneses | 重要 |
 | evening | down-sun | tunyan | 下日 |
@@ -213,6 +219,7 @@
 | experience | try-know | tentarsape | 試知 |
 | experienced | try-know | tentarsape | 試知 |
 | experiment | try-work | tentaropus | 試力 |
+| expert | know-make-person | sapevakeomo | 知作人 |
 | eye | see-part | viteparte | 見分 |
 | facial expression | feel-picture | sentipitur | 心画 |
 | fall | fruit-time | pomotempo | 果时 |
@@ -317,6 +324,8 @@
 | instruct | learn-give | impartonar | 学与 |
 | instructor | learn-give-person | impartonaromo | 学与人 |
 | insufficient | not-all | nonpan | 不全 |
+| intelligence | learn-can | imparkan | 学能 |
+| intelligent | learn-can | imparkan | 学能 |
 | internet | electric-join | vortoyunta | 電合 |
 | intersection | road-join | motoyunta | 方合 |
 | journey | come-go | veniire | 来行 |
@@ -327,12 +336,15 @@
 | kind (good-hearted) | good-feel | ponasenti | 好心 |
 | kindness | good-feel | ponasenti | 好心 |
 | knife (knife or scissors) | break-tool | rompeuter | 切工 |
+| know-how | make-know | vakesape | 作知 |
+| knowledgeable | many-know | mursape | 多知 |
 | lamb | small-milk-animal-meat | pikoratenpestekarne | 小乳匹肉 |
 | lamp | electric-sun | vortoyan | 電日 |
 | language | say-manner | tikamoto | 言方 |
 | last | finish-sequence | vinorten | 閉序 |
 | laugh | big-happy-mouth | mekakontenpuka | 大楽口 |
 | leap | leg-up-go | kampasurire | 足上行 |
+| learned | many-know | mursape | 多知 |
 | lease | interval-buy | turankompar | 間買 |
 | leave (depart) | out-go | eksire | 外行 |
 | lemon | not-sweet-yellow-fruit | nontukeyoropomo | 不甘黄果 |
@@ -451,7 +463,9 @@
 | porridge | water-grain | akuriso | 水米 |
 | potato | earth-grain | terariso | 土米 |
 | poultry | bird-meat | aviskarne | 鳥肉 |
+| practical knowledge | make-know | vakesape | 作知 |
 | practice | try-learn | tentarimpar | 試学 |
+| practitioner | know-make-person | sapevakeomo | 知作人 |
 | preceding | before-sequence | yerorten | 前序 |
 | prepare | before-make | yervake | 前作 |
 | prepared | before-finish | yervin | 前閉 |
@@ -473,6 +487,7 @@
 | quarrel | say-fight | tikapatar | 言争 |
 | question | what-say | kertika | 何言 |
 | queue | person-sequence | omoorten | 人序 |
+| quick-witted | fast-see | verosvite | 早見 |
 | quiet | small-sound | pikooti | 小耳 |
 | quiz | know-try | sapetentar | 知試 |
 | rage | big-anger | mekaraye | 大怒 |
@@ -529,6 +544,7 @@
 | roster | name-sequence | nomenorten | 名序 |
 | rug | earth-cloth | teraropa | 土衣 |
 | sad | not-happy | nonkonten | 不楽 |
+| sage | good-think-person | ponapensaomo | 好思人 |
 | sake | white-grain-fire-water | ankarisowoaku | 白米火水 |
 | sand | small-stone | pikorapis | 小岩 |
 | sane | heal-think | sanapensa | 医思 |
@@ -545,6 +561,7 @@
 | second (of time) | small-part | pikoparte | 小分 |
 | see you later | after-meet | tarsarve | 后会 |
 | seek | try-see | tentarvite | 試見 |
+| sensible | good-think | ponapensa | 好思 |
 | serene | small-happy | pikokonten | 小楽 |
 | servant | help-person | serviomo | 助人 |
 | settle | choose-finish | erikevin | 选閉 |
@@ -568,6 +585,7 @@
 | slow | not-fast | nonveros | 不早 |
 | slowly | not-fast | nonveros | 不早 |
 | small talk | small-say | pikotika | 小言 |
+| smart | fast-see | verosvite | 早見 |
 | smell | air-taste | ventosapor | 风味 |
 | smile | happy-mouth | kontenpuka | 楽口 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
@@ -599,6 +617,8 @@
 | storm | big-rain | mekaruva | 大雨 |
 | story | say-thing | tikakosa | 言物 |
 | storyteller | say-thing-person | tikakosaomo | 言物人 |
+| strength | body-can | korpokan | 体能 |
+| strong (physically) | body-can | korpokan | 体能 |
 | strong wind | big-air | mekavento | 大风 |
 | stubborn | hard-head | sorintesta | 硬头 |
 | study again | again-learn | repeimpar | 又学 |
@@ -725,6 +745,9 @@
 | wine | fruit-fire-water | pomowoaku | 果火水 |
 | winner | up-become-person | surtivenomo | 上成人 |
 | winter | cold-time | rikustempo | 冷时 |
+| wisdom | good-think | ponapensa | 好思 |
+| wise | good-think | ponapensa | 好思 |
+| wise person | good-think-person | ponapensaomo | 好思人 |
 | work day | work-sun | opusyan | 力日 |
 | writer | write-person | kitaomo | 写人 |
 | writing (text) | write-say | kitatika | 写言 |

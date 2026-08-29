@@ -174,6 +174,7 @@ day:
 | **push / pull** | nothing | *pull* is the single most common instruction on a door.  One root with both senses (direction supplied by **ver**/**vons**) may cover it |
 | **safe / protect** | *not-fear* | 'safe' as a state is reachable; 'protect, guard, shelter, insurance' as an act is not |
 | **clear** | ??? | useful for description, as well as for "is that clear?", and weather; not-clear could also mean cloudy |
+| strong / strength | *body-can* **korpokan**; **meka** *intense* for wind, coffee, opinions | considered 2026-08-29 and declined -- it fails the two-part test above, since **korpokan** reaches physical strength in three syllables and **meka** already covers the rest (**mekavento** 'gale').  The scored corpora ask for *strong* twice in ~1,600 utterances (s092 'The wind is strong', t193 'The old one was stronger'), both rendered with a degree word plus a head and both scored `ok`, so the need has not been observed.  A `power` root did exist and survived the first trim as a building block -- *line-power* was the definition of `electric` -- and its structural jobs now belong to **vorto**, **kan** and **meka**, so re-adding it would recreate a head whose dependents have other parents.  What it would mainly unlock is push / pull, which the row above serves better and more directly |
 
 ### Whole domains with no coverage
 

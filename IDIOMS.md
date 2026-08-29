@@ -63,6 +63,7 @@ list short.
 | Take care.  Safe travels. | good go | **Pona ire.** | 好 行. |
 | Have fun.  Enjoy yourself. | good play | **Pona yu.** | 好 玩. |
 | Good night. | good no-sun | **Pona nemyan.** | 好 无日. |
+| Get well.  Get well soon. | good heal | **Pona sana.** | 好 医. |
 | After you. | you before | **Tu yer.** | 尔 前. |
 | I'm just looking. | I RI only see | **Eko ri son vite.** | 己 ⊢ 只 見. |
 | It's on me.  I'll pay. | I RI buy | **Eko ri kompar.** | 己 ⊢ 買. |

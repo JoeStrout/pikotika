@@ -36,6 +36,8 @@ Hello	happy-meet.	Kontensarve.	楽会.	1	pleasantries
 Take care (parting).	good go.	Pona ire.	好 行.	1	pleasantries
 Have fun (parting).	good play.	Pona yu.	好 玩.	3	pleasantries
 Good night.	good no-sun.	Pona nemyan.	好 无日.	2	pleasantries
+Get well.	good heal.	Pona sana.	好 医.	4	pleasantries;health
+I hope you're better soon.	I RI want A you RI soon more good.	Eko ri vori a tu ri veros mas pona.	己 ⊢ 求 ⇒ 尔 ⊢ 早 更 好.	2	pleasantries;health
 Sorry/oops/excuse me.	sorry.	Perton.	悔.	1	pleasantries;feelings
 Goodbye.	sorry-out-go.	Pertoneksire.	悔外行.	1	pleasantries
 I'm good.	I RI good.	Eko ri pona.	己 ⊢ 好.	1	pleasantries
@@ -152,6 +154,15 @@ I don't know.	I RI not know.	Eko ri non sape.	己 ⊢ 不 知.	3	pleasantries
 Ask inside the station.	please want-say in vehicle-place.	Pam voritika in karoroko.	乞 求言 内 车所.	1	travel
 Thank you very much!	big thank!	Meka mersi!	大 恩!	2	pleasantries
 Good luck!	good-if!	Ponapos!	好可!	4	pleasantries
+Practice, and you'll get it.	try-learn, and you RI understand.	Tentarimpar, kum tu ri vite.	試学, 并 尔 ⊢ 見.	4	pleasantries
+Little by little.	small after small.	Piko tar piko.	小 后 小.	1	pleasantries
+You're close.	you RI near.	Tu ri nir.	尔 ⊢ 近.	2	pleasantries
+You can do it.	you RI can do A this.	Tu ri kan vake a tis.	尔 ⊢ 能 作 ⇒ 此.	2	pleasantries
+You work well.	you RI good work.	Tu ri pona opus.	尔 ⊢ 好 力.	2	pleasantries
+Please don't stop trying.	please not stop try.	Pam non sista tentar.	乞 不 止 試.	4	pleasantries
+Please try again.	please again try.	Pam repe tentar.	乞 又 試.	3	pleasantries
+Please don't worry.	please not fear.	Pam non timo.	乞 不 危.	4	pleasantries
+It becomes easier.	this RI become more not-hard.	Tis ri tiven mas nonsorin.	此 ⊢ 成 更 不硬.	4	pleasantries
 I'm not tired.	I RI not tired.	Eko ri non kansa.	己 ⊢ 不 疲.	5	health;family;feelings
 It's late.	time RI after.	Tempo ri tar.	时 ⊢ 后.	1	time
 You have school tomorrow.	sun-after, you RI go to learn-place.	Yantar, tu ri ire ver imparroko.	日后, 尔 ⊢ 行 向 学所.	4	family;dates
@@ -219,6 +230,7 @@ Already?	big before, what?	Meka yer, ker?	大 前, 何?	1	smalltalk
 Time goes fast.	time RI fast go.	Tempo ri veros ire.	时 ⊢ 早 行.	2	time;smalltalk
 Listen — I'll be in your city next month.	please hear: 1 month after, I RI in you city.	Pam oti: 1 mese tar, eko ri in tu sitas.	乞 耳: 1 月 后, 己 ⊢ 内 尔 市.	4	dates;travel
 Can we meet?	I-group RI can meet, what?	Ekomen ri kan sarve, ker?	己众 ⊢ 能 会, 何?	2	meeting
+Can we go to the park sometime?	I-group RI can go to green-place in after time, what?	Ekomen ri kan ire ver verteroko in tar tempo, ker?	己众 ⊢ 能 行 向 緑所 内 后 时, 何?	3	smalltalk
 Of course!	true!	Ves!	真!	1	pleasantries
 Stay with us.	please remain and I-group.	Pam sista kum ekomen.	乞 止 并 己众.	4	lodging
 We have room.	I-group RI have A room.	Ekomen ri tene a kamar.	己众 ⊢ 有 ⇒ 室.	3	lodging

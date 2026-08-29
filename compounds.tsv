@@ -33,6 +33,7 @@ prepare; get ready; arrange	before-make	Verbs	2	2
 love; adore; be in love with	big-like	Feelings;Verbs	2	2
 trip; journey	come-go	Space and direction	2	2
 thirsty	drink-want	Body and life;Food	2	2
+smart; clever; quick-witted; bright	fast-see	Qualities	2	
 cook (person)	food-make-person	People and society;Food	2	2
 fetch; go and get	get-go	Verbs	2	2
 beautiful; pretty; good-looking; beauty	good-see	Qualities;Places, arts, appearance	2	2
@@ -88,6 +89,10 @@ everything	every-thing	Grammar and logic	3	3
 always	every-time	Grammar and logic;Time direction	3	3
 Tuesday	fire-weekday	Time direction	3	3
 tan; beige	grain-color	Color	3	3
+apply knowledge; act on what one knows	know-make	Verbs	3	
+practitioner; expert	know-make-person	People and society;Verbs	3	
+know-how; practical knowledge	make-know	Verbs;Qualities	3	
+knowledgeable; learned; erudition	many-know	Verbs;Qualities	3	
 Friday	metal-weekday	Time direction	3	3
 payment card; bank card	money-card	Made things;People and society	3	
 bank	money-home	Places, arts, appearance;People and society	3	
@@ -293,6 +298,8 @@ fighter; soldier	fight-person	People and society	4
 quadrilateral; rectangle; square	four-bend	Shape	4	
 luggage; suitcase; baggage	go-box	Made things	4	4
 lucky; good luck	good-if	Qualities	4	
+wise; sensible; wisdom	good-think	Qualities	4	
+sage; wise person	good-think-person	People and society;Qualities	4	
 smile	happy-mouth	Feelings;Body and life	4	5
 nut	hard-fruit	Food	4	
 stubborn	hard-head	Qualities;People and society	4	
@@ -311,6 +318,7 @@ spicy	hot-taste	Food;Qualities	4	4
 chili pepper	hot-taste-thing	Food	4	
 hire; lease; rent	interval-buy	Verbs;People and society	4	
 lend; loan	interval-give	Verbs;People and society	4	
+intelligence; aptitude; intelligent	learn-can	Qualities	4	
 teach; instruct	learn-give	Verbs	4	
 teacher; instructor	learn-give-person	People and society;Verbs	4	
 school	learn-place	Places, arts, appearance	4	4
@@ -380,6 +388,7 @@ astonishment	big-surprise	Feelings	5
 egg	bird-child	Food;Nature	5	5
 flock	bird-group	Nature	5	5
 poultry; chicken (meat)	bird-meat	Food	5	5
+strength; strong (physically)	body-can	Qualities;Body and life	5	
 allergy	body-not-agree	Body and life	5	
 sport; athletics	body-play	Verbs;Body and life	5	5
 knife (knife or scissors)	break-tool	Made things	5	5
