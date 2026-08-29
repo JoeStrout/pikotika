@@ -116,6 +116,7 @@ autumn; fall	fruit-time	Time direction	1	4
 spring (season)	plant-time	Time direction	1	4
 number; numeral; digit	amount-say	Quantity	3	4
 summer	hot-time	Time direction	3	4
+internet; network; online	electric-join	Made things	4	
 should	if-good	Grammar and logic	4	4
 winter	cold-time	Time direction	4	4
 in the future	after-time	Time direction	1	4
@@ -167,6 +168,7 @@ vegetables	green-food	Food	3
 park	green-place	Places, arts, appearance;Nature	3	
 green light (permission); go-ahead	green-say	Grammar and logic	3	
 cat; pet	home-animal	Nature	3	4
+floor (of a building); storey	home-sequence	Places, arts, appearance;Space and direction	3	
 hundredth (in a series); 100th	hundred-sequence	Quantity	3	
 percent; per cent; %	in-hundred	Quantity	3	
 remember; retain; keep in mind; memory	know-have	Verbs	3	
@@ -349,6 +351,7 @@ circle; ring; hoop	round-line	Shape	4
 tie; draw (in a contest)	same-become	Verbs	4	
 argue; quarrel	say-fight	Verbs;People and society	4	
 sort; arrange; put in order	sequence-put	Verbs	4	
+blanket; bedding	sleep-cloth	Made things	4	
 hotel	sleep-home	Places, arts, appearance	4	
 goat; sheep	small-milk-animal	Nature	4	
 lamb	small-milk-animal-meat	Food	4	
@@ -380,7 +383,13 @@ poultry; chicken (meat)	bird-meat	Food	5	5
 allergy	body-not-agree	Body and life	5	
 sport; athletics	body-play	Verbs;Body and life	5	5
 knife (knife or scissors)	break-tool	Made things	5	5
+bath; bathtub	clean-box	Made things	5	
+towel; washcloth	clean-cloth	Made things	5	
+cleaner; housekeeper	clean-person	People and society	5	
+shower; bathe	clean-rain	Made things;Body and life	5	
+soap; shampoo; detergent	clean-thing	Made things	5	
 border (of a country); frontier	country-edge	People and society;Space and direction	5	
+passport; ID; identity document	country-page	People and society;Made things	5	
 door handle	door-hand	Made things	5	
 evening; afternoon	down-sun	Time direction	5	5
 voyage; long journey	far-come-go	Space and direction	5	
@@ -415,4 +424,5 @@ junction; intersection; crossroads	road-join	Space and direction;Places, arts, a
 window	see-hole	Made things	5	5
 pain; hurt; ache	sick-feel	Body and life	4	4
 annoyance	small-anger	Feelings	5	5
+toilet paper	toilet-page	Made things	5	
 elevator; lift	up-down-room	Made things;Space and direction	5	5

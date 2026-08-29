@@ -107,6 +107,7 @@
       form2name: {},    // form, lowercased -> its canonical English
       nameEnglish: {},  // form -> every English name it answers to
       loans: {},        // lowercase token -> the English key `names` renders through
+      loanForms: {},    // lowercase *form* only -- see nameAt
       corpus: payload.corpus || []
     };
 
@@ -140,6 +141,7 @@
       /* The loan register, reachable from gloss notation -- see loanOf. */
       if (row[2] === 'loan') {
         t.loans[form.toLowerCase()] = canonical;
+        t.loanForms[form.toLowerCase()] = canonical;
         english.split(';').forEach(function (one) {
           one = one.trim().toLowerCase();
           if (one) t.loans[one] = canonical;
@@ -324,6 +326,21 @@
   /* Split a solid Latin word into root forms.  `raw` is the word as written,
      same length as `form`, so a name's capitalization still counts inside a
      compound. */
+
+  /* The names.tsv entry a Latin token stands for, or null.
+
+     A proper name is capitalized in every notation, so it has to match exactly
+     -- that is the whole of what separates Mira the name from **mira**.  A loan
+     is an ordinary lowercase word, so it takes a capital at the start of a
+     sentence like any other word, and folding the case down is what lets
+     **Wivi ri...** parse.  Only down, never up: a lowercase token still cannot
+     stand for a capitalized proper name. */
+  function nameAt(token, t) {
+    if (has(t.nameForms, token)) return t.nameForms[token];
+    var low = token.toLowerCase();
+    if (low !== token && has(t.loanForms, low)) return t.loanForms[low];
+    return null;
+  }
   function segment(form, t, raw) {
     if (raw === undefined) raw = form;
     var n = form.length;
@@ -353,9 +370,9 @@
         }
         /* A name inside a compound is only recoverable because the reader knows
            the name, so names are part of the segmentation lexicon. */
-        var rawPiece = raw.slice(j, i);
-        if (has(t.nameForms, rawPiece)) {
-          best[i] = head.concat([name(t.nameForms[rawPiece])]);
+        var pieceName = nameAt(raw.slice(j, i), t);
+        if (pieceName !== null) {
+          best[i] = head.concat([name(pieceName)]);
           break;
         }
         /* A multi-digit number keeps its digits inline. */
@@ -472,7 +489,7 @@
       }
       /* An outright win takes the name; otherwise the roots get first refusal
          and the name catches what they cannot spell. */
-      var english = has(t.nameForms, word) ? t.nameForms[word] : null;
+      var english = nameAt(word, t);
       var parts = null;
       if (english === null || start) parts = segment(low, t, word);
       if (parts === null && english !== null) parts = [name(english)];

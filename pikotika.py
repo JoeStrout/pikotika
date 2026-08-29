@@ -227,6 +227,11 @@ class Tables:
         # token that names the loan -- its English and its own form -- and
         # valued with the one English key self.names renders back through.
         self.loans = {}           # lowercase token -> english key in self.names
+        # ...and the same register keyed by form alone.  `loans` above answers
+        # to a loan's English too, which is right for gloss notation and wrong
+        # for parsing Latin: **Meter** must not resolve just because 'meter'
+        # names the loan whose form is **mitar**.
+        self.loan_forms = {}      # lowercase form -> english key in self.names
         self.compound_cats = {}   # compound gloss -> [category, ...]
         self.name_cats = {}       # name/loan form -> [category, ...]
         self.name_origin = {}     # form -> "" (curated) or "cmudict" (poured)
@@ -340,6 +345,7 @@ class Tables:
                     if self.name_kind[r["form"]] == "loan":
                         english = self.name_forms[r["form"]]
                         self.loans[r["form"].lower()] = english
+                        self.loan_forms[r["form"].lower()] = english
                         for alt in r["EN"].split(";"):
                             alt = alt.strip().lower()
                             if alt:
@@ -742,8 +748,9 @@ def segment(form, t, raw=None):
                 break
             # a name inside a compound is only recoverable because the reader
             # knows the name -- so names are part of the segmentation lexicon
-            if raw[j:i] in t.name_forms:
-                best[i] = head + [name_token(t.name_forms[raw[j:i]])]
+            piece_name = name_at(raw[j:i], t)
+            if piece_name is not None:
+                best[i] = head + [name_token(piece_name)]
                 break
             # a multi-digit number keeps its digits inline (see DIGITS)
             if piece.isdigit() and piece not in DIGITS and \
@@ -751,6 +758,22 @@ def segment(form, t, raw=None):
                 best[i] = head + [num_token(piece)]
                 break
     return best[n]
+
+
+def name_at(token, t):
+    """The names.tsv entry a Latin token stands for, or None.
+
+    A proper name is capitalized in every notation, so it has to match exactly
+    -- that is the whole of what separates Mira the name from **mira**.  A loan
+    is an ordinary lowercase word, so it takes a capital at the start of a
+    sentence like any other word, and folding the case down is what lets
+    **Wivi ri...** parse.  Only down, never up: a lowercase token still cannot
+    stand for a capitalized proper name.
+    """
+    if token in t.name_forms:
+        return t.name_forms[token]
+    low = token.lower()
+    return t.loan_forms.get(low) if low != token else None
 
 
 def name_wins(token, start, t):
@@ -791,7 +814,7 @@ def parse_latin(text, t, fail=None):
             continue
         # an outright win takes the name; otherwise the roots get first refusal
         # and the name catches what they cannot spell
-        name = t.name_forms.get(word)
+        name = name_at(word, t)
         parts = None
         if name is None or start:
             parts = segment(low, t, word)

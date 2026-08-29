@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-706 terms
+728 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -65,17 +65,22 @@
 | banana | long-yellow-fruit | ronkayoropomo | 长黄果 |
 | bank | money-home | monikase | 贝户 |
 | bank card | money-card | monikarta | 贝片 |
+| bath | clean-box | puruvaso | 清皿 |
+| bathe | clean-rain | pururuva | 清雨 |
+| bathtub | clean-box | puruvaso | 清皿 |
 | be defeated | not-up-become | nonsurtiven | 不上成 |
 | be dressed in | cloth-have | ropatene | 衣有 |
 | be in love with | big-like | mekakusta | 大愛 |
 | beach | big-water-edge | mekaakurante | 大水边 |
 | beautiful | good-see | ponavite | 好見 |
 | beauty | good-see | ponavite | 好見 |
+| bedding | sleep-cloth | tormiropa | 床衣 |
 | beef | milk-animal-meat | ratenpestekarne | 乳匹肉 |
 | beer (any grain alcohol) | grain-fire-water | risowoaku | 米火水 |
 | beige | grain-color | risokoror | 米色 |
 | bicycle | leg-vehicle | kampakaro | 足车 |
 | black market | black-buy-place | nerokomparroko | 黒買所 |
+| blanket | sleep-cloth | tormiropa | 床衣 |
 | blunt | straight-say | retotika | 直言 |
 | boat | water-vehicle | akukaro | 水车 |
 | book | many-page | murkarta | 多片 |
@@ -121,6 +126,7 @@
 | choice | choose-thing | erikekosa | 选物 |
 | cinema | picture-home | piturkase | 画户 |
 | circle | round-line | rotunrine | 丸糸 |
+| cleaner | clean-person | puruomo | 清人 |
 | clock time | hour-say | oratika | 刻言 |
 | cloud | rain-air | ruvavento | 雨风 |
 | cloudy | rain-air | ruvavento | 雨风 |
@@ -161,6 +167,7 @@
 | debt | after-money | tarmoni | 后贝 |
 | decision | choose-finish | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
+| detergent | clean-thing | purukosa | 清物 |
 | digit | amount-say | mesurtika | 寸言 |
 | directory map | help-map | servimapa | 助図 |
 | discover | new-see | novavite | 初見 |
@@ -227,6 +234,7 @@
 | flatterer | sweet-mouth | tukepuka | 甘口 |
 | flight | air-go | ventoire | 风行 |
 | flock | bird-group | avismen | 鳥众 |
+| floor (of a building) | home-sequence | kaseorten | 户序 |
 | fly | air-go | ventoire | 风行 |
 | fog | water-air | akuvento | 水风 |
 | food supplies | have-food | tenekomi | 有食 |
@@ -287,12 +295,15 @@
 | hoop | round-line | rotunrine | 丸糸 |
 | horse | vehicle-animal | karopeste | 车匹 |
 | hotel | sleep-home | tormikase | 床户 |
+| housekeeper | clean-person | puruomo | 清人 |
 | how | what-manner | kermoto | 何方 |
 | hundredth (in a series) | hundred-sequence | katonorten | 百序 |
 | hungry | food-want | komivori | 食求 |
 | hurt | sick-feel | marasenti | 病心 |
 | ice cream | cold-milk | rikusraten | 冷乳 |
 | iced tea | cold-plant-water | rikusarpoaku | 冷木水 |
+| ID | country-page | nasyonkarta | 国片 |
+| identity document | country-page | nasyonkarta | 国片 |
 | if (counterfactual) | not-true | nonves | 不真 |
 | illegal | not-law | nonreke | 不法 |
 | important | heavy-necessary | pesaneses | 重要 |
@@ -306,6 +317,7 @@
 | instruct | learn-give | impartonar | 学与 |
 | instructor | learn-give-person | impartonaromo | 学与人 |
 | insufficient | not-all | nonpan | 不全 |
+| internet | electric-join | vortoyunta | 電合 |
 | intersection | road-join | motoyunta | 方合 |
 | journey | come-go | veniire | 来行 |
 | jump | leg-up-go | kampasurire | 足上行 |
@@ -377,6 +389,7 @@
 | museum | art-home | artikase | 芸户 |
 | musical instrument | music-tool | musiuter | 曲工 |
 | narrator | say-thing-person | tikakosaomo | 言物人 |
+| network | electric-join | vortoyunta | 電合 |
 | never | no-time | nemtempo | 无时 |
 | next | after-sequence | tarorten | 后序 |
 | night | no-sun | nemyan | 无日 |
@@ -400,6 +413,7 @@
 | on that note | near-about | nirtopi | 近件 |
 | on what day of the week | what-weekday | keryom | 何曜 |
 | on what occasion | what-time | kertempo | 何时 |
+| online | electric-join | vortoyunta | 電合 |
 | option | choose-thing | erikekosa | 选物 |
 | orange | red-yellow | rusyoro | 赤黄 |
 | orientation map | help-map | servimapa | 助図 |
@@ -413,6 +427,7 @@
 | parking garage | vehicle-place | karoroko | 车所 |
 | parking lot | vehicle-place | karoroko | 车所 |
 | party (celebration) | play-group | yumen | 玩众 |
+| passport | country-page | nasyonkarta | 国片 |
 | password | key-say | yavetika | 錠言 |
 | pay attention | think-give | pensatonar | 思与 |
 | payment card | money-card | monikarta | 贝片 |
@@ -535,6 +550,7 @@
 | settle | choose-finish | erikevin | 选閉 |
 | seventh (in a series) | seven-sequence | sensorten | 7序 |
 | shame | me-bad-feel | ekomarumsenti | 己悪心 |
+| shampoo | clean-thing | purukosa | 清物 |
 | she | this-person | tisomo | 此人 |
 | sheep | small-milk-animal | pikoratenpeste | 小乳匹 |
 | ship | water-vehicle | akukaro | 水车 |
@@ -543,6 +559,7 @@
 | shopping bag | buy-box | komparvaso | 買皿 |
 | shore | water-edge | akurante | 水边 |
 | should | if-good | pospona | 可好 |
+| shower | clean-rain | pururuva | 清雨 |
 | significant | heavy-necessary | pesaneses | 重要 |
 | silent | close-mouth | vinpuka | 閉口 |
 | similarly | same-manner | sammoto | 同方 |
@@ -555,6 +572,7 @@
 | smile | happy-mouth | kontenpuka | 楽口 |
 | smooth talker | sweet-mouth | tukepuka | 甘口 |
 | snow | cold-rain | rikusruva | 冷雨 |
+| soap | clean-thing | purukosa | 清物 |
 | soft (sound) | small-sound | pikooti | 小耳 |
 | soldier | fight-person | pataromo | 争人 |
 | someone else | other-person | aromo | 別人 |
@@ -577,6 +595,7 @@
 | station | vehicle-place | karoroko | 车所 |
 | step (in a procedure) | sequence-part | ortenparte | 序分 |
 | stores | have-food | tenekomi | 有食 |
+| storey | home-sequence | kaseorten | 户序 |
 | storm | big-rain | mekaruva | 大雨 |
 | story | say-thing | tikakosa | 言物 |
 | storyteller | say-thing-person | tikakosaomo | 言物人 |
@@ -628,12 +647,14 @@
 | time off | not-work-time | nonopustempo | 不力时 |
 | timetable | time-sequence | tempoorten | 时序 |
 | today | this-sun | tisyan | 此日 |
+| toilet paper | toilet-page | panyukarta | 便片 |
 | tomato | red-fruit | ruspomo | 赤果 |
 | tomato sauce | red-food | ruskomi | 赤食 |
 | tomorrow | sun-after | yantar | 日后 |
 | tongue (language) | say-manner | tikamoto | 言方 |
 | tonight | this-no-sun | tisnemyan | 此无日 |
 | too [much] | up-degree | surmesur | 上寸 |
+| towel | clean-cloth | pururopa | 清衣 |
 | toy | play-thing | yukosa | 玩物 |
 | train | metal-line-vehicle | metarrinekaro | 金糸车 |
 | transit | line-vehicle | rinekaro | 糸车 |
@@ -673,6 +694,7 @@
 | war | big-fight | mekapatar | 大争 |
 | warn | danger-say | timotika | 危言 |
 | warning | danger-say | timotika | 危言 |
+| washcloth | clean-cloth | pururopa | 清衣 |
 | watch out | danger-see | timovite | 危見 |
 | watch TV | electric-see | vortovite | 電見 |
 | way up | up-road | surmoto | 上方 |

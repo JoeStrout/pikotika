@@ -129,10 +129,12 @@ NUMBER_VOICE = "af_heart"
 # scene needs a second woman; listen to her -o words before trusting her.
 SPEAKER_VOICES = {
     "Aras": "af_bella",
+    "Rena": "bf_emma",
     "Meri": "af_sarah",
     "Komparomo": "am_adam",
     "Tikakosaomo": "bm_lewis",
-    "Rokoomo": "bm_george"
+    "Rokoomo": "bm_george",
+    "Serviomo": "am_michael",
 }
 
 SPEED = 1.0
