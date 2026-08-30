@@ -244,23 +244,23 @@
 ## 油白米
 ### oil-white-grain
 ===
-# Who is the doctor?
+# And forty back.
 ---
-# Keromo ri sanaomo?
-## 何人 ⊢ 医人?
-### what-person RI heal-person?
+# Kum 40 retsemoni.
+## 并 40 反贝.
+### and 40 back-money.
 ===
-# It's less important than that one.
+# Is it spicy?
 ---
-# Tis ri nonmas pesaneses vons nontis.
-## 此 ⊢ 不更 重要 从 不此.
-### this RI not-more heavy-necessary than not-this.
+# Tis ri wosapor, ker?
+## 此 ⊢ 火味, 何?
+### this RI hot-taste, what?
 ===
-# Why?
+# It's raining.
 ---
-# Kerrason?
-## 何故?
-### what-reason?
+# Ri ruva.
+## ⊢ 雨.
+### RI rain.
 ===
 # bird
 ---
@@ -628,11 +628,11 @@
 ## 但 乞 来 内 7 刻, 并 己众 ⊢ 能 前 食.
 ### but please come in 7 hour, and I-group RI can before food.
 ===
-# If the train is late, please tell me.
+# I should go.
 ---
-# Pos metarrinekaro ri tar, tisrason pam tika ver eko.
-## 可 金糸车 ⊢ 后, 此故 乞 言 向 己.
-### if metal-line-vehicle RI after, this-reason please say to me.
+# Eko ri pospona ire.
+## 己 ⊢ 可好 行.
+### I RI if-good go.
 ===
 # Practice, and you'll get it.
 ---
@@ -652,8 +652,8 @@
 ## 己 ⊢ Aras.
 ### I RI Alice.
 ===
-# She's a happier person.
+# It's a tea shop that is green.
 ---
-# Tisomo ri mas konten omo.
-## 此人 ⊢ 更 楽 人.
-### this-person RI more happy person.
+# Tis ri verte arpoaku komparroko.
+## 此 ⊢ 緑 木水 買所.
+### this RI green plant-water buy-place.

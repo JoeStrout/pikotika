@@ -432,3 +432,4 @@ Shopkeeper: Thank you...  three dollars change.  Do you need a bag?	buy-person: 
 Alice: Yes please.	Alice: yes, please.	Aras: Si, pam.	Aras: 是, 乞.	1	money
 Shopkeeper: Here you go.  Please come again!	buy-person: this RI for you. please again come!	Komparomo: Tis ri por tu. Pam repe veni!	買人: 此 ⊢ 為 尔. 乞 又 来!	4	money
 Can I help you?	I RI can help A you, what?	Eko ri kan servi a tu, ker?	己 ⊢ 能 助 ⇒ 尔, 何?	4	pleasantries;smalltalk
+A Chinese person speaks Chinese.	China person RI say A Chinese.	Taina omo ri tika a Tainis.	Taina 人 ⊢ 言 ⇒ Tainis.	1	names

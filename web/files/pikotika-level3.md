@@ -190,23 +190,23 @@
 ## 风车所
 ### air-vehicle-place
 ===
-# I can go.
+# I see a small fish.
 ---
-# Eko ri kan ire.
-## 己 ⊢ 能 行.
-### I RI can go.
+# Eko ri vite a piko akupeste.
+## 己 ⊢ 見 ⇒ 小 水匹.
+### I RI see A small water-animal.
 ===
-# No, thank you.
+# This is for you.
 ---
-# Non, mersi.
-## 不, 恩.
-### not, thank.
+# Tis ri por tu.
+## 此 ⊢ 為 尔.
+### this RI for you.
 ===
-# I'm going.
+# It was.
 ---
-# Eko ri ire.
-## 己 ⊢ 行.
-### I RI go.
+# Ves.
+## 真.
+### true.
 ===
 # weekday
 ---
@@ -652,38 +652,38 @@
 ## 己众 ⊢ 行 向 己 男亲 户.
 ### I-group RI go to me man-parent home.
 ===
-# I prefer tea to coffee.
+# You're talking.
 ---
-# Eko ri mas kusta a arpoaku vons neropipe.
-## 己 ⊢ 更 愛 ⇒ 木水 从 黒飲.
-### I RI more like A plant-water than black-drink.
+# Tu ri tika.
+## 尔 ⊢ 言.
+### you RI say.
 ===
-# How are you?
+# Can you bring water for the child?
 ---
-# Tu ri pona, ker?
-## 尔 ⊢ 好, 何?
-### you RI good, what?
+# Tu ri kan teneveni a aku por nino, ker?
+## 尔 ⊢ 能 有来 ⇒ 水 為 子, 何?
+### you RI can have-come A water for child, what?
 ===
-# From now on, please tell me sooner.
+# The water is good.
 ---
-# Vons tistempo, pam mas veros tika ver eko.
-## 从 此时, 乞 更 早 言 向 己.
-### from this-time, please more fast say to me.
-===
-# How much are the bananas?
----
-# Ronkayoropomo ri ker moni?
-## 长黄果 ⊢ 何 贝?
-### long-yellow-fruit RI what money?
-===
-# I'm Alice.
----
-# Eko ri Aras.
-## 己 ⊢ Aras.
-### I RI Alice.
+# Aku ri pona.
+## 水 ⊢ 好.
+### water RI good.
 ===
 # I'm thirsty, but I don't want tea.
 ---
 # Eko ri pipevori, sets eko ri non vori a arpoaku.
 ## 己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.
 ### I RI drink-want, but I RI not want A plant-water.
+===
+# Please speak.
+---
+# Pam tika.
+## 乞 言.
+### please say.
+===
+# For a week.
+---
+# 1 senseyan turan.
+## 1 7日 間.
+### 1 seven-sun interval.

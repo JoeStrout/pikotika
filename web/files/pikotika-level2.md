@@ -376,11 +376,11 @@
 ## 中日
 ### middle-sun
 ===
-# I see.
+# Close your eyes...
 ---
-# Eko ri vite.
-## 己 ⊢ 見.
-### I RI see.
+# Pam vin a tu viteparte...
+## 乞 閉 ⇒ 尔 見分...
+### please close A you see-part...
 ===
 # Please come at seven.
 ---
@@ -688,11 +688,11 @@
 ## 30 小分 間.
 ### 30 small-part interval.
 ===
-# How are your children?
+# Big!
 ---
-# Tu nino ri kermoto?
-## 尔 子 ⊢ 何方?
-### you child RI what-manner?
+# Meka!
+## 大!
+### big!
 ===
 # Please speak.
 ---
@@ -706,17 +706,23 @@
 ## 此 ⊢ 木水.
 ### this RI plant-water.
 ===
+# Nice.
+---
+# Pona.
+## 好.
+### good.
+===
 # Goodbye.
 ---
 # Pertoneksire.
 ## 悔外行.
 ### sorry-out-go.
 ===
-# Here's two hundred.
+# Thank you.
 ---
-# Tis ri 200.
-## 此 ⊢ 200.
-### this RI 200.
+# Meka mersi.
+## 大 恩.
+### big thank.
 ===
 # I'm finished.
 ---

@@ -664,11 +664,11 @@
 ## 己 ⊢ 更 好 内 此时.
 ### I RI more good in this-time.
 ===
-# Is there a doctor among us?
+# Please bring me a menu.
 ---
-# Ri sanaomo mets ekomen, ker?
-## ⊢ 医人 中 己众, 何?
-### RI heal-person middle I-group, what?
+# Pam teneveni a komiorten ver eko.
+## 乞 有来 ⇒ 食序 向 己.
+### please have-come A food-sequence to me.
 ===
 # Nice to meet you.
 ---
@@ -682,14 +682,14 @@
 ## 好, 内真.
 ### good, in-true.
 ===
-# Unfortunately, the food supplies gave out before the end of winter.
+# Ten minutes.
 ---
-# Marumpos, rikustempovin yer, tenekomi ri vin.
-## 悪可, 冷时閉 前, 有食 ⊢ 閉.
-### bad-if, cold-time-finish before, have-food RI finish.
+# 10 parte turan.
+## 10 分 間.
+### 10 part interval.
 ===
-# Think about the future.
+# Nine in the morning.
 ---
-# Pam pensa a tartempo.
-## 乞 思 ⇒ 后时.
-### please think A after-time.
+# Suryan 9 ora.
+## 上日 9 刻.
+### up-sun 9 hour.

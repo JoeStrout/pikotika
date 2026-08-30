@@ -526,11 +526,11 @@
 ## 小言
 ### small-say
 ===
-# Are you two ready to order?
+# A Chinese person speaks Chinese.
 ---
-# Pits tu ri yervin, ker?
-## 2 尔 ⊢ 前閉, 何?
-### two you RI before-finish, what?
+# Taina omo ri tika a Tainis.
+## Taina 人 ⊢ 言 ⇒ Tainis.
+### China person RI say A Chinese.
 ===
 # The story is true.
 ---
@@ -538,38 +538,26 @@
 ## 言物 ⊢ 真.
 ### say-thing RI true.
 ===
-# A short one.
----
-# Piko tikakosa.
-## 小 言物.
-### small say-thing.
-===
-# Excuse me, do you speak English?
----
-# Perton. Tu ri tika a Inkuris, ker?
-## 悔. 尔 ⊢ 言 ⇒ Inkuris, 何?
-### sorry. you RI say A English, what?
-===
-# I'm Bob.
----
-# Eko ri Popu.
-## 己 ⊢ Popu.
-### I RI Bob.
-===
-# We'll finish by four.
----
-# 4 ora yer, ekomen ri vin.
-## 4 刻 前, 己众 ⊢ 閉.
-### 4 hour before, I-group RI finish.
-===
 # What would you like?
 ---
 # Tu ri vori a ker?
 ## 尔 ⊢ 求 ⇒ 何?
 ### you RI want A what?
 ===
-# Okay, okay.
+# Is that right?
 ---
-# Pona, pona.
-## 好, 好.
-### good, good.
+# Tis ri ves, si?
+## 此 ⊢ 真, 是?
+### this RI true, yes?
+===
+# A short one.
+---
+# Piko tikakosa.
+## 小 言物.
+### small say-thing.
+===
+# Please leave.
+---
+# Pam eksire.
+## 乞 外行.
+### please out-go.

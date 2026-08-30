@@ -526,11 +526,11 @@
 ## 小言
 ### small-say
 ===
-# Are you two ready to order?
+# A Chinese person speaks Chinese.
 ---
-# Pits tu ri yervin, ker?
-## 2 尔 ⊢ 前閉, 何?
-### two you RI before-finish, what?
+# Taina omo ri tika a Tainis.
+## Taina 人 ⊢ 言 ⇒ Tainis.
+### China person RI say A Chinese.
 ===
 # The story is true.
 ---
@@ -538,41 +538,29 @@
 ## 言物 ⊢ 真.
 ### say-thing RI true.
 ===
-# A short one.
----
-# Piko tikakosa.
-## 小 言物.
-### small say-thing.
-===
-# Excuse me, do you speak English?
----
-# Perton. Tu ri tika a Inkuris, ker?
-## 悔. 尔 ⊢ 言 ⇒ Inkuris, 何?
-### sorry. you RI say A English, what?
-===
-# I'm Bob.
----
-# Eko ri Popu.
-## 己 ⊢ Popu.
-### I RI Bob.
-===
-# We'll finish by four.
----
-# 4 ora yer, ekomen ri vin.
-## 4 刻 前, 己众 ⊢ 閉.
-### 4 hour before, I-group RI finish.
-===
 # What would you like?
 ---
 # Tu ri vori a ker?
 ## 尔 ⊢ 求 ⇒ 何?
 ### you RI want A what?
 ===
-# Okay, okay.
+# Is that right?
 ---
-# Pona, pona.
-## 好, 好.
-### good, good.
+# Tis ri ves, si?
+## 此 ⊢ 真, 是?
+### this RI true, yes?
+===
+# A short one.
+---
+# Piko tikakosa.
+## 小 言物.
+### small say-thing.
+===
+# Please leave.
+---
+# Pam eksire.
+## 乞 外行.
+### please out-go.
 ===
 # see; understand
 ---
@@ -952,11 +940,11 @@
 ## 中日
 ### middle-sun
 ===
-# I see.
+# Close your eyes...
 ---
-# Eko ri vite.
-## 己 ⊢ 見.
-### I RI see.
+# Pam vin a tu viteparte...
+## 乞 閉 ⇒ 尔 見分...
+### please close A you see-part...
 ===
 # Please come at seven.
 ---
@@ -1264,23 +1252,17 @@
 ## 30 小分 間.
 ### 30 small-part interval.
 ===
-# How are your children?
----
-# Tu nino ri kermoto?
-## 尔 子 ⊢ 何方?
-### you child RI what-manner?
-===
 # Please speak.
 ---
 # Pam tika.
 ## 乞 言.
 ### please say.
 ===
-# Here's two hundred.
+# Thank you.
 ---
-# Tis ri 200.
-## 此 ⊢ 200.
-### this RI 200.
+# Meka mersi.
+## 大 恩.
+### big thank.
 ===
 # I'm finished.
 ---
@@ -1480,23 +1462,17 @@
 ## 风车所
 ### air-vehicle-place
 ===
-# I can go.
+# This is for you.
 ---
-# Eko ri kan ire.
-## 己 ⊢ 能 行.
-### I RI can go.
+# Tis ri por tu.
+## 此 ⊢ 為 尔.
+### this RI for you.
 ===
-# No, thank you.
+# It was.
 ---
-# Non, mersi.
-## 不, 恩.
-### not, thank.
-===
-# I'm going.
----
-# Eko ri ire.
-## 己 ⊢ 行.
-### I RI go.
+# Ves.
+## 真.
+### true.
 ===
 # weekday
 ---
@@ -1942,35 +1918,35 @@
 ## 己众 ⊢ 行 向 己 男亲 户.
 ### I-group RI go to me man-parent home.
 ===
-# I prefer tea to coffee.
+# You're talking.
 ---
-# Eko ri mas kusta a arpoaku vons neropipe.
-## 己 ⊢ 更 愛 ⇒ 木水 从 黒飲.
-### I RI more like A plant-water than black-drink.
+# Tu ri tika.
+## 尔 ⊢ 言.
+### you RI say.
 ===
-# How are you?
+# Can you bring water for the child?
 ---
-# Tu ri pona, ker?
-## 尔 ⊢ 好, 何?
-### you RI good, what?
+# Tu ri kan teneveni a aku por nino, ker?
+## 尔 ⊢ 能 有来 ⇒ 水 為 子, 何?
+### you RI can have-come A water for child, what?
 ===
-# From now on, please tell me sooner.
+# The water is good.
 ---
-# Vons tistempo, pam mas veros tika ver eko.
-## 从 此时, 乞 更 早 言 向 己.
-### from this-time, please more fast say to me.
-===
-# How much are the bananas?
----
-# Ronkayoropomo ri ker moni?
-## 长黄果 ⊢ 何 贝?
-### long-yellow-fruit RI what money?
+# Aku ri pona.
+## 水 ⊢ 好.
+### water RI good.
 ===
 # I'm thirsty, but I don't want tea.
 ---
 # Eko ri pipevori, sets eko ri non vori a arpoaku.
 ## 己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.
 ### I RI drink-want, but I RI not want A plant-water.
+===
+# For a week.
+---
+# 1 senseyan turan.
+## 1 7日 間.
+### 1 seven-sun interval.
 ===
 # begin; open
 ---
@@ -2638,23 +2614,11 @@
 ## 己 ⊢ 更 好 内 此时.
 ### I RI more good in this-time.
 ===
-# Is there a doctor among us?
+# Ten minutes.
 ---
-# Ri sanaomo mets ekomen, ker?
-## ⊢ 医人 中 己众, 何?
-### RI heal-person middle I-group, what?
-===
-# Unfortunately, the food supplies gave out before the end of winter.
----
-# Marumpos, rikustempovin yer, tenekomi ri vin.
-## 悪可, 冷时閉 前, 有食 ⊢ 閉.
-### bad-if, cold-time-finish before, have-food RI finish.
-===
-# Think about the future.
----
-# Pam pensa a tartempo.
-## 乞 思 ⇒ 后时.
-### please think A after-time.
+# 10 parte turan.
+## 10 分 間.
+### 10 part interval.
 ===
 # body; physical
 ---
@@ -2902,17 +2866,17 @@
 ## 油白米
 ### oil-white-grain
 ===
-# Who is the doctor?
+# Is it spicy?
 ---
-# Keromo ri sanaomo?
-## 何人 ⊢ 医人?
-### what-person RI heal-person?
+# Tis ri wosapor, ker?
+## 此 ⊢ 火味, 何?
+### this RI hot-taste, what?
 ===
-# Why?
+# It's raining.
 ---
-# Kerrason?
-## 何故?
-### what-reason?
+# Ri ruva.
+## ⊢ 雨.
+### RI rain.
 ===
 # bird
 ---
@@ -3262,11 +3226,11 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# If the train is late, please tell me.
+# I should go.
 ---
-# Pos metarrinekaro ri tar, tisrason pam tika ver eko.
-## 可 金糸车 ⊢ 后, 此故 乞 言 向 己.
-### if metal-line-vehicle RI after, this-reason please say to me.
+# Eko ri pospona ire.
+## 己 ⊢ 可好 行.
+### I RI if-good go.
 ===
 # Practice, and you'll get it.
 ---
@@ -3274,8 +3238,14 @@
 ## 試学, 并 尔 ⊢ 見.
 ### try-learn, and you RI understand.
 ===
-# She's a happier person.
+# Excuse me, do you speak English?
 ---
-# Tisomo ri mas konten omo.
-## 此人 ⊢ 更 楽 人.
-### this-person RI more happy person.
+# Perton. Tu ri tika a Inkuris, ker?
+## 悔. 尔 ⊢ 言 ⇒ Inkuris, 何?
+### sorry. you RI say A English, what?
+===
+# It's a tea shop that is green.
+---
+# Tis ri verte arpoaku komparroko.
+## 此 ⊢ 緑 木水 買所.
+### this RI green plant-water buy-place.
