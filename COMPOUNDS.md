@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-751 terms
+756 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -65,6 +65,7 @@
 | autumn | fruit-time | pomotempo | 果时 |
 | baggage | go-box | irevaso | 行皿 |
 | ballot | choose-page | erikekarta | 选片 |
+| balm | heal-oil | sanaoren | 医油 |
 | banana | long-yellow-fruit | ronkayoropomo | 长黄果 |
 | bank | money-home | monikase | 贝户 |
 | bank card | money-card | monikarta | 贝片 |
@@ -301,6 +302,7 @@
 | honest | straight-say | retotika | 直言 |
 | hoop | round-line | rotunrine | 丸糸 |
 | horse | vehicle-animal | karopeste | 车匹 |
+| hospital | heal-home | sanakase | 医户 |
 | hotel | sleep-home | tormikase | 床户 |
 | housekeeper | clean-person | puruomo | 清人 |
 | how | what-manner | kermoto | 何方 |
@@ -421,6 +423,7 @@
 | off | not-work | nonopus | 不力 |
 | off duty | not-work | nonopus | 不力 |
 | office | work-room | opuskamar | 力室 |
+| ointment | heal-oil | sanaoren | 医油 |
 | old (in years) | year-big | anyomeka | 年大 |
 | on that note | near-about | nirtopi | 近件 |
 | on what day of the week | what-weekday | keryom | 何曜 |
@@ -529,8 +532,8 @@
 | retain | know-have | sapetene | 知有 |
 | rethink | again-think | repepensa | 又思 |
 | retrieve | again-get | repetoma | 又取 |
-| return | back-go | retsire | 反行 |
 | return | back-come | retseveni | 反来 |
+| return | back-go | retsire | 反行 |
 | return (something) | back-give | retsetonar | 反与 |
 | review | again-see | repevite | 又見 |
 | rice (white rice) | white-grain | ankariso | 白米 |
@@ -546,6 +549,7 @@
 | sad | not-happy | nonkonten | 不楽 |
 | sage | good-think-person | ponapensaomo | 好思人 |
 | sake | white-grain-fire-water | ankarisowoaku | 白米火水 |
+| salve | heal-oil | sanaoren | 医油 |
 | sand | small-stone | pikorapis | 小岩 |
 | sane | heal-think | sanapensa | 医思 |
 | Saturday | earth-weekday | terayom | 土曜 |
@@ -611,6 +615,7 @@
 | staircase | up-road | surmoto | 上方 |
 | stairs | up-road | surmoto | 上方 |
 | station | vehicle-place | karoroko | 车所 |
+| steal | bad-get | marumtoma | 悪取 |
 | step (in a procedure) | sequence-part | ortenparte | 序分 |
 | stores | have-food | tenekomi | 有食 |
 | storey | home-sequence | kaseorten | 户序 |
