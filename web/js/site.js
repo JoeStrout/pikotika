@@ -60,30 +60,6 @@
   media.addEventListener('change', syncWordmark);
   syncWordmark();
 
-  /* --- collapsing header on mobile --------------------------------------
-     Scrolling down hides the wordmark row and leaves the nav; scrolling back
-     to the top restores it.  A dead band keeps it from flickering. */
-
-  var lastY = window.scrollY;
-  var ticking = false;
-
-  function onScroll() {
-    var y = window.scrollY;
-    if (Math.abs(y - lastY) > 6) {
-      document.body.classList.toggle('scrolled', y > 72 && y > lastY);
-      lastY = y;
-    }
-    if (y <= 8) document.body.classList.remove('scrolled');
-    ticking = false;
-  }
-
-  window.addEventListener('scroll', function () {
-    if (!ticking) {
-      ticking = true;
-      window.requestAnimationFrame(onScroll);
-    }
-  }, { passive: true });
-
   /* --- word chips --------------------------------------------------------
      Every Pikotika word on the site is tappable.  The wrapping happens here,
      at page load, rather than in the build: pages keep plain prose, and the
@@ -676,12 +652,19 @@
     var results = document.getElementById('vocab-results');
     var controls = page.querySelector('.vocab-controls');
 
-    /* The controls stick under the site header, whose height is two rows on a
-       narrow screen and one on a wide one.  Measuring beats hard-coding it in
-       two media queries that would then have to be kept in step. */
-    function stick() {
+    /* The controls stick under the site header on wide screens; on a narrow
+       one the header does not float at all, so they stick to the top of the
+       viewport instead.  Measuring the live header beats hard-coding heights
+       in media queries that would then have to be kept in step. */
+    function headerOffset() {
       var header = document.getElementById('site-header');
-      if (header && controls) controls.style.top = header.offsetHeight + 'px';
+      if (!header) return 0;
+      return getComputedStyle(header).position === 'sticky'
+             ? header.offsetHeight : 0;
+    }
+
+    function stick() {
+      if (controls) controls.style.top = headerOffset() + 'px';
     }
     stick();
     window.addEventListener('resize', stick);
@@ -1137,11 +1120,10 @@
       /* Not smooth: an entry can be far down the browse list, and animating
          that is a long blank ride.  Aligned to the top rather than centered,
          since an open entry can be taller than the viewport and its head is the
-         part you came for -- offset by the two sticky bars, which is why the
-         margin is measured here. */
+         part you came for -- offset by whatever is actually sticking above
+         it, which is why the margin is measured here. */
       if (el && scroll) {
-        var header = document.getElementById('site-header');
-        el.style.scrollMarginTop = ((header ? header.offsetHeight : 0) +
+        el.style.scrollMarginTop = (headerOffset() +
                                     (controls ? controls.offsetHeight : 0) +
                                     8) + 'px';
         el.scrollIntoView({ block: 'start' });

@@ -100,7 +100,9 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-padding-top: 9.5rem;
+  /* Mobile leaves the header behind at the top of the page, so an anchored
+     heading needs no clearance; desktop's sticky one-row header does. */
+  scroll-padding-top: 0;
 }
 
 body {
@@ -137,10 +139,11 @@ a:hover { color: var(--link-hover); }
 
 /* --- header -------------------------------------------------------------- */
 
+/* On mobile the header does not float: the wordmark row and the two-row nav
+   together cost too much of a small screen, and scrolling back to the top to
+   change section or theme is no hardship.  Desktop, where the nav is one row
+   beside the wordmark, keeps the sticky header (see the 48em block below). */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
@@ -153,10 +156,7 @@ a:hover { color: var(--link-hover); }
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  /* collapses on scroll (mobile only) */
   height: 4.25rem;
-  overflow: hidden;
-  transition: height .18s ease, opacity .18s ease;
 }
 
 .wordmark { display: block; line-height: 0; }
@@ -228,17 +228,15 @@ a:hover { color: var(--link-hover); }
   background: var(--bg-tint);
 }
 
-/* Mobile: the wordmark row collapses once you scroll, leaving just the nav. */
-@media (max-width: 47.99em) {
-  body.scrolled .header-inner {
-    height: 0;
-    opacity: 0;
-  }
-}
-
 @media (min-width: 48em) {
-  /* One row: wordmark | nav | toggle, on a rail that matches the content. */
+  html { scroll-padding-top: 5rem; }
+
+  /* Sticky, and one row: wordmark | nav | toggle, on a rail that matches the
+     content. */
   .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
