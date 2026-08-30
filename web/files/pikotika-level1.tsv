@@ -1,0 +1,99 @@
+#separator:tab
+#html:true
+#columns:Front	Back	Tags
+predicate boundary	ri<br>⊢<br><i>ri</i>ght here the predicate starts	pikotika level1 root
+I; me	eko<br>己<br>my <i>ego</i>, my <i>echo</i>: myself	pikotika level1 root
+you	tu<br>尔<br>et <i>tu</i>, Brute (and you, Brutus)?	pikotika level1 root
+good; pleasant	pona<br>好<br><i>bonu</i>s! good stuff	pikotika level1 root
+happy; pleased	konten<br>楽<br><i>conten</i>t and happy	pikotika level1 root
+yes; assent	si<br>是<br><i>si</i>, señor!	pikotika level1 root
+not; opposite	non<br>不<br><i>non</i>-, <i>no</i>, <i>n</i>ot	pikotika level1 root
+I'm Alice.	Eko ri Aras.<br>己 ⊢ Aras.<br>I RI Alice.	pikotika level1 sentence
+Yes.	Si.<br>是.<br>yes.	pikotika level1 sentence
+Nice.	Pona.<br>好.<br>good.	pikotika level1 sentence
+this; current	tis<br>此<br>'<i>tis</i> this one here	pikotika level1 root
+water; liquid	aku<br>水<br><i>aqu</i>a, <i>aqu</i>atic	pikotika level1 root
+food; eat	komi<br>食<br><i>come i</i>n and eat	pikotika level1 root
+big; very	meka<br>大<br><i>mega</i> = big	pikotika level1 root
+small; slight	piko<br>小<br><i>pico</i>- = teeny (metric one trillionth)	pikotika level1 root
+new; fresh	nova<br>初<br>a <i>nova</i> caused a brand new star to appear	pikotika level1 root
+true; correct	ves<br>真<br>truly <i>ves</i>ted in the truth	pikotika level1 root
+Yes, that's the one.	Si, tis.<br>是, 此.<br>yes, this.	pikotika level1 sentence
+The food is fresh.	Komi ri nova.<br>食 ⊢ 初.<br>food RI new.	pikotika level1 sentence
+Big!	Meka!<br>大!<br>big!	pikotika level1 sentence
+meet; encounter	sarve<br>会<br><i>survey</i> the people you meet to see what they think	pikotika level1 root
+sorry; excuse me	perton<br>悔<br><i>pardon</i> me!	pikotika level1 root
+before; ago	yer<br>前<br><i>yer</i>sterday — a day ago, before today	pikotika level1 root
+after; later	tar<br>后<br><i>tar</i>dy — after the bell means you're late	pikotika level1 root
+hello (someone new)	novasarve<br>初会<br>new-meet	pikotika level1 compound
+hello	kontensarve<br>楽会<br>happy-meet	pikotika level1 compound
+see you later	tarsarve<br>后会<br>after-meet	pikotika level1 compound
+Nice to meet you.	Eko ri konten sarve a tu.<br>己 ⊢ 楽 会 ⇒ 尔.<br>I RI happy meet A you.	pikotika level1 sentence
+Little by little.	Piko tar piko.<br>小 后 小.<br>small after small.	pikotika level1 sentence
+Hello (when meeting someone new)	Novasarve.<br>初会.<br>new-meet.	pikotika level1 sentence
+please; politeness	pam<br>乞<br><i>pam</i>per me, please!	pikotika level1 root
+go; movement	ire<br>行<br>go, move your <i>ear</i> and the rest of you too!	pikotika level1 root
+out; beyond	eks<br>外<br><i>ex</i>it — out you go, to the space beyond!	pikotika level1 root
+and; with	kum<br>并<br><i>com</i>e with me, and also bring a plus one	pikotika level1 root
+depart; leave (depart)	eksire<br>外行<br>out-go	pikotika level1 compound
+bye	pertonire<br>悔行<br>sorry-go	pikotika level1 compound
+goodbye	pertoneksire<br>悔外行<br>sorry-out-go	pikotika level1 compound
+Goodbye.	Pertoneksire.<br>悔外行.<br>sorry-out-go.	pikotika level1 sentence
+The soup is also very good.	Kum akukomi ri meka pona.<br>并 水食 ⊢ 大 好.<br>and water-food RI big good.	pikotika level1 sentence
+Bye!	Pertonire!<br>悔行!<br>sorry-go!	pikotika level1 sentence
+object boundary	a<br>⇒<br><i>a</i>im <i>a</i>t the <i>o</i>bject	pikotika level1 root
+plant; flower	arpo<br>木<br><i>arbo</i>retum, full of trees and other plants	pikotika level1 root
+fruit; result	pomo<br>果<br>a <i>pom</i>egranate is fruit	pikotika level1 root
+want; wish	vori<br>求<br><i>vora</i>cious wanting	pikotika level1 root
+vehicle; car	karo<br>车<br><i>car</i>	pikotika level1 root
+tea	arpoaku<br>木水<br>plant-water	pikotika level1 compound
+hungry	komivori<br>食求<br>food-want	pikotika level1 compound
+drive; travel by vehicle	karoire<br>车行<br>vehicle-go	pikotika level1 compound
+The fruit is small.	Pomo ri piko.<br>果 ⊢ 小.<br>fruit RI small.	pikotika level1 sentence
+Please drive.	Pam karoire.<br>乞 车行.<br>please vehicle-go.	pikotika level1 sentence
+This is tea.	Tis ri arpoaku.<br>此 ⊢ 木水.<br>this RI plant-water.	pikotika level1 sentence
+in; at	in<br>内<br><i>in</i>	pikotika level1 root
+to; toward	ver<br>向<br>s<i>wer</i>ve toward it <i>ver</i>y hard	pikotika level1 root
+place; location	roko<br>所<br>a <i>rock</i>y place	pikotika level1 root
+part; portion	parte<br>分<br><i>part</i>	pikotika level1 root
+station; parking garage; parking lot	karoroko<br>车所<br>vehicle-place	pikotika level1 compound
+actually; in truth	inves<br>内真<br>in-true	pikotika level1 compound
+Good, actually.	Pona, inves.<br>好, 内真.<br>good, in-true.	pikotika level1 sentence
+You are right.	Tu ri ves.<br>尔 ⊢ 真.<br>you RI true.	pikotika level1 sentence
+I'm here.	Eko ri in tisroko.<br>己 ⊢ 内 此所.<br>I RI in this-place.	pikotika level1 sentence
+person; one who	omo<br>人<br>h<i>omo</i> sapiens — a person	pikotika level1 root
+child; offspring	nino<br>子<br>Spanish <i>niño</i>	pikotika level1 root
+group; team	men<br>众<br>a whole group of <i>men</i> forming a team	pikotika level1 root
+thing; matter	kosa<br>物<br>Spanish/Italian "cosa"	pikotika level1 root
+we; us	ekomen<br>己众<br>I-group	pikotika level1 compound
+he; she; him	tisomo<br>此人<br>this-person	pikotika level1 compound
+that; those	nontis<br>不此<br>not-this	pikotika level1 compound
+The child is small.	Nino ri piko.<br>子 ⊢ 小.<br>child RI small.	pikotika level1 sentence
+The child wants water.	Nino ri vori a aku.<br>子 ⊢ 求 ⇒ 水.<br>child RI want A water.	pikotika level1 sentence
+He/she is eating.	Tisomo ri komi.<br>此人 ⊢ 食.<br>this-person RI food.	pikotika level1 sentence
+sun; day	yan<br>日<br><i>yan</i>g: the bright sunny side ☯	pikotika level1 root
+hour; o'clock	ora<br>刻<br>an <i>h-ora</i>	pikotika level1 root
+time; occasion	tempo<br>时<br><i>tempo</i> is time	pikotika level1 root
+finish; close	vin<br>閉<br>photo <i>fin</i>ish ends the race	pikotika level1 root
+moment	pikotempo<br>小时<br>small-time	pikotika level1 compound
+ready; prepared	yervin<br>前閉<br>before-finish	pikotika level1 compound
+finally; at last; in the end	invin<br>内閉<br>in-finish	pikotika level1 compound
+now; at present	tistempo<br>此时<br>this-time	pikotika level1 compound
+It's late.	Ora ri tar.<br>刻 ⊢ 后.<br>hour RI after.	pikotika level1 sentence
+It's late.	Tempo ri tar.<br>时 ⊢ 后.<br>time RI after.	pikotika level1 sentence
+Tomorrow we're going to the sea.	Yantar, ekomen ri ire ver mekaaku.<br>日后, 己众 ⊢ 行 向 大水.<br>sun-after, I-group RI go to big-water.	pikotika level1 sentence
+say; word	tika<br>言<br>the enchanted <i>teacu</i>ps can talk and say words!	pikotika level1 root
+what; question	ker<br>何<br>I <i>care</i> what is what!	pikotika level1 root
+one; 1	wun<br>一<br><i>one</i>	pikotika level1 root
+two; 2	pits<br>2<br>a pair of cherry <i>pits</i>	pikotika level1 root
+story; tale	tikakosa<br>言物<br>say-thing	pikotika level1 compound
+request; ask for	voritika<br>求言<br>want-say	pikotika level1 compound
+small talk; chat; Pikotika (the language)	pikotika<br>小言<br>small-say	pikotika level1 compound
+Are you two ready to order?	Pits tu ri yervin, ker?<br>2 尔 ⊢ 前閉, 何?<br>two you RI before-finish, what?	pikotika level1 sentence
+The story is true.	Tikakosa ri ves.<br>言物 ⊢ 真.<br>say-thing RI true.	pikotika level1 sentence
+A short one.	Piko tikakosa.<br>小 言物.<br>small say-thing.	pikotika level1 sentence
+Excuse me, do you speak English?	Perton. Tu ri tika a Inkuris, ker?<br>悔. 尔 ⊢ 言 ⇒ Inkuris, 何?<br>sorry. you RI say A English, what?	pikotika level1 sentence
+I'm Bob.	Eko ri Popu.<br>己 ⊢ Popu.<br>I RI Bob.	pikotika level1 sentence
+We'll finish by four.	4 ora yer, ekomen ri vin.<br>4 刻 前, 己众 ⊢ 閉.<br>4 hour before, I-group RI finish.	pikotika level1 sentence
+What would you like?	Tu ri vori a ker?<br>尔 ⊢ 求 ⇒ 何?<br>you RI want A what?	pikotika level1 sentence
+Okay, okay.	Pona, pona.<br>好, 好.<br>good, good.	pikotika level1 sentence

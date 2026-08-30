@@ -557,6 +557,16 @@
     return LEVELS.indexOf(v) >= 0 ? v : '';
   }
 
+  /* ?level=3, which is how a level review page links here.  A visitor who
+     arrived by pressing "Level 3" has already chosen, so that board is dealt
+     and the picker stays shut -- and the choice is remembered, so coming back
+     to the bare URL later lands on the same level. */
+  function urlLevel() {
+    var m = /[?&]level=([^&]*)/.exec(location.search);
+    var lv = m ? decodeURIComponent(m[1]) : '';
+    return LEVELS.indexOf(lv) >= 0 ? lv : '';
+  }
+
   /* One button per level, captioned with where its tiles come from: a player
      choosing Level 4 should know before they press it that a quarter of the
      board is Level 3 revision.  Built once, from the lexicon, so a level that
@@ -695,6 +705,12 @@
     showFree = storedShowFree();
     btnFree.setAttribute('aria-pressed', showFree ? 'true' : 'false');
     if (levelBox) buildPicker();
+    var asked = urlLevel();
+    if (asked) {
+      try { localStorage.setItem(LEVEL_KEY, asked); } catch (e) {}
+      newGame(asked);
+      return;
+    }
     /* Deal the remembered level first and *then* ask, so the picker always has
        a playable board behind it and dismissing it is not a dead end. */
     newGame(storedLevel() || '1');

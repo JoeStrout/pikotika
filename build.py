@@ -401,8 +401,10 @@ def topic_pages() -> list:
 
 LEARN_URL = "/learn/"
 
-# Where the course map gets spliced into web/pages/learn.html.
+# Where the course map and the deck downloads get spliced into
+# web/pages/learn.html.
 LEARN_MAP_MARK = "<!--COURSE-MAP-->"
+LEARN_DECKS_MARK = "<!--SRS-DECKS-->"
 
 
 def lessons_plan() -> list:
@@ -482,6 +484,25 @@ def course_map() -> str:
     return "\n".join(out)
 
 
+def srs_decks() -> str:
+    """The download table: a row per deck, with both formats.
+
+    The counts come from gen_cards itself rather than from a list kept here,
+    so a row can never advertise a file that was not written or a size the
+    file does not have."""
+    import gen_cards
+
+    out = ['<table class="rules srs-decks">',
+           "  <tr><th>Deck</th><th>Cards</th><th>Mochi</th><th>Anki</th></tr>"]
+    for stem, label, cards in gen_cards.decks():
+        out.append(f"  <tr><td>{label}</td><td>{len(cards)}</td>"
+                   f'<td><a href="/files/{stem}.md" download>{stem}.md</a></td>'
+                   f'<td><a href="/files/{stem}.tsv" download>{stem}.tsv</a></td>'
+                   "</tr>")
+    out.append("</table>")
+    return "\n".join(out)
+
+
 BACK_TO_LEARN = ('<p class="topic-back"><a href="/learn/">'
                  '\u2190 Back to the course</a></p>')
 
@@ -545,6 +566,32 @@ def lesson_words_grid(words: list) -> str:
     return "\n".join(out)
 
 
+def review_resources(level: int) -> str:
+    """What a level review offers besides its own deck.
+
+    Only on the reviews: a lesson is a few minutes of new material and the
+    place to keep going is the next lesson, but a review is where a learner
+    stops, and these are the two things worth doing at that point.  The game
+    is deep-linked to the level, so pressing it deals that level's roots
+    instead of reopening the picker."""
+    items = [f'<li><a href="/games/tilematch/?level={level}">Tile-matching game'
+             f"</a> for Level {level}.</li>",
+             f"<li>Downloadable Level {level} review cards for "
+             f'<a href="/files/pikotika-level{level}.md" download>Mochi</a> or '
+             f'<a href="/files/pikotika-level{level}.tsv" download>Anki</a>.</li>']
+    import gen_cards
+
+    if level == max(gen_cards.LEVELS):
+        # The end of the course is the one place a deck over all five levels
+        # is the right thing to hand someone.
+        items.append('<li>Cards for the <strong>complete course</strong>, all '
+                     'five levels, for '
+                     '<a href="/files/pikotika-complete.md" download>Mochi</a> or '
+                     '<a href="/files/pikotika-complete.tsv" download>Anki</a>.</li>')
+    return ("<h2>Additional resources</h2>\n<ul class=\"lesson-resources\">\n  "
+            + "\n  ".join(items) + "\n</ul>")
+
+
 def learn_pages() -> list:
     """(url, content, <title>, description) for every lesson and level review.
 
@@ -602,6 +649,8 @@ def learn_pages() -> list:
             "  <noscript><p>The flashcards need JavaScript.  The words above "
             "are the whole lesson without it.</p></noscript>\n"
             "</div>")
+        if lesson["review"]:
+            parts.append(review_resources(lesson["level"]))
         parts.append(lesson_steps(rows, i))
         parts.append(BACK_TO_LEARN.replace('topic-back"', 'topic-back is-end"'))
 
@@ -655,7 +704,7 @@ for _row in lessons_plan():
 PAGE_CSS[LEARN_URL] = "css/learn.css"
 PAGE_JS[LEARN_URL] = ["js/learn.js"]
 
-STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio"]
+STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio", "files"]
 
 # Loose files copied to the output root.  CNAME is what keeps the custom domain
 # attached across a redeploy; .nojekyll turns off the Jekyll pass that branch
@@ -759,6 +808,7 @@ def authored_pages() -> list:
             content = content.replace(GRAMMAR_INDEX_MARK, grammar_index())
         if url == LEARN_URL:
             content = content.replace(LEARN_MAP_MARK, course_map())
+            content = content.replace(LEARN_DECKS_MARK, srs_decks())
         pages.append((url, content, title_tag, description))
     for url, fragment, title_tag, description in UNLISTED_PAGES:
         content = (WEB / "pages" / fragment).read_text(encoding="utf-8")
@@ -1510,6 +1560,7 @@ def check_fonts() -> None:
 
 
 def build() -> None:
+    import gen_cards
     import gen_convert
     import gen_lexicon
     import pikotika
@@ -1536,6 +1587,10 @@ def build() -> None:
     convert_path = gen_convert.write(gen_convert.build(tables))
     print(f"  converter tables -> {convert_path.relative_to(ROOT)} "
           f"({convert_path.stat().st_size:,} bytes)")
+    # The importable decks, likewise written into web/ before the copy.
+    written = gen_cards.write()
+    print(f"  {len(written)} SRS decks -> "
+          f"{Path(written[0][0]).parent.relative_to(ROOT)}/")
 
     if OUT.exists():
         shutil.rmtree(OUT)

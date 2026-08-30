@@ -1,0 +1,119 @@
+#separator:tab
+#html:true
+#columns:Front	Back	Tags
+begin; open	apa<br>开<br><i>hop a</i> fence and open the gate so we can begin!	pikotika level4 root
+remain; stop	sista<br>止<br>de<i>sist</i> — stop and remain as you are	pikotika level4 root
+become; turn into	tiven<br>成<br>tadpoles <i>dive in</i> and become frogs	pikotika level4 root
+put; sit	seta<br>坐<br><i>set a</i> thing down, then sit on it	pikotika level4 root
+in the past	yertempo<br>前时<br>before-time	pikotika level4 compound
+in the future	tartempo<br>后时<br>after-time	pikotika level4 compound
+if; possible	pos<br>可<br>if <i>pos</i>sible	pikotika level4 root
+unlucky; unfortunate; unfortunately	marumpos<br>悪可<br>bad-if	pikotika level4 compound
+Stay with us.	Pam sista kum ekomen.<br>乞 止 并 己众.<br>please remain and I-group.	pikotika level4 sentence
+I'm sorry — I should have started earlier.	Eko ri perton: eko ri pospona apa yer vin.<br>己 ⊢ 悔: 己 ⊢ 可好 开 前 閉.<br>I RI sorry: I RI if-good begin before finish.	pikotika level4 sentence
+I might have gone.	Eko ri pos ire vin.<br>己 ⊢ 可 行 閉.<br>I RI if go finish.	pikotika level4 sentence
+head; chief	testa<br>头<br>your head is what gets <i>test</i>ed	pikotika level4 root
+leg; foot	kampa<br>足<br>legs take you <i>camp</i>ing	pikotika level4 root
+mouth; opening	puka<br>口<br><i>puck</i>er up	pikotika level4 root
+taste; flavor	sapor<br>味<br>delicious syrup tastes like <i>sap or</i> something	pikotika level4 root
+heal; health	sana<br>医<br>back to <i>san</i>e and <i>sani</i>tary	pikotika level4 root
+walk	kampaire<br>足行<br>leg-go	pikotika level4 compound
+doctor	sanaomo<br>医人<br>heal-person	pikotika level4 compound
+boss	opustesta<br>力头<br>work-head	pikotika level4 compound
+sick; hurt	mara<br>病<br>a night<i>mar</i>e leaves you sick	pikotika level4 root
+pain; hurt; ache	marasenti<br>病心<br>sick-feel	pikotika level4 compound
+headache; nuisance	testamara<br>头病<br>head-sick	pikotika level4 compound
+I ask the cook to make it not spicy.	Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.<br>己 ⊢ 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.<br>I RI want-say to food-make-person A this RI become not hot-taste.	pikotika level4 sentence
+A man will come tomorrow to fix it.	Yantar, wun omo ri veni por sana a tis.<br>日后, 1 人 ⊢ 来 為 医 ⇒ 此.<br>sun-after, one person RI come for heal A this.	pikotika level4 sentence
+Walk five minutes.	Pam 5 parte turan kampaire.<br>乞 5 分 間 足行.<br>please 5 part interval leg-go.	pikotika level4 sentence
+meat	karne<br>肉<br><i>carni</i>vores eat meat	pikotika level4 root
+milk; dairy	raten<br>乳<br><i>rotten</i> milk turns into delicious cheese	pikotika level4 root
+cold; ice	rikus<br>冷<br>the <i>reek is</i> reduced since we froze it to ice	pikotika level4 root
+sound; hear	oti<br>耳<br>I can hear the sound because it's <i>audi</i>ble	pikotika level4 root
+cat; pet	kasepeste<br>户匹<br>home-animal	pikotika level4 compound
+cutlery	komiuter<br>食工<br>food-tool	pikotika level4 compound
+spicy	wosapor<br>火味<br>hot-taste	pikotika level4 compound
+No ice, please.	Nem rikus, pam.<br>无 冷, 乞.<br>no cold, please.	pikotika level4 sentence
+Iced tea, please.	Rikusarpoaku, pam.<br>冷木水, 乞.<br>cold-plant-water, please.	pikotika level4 sentence
+Do you have anything without meat?	Tu ri tene a non karne komi, ker?<br>尔 ⊢ 有 ⇒ 不 肉 食, 何?<br>you RI have A not meat food, what?	pikotika level4 sentence
+bend; turn	kurva<br>弓<br><i>curve</i>	pikotika level4 root
+line; thread	rine<br>糸<br>a <i>line</i> of thread	pikotika level4 root
+round; ball	rotun<br>丸<br><i>rotun</i>d	pikotika level4 root
+straight; direct	reto<br>直<br>direct and st<i>raight-o</i>	pikotika level4 root
+edge; margin	rante<br>边<br>stand at the edge and <i>rant</i>	pikotika level4 root
+back; behind	rets<br>反<br><i>let's</i> go back to what's behind us	pikotika level4 root
+picture; image	pitur<br>画<br><i>pictur</i>e	pikotika level4 root
+electric; digital	vorto<br>電<br><i>volt</i>s make it go	pikotika level4 root
+beach; seashore	mekaakurante<br>大水边<br>big-water-edge	pikotika level4 compound
+triangle	tetsekurva<br>3弓<br>three-bend	pikotika level4 compound
+public transit; transit	rinekaro<br>糸车<br>line-vehicle	pikotika level4 compound
+train	metarrinekaro<br>金糸车<br>metal-line-vehicle	pikotika level4 compound
+bus	muromokaro<br>多人车<br>many-person-vehicle	pikotika level4 compound
+return; go back	retsire<br>反行<br>back-go	pikotika level4 compound
+lamp; electric light	vortoyan<br>電日<br>electric-sun	pikotika level4 compound
+telephone; phone; call	vortotika<br>電言<br>electric-say	pikotika level4 compound
+I have a black-and-white picture.	Eko ri tene a nero kum anka pitur.<br>己 ⊢ 有 ⇒ 黒 并 白 画.<br>I RI have A black and white picture.	pikotika level4 sentence
+I'll drive back tomorrow.	Yantar, eko ri karoire rets.<br>日后, 己 ⊢ 车行 反.<br>sun-after, I RI vehicle-go back.	pikotika level4 sentence
+And forty back.	Kum 40 retsemoni.<br>并 40 反贝.<br>and 40 back-money.	pikotika level4 sentence
+rain	ruva<br>雨<br>rain drumming on the <i>roof</i>	pikotika level4 root
+city; town	sitas<br>市<br><i>cities</i>	pikotika level4 root
+spring (season)	arpotempo<br>木时<br>plant-time	pikotika level4 compound
+summer	wotempo<br>火时<br>hot-time	pikotika level4 compound
+autumn; fall	pomotempo<br>果时<br>fruit-time	pikotika level4 compound
+winter	rikustempo<br>冷时<br>cold-time	pikotika level4 compound
+river	ronkaaku<br>长水<br>long-water	pikotika level4 compound
+mountain	surtera<br>上土<br>up-earth	pikotika level4 compound
+season	anyoparte<br>年分<br>year-part	pikotika level4 compound
+rainy season; wet season	ruvatempo<br>雨时<br>rain-time	pikotika level4 compound
+dry season	nonruvatempo<br>不雨时<br>not-rain-time	pikotika level4 compound
+vacation; holiday	yuveniire<br>玩来行<br>play-come-go	pikotika level4 compound
+It might rain.	Ri pos ruva.<br>⊢ 可 雨.<br>RI if rain.	pikotika level4 sentence
+I'm going to Lisbon.	Eko ri ire ver sitas Rispan.<br>己 ⊢ 行 向 市 Rispan.<br>I RI go to city Lisbon.	pikotika level4 sentence
+Listen — I'll be in your city next month.	Pam oti: 1 mese tar, eko ri in tu sitas.<br>乞 耳: 1 月 后, 己 ⊢ 内 尔 市.<br>please hear: 1 month after, I RI in you city.	pikotika level4 sentence
+buy; commerce	kompar<br>買<br><i>compar</i>e prices, then buy	pikotika level4 root
+give; send	tonar<br>与<br>be a blood <i>donor</i>: give blood to save lives	pikotika level4 root
+choose; decision	erike<br>选<br><i>Erik</i> got <i>elected</i> in the election	pikotika level4 root
+help; serve	servi<br>助<br><i>servi</i>ce with a smile	pikotika level4 root
+number; numeral; digit	mesurtika<br>寸言<br>amount-say	pikotika level4 compound
+shop	komparroko<br>買所<br>buy-place	pikotika level4 compound
+company; corporation; firm	komparmen<br>買众<br>buy-group	pikotika level4 compound
+The station is between the shop and the river.	Karoroko ri mets komparroko kum ronkaaku.<br>车所 ⊢ 中 買所 并 长水.<br>vehicle-place RI middle buy-place and long-water.	pikotika level4 sentence
+Send me what you have.	Pam tonar a tu ri tene rite kosa ver eko.<br>乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己.<br>please give A you RI have RI-TE thing to me.	pikotika level4 sentence
+Give me four.	Pam tonar a 4.<br>乞 与 ⇒ 4.<br>please give A 4.	pikotika level4 sentence
+necessary; must	neses<br>要<br><i>neces</i>sary	pikotika level4 root
+think; believe	pensa<br>思<br><i>pensi</i>ve thoughts	pikotika level4 root
+learn; study	impar<br>学<br><i>impar</i>t your wisdom so I can learn it	pikotika level4 root
+sleep; bed	tormi<br>床<br><i>dormi</i>tories provide beds for sleeping	pikotika level4 root
+should	pospona<br>可好<br>if-good	pikotika level4 compound
+school	imparroko<br>学所<br>learn-place	pikotika level4 compound
+I need to charge my phone.	Eko ri neses tormi a eko vortotika.<br>己 ⊢ 要 床 ⇒ 己 電言.<br>I RI must sleep A me electric-say.	pikotika level4 sentence
+I'm a teacher.	Eko ri impartonaromo.<br>己 ⊢ 学与人.<br>I RI learn-give-person.	pikotika level4 sentence
+I think so.	Eko ri pensa a si.<br>己 ⊢ 思 ⇒ 是.<br>I RI think A yes.	pikotika level4 sentence
+reason; because	rason<br>故<br><i>reason</i>	pikotika level4 root
+fear; danger	timo<br>危<br><i>timi</i>d = afraid	pikotika level4 root
+fight; conflict	patar<br>争<br>the <i>patter</i> of fists landing blows	pikotika level4 root
+whatever; whichever thing	kerkosa<br>何物<br>what-thing	pikotika level4 compound
+why	kerrason<br>何故<br>what-reason	pikotika level4 compound
+therefore; that's why; for this reason	tisrason<br>此故<br>this-reason	pikotika level4 compound
+If I had eaten, I wouldn't be hungry now.	Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.<br>不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.<br>not-true I RI food finish, this-reason I RI not food-want this-time.	pikotika level4 sentence
+If I had the money, I would buy it.	Nonves eko ri tene a moni, tisrason eko ri kompar a tis.<br>不真 己 ⊢ 有 ⇒ 贝, 此故 己 ⊢ 買 ⇒ 此.<br>not-true I RI have A money, this-reason I RI buy A this.	pikotika level4 sentence
+That explains it.	Tis ri rason.<br>此 ⊢ 故.<br>this RI reason.	pikotika level4 sentence
+hard; difficult	sorin<br>硬<br>I'm <i>sore</i> from doing difficult stuff on a hard floor	pikotika level4 root
+heavy; weight	pesa<br>重<br>a <i>peso</i> weighs heavy	pikotika level4 root
+box; container	vaso<br>皿<br>a <i>vas</i>e is a container	pikotika level4 root
+cloth; clothes	ropa<br>衣<br>tie your clothes with this <i>rope</i>	pikotika level4 root
+door; gate	porta<br>門<br><i>porta</i>l	pikotika level4 root
+age	anyoturan<br>年間<br>year-interval	pikotika level4 compound
+young	anyopiko<br>年小<br>year-small	pikotika level4 compound
+luggage; suitcase; baggage	irevaso<br>行皿<br>go-box	pikotika level4 compound
+important; significant; essential	pesaneses<br>重要<br>heavy-necessary	pikotika level4 compound
+Narrator: Alice looks in her wallet.	Tikakosaomo: Aras ri vite in monivaso.<br>言物人: Aras ⊢ 見 内 贝皿.<br>say-thing-person: Alice RI see in money-box.	pikotika level4 sentence
+It's less important than that one.	Tis ri nonmas pesaneses vons nontis.<br>此 ⊢ 不更 重要 从 不此.<br>this RI not-more heavy-necessary than not-this.	pikotika level4 sentence
+It becomes easier.	Tis ri tiven mas nonsorin.<br>此 ⊢ 成 更 不硬.<br>this RI become more not-hard.	pikotika level4 sentence
+I'm good.	Eko ri pona.<br>己 ⊢ 好.<br>I RI good.	pikotika level4 sentence
+I'm better now.	Eko ri mas pona in tistempo.<br>己 ⊢ 更 好 内 此时.<br>I RI more good in this-time.	pikotika level4 sentence
+Is there a doctor among us?	Ri sanaomo mets ekomen, ker?<br>⊢ 医人 中 己众, 何?<br>RI heal-person middle I-group, what?	pikotika level4 sentence
+Nice to meet you.	Eko ri konten sarve a tu.<br>己 ⊢ 楽 会 ⇒ 尔.<br>I RI happy meet A you.	pikotika level4 sentence
+Good, actually.	Pona, inves.<br>好, 内真.<br>good, in-true.	pikotika level4 sentence
+Unfortunately, the food supplies gave out before the end of winter.	Marumpos, rikustempovin yer, tenekomi ri vin.<br>悪可, 冷时閉 前, 有食 ⊢ 閉.<br>bad-if, cold-time-finish before, have-food RI finish.	pikotika level4 sentence
+Think about the future.	Pam pensa a tartempo.<br>乞 思 ⇒ 后时.<br>please think A after-time.	pikotika level4 sentence

@@ -1,0 +1,124 @@
+#separator:tab
+#html:true
+#columns:Front	Back	Tags
+see; understand	vite<br>見<br>I see the <i>vide</i>o	pikotika level2 root
+have; own	tene<br>有<br>you're <i>tena</i>cious if you hold on to what you have	pikotika level2 root
+get; take	toma<br>取<br>I need to get that <i>tome</i>, maybe I'll just take it!	pikotika level2 root
+make; do	vake<br>作<br><i>bake</i> it, make it	pikotika level2 root
+come; arrive	veni<br>来<br><i>veni</i>, vidi, vici  (I came, I saw, I conquered)	pikotika level2 root
+bring	teneveni<br>有来<br>have-come	pikotika level2 compound
+carry; take along; transport	teneire<br>有行<br>have-go	pikotika level2 compound
+fetch; go and get	tomaire<br>取行<br>get-go	pikotika level2 compound
+ship; boat	akukaro<br>水车<br>water-vehicle	pikotika level2 compound
+manner; road	moto<br>方<br>the <i>moto</i>rway is a road	pikotika level2 root
+how	kermoto<br>何方<br>what-manner	pikotika level2 compound
+I want you to come.	Eko ri vori a tu ri veni.<br>己 ⊢ 求 ⇒ 尔 ⊢ 来.<br>I RI want A you RI come.	pikotika level2 sentence
+Alice: OK, I'll take it!	Aras: Pona, eko ri toma a tis!<br>Aras: 好, 己 ⊢ 取 ⇒ 此!<br>Alice: good, I RI get A this!	pikotika level2 sentence
+Someone is coming.	Ri veni.<br>⊢ 来.<br>RI come.	pikotika level2 sentence
+parent; ancestor	pari<br>亲<br><i>par</i>ent	pikotika level2 root
+woman; female	vema<br>女<br>from <i>fema</i>le	pikotika level2 root
+man; male	viro<br>男<br><i>vir</i>ile man	pikotika level2 root
+name; label	nomen<br>名<br><i>nomen</i>clature is naming	pikotika level2 root
+mother	vemapari<br>女亲<br>woman-parent	pikotika level2 compound
+father	viropari<br>男亲<br>man-parent	pikotika level2 compound
+relative (kin)	parimen<br>亲众<br>parent-group	pikotika level2 compound
+cook (person)	komivakeomo<br>食作人<br>food-make-person	pikotika level2 compound
+eye	viteparte<br>見分<br>see-part	pikotika level2 compound
+Today I'm meeting your relatives.	Tisyan, eko ri sarve a tu parimen.<br>此日, 己 ⊢ 会 ⇒ 尔 亲众.<br>this-sun, I RI meet A you parent-group.	pikotika level2 sentence
+My mother makes good food.	Eko vemapari ri vake a pona komi.<br>己 女亲 ⊢ 作 ⇒ 好 食.<br>me woman-parent RI make A good food.	pikotika level2 sentence
+Yes, under Lena.	Si, in nomen Rena.<br>是, 内 名 Rena.<br>yes, in name Lena.	pikotika level2 sentence
+no; none	nem<br>无<br><i>Nem</i>o is NO-where to be found!	pikotika level2 root
+bad; wrong	marum<br>悪<br>careful with those paintings; if you <i>mar 'em</i>, that's bad	pikotika level2 root
+but; however	sets<br>但<br>yes, but — he <i>sets</i> a condition	pikotika level2 root
+only; just	son<br>只<br>an only <i>son</i>	pikotika level2 root
+nobody; no one	nemomo<br>无人<br>no-person	pikotika level2 compound
+nowhere	nemroko<br>无所<br>no-place	pikotika level2 compound
+nothing	nemkosa<br>无物<br>no-thing	pikotika level2 compound
+never	nemtempo<br>无时<br>no-time	pikotika level2 compound
+night	nemyan<br>无日<br>no-sun	pikotika level2 compound
+problem; trouble	marumkosa<br>悪物<br>bad-thing	pikotika level2 compound
+false; untrue; if (counterfactual)	nonves<br>不真<br>not-true	pikotika level2 compound
+I don't want to make trouble.	Eko ri non vori vake a marumkosa.<br>己 ⊢ 不 求 作 ⇒ 悪物.<br>I RI not want make A bad-thing.	pikotika level2 sentence
+Good night.	Pona nemyan.<br>好 无日.<br>good no-sun.	pikotika level2 sentence
+I did nothing.	Eko ri vake a nem.<br>己 ⊢ 作 ⇒ 无.<br>I RI make A no.	pikotika level2 sentence
+up; on	sur<br>上<br>the <i>sur</i>face is on top	pikotika level2 root
+fast; soon	veros<br>早<br><i>ver</i>y fast, <i>veloc</i>ity	pikotika level2 root
+near; almost	nir<br>近<br><i>near</i>	pikotika level2 root
+from; than	vons<br>从<br>a <i>fon</i>t is a source, from which things spring	pikotika level2 root
+morning	suryan<br>上日<br>up-sun	pikotika level2 compound
+today	tisyan<br>此日<br>this-sun	pikotika level2 compound
+yesterday	yanyer<br>日前<br>sun-before	pikotika level2 compound
+tomorrow	yantar<br>日后<br>sun-after	pikotika level2 compound
+tonight	tisnemyan<br>此无日<br>this-no-sun	pikotika level2 compound
+slow; slowly	nonveros<br>不早<br>not-fast	pikotika level2 compound
+Nine in the morning.	Suryan 9 ora.<br>上日 9 刻.<br>up-sun 9 hour.	pikotika level2 sentence
+Good morning!	Pona suryan!<br>好 上日!<br>good up-sun!	pikotika level2 sentence
+Almost.	Nir.<br>近.<br>near.	pikotika level2 sentence
+three; 3	tets<br>3<br>picture Three-Eared Triangles — three <i>tets</i>	pikotika level2 root
+four; 4	wats<br>4<br>4 <i>watts</i> is just enough to light a bulb these days	pikotika level2 root
+five; 5	kins<br>5<br>my sister had <i>quin</i>tuplets — five <i>kins</i>	pikotika level2 root
+six; 6	siks<br>6<br><i>six</i>	pikotika level2 root
+seven; 7	sens<br>7<br>seven <i>cents</i>	pikotika level2 root
+eight; 8	ots<br>8<br><i>oct</i>opus (minus the 'c') has 8 arms	pikotika level2 root
+nine; 9	noks<br>9<br>nine <i>knocks</i> on the door	pikotika level2 root
+ten; 10	tekas<br>十<br>a <i>deca</i>de is ten years	pikotika level2 root
+middle; among	mets<br>中<br>the <i>Mets</i> are in the middle of the league this year	pikotika level2 root
+midday; noon	metseyan<br>中日<br>middle-sun	pikotika level2 compound
+I see.	Eko ri vite.<br>己 ⊢ 見.<br>I RI see.	pikotika level2 sentence
+Please come at seven.	Pam veni in sens ora.<br>乞 来 内 7 刻.<br>please come in seven hour.	pikotika level2 sentence
+How was your weekend?	Tu senseyanvin ri kermoto?<br>尔 7日閉 ⊢ 何方?<br>you seven-sun-finish RI what-manner?	pikotika level2 sentence
+drink; beverage	pipe<br>飲<br>drink now, <i>pee-pay</i> for it later!	pikotika level2 root
+like; enjoy	kusta<br>愛<br>gives me <i>gusto</i> — I like it	pikotika level2 root
+animal; creature	peste<br>匹<br>a <i>pest</i> is a critter	pikotika level2 root
+thirsty	pipevori<br>飲求<br>drink-want	pikotika level2 compound
+meal (a sitting); mealtime	komitempo<br>食时<br>food-time	pikotika level2 compound
+soup	akukomi<br>水食<br>water-food	pikotika level2 compound
+fish	akupeste<br>水匹<br>water-animal	pikotika level2 compound
+sea	mekaaku<br>大水<br>big-water	pikotika level2 compound
+swim	akuire<br>水行<br>water-go	pikotika level2 compound
+who	keromo<br>何人<br>what-person	pikotika level2 compound
+where	kerroko<br>何所<br>what-place	pikotika level2 compound
+when; on what occasion	kertempo<br>何时<br>what-time	pikotika level2 compound
+what time; at what o'clock	kerora<br>何刻<br>what-hour	pikotika level2 compound
+question; ask; inquire	kertika<br>何言<br>what-say	pikotika level2 compound
+I see a small fish.	Eko ri vite a piko akupeste.<br>己 ⊢ 見 ⇒ 小 水匹.<br>I RI see A small water-animal.	pikotika level2 sentence
+And I'll have the fish, please.	Kum eko ri vori a akupeste, pam.<br>并 己 ⊢ 求 ⇒ 水匹, 乞.<br>and I RI want A water-animal, please.	pikotika level2 sentence
+I drink tea with my father.	Eko ri pipe a arpoaku kum eko viropari.<br>己 ⊢ 飲 ⇒ 木水 并 己 男亲.<br>I RI drink A plant-water and me man-parent.	pikotika level2 sentence
+thank; gratitude	mersi<br>恩<br>French <i>merci</i>!	pikotika level2 root
+for; in order to	por<br>為<br><i>pour</i> a drink for me	pikotika level2 root
+about; regarding	topi<br>件<br>on the <i>topi</i>c of	pikotika level2 root
+sad	nonkonten<br>不楽<br>not-happy	pikotika level2 compound
+beautiful; pretty; good-looking	ponavite<br>好見<br>good-see	pikotika level2 compound
+welcome	kontenveni<br>楽来<br>happy-come	pikotika level2 compound
+tears; cry	viteaku<br>見水<br>see-water	pikotika level2 compound
+discover; find something new	novavite<br>初見<br>new-see	pikotika level2 compound
+About the big fish!	Topi meka akupeste!<br>件 大 水匹!<br>about big water-animal!	pikotika level2 sentence
+I thank you.	Eko ri mersi a tu.<br>己 ⊢ 恩 ⇒ 尔.<br>I RI thank A you.	pikotika level2 sentence
+Thank you.	Mersi.<br>恩.<br>thank.	pikotika level2 sentence
+write; writing	kita<br>写<br>I can write with my writing <i>kit</i>	pikotika level2 root
+work; job	opus<br>力<br>your magnum <i>opus</i> — life's work	pikotika level2 root
+can; ability	kan<br>能<br><i>can</i>	pikotika level2 root
+join; connect	yunta<br>合<br><i>you 'n' ta</i> others are now joined!	pikotika level2 root
+read	kitavite<br>写見<br>write-see	pikotika level2 compound
+writer; author	kitaomo<br>写人<br>write-person	pikotika level2 compound
+But the last part isn't written.	Sets vin parte ri non kita vin.<br>但 閉 分 ⊢ 不 写 閉.<br>but finish part RI not write finish.	pikotika level2 sentence
+We work together.	Ekomen ri yunta opus.<br>己众 ⊢ 合 力.<br>I-group RI join work.	pikotika level2 sentence
+But come at seven and we can eat first.	Sets pam veni in 7 ora, kum ekomen ri kan yer komi.<br>但 乞 来 内 7 刻, 并 己众 ⊢ 能 前 食.<br>but please come in 7 hour, and I-group RI can before food.	pikotika level2 sentence
+more; extra	mas<br>更<br><i>mas</i>sive means more	pikotika level2 root
+interval; duration	turan<br>間<br>the <i>dur</i>ation you need <i>to run</i>	pikotika level2 root
+music; song	musi<br>曲<br><i>musi</i>c	pikotika level2 root
+love; adore; be in love with	mekakusta<br>大愛<br>big-like	pikotika level2 compound
+breakfast	suryankomi<br>上日食<br>up-sun-food	pikotika level2 compound
+prepare; get ready; arrange	yervake<br>前作<br>before-make	pikotika level2 compound
+politeness (verbal)	pamtika<br>乞言<br>please-say	pikotika level2 compound
+reader	kitaviteomo<br>写見人<br>write-see-person	pikotika level2 compound
+trip; journey	veniire<br>来行<br>come-go	pikotika level2 compound
+Next time, tell me sooner.	In tar tempo, pam mas veros tika ver eko.<br>内 后 时, 乞 更 早 言 向 己.<br>in after time, please more fast say to me.	pikotika level2 sentence
+I'm thirsty again.	Eko ri mas pipevori.<br>己 ⊢ 更 飲求.<br>I RI more drink-want.	pikotika level2 sentence
+Thirty seconds.	30 pikoparte turan.<br>30 小分 間.<br>30 small-part interval.	pikotika level2 sentence
+How are your children?	Tu nino ri kermoto?<br>尔 子 ⊢ 何方?<br>you child RI what-manner?	pikotika level2 sentence
+Please speak.	Pam tika.<br>乞 言.<br>please say.	pikotika level2 sentence
+This is tea.	Tis ri arpoaku.<br>此 ⊢ 木水.<br>this RI plant-water.	pikotika level2 sentence
+Goodbye.	Pertoneksire.<br>悔外行.<br>sorry-out-go.	pikotika level2 sentence
+Here's two hundred.	Tis ri 200.<br>此 ⊢ 200.<br>this RI 200.	pikotika level2 sentence
+I'm finished.	Eko ri vin.<br>己 ⊢ 閉.<br>I RI finish.	pikotika level2 sentence

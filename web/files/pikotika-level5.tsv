@@ -1,0 +1,113 @@
+#separator:tab
+#html:true
+#columns:Front	Back	Tags
+body; physical	korpo<br>体<br>a <i>corp</i>se is a body	pikotika level5 root
+hand; arm	manu<br>手<br>work a <i>manu</i>al transmission with your hand	pikotika level5 root
+stomach; belly	venter<br>胃<br>food <i>enter</i>s the <i>venter</i>	pikotika level5 root
+life; alive	viva<br>生<br><i>viva</i> la vida!	pikotika level5 root
+ear	otiparte<br>耳分<br>hear-part	pikotika level5 compound
+lend a hand; help out	manutonar<br>手与<br>hand-give	pikotika level5 compound
+sport; athletics	korpoyu<br>体玩<br>body-play	pikotika level5 compound
+Alice: Cash — here's 10 dollars.	Aras: Manumoni. Tis ri 10 moni.<br>Aras: 手贝. 此 ⊢ 10 贝.<br>Alice: hand-money. this RI 10 money.	pikotika level5 sentence
+No, I live about two hours north. I came just for the party.	Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.<br>不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.<br>not. I RI life in two hour interval to up. I RI come only for play-group.	pikotika level5 sentence
+Can you give me a hand?	Tu ri kan manutonar ver eko, ker?<br>尔 ⊢ 能 手与 向 己, 何?<br>you RI can hand-give to me, what?	pikotika level5 sentence
+tired; weary	kansa<br>疲<br>too tired — I <i>can'</i>t	pikotika level5 root
+anger; angry	raye<br>怒<br>a <i>rag</i>ing <i>ray</i> of fury	pikotika level5 root
+surprise; unexpected	sorpe<br>奇<br><i>sorp</i>rise!	pikotika level5 root
+calm	nonraye<br>不怒<br>not-anger	pikotika level5 compound
+expect; anticipate	nonsorpe<br>不奇<br>not-surprise	pikotika level5 compound
+annoyance	pikoraye<br>小怒<br>small-anger	pikotika level5 compound
+smile	kontenpuka<br>楽口<br>happy-mouth	pikotika level5 compound
+laugh	mekakontenpuka<br>大楽口<br>big-happy-mouth	pikotika level5 compound
+kind (good-hearted); good-hearted; kindness	ponasenti<br>好心<br>good-feel	pikotika level5 compound
+pride	ekoponasenti<br>己好心<br>me-good-feel	pikotika level5 compound
+shame	ekomarumsenti<br>己悪心<br>me-bad-feel	pikotika level5 compound
+I am tired. I need to go to bed!	Eko ri kansa. Eko ri neses tormi!<br>己 ⊢ 疲. 己 ⊢ 要 床!<br>I RI tired. I RI must sleep!	pikotika level5 sentence
+If you're tired, we can go back.	Pos tu ri kansa, tisrason ekomen ri kan retsire.<br>可 尔 ⊢ 疲, 此故 己众 ⊢ 能 反行.<br>if you RI tired, this-reason I-group RI can back-go.	pikotika level5 sentence
+I'm not tired.	Eko ri non kansa.<br>己 ⊢ 不 疲.<br>I RI not tired.	pikotika level5 sentence
+or; otherwise	sive<br>或<br>this OR that — <i>sieve</i> one out	pikotika level5 root
+other; different	ar<br>別<br>arr, it's anoth<i>arr</i> pirate	pikotika level5 root
+agree; deal	akor<br>約<br>in <i>accor</i>d — deal!	pikotika level5 root
+something else; anything else	arkosa<br>別物<br>other-thing	pikotika level5 compound
+someone else; another person; others	aromo<br>別人<br>other-person	pikotika level5 compound
+somewhere else; elsewhere	arroko<br>別所<br>other-place	pikotika level5 compound
+anyway; by the way; incidentally	artopi<br>別件<br>other-about	pikotika level5 compound
+Do you have a reservation?	Tu ri tene a yerakor, ker?<br>尔 ⊢ 有 ⇒ 前約, 何?<br>you RI have A before-agree, what?	pikotika level5 sentence
+No, this is different.	Non, tis ri ar.<br>不, 此 ⊢ 別.<br>not, this RI other.	pikotika level5 sentence
+Cold or warm?	Rikus sive wo, ker?<br>冷 或 火, 何?<br>cold or hot, what?	pikotika level5 sentence
+art; craft	arti<br>芸<br>an <i>arti</i>st makes <i>art</i>	pikotika level5 root
+temple; church	temper<br>寺<br>a <i>temp</i>le <i>temper</i>s the soul	pikotika level5 root
+oil; grease	oren<br>油<br>digging for <i>ore 'n'</i> oil	pikotika level5 root
+salt; salty	sares<br>塩<br><i>sa</i>lty <i>res</i>idue left after seawater evaporates	pikotika level5 root
+museum	artikase<br>芸户<br>art-home	pikotika level5 compound
+fried	orenvake<br>油作<br>oil-make	pikotika level5 compound
+fried rice	orenankariso<br>油白米<br>oil-white-grain	pikotika level5 compound
+Who is the doctor?	Keromo ri sanaomo?<br>何人 ⊢ 医人?<br>what-person RI heal-person?	pikotika level5 sentence
+It's less important than that one.	Tis ri nonmas pesaneses vons nontis.<br>此 ⊢ 不更 重要 从 不此.<br>this RI not-more heavy-necessary than not-this.	pikotika level5 sentence
+Why?	Kerrason?<br>何故?<br>what-reason?	pikotika level5 sentence
+bird	avis<br>鳥<br><i>avi</i>ary, <i>avi</i>ation — birds	pikotika level5 root
+bug; worm	inses<br>虫<br><i>inse</i>ct	pikotika level5 root
+dog; canine	kanis<br>犬<br><i>canis</i>, <i>canin</i>e, dog	pikotika level5 root
+flock	avismen<br>鳥众<br>bird-group	pikotika level5 compound
+egg	avisnino<br>鳥子<br>bird-child	pikotika level5 compound
+poultry; chicken (meat)	aviskarne<br>鳥肉<br>bird-meat	pikotika level5 compound
+pet dog	kasekanis<br>户犬<br>home-dog	pikotika level5 compound
+Yesterday I saw the dog.	Yanyer, eko ri vite a kanis.<br>日前, 己 ⊢ 見 ⇒ 犬.<br>sun-before, I RI see A dog.	pikotika level5 sentence
+The flock is flying over the sea.	Avismen ri ventoire sur mekaaku.<br>鳥众 ⊢ 风行 上 大水.<br>bird-group RI air-go up big-water.	pikotika level5 sentence
+You see the dog, don't you?	Tu ri vite a kanis, non?<br>尔 ⊢ 見 ⇒ 犬, 不?<br>you RI see A dog, not?	pikotika level5 sentence
+country; state	nasyon<br>国<br><i>nasyon</i> = <i>nation</i>	pikotika level5 root
+friend; companion	ami<br>朋<br><i>ami</i>go, my friend	pikotika level5 root
+law; allow	reke<br>法<br>the law says no <i>wrecki</i>ng stuff	pikotika level5 root
+marry; spouse	maris<br>婚<br><i>Maurice</i> is <i>marri</i>ed	pikotika level5 root
+easy	nonsorin<br>不硬<br>not-hard	pikotika level5 compound
+comic book; comics; manga	piturmurkarta<br>画多片<br>picture-many-page	pikotika level5 compound
+abroad; foreign; overseas	eksenasyon<br>外国<br>out-country	pikotika level5 compound
+enemy	nonami<br>不朋<br>not-friend	pikotika level5 compound
+illegal	nonreke<br>不法<br>not-law	pikotika level5 compound
+spouse	marisomo<br>婚人<br>marry-person	pikotika level5 compound
+It's not allowed.	Ri non reke.<br>⊢ 不 法.<br>RI not law.	pikotika level5 sentence
+Did you ever travel abroad by ship?	Tu ri veniire ver eksenasyon in akukaro moto vin, ker?<br>尔 ⊢ 来行 向 外国 内 水车 方 閉, 何?<br>you RI come-go to out-country in water-vehicle manner finish, what?	pikotika level5 sentence
+Is this allowed?	Ri reke a tis, ker?<br>⊢ 法 ⇒ 此, 何?<br>RI law A this, what?	pikotika level5 sentence
+key; lock	yave<br>錠<br><i>shove</i> the key into the lock	pikotika level5 root
+table; desk	tapur<br>机<br><i>tap your</i> fingers on the table	pikotika level5 root
+toilet; restroom	panyu<br>便<br>the <i>pan</i> is for <i>you</i> to use as a toilet!	pikotika level5 root
+relative clause marker	rite<br>⊢><br>RI-TE	pikotika level5 compound
+return; come back	retseveni<br>反来<br>back-come	pikotika level5 compound
+until; till; up to (in time)	retover<br>直向<br>straight-to	pikotika level5 compound
+password	yavetika<br>錠言<br>key-say	pikotika level5 compound
+Where is the bathroom?	Panyu ri kerroko?<br>便 ⊢ 何所?<br>toilet RI what-place?	pikotika level5 sentence
+The key you gave me is on the table.	Tu ri tonar ver eko rite yave ri sur tapur.<br>尔 ⊢ 与 向 己 ⊢> 錠 ⊢ 上 机.<br>you RI give to me RI-TE key RI on table.	pikotika level5 sentence
+Here is your key.	Tis ri tu yave.<br>此 ⊢ 尔 錠.<br>this RI you key.	pikotika level5 sentence
+old; former	vetus<br>古<br>the <i>vete</i>ran is old	pikotika level5 root
+clean; pure	puru<br>清<br><i>pure</i> and clean	pikotika level5 root
+break; cut	rompe<br>切<br><i>romp</i>ing kids break things	pikotika level5 root
+lose; misplace	perti<br>失<br>you <i>part</i>ed with it, now it's lost	pikotika level5 root
+forget	sapeperti<br>知失<br>know-lose	pikotika level5 compound
+knife (knife or scissors)	rompeuter<br>切工<br>break-tool	pikotika level5 compound
+One thing — the light in the hall is broken.	Wun kosa: vortoyan in irekamar ri rompe vin.<br>1 物: 電日 内 行室 ⊢ 切 閉.<br>one thing: electric-sun in go-room RI break finish.	pikotika level5 sentence
+Old songs, quiet.	Vetus musi, pikooti.<br>古 曲, 小耳.<br>old music, small-sound.	pikotika level5 sentence
+Leave now, or you'll miss the train.	Pam eksire in tistempo, sive tu ri perti a metarrinekaro.<br>乞 外行 内 此时, 或 尔 ⊢ 失 ⇒ 金糸车.<br>please out-go in this-time, or you RI lose A metal-line-vehicle.	pikotika level5 sentence
+left	sini<br>左<br>have you <i>seen</i> my left hand?	pikotika level5 root
+right	rem<br>右<br><i>rem</i>ember: <i>r</i> is for <i>r</i>ight	pikotika level5 root
+down; below	tun<br>下<br>a <i>tun</i>nel goes down	pikotika level5 root
+far; distant	ron<br>遠<br><i>lon</i>g gone, far away	pikotika level5 root
+flat; level	yano<br>平<br>flat as a p<i>iano</i> lid	pikotika level5 root
+hole; gap	vuko<br>穴<br>oh <i>fuko</i>, there's hole blocking my way!	pikotika level5 root
+north	mapasur<br>図上<br>map-up	pikotika level5 compound
+south	mapatun<br>図下<br>map-down	pikotika level5 compound
+west	mapasini<br>図左<br>map-left	pikotika level5 compound
+east	maparem<br>図右<br>map-right	pikotika level5 compound
+window	vitevuko<br>見穴<br>see-hole	pikotika level5 compound
+evening; afternoon	tunyan<br>下日<br>down-sun	pikotika level5 compound
+elevator; lift	surtunkamar<br>上下室<br>up-down-room	pikotika level5 compound
+The party starts at 7 PM.	Yumen ri apa in tunyan 7 ora.<br>玩众 ⊢ 开 内 下日 7 刻.<br>play-group RI begin in down-sun 7 hour.	pikotika level5 sentence
+Go straight to that big tree, then turn left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.<br>乞 直 行 向 不此 大 木, 后 乞 弓 向 左.<br>please straight go to not-this big plant, after please bend to left.	pikotika level5 sentence
+Turn left at the next corner.	Pam kurva ver sini in tarorten kurvaroko.<br>乞 弓 向 左 内 后序 弓所.<br>please bend to left in after-sequence bend-place.	pikotika level5 sentence
+Big!	Meka!<br>大!<br>big!	pikotika level5 sentence
+I'm thirsty again.	Eko ri mas pipevori.<br>己 ⊢ 更 飲求.<br>I RI more drink-want.	pikotika level5 sentence
+But come at seven and we can eat first.	Sets pam veni in 7 ora, kum ekomen ri kan yer komi.<br>但 乞 来 内 7 刻, 并 己众 ⊢ 能 前 食.<br>but please come in 7 hour, and I-group RI can before food.	pikotika level5 sentence
+If the train is late, please tell me.	Pos metarrinekaro ri tar, tisrason pam tika ver eko.<br>可 金糸车 ⊢ 后, 此故 乞 言 向 己.<br>if metal-line-vehicle RI after, this-reason please say to me.	pikotika level5 sentence
+Practice, and you'll get it.	Tentarimpar, kum tu ri vite.<br>試学, 并 尔 ⊢ 見.<br>try-learn, and you RI understand.	pikotika level5 sentence
+Excuse me, do you speak English?	Perton. Tu ri tika a Inkuris, ker?<br>悔. 尔 ⊢ 言 ⇒ Inkuris, 何?<br>sorry. you RI say A English, what?	pikotika level5 sentence
+I'm Alice.	Eko ri Aras.<br>己 ⊢ Aras.<br>I RI Alice.	pikotika level5 sentence
+She's a happier person.	Tisomo ri mas konten omo.<br>此人 ⊢ 更 楽 人.<br>this-person RI more happy person.	pikotika level5 sentence
