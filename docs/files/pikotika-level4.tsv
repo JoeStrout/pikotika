@@ -11,7 +11,7 @@ if; possible	pos<br>可<br>if <i>pos</i>sible	pikotika level4 root
 unlucky; unfortunate; unfortunately	marumpos<br>悪可<br>bad-if	pikotika level4 compound
 Stay with us.	Pam sista kum ekomen.<br>乞 止 并 己众.<br>please remain and I-group.	pikotika level4 sentence
 I'm sorry — I should have started earlier.	Eko ri perton: eko ri pospona apa yer vin.<br>己 ⊢ 悔: 己 ⊢ 可好 开 前 閉.<br>I RI sorry: I RI if-good begin before finish.	pikotika level4 sentence
-I might have gone.	Eko ri pos ire vin.<br>己 ⊢ 可 行 閉.<br>I RI if go finish.	pikotika level4 sentence
+I am still here.	Eko ri in tisroko sista.<br>己 ⊢ 内 此所 止.<br>I RI in this-place remain.	pikotika level4 sentence
 head; chief	testa<br>头<br>your head is what gets <i>test</i>ed	pikotika level4 root
 leg; foot	kampa<br>足<br>legs take you <i>camp</i>ing	pikotika level4 root
 mouth; opening	puka<br>口<br><i>puck</i>er up	pikotika level4 root
@@ -33,9 +33,9 @@ sound; hear	oti<br>耳<br>I can hear the sound because it's <i>audi</i>ble	pikot
 cat; pet	kasepeste<br>户匹<br>home-animal	pikotika level4 compound
 cutlery	komiuter<br>食工<br>food-tool	pikotika level4 compound
 spicy	wosapor<br>火味<br>hot-taste	pikotika level4 compound
-No ice, please.	Nem rikus, pam.<br>无 冷, 乞.<br>no cold, please.	pikotika level4 sentence
-Iced tea, please.	Rikusarpoaku, pam.<br>冷木水, 乞.<br>cold-plant-water, please.	pikotika level4 sentence
 Do you have anything without meat?	Tu ri tene a non karne komi, ker?<br>尔 ⊢ 有 ⇒ 不 肉 食, 何?<br>you RI have A not meat food, what?	pikotika level4 sentence
+Not cold, please.	Non rikus, pam.<br>不 冷, 乞.<br>not cold, please.	pikotika level4 sentence
+The children want ice cream.	Nino ri vori a rikusraten.<br>子 ⊢ 求 ⇒ 冷乳.<br>child RI want A cold-milk.	pikotika level4 sentence
 bend; turn	kurva<br>弓<br><i>curve</i>	pikotika level4 root
 line; thread	rine<br>糸<br>a <i>line</i> of thread	pikotika level4 root
 round; ball	rotun<br>丸<br><i>rotun</i>d	pikotika level4 root
@@ -86,9 +86,9 @@ learn; study	impar<br>学<br><i>impar</i>t your wisdom so I can learn it	pikotik
 sleep; bed	tormi<br>床<br><i>dormi</i>tories provide beds for sleeping	pikotika level4 root
 should	pospona<br>可好<br>if-good	pikotika level4 compound
 school	imparroko<br>学所<br>learn-place	pikotika level4 compound
+Think about the future.	Pam pensa a tartempo.<br>乞 思 ⇒ 后时.<br>please think A after-time.	pikotika level4 sentence
 I need to charge my phone.	Eko ri neses tormi a eko vortotika.<br>己 ⊢ 要 床 ⇒ 己 電言.<br>I RI must sleep A me electric-say.	pikotika level4 sentence
-I'm a teacher.	Eko ri impartonaromo.<br>己 ⊢ 学与人.<br>I RI learn-give-person.	pikotika level4 sentence
-I think so.	Eko ri pensa a si.<br>己 ⊢ 思 ⇒ 是.<br>I RI think A yes.	pikotika level4 sentence
+The little one started school this year.	Piko nino ri apa ire ver imparroko in tis anyo.<br>小 子 ⊢ 开 行 向 学所 内 此 年.<br>small child RI begin go to learn-place in this year.	pikotika level4 sentence
 reason; because	rason<br>故<br><i>reason</i>	pikotika level4 root
 fear; danger	timo<br>危<br><i>timi</i>d = afraid	pikotika level4 root
 fight; conflict	patar<br>争<br>the <i>patter</i> of fists landing blows	pikotika level4 root
@@ -110,10 +110,10 @@ important; significant; essential	pesaneses<br>重要<br>heavy-necessary	pikotik
 Narrator: Alice looks in her wallet.	Tikakosaomo: Aras ri vite in monivaso.<br>言物人: Aras ⊢ 見 内 贝皿.<br>say-thing-person: Alice RI see in money-box.	pikotika level4 sentence
 It's less important than that one.	Tis ri nonmas pesaneses vons nontis.<br>此 ⊢ 不更 重要 从 不此.<br>this RI not-more heavy-necessary than not-this.	pikotika level4 sentence
 It becomes easier.	Tis ri tiven mas nonsorin.<br>此 ⊢ 成 更 不硬.<br>this RI become more not-hard.	pikotika level4 sentence
-I'm good.	Eko ri pona.<br>己 ⊢ 好.<br>I RI good.	pikotika level4 sentence
-I'm better now.	Eko ri mas pona in tistempo.<br>己 ⊢ 更 好 内 此时.<br>I RI more good in this-time.	pikotika level4 sentence
-Please bring me a menu.	Pam teneveni a komiorten ver eko.<br>乞 有来 ⇒ 食序 向 己.<br>please have-come A food-sequence to me.	pikotika level4 sentence
-Nice to meet you.	Eko ri konten sarve a tu.<br>己 ⊢ 楽 会 ⇒ 尔.<br>I RI happy meet A you.	pikotika level4 sentence
-Good, actually.	Pona, inves.<br>好, 内真.<br>good, in-true.	pikotika level4 sentence
-Ten minutes.	10 parte turan.<br>10 分 間.<br>10 part interval.	pikotika level4 sentence
-Nine in the morning.	Suryan 9 ora.<br>上日 9 刻.<br>up-sun 9 hour.	pikotika level4 sentence
+I have eaten.	Eko ri komi vin.<br>己 ⊢ 食 閉.<br>I RI food finish.	pikotika level4 sentence
+How is your mother?	Tu vemapari ri kermoto?<br>尔 女亲 ⊢ 何方?<br>you woman-parent RI what-manner?	pikotika level4 sentence
+I'm a teacher.	Eko ri impartonaromo.<br>己 ⊢ 学与人.<br>I RI learn-give-person.	pikotika level4 sentence
+I'm with the child.	Eko ri kum nino.<br>己 ⊢ 并 子.<br>I RI and child.	pikotika level4 sentence
+The story is true.	Tikakosa ri ves.<br>言物 ⊢ 真.<br>say-thing RI true.	pikotika level4 sentence
+Two days ago.	2 yan yer.<br>2 日 前.<br>2 sun before.	pikotika level4 sentence
+Is the boss in today?	Tisyan, opustesta ri in opuskamar, ker?<br>此日, 力头 ⊢ 内 力室, 何?<br>this-sun, work-head RI in work-room, what?	pikotika level4 sentence

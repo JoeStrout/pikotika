@@ -64,17 +64,17 @@
 ## 何方
 ### what-manner
 ===
-# I want you to come.
+# How have you been?
 ---
-# Eko ri vori a tu ri veni.
-## 己 ⊢ 求 ⇒ 尔 ⊢ 来.
-### I RI want A you RI come.
+# Tu ri kermoto?
+## 尔 ⊢ 何方?
+### you RI what-manner?
 ===
-# Alice: OK, I'll take it!
+# The road has been closed.
 ---
-# Aras: Pona, eko ri toma a tis!
-## Aras: 好, 己 ⊢ 取 ⇒ 此!
-### Alice: good, I RI get A this!
+# Ri vin a moto.
+## ⊢ 閉 ⇒ 方.
+### RI close A road.
 ===
 # Someone is coming.
 ---
@@ -136,23 +136,23 @@
 ## 見分
 ### see-part
 ===
-# Today I'm meeting your relatives.
----
-# Tisyan, eko ri sarve a tu parimen.
-## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
-### this-sun, I RI meet A you parent-group.
-===
 # My mother makes good food.
 ---
 # Eko vemapari ri vake a pona komi.
 ## 己 女亲 ⊢ 作 ⇒ 好 食.
 ### me woman-parent RI make A good food.
 ===
-# Yes, under Lena.
+# Today I'm meeting your relatives.
 ---
-# Si, in nomen Rena.
-## 是, 内 名 Rena.
-### yes, in name Lena.
+# Tisyan, eko ri sarve a tu parimen.
+## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
+### this-sun, I RI meet A you parent-group.
+===
+# Is your family well?
+---
+# Tu parimen ri pona, ker?
+## 尔 亲众 ⊢ 好, 何?
+### you parent-group RI good, what?
 ===
 # no; none
 ---
@@ -376,11 +376,11 @@
 ## 中日
 ### middle-sun
 ===
-# Close your eyes...
+# Yes, that's the one.
 ---
-# Pam vin a tu viteparte...
-## 乞 閉 ⇒ 尔 見分...
-### please close A you see-part...
+# Si, tis.
+## 是, 此.
+### yes, this.
 ===
 # Please come at seven.
 ---
@@ -598,23 +598,23 @@
 ## 写人
 ### write-person
 ===
-# But the last part isn't written.
+# I love the sea, but I can't swim.
 ---
-# Sets vin parte ri non kita vin.
-## 但 閉 分 ⊢ 不 写 閉.
-### but finish part RI not write finish.
+# Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.
+## 己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.
+### I RI big-like A big-water, but I RI not can water-go.
 ===
-# We work together.
+# You can do it.
 ---
-# Ekomen ri yunta opus.
-## 己众 ⊢ 合 力.
-### I-group RI join work.
+# Tu ri kan vake a tis.
+## 尔 ⊢ 能 作 ⇒ 此.
+### you RI can do A this.
 ===
-# But come at seven and we can eat first.
+# You work well.
 ---
-# Sets pam veni in 7 ora, kum ekomen ri kan yer komi.
-## 但 乞 来 内 7 刻, 并 己众 ⊢ 能 前 食.
-### but please come in 7 hour, and I-group RI can before food.
+# Tu ri pona opus.
+## 尔 ⊢ 好 力.
+### you RI good work.
 ===
 # more; extra
 ---
@@ -670,23 +670,53 @@
 ## 来行
 ### come-go
 ===
-# Next time, tell me sooner.
----
-# In tar tempo, pam mas veros tika ver eko.
-## 内 后 时, 乞 更 早 言 向 己.
-### in after time, please more fast say to me.
-===
 # I'm thirsty again.
 ---
 # Eko ri mas pipevori.
 ## 己 ⊢ 更 飲求.
 ### I RI more drink-want.
 ===
-# Thirty seconds.
+# That sounds better than working.
 ---
-# 30 pikoparte turan.
-## 30 小分 間.
-### 30 small-part interval.
+# Tis ri mas pona vons opus.
+## 此 ⊢ 更 好 从 力.
+### this RI more good than work.
+===
+# Next time, tell me sooner.
+---
+# In tar tempo, pam mas veros tika ver eko.
+## 内 后 时, 乞 更 早 言 向 己.
+### in after time, please more fast say to me.
+===
+# How are your children?
+---
+# Tu nino ri kermoto?
+## 尔 子 ⊢ 何方?
+### you child RI what-manner?
+===
+# No, I don't see.
+---
+# Non vite.
+## 不 見.
+### not see.
+===
+# Alice: Yes please.
+---
+# Aras: Si, pam.
+## Aras: 是, 乞.
+### Alice: yes, please.
+===
+# Of course!
+---
+# Ves!
+## 真!
+### true!
+===
+# Yes, under Lena.
+---
+# Si, in nomen Rena.
+## 是, 内 名 Rena.
+### yes, in name Lena.
 ===
 # Big!
 ---
@@ -694,38 +724,14 @@
 ## 大!
 ### big!
 ===
-# Please speak.
+# What are your children doing?
 ---
-# Pam tika.
-## 乞 言.
-### please say.
+# Tu nino ri vake a ker?
+## 尔 子 ⊢ 作 ⇒ 何?
+### you child RI make A what?
 ===
-# This is tea.
+# I like music and reading.
 ---
-# Tis ri arpoaku.
-## 此 ⊢ 木水.
-### this RI plant-water.
-===
-# Nice.
----
-# Pona.
-## 好.
-### good.
-===
-# Goodbye.
----
-# Pertoneksire.
-## 悔外行.
-### sorry-out-go.
-===
-# Thank you.
----
-# Meka mersi.
-## 大 恩.
-### big thank.
-===
-# I'm finished.
----
-# Eko ri vin.
-## 己 ⊢ 閉.
-### I RI finish.
+# Eko ri kusta a musi kum kitavite.
+## 己 ⊢ 愛 ⇒ 曲 并 写見.
+### I RI like A music and write-see.

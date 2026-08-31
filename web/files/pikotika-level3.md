@@ -190,23 +190,17 @@
 ## 风车所
 ### air-vehicle-place
 ===
-# I see a small fish.
+# I'm Bob.
 ---
-# Eko ri vite a piko akupeste.
-## 己 ⊢ 見 ⇒ 小 水匹.
-### I RI see A small water-animal.
+# Eko ri Popu.
+## 己 ⊢ Popu.
+### I RI Bob.
 ===
-# This is for you.
+# Thank you!
 ---
-# Tis ri por tu.
-## 此 ⊢ 為 尔.
-### this RI for you.
-===
-# It was.
----
-# Ves.
-## 真.
-### true.
+# Mersi!
+## 恩!
+### thank!
 ===
 # weekday
 ---
@@ -274,17 +268,17 @@
 ## 何曜
 ### what-weekday
 ===
-# Are you free on Saturday?
----
-# In terayom, tu ri non opus, ker?
-## 内 土曜, 尔 ⊢ 不 力, 何?
-### in earth-weekday, you RI not work, what?
-===
 # How old are you?
 ---
 # Tu anyoturan ri ker?
 ## 尔 年間 ⊢ 何?
 ### you year-interval RI what?
+===
+# How old are your children?
+---
+# Tu nino anyoturan ri ker?
+## 尔 子 年間 ⊢ 何?
+### you child year-interval RI what?
 ===
 # I'm 34 years old.
 ---
@@ -412,23 +406,23 @@
 ## 7日閉
 ### seven-sun-finish
 ===
+# Same as always.
+---
+# Sam vons pantempo.
+## 同 从 全时.
+### same from every-time.
+===
 # It's as good as it was.
 ---
 # Tis ri sam pona vons yerkosa.
 ## 此 ⊢ 同 好 从 前物.
 ### this RI same good than before-thing.
 ===
-# The people are kind.
+# Please try again.
 ---
-# Omo ri ponasenti.
-## 人 ⊢ 好心.
-### person RI good-feel.
-===
-# She's my sister.
----
-# Tisomo ri eko samparivema.
-## 此人 ⊢ 己 同亲女.
-### this-person RI me same-parent-woman.
+# Pam repe tentar.
+## 乞 又 試.
+### please again try.
 ===
 # grain; rice
 ---
@@ -634,11 +628,17 @@
 ## 长黄果
 ### long-yellow-fruit
 ===
-# Where are you going for summer vacation?
+# Do you have a pet?
 ---
-# In wotempo yuveniire, tu ri ire ver kerroko?
-## 内 火时 玩来行, 尔 ⊢ 行 向 何所?
-### in hot-time play-come-go, you RI go to what-place?
+# Tu ri tene a kasepeste, ker?
+## 尔 ⊢ 有 ⇒ 户匹, 何?
+### you RI have A home-animal, what?
+===
+# I work at a bank.
+---
+# Eko ri opus in monikase.
+## 己 ⊢ 力 内 贝户.
+### I RI work in money-home.
 ===
 # Is there hot water in the morning?
 ---
@@ -646,35 +646,17 @@
 ## 内 上日, 火 水 ⊢ 内 室, 何?
 ### in up-sun, hot water RI in room, what?
 ===
-# We're going to my father's house.
+# The road has been closed.
 ---
-# Ekomen ri ire ver eko viropari kase.
-## 己众 ⊢ 行 向 己 男亲 户.
-### I-group RI go to me man-parent home.
+# Ri vin a moto.
+## ⊢ 閉 ⇒ 方.
+### RI close A road.
 ===
-# You're talking.
+# English is spoken here.
 ---
-# Tu ri tika.
-## 尔 ⊢ 言.
-### you RI say.
-===
-# Can you bring water for the child?
----
-# Tu ri kan teneveni a aku por nino, ker?
-## 尔 ⊢ 能 有来 ⇒ 水 為 子, 何?
-### you RI can have-come A water for child, what?
-===
-# The water is good.
----
-# Aku ri pona.
-## 水 ⊢ 好.
-### water RI good.
-===
-# I'm thirsty, but I don't want tea.
----
-# Eko ri pipevori, sets eko ri non vori a arpoaku.
-## 己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.
-### I RI drink-want, but I RI not want A plant-water.
+# Ri tika a Inkuris in tisroko.
+## ⊢ 言 ⇒ Inkuris 内 此所.
+### RI say A English in this-place.
 ===
 # Please speak.
 ---
@@ -682,8 +664,26 @@
 ## 乞 言.
 ### please say.
 ===
-# For a week.
+# I don't know.
 ---
-# 1 senseyan turan.
-## 1 7日 間.
-### 1 seven-sun interval.
+# Eko ri non sape.
+## 己 ⊢ 不 知.
+### I RI not know.
+===
+# Today I'm meeting your relatives.
+---
+# Tisyan, eko ri sarve a tu parimen.
+## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
+### this-sun, I RI meet A you parent-group.
+===
+# How much are the bananas?
+---
+# Ronkayoropomo ri ker moni?
+## 长黄果 ⊢ 何 贝?
+### long-yellow-fruit RI what money?
+===
+# I don't eat fish.
+---
+# Eko ri non komi a akupeste.
+## 己 ⊢ 不 食 ⇒ 水匹.
+### I RI not food A water-animal.

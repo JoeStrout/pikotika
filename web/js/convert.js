@@ -37,7 +37,11 @@
   var SCALES = [[1000000, 'million', true], [1000, 'thousand', true],
                 [100, 'hundred', false], [10, 'ten', false]];
 
-  var PUNCT = ',.:;?!' + '、。：；？！';
+  /* Dashes and the ellipsis are punctuation too; prose typed for the site uses
+     the real characters.  DASH is listed apart because it spaces differently
+     (see joinWords) and is cut out wherever it falls (see tokenize). */
+  var DASH = '\u2014\u2013';                 /* em dash, en dash */
+  var PUNCT = ',.:;?!\u2026' + '、。：；？！' + DASH;
   var SENTENCE_END = '.?!' + '。？！';
 
   var DECIMAL_POINT = 'part';
@@ -59,12 +63,19 @@
 
   function isDigits(s) { return /^[0-9]+$/.test(s); }
   function isPunctChar(c) { return PUNCT.indexOf(c) >= 0; }
+  function isDashChar(c) { return DASH.indexOf(c) >= 0; }
   function isAscii(c) { return c.charCodeAt(0) < 128; }
   function isLatinLetter(c) { return /[A-Za-z]/.test(c); }
 
   function isPunctText(s) {
     if (!s) return false;
     for (var i = 0; i < s.length; i++) if (!isPunctChar(s[i])) return false;
+    return true;
+  }
+
+  function isDashText(s) {
+    if (!s) return false;
+    for (var i = 0; i < s.length; i++) if (!isDashChar(s[i])) return false;
     return true;
   }
 
@@ -271,15 +282,22 @@
   /* Ordinary writing attaches punctuation ("a kanis, ker?"), so it is peeled
      off the ends of each whitespace-delimited word.  Only off the ends: a
      decimal point belongs to its number, not to the sentence. */
+  /* A dash comes out wherever it falls: "opus\u2014tistempo" is two words with a
+     dash between them, not a word with a dash inside it. */
+  var DASH_SPLIT = new RegExp('([' + DASH + '])');
+
   function tokenize(text) {
     var out = [];
     text.split(/\s+/).forEach(function (word) {
       if (!word) return;
-      var lead = 0, tail = word.length;
-      while (lead < tail && isPunctChar(word[lead])) lead++;
-      while (tail > lead && isPunctChar(word[tail - 1])) tail--;
-      [word.slice(0, lead), word.slice(lead, tail), word.slice(tail)]
-        .forEach(function (chunk) { if (chunk) out.push(chunk); });
+      word.split(DASH_SPLIT).forEach(function (chunk) {
+        if (!chunk) return;
+        var lead = 0, tail = chunk.length;
+        while (lead < tail && isPunctChar(chunk[lead])) lead++;
+        while (tail > lead && isPunctChar(chunk[tail - 1])) tail--;
+        [chunk.slice(0, lead), chunk.slice(lead, tail), chunk.slice(tail)]
+          .forEach(function (piece) { if (piece) out.push(piece); });
+      });
     });
     return out;
   }
@@ -287,7 +305,7 @@
   function joinWords(parts) {
     var out = '';
     parts.forEach(function (part) {
-      if (out && !isPunctText(part)) out += ' ';
+      if (out && (!isPunctText(part) || isDashText(part))) out += ' ';
       out += part;
     });
     return out;
@@ -412,11 +430,12 @@
          notation at all.  Taken ahead of the name branch so lowercase
          **mitar** reaches the metric unit rather than Mitar (Michal).
 
-         Only inside a hyphenated word, which is the one place the notation is
-         certain: a Latin compound is written solid, so a hyphen can only be
-         gloss.  A loan standing alone stays Latin to the converter. */
+         The hyphen used to be required, so that a loan standing alone stayed
+         Latin to the converter; it reads the same either way, and requiring it
+         left a sentence with a standing loan in it unwritable in gloss.  The
+         register is what the branch turns on now -- see pikotika.py. */
       var loan = loanOf(t, piece);
-      if (loan !== null && pieces.length > 1 && piece[0] === piece[0].toLowerCase()) {
+      if (loan !== null && piece[0] === piece[0].toLowerCase()) {
         parts.push(name(loan));
         continue;
       }

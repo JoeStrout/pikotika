@@ -466,23 +466,23 @@
 ## 此时
 ### this-time
 ===
-# It's late.
+# It's good to see you.
 ---
-# Ora ri tar.
-## 刻 ⊢ 后.
-### hour RI after.
-===
-# It's late.
----
-# Tempo ri tar.
-## 时 ⊢ 后.
-### time RI after.
+# Eko ri konten sarve a tu vin.
+## 己 ⊢ 楽 会 ⇒ 尔 閉.
+### I RI happy meet A you finish.
 ===
 # Tomorrow we're going to the sea.
 ---
 # Yantar, ekomen ri ire ver mekaaku.
 ## 日后, 己众 ⊢ 行 向 大水.
 ### sun-after, I-group RI go to big-water.
+===
+# It's late.
+---
+# Tempo ri tar.
+## 时 ⊢ 后.
+### time RI after.
 ===
 # say; word
 ---
@@ -526,23 +526,29 @@
 ## 小言
 ### small-say
 ===
-# A Chinese person speaks Chinese.
+# A short one.
 ---
-# Taina omo ri tika a Tainis.
-## Taina 人 ⊢ 言 ⇒ Tainis.
-### China person RI say A Chinese.
+# Piko tikakosa.
+## 小 言物.
+### small say-thing.
 ===
-# The story is true.
+# Ask inside the station.
 ---
-# Tikakosa ri ves.
-## 言物 ⊢ 真.
-### say-thing RI true.
+# Pam voritika in karoroko.
+## 乞 求言 内 车所.
+### please want-say in vehicle-place.
 ===
-# What would you like?
+# Really?
 ---
-# Tu ri vori a ker?
-## 尔 ⊢ 求 ⇒ 何?
-### you RI want A what?
+# Ves, ker?
+## 真, 何?
+### true, what?
+===
+# Excuse me, do you speak English?
+---
+# Perton. Tu ri tika a Inkuris, ker?
+## 悔. 尔 ⊢ 言 ⇒ Inkuris, 何?
+### sorry. you RI say A English, what?
 ===
 # Is that right?
 ---
@@ -550,14 +556,32 @@
 ## 此 ⊢ 真, 是?
 ### this RI true, yes?
 ===
-# A short one.
+# What's new?
 ---
-# Piko tikakosa.
-## 小 言物.
-### small say-thing.
+# Ker ri nova?
+## 何 ⊢ 初?
+### what RI new?
 ===
-# Please leave.
+# No, a little is fine.
 ---
-# Pam eksire.
-## 乞 外行.
-### please out-go.
+# Non, piko ri pona.
+## 不, 小 ⊢ 好.
+### not, small RI good.
+===
+# You're talking.
+---
+# Tu ri tika.
+## 尔 ⊢ 言.
+### you RI say.
+===
+# Okay, okay.
+---
+# Pona, pona.
+## 好, 好.
+### good, good.
+===
+# It's late.
+---
+# Ora ri tar.
+## 刻 ⊢ 后.
+### hour RI after.

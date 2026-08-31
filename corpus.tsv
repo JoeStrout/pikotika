@@ -433,3 +433,47 @@ Alice: Yes please.	Alice: yes, please.	Aras: Si, pam.	Aras: 是, 乞.	1	money
 Shopkeeper: Here you go.  Please come again!	buy-person: this RI for you. please again come!	Komparomo: Tis ri por tu. Pam repe veni!	買人: 此 ⊢ 為 尔. 乞 又 来!	4	money
 Can I help you?	I RI can help A you, what?	Eko ri kan servi a tu, ker?	己 ⊢ 能 助 ⇒ 尔, 何?	4	pleasantries;smalltalk
 A Chinese person speaks Chinese.	China person RI say A Chinese.	Taina omo ri tika a Tainis.	Taina 人 ⊢ 言 ⇒ Tainis.	1	names
+Things change.	thing RI other-become.	Kosa ri artiven.	物 ⊢ 別成.	5	smalltalk
+People change.	person RI other-become.	Omo ri artiven.	人 ⊢ 別成.	5	smalltalk
+The city has changed.	city RI other-become finish.	Sitas ri artiven vin.	市 ⊢ 別成 閉.	5	smalltalk
+Nothing has changed.	no-thing RI other-become finish.	Nemkosa ri artiven vin.	无物 ⊢ 別成 閉.	5	smalltalk
+It's changing!	RI other-become!	Ri artiven!	⊢ 別成!	5	
+The weather changed fast.	air-manner RI fast other-become finish.	Ventomoto ri veros artiven vin.	风方 ⊢ 早 別成 閉.	5	weather
+The price has changed.	money-amount RI other-become finish.	Monimesur ri artiven vin.	贝寸 ⊢ 別成 閉.	5	money
+I changed my mind.	I RI other-make A I think.	Eko ri arvake a eko pensa.	己 ⊢ 別作 ⇒ 己 思.	5	money
+This changes everything.	this RI other-make A every-thing.	Tis ri arvake a pankosa.	此 ⊢ 別作 ⇒ 全物.	5	
+Can I change my reservation?	I RI can other-make A I before-agree, what?	Eko ri kan arvake a eko yerakor, ker?	己 ⊢ 能 別作 ⇒ 己 前約, 何?	5	lodging
+If you want, we can change it.	if you RI want, this-reason I-group RI can other-make A this.	Pos tu ri vori, tisrason ekomen ri kan arvake a tis.	可 尔 ⊢ 求, 此故 己众 ⊢ 能 別作 ⇒ 此.	5	
+Please don't change it.	please not other-make A this.	Pam non arvake a tis.	乞 不 別作 ⇒ 此.	5	
+I enjoy dancing tango.	I RI like A tanko music-go.	Eko ri kusta a tanko musiire.	己 ⊢ 愛 ⇒ tanko 曲行.	2	smalltalk
+How have you been?	you RI what-manner?	Tu ri kermoto?	尔 ⊢ 何方?	2	smalltalk
+It's good to see you.	I RI happy meet A you finish.	Eko ri konten sarve a tu vin.	己 ⊢ 楽 会 ⇒ 尔 閉.	1	smalltalk;meeting
+What's new?	what RI new?	Ker ri nova?	何 ⊢ 初?	1	smalltalk
+Nice day, isn't it?	this RI good sun, not?	Tis ri pona yan, non?	此 ⊢ 好 日, 不?	1	smalltalk;weather
+Same as always.	same from every-time.	Sam vons pantempo.	同 从 全时.	3	smalltalk
+Nothing new.	no new.	Nem nova.	无 初.	2	smalltalk
+I'm a little tired.	I RI slight tired.	Eko ri piko kansa.	己 ⊢ 小 疲.	5	smalltalk;feelings
+How is your spouse?	you marry-person RI what-manner?	Tu marisomo ri kermoto?	尔 婚人 ⊢ 何方?	5	smalltalk;family
+Is your family well?	you parent-group RI good, what?	Tu parimen ri pona, ker?	尔 亲众 ⊢ 好, 何?	2	smalltalk;family
+How is your mother?	you woman-parent RI what-manner?	Tu vemapari ri kermoto?	尔 女亲 ⊢ 何方?	2	smalltalk;family
+What are your children doing?	you child RI make A what?	Tu nino ri vake a ker?	尔 子 ⊢ 作 ⇒ 何?	2	smalltalk;family
+How old are your children?	you child year-interval RI what?	Tu nino anyoturan ri ker?	尔 子 年間 ⊢ 何?	3	smalltalk;family
+Please say hello to your family.	please say A happy-meet to you parent-group.	Pam tika a kontensarve ver tu parimen.	乞 言 ⇒ 楽会 向 尔 亲众.	2	smalltalk;family
+The little one started school this year.	small child RI begin go to learn-place in this year.	Piko nino ri apa ire ver imparroko in tis anyo.	小 子 ⊢ 开 行 向 学所 内 此 年.	4	smalltalk;family
+The older child is studying at university.	more year-big child RI learn in big-learn-place.	Mas anyomeka nino ri impar in mekaimparroko.	更 年大 子 ⊢ 学 内 大学所.	4	smalltalk;family
+How is work?	you work RI what-manner?	Tu opus ri kermoto?	尔 力 ⊢ 何方?	2	smalltalk
+Where do you work?	you RI work in what-place?	Tu ri opus in kerroko?	尔 ⊢ 力 内 何所?	2	smalltalk
+I work at a bank.	I RI work in money-home.	Eko ri opus in monikase.	己 ⊢ 力 内 贝户.	3	smalltalk
+I'm not working right now.	I RI not work in this-time.	Eko ri non opus in tistempo.	己 ⊢ 不 力 内 此时.	2	smalltalk
+I'm learning Pikotika.	I RI learn A small-say.	Eko ri impar a pikotika.	己 ⊢ 学 ⇒ 小言.	4	smalltalk
+Where do you live?	you RI life in what-place?	Tu ri viva in kerroko?	尔 ⊢ 生 内 何所?	5	smalltalk;meeting
+I live near the sea.	I RI life near big-water.	Eko ri viva nir mekaaku.	己 ⊢ 生 近 大水.	5	smalltalk
+How long have you been here?	you RI in this-place what interval?	Tu ri in tisroko ker turan?	尔 ⊢ 内 此所 何 間?	2	smalltalk;travel
+What do you do for fun?	you RI make A what for play?	Tu ri vake a ker por yu?	尔 ⊢ 作 ⇒ 何 為 玩?	3	smalltalk
+I like music and reading.	I RI like A music and write-see.	Eko ri kusta a musi kum kitavite.	己 ⊢ 愛 ⇒ 曲 并 写見.	2	smalltalk
+Do you have a pet?	you RI have A home-animal, what?	Tu ri tene a kasepeste, ker?	尔 ⊢ 有 ⇒ 户匹, 何?	3	smalltalk
+I'm glad to hear it.	I RI happy sound A this.	Eko ri konten oti a tis.	己 ⊢ 楽 耳 ⇒ 此.	4	smalltalk;feelings
+I'm sorry to hear that.	I RI sorry sound A this.	Eko ri perton oti a tis.	己 ⊢ 悔 耳 ⇒ 此.	4	smalltalk;feelings
+We should eat together sometime.	I-group RI if-good join food in after time.	Ekomen ri pospona yunta komi in tar tempo.	己众 ⊢ 可好 合 食 内 后 时.	4	smalltalk;food
+Can I call you next week?	I RI can say to you in after seven-sun, what?	Eko ri kan tika ver tu in tar senseyan, ker?	己 ⊢ 能 言 向 尔 内 后 7日, 何?	2	smalltalk
+Sorry, I have to go.	sorry — I RI necessary go.	Perton — eko ri neses ire.	悔 — 己 ⊢ 要 行.	4	smalltalk;pleasantries

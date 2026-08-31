@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-756 terms
+778 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -34,6 +34,7 @@
 | alcohol (usually wine) | fire-water | woaku | 火水 |
 | alert | danger-say | timotika | 危言 |
 | allergy | body-not-agree | korpononakor | 体不約 |
+| alter | other-make | arvake | 別作 |
 | alternative | choose-thing | erikekosa | 选物 |
 | always | every-time | pantempo | 全时 |
 | annoyance | small-anger | pikoraye | 小怒 |
@@ -78,6 +79,7 @@
 | beach | big-water-edge | mekaakurante | 大水边 |
 | beautiful | good-see | ponavite | 好見 |
 | beauty | good-see | ponavite | 好見 |
+| become different | other-become | artiven | 別成 |
 | bedding | sleep-cloth | tormiropa | 床衣 |
 | beef | milk-animal-meat | ratenpestekarne | 乳匹肉 |
 | beer (any grain alcohol) | grain-fire-water | risowoaku | 米火水 |
@@ -121,6 +123,8 @@
 | caution | danger-see | timovite | 危見 |
 | cautious | danger-see | timovite | 危見 |
 | chair | put-tool | setauter | 坐工 |
+| change | other-become | artiven | 別成 |
+| change | other-make | arvake | 別作 |
 | change (money returned) | back-money | retsemoni | 反贝 |
 | changing room | cloth-try-room | ropatentarkamar | 衣試室 |
 | chat | small-say | pikotika | 小言 |
@@ -140,6 +144,7 @@
 | coffee | black-drink | neropipe | 黒飲 |
 | coin | metal-money | metarmoni | 金贝 |
 | collect | group-join | menyunta | 众合 |
+| college | big-learn-place | mekaimparroko | 大学所 |
 | come back | back-come | retseveni | 反来 |
 | comic book | picture-many-page | piturmurkarta | 画多片 |
 | comics | picture-many-page | piturmurkarta | 画多片 |
@@ -175,8 +180,11 @@
 | depart | out-go | eksire | 外行 |
 | detergent | clean-thing | purukosa | 清物 |
 | digit | amount-say | mesurtika | 寸言 |
+| diner | food-place | komiroko | 食所 |
+| direct | straight-say | retotika | 直言 |
 | directory map | help-map | servimapa | 助図 |
 | discover | new-see | novavite | 初見 |
+| dishonesty | not-true-say | nonvestika | 不真言 |
 | disk | flat-round | yanorotun | 平丸 |
 | disordered | not-sequence | nonorten | 不序 |
 | do again | again-make | repevake | 又作 |
@@ -191,6 +199,7 @@
 | earn | money-get | monitoma | 贝取 |
 | east | map-right | maparem | 図右 |
 | easy | not-hard | nonsorin | 不硬 |
+| eatery | food-place | komiroko | 食所 |
 | egg | bird-child | avisnino | 鳥子 |
 | eighth (in a series) | eight-sequence | otsorten | 8序 |
 | election | all-choose | panerike | 全选 |
@@ -276,6 +285,7 @@
 | good-hearted | good-feel | ponasenti | 好心 |
 | good-looking | good-see | ponavite | 好見 |
 | goodbye | sorry-out-go | pertoneksire | 悔外行 |
+| gossip | other-person-say | aromotika | 別人言 |
 | gravel | small-stone | pikorapis | 小岩 |
 | green light (permission) | green-say | vertetika | 緑言 |
 | grey | stone-color | rapiskoror | 岩色 |
@@ -299,7 +309,7 @@
 | hire | interval-buy | turankompar | 間買 |
 | holiday | not-work-sun | nonopusyan | 不力日 |
 | holiday | play-come-go | yuveniire | 玩来行 |
-| honest | straight-say | retotika | 直言 |
+| honesty | true-say | vestika | 真言 |
 | hoop | round-line | rotunrine | 丸糸 |
 | horse | vehicle-animal | karopeste | 车匹 |
 | hospital | heal-home | sanakase | 医户 |
@@ -347,6 +357,7 @@
 | laugh | big-happy-mouth | mekakontenpuka | 大楽口 |
 | leap | leg-up-go | kampasurire | 足上行 |
 | learned | many-know | mursape | 多知 |
+| learner | learn-person | imparomo | 学人 |
 | lease | interval-buy | turankompar | 間買 |
 | leave (depart) | out-go | eksire | 外行 |
 | lemon | not-sweet-yellow-fruit | nontukeyoropomo | 不甘黄果 |
@@ -354,6 +365,7 @@
 | lend a hand | hand-give | manutonar | 手与 |
 | less | not-more | nonmas | 不更 |
 | library | many-page-home | murkartakase | 多片户 |
+| lie | not-true-say | nonvestika | 不真言 |
 | lift | up-down-room | surtunkamar | 上下室 |
 | light (in weight) | not-heavy | nonpesa | 不重 |
 | lightning | air-electric | ventovorto | 风電 |
@@ -376,6 +388,7 @@
 | love | big-like | mekakusta | 大愛 |
 | lucky | good-if | ponapos | 好可 |
 | luggage | go-box | irevaso | 行皿 |
+| lying | not-true-say | nonvestika | 不真言 |
 | major | heavy-necessary | pesaneses | 重要 |
 | make up one's mind | choose-finish | erikevin | 选閉 |
 | manga | picture-many-page | piturmurkarta | 画多片 |
@@ -392,6 +405,7 @@
 | midday | middle-sun | metseyan | 中日 |
 | millionth (in a series) | million-sequence | mironorten | 兆序 |
 | mist | water-air | akuvento | 水风 |
+| modify | other-make | arvake | 別作 |
 | moment | small-time | pikotempo | 小时 |
 | Monday | month-weekday | meseyom | 月曜 |
 | morning | up-sun | suryan | 上日 |
@@ -444,6 +458,8 @@
 | party (celebration) | play-group | yumen | 玩众 |
 | passport | country-page | nasyonkarta | 国片 |
 | password | key-say | yavetika | 錠言 |
+| patience | remain-can | sistakan | 止能 |
+| patient | remain-can | sistakan | 止能 |
 | pay attention | think-give | pensatonar | 思与 |
 | payment card | money-card | monikarta | 贝片 |
 | peace | no-fight | nempatar | 无争 |
@@ -483,6 +499,7 @@
 | proprietor | have-person | teneomo | 有人 |
 | provisions | have-food | tenekomi | 有食 |
 | public transit | line-vehicle | rinekaro | 糸车 |
+| pupil | learn-person | imparomo | 学人 |
 | purple | red-blue | rusasur | 赤青 |
 | purse | money-box | monivaso | 贝皿 |
 | put in order | sequence-put | ortenseta | 序坐 |
@@ -529,6 +546,7 @@
 | respect | please-feel | pamsenti | 乞心 |
 | respond | back-say | retsetika | 反言 |
 | response | back-say | retsetika | 反言 |
+| restaurant | food-place | komiroko | 食所 |
 | retain | know-have | sapetene | 知有 |
 | rethink | again-think | repepensa | 又思 |
 | retrieve | again-get | repetoma | 又取 |
@@ -626,6 +644,7 @@
 | strong (physically) | body-can | korpokan | 体能 |
 | strong wind | big-air | mekavento | 大风 |
 | stubborn | hard-head | sorintesta | 硬头 |
+| student | learn-person | imparomo | 学人 |
 | study again | again-learn | repeimpar | 又学 |
 | suitcase | go-box | irevaso | 行皿 |
 | summer | hot-time | wotempo | 火时 |
@@ -689,8 +708,10 @@
 | triangle | three-bend | tetsekurva | 3弓 |
 | trip | come-go | veniire | 来行 |
 | trouble | bad-thing | marumkosa | 悪物 |
+| truthfulness | true-say | vestika | 真言 |
 | Tuesday | fire-weekday | woyom | 火曜 |
 | turn (in a road) | bend-place | kurvaroko | 弓所 |
+| turn into something else | other-become | artiven | 別成 |
 | turnstile | money-door | moniporta | 贝門 |
 | ugly | bad-see | marumvite | 悪見 |
 | umbrella | rain-tool | ruvauter | 雨工 |
@@ -698,6 +719,7 @@
 | unfortunately | bad-if | marumpos | 悪可 |
 | unfriendly person | cold-person | rikusomo | 冷人 |
 | unhelpful | not-help-give | nonservitonar | 不助与 |
+| university | big-learn-place | mekaimparroko | 大学所 |
 | unlucky | bad-if | marumpos | 悪可 |
 | until | straight-to | retover | 直向 |
 | untrue | not-true | nonves | 不真 |

@@ -39,6 +39,29 @@
     sh: 's', ch: 't', th: 't', ph: 'v', qu: 'ku', ck: 'k', ng: 'n', wh: 'w'
   };
 
+  /* `ng` spells one sound at the end of a syllable -- sing, long, Wang -- and
+     two before a vowel, where the g starts the next one: tango, mango, Congo,
+     Hungary.  Writing `n` for both was throwing the g away in every borrowing
+     of the second kind, and `n` before `k` is already [ng] (see
+     /grammar/pronunciation/), so **tanko** is [ˈtaŋgo] and **tano** is not.
+
+     Before `e`, `i` or `y` the g is soft instead -- angel, Angela, ginger are
+     [nd\u0292], not [\u014bg] -- and that is the same test `c` already makes two
+     branches down.  Soft `ng` is `ny`, which is what the recorded rows say:
+     **Anyara**, **Anyerika**, **Yinyar**.
+
+     English -ing and -er spellings are the known miss: *singer* has no [g] at
+     all, and comes out **sinyar**.  It is a real cost, but the smaller one --
+     *finger*, *longer*, *anger*, *hungry* all do have their [g], and the
+     recorded rows are derived from phones anyway, so this path is only the
+     fallback for a word the visitor typed and no dictionary knows. */
+  function ngSound(word, i) {
+    var next = word[i + 2];
+    if (!isVowel(next)) return 'n';            /* sing, long, Wang */
+    return 'eiy'.indexOf(next) >= 0 ? 'ny'     /* angel, Angela */
+                                    : 'nk';    /* tango, Inga */
+  }
+
   var LETTERS = {
     b: 'p', d: 't', g: 'k', l: 'r', f: 'v', z: 's', j: 'y', q: 'k', x: 'ks',
     h: ''   /* h, and any silent letter, simply drops */
@@ -52,6 +75,13 @@
       var pair = word.substr(i, 2);
       var c = word[i];
 
+      if (pair === 'ng') {
+        var ng = ngSound(word, i);
+        steps.push('ng → ' + ng);
+        out += ng;
+        i += 2;
+        continue;
+      }
       if (DIGRAPHS.hasOwnProperty(pair)) {
         if (DIGRAPHS[pair] !== pair) steps.push(pair + ' → ' + DIGRAPHS[pair]);
         out += DIGRAPHS[pair];

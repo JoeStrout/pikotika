@@ -40,6 +40,12 @@
 ## 体玩
 ### body-play
 ===
+# Where do you live?
+---
+# Tu ri viva in kerroko?
+## 尔 ⊢ 生 内 何所?
+### you RI life in what-place?
+===
 # Alice: Cash — here's 10 dollars.
 ---
 # Aras: Manumoni. Tis ri 10 moni.
@@ -51,12 +57,6 @@
 # Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.
 ## 不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.
 ### not. I RI life in two hour interval to up. I RI come only for play-group.
-===
-# Can you give me a hand?
----
-# Tu ri kan manutonar ver eko, ker?
-## 尔 ⊢ 能 手与 向 己, 何?
-### you RI can hand-give to me, what?
 ===
 # tired; weary
 ---
@@ -124,11 +124,11 @@
 ## 己悪心
 ### me-bad-feel
 ===
-# I am tired. I need to go to bed!
+# I'm a little tired.
 ---
-# Eko ri kansa. Eko ri neses tormi!
-## 己 ⊢ 疲. 己 ⊢ 要 床!
-### I RI tired. I RI must sleep!
+# Eko ri piko kansa.
+## 己 ⊢ 小 疲.
+### I RI slight tired.
 ===
 # If you're tired, we can go back.
 ---
@@ -136,11 +136,11 @@
 ## 可 尔 ⊢ 疲, 此故 己众 ⊢ 能 反行.
 ### if you RI tired, this-reason I-group RI can back-go.
 ===
-# I'm not tired.
+# I am tired. I need to go to bed!
 ---
-# Eko ri non kansa.
-## 己 ⊢ 不 疲.
-### I RI not tired.
+# Eko ri kansa. Eko ri neses tormi!
+## 己 ⊢ 疲. 己 ⊢ 要 床!
+### I RI tired. I RI must sleep!
 ===
 # or; otherwise
 ---
@@ -184,23 +184,23 @@
 ## 別件
 ### other-about
 ===
-# Do you have a reservation?
+# People change.
 ---
-# Tu ri tene a yerakor, ker?
-## 尔 ⊢ 有 ⇒ 前約, 何?
-### you RI have A before-agree, what?
+# Omo ri artiven.
+## 人 ⊢ 別成.
+### person RI other-become.
 ===
-# No, this is different.
+# It's changing!
 ---
-# Non, tis ri ar.
-## 不, 此 ⊢ 別.
-### not, this RI other.
+# Ri artiven!
+## ⊢ 別成!
+### RI other-become!
 ===
-# Cold or warm?
+# Someone else is coming.
 ---
-# Rikus sive wo, ker?
-## 冷 或 火, 何?
-### cold or hot, what?
+# Ar ri veni.
+## 別 ⊢ 来.
+### other RI come.
 ===
 # art; craft
 ---
@@ -244,23 +244,23 @@
 ## 油白米
 ### oil-white-grain
 ===
-# And forty back.
+# It's less important than that one.
 ---
-# Kum 40 retsemoni.
-## 并 40 反贝.
-### and 40 back-money.
+# Tis ri nonmas pesaneses vons nontis.
+## 此 ⊢ 不更 重要 从 不此.
+### this RI not-more heavy-necessary than not-this.
 ===
-# Is it spicy?
+# I want to try eating meat.
 ---
-# Tis ri wosapor, ker?
-## 此 ⊢ 火味, 何?
-### this RI hot-taste, what?
+# Eko ri vori a tentar a komi a karne.
+## 己 ⊢ 求 ⇒ 試 ⇒ 食 ⇒ 肉.
+### I RI want A try A food A meat.
 ===
-# It's raining.
+# I don't want to think about the past.
 ---
-# Ri ruva.
-## ⊢ 雨.
-### RI rain.
+# Eko ri non vori a pensa a yertempo.
+## 己 ⊢ 不 求 ⇒ 思 ⇒ 前时.
+### I RI not want A think A before-time.
 ===
 # bird
 ---
@@ -382,12 +382,6 @@
 ## 婚人
 ### marry-person
 ===
-# It's not allowed.
----
-# Ri non reke.
-## ⊢ 不 法.
-### RI not law.
-===
 # Did you ever travel abroad by ship?
 ---
 # Tu ri veniire ver eksenasyon in akukaro moto vin, ker?
@@ -399,6 +393,12 @@
 # Ri reke a tis, ker?
 ## ⊢ 法 ⇒ 此, 何?
 ### RI law A this, what?
+===
+# It's not allowed.
+---
+# Ri non reke.
+## ⊢ 不 法.
+### RI not law.
 ===
 # key; lock
 ---
@@ -610,50 +610,44 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# Big!
+# The vehicle is new.
 ---
-# Meka!
-## 大!
-### big!
+# Karo ri nova.
+## 车 ⊢ 初.
+### vehicle RI new.
 ===
-# I'm thirsty again.
+# What time is it?
 ---
-# Eko ri mas pipevori.
-## 己 ⊢ 更 飲求.
-### I RI more drink-want.
+# Ora ri ker?
+## 刻 ⊢ 何?
+### hour RI what?
 ===
-# But come at seven and we can eat first.
+# The report is not finished, and they want it today.
 ---
-# Sets pam veni in 7 ora, kum ekomen ri kan yer komi.
-## 但 乞 来 内 7 刻, 并 己众 ⊢ 能 前 食.
-### but please come in 7 hour, and I-group RI can before food.
+# Kitakarta ri non vin, kum opustesta ri vori a tis in tisyan.
+## 写片 ⊢ 不 閉, 并 力头 ⊢ 求 ⇒ 此 内 此日.
+### write-page RI not finish, and work-head RI want A this in this-sun.
 ===
-# I should go.
+# Goodbye.
 ---
-# Eko ri pospona ire.
-## 己 ⊢ 可好 行.
-### I RI if-good go.
+# Pertoneksire.
+## 悔外行.
+### sorry-out-go.
 ===
-# Practice, and you'll get it.
+# I like to read comic books.
 ---
-# Tentarimpar, kum tu ri vite.
-## 試学, 并 尔 ⊢ 見.
-### try-learn, and you RI understand.
+# Eko ri kusta a kitavite a piturmurkarta.
+## 己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.
+### I RI like A write-see A picture-many-page.
 ===
-# Excuse me, do you speak English?
+# Should I bring anything?
 ---
-# Perton. Tu ri tika a Inkuris, ker?
-## 悔. 尔 ⊢ 言 ⇒ Inkuris, 何?
-### sorry. you RI say A English, what?
+# Eko ri neses tonar a ker, ker?
+## 己 ⊢ 要 与 ⇒ 何, 何?
+### I RI must give A what, what?
 ===
-# I'm Alice.
+# I am still here.
 ---
-# Eko ri Aras.
-## 己 ⊢ Aras.
-### I RI Alice.
-===
-# It's a tea shop that is green.
----
-# Tis ri verte arpoaku komparroko.
-## 此 ⊢ 緑 木水 買所.
-### this RI green plant-water buy-place.
+# Eko ri in tisroko sista.
+## 己 ⊢ 内 此所 止.
+### I RI in this-place remain.

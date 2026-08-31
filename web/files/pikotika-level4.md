@@ -58,11 +58,11 @@
 ## 己 ⊢ 悔: 己 ⊢ 可好 开 前 閉.
 ### I RI sorry: I RI if-good begin before finish.
 ===
-# I might have gone.
+# I am still here.
 ---
-# Eko ri pos ire vin.
-## 己 ⊢ 可 行 閉.
-### I RI if go finish.
+# Eko ri in tisroko sista.
+## 己 ⊢ 内 此所 止.
+### I RI in this-place remain.
 ===
 # head; chief
 ---
@@ -190,23 +190,23 @@
 ## 火味
 ### hot-taste
 ===
-# No ice, please.
----
-# Nem rikus, pam.
-## 无 冷, 乞.
-### no cold, please.
-===
-# Iced tea, please.
----
-# Rikusarpoaku, pam.
-## 冷木水, 乞.
-### cold-plant-water, please.
-===
 # Do you have anything without meat?
 ---
 # Tu ri tene a non karne komi, ker?
 ## 尔 ⊢ 有 ⇒ 不 肉 食, 何?
 ### you RI have A not meat food, what?
+===
+# Not cold, please.
+---
+# Non rikus, pam.
+## 不 冷, 乞.
+### not cold, please.
+===
+# The children want ice cream.
+---
+# Nino ri vori a rikusraten.
+## 子 ⊢ 求 ⇒ 冷乳.
+### child RI want A cold-milk.
 ===
 # bend; turn
 ---
@@ -508,23 +508,23 @@
 ## 学所
 ### learn-place
 ===
+# Think about the future.
+---
+# Pam pensa a tartempo.
+## 乞 思 ⇒ 后时.
+### please think A after-time.
+===
 # I need to charge my phone.
 ---
 # Eko ri neses tormi a eko vortotika.
 ## 己 ⊢ 要 床 ⇒ 己 電言.
 ### I RI must sleep A me electric-say.
 ===
-# I'm a teacher.
+# The little one started school this year.
 ---
-# Eko ri impartonaromo.
-## 己 ⊢ 学与人.
-### I RI learn-give-person.
-===
-# I think so.
----
-# Eko ri pensa a si.
-## 己 ⊢ 思 ⇒ 是.
-### I RI think A yes.
+# Piko nino ri apa ire ver imparroko in tis anyo.
+## 小 子 ⊢ 开 行 向 学所 内 此 年.
+### small child RI begin go to learn-place in this year.
 ===
 # reason; because
 ---
@@ -652,44 +652,44 @@
 ## 此 ⊢ 成 更 不硬.
 ### this RI become more not-hard.
 ===
-# I'm good.
+# I have eaten.
 ---
-# Eko ri pona.
-## 己 ⊢ 好.
-### I RI good.
+# Eko ri komi vin.
+## 己 ⊢ 食 閉.
+### I RI food finish.
 ===
-# I'm better now.
+# How is your mother?
 ---
-# Eko ri mas pona in tistempo.
-## 己 ⊢ 更 好 内 此时.
-### I RI more good in this-time.
+# Tu vemapari ri kermoto?
+## 尔 女亲 ⊢ 何方?
+### you woman-parent RI what-manner?
 ===
-# Please bring me a menu.
+# I'm a teacher.
 ---
-# Pam teneveni a komiorten ver eko.
-## 乞 有来 ⇒ 食序 向 己.
-### please have-come A food-sequence to me.
+# Eko ri impartonaromo.
+## 己 ⊢ 学与人.
+### I RI learn-give-person.
 ===
-# Nice to meet you.
+# I'm with the child.
 ---
-# Eko ri konten sarve a tu.
-## 己 ⊢ 楽 会 ⇒ 尔.
-### I RI happy meet A you.
+# Eko ri kum nino.
+## 己 ⊢ 并 子.
+### I RI and child.
 ===
-# Good, actually.
+# The story is true.
 ---
-# Pona, inves.
-## 好, 内真.
-### good, in-true.
+# Tikakosa ri ves.
+## 言物 ⊢ 真.
+### say-thing RI true.
 ===
-# Ten minutes.
+# Two days ago.
 ---
-# 10 parte turan.
-## 10 分 間.
-### 10 part interval.
+# 2 yan yer.
+## 2 日 前.
+### 2 sun before.
 ===
-# Nine in the morning.
+# Is the boss in today?
 ---
-# Suryan 9 ora.
-## 上日 9 刻.
-### up-sun 9 hour.
+# Tisyan, opustesta ri in opuskamar, ker?
+## 此日, 力头 ⊢ 内 力室, 何?
+### this-sun, work-head RI in work-room, what?

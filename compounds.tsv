@@ -39,6 +39,7 @@ gale; strong wind	big-air	Nature	3	3
 rage	big-anger	Feelings	5	
 war	big-fight	People and society;Verbs	4	
 laugh	big-happy-mouth	Feelings;Body and life	4	5
+university; college	big-learn-place	Places, arts, appearance	4	
 love; adore; be in love with	big-like	Feelings;Verbs	2	2
 expensive; costly; pricey	big-money	Qualities;People and society	3	
 grief	big-not-happy	Feelings	1	
@@ -120,6 +121,7 @@ fifth (in a series); 5th	five-sequence	Quantity	3
 flat bread	flat-grain-food	Food	5	
 disk	flat-round	Shape	5	
 cook (person)	food-make-person	People and society;Food	2	2
+restaurant; eatery; diner	food-place	Food;Places, arts, appearance	1	
 menu	food-sequence	Food	3	
 meal (a sitting); mealtime	food-time	Food;Time direction	1	2
 cutlery	food-tool	Made things;Food	3	4
@@ -194,6 +196,7 @@ test (of knowledge); exam; quiz	know-try	Verbs	3
 intelligence; aptitude; intelligent	learn-can	Qualities	4	
 teach; instruct	learn-give	Verbs	4	
 teacher; instructor	learn-give-person	People and society;Verbs	4	
+student; pupil; learner	learn-person	People and society;Verbs	4	
 school	learn-place	Places, arts, appearance	4	4
 curriculum; syllabus; course of study	learn-sequence	General heads;Verbs	4	
 walk	leg-go	Verbs;Body and life	4	4
@@ -272,6 +275,7 @@ sour	not-sweet	Food;Qualities	3
 lemon	not-sweet-yellow-fruit	Food	3	
 that; those	not-this	Grammar and logic	1	1
 false; untrue; if (counterfactual)	not-true	Grammar and logic	1	2
+lie; lying; dishonesty	not-true-say	Qualities;People and society	1	
 be defeated; lose a contest; lose a game	not-up-become	Verbs	4	
 off; free; off duty	not-work	Qualities;Verbs	2	
 day off; holiday	not-work-sun	Time direction	2	
@@ -280,7 +284,10 @@ fried	oil-make	Food	5	5
 fried rice	oil-white-grain	Food	5	5
 first (in a series); 1st	one-sequence	Quantity	3	
 anyway; by the way; incidentally	other-about	Grammar and logic	5	5
+change; become different; turn into something else	other-become	Verbs	5	
+change; alter; modify	other-make	Verbs	5	
 someone else; another person; others	other-person	Grammar and logic;People and society	5	5
+gossip	other-person-say	People and society;Verbs	5	
 somewhere else; elsewhere	other-place	Grammar and logic;Space and direction	5	5
 something else; anything else	other-thing	Grammar and logic	5	5
 abroad; foreign; overseas	out-country	People and society;Space and direction	5	5
@@ -317,6 +324,7 @@ pink	red-white	Color	3	3
 pig	red-white-animal	Nature	3	3
 pork	red-white-animal-meat	Food	4	
 orange	red-yellow	Color	3	3
+patience; patient	remain-can	Feelings;Qualities	4	
 relative clause marker	RI-TE	Particles;Grammar and logic	3	5
 junction; intersection; crossroads	road-join	Space and direction;Places, arts, appearance	2	
 road map; roadmap	road-map	Made things	3	
@@ -355,7 +363,7 @@ moment	small-time	Time direction	1	1
 bye	sorry-go	People and society;Verbs	1	1
 goodbye	sorry-out-go	People and society;Verbs	1	1
 grey	stone-color	Color	3	3
-honest; frank; blunt	straight-say	Qualities;People and society	4	
+frank; blunt; direct	straight-say	Qualities;People and society	4	
 until; till; up to (in time)	straight-to	Time direction;Grammar and logic	4	5
 tomorrow	sun-after	Time direction	1	2
 sunny	sun-air	Nature;Qualities	3	
@@ -378,6 +386,7 @@ calendar	time-page	Time direction;Made things	3
 wait a while; wait around	time-remain	Verbs;Time direction	4	
 schedule; timetable	time-sequence	General heads;Time direction	3	
 toilet paper	toilet-page	Made things	5	
+honesty; truthfulness	true-say	Qualities;People and society	1	
 experience; experienced	try-know	Verbs;Qualities	3	
 practice; rehearse; rehearsal	try-learn	Verbs	4	
 search; look for; seek	try-see	Verbs	3	

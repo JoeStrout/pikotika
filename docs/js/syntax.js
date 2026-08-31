@@ -85,7 +85,7 @@
   var OPENER = { kum: 1, sive: 1, sets: 1, rason: 1, tisrason: 1,
                  pos: 1, nonves: 1 };
 
-  var PUNCT = ',.:;?!' + '、。：；？！';
+  var PUNCT = ',.:;?!\u2026' + '、。：；？！' + '\u2014\u2013';
 
   /* --- the tree ------------------------------------------------------------
      A node is a leaf holding one word, or a branch holding children. That is
@@ -181,7 +181,7 @@
 
   function lex(text) {
     var out = [];
-    String(text).split(/\s+/).forEach(function (raw) {
+    String(text).replace(/[\u2014\u2013]/g, ' ').split(/\s+/).forEach(function (raw) {
       if (!raw) return;
       var lead = 0, tail = raw.length;
       while (lead < tail && PUNCT.indexOf(raw[lead]) >= 0) lead++;

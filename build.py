@@ -1266,6 +1266,9 @@ CONVERT_EXTRAS = [
     "Ri mur erikekosa.", "RI no bad-thing.", "\u22a2 \u65e0 \u60aa\u7269.",
     "arpoaku komparroko", "Ri 2-go-paper.", "\u6c34",
     "Mira", "mira", "omo Mira", "gibberishxyz", "",
+    # a dash is punctuation, spaced or not, and an ellipsis is too
+    "Perton \u2014 eko ri neses ire.", "Perton\u2014eko ri neses ire.",
+    "Pam vin a tu viteparte\u2026",
 ]
 
 

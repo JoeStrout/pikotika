@@ -108,10 +108,16 @@ class Course:
 
     # --- reading gloss notation ------------------------------------------
 
+    # Punctuation comes from pikotika.PUNCT rather than a list of its own, so
+    # a mark the parser learns about -- the em dash, the ellipsis -- does not
+    # arrive here as an unreadable "word".  A hyphen is never punctuation: it
+    # is what joins the roots of a compound in this notation.
     @staticmethod
     def gloss_words(text):
-        return [w for w in re.sub(r'[.,?!;:"]', " ", text).split()
-                if w and w != "..."]
+        import pikotika          # imported lazily here as everywhere else
+        punct = pikotika.PUNCT | set('"')
+        clean = "".join(" " if c in punct else c for c in text)
+        return [w for w in clean.split() if w]
 
     def roots_of(self, word):
         """The root glosses a gloss-notation word depends on.

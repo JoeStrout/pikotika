@@ -428,7 +428,14 @@ class Tables:
 
 # the corpora punctuate with free-standing , . : ? — these pass through every
 # notation unchanged, so a corpus expression can be pasted in as-is
-PUNCT = set(",.:;?!" "、。：；？！")
+#
+# A dash or an ellipsis is punctuation too, and prose written for the site uses
+# both -- an em dash sets off an aside, and the pages are typed with the real
+# characters, not with "--".  They are listed apart from the rest only because
+# they space differently (see join_words) and because a dash, unlike a comma,
+# is written free-standing as often as attached.
+DASH = set("—–")                        # em dash, en dash
+PUNCT = set(",.:;?!…" "、。：；？！") | DASH
 
 # Sentence-final punctuation.  Every word is capitalized after one of these, so
 # capitalization stops distinguishing a name from a root there -- see name_wins.
@@ -440,25 +447,34 @@ def ends_sentence(token):
 
 # ...but ordinary writing attaches them ("a kanis, ker?"), so punctuation is peeled
 # off the ends of each whitespace-delimited word.  Only off the ends: a decimal
-# point belongs to its number (**1.25**), not to the sentence.
+# point belongs to its number (**1.25**), not to the sentence.  A dash is the
+# exception: it is cut out wherever it falls, since "opus—tistempo" is two words
+# with a dash between them and not a word with a dash in the middle of it.
+DASH_SPLIT = re.compile("([" + "".join(DASH) + "])")
+
+
 def tokenize(text):
     out = []
     for word in text.split():
-        lead, tail = 0, len(word)
-        while lead < tail and word[lead] in PUNCT:
-            lead += 1
-        while tail > lead and word[tail - 1] in PUNCT:
-            tail -= 1
-        out += [chunk for chunk in (word[:lead], word[lead:tail], word[tail:])
-                if chunk]
+        for chunk in DASH_SPLIT.split(word):
+            lead, tail = 0, len(chunk)
+            while lead < tail and chunk[lead] in PUNCT:
+                lead += 1
+            while tail > lead and chunk[tail - 1] in PUNCT:
+                tail -= 1
+            out += [piece for piece in
+                    (chunk[:lead], chunk[lead:tail], chunk[tail:]) if piece]
     return out
 
 
 def join_words(parts):
-    """Join rendered words with spaces, but hang punctuation on the word before."""
+    """Join rendered words with spaces, but hang punctuation on the word before.
+
+    A dash is the exception: it stands between two words with a space on each
+    side, so it takes one in front of it like an ordinary word."""
     out = ""
     for part in parts:
-        if out and not is_punct_text(part):
+        if out and (not is_punct_text(part) or is_dash_text(part)):
             out += " "
         out += part
     return out
@@ -466,6 +482,10 @@ def join_words(parts):
 
 def is_punct_text(s):
     return bool(s) and all(c in PUNCT for c in s)
+
+
+def is_dash_text(s):
+    return bool(s) and all(c in DASH for c in s)
 
 
 # A decimal is written with digits but spoken as several words: the `.` is `part`,
@@ -691,17 +711,19 @@ def split_gloss_word(word, t, words, start, fail):
         # the name branch, so lowercase **mitar** reaches the metric unit
         # rather than Mitar, the adaptation of Michal, which it collides with.
         #
-        # Only inside a hyphenated word, which is the one place the notation is
-        # certain: a Latin compound is written solid, so a hyphen can only be
-        # gloss.  A loan standing alone stays what it was -- Latin to the
-        # converter, and already a lexicon entry via gen_lexicon.name_entries --
-        # so this claims the compound case and disturbs nothing else.
+        # This once fired only inside a hyphenated word, on the grounds that a
+        # loan standing alone could stay Latin to the converter.  It reads the
+        # same either way -- both notations resolve the token to the same loan
+        # -- and the restriction made a sentence with a *standing* loan in it
+        # unwritable in gloss notation at all, which is the notation the corpus
+        # is authored in ("I RI like A tanko music-go").  So the register, not
+        # the hyphen, is what the branch turns on now.
         #
         # A loan opening a sentence is capitalized like any other word and so
         # falls through to the name; write it mid-sentence, or spell the name
         # out as **omo Mitar**, exactly as /topics/names/ prescribes.
         loan = t.loan_of(piece)
-        if loan is not None and len(pieces) > 1 and not piece[:1].isupper():
+        if loan is not None and not piece[:1].isupper():
             parts.append(name_token(loan))
             continue
         # "Joe" by its English spelling, "Yo" by its Pikotika form
