@@ -2392,11 +2392,11 @@
 ## ⊢ 可 雨.
 ### RI if rain.
 ===
-# I'm going to Lisbon.
+# It's raining.
 ---
-# Eko ri ire ver sitas Rispan.
-## 己 ⊢ 行 向 市 Rispan.
-### I RI go to city Lisbon.
+# Ri ruva.
+## ⊢ 雨.
+### RI rain.
 ===
 # Listen — I'll be in your city next month.
 ---
@@ -2500,23 +2500,23 @@
 ## 学所
 ### learn-place
 ===
-# Think about the future.
+# One room, one bed.
 ---
-# Pam pensa a tartempo.
-## 乞 思 ⇒ 后时.
-### please think A after-time.
+# 1 kamar, 1 tormi.
+## 1 室, 1 床.
+### 1 room, 1 sleep.
 ===
-# I need to charge my phone.
+# The older child is studying at university.
 ---
-# Eko ri neses tormi a eko vortotika.
-## 己 ⊢ 要 床 ⇒ 己 電言.
-### I RI must sleep A me electric-say.
+# Mas anyomeka nino ri impar in mekaimparroko.
+## 更 年大 子 ⊢ 学 内 大学所.
+### more year-big child RI learn in big-learn-place.
 ===
-# The little one started school this year.
+# Beauty is in the mind of the beholder.
 ---
-# Piko nino ri apa ire ver imparroko in tis anyo.
-## 小 子 ⊢ 开 行 向 学所 内 此 年.
-### small child RI begin go to learn-place in this year.
+# Ponavite ri in viteomo pensa.
+## 好見 ⊢ 内 見人 思.
+### good-see RI in see-person think.
 ===
 # reason; because
 ---
@@ -2649,12 +2649,6 @@
 # Eko ri komi vin.
 ## 己 ⊢ 食 閉.
 ### I RI food finish.
-===
-# How is your mother?
----
-# Tu vemapari ri kermoto?
-## 尔 女亲 ⊢ 何方?
-### you woman-parent RI what-manner?
 ===
 # I'm a teacher.
 ---
@@ -2932,17 +2926,17 @@
 ## 油白米
 ### oil-white-grain
 ===
-# I want to try eating meat.
+# I like to read comic books.
 ---
-# Eko ri vori a tentar a komi a karne.
-## 己 ⊢ 求 ⇒ 試 ⇒ 食 ⇒ 肉.
-### I RI want A try A food A meat.
+# Eko ri kusta a kitavite a piturmurkarta.
+## 己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.
+### I RI like A write-see A picture-many-page.
 ===
-# I don't want to think about the past.
+# It is snowing.
 ---
-# Eko ri non vori a pensa a yertempo.
-## 己 ⊢ 不 求 ⇒ 思 ⇒ 前时.
-### I RI not want A think A before-time.
+# Ri rikusruva.
+## ⊢ 冷雨.
+### RI cold-rain.
 ===
 # bird
 ---
@@ -3292,32 +3286,20 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# The vehicle is new.
+# I don't think we've met.
 ---
-# Karo ri nova.
-## 车 ⊢ 初.
-### vehicle RI new.
+# Eko ri non pensa a ekomen ri sarve vin.
+## 己 ⊢ 不 思 ⇒ 己众 ⊢ 会 閉.
+### I RI not think A I-group RI meet finish.
 ===
-# What time is it?
+# You have school tomorrow.
 ---
-# Ora ri ker?
-## 刻 ⊢ 何?
-### hour RI what?
+# Yantar, tu ri ire ver imparroko.
+## 日后, 尔 ⊢ 行 向 学所.
+### sun-after, you RI go to learn-place.
 ===
-# The report is not finished, and they want it today.
+# I'm finished.
 ---
-# Kitakarta ri non vin, kum opustesta ri vori a tis in tisyan.
-## 写片 ⊢ 不 閉, 并 力头 ⊢ 求 ⇒ 此 内 此日.
-### write-page RI not finish, and work-head RI want A this in this-sun.
-===
-# I like to read comic books.
----
-# Eko ri kusta a kitavite a piturmurkarta.
-## 己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.
-### I RI like A write-see A picture-many-page.
-===
-# Should I bring anything?
----
-# Eko ri neses tonar a ker, ker?
-## 己 ⊢ 要 与 ⇒ 何, 何?
-### I RI must give A what, what?
+# Eko ri vin.
+## 己 ⊢ 閉.
+### I RI finish.

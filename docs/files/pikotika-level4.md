@@ -400,11 +400,11 @@
 ## ⊢ 可 雨.
 ### RI if rain.
 ===
-# I'm going to Lisbon.
+# It's raining.
 ---
-# Eko ri ire ver sitas Rispan.
-## 己 ⊢ 行 向 市 Rispan.
-### I RI go to city Lisbon.
+# Ri ruva.
+## ⊢ 雨.
+### RI rain.
 ===
 # Listen — I'll be in your city next month.
 ---
@@ -508,23 +508,23 @@
 ## 学所
 ### learn-place
 ===
-# Think about the future.
+# One room, one bed.
 ---
-# Pam pensa a tartempo.
-## 乞 思 ⇒ 后时.
-### please think A after-time.
+# 1 kamar, 1 tormi.
+## 1 室, 1 床.
+### 1 room, 1 sleep.
 ===
-# I need to charge my phone.
+# The older child is studying at university.
 ---
-# Eko ri neses tormi a eko vortotika.
-## 己 ⊢ 要 床 ⇒ 己 電言.
-### I RI must sleep A me electric-say.
+# Mas anyomeka nino ri impar in mekaimparroko.
+## 更 年大 子 ⊢ 学 内 大学所.
+### more year-big child RI learn in big-learn-place.
 ===
-# The little one started school this year.
+# Beauty is in the mind of the beholder.
 ---
-# Piko nino ri apa ire ver imparroko in tis anyo.
-## 小 子 ⊢ 开 行 向 学所 内 此 年.
-### small child RI begin go to learn-place in this year.
+# Ponavite ri in viteomo pensa.
+## 好見 ⊢ 内 見人 思.
+### good-see RI in see-person think.
 ===
 # reason; because
 ---
@@ -658,11 +658,11 @@
 ## 己 ⊢ 食 閉.
 ### I RI food finish.
 ===
-# How is your mother?
+# How old are your children?
 ---
-# Tu vemapari ri kermoto?
-## 尔 女亲 ⊢ 何方?
-### you woman-parent RI what-manner?
+# Tu nino anyoturan ri ker?
+## 尔 子 年間 ⊢ 何?
+### you child year-interval RI what?
 ===
 # I'm a teacher.
 ---

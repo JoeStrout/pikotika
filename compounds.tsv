@@ -215,6 +215,7 @@ knowledgeable; learned; erudition	many-know	Verbs;Qualities	3
 book	many-page	Made things	3	
 library	many-page-home	Places, arts, appearance	3	
 bus	many-person-vehicle	Made things	3	4
+often	many-time	Grammar and logic;Time direction	3	
 busy	many-work	Qualities;Verbs	3	
 south	map-down	Space and direction	5	5
 west	map-left	Space and direction	5	5
@@ -266,9 +267,12 @@ helpless	not-help	Qualities	4
 unhelpful	not-help-give	Qualities	4	
 illegal	not-law	People and society;Qualities	5	5
 crime	not-law-work	People and society	5	
+rarely; seldom	not-many-time	Grammar and logic;Time direction	3	
 vegetarian	not-meat-food-person	People and society;Food	4	
 less; fewer	not-more	Quantity	2	3
+bored; boring	not-play	Feelings;Qualities	3	
 dry season	not-rain-time	Time direction;Nature	4	4
+different; unlike; not the same	not-same	Qualities	3	
 random; disordered; messy	not-sequence	Qualities	3	
 expect; anticipate	not-surprise	Verbs	5	5
 sour	not-sweet	Food;Qualities	3	
@@ -340,6 +344,7 @@ story; tale	say-thing	Places, arts, appearance	1	1
 narrator; storyteller	say-thing-person	People and society;Places, arts, appearance	1	
 window	see-hole	Made things	5	5
 eye	see-part	Body and life	2	2
+viewer; onlooker; beholder; spectator	see-person	People and society	2	
 tears; cry	see-water	Body and life;Feelings	2	2
 step (in a procedure)	sequence-part	General heads	3	
 sort; arrange; put in order	sequence-put	Verbs	4	

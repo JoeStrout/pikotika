@@ -250,17 +250,17 @@
 ## 此 ⊢ 不更 重要 从 不此.
 ### this RI not-more heavy-necessary than not-this.
 ===
-# I want to try eating meat.
+# I like to read comic books.
 ---
-# Eko ri vori a tentar a komi a karne.
-## 己 ⊢ 求 ⇒ 試 ⇒ 食 ⇒ 肉.
-### I RI want A try A food A meat.
+# Eko ri kusta a kitavite a piturmurkarta.
+## 己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.
+### I RI like A write-see A picture-many-page.
 ===
-# I don't want to think about the past.
+# It is snowing.
 ---
-# Eko ri non vori a pensa a yertempo.
-## 己 ⊢ 不 求 ⇒ 思 ⇒ 前时.
-### I RI not want A think A before-time.
+# Ri rikusruva.
+## ⊢ 冷雨.
+### RI cold-rain.
 ===
 # bird
 ---
@@ -610,44 +610,44 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# The vehicle is new.
+# I don't think we've met.
 ---
-# Karo ri nova.
-## 车 ⊢ 初.
-### vehicle RI new.
+# Eko ri non pensa a ekomen ri sarve vin.
+## 己 ⊢ 不 思 ⇒ 己众 ⊢ 会 閉.
+### I RI not think A I-group RI meet finish.
 ===
-# What time is it?
+# One room, one bed.
 ---
-# Ora ri ker?
-## 刻 ⊢ 何?
-### hour RI what?
+# 1 kamar, 1 tormi.
+## 1 室, 1 床.
+### 1 room, 1 sleep.
 ===
-# The report is not finished, and they want it today.
+# You have school tomorrow.
 ---
-# Kitakarta ri non vin, kum opustesta ri vori a tis in tisyan.
-## 写片 ⊢ 不 閉, 并 力头 ⊢ 求 ⇒ 此 内 此日.
-### write-page RI not finish, and work-head RI want A this in this-sun.
+# Yantar, tu ri ire ver imparroko.
+## 日后, 尔 ⊢ 行 向 学所.
+### sun-after, you RI go to learn-place.
 ===
-# Goodbye.
+# My mother makes good food.
 ---
-# Pertoneksire.
-## 悔外行.
-### sorry-out-go.
+# Eko vemapari ri vake a pona komi.
+## 己 女亲 ⊢ 作 ⇒ 好 食.
+### me woman-parent RI make A good food.
 ===
-# I like to read comic books.
+# The child wants water.
 ---
-# Eko ri kusta a kitavite a piturmurkarta.
-## 己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.
-### I RI like A write-see A picture-many-page.
+# Nino ri vori a aku.
+## 子 ⊢ 求 ⇒ 水.
+### child RI want A water.
 ===
-# Should I bring anything?
+# Yes.
 ---
-# Eko ri neses tonar a ker, ker?
-## 己 ⊢ 要 与 ⇒ 何, 何?
-### I RI must give A what, what?
+# Si.
+## 是.
+### yes.
 ===
-# I am still here.
+# I'm finished.
 ---
-# Eko ri in tisroko sista.
-## 己 ⊢ 内 此所 止.
-### I RI in this-place remain.
+# Eko ri vin.
+## 己 ⊢ 閉.
+### I RI finish.

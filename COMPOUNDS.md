@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-778 terms
+790 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -83,6 +83,7 @@
 | bedding | sleep-cloth | tormiropa | 床衣 |
 | beef | milk-animal-meat | ratenpestekarne | 乳匹肉 |
 | beer (any grain alcohol) | grain-fire-water | risowoaku | 米火水 |
+| beholder | see-person | viteomo | 見人 |
 | beige | grain-color | risokoror | 米色 |
 | bicycle | leg-vehicle | kampakaro | 足车 |
 | black market | black-buy-place | nerokomparroko | 黒買所 |
@@ -92,6 +93,8 @@
 | book | many-page | murkarta | 多片 |
 | booking | before-agree | yerakor | 前約 |
 | border (of a country) | country-edge | nasyonrante | 国边 |
+| bored | not-play | nonyu | 不玩 |
+| boring | not-play | nonyu | 不玩 |
 | borrow | interval-get | turantoma | 間取 |
 | boss | work-head | opustesta | 力头 |
 | brave | not-fear | nontimo | 不危 |
@@ -179,6 +182,7 @@
 | decision | choose-finish | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
 | detergent | clean-thing | purukosa | 清物 |
+| different | not-same | nonsam | 不同 |
 | digit | amount-say | mesurtika | 寸言 |
 | diner | food-place | komiroko | 食所 |
 | direct | straight-say | retotika | 直言 |
@@ -427,6 +431,7 @@
 | noon | middle-sun | metseyan | 中日 |
 | north | map-up | mapasur | 図上 |
 | not enough | not-all | nonpan | 不全 |
+| not the same | not-same | nonsam | 不同 |
 | nothing | no-thing | nemkosa | 无物 |
 | now | this-time | tistempo | 此时 |
 | nowhere | no-place | nemroko | 无所 |
@@ -437,12 +442,14 @@
 | off | not-work | nonopus | 不力 |
 | off duty | not-work | nonopus | 不力 |
 | office | work-room | opuskamar | 力室 |
+| often | many-time | murtempo | 多时 |
 | ointment | heal-oil | sanaoren | 医油 |
 | old (in years) | year-big | anyomeka | 年大 |
 | on that note | near-about | nirtopi | 近件 |
 | on what day of the week | what-weekday | keryom | 何曜 |
 | on what occasion | what-time | kertempo | 何时 |
 | online | electric-join | vortoyunta | 電合 |
+| onlooker | see-person | viteomo | 見人 |
 | option | choose-thing | erikekosa | 选物 |
 | orange | red-yellow | rusyoro | 赤黄 |
 | orientation map | help-map | servimapa | 助図 |
@@ -515,6 +522,7 @@
 | rainy season | rain-time | ruvatempo | 雨时 |
 | ramp | up-road | surmoto | 上方 |
 | random | not-sequence | nonorten | 不序 |
+| rarely | not-many-time | nonmurtempo | 不多时 |
 | re-examine | again-see | repevite | 又見 |
 | read | write-see | kitavite | 写見 |
 | reader | write-see-person | kitaviteomo | 写見人 |
@@ -583,6 +591,7 @@
 | second (of time) | small-part | pikoparte | 小分 |
 | see you later | after-meet | tarsarve | 后会 |
 | seek | try-see | tentarvite | 試見 |
+| seldom | not-many-time | nonmurtempo | 不多时 |
 | sensible | good-think | ponapensa | 好思 |
 | serene | small-happy | pikokonten | 小楽 |
 | servant | help-person | serviomo | 助人 |
@@ -623,6 +632,7 @@
 | sour | not-sweet | nontuke | 不甘 |
 | south | map-down | mapatun | 図下 |
 | speaking of which | near-about | nirtopi | 近件 |
+| spectator | see-person | viteomo | 見人 |
 | spice | taste-thing | saporkosa | 味物 |
 | spicy | hot-taste | wosapor | 火味 |
 | sport | body-play | korpoyu | 体玩 |
@@ -720,6 +730,7 @@
 | unfriendly person | cold-person | rikusomo | 冷人 |
 | unhelpful | not-help-give | nonservitonar | 不助与 |
 | university | big-learn-place | mekaimparroko | 大学所 |
+| unlike | not-same | nonsam | 不同 |
 | unlucky | bad-if | marumpos | 悪可 |
 | until | straight-to | retover | 直向 |
 | untrue | not-true | nonves | 不真 |
@@ -730,6 +741,7 @@
 | vegetarian | not-meat-food-person | nonkarnekomiomo | 不肉食人 |
 | vendor | buy-person | komparomo | 買人 |
 | verify | try-true | tentarves | 試真 |
+| viewer | see-person | viteomo | 見人 |
 | visitor | come-person | veniomo | 来人 |
 | vote | choose-say | eriketika | 选言 |
 | voyage | far-come-go | ronveniire | 遠来行 |

@@ -47,6 +47,7 @@ the words.
 | It's a small world. | earth RI small | **Tera ri piko.** | 土 ⊢ 小. |
 | Time is money. | time RI money | **Tempo ri moni.** | 时 ⊢ 贝. |
 | The apple doesn't fall far from the tree. | fruit RI remain near plant | **Pomo ri sista nir arpo.** | 果 ⊢ 止 近 木. |
+| Beauty is in the eye of the beholder. | good-see RI in see-person think | **Ponavite ri in viteomo pensa.** | 好見 ⊢ 内 見人 思. |
 
 ## Set phrases
 
