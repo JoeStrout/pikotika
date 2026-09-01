@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-790 terms
+793 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -182,6 +182,7 @@
 | decision | choose-finish | erikevin | 选閉 |
 | depart | out-go | eksire | 外行 |
 | detergent | clean-thing | purukosa | 清物 |
+| dictionary | say-many-page | tikamurkarta | 言多片 |
 | different | not-same | nonsam | 不同 |
 | digit | amount-say | mesurtika | 寸言 |
 | diner | food-place | komiroko | 食所 |
@@ -278,6 +279,7 @@
 | get ready | before-make | yervake | 前作 |
 | give back | back-give | retsetonar | 反与 |
 | glass (drinking vessel) | water-box | akuvaso | 水皿 |
+| glossary | say-sequence | tikaorten | 言序 |
 | gluten-free food | no-yellow-grain-food | nemyororisokomi | 无黄米食 |
 | go and get | get-go | tomaire | 取行 |
 | go back | back-go | retsire | 反行 |
@@ -787,6 +789,7 @@
 | wisdom | good-think | ponapensa | 好思 |
 | wise | good-think | ponapensa | 好思 |
 | wise person | good-think-person | ponapensaomo | 好思人 |
+| word list | say-sequence | tikaorten | 言序 |
 | work day | work-sun | opusyan | 力日 |
 | writer | write-person | kitaomo | 写人 |
 | writing (text) | write-say | kitatika | 写言 |
