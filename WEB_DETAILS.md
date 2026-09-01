@@ -140,7 +140,7 @@ verification — a typo'd form becoming a chip that opens nothing — so the bui
 keeps that half. Chips are pure enhancement; without JavaScript the sentence is
 still there and still reads.
 
-- **Authors write `<span class="pk">Panyu ri kerroko?</span>`** and nothing else.
+- **Authors write `<span class="pk">Toreta ri kerroko?</span>`** and nothing else.
   `data-check="off"` opts a span out of both the check and the chipping — for a
   `.pk` that is not running Pikotika, such as the `S RI V A O` schema. Gloss
   notation is `.gloss`, not `.pk`.
@@ -290,6 +290,34 @@ the one in JavaScript. One implementation, hash permalinks.
   The scroll aligns the row to the top, not the center — an open entry can be
   taller than the viewport — offset by the measured height of the two sticky
   bars.
+- **The kind row is multi-select** (added 2026-09-01). "All" is exclusive:
+  picking it clears the rest, and picking any other chip toggles it and drops
+  All. Emptying the row falls back to All rather than showing an empty page --
+  a filter that can select nothing is a state a reader can get stuck in with no
+  obvious way out. `kinds` is the list, `kindOn()` the test, `pickKind()` the
+  whole rule; `chips()` therefore takes an `isOn` predicate instead of a value
+  to compare against, since the category row still selects one at a time.
+- **"Sentences" is a sixth kind chip, and it searches the corpus English**
+  (added 2026-09-01). A search for *wanted* finds no word at all -- Pikotika
+  has **volu** -- but two corpus lines translate it, and before this the page
+  could not say so. The matching is `score()`'s split applied to a corpus line:
+  the English at a word boundary, the Latin anywhere.
+  - **No data change was needed.** `lexicon.json` already ships every corpus
+    line in a top-level `sentences` array, because the per-entry example lists
+    refer to them by index.
+  - The section renders at the *foot* of the results, under the word groups: a
+    search is usually after a word, and the sentences are the wider net cast
+    under it. With nothing typed it is the corpus in its own order, which makes
+    Sentences on its own a corpus browser -- so the section opens at 20 rather
+    than the 8 an entry's example list uses (`CORPUS_SHOWN` vs
+    `SENTENCES_SHOWN`), and `sentences()` grew a title and a limit to serve
+    both callers.
+  - **A chosen category hides the section.** Corpus lines carry no categories,
+    so a category is a filter they can only fail; showing them anyway would
+    make the category chips look like they do not apply.
+  - The count line becomes `12 entries · 5 sentences`, and drops the entry half
+    when only sentences match -- otherwise a corpus-only hit reads as
+    "0 entries".
 - **The kind row and the category row are independent** (decided 2026-08-19).
   Categories used to be a roots-only column, so the page tried to afford the
   category chips only under All and Roots: they were dead under Compounds, and

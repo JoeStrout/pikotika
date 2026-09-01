@@ -466,11 +466,11 @@
 ## 此时
 ### this-time
 ===
-# It's good to see you.
+# I wanted to go (but didn't).
 ---
-# Eko ri konten sarve a tu vin.
-## 己 ⊢ 楽 会 ⇒ 尔 閉.
-### I RI happy meet A you finish.
+# Eko ri vori ire vin.
+## 己 ⊢ 求 行 閉.
+### I RI want go finish.
 ===
 # Tomorrow we're going to the sea.
 ---
@@ -544,44 +544,32 @@
 ## 真, 何?
 ### true, what?
 ===
-# Excuse me, do you speak English?
+# Of course!
 ---
-# Perton. Tu ri tika a Inkuris, ker?
-## 悔. 尔 ⊢ 言 ⇒ Inkuris, 何?
-### sorry. you RI say A English, what?
+# Ves!
+## 真!
+### true!
 ===
-# Is that right?
+# Take care (parting).
 ---
-# Tis ri ves, si?
-## 此 ⊢ 真, 是?
-### this RI true, yes?
+# Pona ire.
+## 好 行.
+### good go.
 ===
-# What's new?
+# Alice: Yes please.
 ---
-# Ker ri nova?
-## 何 ⊢ 初?
-### what RI new?
+# Aras: Si, pam.
+## Aras: 是, 乞.
+### Alice: yes, please.
 ===
-# No, a little is fine.
+# How are you?
 ---
-# Non, piko ri pona.
-## 不, 小 ⊢ 好.
-### not, small RI good.
+# Tu ri pona, ker?
+## 尔 ⊢ 好, 何?
+### you RI good, what?
 ===
-# You're talking.
+# Please leave.
 ---
-# Tu ri tika.
-## 尔 ⊢ 言.
-### you RI say.
-===
-# Okay, okay.
----
-# Pona, pona.
-## 好, 好.
-### good, good.
-===
-# It's late.
----
-# Ora ri tar.
-## 刻 ⊢ 后.
-### hour RI after.
+# Pam eksire.
+## 乞 外行.
+### please out-go.

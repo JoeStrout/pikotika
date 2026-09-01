@@ -190,17 +190,23 @@
 ## 风车所
 ### air-vehicle-place
 ===
-# I'm Bob.
+# You're talking.
 ---
-# Eko ri Popu.
-## 己 ⊢ Popu.
-### I RI Bob.
+# Tu ri tika.
+## 尔 ⊢ 言.
+### you RI say.
 ===
-# Thank you!
+# And you?
 ---
-# Mersi!
-## 恩!
-### thank!
+# Kum tu, ker?
+## 并 尔, 何?
+### and you, what?
+===
+# Where do you work?
+---
+# Tu ri opus in kerroko?
+## 尔 ⊢ 力 内 何所?
+### you RI work in what-place?
 ===
 # weekday
 ---
@@ -646,17 +652,11 @@
 ## 内 上日, 火 水 ⊢ 内 室, 何?
 ### in up-sun, hot water RI in room, what?
 ===
-# The road has been closed.
+# Here's two hundred.
 ---
-# Ri vin a moto.
-## ⊢ 閉 ⇒ 方.
-### RI close A road.
-===
-# English is spoken here.
----
-# Ri tika a Inkuris in tisroko.
-## ⊢ 言 ⇒ Inkuris 内 此所.
-### RI say A English in this-place.
+# Tis ri 200.
+## 此 ⊢ 200.
+### this RI 200.
 ===
 # Please speak.
 ---
@@ -664,17 +664,17 @@
 ## 乞 言.
 ### please say.
 ===
-# I don't know.
+# This fish is good, right?
 ---
-# Eko ri non sape.
-## 己 ⊢ 不 知.
-### I RI not know.
+# Tis akupeste ri pona, si?
+## 此 水匹 ⊢ 好, 是?
+### this water-animal RI good, yes?
 ===
-# Today I'm meeting your relatives.
+# The road has been closed.
 ---
-# Tisyan, eko ri sarve a tu parimen.
-## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
-### this-sun, I RI meet A you parent-group.
+# Ri vin a moto.
+## ⊢ 閉 ⇒ 方.
+### RI close A road.
 ===
 # How much are the bananas?
 ---
@@ -682,8 +682,8 @@
 ## 长黄果 ⊢ 何 贝?
 ### long-yellow-fruit RI what money?
 ===
-# I don't eat fish.
+# Two days ago.
 ---
-# Eko ri non komi a akupeste.
-## 己 ⊢ 不 食 ⇒ 水匹.
-### I RI not food A water-animal.
+# 2 yan yer.
+## 2 日 前.
+### 2 sun before.

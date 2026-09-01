@@ -250,17 +250,17 @@
 ## 此 ⊢ 不更 重要 从 不此.
 ### this RI not-more heavy-necessary than not-this.
 ===
-# I like to read comic books.
+# When Tom eats, he watches TV.
 ---
-# Eko ri kusta a kitavite a piturmurkarta.
-## 己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.
-### I RI like A write-see A picture-many-page.
+# Tom ri komi in kertempo, tisomo ri vortovite.
+## Tom ⊢ 食 内 何时, 此人 ⊢ 電見.
+### Tom RI food in what-time, this-person RI electric-see.
 ===
-# It is snowing.
+# The children want ice cream.
 ---
-# Ri rikusruva.
-## ⊢ 冷雨.
-### RI cold-rain.
+# Nino ri vori a rikusraten.
+## 子 ⊢ 求 ⇒ 冷乳.
+### child RI want A cold-milk.
 ===
 # bird
 ---
@@ -414,9 +414,9 @@
 ===
 # toilet; restroom
 ---
-# panyu
+# toreta
 ## 便
-### the *pan* is for *you* to use as a toilet!
+### Italian *toletta*, French *toilette*
 ===
 # relative clause marker
 ---
@@ -444,7 +444,7 @@
 ===
 # Where is the bathroom?
 ---
-# Panyu ri kerroko?
+# Toreta ri kerroko?
 ## 便 ⊢ 何所?
 ### toilet RI what-place?
 ===
@@ -610,44 +610,50 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# I don't think we've met.
+# Yes, at Carla's place.
 ---
-# Eko ri non pensa a ekomen ri sarve vin.
-## 己 ⊢ 不 思 ⇒ 己众 ⊢ 会 閉.
-### I RI not think A I-group RI meet finish.
+# Si, in Karra kase.
+## 是, 内 Karra 户.
+### yes, in Carla home.
 ===
-# One room, one bed.
+# Is breakfast included?
 ---
-# 1 kamar, 1 tormi.
-## 1 室, 1 床.
-### 1 room, 1 sleep.
+# Suryankomi ri in moni, ker?
+## 上日食 ⊢ 内 贝, 何?
+### up-sun-food RI in money, what?
 ===
-# You have school tomorrow.
+# Can I call you next week?
 ---
-# Yantar, tu ri ire ver imparroko.
-## 日后, 尔 ⊢ 行 向 学所.
-### sun-after, you RI go to learn-place.
+# Eko ri kan tika ver tu in tar senseyan, ker?
+## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
+### I RI can say to you in after seven-sun, what?
 ===
-# My mother makes good food.
+# Mary: 7 dollars is cheap!  And I think it would look good on you.
 ---
-# Eko vemapari ri vake a pona komi.
-## 己 女亲 ⊢ 作 ⇒ 好 食.
-### me woman-parent RI make A good food.
+# Meri: 7 moni ri pikomoni! Kum eko ri pensa a tis ri ponavite sur tu.
+## Meri: 7 贝 ⊢ 小贝! 并 己 ⊢ 思 ⇒ 此 ⊢ 好見 上 尔.
+### Mary: 7 money RI small-money! and I RI think A this RI good-see up you.
 ===
-# The child wants water.
+# The vehicle is new.
 ---
-# Nino ri vori a aku.
-## 子 ⊢ 求 ⇒ 水.
-### child RI want A water.
+# Karo ri nova.
+## 车 ⊢ 初.
+### vehicle RI new.
 ===
-# Yes.
+# I know, I'm sorry.
 ---
-# Si.
-## 是.
-### yes.
+# Eko ri sape; eko ri perton.
+## 己 ⊢ 知; 己 ⊢ 悔.
+### I RI know; I RI sorry.
 ===
-# I'm finished.
+# Sorry, I have to go.
 ---
-# Eko ri vin.
-## 己 ⊢ 閉.
-### I RI finish.
+# Perton — eko ri neses ire.
+## 悔 — 己 ⊢ 要 行.
+### sorry — I RI necessary go.
+===
+# It's good to see you.
+---
+# Eko ri konten sarve a tu vin.
+## 己 ⊢ 楽 会 ⇒ 尔 閉.
+### I RI happy meet A you finish.

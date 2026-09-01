@@ -2,7 +2,7 @@
 
 Pikotika (_pee-ko-TEE-say_, meaning 'small talk') is a constructed language that is very tiny -- only about 200 words -- and designed to be especially easy to learn, yet useful for real-world situations.  With Pikotika you can learn to say things like:
 
-- Where is the bathroom?  (**Panyu ri kerroko?**)
+- Where is the bathroom?  (**Toreta ri kerroko?**)
 - Does this dish contain wheat?  (**Tis komi ri tene a yororiso, ker?**)
 - Please wait one moment.  (**Pam sista wun pikotempo.**)
 - I'm staying for 6 days.  (**6 yan turan, eko ri sista.**)
@@ -75,7 +75,7 @@ To ask a question, don't rearrange anything.  Just put **ker** ('what') where th
 
 | Question | Meaning |
 |---|---|
-| **Panyu ri kerroko?** | Where is the bathroom? (*the bathroom is what-place?*) |
+| **Toreta ri kerroko?** | Where is the bathroom? (*the bathroom is what-place?*) |
 | **Tu ri ire ver kerroko?** | Where are you going? (*you go toward what-place?*) |
 | **Tu ri vite a kanis, ker?** | Do you see the dog? |
 

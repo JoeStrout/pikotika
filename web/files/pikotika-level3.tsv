@@ -33,8 +33,9 @@ brown	terakoror<br>土色<br>earth-color	pikotika level3 compound
 grey	rapiskoror<br>岩色<br>stone-color	pikotika level3 compound
 airplane	ventokaro<br>风车<br>air-vehicle	pikotika level3 compound
 airport	ventokaroroko<br>风车所<br>air-vehicle-place	pikotika level3 compound
-I'm Bob.	Eko ri Popu.<br>己 ⊢ Popu.<br>I RI Bob.	pikotika level3 sentence
-Thank you!	Mersi!<br>恩!<br>thank!	pikotika level3 sentence
+You're talking.	Tu ri tika.<br>尔 ⊢ 言.<br>you RI say.	pikotika level3 sentence
+And you?	Kum tu, ker?<br>并 尔, 何?<br>and you, what?	pikotika level3 sentence
+Where do you work?	Tu ri opus in kerroko?<br>尔 ⊢ 力 内 何所?<br>you RI work in what-place?	pikotika level3 sentence
 weekday	yom<br>曜<br><i>Yom</i> Kippur — a named day	pikotika level3 root
 month; moon	mese<br>月<br>you <i>may say</i> the moon phases take a month	pikotika level3 root
 year	anyo<br>年<br>Spanish <i>año</i> (year); <i>annu</i>al	pikotika level3 root
@@ -109,10 +110,9 @@ banana	ronkayoropomo<br>长黄果<br>long-yellow-fruit	pikotika level3 compound
 Do you have a pet?	Tu ri tene a kasepeste, ker?<br>尔 ⊢ 有 ⇒ 户匹, 何?<br>you RI have A home-animal, what?	pikotika level3 sentence
 I work at a bank.	Eko ri opus in monikase.<br>己 ⊢ 力 内 贝户.<br>I RI work in money-home.	pikotika level3 sentence
 Is there hot water in the morning?	In suryan, wo aku ri in kamar, ker?<br>内 上日, 火 水 ⊢ 内 室, 何?<br>in up-sun, hot water RI in room, what?	pikotika level3 sentence
-The road has been closed.	Ri vin a moto.<br>⊢ 閉 ⇒ 方.<br>RI close A road.	pikotika level3 sentence
-English is spoken here.	Ri tika a Inkuris in tisroko.<br>⊢ 言 ⇒ Inkuris 内 此所.<br>RI say A English in this-place.	pikotika level3 sentence
+Here's two hundred.	Tis ri 200.<br>此 ⊢ 200.<br>this RI 200.	pikotika level3 sentence
 Please speak.	Pam tika.<br>乞 言.<br>please say.	pikotika level3 sentence
-I don't know.	Eko ri non sape.<br>己 ⊢ 不 知.<br>I RI not know.	pikotika level3 sentence
-Today I'm meeting your relatives.	Tisyan, eko ri sarve a tu parimen.<br>此日, 己 ⊢ 会 ⇒ 尔 亲众.<br>this-sun, I RI meet A you parent-group.	pikotika level3 sentence
+This fish is good, right?	Tis akupeste ri pona, si?<br>此 水匹 ⊢ 好, 是?<br>this water-animal RI good, yes?	pikotika level3 sentence
+The road has been closed.	Ri vin a moto.<br>⊢ 閉 ⇒ 方.<br>RI close A road.	pikotika level3 sentence
 How much are the bananas?	Ronkayoropomo ri ker moni?<br>长黄果 ⊢ 何 贝?<br>long-yellow-fruit RI what money?	pikotika level3 sentence
-I don't eat fish.	Eko ri non komi a akupeste.<br>己 ⊢ 不 食 ⇒ 水匹.<br>I RI not food A water-animal.	pikotika level3 sentence
+Two days ago.	2 yan yer.<br>2 日 前.<br>2 sun before.	pikotika level3 sentence

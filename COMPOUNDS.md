@@ -703,7 +703,7 @@
 | time off | not-work-time | nonopustempo | 不力时 |
 | timetable | time-sequence | tempoorten | 时序 |
 | today | this-sun | tisyan | 此日 |
-| toilet paper | toilet-page | panyukarta | 便片 |
+| toilet paper | toilet-page | toretakarta | 便片 |
 | tomato | red-fruit | ruspomo | 赤果 |
 | tomato sauce | red-food | ruskomi | 赤食 |
 | tomorrow | sun-after | yantar | 日后 |

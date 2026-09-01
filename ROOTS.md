@@ -103,7 +103,7 @@
 | picture; image | pitur | 画 | photo, drawing, film |
 | room; chamber | kamar | 室 | interior space within a building |
 | table; desk | tapur | 机 | counter, flat surface |
-| toilet; restroom | panyu | 便 | lavatory, bathroom, WC |
+| toilet; restroom | toreta | 便 | lavatory, bathroom, WC |
 | tool; device | uter | 工 | instrument, machine, utensil |
 | vehicle; car | karo | 车 | craft, conveyance |
 

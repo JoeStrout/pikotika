@@ -87,9 +87,11 @@ var CASES = [
   ['Ri tika a tempo ri moni.', 'Ri(_ a(tika ri(tempo moni)))'],
   ['Eko ri pensa a tis senseyan ri nonsorin.',
    'ri(Eko a(pensa ri((tis senseyan) nonsorin)))'],
-  // Chained clauses nest rightward: want [try [eat [meat]]].
-  ['Eko ri vori a tentar a komi a karne.',
-   'ri(Eko a(vori a(tentar a(komi karne))))'],
+  // Chained clauses nest rightward: try [learn [your language]].
+  ['Eko ri tentar a impar a tu tikamoto.',
+   'ri(Eko a(tentar a(impar (tu tikamoto))))'],
+  ['Eko ri kusta a kitavite a piturmurkarta.',
+   'ri(Eko a(kusta a(kitavite piturmurkarta)))'],
 
   // -- relative clauses (grammar/relative/) ---------------------------------
   ['Omo ri komi rite peste.', 'rite(ri(Omo komi) peste)'],
@@ -129,7 +131,7 @@ var CASES = [
    '((Nonves ri(eko a(tene moni))) (tisrason ri(eko a(kompar tis))))'],
 
   // -- questions rearrange nothing (grammar/questions/) ---------------------
-  ['Panyu ri kerroko?', 'ri(Panyu kerroko)'],
+  ['Toreta ri kerroko?', 'ri(Toreta kerroko)'],
   ['Tu ri ire ver kerroko?', 'ri(Tu (ire (ver kerroko)))'],
   ['Tu nova opus ri ker?', 'ri((Tu (nova opus)) ker)'],
   ['Tu ri sape a Karra in kermoto?',
@@ -144,6 +146,10 @@ var CASES = [
   ['Eko ri neses tika ver nontisomo.',
    'ri(Eko ((neses tika) (ver nontisomo)))'],
   ['Ekomen ri kan yer komi.', 'ri(Ekomen (kan (yer komi)))'],
+  // vori before a verb is a modifier, so no `a`: want [try [eat]] a meat.
+  ['Eko ri vori tentar komi a karne.',
+   'ri(Eko a((vori (tentar komi)) karne))'],
+  ['Eko ri vori a ire.', 'ri(Eko a(vori ire))'],
 
   // -- negation is a modifier like any other (grammar/negation/) ------------
   ['Eko ri non komi a akupeste.', 'ri(Eko a((non komi) akupeste))'],

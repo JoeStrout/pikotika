@@ -376,11 +376,11 @@
 ## 中日
 ### middle-sun
 ===
-# Yes, that's the one.
+# Yesterday I wanted to go.
 ---
-# Si, tis.
-## 是, 此.
-### yes, this.
+# Yanyer, eko ri vori ire.
+## 日前, 己 ⊢ 求 行.
+### sun-before, I RI want go.
 ===
 # Please come at seven.
 ---
@@ -694,11 +694,11 @@
 ## 尔 子 ⊢ 何方?
 ### you child RI what-manner?
 ===
-# No, I don't see.
+# I can go.
 ---
-# Non vite.
-## 不 見.
-### not see.
+# Eko ri kan ire.
+## 己 ⊢ 能 行.
+### I RI can go.
 ===
 # Alice: Yes please.
 ---
@@ -724,11 +724,11 @@
 ## 大!
 ### big!
 ===
-# What are your children doing?
+# See you later.
 ---
-# Tu nino ri vake a ker?
-## 尔 子 ⊢ 作 ⇒ 何?
-### you child RI make A what?
+# Tarsarve.
+## 后会.
+### after-meet.
 ===
 # I like music and reading.
 ---

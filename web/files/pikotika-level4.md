@@ -652,17 +652,35 @@
 ## 此 ⊢ 成 更 不硬.
 ### this RI become more not-hard.
 ===
-# I have eaten.
+# It's not more important than that one.
 ---
-# Eko ri komi vin.
-## 己 ⊢ 食 閉.
-### I RI food finish.
+# Tis ri non mas pesaneses vons nontis.
+## 此 ⊢ 不 更 重要 从 不此.
+### this RI not more heavy-necessary than not-this.
 ===
-# How old are your children?
+# I can go.
 ---
-# Tu nino anyoturan ri ker?
-## 尔 子 年間 ⊢ 何?
-### you child year-interval RI what?
+# Eko ri kan ire.
+## 己 ⊢ 能 行.
+### I RI can go.
+===
+# If you come, we'll be happy.
+---
+# Pos tu ri veni, tisrason ekomen ri konten.
+## 可 尔 ⊢ 来, 此故 己众 ⊢ 楽.
+### if you RI come, this-reason I-group RI happy.
+===
+# Please drive.
+---
+# Pam karoire.
+## 乞 车行.
+### please vehicle-go.
+===
+# She's a tea-shop owner.
+---
+# Tisomo ri arpoaku komparroko te teneomo.
+## 此人 ⊢ 木水 買所 > 有人.
+### this-person RI plant-water buy-place TE have-person.
 ===
 # I'm a teacher.
 ---
@@ -670,26 +688,14 @@
 ## 己 ⊢ 学与人.
 ### I RI learn-give-person.
 ===
-# I'm with the child.
+# Goodbye.
 ---
-# Eko ri kum nino.
-## 己 ⊢ 并 子.
-### I RI and child.
+# Pertoneksire.
+## 悔外行.
+### sorry-out-go.
 ===
-# The story is true.
+# No, I don't see.
 ---
-# Tikakosa ri ves.
-## 言物 ⊢ 真.
-### say-thing RI true.
-===
-# Two days ago.
----
-# 2 yan yer.
-## 2 日 前.
-### 2 sun before.
-===
-# Is the boss in today?
----
-# Tisyan, opustesta ri in opuskamar, ker?
-## 此日, 力头 ⊢ 内 力室, 何?
-### this-sun, work-head RI in work-room, what?
+# Non vite.
+## 不 見.
+### not see.

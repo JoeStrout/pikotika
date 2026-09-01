@@ -43,8 +43,8 @@ museum	artikase<br>芸户<br>art-home	pikotika level5 compound
 fried	orenvake<br>油作<br>oil-make	pikotika level5 compound
 fried rice	orenankariso<br>油白米<br>oil-white-grain	pikotika level5 compound
 It's less important than that one.	Tis ri nonmas pesaneses vons nontis.<br>此 ⊢ 不更 重要 从 不此.<br>this RI not-more heavy-necessary than not-this.	pikotika level5 sentence
-I like to read comic books.	Eko ri kusta a kitavite a piturmurkarta.<br>己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.<br>I RI like A write-see A picture-many-page.	pikotika level5 sentence
-It is snowing.	Ri rikusruva.<br>⊢ 冷雨.<br>RI cold-rain.	pikotika level5 sentence
+When Tom eats, he watches TV.	Tom ri komi in kertempo, tisomo ri vortovite.<br>Tom ⊢ 食 内 何时, 此人 ⊢ 電見.<br>Tom RI food in what-time, this-person RI electric-see.	pikotika level5 sentence
+The children want ice cream.	Nino ri vori a rikusraten.<br>子 ⊢ 求 ⇒ 冷乳.<br>child RI want A cold-milk.	pikotika level5 sentence
 bird	avis<br>鳥<br><i>avi</i>ary, <i>avi</i>ation — birds	pikotika level5 root
 bug; worm	inses<br>虫<br><i>inse</i>ct	pikotika level5 root
 dog; canine	kanis<br>犬<br><i>canis</i>, <i>canin</i>e, dog	pikotika level5 root
@@ -70,12 +70,12 @@ Is this allowed?	Ri reke a tis, ker?<br>⊢ 法 ⇒ 此, 何?<br>RI law A this, 
 It's not allowed.	Ri non reke.<br>⊢ 不 法.<br>RI not law.	pikotika level5 sentence
 key; lock	yave<br>錠<br><i>shove</i> the key into the lock	pikotika level5 root
 table; desk	tapur<br>机<br><i>tap your</i> fingers on the table	pikotika level5 root
-toilet; restroom	panyu<br>便<br>the <i>pan</i> is for <i>you</i> to use as a toilet!	pikotika level5 root
+toilet; restroom	toreta<br>便<br>Italian <i>toletta</i>, French <i>toilette</i>	pikotika level5 root
 relative clause marker	rite<br>⊢><br>RI-TE	pikotika level5 compound
 return; come back	retseveni<br>反来<br>back-come	pikotika level5 compound
 until; till; up to (in time)	retover<br>直向<br>straight-to	pikotika level5 compound
 password	yavetika<br>錠言<br>key-say	pikotika level5 compound
-Where is the bathroom?	Panyu ri kerroko?<br>便 ⊢ 何所?<br>toilet RI what-place?	pikotika level5 sentence
+Where is the bathroom?	Toreta ri kerroko?<br>便 ⊢ 何所?<br>toilet RI what-place?	pikotika level5 sentence
 The key you gave me is on the table.	Tu ri tonar ver eko rite yave ri sur tapur.<br>尔 ⊢ 与 向 己 ⊢> 錠 ⊢ 上 机.<br>you RI give to me RI-TE key RI on table.	pikotika level5 sentence
 Here is your key.	Tis ri tu yave.<br>此 ⊢ 尔 錠.<br>this RI you key.	pikotika level5 sentence
 old; former	vetus<br>古<br>the <i>vete</i>ran is old	pikotika level5 root
@@ -103,10 +103,11 @@ elevator; lift	surtunkamar<br>上下室<br>up-down-room	pikotika level5 compound
 The party starts at 7 PM.	Yumen ri apa in tunyan 7 ora.<br>玩众 ⊢ 开 内 下日 7 刻.<br>play-group RI begin in down-sun 7 hour.	pikotika level5 sentence
 Go straight to that big tree, then turn left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.<br>乞 直 行 向 不此 大 木, 后 乞 弓 向 左.<br>please straight go to not-this big plant, after please bend to left.	pikotika level5 sentence
 Turn left at the next corner.	Pam kurva ver sini in tarorten kurvaroko.<br>乞 弓 向 左 内 后序 弓所.<br>please bend to left in after-sequence bend-place.	pikotika level5 sentence
-I don't think we've met.	Eko ri non pensa a ekomen ri sarve vin.<br>己 ⊢ 不 思 ⇒ 己众 ⊢ 会 閉.<br>I RI not think A I-group RI meet finish.	pikotika level5 sentence
-One room, one bed.	1 kamar, 1 tormi.<br>1 室, 1 床.<br>1 room, 1 sleep.	pikotika level5 sentence
-You have school tomorrow.	Yantar, tu ri ire ver imparroko.<br>日后, 尔 ⊢ 行 向 学所.<br>sun-after, you RI go to learn-place.	pikotika level5 sentence
-My mother makes good food.	Eko vemapari ri vake a pona komi.<br>己 女亲 ⊢ 作 ⇒ 好 食.<br>me woman-parent RI make A good food.	pikotika level5 sentence
-The child wants water.	Nino ri vori a aku.<br>子 ⊢ 求 ⇒ 水.<br>child RI want A water.	pikotika level5 sentence
-Yes.	Si.<br>是.<br>yes.	pikotika level5 sentence
-I'm finished.	Eko ri vin.<br>己 ⊢ 閉.<br>I RI finish.	pikotika level5 sentence
+Yes, at Carla's place.	Si, in Karra kase.<br>是, 内 Karra 户.<br>yes, in Carla home.	pikotika level5 sentence
+Is breakfast included?	Suryankomi ri in moni, ker?<br>上日食 ⊢ 内 贝, 何?<br>up-sun-food RI in money, what?	pikotika level5 sentence
+Can I call you next week?	Eko ri kan tika ver tu in tar senseyan, ker?<br>己 ⊢ 能 言 向 尔 内 后 7日, 何?<br>I RI can say to you in after seven-sun, what?	pikotika level5 sentence
+Mary: 7 dollars is cheap!  And I think it would look good on you.	Meri: 7 moni ri pikomoni! Kum eko ri pensa a tis ri ponavite sur tu.<br>Meri: 7 贝 ⊢ 小贝! 并 己 ⊢ 思 ⇒ 此 ⊢ 好見 上 尔.<br>Mary: 7 money RI small-money! and I RI think A this RI good-see up you.	pikotika level5 sentence
+The vehicle is new.	Karo ri nova.<br>车 ⊢ 初.<br>vehicle RI new.	pikotika level5 sentence
+I know, I'm sorry.	Eko ri sape; eko ri perton.<br>己 ⊢ 知; 己 ⊢ 悔.<br>I RI know; I RI sorry.	pikotika level5 sentence
+Sorry, I have to go.	Perton — eko ri neses ire.<br>悔 — 己 ⊢ 要 行.<br>sorry — I RI necessary go.	pikotika level5 sentence
+It's good to see you.	Eko ri konten sarve a tu vin.<br>己 ⊢ 楽 会 ⇒ 尔 閉.<br>I RI happy meet A you finish.	pikotika level5 sentence

@@ -85,7 +85,7 @@
     return lexiconWanted;
   }
 
-  /* Split "Panyu ri kerroko?" into words and the punctuation between them,
+  /* Split "Toreta ri kerroko?" into words and the punctuation between them,
      keeping every character so the sentence still reads and copies correctly. */
   function tokenize(text) {
     var tokens = [];
@@ -631,7 +631,11 @@
        standing in compounds.tsv; the reader has no use for that distinction. */
     ['compound', 'Compounds', ['compound', 'phrase']],
     ['name', 'Names', ['name']],
-    ['loan', 'Loan words', ['loan']]
+    ['loan', 'Loan words', ['loan']],
+    /* Sentences are not lexicon entries, so this one matches no word: an empty
+       list, which `inKind` reads as "nothing", against `null` for All.  What it
+       switches on is the corpus section at the foot of the results. */
+    ['sentence', 'Sentences', []]
   ];
 
   var KIND_LABEL = {
@@ -670,7 +674,10 @@
     window.addEventListener('resize', stick);
 
     var data = null;
-    var kind = 'all';
+    /* The kind row is multi-select: "All" is exclusive, every other chip
+       toggles, and emptying the row falls back to All rather than showing
+       nothing. */
+    var kinds = ['all'];
     var category = '';
     var query = '';
     var open = '';
@@ -704,13 +711,65 @@
       return best;
     }
 
+    function kindOn(id) { return kinds.indexOf(id) >= 0; }
+
+    function pickKind(id) {
+      if (id === 'all') { kinds = ['all']; return; }
+      var at = kinds.indexOf(id);
+      if (at >= 0) kinds.splice(at, 1);
+      else kinds.push(id);
+      kinds = kinds.filter(function (k) { return k !== 'all'; });
+      if (!kinds.length) kinds = ['all'];
+    }
+
     function inKind(entry) {
-      var want = null;
+      if (kindOn('all')) return true;
       for (var i = 0; i < KINDS.length; i++) {
-        if (KINDS[i][0] === kind) want = KINDS[i][2];
+        var want = KINDS[i][2];
+        if (want && kindOn(KINDS[i][0]) && want.indexOf(entry.kind) >= 0) {
+          return true;
+        }
       }
-      if (!want) return true;
-      return want.indexOf(entry.kind) >= 0;
+      return false;
+    }
+
+    /* Corpus sentences carry no categories, so a chosen category is a filter
+       they can only fail -- the section drops out rather than ignoring it. */
+    function sentencesOn() {
+      return !category && (kindOn('all') || kindOn('sentence'));
+    }
+
+    /* Same split as `score`: English at a word boundary, Latin anywhere.  A
+       corpus line is written solid the way a compound is, and its English is
+       ordinary prose where *price* must not answer to *rice*. */
+    function scoreSentence(line, q) {
+      var en = (line[1] || '').toLowerCase();
+      var latin = (line[0] || '').toLowerCase();
+      if (new RegExp('(^|[^a-z0-9])' + escapeRe(q)).test(en)) return 70;
+      if (latin.indexOf(q) >= 0) return 30;
+      return 0;
+    }
+
+    /* The indices of the corpus lines this page is showing: the ones the query
+       matches, or -- with nothing typed and Sentences chosen -- the corpus in
+       its own order, which is a readable thing to browse. */
+    function matchedSentences() {
+      var lines = (data && data.sentences) || [];
+      var out = [];
+      if (!sentencesOn()) return out;
+      if (!query) {
+        for (var i = 0; i < lines.length; i++) out.push(i);
+        return out;
+      }
+      var hits = [];
+      for (var j = 0; j < lines.length; j++) {
+        var s = scoreSentence(lines[j], query);
+        if (s) hits.push([s, j]);
+      }
+      hits.sort(function (a, b) {
+        return a[0] !== b[0] ? b[0] - a[0] : a[1] - b[1];
+      });
+      return hits.map(function (h) { return h[1]; });
     }
 
     /* Every kind of word carries categories now -- roots one apiece from
@@ -769,7 +828,7 @@
 
       var cats = data.categories || [];
       for (var c = 0; c < cats.length; c++) {
-        if (kind === 'all' || kind === 'root') {
+        if (kindOn('all') || kindOn('root')) {
           if (!category || category === cats[c]) group(cats[c]);
         }
       }
@@ -930,6 +989,10 @@
        says plainly how much more there is. */
     var SENTENCES_SHOWN = 8;
 
+    /* The corpus section is what the reader asked for rather than an aside on
+       an entry, so it opens longer. */
+    var CORPUS_SHOWN = 20;
+
     function example(line) {
       /* .example is the markup the rest of the site uses, so chipping and the
          sentence play button both come for free. */
@@ -946,10 +1009,11 @@
       return ex;
     }
 
-    function sentences(indexes) {
+    function sentences(indexes, title, limit) {
+      var cap = limit || SENTENCES_SHOWN;
       var section = document.createElement('div');
       section.className = 'vocab-section';
-      section.appendChild(heading(
+      section.appendChild(heading(title !== undefined ? title :
         indexes.length === 1 ? 'In 1 sentence'
                              : 'In ' + indexes.length + ' sentences'));
 
@@ -966,8 +1030,7 @@
       var button = document.createElement('button');
       button.type = 'button';
       button.className = 'vocab-morebtn';
-      button.textContent = 'Show the other ' +
-        (indexes.length - SENTENCES_SHOWN) + '';
+      button.textContent = 'Show the other ' + (indexes.length - cap) + '';
       button.addEventListener('click', function () {
         add(indexes.length);
         rest.remove();
@@ -977,8 +1040,8 @@
       rest.appendChild(button);
       section.appendChild(rest);
 
-      add(SENTENCES_SHOWN);
-      if (indexes.length <= SENTENCES_SHOWN) rest.remove();
+      add(cap);
+      if (indexes.length <= cap) rest.remove();
       return section;
     }
 
@@ -1053,10 +1116,20 @@
       var groups = query ? [{ title: '', items: searched(query) }] : browsed();
       var total = 0;
       groups.forEach(function (g) { total += g.items.length; });
+      var lines = matchedSentences();
 
-      countEl.textContent = total === 0
-        ? (query ? 'Nothing matches “' + query + '”.' : 'Nothing in this filter.')
-        : total + (total === 1 ? ' entry' : ' entries');
+      var counts = [];
+      if (total || !lines.length) {
+        counts.push(total + (total === 1 ? ' entry' : ' entries'));
+      }
+      if (lines.length) {
+        counts.push(lines.length +
+                    (lines.length === 1 ? ' sentence' : ' sentences'));
+      }
+      countEl.textContent = (total || lines.length)
+        ? counts.join(' · ')
+        : (query ? 'Nothing matches “' + query + '”.'
+                 : 'Nothing in this filter.');
 
       groups.forEach(function (g) {
         var section = document.createElement('section');
@@ -1073,6 +1146,23 @@
         section.appendChild(list);
         results.appendChild(section);
       });
+
+      /* The corpus goes at the foot of the results: a search for "wanted" is
+         usually after a word, and the sentences are the wider net cast under
+         it.  Browsed with nothing typed they are the corpus in its own order. */
+      if (lines.length) {
+        var corpus = document.createElement('section');
+        corpus.className = 'vocab-group';
+        corpus.appendChild(sentences(
+          lines,
+          query ? lines.length + (lines.length === 1 ? ' sentence contains “'
+                                                     : ' sentences contain “') +
+                  query + '”'
+                : 'Sample sentences',
+          CORPUS_SHOWN));
+        results.appendChild(corpus);
+        scanChips(corpus);
+      }
       addSentencePlayers();
     }
 
@@ -1106,7 +1196,7 @@
     function reveal(form) {
       if (!data || !data.words[form]) return;
       if (document.getElementById('v-' + form)) return;
-      kind = 'all';
+      kinds = ['all'];
       category = '';
       drawChips();
       render();
@@ -1142,23 +1232,25 @@
 
     /* -- the chip rows ---------------------------------------------------- */
 
-    function chips(row, items, current, onPick) {
+    /* `isOn` rather than a value to compare against, because the kind row
+       holds several at once and the category row one. */
+    function chips(row, items, isOn, onPick) {
       row.textContent = '';
       items.forEach(function (item) {
         var chip = document.createElement('button');
         chip.type = 'button';
         chip.className = 'vocab-chip';
         chip.textContent = item[1];
-        chip.setAttribute('aria-pressed', item[0] === current ? 'true' : 'false');
+        chip.setAttribute('aria-pressed', isOn(item[0]) ? 'true' : 'false');
         chip.addEventListener('click', function () { onPick(item[0]); });
         row.appendChild(chip);
       });
     }
 
     function drawChips() {
-      chips(kindRow, KINDS.map(function (k) { return [k[0], k[1]]; }), kind,
+      chips(kindRow, KINDS.map(function (k) { return [k[0], k[1]]; }), kindOn,
             function (value) {
-              kind = value;
+              pickKind(value);
               drawChips();
               render();
             });
@@ -1172,11 +1264,12 @@
         (data && data.categories || []).map(function (c) { return [c, c]; }));
       catRow.hidden = !data;
       if (data) {
-        chips(catRow, cats, category, function (value) {
-          category = value;
-          drawChips();
-          render();
-        });
+        chips(catRow, cats, function (value) { return value === category; },
+              function (value) {
+                category = value;
+                drawChips();
+                render();
+              });
       }
     }
 
