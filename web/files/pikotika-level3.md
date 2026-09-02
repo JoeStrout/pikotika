@@ -164,7 +164,7 @@
 ---
 # mekavento
 ## 大风
-### big-air
+### big-wind
 ===
 # brown
 ---
@@ -236,7 +236,7 @@
 ---
 # meseyom
 ## 月曜
-### month-weekday
+### moon-weekday
 ===
 # Tuesday
 ---
@@ -278,19 +278,19 @@
 ---
 # Tu anyoturan ri ker?
 ## 尔 年間 ⊢ 何?
-### you year-interval RI what?
+### you year-duration RI what?
 ===
 # How old are your children?
 ---
 # Tu nino anyoturan ri ker?
 ## 尔 子 年間 ⊢ 何?
-### you child year-interval RI what?
+### you child year-duration RI what?
 ===
 # I'm 34 years old.
 ---
 # Eko anyoturan ri 34.
 ## 己 年間 ⊢ 34.
-### me year-interval RI 34.
+### me year-duration RI 34.
 ===
 # sequence; series
 ---
@@ -404,13 +404,13 @@
 ---
 # senseyan
 ## 7日
-### seven-sun
+### seven-day
 ===
 # weekend
 ---
 # senseyanvin
 ## 7日閉
-### seven-sun-finish
+### seven-day-finish
 ===
 # Same as always.
 ---
@@ -500,7 +500,7 @@
 ---
 # teneomo
 ## 有人
-### have-person
+### own-person
 ===
 # Busy, but good.
 ---

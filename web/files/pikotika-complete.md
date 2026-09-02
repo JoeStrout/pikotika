@@ -476,7 +476,7 @@
 ---
 # Yantar, ekomen ri ire ver mekaaku.
 ## 日后, 己众 ⊢ 行 向 大水.
-### sun-after, I-group RI go to big-water.
+### day-after, I-group RI go to big-water.
 ===
 # It's late.
 ---
@@ -722,7 +722,7 @@
 ---
 # Tisyan, eko ri sarve a tu parimen.
 ## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
-### this-sun, I RI meet A you parent-group.
+### this-day, I RI meet A you parent-group.
 ===
 # Is your family well?
 ---
@@ -848,19 +848,19 @@
 ---
 # tisyan
 ## 此日
-### this-sun
+### this-day
 ===
 # yesterday
 ---
 # yanyer
 ## 日前
-### sun-before
+### day-before
 ===
 # tomorrow
 ---
 # yantar
 ## 日后
-### sun-after
+### day-after
 ===
 # tonight
 ---
@@ -956,7 +956,7 @@
 ---
 # Yanyer, eko ri vori ire.
 ## 日前, 己 ⊢ 求 行.
-### sun-before, I RI want go.
+### day-before, I RI want go.
 ===
 # Please come at seven.
 ---
@@ -968,7 +968,7 @@
 ---
 # Tu senseyanvin ri kermoto?
 ## 尔 7日閉 ⊢ 何方?
-### you seven-sun-finish RI what-manner?
+### you seven-day-finish RI what-manner?
 ===
 # drink; beverage
 ---
@@ -1166,7 +1166,7 @@
 ---
 # kitavite
 ## 写見
-### write-see
+### writing-see
 ===
 # writer; author
 ---
@@ -1238,7 +1238,7 @@
 ---
 # kitaviteomo
 ## 写見人
-### write-see-person
+### writing-see-person
 ===
 # trip; journey
 ---
@@ -1292,7 +1292,7 @@
 ---
 # Eko ri kusta a musi kum kitavite.
 ## 己 ⊢ 愛 ⇒ 曲 并 写見.
-### I RI like A music and write-see.
+### I RI like A music and writing-see.
 ===
 # color; hue
 ---
@@ -1460,7 +1460,7 @@
 ---
 # mekavento
 ## 大风
-### big-air
+### big-wind
 ===
 # brown
 ---
@@ -1532,7 +1532,7 @@
 ---
 # meseyom
 ## 月曜
-### month-weekday
+### moon-weekday
 ===
 # Tuesday
 ---
@@ -1574,19 +1574,19 @@
 ---
 # Tu anyoturan ri ker?
 ## 尔 年間 ⊢ 何?
-### you year-interval RI what?
+### you year-duration RI what?
 ===
 # How old are your children?
 ---
 # Tu nino anyoturan ri ker?
 ## 尔 子 年間 ⊢ 何?
-### you child year-interval RI what?
+### you child year-duration RI what?
 ===
 # I'm 34 years old.
 ---
 # Eko anyoturan ri 34.
 ## 己 年間 ⊢ 34.
-### me year-interval RI 34.
+### me year-duration RI 34.
 ===
 # sequence; series
 ---
@@ -1700,13 +1700,13 @@
 ---
 # senseyan
 ## 7日
-### seven-sun
+### seven-day
 ===
 # weekend
 ---
 # senseyanvin
 ## 7日閉
-### seven-sun-finish
+### seven-day-finish
 ===
 # Same as always.
 ---
@@ -1796,7 +1796,7 @@
 ---
 # teneomo
 ## 有人
-### have-person
+### own-person
 ===
 # Busy, but good.
 ---
@@ -2078,7 +2078,7 @@
 ---
 # kampaire
 ## 足行
-### leg-go
+### foot-go
 ===
 # doctor
 ---
@@ -2102,7 +2102,7 @@
 ---
 # marasenti
 ## 病心
-### sick-feel
+### hurt-feel
 ===
 # headache; nuisance
 ---
@@ -2120,13 +2120,13 @@
 ---
 # Yantar, wun omo ri veni por sana a tis.
 ## 日后, 1 人 ⊢ 来 為 医 ⇒ 此.
-### sun-after, one person RI come for heal A this.
+### day-after, one person RI come for heal A this.
 ===
 # Walk five minutes.
 ---
 # Pam 5 parte turan kampaire.
 ## 乞 5 分 間 足行.
-### please 5 part interval leg-go.
+### please 5 part interval foot-go.
 ===
 # meat
 ---
@@ -2186,7 +2186,7 @@
 ---
 # Nino ri vori a rikusraten.
 ## 子 ⊢ 求 ⇒ 冷乳.
-### child RI want A cold-milk.
+### child RI want A ice-milk.
 ===
 # bend; turn
 ---
@@ -2294,7 +2294,7 @@
 ---
 # Yantar, eko ri karoire rets.
 ## 日后, 己 ⊢ 车行 反.
-### sun-after, I RI vehicle-go back.
+### day-after, I RI vehicle-go back.
 ===
 # And forty back.
 ---
@@ -2420,7 +2420,7 @@
 ---
 # mesurtika
 ## 寸言
-### amount-say
+### amount-word
 ===
 # shop
 ---
@@ -2432,7 +2432,7 @@
 ---
 # komparmen
 ## 買众
-### buy-group
+### commerce-group
 ===
 # The station is between the shop and the river.
 ---
@@ -2594,7 +2594,7 @@
 ---
 # anyoturan
 ## 年間
-### year-interval
+### year-duration
 ===
 # young
 ---
@@ -2648,7 +2648,7 @@
 ---
 # Tisomo ri arpoaku komparroko te teneomo.
 ## 此人 ⊢ 木水 買所 > 有人.
-### this-person RI plant-water buy-place TE have-person.
+### this-person RI plant-water buy-place TE own-person.
 ===
 # I'm a teacher.
 ---
@@ -2942,7 +2942,7 @@
 ---
 # avisnino
 ## 鳥子
-### bird-child
+### bird-offspring
 ===
 # poultry; chicken (meat)
 ---
@@ -2960,7 +2960,7 @@
 ---
 # Yanyer, eko ri vite a kanis.
 ## 日前, 己 ⊢ 見 ⇒ 犬.
-### sun-before, I RI see A dog.
+### day-before, I RI see A dog.
 ===
 # The flock is flying over the sea.
 ---
@@ -3092,7 +3092,7 @@
 ---
 # yavetika
 ## 錠言
-### key-say
+### key-word
 ===
 # Where is the bathroom?
 ---
@@ -3146,7 +3146,7 @@
 ---
 # rompeuter
 ## 切工
-### break-tool
+### cut-tool
 ===
 # One thing — the light in the hall is broken.
 ---
@@ -3272,7 +3272,7 @@
 ---
 # Eko ri kan tika ver tu in tar senseyan, ker?
 ## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
-### I RI can say to you in after seven-sun, what?
+### I RI can say to you in after seven-day, what?
 ===
 # Mary: 7 dollars is cheap!  And I think it would look good on you.
 ---

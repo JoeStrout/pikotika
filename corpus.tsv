@@ -86,23 +86,23 @@ No, I live about two hours north. I came just for the party.	not. I RI life in t
 That's a long way.	this RI long road.	Tis ri ronka moto.	此 ⊢ 长 方.	3	travel
 Are you staying the night?	you RI sleep in this city, what?	Tu ri tormi in tis sitas, ker?	尔 ⊢ 床 内 此 市, 何?	4	lodging
 Yes, at Carla's place.	yes, in Carla home.	Si, in Karra kase.	是, 内 Karra 户.	3	lodging;names
-I'll drive back tomorrow.	sun-after, I RI vehicle-go back.	Yantar, eko ri karoire rets.	日后, 己 ⊢ 车行 反.	4	travel;dates
+I'll drive back tomorrow.	day-after, I RI vehicle-go back.	Yantar, eko ri karoire rets.	日后, 己 ⊢ 车行 反.	4	travel;dates
 Morning.	good up-sun.	Pona suryan.	好 上日.	2	pleasantries
-How was your weekend?	you seven-sun-finish RI what-manner?	Tu senseyanvin ri kermoto?	尔 7日閉 ⊢ 何方?	2	smalltalk;dates
+How was your weekend?	you seven-day-finish RI what-manner?	Tu senseyanvin ri kermoto?	尔 7日閉 ⊢ 何方?	2	smalltalk;dates
 Too short.	up-degree small.	Surmesur piko.	上寸 小.	3	smalltalk
 Good, actually.	good, in-true.	Pona, inves.	好, 内真.	1	smalltalk
 I finally fixed my bicycle.	in-finish, I RI heal A me leg-vehicle.	Invin, eko ri sana a eko kampakaro.	内閉, 己 ⊢ 医 ⇒ 己 足车.	4	smalltalk
 The one that's been broken since spring?	this RI break finish in many month interval, not?	Tis ri rompe vin in mur mese turan, non?	此 ⊢ 切 閉 内 多 月 間, 不?	5	seasons
 Yes, that's the one.	yes, this.	Si, tis.	是, 此.	1	smalltalk
-I rode it twenty kilometers on Sunday.	in sun-weekday, I RI vehicle-put A this in 20 thousand-meter.	In yanyom, eko ri karoseta a tis in 20 kirumitar.	内 日曜, 己 ⊢ 车坐 ⇒ 此 内 20 千mitar.	4	dates;numbers
+I rode it twenty kilometers on Sunday.	in sun-weekday, I RI vehicle-sit A this in 20 thousand-meter.	In yanyom, eko ri karoseta a tis in 20 kirumitar.	内 日曜, 己 ⊢ 车坐 ⇒ 此 内 20 千mitar.	4	dates;numbers
 Nice.	good.	Pona.	好.	1	smalltalk
 I did nothing.	I RI make A no.	Eko ri vake a nem.	己 ⊢ 作 ⇒ 无.	2	smalltalk
 I slept, I ate, I watched three movies.	I RI sleep, food, and see A 3 picture.	Eko ri tormi, komi, kum vite a 3 pitur.	己 ⊢ 床, 食, 并 見 ⇒ 3 画.	4	smalltalk
 That sounds better than working.	this RI more good than work.	Tis ri mas pona vons opus.	此 ⊢ 更 好 从 力.	2	smalltalk
 It was.	true.	Ves.	真.	1	smalltalk
-Is the boss in today?	this-sun, work-head RI in work-room, what?	Tisyan, opustesta ri in opuskamar, ker?	此日, 力头 ⊢ 内 力室, 何?	4	smalltalk
+Is the boss in today?	this-day, work-head RI in work-room, what?	Tisyan, opustesta ri in opuskamar, ker?	此日, 力头 ⊢ 内 力室, 何?	4	smalltalk
 She's traveling until Thursday.	this-person RI vehicle-go straight-to plant-weekday.	Tisomo ri karoire retover arpoyom.	此人 ⊢ 车行 直向 木曜.	4	dates;travel
-Then I think this week will be easy.	but, I RI think A this seven-sun RI not-hard.	Sets, eko ri pensa a tis senseyan ri nonsorin.	但, 己 ⊢ 思 ⇒ 此 7日 ⊢ 不硬.	4	dates
+Then I think this week will be easy.	but, I RI think A this seven-day RI not-hard.	Sets, eko ri pensa a tis senseyan ri nonsorin.	但, 己 ⊢ 思 ⇒ 此 7日 ⊢ 不硬.	4	dates
 Good morning!	good up-sun!	Pona suryan!	好 上日!	2	pleasantries
 What would you like?	you RI want A what?	Tu ri vori a ker?	尔 ⊢ 求 ⇒ 何?	1	money
 How much are the bananas?	long-yellow-fruit RI what money?	Ronkayoropomo ri ker moni?	长黄果 ⊢ 何 贝?	3	money;food;numbers
@@ -127,7 +127,7 @@ The fish is fresh.	water-animal RI new.	Akupeste ri nova.	水匹 ⊢ 初.	2	food
 The soup is also very good.	and water-food RI big good.	Kum akukomi ri meka pona.	并 水食 ⊢ 大 好.	1	food
 I don't eat fish.	I RI not food A water-animal.	Eko ri non komi a akupeste.	己 ⊢ 不 食 ⇒ 水匹.	2	food
 Do you have anything without meat?	you RI have A not meat food, what?	Tu ri tene a non karne komi, ker?	尔 ⊢ 有 ⇒ 不 肉 食, 何?	4	food
-Yes — we have a rice dish with vegetables and eggs.	yes. I-group RI have A white-grain food and green-food and bird-child.	Si. Ekomen ri tene a ankariso komi kum vertekomi kum avisnino.	是. 己众 ⊢ 有 ⇒ 白米 食 并 緑食 并 鳥子.	5	food
+Yes — we have a rice dish with vegetables and eggs.	yes. I-group RI have A white-grain food and green-food and bird-offspring.	Si. Ekomen ri tene a ankariso komi kum vertekomi kum avisnino.	是. 己众 ⊢ 有 ⇒ 白米 食 并 緑食 并 鳥子.	5	food
 I'll have that.	I RI want A this.	Eko ri vori a tis.	己 ⊢ 求 ⇒ 此.	1	food
 And I'll have the fish, please.	and I RI want A water-animal, please.	Kum eko ri vori a akupeste, pam.	并 己 ⊢ 求 ⇒ 水匹, 乞.	2	food
 Is it spicy?	this RI hot-taste, what?	Tis ri wosapor, ker?	此 ⊢ 火味, 何?	4	food
@@ -143,12 +143,12 @@ Excuse me, do you speak English?	sorry. you RI say A English, what?	Perton. Tu r
 Slowly, please.	please not-fast say.	Pam nonveros tika.	乞 不早 言.	2	travel
 Where is the train station?	line-vehicle-place RI what-place?	Rinekaroroko ri kerroko?	糸车所 ⊢ 何所?	4	travel
 Go straight to that big tree, then turn left.	please straight go to not-this big plant, after please bend to left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.	乞 直 行 向 不此 大 木, 后 乞 弓 向 左.	5	travel
-Walk five minutes.	please 5 part interval leg-go.	Pam 5 parte turan kampaire.	乞 5 分 間 足行.	4	travel;time
+Walk five minutes.	please 5 part interval foot-go.	Pam 5 parte turan kampaire.	乞 5 分 間 足行.	4	travel;time
 You will see it.	you RI see A this.	Tu ri vite a tis.	尔 ⊢ 見 ⇒ 此.	2	travel
 Left at the tree.	left in plant.	Sini in arpo.	左 内 木.	5	travel
 Thank you.	thank.	Mersi.	恩.	2	pleasantries
 Is there a bus too?	RI and many-person-vehicle in this road, what?	Ri kum muromokaro in tis moto, ker?	⊢ 并 多人车 内 此 方, 何?	3	travel
-Yes, but walking is faster.	yes, but leg-go RI more fast.	Si, sets kampaire ri mas veros.	是, 但 足行 ⊢ 更 早.	4	travel
+Yes, but walking is faster.	yes, but foot-go RI more fast.	Si, sets kampaire ri mas veros.	是, 但 足行 ⊢ 更 早.	4	travel
 One more question — do you know when the train to the airport leaves?	one more what-say: metal-line-vehicle to air-vehicle-place RI out-go in what-hour?	Wun mas kertika: metarrinekaro ver ventokaroroko ri eksire in kerora?	1 更 何言: 金糸车 向 风车所 ⊢ 外行 内 何刻?	4	travel;time
 I don't know.	I RI not know.	Eko ri non sape.	己 ⊢ 不 知.	3	pleasantries
 Ask inside the station.	please want-say in vehicle-place.	Pam voritika in karoroko.	乞 求言 内 车所.	1	travel
@@ -165,7 +165,7 @@ Please don't worry.	please not fear.	Pam non timo.	乞 不 危.	4	pleasantries
 It becomes easier.	this RI become more not-hard.	Tis ri tiven mas nonsorin.	此 ⊢ 成 更 不硬.	4	pleasantries
 I'm not tired.	I RI not tired.	Eko ri non kansa.	己 ⊢ 不 疲.	5	health;family;feelings
 It's late.	time RI after.	Tempo ri tar.	时 ⊢ 后.	1	time
-You have school tomorrow.	sun-after, you RI go to learn-place.	Yantar, tu ri ire ver imparroko.	日后, 尔 ⊢ 行 向 学所.	4	family;dates
+You have school tomorrow.	day-after, you RI go to learn-place.	Yantar, tu ri ire ver imparroko.	日后, 尔 ⊢ 行 向 学所.	4	family;dates
 Can I have some water?	I RI can get A water, what?	Eko ri kan toma a aku, ker?	己 ⊢ 能 取 ⇒ 水, 何?	2	food;family
 You had water five minutes ago.	5 part before, you RI drink A water.	5 parte yer, tu ri pipe a aku.	5 分 前, 尔 ⊢ 飲 ⇒ 水.	2	time;family
 I'm thirsty again.	I RI more drink-want.	Eko ri mas pipevori.	己 ⊢ 更 飲求.	2	food;health;feelings
@@ -187,7 +187,7 @@ Do you want to come?	you RI want come, what?	Tu ri vori veni, ker?	尔 ⊢ 求 �
 What kind of music?	what music?	Ker musi?	何 曲?	2	smalltalk
 Old songs, quiet.	old music, small-sound.	Vetus musi, pikooti.	古 曲, 小耳.	5	smalltalk
 It's not loud.	this RI not big-sound.	Tis ri non mekaoti.	此 ⊢ 不 大耳.	4	smalltalk
-Good, because last time my ears hurt for two days.	good, reason in before time me hear-part RI sick-feel in 2 sun interval.	Pona, rason in yer tempo eko otiparte ri marasenti in 2 yan turan.	好, 故 内 前 时 己 耳分 ⊢ 病心 内 2 日 間.	4	health;dates
+Good, because last time my ears hurt for two days.	good, reason in before time me hear-part RI hurt-feel in 2 sun interval.	Pona, rason in yer tempo eko otiparte ri marasenti in 2 yan turan.	好, 故 内 前 时 己 耳分 ⊢ 病心 内 2 日 間.	4	health;dates
 No, this is different.	not, this RI other.	Non, tis ri ar.	不, 此 ⊢ 別.	5	smalltalk
 What time does the music start?	music RI begin in what-hour?	Musi ri apa in kerora?	曲 ⊢ 开 内 何刻?	4	time
 Eight.	8 hour.	8 ora.	8 刻.	2	time;numbers
@@ -211,7 +211,7 @@ Here is your key.	this RI you key.	Tis ri tu yave.	此 ⊢ 尔 錠.	5	lodging
 Room twelve, up the stairs, on the right.	room 12, up in up-road, in right.	Kamar 12, sur in surmoto, in rem.	室 12, 上 内 上方, 内 右.	5	lodging;numbers
 One thing — the light in the hall is broken.	one thing: electric-sun in go-room RI break finish.	Wun kosa: vortoyan in irekamar ri rompe vin.	1 物: 電日 内 行室 ⊢ 切 閉.	5	lodging
 I know, I'm sorry.	I RI know; I RI sorry.	Eko ri sape; eko ri perton.	己 ⊢ 知; 己 ⊢ 悔.	3	pleasantries;feelings
-A man will come tomorrow to fix it.	sun-after, one person RI come for heal A this.	Yantar, wun omo ri veni por sana a tis.	日后, 1 人 ⊢ 来 為 医 ⇒ 此.	4	lodging;dates
+A man will come tomorrow to fix it.	day-after, one person RI come for heal A this.	Yantar, wun omo ri veni por sana a tis.	日后, 1 人 ⊢ 来 為 医 ⇒ 此.	4	lodging;dates
 No problem.	no bad-thing.	Nem marumkosa.	无 悪物.	2	pleasantries
 It's been so long.	big long interval finish!	Meka ronka turan vin!	大 长 間 閉!	3	meeting;smalltalk
 How are you?	you RI good, what?	Tu ri pona, ker?	尔 ⊢ 好, 何?	1	pleasantries
@@ -239,9 +239,9 @@ I don't want to make trouble.	I RI not want make A bad-thing.	Eko ri non vori va
 The children will be happy.	child RI happy.	Nino ri konten.	子 ⊢ 楽.	1	family;feelings
 Do you have a minute?	you RI have A one part interval, what?	Tu ri tene a wun parte turan, ker?	尔 ⊢ 有 ⇒ 1 分 間, 何?	2	smalltalk
 What's wrong?	what bad-thing?	Ker marumkosa?	何 悪物?	2	smalltalk
-The report is not finished, and they want it today.	write-page RI not finish, and work-head RI want A this in this-sun.	Kitakarta ri non vin, kum opustesta ri vori a tis in tisyan.	写片 ⊢ 不 閉, 并 力头 ⊢ 求 ⇒ 此 内 此日.	4	smalltalk;dates
+The report is not finished, and they want it today.	writing-page RI not finish, and work-head RI want A this in this-day.	Kitakarta ri non vin, kum opustesta ri vori a tis in tisyan.	写片 ⊢ 不 閉, 并 力头 ⊢ 求 ⇒ 此 内 此日.	4	smalltalk;dates
 How much is left?	what amount RI remain?	Ker mesur ri sista?	何 寸 ⊢ 止?	4	smalltalk
-The numbers are all there.	all amount-say RI in write-page.	Pan mesurtika ri in kitakarta.	全 寸言 ⊢ 内 写片.	3	numbers
+The numbers are all there.	all amount-word RI in writing-page.	Pan mesurtika ri in kitakarta.	全 寸言 ⊢ 内 写片.	3	numbers
 But the last part isn't written.	but finish part RI not write finish.	Sets vin parte ri non kita vin.	但 閉 分 ⊢ 不 写 閉.	2	smalltalk
 Send me what you have and I'll write that part.	please give A you RI have RI-TE thing to me, and I RI write A not-this part.	Pam tonar a tu ri tene rite kosa ver eko, kum eko ri kita a nontis parte.	乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己, 并 己 ⊢ 写 ⇒ 不此 分.	4	smalltalk
 Thank you.	big thank.	Meka mersi.	大 恩.	2	pleasantries
@@ -263,13 +263,13 @@ I'm getting food for you.	I RI get A food for you.	Eko ri toma a komi por tu.	�
 Can you bring water for the child?	you RI can have-come A water for child, what?	Tu ri kan teneveni a aku por nino, ker?	尔 ⊢ 能 有来 ⇒ 水 為 子, 何?	2	food;family
 The station is near, isn't it?	vehicle-place RI near, not?	Karoroko ri nir, non?	车所 ⊢ 近, 不?	2	travel
 This fish is good, right?	this water-animal RI good, yes?	Tis akupeste ri pona, si?	此 水匹 ⊢ 好, 是?	2	food
-Yesterday I read a good story.	sun-before, I RI write-see A good say-thing.	Yanyer, eko ri kitavite a pona tikakosa.	日前, 己 ⊢ 写見 ⇒ 好 言物.	2	dates
-Today I'm meeting your relatives.	this-sun, I RI meet A you parent-group.	Tisyan, eko ri sarve a tu parimen.	此日, 己 ⊢ 会 ⇒ 尔 亲众.	2	family;dates;meeting
-Tomorrow we're going to the sea.	sun-after, I-group RI go to big-water.	Yantar, ekomen ri ire ver mekaaku.	日后, 己众 ⊢ 行 向 大水.	1	travel;dates
+Yesterday I read a good story.	day-before, I RI writing-see A good say-thing.	Yanyer, eko ri kitavite a pona tikakosa.	日前, 己 ⊢ 写見 ⇒ 好 言物.	2	dates
+Today I'm meeting your relatives.	this-day, I RI meet A you parent-group.	Tisyan, eko ri sarve a tu parimen.	此日, 己 ⊢ 会 ⇒ 尔 亲众.	2	family;dates;meeting
+Tomorrow we're going to the sea.	day-after, I-group RI go to big-water.	Yantar, ekomen ri ire ver mekaaku.	日后, 己众 ⊢ 行 向 大水.	1	travel;dates
 I love the sea, but I can't swim.	I RI big-like A big-water, but I RI not can water-go.	Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.	己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.	2	travel;feelings
 The story is beautiful, but it isn't true.	say-thing RI good-see, but this RI not true.	Tikakosa ri ponavite, sets tis ri non ves.	言物 ⊢ 好見, 但 此 ⊢ 不 真.	2	
 I'm thirsty, but I don't want tea.	I RI drink-want, but I RI not want A plant-water.	Eko ri pipevori, sets eko ri non vori a arpoaku.	己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.	2	food;feelings
-Tomorrow my mother is coming, but my father isn't.	sun-after, me woman-parent RI come, but me man-parent RI not come.	Yantar, eko vemapari ri veni, sets eko viropari ri non veni.	日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.	2	family;dates
+Tomorrow my mother is coming, but my father isn't.	day-after, me woman-parent RI come, but me man-parent RI not come.	Yantar, eko vemapari ri veni, sets eko viropari ri non veni.	日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.	2	family;dates
 I'm going home.	I RI go to home.	Eko ri ire ver kase.	己 ⊢ 行 向 户.	3	
 I'm eating with you.	I RI food and you.	Eko ri komi kum tu.	己 ⊢ 食 并 尔.	1	food
 I'm here.	I RI in this-place.	Eko ri in tisroko.	己 ⊢ 内 此所.	1	
@@ -286,8 +286,8 @@ You see the dog, don't you?	you RI see A dog, not?	Tu ri vite a kanis, non?	尔 
 You see the dog, right?	you RI see A dog, yes?	Tu ri vite a kanis, si?	尔 ⊢ 見 ⇒ 犬, 是?	5	
 Yes, I see.	yes, see.	Si, vite.	是, 見.	2	pleasantries
 No, I don't see.	not see.	Non vite.	不 見.	2	pleasantries
-Yesterday I saw the dog.	sun-before, I RI see A dog.	Yanyer, eko ri vite a kanis.	日前, 己 ⊢ 見 ⇒ 犬.	5	dates
-Tomorrow I will see the dog.	sun-after, I RI see A dog.	Yantar, eko ri vite a kanis.	日后, 己 ⊢ 見 ⇒ 犬.	5	dates
+Yesterday I saw the dog.	day-before, I RI see A dog.	Yanyer, eko ri vite a kanis.	日前, 己 ⊢ 見 ⇒ 犬.	5	dates
+Tomorrow I will see the dog.	day-after, I RI see A dog.	Yantar, eko ri vite a kanis.	日后, 己 ⊢ 見 ⇒ 犬.	5	dates
 I can go.	I RI can go.	Eko ri kan ire.	己 ⊢ 能 行.	2	
 You may be right.	you RI if true.	Tu ri pos ves.	尔 ⊢ 可 真.	4	
 I want to go.	I RI want go.	Eko ri vori ire.	己 ⊢ 求 行.	1	
@@ -300,7 +300,7 @@ I am still here.	I RI in this-place remain.	Eko ri in tisroko sista.	己 ⊢ 内
 I could have gone.	I RI can go finish.	Eko ri kan ire vin.	己 ⊢ 能 行 閉.	2	
 You could have told me.	you RI can say to I finish.	Tu ri kan tika ver eko vin.	尔 ⊢ 能 言 向 己 閉.	2	
 I might have gone.	I RI if go finish.	Eko ri pos ire vin.	己 ⊢ 可 行 閉.	4	
-Yesterday I wanted to go.	sun-before, I RI want go.	Yanyer, eko ri vori ire.	日前, 己 ⊢ 求 行.	1	
+Yesterday I wanted to go.	day-before, I RI want go.	Yanyer, eko ri vori ire.	日前, 己 ⊢ 求 行.	1	
 I wanted to go (but didn't).	I RI want go finish.	Eko ri vori ire vin.	己 ⊢ 求 行 閉.	1	
 I should have gone.	I RI if-good go finish.	Eko ri pospona ire vin.	己 ⊢ 可好 行 閉.	4	
 I must have gone.	I RI must go finish.	Eko ri neses ire vin.	己 ⊢ 要 行 閉.	4	
@@ -340,7 +340,7 @@ If it's too expensive, I won't buy it.	if this RI up-degree money, this-reason I
 If you want, I'll bring water.	if you RI want, this-reason I RI have-come A water.	Pos tu ri vori, tisrason eko ri teneveni a aku.	可 尔 ⊢ 求, 此故 己 ⊢ 有来 ⇒ 水.	4	food
 If you build it, they will come.	if you RI make A this, this-reason not-this-person RI come.	Pos tu ri vake a tis, tisrason nontisomo ri veni.	可 尔 ⊢ 作 ⇒ 此, 此故 不此人 ⊢ 来.	4	
 If there's no hot water, tell the staff.	if RI no hot water, this-reason please say to help-person.	Pos ri nem wo aku, tisrason pam tika ver serviomo.	可 ⊢ 无 火 水, 此故 乞 言 向 助人.	4	lodging
-If you come tomorrow, we can eat together.	if you RI come sun-after, this-reason I-group RI can join food.	Pos tu ri veni yantar, tisrason ekomen ri kan yunta komi.	可 尔 ⊢ 来 日后, 此故 己众 ⊢ 能 合 食.	4	dates;food
+If you come tomorrow, we can eat together.	if you RI come day-after, this-reason I-group RI can join food.	Pos tu ri veni yantar, tisrason ekomen ri kan yunta komi.	可 尔 ⊢ 来 日后, 此故 己众 ⊢ 能 合 食.	4	dates;food
 If it isn't spicy, the child will eat it.	if this RI not hot-taste, this-reason child RI food A this.	Pos tis ri non wosapor, tisrason nino ri komi a tis.	可 此 ⊢ 不 火味, 此故 子 ⊢ 食 ⇒ 此.	4	food;family
 If I had known, I would have come earlier.	not-true I RI know finish, this-reason I RI come before finish.	Nonves eko ri sape vin, tisrason eko ri veni yer vin.	不真 己 ⊢ 知 閉, 此故 己 ⊢ 来 前 閉.	4	
 If the shop were open, we could buy food.	not-true buy-place RI open, this-reason I-group RI can buy A food.	Nonves komparroko ri apa, tisrason ekomen ri kan kompar a komi.	不真 買所 ⊢ 开, 此故 己众 ⊢ 能 買 ⇒ 食.	4	money;food
@@ -351,16 +351,16 @@ This is a yellow fruit.	this RI yellow fruit.	Tis ri yoro pomo.	此 ⊢ 黄 果.
 We're going to my father's house.	I-group RI go to me man-parent home.	Ekomen ri ire ver eko viropari kase.	己众 ⊢ 行 向 己 男亲 户.	3	family
 I see a small fish.	I RI see A small water-animal.	Eko ri vite a piko akupeste.	己 ⊢ 見 ⇒ 小 水匹.	2	
 This is a sea creature.	this RI big water TE animal.	Tis ri meka aku te peste.	此 ⊢ 大 水 > 匹.	3	
-She's a business owner who is small.	this-person RI small buy-group have-person.	Tisomo ri piko komparmen teneomo.	此人 ⊢ 小 買众 有人.	4	smalltalk
-She's a small-business owner.	this-person RI small buy-group TE have-person.	Tisomo ri piko komparmen te teneomo.	此人 ⊢ 小 買众 > 有人.	4	smalltalk
+She's a business owner who is small.	this-person RI small commerce-group own-person.	Tisomo ri piko komparmen teneomo.	此人 ⊢ 小 買众 有人.	4	smalltalk
+She's a small-business owner.	this-person RI small commerce-group TE own-person.	Tisomo ri piko komparmen te teneomo.	此人 ⊢ 小 買众 > 有人.	4	smalltalk
 I want that big red ball.	I RI want A not-this big red round.	Eko ri vori a nontis meka rus rotun.	己 ⊢ 求 ⇒ 不此 大 赤 丸.	4	colors
 I have a black-and-white picture.	I RI have A black and white picture.	Eko ri tene a nero kum anka pitur.	己 ⊢ 有 ⇒ 黒 并 白 画.	4	colors
 She's a happier person.	this-person RI more happy person.	Tisomo ri mas konten omo.	此人 ⊢ 更 楽 人.	2	
 It's a tea shop that is green.	this RI green plant-water buy-place.	Tis ri verte arpoaku komparroko.	此 ⊢ 緑 木水 買所.	4	colors;food
 It's a green-tea shop.	this RI green plant-water TE buy-place.	Tis ri verte arpoaku te komparroko.	此 ⊢ 緑 木水 > 買所.	4	food
-She's a tea-shop owner.	this-person RI plant-water buy-place TE have-person.	Tisomo ri arpoaku komparroko te teneomo.	此人 ⊢ 木水 買所 > 有人.	4	food
-She owns a tea shop that's green.	this-person RI green plant-water buy-place TE have-person.	Tisomo ri verte arpoaku komparroko te teneomo.	此人 ⊢ 緑 木水 買所 > 有人.	4	colors;food
-She's the owner of a green-tea shop.	this-person RI green plant-water TE buy-place TE have-person.	Tisomo ri verte arpoaku te komparroko te teneomo.	此人 ⊢ 緑 木水 > 買所 > 有人.	4	food
+She's a tea-shop owner.	this-person RI plant-water buy-place TE own-person.	Tisomo ri arpoaku komparroko te teneomo.	此人 ⊢ 木水 買所 > 有人.	4	food
+She owns a tea shop that's green.	this-person RI green plant-water buy-place TE own-person.	Tisomo ri verte arpoaku komparroko te teneomo.	此人 ⊢ 緑 木水 買所 > 有人.	4	colors;food
+She's the owner of a green-tea shop.	this-person RI green plant-water TE buy-place TE own-person.	Tisomo ri verte arpoaku te komparroko te teneomo.	此人 ⊢ 緑 木水 > 買所 > 有人.	4	food
 Where are you going for summer vacation?	in hot-time play-come-go, you RI go to what-place?	In wotempo yuveniire, tu ri ire ver kerroko?	内 火时 玩来行, 尔 ⊢ 行 向 何所?	3	seasons;travel
 The man is sick.	man RI sick.	Viro ri mara.	男 ⊢ 病.	4	health
 The teacher said Mary was a well-balanced child who got on well at school.	learn-give-person RI say A Mary RI heal-think child, and this-person RI good work in learn-place.	Impartonaromo ri tika a Meri ri sanapensa nino, kum tisomo ri pona opus in imparroko.	学与人 ⊢ 言 ⇒ Meri ⊢ 医思 子, 并 此人 ⊢ 好 力 内 学所.	4	family;names
@@ -369,21 +369,21 @@ Tom can't remember where he put his wallet.	Tom RI not can know-have A this-pers
 Tom likes to watch TV while he eats.	Tom RI like A electric-see in food-time.	Tom ri kusta a vortovite in komitempo.	Tom ⊢ 愛 ⇒ 電見 内 食时.	4	names;smalltalk;feelings
 When Tom eats, he watches TV.	Tom RI food in what-time, this-person RI electric-see.	Tom ri komi in kertempo, tisomo ri vortovite.	Tom ⊢ 食 内 何时, 此人 ⊢ 電見.	4	names;smalltalk
 I want to try eating meat.	I RI want try eat A meat.	Eko ri vori tentar komi a karne.	己 ⊢ 求 試 食 ⇒ 肉.	4	food
-I like to read comic books.	I RI like A write-see A picture-many-page.	Eko ri kusta a kitavite a piturmurkarta.	己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.	4	smalltalk;feelings
-How old are you?	you year-interval RI what?	Tu anyoturan ri ker?	尔 年間 ⊢ 何?	3	meeting;numbers
-I'm 34 years old.	me year-interval RI 34.	Eko anyoturan ri 34.	己 年間 ⊢ 34.	3	meeting;numbers
+I like to read comic books.	I RI like A writing-see A picture-many-page.	Eko ri kusta a kitavite a piturmurkarta.	己 ⊢ 愛 ⇒ 写見 ⇒ 画多片.	4	smalltalk;feelings
+How old are you?	you year-duration RI what?	Tu anyoturan ri ker?	尔 年間 ⊢ 何?	3	meeting;numbers
+I'm 34 years old.	me year-duration RI 34.	Eko anyoturan ri 34.	己 年間 ⊢ 34.	3	meeting;numbers
 My boss is younger than me.	me work-head RI more year-small than me.	Eko opustesta ri mas anyopiko vons eko.	己 力头 ⊢ 更 年小 从 己.	4	smalltalk
 My older sister will be visiting for the holidays.	in not-work-time, me more year-big same-parent-woman RI come.	In nonopustempo, eko mas anyomeka samparivema ri veni.	内 不力时, 己 更 年大 同亲女 ⊢ 来.	3	family;dates
 Would you like anything else?	you RI want A other-thing, what?	Tu ri vori a arkosa, ker?	尔 ⊢ 求 ⇒ 別物, 何?	5	money;food
 I hope I can find it, or else I'll have to buy a new one.	I RI want A I RI can again-get A this; or I RI must buy A new thing.	Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.	己 ⊢ 求 ⇒ 己 ⊢ 能 又取 ⇒ 此; 或 己 ⊢ 要 買 ⇒ 初 物.	5	money
 Leave now, or you'll miss the train.	please out-go in this-time, or you RI lose A metal-line-vehicle.	Pam eksire in tistempo, sive tu ri perti a metarrinekaro.	乞 外行 内 此时, 或 尔 ⊢ 失 ⇒ 金糸车.	5	travel
 The flock is flying over the sea.	bird-group RI air-go up big-water.	Avismen ri ventoire sur mekaaku.	鳥众 ⊢ 风行 上 大水.	5	
-Can I ride a horse here?	I RI can vehicle-put A vehicle-animal in this-place, what?	Eko ri kan karoseta a karopeste in tisroko, ker?	己 ⊢ 能 车坐 ⇒ 车匹 内 此所, 何?	4	travel
+Can I ride a horse here?	I RI can vehicle-sit A vehicle-animal in this-place, what?	Eko ri kan karoseta a karopeste in tisroko, ker?	己 ⊢ 能 车坐 ⇒ 车匹 内 此所, 何?	4	travel
 The child jumped into the water.	child RI leg-up-go to water.	Nino ri kampasurire ver aku.	子 ⊢ 足上行 向 水.	4	family
 Prices are going up.	money-amount RI up-go.	Monimesur ri surire.	贝寸 ⊢ 上行.	3	money
 Turn left at the next corner.	please bend to left in after-sequence bend-place.	Pam kurva ver sini in tarorten kurvaroko.	乞 弓 向 左 内 后序 弓所.	5	travel
 I prefer tea to coffee.	I RI more like A plant-water than black-drink.	Eko ri mas kusta a arpoaku vons neropipe.	己 ⊢ 更 愛 ⇒ 木水 从 黒飲.	3	food;feelings
-I would rather walk.	I RI more like A leg-go.	Eko ri mas kusta a kampaire.	己 ⊢ 更 愛 ⇒ 足行.	4	travel;feelings
+I would rather walk.	I RI more like A foot-go.	Eko ri mas kusta a kampaire.	己 ⊢ 更 愛 ⇒ 足行.	4	travel;feelings
 The station is between the shop and the river.	vehicle-place RI middle buy-place and long-water.	Karoroko ri mets komparroko kum ronkaaku.	车所 ⊢ 中 買所 并 长水.	4	travel
 Please pick one of these.	please choose A one middle this.	Pam erike a wun mets tis.	乞 选 ⇒ 1 中 此.	4	
 Is there a doctor among us?	RI heal-person middle I-group, what?	Ri sanaomo mets ekomen, ker?	⊢ 医人 中 己众, 何?	4	health
@@ -393,7 +393,7 @@ Can you give me a hand?	you RI can hand-give to me, what?	Tu ri kan manutonar ve
 The boss gave us the green light.	work-head RI green-say to I-group.	Opustesta ri vertetika ver ekomen.	力头 ⊢ 緑言 向 己众.	4	smalltalk;colors
 No ice, please.	no cold, please.	Nem rikus, pam.	无 冷, 乞.	4	food
 Not cold, please.	not cold, please.	Non rikus, pam.	不 冷, 乞.	4	food
-The children want ice cream.	child RI want A cold-milk.	Nino ri vori a rikusraten.	子 ⊢ 求 ⇒ 冷乳.	4	food;family
+The children want ice cream.	child RI want A ice-milk.	Nino ri vori a rikusraten.	子 ⊢ 求 ⇒ 冷乳.	4	food;family
 Iced tea, please.	cold-plant-water, please.	Rikusarpoaku, pam.	冷木水, 乞.	4	food
 It is snowing.	RI cold-rain.	Ri rikusruva.	⊢ 冷雨.	4	weather
 I like my present job.	I RI like A me this work.	Eko ri kusta a eko tis opus.	己 ⊢ 愛 ⇒ 己 此 力.	2	smalltalk;feelings
@@ -402,7 +402,7 @@ I am tired. I need to go to bed!	I RI tired. I RI must sleep!	Eko ri kansa. Eko 
 I need to charge my phone.	I RI must sleep A me electric-say.	Eko ri neses tormi a eko vortotika.	己 ⊢ 要 床 ⇒ 己 電言.	4	travel
 Unfortunately, the food supplies gave out before the end of winter.	bad-if, cold-time-finish before, have-food RI finish.	Marumpos, rikustempovin yer, tenekomi ri vin.	悪可, 冷时閉 前, 有食 ⊢ 閉.	4	food;seasons
 Why do I have to tell them?	I RI must say to not-this-person, what-reason?	Eko ri neses tika ver nontisomo, kerrason?	己 ⊢ 要 言 向 不此人, 何故?	4	
-Please return the book when you have finished reading it.	you RI write-see A many-page finish in what-time, please back-give A this.	Tu ri kitavite a murkarta vin in kertempo, pam retsetonar a tis.	尔 ⊢ 写見 ⇒ 多片 閉 内 何时, 乞 反与 ⇒ 此.	4	smalltalk
+Please return the book when you have finished reading it.	you RI writing-see A many-page finish in what-time, please back-give A this.	Tu ri kitavite a murkarta vin in kertempo, pam retsetonar a tis.	尔 ⊢ 写見 ⇒ 多片 閉 内 何时, 乞 反与 ⇒ 此.	4	smalltalk
 What color is it?	this RI what color?	Tis ri ker koror?	此 ⊢ 何 色?	3	colors
 Someone else is coming.	other RI come.	Ar ri veni.	別 ⊢ 来.	5	names
 Hal is coming.	person Hal RI come.	Omo Ar ri veni.	人 Ar ⊢ 来.	2	names
@@ -413,7 +413,7 @@ Nine at night.	no-sun 9 hour.	Nemyan 9 ora.	无日 9 刻.	2	time
 For three hours.	3 hour interval.	3 ora turan.	3 刻 間.	2	time
 Ten minutes.	10 part interval.	10 parte turan.	10 分 間.	2	time
 Thirty seconds.	30 small-part interval.	30 pikoparte turan.	30 小分 間.	2	time
-For a week.	1 seven-sun interval.	1 senseyan turan.	1 7日 間.	2	time
+For a week.	1 seven-day interval.	1 senseyan turan.	1 7日 間.	2	time
 Two days ago.	2 sun before.	2 yan yer.	2 日 前.	1	dates
 The party starts at 7 PM.	play-group RI begin in down-sun 7 hour.	Yumen ri apa in tunyan 7 ora.	玩众 ⊢ 开 内 下日 7 刻.	5	time
 Think about the future.	please think A after-time.	Pam pensa a tartempo.	乞 思 ⇒ 后时.	4	time
@@ -459,7 +459,7 @@ How is your spouse?	you marry-person RI what-manner?	Tu marisomo ri kermoto?	尔
 Is your family well?	you parent-group RI good, what?	Tu parimen ri pona, ker?	尔 亲众 ⊢ 好, 何?	2	smalltalk;family
 How is your mother?	you woman-parent RI what-manner?	Tu vemapari ri kermoto?	尔 女亲 ⊢ 何方?	2	smalltalk;family
 What are your children doing?	you child RI make A what?	Tu nino ri vake a ker?	尔 子 ⊢ 作 ⇒ 何?	2	smalltalk;family
-How old are your children?	you child year-interval RI what?	Tu nino anyoturan ri ker?	尔 子 年間 ⊢ 何?	3	smalltalk;family
+How old are your children?	you child year-duration RI what?	Tu nino anyoturan ri ker?	尔 子 年間 ⊢ 何?	3	smalltalk;family
 Please say hello to your family.	please say A happy-meet to you parent-group.	Pam tika a kontensarve ver tu parimen.	乞 言 ⇒ 楽会 向 尔 亲众.	2	smalltalk;family
 The little one started school this year.	small child RI begin go to learn-place in this year.	Piko nino ri apa ire ver imparroko in tis anyo.	小 子 ⊢ 开 行 向 学所 内 此 年.	4	smalltalk;family
 The older child is studying at university.	more year-big child RI learn in big-learn-place.	Mas anyomeka nino ri impar in mekaimparroko.	更 年大 子 ⊢ 学 内 大学所.	4	smalltalk;family
@@ -472,12 +472,12 @@ Where do you live?	you RI life in what-place?	Tu ri viva in kerroko?	尔 ⊢ 生
 I live near the sea.	I RI life near big-water.	Eko ri viva nir mekaaku.	己 ⊢ 生 近 大水.	5	smalltalk
 How long have you been here?	you RI in this-place what interval?	Tu ri in tisroko ker turan?	尔 ⊢ 内 此所 何 間?	2	smalltalk;travel
 What do you do for fun?	you RI make A what for play?	Tu ri vake a ker por yu?	尔 ⊢ 作 ⇒ 何 為 玩?	3	smalltalk
-I like music and reading.	I RI like A music and write-see.	Eko ri kusta a musi kum kitavite.	己 ⊢ 愛 ⇒ 曲 并 写見.	2	smalltalk
+I like music and reading.	I RI like A music and writing-see.	Eko ri kusta a musi kum kitavite.	己 ⊢ 愛 ⇒ 曲 并 写見.	2	smalltalk
 Do you have a pet?	you RI have A home-animal, what?	Tu ri tene a kasepeste, ker?	尔 ⊢ 有 ⇒ 户匹, 何?	3	smalltalk
 I'm glad to hear it.	I RI happy sound A this.	Eko ri konten oti a tis.	己 ⊢ 楽 耳 ⇒ 此.	4	smalltalk;feelings
 I'm sorry to hear that.	I RI sorry sound A this.	Eko ri perton oti a tis.	己 ⊢ 悔 耳 ⇒ 此.	4	smalltalk;feelings
 We should eat together sometime.	I-group RI if-good join food in after time.	Ekomen ri pospona yunta komi in tar tempo.	己众 ⊢ 可好 合 食 内 后 时.	4	smalltalk;food
-Can I call you next week?	I RI can say to you in after seven-sun, what?	Eko ri kan tika ver tu in tar senseyan, ker?	己 ⊢ 能 言 向 尔 内 后 7日, 何?	2	smalltalk
+Can I call you next week?	I RI can say to you in after seven-day, what?	Eko ri kan tika ver tu in tar senseyan, ker?	己 ⊢ 能 言 向 尔 内 后 7日, 何?	2	smalltalk
 Sorry, I have to go.	sorry — I RI necessary go.	Perton — eko ri neses ire.	悔 — 己 ⊢ 要 行.	4	smalltalk;pleasantries
 It rarely rains here.	RI not-many-time rain in this-place.	Ri nonmurtempo ruva in tisroko.	⊢ 不多时 雨 内 此所.	4	weather
 Beauty is in the mind of the beholder.	good-see RI in see-person think.	Ponavite ri in viteomo pensa.	好見 ⊢ 内 見人 思.	4	smalltalk

@@ -28,7 +28,7 @@ air; wind	vento<br>风<br><i>vent</i>ilate the air	pikotika level3 root
 earth; ground	tera<br>土<br><i>terra</i> firma, solid ground	pikotika level3 root
 metal	metar<br>金<br><i>metal</i>	pikotika level3 root
 stone; mineral	rapis<br>岩<br><i>rap is</i> hard as rock	pikotika level3 root
-gale; strong wind	mekavento<br>大风<br>big-air	pikotika level3 compound
+gale; strong wind	mekavento<br>大风<br>big-wind	pikotika level3 compound
 brown	terakoror<br>土色<br>earth-color	pikotika level3 compound
 grey	rapiskoror<br>岩色<br>stone-color	pikotika level3 compound
 airplane	ventokaro<br>风车<br>air-vehicle	pikotika level3 compound
@@ -40,16 +40,16 @@ weekday	yom<br>曜<br><i>Yom</i> Kippur — a named day	pikotika level3 root
 month; moon	mese<br>月<br>you <i>may say</i> the moon phases take a month	pikotika level3 root
 year	anyo<br>年<br>Spanish <i>año</i> (year); <i>annu</i>al	pikotika level3 root
 Sunday	yanyom<br>日曜<br>sun-weekday	pikotika level3 compound
-Monday	meseyom<br>月曜<br>month-weekday	pikotika level3 compound
+Monday	meseyom<br>月曜<br>moon-weekday	pikotika level3 compound
 Tuesday	woyom<br>火曜<br>fire-weekday	pikotika level3 compound
 Wednesday	akuyom<br>水曜<br>water-weekday	pikotika level3 compound
 Thursday	arpoyom<br>木曜<br>plant-weekday	pikotika level3 compound
 Friday	metaryom<br>金曜<br>metal-weekday	pikotika level3 compound
 Saturday	terayom<br>土曜<br>earth-weekday	pikotika level3 compound
 what day; on what day of the week	keryom<br>何曜<br>what-weekday	pikotika level3 compound
-How old are you?	Tu anyoturan ri ker?<br>尔 年間 ⊢ 何?<br>you year-interval RI what?	pikotika level3 sentence
-How old are your children?	Tu nino anyoturan ri ker?<br>尔 子 年間 ⊢ 何?<br>you child year-interval RI what?	pikotika level3 sentence
-I'm 34 years old.	Eko anyoturan ri 34.<br>己 年間 ⊢ 34.<br>me year-interval RI 34.	pikotika level3 sentence
+How old are you?	Tu anyoturan ri ker?<br>尔 年間 ⊢ 何?<br>you year-duration RI what?	pikotika level3 sentence
+How old are your children?	Tu nino anyoturan ri ker?<br>尔 子 年間 ⊢ 何?<br>you child year-duration RI what?	pikotika level3 sentence
+I'm 34 years old.	Eko anyoturan ri 34.<br>己 年間 ⊢ 34.<br>me year-duration RI 34.	pikotika level3 sentence
 sequence; series	orten<br>序<br>in <i>ord</i>er	pikotika level3 root
 again; repeat	repe<br>又<br><i>repe</i>at	pikotika level3 root
 know; knowledge	sape<br>知<br>homo <i>sapi</i>ens knows things	pikotika level3 root
@@ -68,8 +68,8 @@ try; test	tentar<br>試<br>a <i>tenta</i>tive first try	pikotika level3 root
 look like; resemble; take after	samvite<br>同見<br>same-see	pikotika level3 compound
 brother	sampariviro<br>同亲男<br>same-parent-man	pikotika level3 compound
 sister	samparivema<br>同亲女<br>same-parent-woman	pikotika level3 compound
-week	senseyan<br>7日<br>seven-sun	pikotika level3 compound
-weekend	senseyanvin<br>7日閉<br>seven-sun-finish	pikotika level3 compound
+week	senseyan<br>7日<br>seven-day	pikotika level3 compound
+weekend	senseyanvin<br>7日閉<br>seven-day-finish	pikotika level3 compound
 Same as always.	Sam vons pantempo.<br>同 从 全时.<br>same from every-time.	pikotika level3 sentence
 It's as good as it was.	Tis ri sam pona vons yerkosa.<br>此 ⊢ 同 好 从 前物.<br>this RI same good than before-thing.	pikotika level3 sentence
 Please try again.	Pam repe tentar.<br>乞 又 試.<br>please again try.	pikotika level3 sentence
@@ -84,7 +84,7 @@ coffee	neropipe<br>黒飲<br>black-drink	pikotika level3 compound
 pig	rusankapeste<br>赤白匹<br>red-white-animal	pikotika level3 compound
 less; fewer	nonmas<br>不更<br>not-more	pikotika level3 compound
 too [much]; excessively	surmesur<br>上寸<br>up-degree	pikotika level3 compound
-owner; proprietor	teneomo<br>有人<br>have-person	pikotika level3 compound
+owner; proprietor	teneomo<br>有人<br>own-person	pikotika level3 compound
 Busy, but good.	Muropus, sets pona.<br>多力, 但 好.<br>many-work, but good.	pikotika level3 sentence
 Are they sweet?	Tis ri tuke, ker?<br>此 ⊢ 甘, 何?<br>this RI sweet, what?	pikotika level3 sentence
 Very sweet.	Meka tuke.<br>大 甘.<br>big sweet.	pikotika level3 sentence

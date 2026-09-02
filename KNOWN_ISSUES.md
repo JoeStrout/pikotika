@@ -38,7 +38,7 @@ Issues will be removed as they are resolved.
   first recorded as the compound `wait (a while)`, whose bare headword *wait* then shadowed
   **sista**, which covers waiting directly; it was renamed to `wait a while` purely to stop
   the tool claiming the word.  Then *seat* was deliberately kept out of **seta**'s `covers`
-  and left only as the compound *put-place*, on the same reasoning.
+  and left only as the compound *sit-place*, on the same reasoning.
 
   Both decisions were made for the tool's benefit, not the learner's.  The right question
   is which form a learner should reach first -- and sometimes that really is the root

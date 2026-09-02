@@ -73,6 +73,13 @@ def build(t):
         "covers": {k: list(v) for k, v in t.covers.items()},
         "compounds": dict(t.compounds),
         "compoundEn": {g: list(en) for g, en in t.compound_by_gloss.items()},
+        # A compound written with a root's `gloss2` -- silver is `moon-metal`,
+        # wine `fruit-fire-water` -- is filed under that spelling, while
+        # renderGloss produces the primary one.  Only the rows where the two
+        # differ need carrying; the rest would just be a map to itself.
+        "canonGloss": {canon: gloss
+                       for canon, gloss in t.canon2gloss.items()
+                       if canon != gloss},
         "names": names,
     }
 

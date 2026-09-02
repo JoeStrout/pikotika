@@ -77,7 +77,11 @@ def validate(states=None, course=None, report=None):
                         f"{tag}: compound {item!r} needs roots not yet taught: "
                         + ", ".join(sorted(missing)))
                 known_roots |= need
-                per_level.setdefault(row["level"], set()).add(item)
+                # Under the row's own gloss, not the spelling the lesson used:
+                # a compound may be named by either keyword of any of its roots,
+                # and the budget below is counted against compounds.tsv.
+                per_level.setdefault(row["level"], set()).add(
+                    course.compound[item]["gloss"])
             elif item in course.alias:
                 known_roots.add(course.alias[item])
                 per_level.setdefault(row["level"], set()).add(course.alias[item])

@@ -12,40 +12,40 @@ level	lesson	title	page	new	note
 2	1	Objects	/grammar/prepositions/	see;have;get;make;come;have-come;have-go;get-go;water-vehicle;manner;what-manner	
 2	2	Family	/topics/names/	parent;woman;man;name;woman-parent;man-parent;parent-group;food-make-person;see-part	
 2	3	No and not	/grammar/negation/	no;bad;but;only;no-person;no-place;no-thing;no-time;no-sun;bad-thing;not-true	
-2	4	Day and night		up;fast;near;from;up-sun;this-sun;sun-before;sun-after;this-no-sun;not-fast	
+2	4	Day and night		up;fast;near;from;up-sun;this-day;day-before;day-after;this-no-sun;not-fast	
 2	5	Counting	/topics/numbers/	three;four;five;six;seven;eight;nine;ten;middle;middle-sun	
 2	6	Eating and drinking	/grammar/questions/	drink;like;animal;drink-want;food-time;water-food;water-animal;big-water;water-go;what-person;what-place;what-time;what-hour;what-say	
 2	7	How you feel	/grammar/nosubject/	thank;for;about;not-happy;good-see;happy-come;see-water;new-see	
-2	8	Work and writing	/grammar/modifiers/	write;work;can;join;write-see;write-person	
-2	9	More than		more;interval;music;big-like;up-sun-food;before-make;please-say;write-see-person;come-go	
+2	8	Work and writing	/grammar/modifiers/	write;work;can;join;writing-see;write-person	
+2	9	More than		more;interval;music;big-like;up-sun-food;before-make;please-say;writing-see-person;come-go	
 2	R	Level 2 Review			
 3	1	Colors	/topics/colors/	color;black;white;red;blue;green;yellow;blue-green;red-blue;red-white;red-yellow	
 3	2	Every and how		every;every-person;every-place;every-thing;every-time	
-3	3	Earth, air, and fire		hot;air;earth;metal;stone;big-air;earth-color;stone-color;air-vehicle;air-vehicle-place	
-3	4	Days of the week		weekday;month;year;sun-weekday;month-weekday;fire-weekday;water-weekday;plant-weekday;metal-weekday;earth-weekday;what-weekday	
+3	3	Earth, air, and fire		hot;air;earth;metal;stone;big-wind;earth-color;stone-color;air-vehicle;air-vehicle-place	
+3	4	Days of the week		weekday;month;year;sun-weekday;moon-weekday;fire-weekday;water-weekday;plant-weekday;metal-weekday;earth-weekday;what-weekday	
 3	5	Again	/grammar/modifier-order/	sequence;again;know;after-sequence;before-sequence;again-get;again-know;again-say;year-big	
-3	6	The same		same;feel;try;same-see;same-parent-man;same-parent-woman;seven-sun;seven-sun-finish	
-3	7	More food	/grammar/te/	grain;sweet;many;amount;white-grain;yellow-grain;grain-color;black-drink;red-white-animal;not-more;up-degree;have-person	
+3	6	The same		same;feel;try;same-see;same-parent-man;same-parent-woman;seven-day;seven-day-finish	
+3	7	More food	/grammar/te/	grain;sweet;many;amount;white-grain;yellow-grain;grain-color;black-drink;red-white-animal;not-more;up-degree;own-person	
 3	8	Big numbers	/topics/money/	hundred;thousand;million;money;long;work-come-go	
 3	9	Home and play	/grammar/compounds/	home;room;map;page;tool;TE;play;music-movement;yellow-fruit;long-yellow-fruit	
 3	R	Level 3 Review			
 4	1	Starting and stopping	/grammar/aspect/	begin;remain;become;put;before-time;after-time;if;bad-if	
-4	2	Health		head;leg;mouth;taste;heal;leg-go;heal-person;work-head;sick;sick-feel;head-sick	
+4	2	Health		head;leg;mouth;taste;heal;foot-go;heal-person;work-head;sick;hurt-feel;head-sick	
 4	3	Meat and milk		meat;milk;cold;sound;home-animal;food-tool;hot-taste	
 4	4	Lines and pictures		bend;line;round;straight;edge;back;picture;electric;big-water-edge;three-bend;line-vehicle;metal-line-vehicle;many-person-vehicle;back-go;electric-sun;electric-say	
 4	5	Seasons	/topics/seasons/	rain;city;plant-time;hot-time;fruit-time;cold-time;long-water;up-earth;year-part;rain-time;not-rain-time;play-come-go	
-4	6	Choosing		buy;give;choose;help;amount-say;buy-place;buy-group	
+4	6	Choosing		buy;give;choose;help;amount-word;buy-place;commerce-group	
 4	7	Can, want, must	/grammar/mood/	necessary;think;learn;sleep;if-good;learn-place	
 4	8	If and because	/grammar/conditions/	reason;fear;fight;what-thing;what-reason;this-reason	
-4	9	Heavy things	/grammar/comparison/	hard;heavy;box;cloth;door;year-interval;year-small;go-box;heavy-necessary	
+4	9	Heavy things	/grammar/comparison/	hard;heavy;box;cloth;door;year-duration;year-small;go-box;heavy-necessary	
 4	R	Level 4 Review			
 5	1	The body		body;hand;stomach;life;hear-part;hand-give;body-play	
 5	2	Feelings		tired;anger;surprise;not-anger;not-surprise;small-anger;happy-mouth;big-happy-mouth;good-feel;me-good-feel;me-bad-feel	
 5	3	Or and other	/grammar/joining/	or;other;agree;other-thing;other-person;other-place;other-about	
 5	4	Art and the table		art;temple;oil;salt;art-home;oil-make;oil-white-grain	
-5	5	Animals		bird;bug;dog;bird-group;bird-child;bird-meat;home-dog	
+5	5	Animals		bird;bug;dog;bird-group;bird-offspring;bird-meat;home-dog	
 5	6	Friends and country	/grammar/subordinate/	country;friend;law;marry;not-hard;picture-many-page;out-country;not-friend;not-law;marry-person	
-5	7	Which one	/grammar/relative/	key;table;toilet;RI-TE;back-come;straight-to;key-say	
-5	8	Old and clean		old;clean;break;lose;know-lose;break-tool	
+5	7	Which one	/grammar/relative/	key;table;toilet;RI-TE;back-come;straight-to;key-word	
+5	8	Old and clean		old;clean;break;lose;know-lose;cut-tool	
 5	9	Left and right		left;right;down;far;flat;hole;map-up;map-down;map-left;map-right;see-hole;down-sun;up-down-room	
 5	R	Level 5 Review			

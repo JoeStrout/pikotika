@@ -211,6 +211,7 @@ class Tables:
         self.covers = {}          # english word -> [gloss, ...]
         self.compounds = {}       # english phrase -> gloss string
         self.compound_by_gloss = {}
+        self.canon2gloss = {}     # primary-gloss spelling -> gloss as written
         self.names = {}           # english name -> form
         self.form2name = {}       # form, case-folded -> english name
         self.name_forms = {}      # form, exactly as written -> english name
@@ -296,6 +297,12 @@ class Tables:
                 roots = self.gloss_roots(r["gloss"])
                 if roots:
                     self.compound_roots[r["gloss"]] = roots
+                    # A row may be written with either keyword of a root --
+                    # silver is `moon-metal`, wine `fruit-fire-water` -- and
+                    # that spelling is what the tables and the website show.
+                    # render_gloss says `month-metal`, though, so a lookup
+                    # coming back from Latin or Han needs this to find the row.
+                    self.canon2gloss["-".join(roots)] = r["gloss"]
                 self.compound_cats[r["gloss"]] = split_categories(
                     r.get("categories"))
 
@@ -1059,6 +1066,9 @@ def english_match(words, t):
     if all(isinstance(g, tuple) for g in word):
         return [literal(g) for g in word if is_name(g)]
     gloss = render_gloss([word], t)
+    # render_gloss writes every root under its primary keyword; a compound
+    # recorded under a `gloss2` is filed under the spelling it was written with.
+    gloss = t.canon2gloss.get(gloss, gloss)
     hits = list(t.compound_by_gloss.get(gloss, []))
     if len(word) == 1 and gloss in t.gloss2root:
         root = t.gloss2root[gloss]
@@ -1172,9 +1182,14 @@ def lookup(text, t):
         return ['  no match — "%s" %s' % (
             fail["token"],
             fail["why"] or "is not in roots.tsv, compounds.tsv or names.tsv")]
+    latin = render_latin(words, t)
+    # Imported here, not at the top: phonemes.py imports this module, and the
+    # sound of a word is a fourth notation rather than part of the tables.
+    import phonemes
     lines = ["  gloss: " + render_gloss(words, t),
-             "  Latin: " + render_latin(words, t),
-             "  Han:   " + render_han(words, t)]
+             "  Latin: " + latin,
+             "  Han:   " + render_han(words, t),
+             "  IPA:   " + phonemes.to_phonemes(latin)]
     top = max_level(words, t)
     if top:
         lines.append("  Max. root level: " + top)

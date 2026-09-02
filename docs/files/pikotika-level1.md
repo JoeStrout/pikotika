@@ -476,7 +476,7 @@
 ---
 # Yantar, ekomen ri ire ver mekaaku.
 ## 日后, 己众 ⊢ 行 向 大水.
-### sun-after, I-group RI go to big-water.
+### day-after, I-group RI go to big-water.
 ===
 # It's late.
 ---

@@ -98,7 +98,7 @@
 ---
 # kampaire
 ## 足行
-### leg-go
+### foot-go
 ===
 # doctor
 ---
@@ -122,7 +122,7 @@
 ---
 # marasenti
 ## 病心
-### sick-feel
+### hurt-feel
 ===
 # headache; nuisance
 ---
@@ -140,13 +140,13 @@
 ---
 # Yantar, wun omo ri veni por sana a tis.
 ## 日后, 1 人 ⊢ 来 為 医 ⇒ 此.
-### sun-after, one person RI come for heal A this.
+### day-after, one person RI come for heal A this.
 ===
 # Walk five minutes.
 ---
 # Pam 5 parte turan kampaire.
 ## 乞 5 分 間 足行.
-### please 5 part interval leg-go.
+### please 5 part interval foot-go.
 ===
 # meat
 ---
@@ -206,7 +206,7 @@
 ---
 # Nino ri vori a rikusraten.
 ## 子 ⊢ 求 ⇒ 冷乳.
-### child RI want A cold-milk.
+### child RI want A ice-milk.
 ===
 # bend; turn
 ---
@@ -314,7 +314,7 @@
 ---
 # Yantar, eko ri karoire rets.
 ## 日后, 己 ⊢ 车行 反.
-### sun-after, I RI vehicle-go back.
+### day-after, I RI vehicle-go back.
 ===
 # And forty back.
 ---
@@ -440,7 +440,7 @@
 ---
 # mesurtika
 ## 寸言
-### amount-say
+### amount-word
 ===
 # shop
 ---
@@ -452,7 +452,7 @@
 ---
 # komparmen
 ## 買众
-### buy-group
+### commerce-group
 ===
 # The station is between the shop and the river.
 ---
@@ -614,7 +614,7 @@
 ---
 # anyoturan
 ## 年間
-### year-interval
+### year-duration
 ===
 # young
 ---
@@ -680,7 +680,7 @@
 ---
 # Tisomo ri arpoaku komparroko te teneomo.
 ## 此人 ⊢ 木水 買所 > 有人.
-### this-person RI plant-water buy-place TE have-person.
+### this-person RI plant-water buy-place TE own-person.
 ===
 # I'm a teacher.
 ---

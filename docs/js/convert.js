@@ -109,6 +109,7 @@
       covers: payload.covers,
       compounds: payload.compounds,
       compoundEn: payload.compoundEn,
+      canonGloss: payload.canonGloss || {},
       alias2gloss: {},
       form2gloss: {},
       han2gloss: {},
@@ -712,6 +713,10 @@
       return word.filter(isName).map(literal);
     }
     var gloss = renderGloss([word], t);
+    /* renderGloss writes every root under its primary keyword; a compound
+       recorded under a `gloss2` is filed under the spelling it was written
+       with. */
+    if (has(t.canonGloss, gloss)) gloss = t.canonGloss[gloss];
     var hits = (t.compoundEn[gloss] || []).slice();
     if (word.length === 1 && has(t.roots, gloss)) {
       var root = t.roots[gloss];

@@ -94,6 +94,14 @@ class Course:
 
         self.root = {row["gloss"]: row for row in self.roots}
         self.compound = {row["gloss"]: row for row in self.compounds}
+        # The same alias applies inside a compound gloss: silver is recorded as
+        # `moon-metal`, so a lesson naming it `month-metal` -- the spelling
+        # pikotika.py renders -- means the same row.  The written spelling wins
+        # where the two would collide.
+        for row in self.compounds:
+            canon = "-".join(self.alias.get(p, p)
+                             for p in row["gloss"].split("-"))
+            self.compound.setdefault(canon, row)
         self.english_names = set()
         # The sanctioned loans, which are the one kind of name that may sit
         # inside a hyphenated gloss word (**kirumitar**, thousand-meter).  Like

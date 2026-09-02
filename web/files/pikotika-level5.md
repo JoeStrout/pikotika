@@ -260,7 +260,7 @@
 ---
 # Nino ri vori a rikusraten.
 ## 子 ⊢ 求 ⇒ 冷乳.
-### child RI want A cold-milk.
+### child RI want A ice-milk.
 ===
 # bird
 ---
@@ -290,7 +290,7 @@
 ---
 # avisnino
 ## 鳥子
-### bird-child
+### bird-offspring
 ===
 # poultry; chicken (meat)
 ---
@@ -308,7 +308,7 @@
 ---
 # Yanyer, eko ri vite a kanis.
 ## 日前, 己 ⊢ 見 ⇒ 犬.
-### sun-before, I RI see A dog.
+### day-before, I RI see A dog.
 ===
 # The flock is flying over the sea.
 ---
@@ -440,7 +440,7 @@
 ---
 # yavetika
 ## 錠言
-### key-say
+### key-word
 ===
 # Where is the bathroom?
 ---
@@ -494,7 +494,7 @@
 ---
 # rompeuter
 ## 切工
-### break-tool
+### cut-tool
 ===
 # One thing — the light in the hall is broken.
 ---
@@ -626,7 +626,7 @@
 ---
 # Eko ri kan tika ver tu in tar senseyan, ker?
 ## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
-### I RI can say to you in after seven-sun, what?
+### I RI can say to you in after seven-day, what?
 ===
 # Mary: 7 dollars is cheap!  And I think it would look good on you.
 ---
