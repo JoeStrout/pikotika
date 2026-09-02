@@ -481,3 +481,10 @@ Can I call you next week?	I RI can say to you in after seven-day, what?	Eko ri k
 Sorry, I have to go.	sorry — I RI necessary go.	Perton — eko ri neses ire.	悔 — 己 ⊢ 要 行.	4	smalltalk;pleasantries
 It rarely rains here.	RI not-many-time rain in this-place.	Ri nonmurtempo ruva in tisroko.	⊢ 不多时 雨 内 此所.	4	weather
 Beauty is in the mind of the beholder.	good-see RI in see-person think.	Ponavite ri in viteomo pensa.	好見 ⊢ 内 見人 思.	4	smalltalk
+You make me happy.	you RI happy A I.	Tu ri konten a eko.	尔 ⊢ 楽 ⇒ 己.	1	feelings
+The music makes the children happy.	music RI happy A child.	Musi ri konten a nino.	曲 ⊢ 楽 ⇒ 子.	2	feelings;family
+This makes me sad.	this RI not-happy A I.	Tis ri nonkonten a eko.	此 ⊢ 不楽 ⇒ 己.	1	feelings
+Long days tire me.	long sun RI tired A I.	Ronka yan ri kansa a eko.	长 日 ⊢ 疲 ⇒ 己.	5	feelings;health
+This sound makes me angry.	this sound RI anger A I.	Tis oti ri raye a eko.	此 耳 ⊢ 怒 ⇒ 己.	5	feelings
+Bad water makes people sick.	bad water RI sick A person.	Marum aku ri mara a omo.	悪 水 ⊢ 病 ⇒ 人.	4	health
+Please clean the room.	please clean A room.	Pam puru a kamar.	乞 清 ⇒ 室.	5	lodging

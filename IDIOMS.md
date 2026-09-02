@@ -73,8 +73,8 @@ list short.
 ## Patterns
 
 Not idioms but frames: each takes an argument, and stays productive wherever you use
-it.  See DETAILS.md (Prepositional Phrases) for **in ... moto** in its grammatical
-setting.
+it.  See [Prepositional phrases](https://pikotika.org/grammar/prepositions/) for
+**in ... moto** in its grammatical setting.
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|

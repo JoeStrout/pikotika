@@ -202,11 +202,11 @@
 ## 并 尔, 何?
 ### and you, what?
 ===
-# Where do you work?
+# I like music and reading.
 ---
-# Tu ri opus in kerroko?
-## 尔 ⊢ 力 内 何所?
-### you RI work in what-place?
+# Eko ri kusta a musi kum kitavite.
+## 己 ⊢ 愛 ⇒ 曲 并 写見.
+### I RI like A music and writing-see.
 ===
 # weekday
 ---
@@ -652,38 +652,38 @@
 ## 内 上日, 火 水 ⊢ 内 室, 何?
 ### in up-sun, hot water RI in room, what?
 ===
-# Here's two hundred.
+# Thank you.
 ---
-# Tis ri 200.
-## 此 ⊢ 200.
-### this RI 200.
+# Mersi.
+## 恩.
+### thank.
 ===
-# Please speak.
+# Nice to meet you.
 ---
-# Pam tika.
-## 乞 言.
-### please say.
+# Eko ri konten sarve a tu.
+## 己 ⊢ 楽 会 ⇒ 尔.
+### I RI happy meet A you.
 ===
-# This fish is good, right?
+# Can we meet?
 ---
-# Tis akupeste ri pona, si?
-## 此 水匹 ⊢ 好, 是?
-### this water-animal RI good, yes?
+# Ekomen ri kan sarve, ker?
+## 己众 ⊢ 能 会, 何?
+### I-group RI can meet, what?
 ===
-# The road has been closed.
+# The story is beautiful, but it isn't true.
 ---
-# Ri vin a moto.
-## ⊢ 閉 ⇒ 方.
-### RI close A road.
+# Tikakosa ri ponavite, sets tis ri non ves.
+## 言物 ⊢ 好見, 但 此 ⊢ 不 真.
+### say-thing RI good-see, but this RI not true.
 ===
-# How much are the bananas?
+# Can I have some water?
 ---
-# Ronkayoropomo ri ker moni?
-## 长黄果 ⊢ 何 贝?
-### long-yellow-fruit RI what money?
+# Eko ri kan toma a aku, ker?
+## 己 ⊢ 能 取 ⇒ 水, 何?
+### I RI can get A water, what?
 ===
-# Two days ago.
+# Prices are going up.
 ---
-# 2 yan yer.
-## 2 日 前.
-### 2 sun before.
+# Monimesur ri surire.
+## 贝寸 ⊢ 上行.
+### money-amount RI up-go.

@@ -261,12 +261,19 @@ def render(text: str, voice: str, force: bool = False) -> Path:
     path = cache_path(voice, text)
     if path.exists() and not force:
         return path
-    sounds = ph.to_phonemes(text)
-    if not sounds.strip():
+    # Usually one piece; a hesitation filler splits the line so that real
+    # silence can go between the halves (phonemes.segments).
+    pieces = ph.segments(text)
+    if not pieces:
         raise SystemExit(f"nothing to say for {text!r}")
-    audio, rate = engine().create(sounds, voice=voice, speed=SPEED,
-                                  is_phonemes=True)
-    write_wav(path, audio, rate)
+    chunks, rate = [], None
+    for sounds, pause in pieces:
+        audio, rate = engine().create(sounds, voice=voice, speed=SPEED,
+                                      is_phonemes=True)
+        chunks.append(np.asarray(audio, dtype=float))
+        if pause:
+            chunks.append(np.zeros(int(pause * rate)))
+    write_wav(path, np.concatenate(chunks), rate)
     return path
 
 

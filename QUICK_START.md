@@ -109,4 +109,5 @@ Find much more translated dialog in [DIALOGS.md](DIALOGS.md).
 
 ## Ready to learn more?
 
-See [DETAILS.md](DETAILS.md) for more details, and watch this space for learning materials coming soon!
+See [pikotika.org](https://pikotika.org/) for the full grammar and the topic
+pages, and watch this space for learning materials coming soon!

@@ -9,8 +9,9 @@ this matters — is support for that. So the ordering principle throughout is
 *shortest path from landing to first sentence*.
 
 Companion documents: `GAME_DESIGN.md` (the course itself), `CURRICULUM.md` (what is
-taught in what order), `DETAILS.md` (the internal spec the public pages are
-written from, and progressively replaced by — see [Grammar](#grammar-grammar)).
+taught in what order), `WEB_DETAILS.md` (how the site is actually built). The
+internal spec the public pages were written from, `DETAILS.md`, has been fully
+migrated into them and deleted — see [Grammar](#grammar-grammar).
 
 
 ## Constraints
@@ -116,8 +117,8 @@ can all link to words.
 ### Grammar (`/grammar/`)
 
 An index page listing every grammar point, then one page per point — shorter than
-`DETAILS.md`, more example-forward, each page ending in two or three sentences to
-parse yourself with the answers behind a reveal.
+the old `DETAILS.md` sections, more example-forward, each page ending in two or
+three sentences to parse yourself with the answers behind a reveal.
 
 Pages, roughly:
 
@@ -126,18 +127,19 @@ comparison · questions and answers · time, aspect, and mood · conditions and
 counterfactuals · modifier order · `TE` · subordinate clauses · indefinite
 subjects · pronunciation and stress · the three notations
 
-**`DETAILS.md` is migrated, not mirrored.** Two copies of the spec would drift, so
-there will not be two copies. As each web page is written, its content is checked
-against the corresponding `DETAILS.md` section for consistency, and then that
-section is **deleted from `DETAILS.md`**. When the Grammar and Topics sections are
-complete, what remains in `DETAILS.md` is only what we chose not to publish —
-constraints on new root forms, notes for coiners, and similar internal matter —
-and the file is renamed to reflect that. This makes the website authoritative for
-the language as it is presented, and leaves the repo with exactly one home for
-each fact.
+**`DETAILS.md` was migrated, not mirrored.** Two copies of the spec would drift,
+so there were never two copies. As each web page was written, its content was
+checked against the corresponding `DETAILS.md` section for consistency, and then
+that section was **deleted from `DETAILS.md`**. This brief expected a residue of
+unpublished internal matter to survive under a new name; in the event there was
+none, so when `/topics/dates/` and `/topics/pleasantries/` took the last two
+sections the file was deleted outright (2026-09-02). `WEB_DETAILS.md` §Grammar
+holds the table of where each section went. The website is now authoritative for
+the language as it is presented, and the repo has exactly one home for each
+fact.
 
 Presentation is not constrained by how `DETAILS.md` happens to be organized. A web
-page may split one `DETAILS.md` section into three, or merge three into one; the
+page could split one `DETAILS.md` section into three, or merge three into one; the
 consistency check is about claims, not about structure.
 
 Examples on these pages are hand-written prose, but every *form* in them is
@@ -146,7 +148,7 @@ fails the build rather than shipping.
 
 ### Topics (`/topics/`)
 
-Situation-shaped pages. Some are the reference tables that currently live in
+Situation-shaped pages. Some are the reference tables that used to live in
 `DETAILS.md`; the rest are phrasebook pages built from `corpus.tsv`, `IDIOMS.md`,
 and `DIALOGS.md`.
 
@@ -555,8 +557,6 @@ cannot be rushed at the end.
 - **Does `food` want to be two pages?** 76 rows is a lot, and *eating out* and
   *food and drink words* are different errands. A design question for whoever draws
   that page, not a data question.
-- **What `DETAILS.md` becomes** once the migration empties it — a renamed
-  `COINING.md` for the internal constraints, or folded into `CLAUDE.md`?
 - **Do stories live in Learn or become their own thing?** They are currently under
   `/learn/stories/`, but they are the most shareable content on the site and
   arguably belong somewhere a non-learner would find them.

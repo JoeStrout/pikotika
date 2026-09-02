@@ -13,7 +13,7 @@
 | leg; foot | kampa | 足 | walking limb |
 | life; alive | viva | 生 | live, birth, grow |
 | mouth; opening | puka | 口 | lips, bodily opening |
-| sick; hurt | mara | 病 | ill, diseased, damaged, defective, hurting |
+| sick; hurt | mara | 病 | ill, diseased, damaged, defective, hurting; make sick, injure |
 | stomach; belly | venter | 胃 | gut, abdomen |
 | taste; flavor | sapor | 味 | savor |
 
@@ -32,11 +32,11 @@
 
 | Gloss | Latin | Han | Covers |
 |---|---|---|---|
-| anger; angry | raye | 怒 | rage, mad, fury |
-| happy; pleased | konten | 楽 | glad, joy |
+| anger; angry | raye | 怒 | rage, mad, fury; enrage, make angry |
+| happy; pleased | konten | 楽 | glad, joy; make happy, delight |
 | like; enjoy | kusta | 愛 | prefer, be fond of |
 | surprise; unexpected | sorpe | 奇 | astonish, wonder |
-| tired; weary | kansa | 疲 | exhausted |
+| tired; weary | kansa | 疲 | exhausted; tire, wear out |
 
 ## Food (7)
 
@@ -174,7 +174,7 @@
 |---|---|---|---|
 | bad; wrong | marum | 悪 | poor, unpleasant |
 | big; very | meka | 大 | large, great, intense |
-| clean; pure | puru | 清 | washed |
+| clean; pure | puru | 清 | washed; wash, purify |
 | fast; soon | veros | 早 | quick, rapid |
 | fear; danger | timo | 危 | afraid, worry |
 | good; pleasant | pona | 好 | well, fine |

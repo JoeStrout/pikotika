@@ -9,7 +9,9 @@ has a Latin spelling and a single Han character, so it can be written either way
 
 **New here? Start with [QUICK_START.md](QUICK_START.md).**
 For the full treatment — pronunciation, writing systems, numbers, colors, proper
-nouns, and grammar — see [DETAILS.md](DETAILS.md).
+nouns, and grammar — see [pikotika.org](https://pikotika.org/), which is built
+from this repository: the twenty [grammar pages](https://pikotika.org/grammar/)
+are the spec, and the [topic pages](https://pikotika.org/topics/) cover the rest.
 
 ## What's in this repository
 

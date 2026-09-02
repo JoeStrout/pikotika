@@ -44,6 +44,8 @@ university; college	big-learn-place	Places, arts, appearance	4
 love; adore; be in love with	big-like	Feelings;Verbs	2	2
 expensive; costly; pricey	big-money	Qualities;People and society	3	
 grief	big-not-happy	Feelings	1	
+tree	big-plant	Nature	1	
+forest; woods	big-plant-place	Nature	1	
 storm; downpour	big-rain	Nature	4	
 loud	big-sound	Qualities	4	
 astonishment	big-surprise	Feelings	5	
@@ -305,6 +307,7 @@ cinema; movie theater	picture-home	Places, arts, appearance	4
 comic book; comics; manga	picture-many-page	Made things;Places, arts, appearance	4	5
 local; local person	place-person	People and society;Places, arts, appearance	1	
 harvest	plant-get	Verbs;Nature	2	
+garden; planted ground	plant-place	Nature;Places, arts, appearance	1	
 spring (season)	plant-time	Time direction	1	4
 tea	plant-water	Food	1	1
 Thursday	plant-weekday	Time direction	3	3

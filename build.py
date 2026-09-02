@@ -896,7 +896,13 @@ def check_audio(lexicon) -> None:
 
     Editing an utterance is the case that bites, not adding one.  The clip is
     keyed by the exact text, so a corrected line leaves its old clip behind and
-    arrives with none."""
+    arrives with none.
+
+    The index is checked against the files on disk as well, because agreeing
+    with the site is not the same as being there.  `build_files` skips a clip
+    whose .m4a already exists and whose voice has not changed, so deleting one
+    to force it to be re-rendered leaves the index still claiming it -- and
+    the only symptom is a play button that fetches a 404."""
     import json
 
     wanted = {
@@ -913,11 +919,21 @@ def check_audio(lexicon) -> None:
         clips = json.loads(index.read_text(encoding="utf-8"))["clips"]
         missing = [t for t in texts if t not in clips]
         stale = [t for t in clips if t not in texts]
-        if not missing and not stale:
+        # clips[text] is [path, seconds, voice], the path relative to
+        # web/audio/ -- which is where the site fetches it from.  Guarded on
+        # the type because gen_audio.build_sprite writes the same field as an
+        # offset in seconds, and an index built that way would otherwise take
+        # a float down the path branch and break the build for everyone.
+        gone = [t for t, clip in clips.items()
+                if isinstance(clip[0], str)
+                and not (WEB / "audio" / clip[0]).is_file()]
+        if not missing and not stale and not gone:
             continue
         print(f"  ! {kind} audio is out of date: {len(texts)} on the site, "
               f"{len(clips)} clips")
-        for label, items in (("no clip", missing), ("clip no longer used", stale)):
+        for label, items in (("no clip", missing),
+                             ("clip no longer used", stale),
+                             ("indexed but not on disk", gone)):
             for text in items[:6]:
                 print(f"      {label}: {text}")
             if len(items) > 6:
@@ -1548,6 +1564,90 @@ def check_forms(tables, sources) -> list:
     return forms
 
 
+# A dialog line opens with a speaker label -- `Aras: Si, pam.` -- and the label
+# picks the voice it is read in.  The seven that are cast live in
+# `gen_audio.SPEAKER_VOICES`.
+SPEAKER_LABEL = re.compile(r"^([A-Z][A-Za-z]*):")
+
+
+def cast_speakers() -> dict:
+    """`gen_audio.SPEAKER_VOICES`, read out of the source without importing it.
+
+    `gen_audio` pulls in numpy and belongs to the Kokoro environment, and this
+    build has to run without either -- the same constraint that keeps
+    `check_audio` a warning.  Parsing the literal costs a few lines and keeps
+    one definition of the cast."""
+    import ast
+
+    tree = ast.parse((ROOT / "gen_audio.py").read_text(encoding="utf-8"))
+    for node in tree.body:
+        if isinstance(node, ast.Assign) and any(
+                isinstance(t, ast.Name) and t.id == "SPEAKER_VOICES"
+                for t in node.targets):
+            return ast.literal_eval(node.value)
+    raise SystemExit("gen_audio.py no longer defines SPEAKER_VOICES at the top "
+                     "level, so the speaker check cannot run")
+
+
+def check_speakers(sentences) -> None:
+    """Refuse to ship a dialog line whose speaker has no voice.
+
+    A label is not a Pikotika word, so `check_forms` never looks at it, and an
+    invented or mistyped name is silent here: the page renders, the name reads
+    fine, and only `gen_audio` notices -- in an environment most builds do not
+    have, possibly months later.  Unlike the audio checks this one needs
+    nothing but the source of the two files, so it can fail the build, which
+    is where the mistake is cheapest to fix."""
+    cast = cast_speakers()
+    problems = []
+    for text in sentences:
+        m = SPEAKER_LABEL.match(text)
+        if m and m.group(1) not in cast:
+            problems.append(f"{m.group(1)!r} in {text!r}")
+    if problems:
+        raise SystemExit(
+            "dialog speakers with no voice in gen_audio.SPEAKER_VOICES:\n  "
+            + "\n  ".join(problems)
+            + "\n(use a name or role word already cast there, or add one --"
+              " auditioning the voice first)")
+
+
+# A dialog row: the cell that takes the play button, and the line itself.
+DIALOG_ROW = re.compile(r"<tr>(?:(?!</tr>).)*?class=\"speak\"(?:(?!</tr>).)*?</tr>",
+                        re.S)
+DIALOG_PK = re.compile(r"<span class=\"pk\"[^>]*>(.*?)</span>", re.S)
+
+
+def check_dialog_rows(sources) -> None:
+    """Refuse a dialog row that `addDialogPlayers` cannot put a button on.
+
+    site.js takes the *first* `.pk` in the row as the whole line and keys the
+    clip by its text, so a row must hold its line in one span.  Split it --
+    to mark part of it `data-check="off"`, say -- and two things go wrong at
+    once, both silently: the row loses its play button (the first span is now
+    a one-word speaker label, which the function skips), and gen_audio keys
+    the clip on a line with no label, so it is cast by hash instead of by
+    speaker.  Neither shows up in the page, and `check_speakers` cannot see it
+    either, since no collected sentence starts with the label any more."""
+    problems = []
+    for label, fragment in sources:
+        for row in DIALOG_ROW.findall(fragment):
+            spans = DIALOG_PK.findall(row)
+            if not spans:
+                continue
+            line = re.sub(r"<[^>]+>", "", spans[0]).strip()
+            if len(spans) > 1:
+                problems.append(f"{label}: {len(spans)} .pk spans in one row, "
+                                f"starting {line[:40]!r} -- the line must be "
+                                f"a single span")
+            elif len(line.split()) < 2:
+                problems.append(f"{label}: dialog line {line!r} is one word, "
+                                f"so it gets no play button")
+    if problems:
+        raise SystemExit("dialog rows site.js cannot wire up:\n  "
+                         + "\n  ".join(problems))
+
+
 def check_fonts() -> None:
     """Refuse to ship a Han face that is missing a character.  A tofu box turns
     up on the one page that uses that root, and nobody notices for months."""
@@ -1576,6 +1676,9 @@ def build() -> None:
     check_convert(tables)
     check_syntax()
     check_lessons(tables)
+    check_speakers(audio_sentences())
+    check_dialog_rows([(url, content)
+                       for url, content, _t, _d in authored_pages()])
     authored = authored_pages()
     forms = check_forms(tables, [(url, content)
                                  for url, content, _t, _d in authored])

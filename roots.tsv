@@ -6,7 +6,7 @@ heal	health	Body and life	cure, medicine, repair	sana	医	back to *san*e and *sa
 leg	foot	Body and life	walking limb	kampa	足	legs take you *camp*ing	*gamba, jambe*	7	5	4
 life	alive	Body and life	live, birth, grow	viva	生	*viva* la vida!	*viva, vivo, vital*	5	2	5
 mouth	opening	Body and life	lips, bodily opening	puka	口	*puck*er up	Italian bocca, Spanish boca; poka was displaced	3	4	4
-sick	hurt	Body and life	ill, diseased, damaged, defective, hurting	mara	病	a night*mar*e leaves you sick	*mal, malady, malade*	10	2	4
+sick	hurt	Body and life	ill, diseased, damaged, defective, hurting; make sick, injure	mara	病	a night*mar*e leaves you sick	*mal, malady, malade*	10	2	4
 stomach	belly	Body and life	gut, abdomen	venter	胃	food *enter*s the *venter*	Latin venter; Italian pancia	9	0	5
 taste	flavor	Body and life	savor	sapor	味	delicious syrup tastes like *sap or* something	Latin sapor, Spanish sabor	8	9	4
 black	dark	Color	dark-valued	nero	黒	*Nero* fiddled till Rome went black	Italian nero, Latin niger	11	2	3
@@ -15,11 +15,11 @@ green		Color	vegetal hue	verte	緑	*ver*y green, *verd*ant	Italian verde, Latin 
 red		Color	warm hue	rus	赤	*rus*t is red	Latin *russus*; Italian *rosso*; French *rouge*; English *rust, ruby*	7	10	3
 white	pale	Color	light-valued	anka	白	a bl*ank* paper is white	Italian *bianco*, Spanish *blanco*, minus the onset	5	7	3
 yellow		Color	golden hue	yoro	黄	*yo*, that *yo*lk is yellow	Italian giallo; Latin aurum	11	10	3
-anger	angry	Feelings	rage, mad, fury	raye	怒	a *rag*ing *ray* of fury	French/English *rage*; Latin *rabies* -- Spanish *rabia*, Italian *rabbia*, Portuguese *raiva*	9	3	5
-happy	pleased	Feelings	glad, joy	konten	楽	*conten*t and happy	Latin contentus; Spanish feliz	13	15	1
+anger	angry	Feelings	rage, mad, fury; enrage, make angry	raye	怒	a *rag*ing *ray* of fury	French/English *rage*; Latin *rabies* -- Spanish *rabia*, Italian *rabbia*, Portuguese *raiva*	9	3	5
+happy	pleased	Feelings	glad, joy; make happy, delight	konten	楽	*conten*t and happy	Latin contentus; Spanish feliz	13	15	1
 like	enjoy	Feelings	prefer, be fond of	kusta	愛	gives me *gusto* — I like it	Spanish gustar	13	6	2
 surprise	unexpected	Feelings	astonish, wonder	sorpe	奇	*sorp*rise!	Spanish *sorpresa*, Italian *sorpresa*, Portuguese *surpresa*, French/English *surprise*	8	2	5
-tired	weary	Feelings	exhausted	kansa	疲	too tired — I *can'*t	Spanish cansado; Latin lassus	10	2	5
+tired	weary	Feelings	exhausted; tire, wear out	kansa	疲	too tired — I *can'*t	Spanish cansado; Latin lassus	10	2	5
 drink	beverage	Food	sip	pipe	飲	drink now, *pee-pay* for it later!	Latin bibere; Latin potare	12	7	2
 food	eat	Food	meal, nourishment	komi	食	*come i*n and eat	*comer, comida*	9	41	1
 fruit	result	Food	berry, seed; outcome	pomo	果	a *pom*egranate is fruit	Latin *pomum* "fruit"; Italian *pomo*, French *pomme*; English *pome*	8	14	1
@@ -107,7 +107,7 @@ music	song	Places, arts, appearance	melody	musi	曲	*musi*c	*music, música*	6	7
 temple	church	Places, arts, appearance	shrine, sacred place	temper	寺	a *temp*le *temper*s the soul	Latin templum; Latin fanum	6	0	5
 bad	wrong	Qualities	poor, unpleasant	marum	悪	careful with those paintings; if you *mar 'em*, that's bad	Latin malum	11	8	2
 big	very	Qualities	large, great, intense	meka	大	*mega* = big	*mega-*	3	30	1
-clean	pure	Qualities	washed	puru	清	*pure* and clean	Latin purus	11	0	5
+clean	pure	Qualities	washed; wash, purify	puru	清	*pure* and clean	Latin purus	11	0	5
 fast	soon	Qualities	quick, rapid	veros	早	*ver*y fast, *veloc*ity	Spanish veloz; Latin celer	6	6	2
 fear	danger	Qualities	afraid, worry	timo	危	*timi*d = afraid	*timor, timid*	6	6	4
 good	pleasant	Qualities	well, fine	pona	好	*bonu*s! good stuff	*bueno, bonus, buono*	6	40	1

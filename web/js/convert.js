@@ -42,7 +42,6 @@
      (see joinWords) and is cut out wherever it falls (see tokenize). */
   var DASH = '\u2014\u2013';                 /* em dash, en dash */
   var PUNCT = ',.:;?!\u2026' + '、。：；？！' + DASH;
-  var SENTENCE_END = '.?!' + '。？！';
 
   var DECIMAL_POINT = 'part';
   var CLOCK_MARK = 'hour';
@@ -79,11 +78,14 @@
     return true;
   }
 
-  function endsSentence(token) {
-    for (var i = 0; i < token.length; i++) {
-      if (SENTENCE_END.indexOf(token[i]) >= 0) return true;
-    }
-    return false;
+  /* The hesitation filler, written with an ellipsis.  A noise, not a word: it
+     parses to a bare string the way punctuation does.  Mirrors
+     pikotika.py:is_filler. */
+  var FILLER = 'e';
+  var ELLIPSIS = ['\u2026', '...'];
+
+  function isFiller(tok, following) {
+    return tok.toLowerCase() === FILLER && ELLIPSIS.indexOf(following) >= 0;
   }
 
   /* A word is an array of glosses, a string of punctuation, or a numeral. */
@@ -405,17 +407,18 @@
     return best[n];
   }
 
-  /* Names are capitalized in every notation, so case alone separates Mira the
-     name from **mira** 'surprise'.  The one place it cannot is the start of a
-     sentence, where every word is capitalized: there the root wins, and the
-     name is only the fallback for a token no roots can spell. */
-  function nameWins(token, start, t) {
-    if (!/^[A-Z]/.test(token)) return false;
-    return !start || segment(token.toLowerCase(), t) === null;
+  /* Can a token stand for a name at all?  Only if it is capitalized.
+
+     A word always beats a name (decided 2026-09-02): where a name spells a
+     word -- Pam, Sam, Nova -- the word parses, wherever it stands, and the
+     name is the fallback for what no roots can spell.  Mirrors
+     pikotika.py:name_wins; build.py:check_convert holds the two together. */
+  function nameWins(token) {
+    return /^[A-Z]/.test(token);
   }
 
   /* One hyphenated gloss word as its list of glosses, or null. */
-  function splitGlossWord(word, t, words, start, fail) {
+  function splitGlossWord(word, t, words, fail) {
     var parts = [];
     var pieces = word.split('-');
     for (var n = 0; n < pieces.length; n++) {
@@ -442,7 +445,7 @@
       }
       /* "Joe" by its English spelling, "Yo" by its Pikotika form. */
       var english = nameOf(t, piece);
-      if (english !== null && nameWins(piece, start && !n, t)) {
+      if (english !== null && nameWins(piece)) {
         parts.push(name(english));
         continue;
       }
@@ -454,71 +457,66 @@
 
   function parseGloss(text, t, fail) {
     var words = [];
-    var start = true;
     var toks = tokenize(text);
     for (var i = 0; i < toks.length; i++) {
       var word = toks[i];
       if (isPunctText(word)) {
         words.push(word);
-        if (endsSentence(word)) start = true;
         continue;
       }
       var reading = numeralWords(word);
       if (reading !== null) {
         words.push(numeral(word, reading));
-        start = false;
         continue;
       }
       var upper = word.toUpperCase();
       if (PARTICLES.indexOf(upper) >= 0) {
         words.push([upper]);
-        start = false;
         continue;
       }
-      var parts = splitGlossWord(word, t, words, start, fail);
+      var parts = splitGlossWord(word, t, words, fail);
       if (parts === null) return null;
       words.push(parts);
-      start = false;
     }
     return words.length ? words : null;
   }
 
   function parseLatin(text, t, fail) {
     var words = [];
-    var start = true;
     var toks = tokenize(text);
     for (var i = 0; i < toks.length; i++) {
       var word = toks[i];
+      if (isFiller(word, i + 1 < toks.length ? toks[i + 1] : '')) {
+        words.push(word);
+        continue;
+      }
       if (isPunctText(word)) {
         words.push(word);
-        if (endsSentence(word)) start = true;
         continue;
       }
       var reading = numeralWords(word);
       if (reading !== null) {
         words.push(numeral(word, reading));
-        start = false;
         continue;
       }
       var low = word.toLowerCase();
       var gloss = t.form2gloss[low];
       if (gloss !== undefined && isParticle(t, gloss)) {
         words.push([gloss]);
-        start = false;
         continue;
       }
-      /* An outright win takes the name; otherwise the roots get first refusal
-         and the name catches what they cannot spell. */
-      var english = nameAt(word, t);
-      var parts = null;
-      if (english === null || start) parts = segment(low, t, word);
-      if (parts === null && english !== null) parts = [name(english)];
+      /* The roots get first refusal everywhere, and the name catches what
+         they cannot spell -- see nameWins. */
+      var parts = segment(low, t, word);
+      if (parts === null) {
+        var english = nameAt(word, t);
+        if (english !== null) parts = [name(english)];
+      }
       if (parts === null) {
         blame(fail, words, word);
         return null;
       }
       words.push(parts);
-      start = false;
     }
     return words.length ? words : null;
   }

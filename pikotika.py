@@ -26,8 +26,8 @@ Known bugs in this tool (issues with the *language* go in KNOWN_ISSUES.md; this
 list is for defects in the code):
 
   - A numeral written against a following character in Han, with no space, is
-    parsed as a compound rather than as a numeral plus a word.  DETAILS.md
-    ("Dates") blesses exactly that spacing for years, so **2026年** is legal
+    parsed as a compound rather than as a numeral plus a word.
+    /topics/dates/ blesses exactly that spacing for years, so **2026年** is legal
     input, but it comes back as Latin `2026anyo` written solid instead of
     **pits kiru, pits tekas siks anyo**.  Not a simple fix: `2行片`
     (*2-go-paper*) really is a digit-initial compound, so the two forms are
@@ -444,20 +444,29 @@ class Tables:
 DASH = set("—–")                        # em dash, en dash
 PUNCT = set(",.:;?!…" "、。：；？！") | DASH
 
-# Sentence-final punctuation.  Every word is capitalized after one of these, so
-# capitalization stops distinguishing a name from a root there -- see name_wins.
-SENTENCE_END = set(".?!" "。？！")
-
-
-def ends_sentence(token):
-    return any(c in SENTENCE_END for c in token)
-
 # ...but ordinary writing attaches them ("a kanis, ker?"), so punctuation is peeled
 # off the ends of each whitespace-delimited word.  Only off the ends: a decimal
 # point belongs to its number (**1.25**), not to the sentence.  A dash is the
 # exception: it is cut out wherever it falls, since "opus—tistempo" is two words
 # with a dash between them and not a word with a dash in the middle of it.
 DASH_SPLIT = re.compile("([" + "".join(DASH) + "])")
+
+
+# The hesitation filler, written **e...** or **e…** (pikotika.org/topics/pleasantries/).
+# It is a noise, not a word: no gloss, no character, no entry in any table, and
+# it stays in Latin in Han text the way a name does.  So it parses to a bare
+# string, which is what this module already uses for punctuation -- that makes
+# every consumer treat it correctly without being told about it, from
+# `join_words` spacing it to `build.check_forms` keeping it out of the lexicon.
+#
+# It is only the filler when an ellipsis follows.  A stray `e` on its own is a
+# typo, and should still fail to parse rather than being read as a drawl.
+FILLER = "e"
+ELLIPSIS = ("…", "...")
+
+
+def is_filler(tok, following):
+    return tok.lower() == FILLER and following in ELLIPSIS
 
 
 def tokenize(text):
@@ -671,32 +680,26 @@ def blame(fail, words, token, why=None):
 def parse_gloss(text, t, fail=None):
     """'water-meal RI have A what' -> [[water, meal], [RI], [have], [A], [what]]"""
     words = []
-    start = True
     for word in tokenize(text):
         if is_punct_text(word):
             words.append(word)
-            if ends_sentence(word):
-                start = True
             continue
         numeral = numeral_words(word)
         if numeral is not None:
             words.append(numeral_word(word, numeral))
-            start = False
             continue
         upper = word.upper()
         if upper in PARTICLE_ALIASES:
             words.append([PARTICLE_ALIASES[upper]])
-            start = False
             continue
-        parts = split_gloss_word(word, t, words, start, fail)
+        parts = split_gloss_word(word, t, words, fail)
         if parts is None:
             return None
         words.append(parts)
-        start = False
     return words or None
 
 
-def split_gloss_word(word, t, words, start, fail):
+def split_gloss_word(word, t, words, fail):
     """One hyphenated gloss word as its list of glosses, or None."""
     parts = []
     pieces = word.split("-")
@@ -735,7 +738,7 @@ def split_gloss_word(word, t, words, start, fail):
             continue
         # "Joe" by its English spelling, "Yo" by its Pikotika form
         name = t.name_of(piece)
-        if name is not None and name_wins(piece, start and not n, t):
+        if name is not None and name_wins(piece):
             parts.append(name_token(name))
             continue
         blame(fail, words, piece)   # the piece, not the whole compound
@@ -805,30 +808,35 @@ def name_at(token, t):
     return t.loan_forms.get(low) if low != token else None
 
 
-def name_wins(token, start, t):
-    """Does a capitalized token stand for a name rather than for roots?
+def name_wins(token):
+    """Can a token stand for a name at all?  Only if it is capitalized.
 
-    Names are capitalized in every notation (pikotika.org/grammar/writing/),
-    so case alone separates Mira the name from **mira** 'surprise'.  The one
-    place it cannot is the start of a sentence, where every word is capitalized:
-    there the root wins, and the name is only the fallback for a token no roots
-    can spell.  Write **omo Mira** to force the name -- which is exactly the
-    disambiguation pikotika.org/topics/names/ prescribes for a name that
-    collides with a word.
-    """
-    if not token[:1].isupper():
-        return False
-    return not start or segment(token.lower(), t) is None
+    **A word always beats a name** (decided 2026-09-02).  Where a name spells
+    a word -- 87 of the 3,380 in names.tsv do, **Pam** and **Sam** and **Nova**
+    among them -- the word is what parses, wherever it stands in the sentence,
+    and the name is the fallback for a token no roots can spell.
+
+    Capitalization used to decide it, with the root winning only at the start
+    of a sentence where every word is capitalized anyway.  That reading is
+    still the one a *human* makes, and pikotika.org/topics/names/ still
+    prescribes **omo Ar** for a name that collides; what changed is only what
+    the parsers do with an unaided token, which is a question about word chips
+    and the converter rather than about the language.  Rendering **Ar** as
+    'other' on the very pages that teach the collision is the honest result,
+    and a learner who knows their own name is a word can make the
+    substitution."""
+    return token[:1].isupper()
 
 
 def parse_latin(text, t, fail=None):
     words = []
-    start = True
-    for word in tokenize(text):
+    toks = tokenize(text)
+    for i, word in enumerate(toks):
+        if is_filler(word, toks[i + 1] if i + 1 < len(toks) else ""):
+            words.append(word)
+            continue
         if is_punct_text(word):
             words.append(word)
-            if ends_sentence(word):
-                start = True
             continue
         numeral = numeral_words(word)
         if numeral is not None:
@@ -839,21 +847,18 @@ def parse_latin(text, t, fail=None):
         gloss = t.form2gloss.get(low)
         if gloss and t.is_particle(gloss):
             words.append([gloss])
-            start = False
             continue
-        # an outright win takes the name; otherwise the roots get first refusal
-        # and the name catches what they cannot spell
-        name = name_at(word, t)
-        parts = None
-        if name is None or start:
-            parts = segment(low, t, word)
-        if parts is None and name is not None:
-            parts = [name_token(name)]
+        # the roots get first refusal everywhere, and the name catches what
+        # they cannot spell -- see name_wins
+        parts = segment(low, t, word)
+        if parts is None:
+            name = name_at(word, t)
+            if name is not None:
+                parts = [name_token(name)]
         if parts is None:
             blame(fail, words, word)
             return None
         words.append(parts)
-        start = False
     return words or None
 
 

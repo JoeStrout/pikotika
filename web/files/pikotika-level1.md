@@ -40,11 +40,11 @@
 ## 不
 ### *non*-, *no*, *n*ot
 ===
-# I'm Alice.
+# Okay, okay.
 ---
-# Eko ri Aras.
-## 己 ⊢ Aras.
-### I RI Alice.
+# Pona, pona.
+## 好, 好.
+### good, good.
 ===
 # Yes.
 ---
@@ -52,11 +52,11 @@
 ## 是.
 ### yes.
 ===
-# Nice.
+# I'm Bob.
 ---
-# Pona.
-## 好.
-### good.
+# Eko ri Popu.
+## 己 ⊢ Popu.
+### I RI Bob.
 ===
 # this; current
 ---
@@ -100,11 +100,11 @@
 ## 真
 ### truly *ves*ted in the truth
 ===
-# Yes, that's the one.
+# Big!
 ---
-# Si, tis.
-## 是, 此.
-### yes, this.
+# Meka!
+## 大!
+### big!
 ===
 # The food is fresh.
 ---
@@ -112,11 +112,11 @@
 ## 食 ⊢ 初.
 ### food RI new.
 ===
-# Big!
+# Of course!
 ---
-# Meka!
-## 大!
-### big!
+# Ves!
+## 真!
+### true!
 ===
 # meet; encounter
 ---
@@ -544,11 +544,11 @@
 ## 真, 何?
 ### true, what?
 ===
-# Of course!
+# All right, a little.
 ---
-# Ves!
-## 真!
-### true!
+# Pona, piko.
+## 好, 小.
+### good, small.
 ===
 # Take care (parting).
 ---
@@ -556,17 +556,23 @@
 ## 好 行.
 ### good go.
 ===
-# Alice: Yes please.
+# Is that right?
 ---
-# Aras: Si, pam.
-## Aras: 是, 乞.
-### Alice: yes, please.
+# Tis ri ves, si?
+## 此 ⊢ 真, 是?
+### this RI true, yes?
 ===
-# How are you?
+# I'm Alice.
 ---
-# Tu ri pona, ker?
-## 尔 ⊢ 好, 何?
-### you RI good, what?
+# Eko ri Aras.
+## 己 ⊢ Aras.
+### I RI Alice.
+===
+# No!
+---
+# Non!
+## 不!
+### not!
 ===
 # Please leave.
 ---

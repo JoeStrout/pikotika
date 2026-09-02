@@ -141,6 +141,51 @@ def spell_numerals(latin):
     return NUMERAL.sub(spell, latin)
 
 
+# The hesitation filler (pikotika.org/topics/pleasantries/) is a held mid vowel, not
+# the one-syllable word `e` would otherwise be phonemized as.  The trailing
+# ellipsis is left in place and does the rest: Kokoro has it, and reads it as
+# the trailing pause a hesitation ends on.  Stressed, because an unmarked lone
+# vowel is what the model reduces to a schwa.
+# Measured against Kokoro, bm_george, at speed 1.0: one "e\u02d0" is 0.26 s, which
+# runs straight into the next word.  Stacking length marks is nearly inert
+# ("e\u02d0\u02d0" buys 0.03 s); repeating the vowel is what scales -- 0.35 s for two,
+# 0.43 s for three with the ellipsis, which sounds like a hesitation rather
+# than a clipped vowel.  Re-measure if the voice or SPEED changes.
+FILLER_LENGTH = 3
+FILLER_SOUND = STRESS + "e\u02d0" * FILLER_LENGTH
+
+# ...and the silence that follows it, in seconds.  It has to be spliced into
+# the audio because no *token* produces it: fed phonemes, Kokoro reads
+# punctuation as prosody but not as duration, and measured over "\u2026", ",", ".",
+# an em dash, "\u2026\u2026", ", \u2026" and padding spaces the gap after the filler never
+# exceeded 0.08 s.  Kokoro's own trailing and leading silence adds about
+# 0.17 s on top of this, so 0.15 s here is a ~0.32 s pause in the clip.
+FILLER_PAUSE = 0.15
+
+# The filler first, so `e...` is a drawl and `eko` is still a word.  One pass,
+# because a second one would re-phonemize the letters this one just wrote.
+SPEAKABLE = re.compile(r"(?<![A-Za-z])[eE](?=\u2026|\.\.\.)|[a-zA-Z]+")
+
+# The filler with the ellipsis it carries -- what `segments` splits a line on.
+FILLER_PIECE = re.compile("(" + re.escape(FILLER_SOUND) + r"(?:\u2026|\.\.\.)?)")
+
+
+def segments(latin):
+    """A line as (phonemes, pause_after_seconds) pieces, in order.
+
+    One piece for almost everything.  A hesitation filler is the exception: it
+    ends in real silence, which means two renderings with a gap between them
+    rather than one -- see FILLER_PAUSE.  Rendering the remainder separately is
+    also what a hesitation sounds like, since the sentence picks up again with
+    its own opening contour."""
+    pieces = [p.strip() for p in FILLER_PIECE.split(to_phonemes(latin))]
+    out = [(p, FILLER_PAUSE if FILLER_PIECE.fullmatch(p) else 0.0)
+           for p in pieces if p]
+    if out:
+        out[-1] = (out[-1][0], 0.0)     # never trail a clip with silence
+    return out
+
+
 def to_phonemes(latin):
     """A line of Latin Pikotika -> a line of phonemes, punctuation intact.
 
@@ -148,8 +193,10 @@ def to_phonemes(latin):
     question marks as prosody, which is most of what makes a sentence sound
     like a sentence rather than a list of words.
     """
-    return re.sub(r"[a-zA-Z]+", lambda m: word_phonemes(m.group(0)),
-                  spell_numerals(latin))
+    def sound(m):
+        return (FILLER_SOUND if m.group(0).lower() == pikotika.FILLER
+                else word_phonemes(m.group(0)))
+    return SPEAKABLE.sub(sound, spell_numerals(latin))
 
 
 ALPHABET = set(CONSONANTS) | set(VOWELS)
@@ -184,6 +231,7 @@ def check_symbols():
     from kokoro_onnx.config import DEFAULT_VOCAB
     ours = set(CONSONANTS.values()) | set(VOWELS.values()) | set(MARKS.values())
     ours.add(STRESS)
+    ours.update(FILLER_SOUND)
     unknown = sorted(ours - set(DEFAULT_VOCAB))
     if unknown:
         raise SystemExit("Not in Kokoro's vocabulary: %s" % " ".join(unknown))

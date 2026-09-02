@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-797 terms
+802 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -263,6 +263,7 @@
 | fool | bad-think-person | marumpensaomo | 悪思人 |
 | for this reason | this-reason | tisrason | 此故 |
 | foreign | out-country | eksenasyon | 外国 |
+| forest | big-plant-place | mekaarporoko | 大木所 |
 | forget | know-lose | sapeperti | 知失 |
 | former | before-sequence | yerorten | 前序 |
 | fourth (in a series) | four-sequence | watsorten | 4序 |
@@ -275,6 +276,7 @@
 | fried rice | oil-white-grain | orenankariso | 油白米 |
 | frontier | country-edge | nasyonrante | 国边 |
 | gale | big-wind | mekavento | 大风 |
+| garden | plant-place | arporoko | 木所 |
 | gather | group-join | menyunta | 众合 |
 | get back | again-get | repetoma | 又取 |
 | get ready | before-make | yervake | 前作 |
@@ -486,6 +488,7 @@
 | pig | red-white-animal | rusankapeste | 赤白匹 |
 | Pikotika (the language) | small-say | pikotika | 小言 |
 | pink | red-white | rusanka | 赤白 |
+| planted ground | plant-place | arporoko | 木所 |
 | playground | play-place | yuroko | 玩所 |
 | playhouse | play-home | yukase | 玩户 |
 | politeness (verbal) | please-say | pamtika | 乞言 |
@@ -721,6 +724,7 @@
 | transit station (bus/train) | line-vehicle-place | rinekaroroko | 糸车所 |
 | transport | have-go | teneire | 有行 |
 | travel by vehicle | vehicle-go | karoire | 车行 |
+| tree | big-plant | mekaarpo | 大木 |
 | triangle | three-bend | tetsekurva | 3弓 |
 | trip | come-go | veniire | 来行 |
 | trouble | bad-thing | marumkosa | 悪物 |
@@ -793,6 +797,7 @@
 | wisdom | good-think | ponapensa | 好思 |
 | wise | good-think | ponapensa | 好思 |
 | wise person | good-think-person | ponapensaomo | 好思人 |
+| woods | big-plant-place | mekaarporoko | 大木所 |
 | word list | word-sequence | tikaorten | 言序 |
 | work day | work-day | opusyan | 力日 |
 | writer | write-person | kitaomo | 写人 |

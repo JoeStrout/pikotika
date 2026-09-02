@@ -8,9 +8,9 @@ good; pleasant	pona<br>好<br><i>bonu</i>s! good stuff	pikotika level1 root
 happy; pleased	konten<br>楽<br><i>conten</i>t and happy	pikotika level1 root
 yes; assent	si<br>是<br><i>si</i>, señor!	pikotika level1 root
 not; opposite	non<br>不<br><i>non</i>-, <i>no</i>, <i>n</i>ot	pikotika level1 root
-I'm Alice.	Eko ri Aras.<br>己 ⊢ Aras.<br>I RI Alice.	pikotika level1 sentence
+Okay, okay.	Pona, pona.<br>好, 好.<br>good, good.	pikotika level1 sentence
 Yes.	Si.<br>是.<br>yes.	pikotika level1 sentence
-Nice.	Pona.<br>好.<br>good.	pikotika level1 sentence
+I'm Bob.	Eko ri Popu.<br>己 ⊢ Popu.<br>I RI Bob.	pikotika level1 sentence
 this; current	tis<br>此<br>'<i>tis</i> this one here	pikotika level1 root
 water; liquid	aku<br>水<br><i>aqu</i>a, <i>aqu</i>atic	pikotika level1 root
 food; eat	komi<br>食<br><i>come i</i>n and eat	pikotika level1 root
@@ -18,9 +18,9 @@ big; very	meka<br>大<br><i>mega</i> = big	pikotika level1 root
 small; slight	piko<br>小<br><i>pico</i>- = teeny (metric one trillionth)	pikotika level1 root
 new; fresh	nova<br>初<br>a <i>nova</i> caused a brand new star to appear	pikotika level1 root
 true; correct	ves<br>真<br>truly <i>ves</i>ted in the truth	pikotika level1 root
-Yes, that's the one.	Si, tis.<br>是, 此.<br>yes, this.	pikotika level1 sentence
-The food is fresh.	Komi ri nova.<br>食 ⊢ 初.<br>food RI new.	pikotika level1 sentence
 Big!	Meka!<br>大!<br>big!	pikotika level1 sentence
+The food is fresh.	Komi ri nova.<br>食 ⊢ 初.<br>food RI new.	pikotika level1 sentence
+Of course!	Ves!<br>真!<br>true!	pikotika level1 sentence
 meet; encounter	sarve<br>会<br><i>survey</i> the people you meet to see what they think	pikotika level1 root
 sorry; excuse me	perton<br>悔<br><i>pardon</i> me!	pikotika level1 root
 before; ago	yer<br>前<br><i>yer</i>sterday — a day ago, before today	pikotika level1 root
@@ -92,8 +92,9 @@ small talk; chat; Pikotika (the language)	pikotika<br>小言<br>small-say	pikoti
 A short one.	Piko tikakosa.<br>小 言物.<br>small say-thing.	pikotika level1 sentence
 Ask inside the station.	Pam voritika in karoroko.<br>乞 求言 内 车所.<br>please want-say in vehicle-place.	pikotika level1 sentence
 Really?	Ves, ker?<br>真, 何?<br>true, what?	pikotika level1 sentence
-Of course!	Ves!<br>真!<br>true!	pikotika level1 sentence
+All right, a little.	Pona, piko.<br>好, 小.<br>good, small.	pikotika level1 sentence
 Take care (parting).	Pona ire.<br>好 行.<br>good go.	pikotika level1 sentence
-Alice: Yes please.	Aras: Si, pam.<br>Aras: 是, 乞.<br>Alice: yes, please.	pikotika level1 sentence
-How are you?	Tu ri pona, ker?<br>尔 ⊢ 好, 何?<br>you RI good, what?	pikotika level1 sentence
+Is that right?	Tis ri ves, si?<br>此 ⊢ 真, 是?<br>this RI true, yes?	pikotika level1 sentence
+I'm Alice.	Eko ri Aras.<br>己 ⊢ Aras.<br>I RI Alice.	pikotika level1 sentence
+No!	Non!<br>不!<br>not!	pikotika level1 sentence
 Please leave.	Pam eksire.<br>乞 外行.<br>please out-go.	pikotika level1 sentence

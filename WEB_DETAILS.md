@@ -415,13 +415,39 @@ the language sounds, so alternate readings would need a second mechanism -- a
 per-clip IPA override -- rather than a new page.  The page states the ranges in
 a table instead.
 
-**`DETAILS.md` has not been emptied of these sections yet.**  Every claim on
-the twenty pages was written from it and checked against it, but the deletion
-the design doc calls for is held: `CLAUDE.md`'s standing working rule is to
-read `DETAILS.md` in full as the authoritative spec, and cutting the Grammar,
-Pronunciation, Writing Systems and Inventing Compounds sections out of it
-without settling what the file becomes would leave that rule pointing at a
-husk.  What is left to migrate is listed in `GRAMMAR_PLAN.md`.
+**`DETAILS.md` is gone (2026-09-02).**  Every claim on the twenty pages was
+written from it and checked against it; the deletion the design doc calls for
+was held only until `CLAUDE.md`'s standing working rule -- read the spec in full
+before touching the language -- could point somewhere that was not a husk.  It
+now points at `web/pages/grammar/*.html` and `web/pages/topics/*.html`, and the
+file's own header comment, recording where each section went, is preserved here:
+
+| `DETAILS.md` section | now at |
+|---|---|
+| Numbers | `/topics/numbers/` |
+| Colors | `/topics/colors/` |
+| Proper Nouns and Loan Words | `/topics/names/` |
+| Telling Time | `/topics/time/` |
+| Seasons | `/topics/seasons/` |
+| Dates and Days of the Week | `/topics/dates/` |
+| Pleasantries & Filler | `/topics/pleasantries/` |
+| Pronunciation | `/grammar/pronunciation/` |
+| Writing Systems | `/grammar/writing/` |
+| Inventing Compounds | `/grammar/compounds/` |
+| Modifiers | `/grammar/modifiers/` (+ `/grammar/mood/`, which took the five modal adverbs) |
+| Prepositional Phrases | `/grammar/prepositions/` |
+| Joining and Explaining | `/grammar/joining/` |
+| Comparison | `/grammar/comparison/` |
+| Questions and Answers | `/grammar/questions/` |
+| Time, Aspect, and Mood | `/grammar/aspect/`, `/grammar/mood/`, `/grammar/conditions/` |
+| Standard Modifier Order | `/grammar/modifier-order/` |
+| Use TE To Override Grouping | `/grammar/te/` |
+| Subordinate Clauses | `/grammar/subordinate/`, `/grammar/relative/` |
+| Indefinite Subjects | `/grammar/nosubject/` |
+
+Four grammar pages have no row because the file never had the section:
+`/grammar/structure/`, `/grammar/nouns/`, `/grammar/predicate/` and
+`/grammar/negation/` were written from what every example assumed.
 
 ## Topics (`/topics/`)
 
@@ -429,16 +455,15 @@ An index of cards plus one page per topic at `/topics/<slug>/`. The seventeen
 slugs are `WEBSITE_DESIGN.md`'s, and they are also `corpus.tsv`'s `topic`
 values, so a page and the sentences that support it are named the same thing.
 
-**`DETAILS.md` is emptied as pages are written**, as `WEBSITE_DESIGN.md` asks:
-its Numbers, Colors, Proper Nouns and Loan Words, and Telling Time sections
-were deleted once `/topics/numbers/`, `/topics/colors/`, `/topics/names/` and
-`/topics/time/` covered them, and a
-comment at the head of the file records where each one went. The two
-cross-references from sections that stayed now link to the pages, and the
-comments in `pikotika.py`, `phonemes.py`, `numbers.js` and `adapt.js` that used
-to cite a `DETAILS.md` section cite the page instead. Nothing reads
-`DETAILS.md` at build time, so this cannot break a build -- which is exactly
-why a stale citation in it would go unnoticed.
+**`DETAILS.md` was emptied as pages were written**, as `WEBSITE_DESIGN.md`
+asks: each section was deleted once the page covering it existed, and the last
+two went with `/topics/dates/` and `/topics/pleasantries/`, at which point the
+file itself was deleted (2026-09-02).  The table under "Grammar" above records
+where every section landed.  The comments in `pikotika.py`, `phonemes.py`,
+`numbers.js` and `adapt.js` that used to cite a `DETAILS.md` section cite the
+page instead, as do `README.md`, `QUICK_START.md` and `IDIOMS.md`.  Nothing
+read `DETAILS.md` at build time, so none of this could break a build -- which
+is exactly why a stale citation in it would have gone unnoticed.
 
 **Navigation between topics is hub and spoke** (decided 2026-08-19). Every
 topic page carries a "← Back to Topics" link at the top and the bottom, added
@@ -1699,8 +1724,5 @@ Many of the icons used on the site (for example, on the topic cards) are Twemoji
 The header audio toggle, and slow ("turtle") variants — Kokoro takes a speed
 parameter, so those are a second generation pass rather than `playbackRate`,
 which pitch-shifts. Vocab search, all twenty grammar pages and the Tools
-converter are built; twelve of the seventeen topics are still placeholders.
-The one thing `WEBSITE_DESIGN.md` asks for under Tools that is not there is
-**dates** -- the "number and date reader" reads numbers and clock times, which
-`numbers.js` already did, but years, months and weekdays want `/topics/dates/`
-written first, and `DETAILS.md` still holds that section.
+converter are built; six of the seventeen topics are still placeholders
+(meeting, family, feelings, health, food, weather).

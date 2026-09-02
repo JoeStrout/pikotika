@@ -376,11 +376,11 @@
 ## 中日
 ### middle-sun
 ===
-# Yesterday I wanted to go.
+# You make me happy.
 ---
-# Yanyer, eko ri vori ire.
-## 日前, 己 ⊢ 求 行.
-### day-before, I RI want go.
+# Tu ri konten a eko.
+## 尔 ⊢ 楽 ⇒ 己.
+### you RI happy A I.
 ===
 # Please come at seven.
 ---
@@ -670,11 +670,11 @@
 ## 来行
 ### come-go
 ===
-# I'm thirsty again.
+# I enjoy dancing tango.
 ---
-# Eko ri mas pipevori.
-## 己 ⊢ 更 飲求.
-### I RI more drink-want.
+# Eko ri kusta a tanko musiire.
+## 己 ⊢ 愛 ⇒ tanko 曲行.
+### I RI like A tanko music-go.
 ===
 # That sounds better than working.
 ---
@@ -682,56 +682,50 @@
 ## 此 ⊢ 更 好 从 力.
 ### this RI more good than work.
 ===
-# Next time, tell me sooner.
+# From now on, please tell me sooner.
 ---
-# In tar tempo, pam mas veros tika ver eko.
-## 内 后 时, 乞 更 早 言 向 己.
-### in after time, please more fast say to me.
+# Vons tistempo, pam mas veros tika ver eko.
+## 从 此时, 乞 更 早 言 向 己.
+### from this-time, please more fast say to me.
 ===
-# How are your children?
+# No, thank you.
 ---
-# Tu nino ri kermoto?
-## 尔 子 ⊢ 何方?
-### you child RI what-manner?
+# Non, mersi.
+## 不, 恩.
+### not, thank.
 ===
-# I can go.
+# She's a happier person.
 ---
-# Eko ri kan ire.
-## 己 ⊢ 能 行.
-### I RI can go.
+# Tisomo ri mas konten omo.
+## 此人 ⊢ 更 楽 人.
+### this-person RI more happy person.
 ===
-# Alice: Yes please.
+# I want to go.
 ---
-# Aras: Si, pam.
-## Aras: 是, 乞.
-### Alice: yes, please.
+# Eko ri vori ire.
+## 己 ⊢ 求 行.
+### I RI want go.
 ===
-# Of course!
+# What's wrong?
 ---
-# Ves!
-## 真!
-### true!
+# Ker marumkosa?
+## 何 悪物?
+### what bad-thing?
 ===
-# Yes, under Lena.
+# Time goes fast.
 ---
-# Si, in nomen Rena.
-## 是, 内 名 Rena.
-### yes, in name Lena.
+# Tempo ri veros ire.
+## 时 ⊢ 早 行.
+### time RI fast go.
 ===
-# Big!
+# Nine at night.
 ---
-# Meka!
-## 大!
-### big!
+# Nemyan 9 ora.
+## 无日 9 刻.
+### no-sun 9 hour.
 ===
-# See you later.
+# It's worse than that one.
 ---
-# Tarsarve.
-## 后会.
-### after-meet.
-===
-# I like music and reading.
----
-# Eko ri kusta a musi kum kitavite.
-## 己 ⊢ 愛 ⇒ 曲 并 写見.
-### I RI like A music and writing-see.
+# Tis ri mas marum vons nontis.
+## 此 ⊢ 更 悪 从 不此.
+### this RI more bad than not-this.

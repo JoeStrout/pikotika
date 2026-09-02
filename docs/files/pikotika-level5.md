@@ -130,17 +130,17 @@
 ## 己 ⊢ 小 疲.
 ### I RI slight tired.
 ===
-# If you're tired, we can go back.
----
-# Pos tu ri kansa, tisrason ekomen ri kan retsire.
-## 可 尔 ⊢ 疲, 此故 己众 ⊢ 能 反行.
-### if you RI tired, this-reason I-group RI can back-go.
-===
 # I am tired. I need to go to bed!
 ---
 # Eko ri kansa. Eko ri neses tormi!
 ## 己 ⊢ 疲. 己 ⊢ 要 床!
 ### I RI tired. I RI must sleep!
+===
+# If you're tired, we can go back.
+---
+# Pos tu ri kansa, tisrason ekomen ri kan retsire.
+## 可 尔 ⊢ 疲, 此故 己众 ⊢ 能 反行.
+### if you RI tired, this-reason I-group RI can back-go.
 ===
 # or; otherwise
 ---
@@ -244,23 +244,23 @@
 ## 油白米
 ### oil-white-grain
 ===
-# It's less important than that one.
+# In the future, everything will be easier.
 ---
-# Tis ri nonmas pesaneses vons nontis.
-## 此 ⊢ 不更 重要 从 不此.
-### this RI not-more heavy-necessary than not-this.
+# Tartempo, pan ri mas nonsorin.
+## 后时, 全 ⊢ 更 不硬.
+### after-time, all RI more not-hard.
 ===
-# When Tom eats, he watches TV.
+# I see.
 ---
-# Tom ri komi in kertempo, tisomo ri vortovite.
-## Tom ⊢ 食 内 何时, 此人 ⊢ 電見.
-### Tom RI food in what-time, this-person RI electric-see.
+# Eko ri vite.
+## 己 ⊢ 見.
+### I RI see.
 ===
-# The children want ice cream.
+# For a week.
 ---
-# Nino ri vori a rikusraten.
-## 子 ⊢ 求 ⇒ 冷乳.
-### child RI want A ice-milk.
+# 1 senseyan turan.
+## 1 7日 間.
+### 1 seven-day interval.
 ===
 # bird
 ---
@@ -496,23 +496,23 @@
 ## 切工
 ### cut-tool
 ===
-# One thing — the light in the hall is broken.
----
-# Wun kosa: vortoyan in irekamar ri rompe vin.
-## 1 物: 電日 内 行室 ⊢ 切 閉.
-### one thing: electric-sun in go-room RI break finish.
-===
-# Old songs, quiet.
----
-# Vetus musi, pikooti.
-## 古 曲, 小耳.
-### old music, small-sound.
-===
 # Leave now, or you'll miss the train.
 ---
 # Pam eksire in tistempo, sive tu ri perti a metarrinekaro.
 ## 乞 外行 内 此时, 或 尔 ⊢ 失 ⇒ 金糸车.
 ### please out-go in this-time, or you RI lose A metal-line-vehicle.
+===
+# Please clean the room.
+---
+# Pam puru a kamar.
+## 乞 清 ⇒ 室.
+### please clean A room.
+===
+# One thing — the light in the hall is broken.
+---
+# Wun kosa: vortoyan in irekamar ri rompe vin.
+## 1 物: 電日 内 行室 ⊢ 切 閉.
+### one thing: electric-sun in go-room RI break finish.
 ===
 # left
 ---
@@ -610,50 +610,50 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
+# This is for you.
+---
+# Tis ri por tu.
+## 此 ⊢ 為 尔.
+### this RI for you.
+===
+# If it rains, we'll stay home.
+---
+# Pos ri ruva, tisrason ekomen ri sista in kase.
+## 可 ⊢ 雨, 此故 己众 ⊢ 止 内 户.
+### if RI rain, this-reason I-group RI remain in home.
+===
+# Is there hot water in the morning?
+---
+# In suryan, wo aku ri in kamar, ker?
+## 内 上日, 火 水 ⊢ 内 室, 何?
+### in up-sun, hot water RI in room, what?
+===
+# If there's no hot water, tell the staff.
+---
+# Pos ri nem wo aku, tisrason pam tika ver serviomo.
+## 可 ⊢ 无 火 水, 此故 乞 言 向 助人.
+### if RI no hot water, this-reason please say to help-person.
+===
+# I told you that one last night.
+---
+# 1 nemyan yer, eko ri tika a tis ver tu.
+## 1 无日 前, 己 ⊢ 言 ⇒ 此 向 尔.
+### 1 no-sun before, I RI say A this to you.
+===
+# You have school tomorrow.
+---
+# Yantar, tu ri ire ver imparroko.
+## 日后, 尔 ⊢ 行 向 学所.
+### day-after, you RI go to learn-place.
+===
 # Yes, at Carla's place.
 ---
 # Si, in Karra kase.
 ## 是, 内 Karra 户.
 ### yes, in Carla home.
 ===
-# Is breakfast included?
+# Is the boss in today?
 ---
-# Suryankomi ri in moni, ker?
-## 上日食 ⊢ 内 贝, 何?
-### up-sun-food RI in money, what?
-===
-# Can I call you next week?
----
-# Eko ri kan tika ver tu in tar senseyan, ker?
-## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
-### I RI can say to you in after seven-day, what?
-===
-# Mary: 7 dollars is cheap!  And I think it would look good on you.
----
-# Meri: 7 moni ri pikomoni! Kum eko ri pensa a tis ri ponavite sur tu.
-## Meri: 7 贝 ⊢ 小贝! 并 己 ⊢ 思 ⇒ 此 ⊢ 好見 上 尔.
-### Mary: 7 money RI small-money! and I RI think A this RI good-see up you.
-===
-# The vehicle is new.
----
-# Karo ri nova.
-## 车 ⊢ 初.
-### vehicle RI new.
-===
-# I know, I'm sorry.
----
-# Eko ri sape; eko ri perton.
-## 己 ⊢ 知; 己 ⊢ 悔.
-### I RI know; I RI sorry.
-===
-# Sorry, I have to go.
----
-# Perton — eko ri neses ire.
-## 悔 — 己 ⊢ 要 行.
-### sorry — I RI necessary go.
-===
-# It's good to see you.
----
-# Eko ri konten sarve a tu vin.
-## 己 ⊢ 楽 会 ⇒ 尔 閉.
-### I RI happy meet A you finish.
+# Tisyan, opustesta ri in opuskamar, ker?
+## 此日, 力头 ⊢ 内 力室, 何?
+### this-day, work-head RI in work-room, what?

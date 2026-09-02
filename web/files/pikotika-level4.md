@@ -130,17 +130,17 @@
 ## 头病
 ### head-sick
 ===
+# My boss is younger than me.
+---
+# Eko opustesta ri mas anyopiko vons eko.
+## 己 力头 ⊢ 更 年小 从 己.
+### me work-head RI more year-small than me.
+===
 # I ask the cook to make it not spicy.
 ---
 # Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.
 ## 己 ⊢ 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.
 ### I RI want-say to food-make-person A this RI become not hot-taste.
-===
-# A man will come tomorrow to fix it.
----
-# Yantar, wun omo ri veni por sana a tis.
-## 日后, 1 人 ⊢ 来 為 医 ⇒ 此.
-### day-after, one person RI come for heal A this.
 ===
 # Walk five minutes.
 ---
@@ -652,41 +652,11 @@
 ## 此 ⊢ 成 更 不硬.
 ### this RI become more not-hard.
 ===
-# It's not more important than that one.
+# Ten minutes.
 ---
-# Tis ri non mas pesaneses vons nontis.
-## 此 ⊢ 不 更 重要 从 不此.
-### this RI not more heavy-necessary than not-this.
-===
-# I can go.
----
-# Eko ri kan ire.
-## 己 ⊢ 能 行.
-### I RI can go.
-===
-# If you come, we'll be happy.
----
-# Pos tu ri veni, tisrason ekomen ri konten.
-## 可 尔 ⊢ 来, 此故 己众 ⊢ 楽.
-### if you RI come, this-reason I-group RI happy.
-===
-# Please drive.
----
-# Pam karoire.
-## 乞 车行.
-### please vehicle-go.
-===
-# She's a tea-shop owner.
----
-# Tisomo ri arpoaku komparroko te teneomo.
-## 此人 ⊢ 木水 買所 > 有人.
-### this-person RI plant-water buy-place TE own-person.
-===
-# I'm a teacher.
----
-# Eko ri impartonaromo.
-## 己 ⊢ 学与人.
-### I RI learn-give-person.
+# 10 parte turan.
+## 10 分 間.
+### 10 part interval.
 ===
 # Goodbye.
 ---
@@ -694,8 +664,38 @@
 ## 悔外行.
 ### sorry-out-go.
 ===
-# No, I don't see.
+# It's not more important than that one.
 ---
-# Non vite.
-## 不 見.
-### not see.
+# Tis ri non mas pesaneses vons nontis.
+## 此 ⊢ 不 更 重要 从 不此.
+### this RI not more heavy-necessary than not-this.
+===
+# Can I help you?
+---
+# Eko ri kan servi a tu, ker?
+## 己 ⊢ 能 助 ⇒ 尔, 何?
+### I RI can help A you, what?
+===
+# How was your weekend?
+---
+# Tu senseyanvin ri kermoto?
+## 尔 7日閉 ⊢ 何方?
+### you seven-day-finish RI what-manner?
+===
+# I'm learning Pikotika.
+---
+# Eko ri impar a pikotika.
+## 己 ⊢ 学 ⇒ 小言.
+### I RI learn A small-say.
+===
+# But the last part isn't written.
+---
+# Sets vin parte ri non kita vin.
+## 但 閉 分 ⊢ 不 写 閉.
+### but finish part RI not write finish.
+===
+# Yesterday I wanted to go.
+---
+# Yanyer, eko ri vori ire.
+## 日前, 己 ⊢ 求 行.
+### day-before, I RI want go.
