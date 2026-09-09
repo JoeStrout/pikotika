@@ -2626,23 +2626,29 @@
 ## 重要
 ### heavy-necessary
 ===
-# Narrator: Alice looks in her wallet.
+# In the future, everything will be easier.
 ---
-# Tikakosaomo: Aras ri vite in monivaso.
-## 言物人: Aras ⊢ 見 内 贝皿.
-### say-thing-person: Alice RI see in money-box.
-===
-# It's less important than that one.
----
-# Tis ri nonmas pesaneses vons nontis.
-## 此 ⊢ 不更 重要 从 不此.
-### this RI not-more heavy-necessary than not-this.
+# Tartempo, pan ri mas nonsorin.
+## 后时, 全 ⊢ 更 不硬.
+### after-time, all RI more not-hard.
 ===
 # It becomes easier.
 ---
 # Tis ri tiven mas nonsorin.
 ## 此 ⊢ 成 更 不硬.
 ### this RI become more not-hard.
+===
+# Narrator: Alice looks in her wallet.
+---
+# Tikakosaomo: Aras ri vite in monivaso.
+## 言物人: Aras ⊢ 見 内 贝皿.
+### say-thing-person: Alice RI see in money-box.
+===
+# I'm sorry to hear that.
+---
+# Eko ri perton oti a tis.
+## 己 ⊢ 悔 耳 ⇒ 此.
+### I RI sorry sound A this.
 ===
 # I'll meet you at the door.
 ---
@@ -2656,17 +2662,11 @@
 ## 是, 見.
 ### yes, see.
 ===
-# Where are you going for summer vacation?
+# The man is sick.
 ---
-# In wotempo yuveniire, tu ri ire ver kerroko?
-## 内 火时 玩来行, 尔 ⊢ 行 向 何所?
-### in hot-time play-come-go, you RI go to what-place?
-===
-# I don't want to think about the past.
----
-# Eko ri non vori pensa a yertempo.
-## 己 ⊢ 不 求 思 ⇒ 前时.
-### I RI not want think A before-time.
+# Viro ri mara.
+## 男 ⊢ 病.
+### man RI sick.
 ===
 # Sorry/oops/excuse me.
 ---
@@ -2716,23 +2716,23 @@
 ## 体玩
 ### body-play
 ===
-# Where do you live?
----
-# Tu ri viva in kerroko?
-## 尔 ⊢ 生 内 何所?
-### you RI life in what-place?
-===
 # Alice: Cash — here's 10 dollars.
 ---
 # Aras: Manumoni. Tis ri 10 moni.
 ## Aras: 手贝. 此 ⊢ 10 贝.
 ### Alice: hand-money. this RI 10 money.
 ===
-# No, I live about two hours north. I came just for the party.
+# You killed my father.
 ---
-# Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.
-## 不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.
-### not. I RI life in two hour interval to up. I RI come only for play-group.
+# Tu ri nonviva a eko viropari vin.
+## 尔 ⊢ 不生 ⇒ 己 男亲 閉.
+### you RI not-life A I man-parent finish.
+===
+# I live near the sea.
+---
+# Eko ri viva nir mekaaku.
+## 己 ⊢ 生 近 大水.
+### I RI life near big-water.
 ===
 # tired; weary
 ---
@@ -2920,23 +2920,23 @@
 ## 油白米
 ### oil-white-grain
 ===
+# Is it spicy?
+---
+# Tis ri wosapor, ker?
+## 此 ⊢ 火味, 何?
+### this RI hot-taste, what?
+===
 # This fish is good, right?
 ---
 # Tis akupeste ri pona, si?
 ## 此 水匹 ⊢ 好, 是?
 ### this water-animal RI good, yes?
 ===
-# No, I don't see.
+# Please don't change it.
 ---
-# Non vite.
-## 不 見.
-### not see.
-===
-# Good luck!
----
-# Ponapos!
-## 好可!
-### good-if!
+# Pam non arvake a tis.
+## 乞 不 別作 ⇒ 此.
+### please not other-make A this.
 ===
 # bird
 ---
@@ -3286,11 +3286,11 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# Hal is coming.
+# I hope I can find it, or else I'll have to buy a new one.
 ---
-# Omo Ar ri veni.
-## 人 Ar ⊢ 来.
-### person Hal RI come.
+# Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.
+## 己 ⊢ 求 ⇒ 己 ⊢ 能 又取 ⇒ 此; 或 己 ⊢ 要 買 ⇒ 初 物.
+### I RI want A I RI can again-get A this; or I RI must buy A new thing.
 ===
 # I was told this.
 ---
@@ -3298,29 +3298,23 @@
 ## ⊢ 言 ⇒ 此 向 己.
 ### RI say A this to me.
 ===
-# Practice, and you'll get it.
+# Here's two hundred.
 ---
-# Tentarimpar, kum tu ri vite.
-## 試学, 并 尔 ⊢ 見.
-### try-learn, and you RI understand.
+# Tis ri 200.
+## 此 ⊢ 200.
+### this RI 200.
 ===
-# If I had had the money, I would have bought it.
+# You see the dog, right?
 ---
-# Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin.
-## 不真 己 ⊢ 有 ⇒ 贝 閉, 此故 己 ⊢ 買 ⇒ 此 閉.
-### not-true I RI have A money finish, this-reason I RI buy A this finish.
+# Tu ri vite a kanis, si?
+## 尔 ⊢ 見 ⇒ 犬, 是?
+### you RI see A dog, yes?
 ===
-# I can ask them to make it not spicy.
+# How much are the bananas?
 ---
-# Eko ri kan voritika ver komivakeomo a tis ri tiven non wosapor.
-## 己 ⊢ 能 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.
-### I RI can want-say to food-make-person A this RI become not hot-taste.
-===
-# See you later.
----
-# Tarsarve.
-## 后会.
-### after-meet.
+# Ronkayoropomo ri ker moni?
+## 长黄果 ⊢ 何 贝?
+### long-yellow-fruit RI what money?
 ===
 # Payment is required.
 ---

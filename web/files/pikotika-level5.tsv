@@ -8,9 +8,9 @@ life; alive	viva<br>生<br><i>viva</i> la vida!	pikotika level5 root
 ear	otiparte<br>耳分<br>hear-part	pikotika level5 compound
 lend a hand; help out	manutonar<br>手与<br>hand-give	pikotika level5 compound
 sport; athletics	korpoyu<br>体玩<br>body-play	pikotika level5 compound
-Where do you live?	Tu ri viva in kerroko?<br>尔 ⊢ 生 内 何所?<br>you RI life in what-place?	pikotika level5 sentence
 Alice: Cash — here's 10 dollars.	Aras: Manumoni. Tis ri 10 moni.<br>Aras: 手贝. 此 ⊢ 10 贝.<br>Alice: hand-money. this RI 10 money.	pikotika level5 sentence
-No, I live about two hours north. I came just for the party.	Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.<br>不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.<br>not. I RI life in two hour interval to up. I RI come only for play-group.	pikotika level5 sentence
+You killed my father.	Tu ri nonviva a eko viropari vin.<br>尔 ⊢ 不生 ⇒ 己 男亲 閉.<br>you RI not-life A I man-parent finish.	pikotika level5 sentence
+I live near the sea.	Eko ri viva nir mekaaku.<br>己 ⊢ 生 近 大水.<br>I RI life near big-water.	pikotika level5 sentence
 tired; weary	kansa<br>疲<br>too tired — I <i>can'</i>t	pikotika level5 root
 anger; angry	raye<br>怒<br>a <i>rag</i>ing <i>ray</i> of fury	pikotika level5 root
 surprise; unexpected	sorpe<br>奇<br><i>sorp</i>rise!	pikotika level5 root
@@ -42,9 +42,9 @@ salt; salty	sares<br>塩<br><i>sa</i>lty <i>res</i>idue left after seawater evap
 museum	artikase<br>芸户<br>art-home	pikotika level5 compound
 fried	orenvake<br>油作<br>oil-make	pikotika level5 compound
 fried rice	orenankariso<br>油白米<br>oil-white-grain	pikotika level5 compound
+Is it spicy?	Tis ri wosapor, ker?<br>此 ⊢ 火味, 何?<br>this RI hot-taste, what?	pikotika level5 sentence
 This fish is good, right?	Tis akupeste ri pona, si?<br>此 水匹 ⊢ 好, 是?<br>this water-animal RI good, yes?	pikotika level5 sentence
-No, I don't see.	Non vite.<br>不 見.<br>not see.	pikotika level5 sentence
-Good luck!	Ponapos!<br>好可!<br>good-if!	pikotika level5 sentence
+Please don't change it.	Pam non arvake a tis.<br>乞 不 別作 ⇒ 此.<br>please not other-make A this.	pikotika level5 sentence
 bird	avis<br>鳥<br><i>avi</i>ary, <i>avi</i>ation — birds	pikotika level5 root
 bug; worm	inses<br>虫<br><i>inse</i>ct	pikotika level5 root
 dog; canine	kanis<br>犬<br><i>canis</i>, <i>canin</i>e, dog	pikotika level5 root
@@ -103,11 +103,10 @@ elevator; lift	surtunkamar<br>上下室<br>up-down-room	pikotika level5 compound
 The party starts at 7 PM.	Yumen ri apa in tunyan 7 ora.<br>玩众 ⊢ 开 内 下日 7 刻.<br>play-group RI begin in down-sun 7 hour.	pikotika level5 sentence
 Go straight to that big tree, then turn left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.<br>乞 直 行 向 不此 大 木, 后 乞 弓 向 左.<br>please straight go to not-this big plant, after please bend to left.	pikotika level5 sentence
 Turn left at the next corner.	Pam kurva ver sini in tarorten kurvaroko.<br>乞 弓 向 左 内 后序 弓所.<br>please bend to left in after-sequence bend-place.	pikotika level5 sentence
-Can I call you next week?	Eko ri kan tika ver tu in tar senseyan, ker?<br>己 ⊢ 能 言 向 尔 内 后 7日, 何?<br>I RI can say to you in after seven-day, what?	pikotika level5 sentence
-Hal is coming.	Omo Ar ri veni.<br>人 Ar ⊢ 来.<br>person Hal RI come.	pikotika level5 sentence
+I hope I can find it, or else I'll have to buy a new one.	Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.<br>己 ⊢ 求 ⇒ 己 ⊢ 能 又取 ⇒ 此; 或 己 ⊢ 要 買 ⇒ 初 物.<br>I RI want A I RI can again-get A this; or I RI must buy A new thing.	pikotika level5 sentence
 I was told this.	Ri tika a tis ver eko.<br>⊢ 言 ⇒ 此 向 己.<br>RI say A this to me.	pikotika level5 sentence
-Practice, and you'll get it.	Tentarimpar, kum tu ri vite.<br>試学, 并 尔 ⊢ 見.<br>try-learn, and you RI understand.	pikotika level5 sentence
-If I had had the money, I would have bought it.	Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin.<br>不真 己 ⊢ 有 ⇒ 贝 閉, 此故 己 ⊢ 買 ⇒ 此 閉.<br>not-true I RI have A money finish, this-reason I RI buy A this finish.	pikotika level5 sentence
-I can ask them to make it not spicy.	Eko ri kan voritika ver komivakeomo a tis ri tiven non wosapor.<br>己 ⊢ 能 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.<br>I RI can want-say to food-make-person A this RI become not hot-taste.	pikotika level5 sentence
-See you later.	Tarsarve.<br>后会.<br>after-meet.	pikotika level5 sentence
+Little by little.	Piko tar piko.<br>小 后 小.<br>small after small.	pikotika level5 sentence
+Here's two hundred.	Tis ri 200.<br>此 ⊢ 200.<br>this RI 200.	pikotika level5 sentence
+You see the dog, right?	Tu ri vite a kanis, si?<br>尔 ⊢ 見 ⇒ 犬, 是?<br>you RI see A dog, yes?	pikotika level5 sentence
+How much are the bananas?	Ronkayoropomo ri ker moni?<br>长黄果 ⊢ 何 贝?<br>long-yellow-fruit RI what money?	pikotika level5 sentence
 Payment is required.	Ri neses tonar a moni.<br>⊢ 要 与 ⇒ 贝.<br>RI must give A money.	pikotika level5 sentence

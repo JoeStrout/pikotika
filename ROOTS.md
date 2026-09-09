@@ -35,7 +35,7 @@
 | anger; angry | raye | 怒 | rage, mad, fury; enrage, make angry |
 | happy; pleased | konten | 楽 | glad, joy; make happy, delight |
 | like; enjoy | kusta | 愛 | prefer, be fond of |
-| surprise; unexpected | sorpe | 奇 | astonish, wonder |
+| surprise; unexpected | sorpe | 奇 | astonish, wonder; magic, magical, supernatural |
 | tired; weary | kansa | 疲 | exhausted; tire, wear out |
 
 ## Food (7)
@@ -280,7 +280,7 @@
 | see; understand | vite | 見 | look, watch, appear; realize, get it |
 | sleep; bed | tormi | 床 | rest, recharge, be dormant |
 | sorry; excuse me | perton | 悔 | apology, regret |
-| sound; hear | oti | 耳 | listen, noise |
+| sound; hear | oti | 耳 | listen, noise; ear |
 | thank; gratitude | mersi | 恩 | appreciation |
 | think; believe | pensa | 思 | mind, idea, opinion |
 | try; test | tentar | 試 | attempt, try out, taste-test, sample, check, prove |

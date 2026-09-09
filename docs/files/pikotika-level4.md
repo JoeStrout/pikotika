@@ -634,17 +634,11 @@
 ## 重要
 ### heavy-necessary
 ===
-# Narrator: Alice looks in her wallet.
+# In the future, everything will be easier.
 ---
-# Tikakosaomo: Aras ri vite in monivaso.
-## 言物人: Aras ⊢ 見 内 贝皿.
-### say-thing-person: Alice RI see in money-box.
-===
-# It's less important than that one.
----
-# Tis ri nonmas pesaneses vons nontis.
-## 此 ⊢ 不更 重要 从 不此.
-### this RI not-more heavy-necessary than not-this.
+# Tartempo, pan ri mas nonsorin.
+## 后时, 全 ⊢ 更 不硬.
+### after-time, all RI more not-hard.
 ===
 # It becomes easier.
 ---
@@ -652,17 +646,23 @@
 ## 此 ⊢ 成 更 不硬.
 ### this RI become more not-hard.
 ===
+# Narrator: Alice looks in her wallet.
+---
+# Tikakosaomo: Aras ri vite in monivaso.
+## 言物人: Aras ⊢ 見 内 贝皿.
+### say-thing-person: Alice RI see in money-box.
+===
 # Today I'm meeting your relatives.
 ---
 # Tisyan, eko ri sarve a tu parimen.
 ## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
 ### this-day, I RI meet A you parent-group.
 ===
-# I would like to thank the person who brought us here today.
+# I'm sorry to hear that.
 ---
-# Eko ri vori mersi a ri tisyan teneveni a ekomen ver tisroko rite omo.
-## 己 ⊢ 求 恩 ⇒ ⊢ 此日 有来 ⇒ 己众 向 此所 ⊢> 人.
-### I RI want thank A RI this-sun have-come A I-group to this-place RI-TE person.
+# Eko ri perton oti a tis.
+## 己 ⊢ 悔 耳 ⇒ 此.
+### I RI sorry sound A this.
 ===
 # I'll meet you at the door.
 ---
@@ -682,17 +682,11 @@
 ## 此 ⊢ 更 好 从 力.
 ### this RI more good than work.
 ===
-# Where are you going for summer vacation?
+# The man is sick.
 ---
-# In wotempo yuveniire, tu ri ire ver kerroko?
-## 内 火时 玩来行, 尔 ⊢ 行 向 何所?
-### in hot-time play-come-go, you RI go to what-place?
-===
-# I don't want to think about the past.
----
-# Eko ri non vori pensa a yertempo.
-## 己 ⊢ 不 求 思 ⇒ 前时.
-### I RI not want think A before-time.
+# Viro ri mara.
+## 男 ⊢ 病.
+### man RI sick.
 ===
 # Sorry/oops/excuse me.
 ---

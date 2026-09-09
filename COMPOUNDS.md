@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-816 terms
+851 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -18,6 +18,7 @@
 | 7th | seven-sequence | sensorten | 7序 |
 | 8th | eight-sequence | otsorten | 8序 |
 | 9th | nine-sequence | noksorten | 9序 |
+| a place one owns | have-place | teneroko | 有所 |
 | abroad | out-country | eksenasyon | 外国 |
 | ache | hurt-feel | marasenti | 病心 |
 | act on what one knows | know-make | sapevake | 知作 |
@@ -45,6 +46,7 @@
 | anyway | other-about | artopi | 別件 |
 | apply knowledge | know-make | sapevake | 知作 |
 | aptitude | learn-ability | imparkan | 学能 |
+| arboreal animal | plant-animal | arpopeste | 木匹 |
 | argue | say-fight | tikapatar | 言争 |
 | army | fight-group | patarmen | 争众 |
 | arrange | before-make | yervake | 前作 |
@@ -89,7 +91,9 @@
 | black market | black-buy-place | nerokomparroko | 黒買所 |
 | blanket | sleep-cloth | tormiropa | 床衣 |
 | blunt | straight-say | retotika | 直言 |
+| board | choose-group | erikemen | 选众 |
 | boat | water-vehicle | akukaro | 水车 |
+| bone | body-stone | korporapis | 体岩 |
 | book | many-page | murkarta | 多片 |
 | booking | before-agree | yerakor | 前約 |
 | border (of a country) | country-edge | nasyonrante | 国边 |
@@ -105,6 +109,7 @@
 | bring | have-come | teneveni | 有来 |
 | brother | same-parent-man | sampariviro | 同亲男 |
 | brown | earth-color | terakoror | 土色 |
+| burrowing animal | hole-animal | vukopeste | 穴匹 |
 | bus | many-person-vehicle | muromokaro | 多人车 |
 | business card | name-card | nomenkarta | 名片 |
 | business day | work-day | opusyan | 力日 |
@@ -169,6 +174,7 @@
 | corridor | go-room | irekamar | 行室 |
 | cost | money-amount | monimesur | 贝寸 |
 | costly | big-money | mekamoni | 大贝 |
+| council | choose-group | erikemen | 选众 |
 | course of study | learn-sequence | imparorten | 学序 |
 | courtesy | please-manner | pammoto | 乞方 |
 | cow | milk-animal | ratenpeste | 乳匹 |
@@ -183,6 +189,7 @@
 | cyan | blue-green | asurverte | 青緑 |
 | dance | music-movement | musiire | 曲行 |
 | day off | not-work-day | nonopusyan | 不力日 |
+| dead | not-life | nonviva | 不生 |
 | debit card | hand-money-card | manumonikarta | 手贝片 |
 | debt | after-money | tarmoni | 后贝 |
 | decision | choose-finish | erikevin | 选閉 |
@@ -201,6 +208,7 @@
 | do again | again-make | repevake | 又作 |
 | doctor | heal-person | sanaomo | 医人 |
 | document (written) | writing-page | kitakarta | 写片 |
+| donor | money-give-person | monitonaromo | 贝与人 |
 | door handle | door-hand | portamanu | 門手 |
 | downpour | big-rain | mekaruva | 大雨 |
 | draw (in a contest) | same-become | samtiven | 同成 |
@@ -260,6 +268,7 @@
 | fitting room | cloth-try-room | ropatentarkamar | 衣試室 |
 | flat bread | flat-grain-food | yanorisokomi | 平米食 |
 | flatterer | sweet-mouth | tukepuka | 甘口 |
+| flawless | every-good | panpona | 全好 |
 | flight | air-go | ventoire | 风行 |
 | flock | bird-group | avismen | 鳥众 |
 | floor (of a building) | home-sequence | kaseorten | 户序 |
@@ -310,6 +319,7 @@
 | gym | heal-movement-place | sanaireroko | 医行所 |
 | hallway | go-room | irekamar | 行室 |
 | hand back | back-give | retsetonar | 反与 |
+| hare | long-hear-animal | ronkaotipeste | 长耳匹 |
 | harvest | plant-get | arpotoma | 木取 |
 | have on | cloth-have | ropatene | 衣有 |
 | he | this-person | tisomo | 此人 |
@@ -379,6 +389,7 @@
 | learner | learn-person | imparomo | 学人 |
 | lease | interval-buy | turankompar | 間買 |
 | leave (depart) | out-go | eksire | 外行 |
+| legendary creature | surprise-animal | sorpepeste | 奇匹 |
 | lemon | not-sweet-yellow-fruit | nontukeyoropomo | 不甘黄果 |
 | lend | interval-give | turantonar | 間与 |
 | lend a hand | hand-give | manutonar | 手与 |
@@ -408,6 +419,9 @@
 | lucky | good-if | ponapos | 好可 |
 | luggage | go-box | irevaso | 行皿 |
 | lying | not-true-say | nonvestika | 不真言 |
+| magic | surprise-art | sorpearti | 奇芸 |
+| magic potion | surprise-drink | sorpepipe | 奇飲 |
+| magician | surprise-person | sorpeomo | 奇人 |
 | major | heavy-necessary | pesaneses | 重要 |
 | make up one's mind | choose-finish | erikevin | 选閉 |
 | manga | picture-many-page | piturmurkarta | 画多片 |
@@ -427,6 +441,7 @@
 | modify | other-make | arvake | 別作 |
 | moment | small-time | pikotempo | 小时 |
 | Monday | moon-weekday | meseyom | 月曜 |
+| monster | surprise-animal | sorpepeste | 奇匹 |
 | morning | up-sun | suryan | 上日 |
 | mother | woman-parent | vemapari | 女亲 |
 | mount | vehicle-animal | karopeste | 车匹 |
@@ -435,6 +450,7 @@
 | mud | water-earth | akutera | 水土 |
 | museum | art-home | artikase | 芸户 |
 | musical instrument | music-tool | musiuter | 曲工 |
+| mythical beast | surprise-animal | sorpepeste | 奇匹 |
 | narrator | say-thing-person | tikakosaomo | 言物人 |
 | network | electric-join | vortoyunta | 電合 |
 | never | no-time | nemtempo | 无时 |
@@ -467,6 +483,7 @@
 | onlooker | see-person | viteomo | 見人 |
 | option | choose-thing | erikekosa | 选物 |
 | orange | red-yellow | rusyoro | 赤黄 |
+| orange (fruit) | red-yellow-fruit | rusyoropomo | 赤黄果 |
 | orientation map | help-map | servimapa | 助図 |
 | others | other-person | aromo | 別人 |
 | outdoors | out-place | ekseroko | 外所 |
@@ -484,6 +501,7 @@
 | password | key-word | yavetika | 錠言 |
 | patience | remain-ability | sistakan | 止能 |
 | patient | remain-ability | sistakan | 止能 |
+| patron | money-give-person | monitonaromo | 贝与人 |
 | pay attention | think-give | pensatonar | 思与 |
 | payment card | money-card | monikarta | 贝片 |
 | peace | no-fight | nempatar | 无争 |
@@ -493,6 +511,7 @@
 | pepper (spice) | black-taste-thing | nerosaporkosa | 黒味物 |
 | per cent | in-hundred | inkaton | 内百 |
 | percent | in-hundred | inkaton | 内百 |
+| perfect | every-good | panpona | 全好 |
 | pet | home-animal | kasepeste | 户匹 |
 | pet dog | home-dog | kasekanis | 户犬 |
 | phone | electric-say | vortotika | 電言 |
@@ -507,11 +526,13 @@
 | pork | red-white-animal-meat | rusankapestekarne | 赤白匹肉 |
 | porridge | water-grain | akuriso | 水米 |
 | potato | earth-grain | terariso | 土米 |
+| potion | surprise-drink | sorpepipe | 奇飲 |
 | poultry | bird-meat | aviskarne | 鳥肉 |
 | practical knowledge | make-know | vakesape | 作知 |
 | practice | try-learn | tentarimpar | 試学 |
 | practitioner | know-make-person | sapevakeomo | 知作人 |
 | preceding | before-sequence | yerorten | 前序 |
+| premises | have-place | teneroko | 有所 |
 | prepare | before-make | yervake | 前作 |
 | prepared | before-finish | yervin | 前閉 |
 | pretty | good-see | ponavite | 好見 |
@@ -522,6 +543,7 @@
 | pride | me-good-feel | ekoponasenti | 己好心 |
 | problem | bad-thing | marumkosa | 悪物 |
 | proof | try-true | tentarves | 試真 |
+| property | have-place | teneroko | 有所 |
 | proprietor | own-person | teneomo | 有人 |
 | provisions | have-food | tenekomi | 有食 |
 | public transit | line-vehicle | rinekaro | 糸车 |
@@ -536,7 +558,9 @@
 | quick-witted | fast-understand | verosvite | 早見 |
 | quiet | small-sound | pikooti | 小耳 |
 | quiz | know-test | sapetentar | 知試 |
+| rabbit | long-hear-animal | ronkaotipeste | 长耳匹 |
 | rage | big-anger | mekaraye | 大怒 |
+| rainbow | color-bend | kororkurva | 色弓 |
 | raincoat | rain-cloth | ruvaropa | 雨衣 |
 | rainy season | rain-time | ruvatempo | 雨时 |
 | ramp | up-road | surmoto | 上方 |
@@ -648,6 +672,8 @@
 | someone else | other-person | aromo | 別人 |
 | something else | other-thing | arkosa | 別物 |
 | somewhere else | other-place | arroko | 別所 |
+| sorcerer | surprise-person | sorpeomo | 奇人 |
+| sorcery | surprise-art | sorpearti | 奇芸 |
 | sort | sequence-put | ortenseta | 序坐 |
 | soup | water-food | akukomi | 水食 |
 | sour | not-sweet | nontuke | 不甘 |
@@ -656,13 +682,16 @@
 | spectator | see-person | viteomo | 見人 |
 | spice | taste-thing | saporkosa | 味物 |
 | spicy | hot-taste | wosapor | 火味 |
+| sponsor | money-give-person | monitonaromo | 贝与人 |
 | sport | body-play | korpoyu | 体玩 |
 | spouse | marry-person | marisomo | 婚人 |
 | spring (season) | plant-time | arpotempo | 木时 |
 | square | four-bend | watsekurva | 4弓 |
+| squirrel | hard-fruit-animal | sorinpomopeste | 硬果匹 |
 | staff (person) | help-person | serviomo | 助人 |
 | staircase | up-road | surmoto | 上方 |
 | stairs | up-road | surmoto | 上方 |
+| star | far-sun | ronyan | 遠日 |
 | station | vehicle-place | karoroko | 车所 |
 | steal | bad-get | marumtoma | 悪取 |
 | step (in a procedure) | sequence-part | ortenparte | 序分 |
@@ -731,6 +760,7 @@
 | tongue (language) | say-manner | tikamoto | 言方 |
 | tonight | this-no-sun | tisnemyan | 此无日 |
 | too [much] | up-degree | surmesur | 上寸 |
+| tooth | mouth-stone | pukarapis | 口岩 |
 | towel | clean-cloth | pururopa | 清衣 |
 | toy | play-thing | yukosa | 玩物 |
 | train | metal-line-vehicle | metarrinekaro | 金糸车 |
@@ -739,6 +769,7 @@
 | transport | have-go | teneire | 有行 |
 | travel by vehicle | vehicle-go | karoire | 车行 |
 | tree | big-plant | mekaarpo | 大木 |
+| tree-dwelling animal | plant-animal | arpopeste | 木匹 |
 | triangle | three-bend | tetsekurva | 3弓 |
 | trip | come-go | veniire | 来行 |
 | trouble | bad-thing | marumkosa | 悪物 |
@@ -753,6 +784,7 @@
 | unfortunately | bad-if | marumpos | 悪可 |
 | unfriendly person | cold-person | rikusomo | 冷人 |
 | unhelpful | not-help-give | nonservitonar | 不助与 |
+| uniform | same-cloth | samropa | 同衣 |
 | university | big-learn-place | mekaimparroko | 大学所 |
 | unlike | not-same | nonsam | 不同 |
 | unlucky | bad-if | marumpos | 悪可 |
@@ -811,6 +843,9 @@
 | wisdom | good-think | ponapensa | 好思 |
 | wise | good-think | ponapensa | 好思 |
 | wise person | good-think-person | ponapensaomo | 好思人 |
+| witch | surprise-person | sorpeomo | 奇人 |
+| witchcraft | surprise-art | sorpearti | 奇芸 |
+| wizard | surprise-person | sorpeomo | 奇人 |
 | woods | big-plant-place | mekaarporoko | 大木所 |
 | word list | word-sequence | tikaorten | 言序 |
 | work day | work-day | opusyan | 力日 |

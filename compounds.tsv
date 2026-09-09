@@ -63,10 +63,12 @@ cyan	blue-green	Color	3	3
 strength; strong (physically)	body-ability	Qualities;Body and life	5	
 allergy	body-not-agree	Body and life	5	
 sport; athletics	body-play	Verbs;Body and life	5	5
+bone	body-stone	Body and life	5	
 shopping bag	buy-box	Made things	4	
 vendor; shopkeeper	buy-person	People and society	4	
 shop	buy-place	Places, arts, appearance	4	4
 decision; settle; make up one's mind	choose-finish	Verbs	4	
+council; board	choose-group	People and society	4	
 ballot	choose-page	People and society;Made things	4	
 vote; cast a ballot	choose-say	Verbs;People and society	4	
 option; alternative; choice	choose-thing	General heads;Verbs	4	
@@ -84,6 +86,7 @@ unfriendly person	cold-person	People and society;Qualities	4
 iced tea	cold-plant-water	Food	4	
 snow	cold-rain	Nature	4	
 winter	cold-time	Time direction	4	4
+rainbow	color-bend	Nature;Color	4	
 trip; journey	come-go	Space and direction	2	2
 guest; visitor; customer	come-person	People and society	2	
 company; corporation; firm	commerce-group	People and society	4	4
@@ -114,11 +117,13 @@ telephone; phone; call	electric-say	Made things	4	4
 television; watch TV	electric-see	Made things	4	
 lamp; electric light	electric-sun	Made things	4	4
 escalator	electric-up-road	Made things;Space and direction	4	
+perfect; flawless	every-good	Qualities	3	
 everyone; everybody	every-person	Grammar and logic;People and society	3	3
 everywhere	every-place	Grammar and logic;Space and direction	3	3
 everything	every-thing	Grammar and logic	3	3
 always	every-time	Grammar and logic;Time direction	3	3
 voyage; long journey	far-come-go	Space and direction	5	
+star	far-sun	Nature	5	
 smart; clever; quick-witted; bright	fast-understand	Qualities	2	
 facial expression; look on one's face	feel-picture	Body and life;Feelings	4	
 army	fight-group	People and society	4	
@@ -162,10 +167,12 @@ welcome	happy-come	People and society;Verbs	2	2
 hello	happy-meet	People and society;Verbs	1	1
 smile	happy-mouth	Feelings;Body and life	4	5
 nut	hard-fruit	Food	4	
+squirrel	hard-fruit-animal	Nature	4	
 stubborn	hard-head	Qualities;People and society	4	
 bring	have-come	Verbs	2	2
 food supplies; provisions; stores	have-food	Food	2	
 carry; take along; transport	have-go	Verbs	2	2
+property; premises; a place one owns	have-place	Places, arts, appearance;People and society	2	
 headache; nuisance	head-sick	Body and life	4	4
 hospital	heal-home	Places, arts, appearance;Body and life	4	
 exercise	heal-movement	Body and life;Verbs	4	
@@ -179,6 +186,7 @@ important; significant; essential; major	heavy-necessary	Qualities	4	4
 helpful	help-give	Qualities;Verbs	4	
 you-are-here map; directory map; orientation map	help-map	Made things	4	
 helper; waiter; attendant; servant; staff (person)	help-person	People and society	4	
+burrowing animal	hole-animal	Nature	5	
 cat; pet	home-animal	Nature	3	4
 pet dog	home-dog	Nature	5	5
 floor (of a building); storey	home-sequence	Places, arts, appearance;Space and direction	3	
@@ -214,6 +222,7 @@ bicycle	leg-vehicle	Made things	4
 public transit; transit	line-vehicle	Made things	4	4
 transit station (bus/train)	line-vehicle-place	Places, arts, appearance	4	
 thief	long-hand	People and society	5	
+rabbit; hare	long-hear-animal	Nature	4	
 oval; ellipse	long-round	Shape	4	
 river	long-water	Nature	3	4
 banana	long-yellow-fruit	Food	3	3
@@ -245,9 +254,11 @@ wallet; purse	money-box	Made things	4
 payment card; bank card	money-card	Made things;People and society	3	
 turnstile; ticket gate	money-door	Made things	4	
 earn	money-get	Verbs;People and society	3	
+patron; donor; sponsor	money-give-person	People and society	4	
 bank	money-home	Places, arts, appearance;People and society	3	
 silver	moon-metal	Material	3	
 Monday	moon-weekday	Time direction	3	3
+tooth	mouth-stone	Body and life	4	
 concert hall	music-home	Places, arts, appearance	3	
 dance	music-movement	Places, arts, appearance	2	3
 musical instrument	music-tool	Made things;Places, arts, appearance	3	
@@ -277,6 +288,7 @@ helpless	not-help	Qualities	4
 unhelpful	not-help-give	Qualities	4	
 illegal	not-law	People and society;Qualities	5	5
 crime	not-law-work	People and society	5	
+dead	not-life	Body and life	5	
 rarely; seldom	not-many-time	Grammar and logic;Time direction	3	
 vegetarian	not-meat-food-person	People and society;Food	4	
 less; fewer	not-more	Quantity	2	3
@@ -316,6 +328,7 @@ queue; line (of people)	person-sequence	People and society;General heads	3
 cinema; movie theater	picture-home	Places, arts, appearance	4	
 comic book; comics; manga	picture-many-page	Made things;Places, arts, appearance	4	5
 local; local person	place-person	People and society;Places, arts, appearance	1	
+arboreal animal; tree-dwelling animal	plant-animal	Nature	2	
 harvest	plant-get	Verbs;Nature	2	
 garden; planted ground	plant-place	Nature;Places, arts, appearance	1	
 spring (season)	plant-time	Time direction	1	4
@@ -342,11 +355,13 @@ pig	red-white-animal	Nature	3	3
 pork	red-white-animal-meat	Food	4	
 orange	red-yellow	Color	3	3
 carrot	red-yellow-down-plant	Food	5	
+orange (fruit)	red-yellow-fruit	Food	3	
 patience; patient	remain-ability	Feelings;Qualities	4	
 junction; intersection; crossroads	road-join	Space and direction;Places, arts, appearance	2	
 road map; roadmap	road-map	Made things	3	
 circle; ring; hoop	round-line	Shape	4	
 tie; draw (in a contest)	same-become	Verbs	4	
+uniform	same-cloth	Made things	4	
 likewise; similarly	same-manner	Grammar and logic	3	
 brother	same-parent-man	People and society	3	3
 sister	same-parent-woman	People and society	3	3
@@ -386,6 +401,10 @@ frank; blunt; direct	straight-say	Qualities;People and society	4
 until; till; up to (in time)	straight-to	Time direction;Grammar and logic	4	5
 sunny	sun-air	Nature;Qualities	3	
 Sunday	sun-weekday	Time direction	3	3
+mythical beast; monster; legendary creature	surprise-animal	Nature	5	
+magic; witchcraft; sorcery	surprise-art	Places, arts, appearance	5	
+potion; magic potion	surprise-drink	Food;Places, arts, appearance	5	
+witch; wizard; magician; sorcerer	surprise-person	People and society	5	
 flatterer; smooth talker	sweet-mouth	People and society	4	
 spice	taste-thing	Food	4	
 tenth (in a series); 10th	ten-sequence	Quantity	3	

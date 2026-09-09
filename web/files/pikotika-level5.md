@@ -40,23 +40,23 @@
 ## 体玩
 ### body-play
 ===
-# Where do you live?
----
-# Tu ri viva in kerroko?
-## 尔 ⊢ 生 内 何所?
-### you RI life in what-place?
-===
 # Alice: Cash — here's 10 dollars.
 ---
 # Aras: Manumoni. Tis ri 10 moni.
 ## Aras: 手贝. 此 ⊢ 10 贝.
 ### Alice: hand-money. this RI 10 money.
 ===
-# No, I live about two hours north. I came just for the party.
+# You killed my father.
 ---
-# Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.
-## 不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.
-### not. I RI life in two hour interval to up. I RI come only for play-group.
+# Tu ri nonviva a eko viropari vin.
+## 尔 ⊢ 不生 ⇒ 己 男亲 閉.
+### you RI not-life A I man-parent finish.
+===
+# I live near the sea.
+---
+# Eko ri viva nir mekaaku.
+## 己 ⊢ 生 近 大水.
+### I RI life near big-water.
 ===
 # tired; weary
 ---
@@ -244,23 +244,23 @@
 ## 油白米
 ### oil-white-grain
 ===
+# Is it spicy?
+---
+# Tis ri wosapor, ker?
+## 此 ⊢ 火味, 何?
+### this RI hot-taste, what?
+===
 # This fish is good, right?
 ---
 # Tis akupeste ri pona, si?
 ## 此 水匹 ⊢ 好, 是?
 ### this water-animal RI good, yes?
 ===
-# No, I don't see.
+# Please don't change it.
 ---
-# Non vite.
-## 不 見.
-### not see.
-===
-# Good luck!
----
-# Ponapos!
-## 好可!
-### good-if!
+# Pam non arvake a tis.
+## 乞 不 別作 ⇒ 此.
+### please not other-make A this.
 ===
 # bird
 ---
@@ -610,17 +610,11 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# Can I call you next week?
+# I hope I can find it, or else I'll have to buy a new one.
 ---
-# Eko ri kan tika ver tu in tar senseyan, ker?
-## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
-### I RI can say to you in after seven-day, what?
-===
-# Hal is coming.
----
-# Omo Ar ri veni.
-## 人 Ar ⊢ 来.
-### person Hal RI come.
+# Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.
+## 己 ⊢ 求 ⇒ 己 ⊢ 能 又取 ⇒ 此; 或 己 ⊢ 要 買 ⇒ 初 物.
+### I RI want A I RI can again-get A this; or I RI must buy A new thing.
 ===
 # I was told this.
 ---
@@ -628,29 +622,29 @@
 ## ⊢ 言 ⇒ 此 向 己.
 ### RI say A this to me.
 ===
-# Practice, and you'll get it.
+# Little by little.
 ---
-# Tentarimpar, kum tu ri vite.
-## 試学, 并 尔 ⊢ 見.
-### try-learn, and you RI understand.
+# Piko tar piko.
+## 小 后 小.
+### small after small.
 ===
-# If I had had the money, I would have bought it.
+# Here's two hundred.
 ---
-# Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin.
-## 不真 己 ⊢ 有 ⇒ 贝 閉, 此故 己 ⊢ 買 ⇒ 此 閉.
-### not-true I RI have A money finish, this-reason I RI buy A this finish.
+# Tis ri 200.
+## 此 ⊢ 200.
+### this RI 200.
 ===
-# I can ask them to make it not spicy.
+# You see the dog, right?
 ---
-# Eko ri kan voritika ver komivakeomo a tis ri tiven non wosapor.
-## 己 ⊢ 能 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.
-### I RI can want-say to food-make-person A this RI become not hot-taste.
+# Tu ri vite a kanis, si?
+## 尔 ⊢ 見 ⇒ 犬, 是?
+### you RI see A dog, yes?
 ===
-# See you later.
+# How much are the bananas?
 ---
-# Tarsarve.
-## 后会.
-### after-meet.
+# Ronkayoropomo ri ker moni?
+## 长黄果 ⊢ 何 贝?
+### long-yellow-fruit RI what money?
 ===
 # Payment is required.
 ---

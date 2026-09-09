@@ -18,7 +18,7 @@ yellow		Color	golden hue	yoro	黄	*yo*, that *yo*lk is yellow	Italian giallo; La
 anger	angry	Feelings	rage, mad, fury; enrage, make angry	raye	怒	a *rag*ing *ray* of fury	French/English *rage*; Latin *rabies* -- Spanish *rabia*, Italian *rabbia*, Portuguese *raiva*	9	3	5
 happy	pleased	Feelings	glad, joy; make happy, delight	konten	楽	*conten*t and happy	Latin contentus; Spanish feliz	13	15	1
 like	enjoy	Feelings	prefer, be fond of	kusta	愛	gives me *gusto* — I like it	Spanish gustar	13	6	2
-surprise	unexpected	Feelings	astonish, wonder	sorpe	奇	*sorp*rise!	Spanish *sorpresa*, Italian *sorpresa*, Portuguese *surpresa*, French/English *surprise*	8	2	5
+surprise	unexpected	Feelings	astonish, wonder; magic, magical, supernatural	sorpe	奇	*sorp*rise!	Spanish *sorpresa*, Italian *sorpresa*, Portuguese *surpresa*, French/English *surprise*	8	2	5
 tired	weary	Feelings	exhausted; tire, wear out	kansa	疲	too tired — I *can'*t	Spanish cansado; Latin lassus	10	2	5
 drink	beverage	Food	sip	pipe	飲	drink now, *pee-pay* for it later!	Latin bibere; Latin potare	12	7	2
 food	eat	Food	meal, nourishment	komi	食	*come i*n and eat	*comer, comida*	9	41	1
@@ -188,7 +188,7 @@ say	word	Verbs	speak, tell, speech, message	tika	言	the enchanted *teacu*ps can
 see	understand	Verbs	look, watch, appear; realize, get it	vite	見	I see the *vide*o	*video, ver, vedere*	7	32	2
 sleep	bed	Verbs	rest, recharge, be dormant	tormi	床	*dormi*tories provide beds for sleeping	*dormir, dormant*	7	6	4
 sorry	excuse me	Verbs	apology, regret	perton	悔	*pardon* me!	Spanish perdon; Italian scusa	9	9	1
-sound	hear	Verbs	listen, noise	oti	耳	I can hear the sound because it's *audi*ble	*audio, oír, udire*	6	7	4
+sound	hear	Verbs	listen, noise; ear	oti	耳	I can hear the sound because it's *audi*ble	*audio, oír, udire*	6	7	4
 thank	gratitude	Verbs	appreciation	mersi	恩	French *merci*!	French merci; Spanish gracias	10	6	2
 think	believe	Verbs	mind, idea, opinion	pensa	思	*pensi*ve thoughts	*pensar, penser, pensive*	9	6	4
 try	test	Verbs	attempt, try out, taste-test, sample, check, prove	tentar	試	a *tenta*tive first try	Spanish/Portuguese *tentar*, French *tenter*, Latin *tentare*; English *tentative, attempt*	13	8	3
