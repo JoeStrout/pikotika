@@ -1,4 +1,6 @@
 EN	gloss	categories	root_level	assigned_level
+we; us	I-group	Grammar and logic;People and society	1	1
+relative clause marker	RI-TE	Particles;Grammar and logic	3	5
 see you later	after-meet	Verbs;People and society	1	1
 credit; debt	after-money	People and society	3	
 credit card	after-money-card	Made things;People and society	3	
@@ -36,7 +38,6 @@ prepare; get ready; arrange	before-make	Verbs	2	2
 previous; preceding; former; the one before	before-sequence	General heads	3	3
 in the past	before-time	Time direction	1	4
 corner (of a street); turn (in a road)	bend-place	Space and direction;Places, arts, appearance	4	
-gale; strong wind	big-wind	Nature	3	3
 rage	big-anger	Feelings	5	
 war	big-fight	People and society;Verbs	4	
 laugh	big-happy-mouth	Feelings;Body and life	4	5
@@ -51,19 +52,18 @@ loud	big-sound	Qualities	4
 astonishment	big-surprise	Feelings	5	
 sea	big-water	Nature	1	2
 beach; seashore	big-water-edge	Nature;Places, arts, appearance	4	4
-egg	bird-offspring	Food;Nature	5	5
+gale; strong wind	big-wind	Nature	3	3
 flock	bird-group	Nature	5	5
 poultry; chicken (meat)	bird-meat	Food	5	5
+egg	bird-offspring	Food;Nature	5	5
 black market	black-buy-place	Places, arts, appearance;People and society	4	
 coffee	black-drink	Food	3	3
+pepper (spice)	black-taste-thing	Food	4	
 cyan	blue-green	Color	3	3
 strength; strong (physically)	body-ability	Qualities;Body and life	5	
 allergy	body-not-agree	Body and life	5	
 sport; athletics	body-play	Verbs;Body and life	5	5
-knife (knife or scissors)	cut-tool	Made things	5	5
 shopping bag	buy-box	Made things	4	
-company; corporation; firm	commerce-group	People and society	4	4
-business plan	commerce-group-map	People and society;Made things	4	
 vendor; shopkeeper	buy-person	People and society	4	
 shop	buy-place	Places, arts, appearance	4	4
 decision; settle; make up one's mind	choose-finish	Verbs	4	
@@ -78,22 +78,28 @@ shower; bathe	clean-rain	Made things;Body and life	5
 soap; shampoo; detergent	clean-thing	Made things	5	
 silent; taciturn; tight-lipped	close-mouth	Qualities;People and society	4	
 wear; be dressed in; have on	cloth-have	Verbs;Made things	4	
+tent	cloth-home	Made things	4	
 fitting room; changing room	cloth-try-room	Made things;Places, arts, appearance	4	
-ice cream	ice-milk	Food	4	
 unfriendly person	cold-person	People and society;Qualities	4	
 iced tea	cold-plant-water	Food	4	
 snow	cold-rain	Nature	4	
 winter	cold-time	Time direction	4	4
 trip; journey	come-go	Space and direction	2	2
 guest; visitor; customer	come-person	People and society	2	
+company; corporation; firm	commerce-group	People and society	4	4
+business plan	commerce-group-map	People and society;Made things	4	
 border (of a country); frontier	country-edge	People and society;Space and direction	5	
 passport; ID; identity document	country-page	People and society;Made things	5	
+knife (knife or scissors)	cut-tool	Made things	5	5
 adventure trip; expedition	danger-come-go	Space and direction;Qualities	4	
 adventure	danger-play	Verbs;Qualities	4	
 adventurer	danger-play-person	People and society	4	
 warn; warning; alert	danger-say	Verbs;Qualities	4	
 caution; careful; cautious; watch out	danger-see	Verbs;Qualities	4	
+tomorrow	day-after	Time direction	1	2
+yesterday	day-before	Time direction	1	2
 door handle	door-hand	Made things	5	
+root	down-plant	Nature	5	
 evening; afternoon	down-sun	Time direction	5	5
 thirsty	drink-want	Body and life;Food	2	2
 rug; mat; carpet	earth-cloth	Made things	4	
@@ -129,6 +135,7 @@ menu	food-sequence	Food	3
 meal (a sitting); mealtime	food-time	Food;Time direction	1	2
 cutlery	food-tool	Made things;Food	3	4
 hungry	food-want	Body and life;Food	1	1
+walk	foot-go	Verbs;Body and life	4	4
 quadrilateral; rectangle; square	four-bend	Shape	4	
 fourth (in a series); 4th	four-sequence	Quantity	3	
 wine	fruit-fire-water	Food	3	
@@ -159,17 +166,15 @@ stubborn	hard-head	Qualities;People and society	4
 bring	have-come	Verbs	2	2
 food supplies; provisions; stores	have-food	Food	2	
 carry; take along; transport	have-go	Verbs	2	2
-owner; proprietor	own-person	People and society	2	3
 headache; nuisance	head-sick	Body and life	4	4
 hospital	heal-home	Places, arts, appearance;Body and life	4	
 exercise	heal-movement	Body and life;Verbs	4	
 gym	heal-movement-place	Places, arts, appearance;Body and life	4	
 ointment; salve; balm	heal-oil	Body and life;Made things	5	
 doctor	heal-person	People and society;Body and life	4	4
-well-balanced; well-adjusted; sane	heal-think	Qualities;Body and life	4	
 medical test; checkup; examination (medical)	heal-test	Body and life	4	
+well-balanced; well-adjusted; sane	heal-think	Qualities;Body and life	4	
 ear	hear-part	Body and life	4	5
-weigh; measure the weight of	weight-amount	Verbs;Quantity	4	
 important; significant; essential; major	heavy-necessary	Qualities	4	4
 helpful	help-give	Qualities;Verbs	4	
 you-are-here map; directory map; orientation map	help-map	Made things	4	
@@ -182,10 +187,12 @@ chili pepper	hot-taste-thing	Food	4
 summer	hot-time	Time direction	3	4
 clock time; time of day	hour-say	Time direction	1	
 hundredth (in a series); 100th	hundred-sequence	Quantity	3	
-we; us	I-group	Grammar and logic;People and society	1	1
+pain; hurt; ache	hurt-feel	Body and life	4	4
+ice cream	ice-milk	Food	4	
 should	if-good	Grammar and logic	4	4
 finally; at last; in the end; eventually	in-finish	Time direction	1	1
 percent; per cent; %	in-hundred	Quantity	3	
+indoors; inside	in-place	Space and direction;Places, arts, appearance	1	
 actually; in truth	in-true	Grammar and logic	1	1
 hire; lease; rent	interval-buy	Verbs;People and society	4	
 borrow	interval-get	Verbs	2	
@@ -202,7 +209,6 @@ teacher; instructor	learn-give-person	People and society;Verbs	4
 student; pupil; learner	learn-person	People and society;Verbs	4	
 school	learn-place	Places, arts, appearance	4	4
 curriculum; syllabus; course of study	learn-sequence	General heads;Verbs	4	
-walk	foot-go	Verbs;Body and life	4	4
 jump; leap	leg-up-go	Verbs;Body and life	4	
 bicycle	leg-vehicle	Made things	4	
 public transit; transit	line-vehicle	Made things	4	4
@@ -240,8 +246,8 @@ payment card; bank card	money-card	Made things;People and society	3
 turnstile; ticket gate	money-door	Made things	4	
 earn	money-get	Verbs;People and society	3	
 bank	money-home	Places, arts, appearance;People and society	3	
-Monday	moon-weekday	Time direction	3	3
 silver	moon-metal	Material	3	
+Monday	moon-weekday	Time direction	3	3
 concert hall	music-home	Places, arts, appearance	3	
 dance	music-movement	Places, arts, appearance	2	3
 musical instrument	music-tool	Made things;Places, arts, appearance	3	
@@ -300,6 +306,10 @@ somewhere else; elsewhere	other-place	Grammar and logic;Space and direction	5	5
 something else; anything else	other-thing	Grammar and logic	5	5
 abroad; foreign; overseas	out-country	People and society;Space and direction	5	5
 depart; leave (depart)	out-go	Verbs;Space and direction	1	1
+outdoors; outside; the outdoors	out-place	Space and direction;Places, arts, appearance	1	
+camp; camp out; camping	out-sleep	Verbs	4	
+campsite; campground	out-sleep-place	Places, arts, appearance	4	
+owner; proprietor	own-person	People and society	2	3
 margin (of a page)	page-edge	Made things;Space and direction	4	
 relative (kin)	parent-group	People and society	2	2
 queue; line (of people)	person-sequence	People and society;General heads	3	
@@ -317,11 +327,9 @@ party (celebration)	play-group	People and society;Verbs	3
 theater; playhouse	play-home	Places, arts, appearance	3	
 playground	play-place	Places, arts, appearance	3	
 toy	play-thing	Made things;Verbs	3	
-respect	politeness-feel	Feelings;People and society	3	
 courtesy	please-manner	People and society	2	
 politeness (verbal)	please-say	People and society	1	2
-seat	sit-place	Made things;Space and direction	4	
-chair	sit-tool	Made things	4	
+respect	politeness-feel	Feelings;People and society	3	
 cloud; cloudy	rain-air	Nature	4	
 raincoat	rain-cloth	Made things	4	
 rainy season; wet season	rain-time	Time direction;Nature	4	4
@@ -333,8 +341,8 @@ pink	red-white	Color	3	3
 pig	red-white-animal	Nature	3	3
 pork	red-white-animal-meat	Food	4	
 orange	red-yellow	Color	3	3
+carrot	red-yellow-down-plant	Food	5	
 patience; patient	remain-ability	Feelings;Qualities	4	
-relative clause marker	RI-TE	Particles;Grammar and logic	3	5
 junction; intersection; crossroads	road-join	Space and direction;Places, arts, appearance	2	
 road map; roadmap	road-map	Made things	3	
 circle; ring; hoop	round-line	Shape	4	
@@ -345,8 +353,6 @@ sister	same-parent-woman	People and society	3	3
 look like; resemble; take after; look alike	same-see	Verbs;Qualities	3	3
 argue; quarrel	say-fight	Verbs;People and society	4	
 language; tongue (language)	say-manner	People and society	2	
-dictionary	word-many-page	Made things	3	
-word list; glossary	word-sequence	General heads;Made things	3	
 story; tale	say-thing	Places, arts, appearance	1	1
 narrator; storyteller	say-thing-person	People and society;Places, arts, appearance	1	
 window	see-hole	Made things	5	5
@@ -355,10 +361,11 @@ viewer; onlooker; beholder; spectator	see-person	People and society	2
 tears; cry	see-water	Body and life;Feelings	2	2
 step (in a procedure)	sequence-part	General heads	3	
 sort; arrange; put in order	sequence-put	Verbs	4	
-seventh (in a series); 7th	seven-sequence	Quantity	3	
 week	seven-day	Time direction	2	3
 weekend	seven-day-finish	Time direction	2	3
-pain; hurt; ache	hurt-feel	Body and life	4	4
+seventh (in a series); 7th	seven-sequence	Quantity	3	
+seat	sit-place	Made things;Space and direction	4	
+chair	sit-tool	Made things	4	
 sixth (in a series); 6th	six-sequence	Quantity	3	
 blanket; bedding	sleep-cloth	Made things	4	
 hotel	sleep-home	Places, arts, appearance	4	
@@ -377,18 +384,16 @@ goodbye	sorry-out-go	People and society;Verbs	1	1
 grey	stone-color	Color	3	3
 frank; blunt; direct	straight-say	Qualities;People and society	4	
 until; till; up to (in time)	straight-to	Time direction;Grammar and logic	4	5
-tomorrow	day-after	Time direction	1	2
 sunny	sun-air	Nature;Qualities	3	
-yesterday	day-before	Time direction	1	2
 Sunday	sun-weekday	Time direction	3	3
 flatterer; smooth talker	sweet-mouth	People and society	4	
 spice	taste-thing	Food	4	
 tenth (in a series); 10th	ten-sequence	Quantity	3	
 attention; pay attention; attend to; attentive	think-give	Verbs	4	
+today	this-day	Time direction	1	2
 tonight	this-no-sun	Time direction	2	2
 he; she; him; her; they (people); them (people)	this-person	Grammar and logic;People and society	1	1
 therefore; that's why; for this reason	this-reason	Grammar and logic	4	4
-today	this-day	Time direction	1	2
 now; at present	this-time	Time direction	1	1
 kilometer	thousand-meter	Quantity;Space and direction	3	
 thousandth (in a series); 1000th	thousand-sequence	Quantity	3	
@@ -430,6 +435,7 @@ swim	water-go	Verbs	1	2
 porridge; congee	water-grain	Food	3	
 ship; boat	water-vehicle	Made things	1	2
 Wednesday	water-weekday	Time direction	3	3
+weigh; measure the weight of	weight-amount	Verbs;Quantity	4	
 what time; at what o'clock	what-hour	Grammar and logic;Time direction	1	2
 how	what-manner	Grammar and logic	2	2
 who	what-person	Grammar and logic;People and society	1	2
@@ -442,16 +448,18 @@ what day; on what day of the week	what-weekday	Grammar and logic;Time direction	
 rice (white rice)	white-grain	Food	3	3
 sake	white-grain-fire-water	Food	3	
 mother	woman-parent	People and society	2	2
+dictionary	word-many-page	Made things	3	
+word list; glossary	word-sequence	General heads;Made things	3	
 business trip	work-come-go	Space and direction;Verbs	2	3
+work day; business day	work-day	Time direction	2	
 boss	work-head	People and society	4	4
 office	work-room	Made things;Places, arts, appearance	3	
-work day; business day	work-day	Time direction	2	
-report; document (written)	writing-page	Made things	3	
 writer; author	write-person	People and society;Verbs	2	2
-text; writing (text)	writing-word	Made things;Verbs	2	
+pen (pen or pencil)	write-tool	Made things	3	
+report; document (written)	writing-page	Made things	3	
 read	writing-see	Verbs	2	2
 reader	writing-see-person	People and society;Verbs	2	2
-pen (pen or pencil)	write-tool	Made things	3	
+text; writing (text)	writing-word	Made things;Verbs	2	
 old (in years); aged	year-big	Qualities	3	3
 age	year-duration	Time direction;Quantity	3	4
 season	year-part	Time direction	3	4

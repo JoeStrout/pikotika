@@ -32,9 +32,9 @@ something else; anything else	arkosa<br>別物<br>other-thing	pikotika level5 co
 someone else; another person; others	aromo<br>別人<br>other-person	pikotika level5 compound
 somewhere else; elsewhere	arroko<br>別所<br>other-place	pikotika level5 compound
 anyway; by the way; incidentally	artopi<br>別件<br>other-about	pikotika level5 compound
-People change.	Omo ri artiven.<br>人 ⊢ 別成.<br>person RI other-become.	pikotika level5 sentence
-It's changing!	Ri artiven!<br>⊢ 別成!<br>RI other-become!	pikotika level5 sentence
+Nothing has changed.	Nemkosa ri artiven vin.<br>无物 ⊢ 別成 閉.<br>no-thing RI other-become finish.	pikotika level5 sentence
 Someone else is coming.	Ar ri veni.<br>別 ⊢ 来.<br>other RI come.	pikotika level5 sentence
+I changed my mind.	Eko ri arvake a eko pensa.<br>己 ⊢ 別作 ⇒ 己 思.<br>I RI other-make A I think.	pikotika level5 sentence
 art; craft	arti<br>芸<br>an <i>arti</i>st makes <i>art</i>	pikotika level5 root
 temple; church	temper<br>寺<br>a <i>temp</i>le <i>temper</i>s the soul	pikotika level5 root
 oil; grease	oren<br>油<br>digging for <i>ore 'n'</i> oil	pikotika level5 root
@@ -42,9 +42,9 @@ salt; salty	sares<br>塩<br><i>sa</i>lty <i>res</i>idue left after seawater evap
 museum	artikase<br>芸户<br>art-home	pikotika level5 compound
 fried	orenvake<br>油作<br>oil-make	pikotika level5 compound
 fried rice	orenankariso<br>油白米<br>oil-white-grain	pikotika level5 compound
-In the future, everything will be easier.	Tartempo, pan ri mas nonsorin.<br>后时, 全 ⊢ 更 不硬.<br>after-time, all RI more not-hard.	pikotika level5 sentence
-I see.	Eko ri vite.<br>己 ⊢ 見.<br>I RI see.	pikotika level5 sentence
-For a week.	1 senseyan turan.<br>1 7日 間.<br>1 seven-day interval.	pikotika level5 sentence
+This fish is good, right?	Tis akupeste ri pona, si?<br>此 水匹 ⊢ 好, 是?<br>this water-animal RI good, yes?	pikotika level5 sentence
+No, I don't see.	Non vite.<br>不 見.<br>not see.	pikotika level5 sentence
+Good luck!	Ponapos!<br>好可!<br>good-if!	pikotika level5 sentence
 bird	avis<br>鳥<br><i>avi</i>ary, <i>avi</i>ation — birds	pikotika level5 root
 bug; worm	inses<br>虫<br><i>inse</i>ct	pikotika level5 root
 dog; canine	kanis<br>犬<br><i>canis</i>, <i>canin</i>e, dog	pikotika level5 root
@@ -103,11 +103,11 @@ elevator; lift	surtunkamar<br>上下室<br>up-down-room	pikotika level5 compound
 The party starts at 7 PM.	Yumen ri apa in tunyan 7 ora.<br>玩众 ⊢ 开 内 下日 7 刻.<br>play-group RI begin in down-sun 7 hour.	pikotika level5 sentence
 Go straight to that big tree, then turn left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.<br>乞 直 行 向 不此 大 木, 后 乞 弓 向 左.<br>please straight go to not-this big plant, after please bend to left.	pikotika level5 sentence
 Turn left at the next corner.	Pam kurva ver sini in tarorten kurvaroko.<br>乞 弓 向 左 内 后序 弓所.<br>please bend to left in after-sequence bend-place.	pikotika level5 sentence
-This is for you.	Tis ri por tu.<br>此 ⊢ 為 尔.<br>this RI for you.	pikotika level5 sentence
-If it rains, we'll stay home.	Pos ri ruva, tisrason ekomen ri sista in kase.<br>可 ⊢ 雨, 此故 己众 ⊢ 止 内 户.<br>if RI rain, this-reason I-group RI remain in home.	pikotika level5 sentence
-Is there hot water in the morning?	In suryan, wo aku ri in kamar, ker?<br>内 上日, 火 水 ⊢ 内 室, 何?<br>in up-sun, hot water RI in room, what?	pikotika level5 sentence
-If there's no hot water, tell the staff.	Pos ri nem wo aku, tisrason pam tika ver serviomo.<br>可 ⊢ 无 火 水, 此故 乞 言 向 助人.<br>if RI no hot water, this-reason please say to help-person.	pikotika level5 sentence
-I told you that one last night.	1 nemyan yer, eko ri tika a tis ver tu.<br>1 无日 前, 己 ⊢ 言 ⇒ 此 向 尔.<br>1 no-sun before, I RI say A this to you.	pikotika level5 sentence
-You have school tomorrow.	Yantar, tu ri ire ver imparroko.<br>日后, 尔 ⊢ 行 向 学所.<br>day-after, you RI go to learn-place.	pikotika level5 sentence
-Yes, at Carla's place.	Si, in Karra kase.<br>是, 内 Karra 户.<br>yes, in Carla home.	pikotika level5 sentence
-Is the boss in today?	Tisyan, opustesta ri in opuskamar, ker?<br>此日, 力头 ⊢ 内 力室, 何?<br>this-day, work-head RI in work-room, what?	pikotika level5 sentence
+Can I call you next week?	Eko ri kan tika ver tu in tar senseyan, ker?<br>己 ⊢ 能 言 向 尔 内 后 7日, 何?<br>I RI can say to you in after seven-day, what?	pikotika level5 sentence
+Hal is coming.	Omo Ar ri veni.<br>人 Ar ⊢ 来.<br>person Hal RI come.	pikotika level5 sentence
+I was told this.	Ri tika a tis ver eko.<br>⊢ 言 ⇒ 此 向 己.<br>RI say A this to me.	pikotika level5 sentence
+Practice, and you'll get it.	Tentarimpar, kum tu ri vite.<br>試学, 并 尔 ⊢ 見.<br>try-learn, and you RI understand.	pikotika level5 sentence
+If I had had the money, I would have bought it.	Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin.<br>不真 己 ⊢ 有 ⇒ 贝 閉, 此故 己 ⊢ 買 ⇒ 此 閉.<br>not-true I RI have A money finish, this-reason I RI buy A this finish.	pikotika level5 sentence
+I can ask them to make it not spicy.	Eko ri kan voritika ver komivakeomo a tis ri tiven non wosapor.<br>己 ⊢ 能 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.<br>I RI can want-say to food-make-person A this RI become not hot-taste.	pikotika level5 sentence
+See you later.	Tarsarve.<br>后会.<br>after-meet.	pikotika level5 sentence
+Payment is required.	Ri neses tonar a moni.<br>⊢ 要 与 ⇒ 贝.<br>RI must give A money.	pikotika level5 sentence

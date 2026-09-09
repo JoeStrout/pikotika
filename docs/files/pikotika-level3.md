@@ -202,11 +202,11 @@
 ## 并 尔, 何?
 ### and you, what?
 ===
-# I like music and reading.
+# Can I call you next week?
 ---
-# Eko ri kusta a musi kum kitavite.
-## 己 ⊢ 愛 ⇒ 曲 并 写見.
-### I RI like A music and writing-see.
+# Eko ri kan tika ver tu in tar senseyan, ker?
+## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
+### I RI can say to you in after seven-day, what?
 ===
 # weekday
 ---
@@ -664,17 +664,23 @@
 ## 己 ⊢ 楽 会 ⇒ 尔.
 ### I RI happy meet A you.
 ===
+# Hello!
+---
+# Novasarve!
+## 初会!
+### new-meet!
+===
 # Can we meet?
 ---
 # Ekomen ri kan sarve, ker?
 ## 己众 ⊢ 能 会, 何?
 ### I-group RI can meet, what?
 ===
-# The story is beautiful, but it isn't true.
+# I'm thirsty, but I don't want tea.
 ---
-# Tikakosa ri ponavite, sets tis ri non ves.
-## 言物 ⊢ 好見, 但 此 ⊢ 不 真.
-### say-thing RI good-see, but this RI not true.
+# Eko ri pipevori, sets eko ri non vori a arpoaku.
+## 己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.
+### I RI drink-want, but I RI not want A plant-water.
 ===
 # Can I have some water?
 ---
@@ -682,8 +688,8 @@
 ## 己 ⊢ 能 取 ⇒ 水, 何?
 ### I RI can get A water, what?
 ===
-# Prices are going up.
+# I prefer tea to coffee.
 ---
-# Monimesur ri surire.
-## 贝寸 ⊢ 上行.
-### money-amount RI up-go.
+# Eko ri mas kusta a arpoaku vons neropipe.
+## 己 ⊢ 更 愛 ⇒ 木水 从 黒飲.
+### I RI more like A plant-water than black-drink.

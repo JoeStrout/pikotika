@@ -550,17 +550,17 @@
 ## 件 大 水匹!
 ### about big water-animal!
 ===
-# I thank you.
+# No, thank you.
 ---
-# Eko ri mersi a tu.
-## 己 ⊢ 恩 ⇒ 尔.
-### I RI thank A you.
+# Non, mersi.
+## 不, 恩.
+### not, thank.
 ===
-# Thank you.
+# I would like to thank the person who brought us here today.
 ---
-# Mersi.
-## 恩.
-### thank.
+# Eko ri vori mersi a ri tisyan teneveni a ekomen ver tisroko rite omo.
+## 己 ⊢ 求 恩 ⇒ ⊢ 此日 有来 ⇒ 己众 向 此所 ⊢> 人.
+### I RI want thank A RI this-sun have-come A I-group to this-place RI-TE person.
 ===
 # write; writing
 ---
@@ -688,41 +688,41 @@
 ## 从 此时, 乞 更 早 言 向 己.
 ### from this-time, please more fast say to me.
 ===
-# No, thank you.
+# Can we meet?
 ---
-# Non, mersi.
-## 不, 恩.
-### not, thank.
+# Ekomen ri kan sarve, ker?
+## 己众 ⊢ 能 会, 何?
+### I-group RI can meet, what?
 ===
-# She's a happier person.
+# You will see it.
 ---
-# Tisomo ri mas konten omo.
-## 此人 ⊢ 更 楽 人.
-### this-person RI more happy person.
+# Tu ri vite a tis.
+## 尔 ⊢ 見 ⇒ 此.
+### you RI see A this.
 ===
-# I want to go.
+# I see.
 ---
-# Eko ri vori ire.
-## 己 ⊢ 求 行.
-### I RI want go.
+# Eko ri vite.
+## 己 ⊢ 見.
+### I RI see.
 ===
-# What's wrong?
+# Thank you.
 ---
-# Ker marumkosa?
-## 何 悪物?
-### what bad-thing?
+# Meka mersi.
+## 大 恩.
+### big thank.
+===
+# Of course!
+---
+# Ves!
+## 真!
+### true!
 ===
 # Time goes fast.
 ---
 # Tempo ri veros ire.
 ## 时 ⊢ 早 行.
 ### time RI fast go.
-===
-# Nine at night.
----
-# Nemyan 9 ora.
-## 无日 9 刻.
-### no-sun 9 hour.
 ===
 # It's worse than that one.
 ---

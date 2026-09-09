@@ -35,7 +35,7 @@ airplane	ventokaro<br>风车<br>air-vehicle	pikotika level3 compound
 airport	ventokaroroko<br>风车所<br>air-vehicle-place	pikotika level3 compound
 You're talking.	Tu ri tika.<br>尔 ⊢ 言.<br>you RI say.	pikotika level3 sentence
 And you?	Kum tu, ker?<br>并 尔, 何?<br>and you, what?	pikotika level3 sentence
-I like music and reading.	Eko ri kusta a musi kum kitavite.<br>己 ⊢ 愛 ⇒ 曲 并 写見.<br>I RI like A music and writing-see.	pikotika level3 sentence
+Can I call you next week?	Eko ri kan tika ver tu in tar senseyan, ker?<br>己 ⊢ 能 言 向 尔 内 后 7日, 何?<br>I RI can say to you in after seven-day, what?	pikotika level3 sentence
 weekday	yom<br>曜<br><i>Yom</i> Kippur — a named day	pikotika level3 root
 month; moon	mese<br>月<br>you <i>may say</i> the moon phases take a month	pikotika level3 root
 year	anyo<br>年<br>Spanish <i>año</i> (year); <i>annu</i>al	pikotika level3 root
@@ -112,7 +112,8 @@ I work at a bank.	Eko ri opus in monikase.<br>己 ⊢ 力 内 贝户.<br>I RI wo
 Is there hot water in the morning?	In suryan, wo aku ri in kamar, ker?<br>内 上日, 火 水 ⊢ 内 室, 何?<br>in up-sun, hot water RI in room, what?	pikotika level3 sentence
 Thank you.	Mersi.<br>恩.<br>thank.	pikotika level3 sentence
 Nice to meet you.	Eko ri konten sarve a tu.<br>己 ⊢ 楽 会 ⇒ 尔.<br>I RI happy meet A you.	pikotika level3 sentence
+Hello!	Novasarve!<br>初会!<br>new-meet!	pikotika level3 sentence
 Can we meet?	Ekomen ri kan sarve, ker?<br>己众 ⊢ 能 会, 何?<br>I-group RI can meet, what?	pikotika level3 sentence
-The story is beautiful, but it isn't true.	Tikakosa ri ponavite, sets tis ri non ves.<br>言物 ⊢ 好見, 但 此 ⊢ 不 真.<br>say-thing RI good-see, but this RI not true.	pikotika level3 sentence
+I'm thirsty, but I don't want tea.	Eko ri pipevori, sets eko ri non vori a arpoaku.<br>己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.<br>I RI drink-want, but I RI not want A plant-water.	pikotika level3 sentence
 Can I have some water?	Eko ri kan toma a aku, ker?<br>己 ⊢ 能 取 ⇒ 水, 何?<br>I RI can get A water, what?	pikotika level3 sentence
-Prices are going up.	Monimesur ri surire.<br>贝寸 ⊢ 上行.<br>money-amount RI up-go.	pikotika level3 sentence
+I prefer tea to coffee.	Eko ri mas kusta a arpoaku vons neropipe.<br>己 ⊢ 更 愛 ⇒ 木水 从 黒飲.<br>I RI more like A plant-water than black-drink.	pikotika level3 sentence

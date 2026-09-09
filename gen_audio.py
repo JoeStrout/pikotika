@@ -127,10 +127,16 @@ NUMBER_VOICE = "af_heart"
 # a final -o or -u (af_heart) and a consonantal onset before a vowel-initial
 # word (af_sky's "dora" for **ora**).  bf_emma is here because a two-woman
 # scene needs a second woman; listen to her -o words before trusting her.
+#
+# Karra and Popu (the /topics/meeting/ dialog) reuse voices already cast rather
+# than opening two more unvetted ones: neither Meri nor Rokoomo appears in that
+# scene, so nothing doubles up within a dialog.
 SPEAKER_VOICES = {
     "Aras": "af_bella",
     "Rena": "bf_emma",
     "Meri": "af_sarah",
+    "Karra": "af_sarah",
+    "Popu": "bm_george",
     "Komparomo": "am_adam",
     "Tikakosaomo": "bm_lewis",
     "Rokoomo": "bm_george",

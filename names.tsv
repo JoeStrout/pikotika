@@ -39,10 +39,14 @@ liter	ritar	loan	Quantity	L IY1 T ER0	no l; l -> r
 gram	kuram	loan	Quantity	G R AE1 M	no g; g -> k, and gr- broken open	
 wifi; Wi-Fi	wivi	loan	Made things	W IY1 F IY0	from the international wee-fee pronunciation, not English wai-fai	
 MiniScript	Miniskuriputo	name	Made things	M IH1 N IY0 S K R IH1 P T	kr- onset cluster broken open; final -pt resolved with vowels	
-Chinese	Tainis	name	Places, arts, appearance	CH AY0 N IY1 Z		
-China	Taina	name	Places, arts, appearance	CH AY1 N AH0		
 French	Vuranse	name	Places, arts, appearance	F R AA0 N S EH1	from the endonym francais, not English French	
 tango	tanko	loan	Places, arts, appearance	T AE1 NG G OW0	NG G -> n k; n before k is [ng], and k may be [g], so this is the word	
+China	Tonkuo	name	Places, arts, appearance	CH OW1 NG G UW0 OW0	from the endonym Zhongguo, not English China	
+Chinese	Tonwen	name	Places, arts, appearance	CH OW1 NG W EH0 N	from the endonym Zhongwen; shares its first element with Tonkuo, as the Han does	
+Mandarin	Putonwa	name	Places, arts, appearance	P UW0 T OW1 NG HH W AA0	from the endonym Putonghua	
+Japan	Nion	name	Places, arts, appearance	N IY0 HH OW1 N	from the endonym Nihon, not English Japan	
+Japanese	Nionko	name	Places, arts, appearance	N IY0 HH OW1 N G OW0	from the endonym Nihongo	
+Italian	Itariano	name	Places, arts, appearance	IY0 T AA0 L IY0 AA1 N OW0	from the endonym italiano, not English Italian	
 Aharon	Aaron	name	People and society	AE1 HH ER0 AA0 N		cmudict
 Hy	Ai	name	People and society	HH AY1		cmudict
 Hyacintha	Aiasinta	name	People and society	HH AY2 AH0 S IH1 N TH AH0		cmudict

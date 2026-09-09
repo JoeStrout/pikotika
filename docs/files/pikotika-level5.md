@@ -184,23 +184,23 @@
 ## 別件
 ### other-about
 ===
-# People change.
+# Nothing has changed.
 ---
-# Omo ri artiven.
-## 人 ⊢ 別成.
-### person RI other-become.
-===
-# It's changing!
----
-# Ri artiven!
-## ⊢ 別成!
-### RI other-become!
+# Nemkosa ri artiven vin.
+## 无物 ⊢ 別成 閉.
+### no-thing RI other-become finish.
 ===
 # Someone else is coming.
 ---
 # Ar ri veni.
 ## 別 ⊢ 来.
 ### other RI come.
+===
+# I changed my mind.
+---
+# Eko ri arvake a eko pensa.
+## 己 ⊢ 別作 ⇒ 己 思.
+### I RI other-make A I think.
 ===
 # art; craft
 ---
@@ -244,23 +244,23 @@
 ## 油白米
 ### oil-white-grain
 ===
-# In the future, everything will be easier.
+# This fish is good, right?
 ---
-# Tartempo, pan ri mas nonsorin.
-## 后时, 全 ⊢ 更 不硬.
-### after-time, all RI more not-hard.
+# Tis akupeste ri pona, si?
+## 此 水匹 ⊢ 好, 是?
+### this water-animal RI good, yes?
 ===
-# I see.
+# No, I don't see.
 ---
-# Eko ri vite.
-## 己 ⊢ 見.
-### I RI see.
+# Non vite.
+## 不 見.
+### not see.
 ===
-# For a week.
+# Good luck!
 ---
-# 1 senseyan turan.
-## 1 7日 間.
-### 1 seven-day interval.
+# Ponapos!
+## 好可!
+### good-if!
 ===
 # bird
 ---
@@ -610,50 +610,50 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# This is for you.
+# Can I call you next week?
 ---
-# Tis ri por tu.
-## 此 ⊢ 為 尔.
-### this RI for you.
+# Eko ri kan tika ver tu in tar senseyan, ker?
+## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
+### I RI can say to you in after seven-day, what?
 ===
-# If it rains, we'll stay home.
+# Hal is coming.
 ---
-# Pos ri ruva, tisrason ekomen ri sista in kase.
-## 可 ⊢ 雨, 此故 己众 ⊢ 止 内 户.
-### if RI rain, this-reason I-group RI remain in home.
+# Omo Ar ri veni.
+## 人 Ar ⊢ 来.
+### person Hal RI come.
 ===
-# Is there hot water in the morning?
+# I was told this.
 ---
-# In suryan, wo aku ri in kamar, ker?
-## 内 上日, 火 水 ⊢ 内 室, 何?
-### in up-sun, hot water RI in room, what?
+# Ri tika a tis ver eko.
+## ⊢ 言 ⇒ 此 向 己.
+### RI say A this to me.
 ===
-# If there's no hot water, tell the staff.
+# Practice, and you'll get it.
 ---
-# Pos ri nem wo aku, tisrason pam tika ver serviomo.
-## 可 ⊢ 无 火 水, 此故 乞 言 向 助人.
-### if RI no hot water, this-reason please say to help-person.
+# Tentarimpar, kum tu ri vite.
+## 試学, 并 尔 ⊢ 見.
+### try-learn, and you RI understand.
 ===
-# I told you that one last night.
+# If I had had the money, I would have bought it.
 ---
-# 1 nemyan yer, eko ri tika a tis ver tu.
-## 1 无日 前, 己 ⊢ 言 ⇒ 此 向 尔.
-### 1 no-sun before, I RI say A this to you.
+# Nonves eko ri tene a moni vin, tisrason eko ri kompar a tis vin.
+## 不真 己 ⊢ 有 ⇒ 贝 閉, 此故 己 ⊢ 買 ⇒ 此 閉.
+### not-true I RI have A money finish, this-reason I RI buy A this finish.
 ===
-# You have school tomorrow.
+# I can ask them to make it not spicy.
 ---
-# Yantar, tu ri ire ver imparroko.
-## 日后, 尔 ⊢ 行 向 学所.
-### day-after, you RI go to learn-place.
+# Eko ri kan voritika ver komivakeomo a tis ri tiven non wosapor.
+## 己 ⊢ 能 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.
+### I RI can want-say to food-make-person A this RI become not hot-taste.
 ===
-# Yes, at Carla's place.
+# See you later.
 ---
-# Si, in Karra kase.
-## 是, 内 Karra 户.
-### yes, in Carla home.
+# Tarsarve.
+## 后会.
+### after-meet.
 ===
-# Is the boss in today?
+# Payment is required.
 ---
-# Tisyan, opustesta ri in opuskamar, ker?
-## 此日, 力头 ⊢ 内 力室, 何?
-### this-day, work-head RI in work-room, what?
+# Ri neses tonar a moni.
+## ⊢ 要 与 ⇒ 贝.
+### RI must give A money.

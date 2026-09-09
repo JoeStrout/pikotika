@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-802 terms
+816 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -117,8 +117,14 @@
 | call | electric-say | vortotika | 電言 |
 | call to mind | again-know | repesape | 又知 |
 | calm | not-anger | nonraye | 不怒 |
+| camp | out-sleep | eksetormi | 外床 |
+| camp out | out-sleep | eksetormi | 外床 |
+| campground | out-sleep-place | eksetormiroko | 外床所 |
+| camping | out-sleep | eksetormi | 外床 |
+| campsite | out-sleep-place | eksetormiroko | 外床所 |
 | careful | danger-see | timovite | 危見 |
 | carpet | earth-cloth | teraropa | 土衣 |
+| carrot | red-yellow-down-plant | rusyorotunarpo | 赤黄下木 |
 | carry | have-go | teneire | 有行 |
 | cash | hand-money | manumoni | 手贝 |
 | cast a ballot | choose-say | eriketika | 选言 |
@@ -342,8 +348,10 @@
 | in the past | before-time | yertempo | 前时 |
 | in truth | in-true | inves | 内真 |
 | incidentally | other-about | artopi | 別件 |
+| indoors | in-place | inroko | 内所 |
 | inexpensive | small-money | pikomoni | 小贝 |
 | inquire | what-say | kertika | 何言 |
+| inside | in-place | inroko | 内所 |
 | instruct | learn-give | impartonar | 学与 |
 | instructor | learn-give-person | impartonaromo | 学与人 |
 | insufficient | not-all | nonpan | 不全 |
@@ -461,6 +469,8 @@
 | orange | red-yellow | rusyoro | 赤黄 |
 | orientation map | help-map | servimapa | 助図 |
 | others | other-person | aromo | 別人 |
+| outdoors | out-place | ekseroko | 外所 |
+| outside | out-place | ekseroko | 外所 |
 | outskirts | city-edge | sitasrante | 市边 |
 | oval | long-round | ronkarotun | 长丸 |
 | overseas | out-country | eksenasyon | 外国 |
@@ -480,6 +490,7 @@
 | peaceful | small-happy | pikokonten | 小楽 |
 | peanut | earth-hard-fruit | terasorinpomo | 土硬果 |
 | pen (pen or pencil) | write-tool | kitauter | 写工 |
+| pepper (spice) | black-taste-thing | nerosaporkosa | 黒味物 |
 | per cent | in-hundred | inkaton | 内百 |
 | percent | in-hundred | inkaton | 内百 |
 | pet | home-animal | kasepeste | 户匹 |
@@ -578,6 +589,7 @@
 | riverbank | water-edge | akurante | 水边 |
 | road map | road-map | motomapa | 方図 |
 | roadmap | road-map | motomapa | 方図 |
+| root | down-plant | tunarpo | 下木 |
 | roster | name-sequence | nomenorten | 名序 |
 | rug | earth-cloth | teraropa | 土衣 |
 | sad | not-happy | nonkonten | 不楽 |
@@ -682,6 +694,7 @@
 | tears | see-water | viteaku | 見水 |
 | telephone | electric-say | vortotika | 電言 |
 | television | electric-see | vortovite | 電見 |
+| tent | cloth-home | ropakase | 衣户 |
 | tenth (in a series) | ten-sequence | tekasorten | 十序 |
 | test (of knowledge) | know-test | sapetentar | 知試 |
 | text | writing-word | kitatika | 写言 |
@@ -691,6 +704,7 @@
 | the holidays | not-work-time | nonopustempo | 不力时 |
 | the one after | after-sequence | tarorten | 后序 |
 | the one before | before-sequence | yerorten | 前序 |
+| the outdoors | out-place | ekseroko | 外所 |
 | theater | play-home | yukase | 玩户 |
 | them (people) | this-person | tisomo | 此人 |
 | therefore | this-reason | tisrason | 此故 |

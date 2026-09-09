@@ -562,11 +562,11 @@
 ## 此故
 ### this-reason
 ===
-# If I had eaten, I wouldn't be hungry now.
+# If it isn't spicy, the child will eat it.
 ---
-# Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.
-## 不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.
-### not-true I RI food finish, this-reason I RI not food-want this-time.
+# Pos tis ri non wosapor, tisrason nino ri komi a tis.
+## 可 此 ⊢ 不 火味, 此故 子 ⊢ 食 ⇒ 此.
+### if this RI not hot-taste, this-reason child RI food A this.
 ===
 # If I had the money, I would buy it.
 ---
@@ -652,50 +652,50 @@
 ## 此 ⊢ 成 更 不硬.
 ### this RI become more not-hard.
 ===
-# Ten minutes.
+# Today I'm meeting your relatives.
 ---
-# 10 parte turan.
-## 10 分 間.
-### 10 part interval.
+# Tisyan, eko ri sarve a tu parimen.
+## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
+### this-day, I RI meet A you parent-group.
 ===
-# Goodbye.
+# I would like to thank the person who brought us here today.
 ---
-# Pertoneksire.
-## 悔外行.
-### sorry-out-go.
+# Eko ri vori mersi a ri tisyan teneveni a ekomen ver tisroko rite omo.
+## 己 ⊢ 求 恩 ⇒ ⊢ 此日 有来 ⇒ 己众 向 此所 ⊢> 人.
+### I RI want thank A RI this-sun have-come A I-group to this-place RI-TE person.
 ===
-# It's not more important than that one.
+# I'll meet you at the door.
 ---
-# Tis ri non mas pesaneses vons nontis.
-## 此 ⊢ 不 更 重要 从 不此.
-### this RI not more heavy-necessary than not-this.
+# Eko ri sarve a tu in porta.
+## 己 ⊢ 会 ⇒ 尔 内 門.
+### I RI meet A you in door.
 ===
-# Can I help you?
+# Yes, I see.
 ---
-# Eko ri kan servi a tu, ker?
-## 己 ⊢ 能 助 ⇒ 尔, 何?
-### I RI can help A you, what?
+# Si, vite.
+## 是, 見.
+### yes, see.
 ===
-# How was your weekend?
+# That sounds better than working.
 ---
-# Tu senseyanvin ri kermoto?
-## 尔 7日閉 ⊢ 何方?
-### you seven-day-finish RI what-manner?
+# Tis ri mas pona vons opus.
+## 此 ⊢ 更 好 从 力.
+### this RI more good than work.
 ===
-# I'm learning Pikotika.
+# Where are you going for summer vacation?
 ---
-# Eko ri impar a pikotika.
-## 己 ⊢ 学 ⇒ 小言.
-### I RI learn A small-say.
+# In wotempo yuveniire, tu ri ire ver kerroko?
+## 内 火时 玩来行, 尔 ⊢ 行 向 何所?
+### in hot-time play-come-go, you RI go to what-place?
 ===
-# But the last part isn't written.
+# I don't want to think about the past.
 ---
-# Sets vin parte ri non kita vin.
-## 但 閉 分 ⊢ 不 写 閉.
-### but finish part RI not write finish.
+# Eko ri non vori pensa a yertempo.
+## 己 ⊢ 不 求 思 ⇒ 前时.
+### I RI not want think A before-time.
 ===
-# Yesterday I wanted to go.
+# Sorry/oops/excuse me.
 ---
-# Yanyer, eko ri vori ire.
-## 日前, 己 ⊢ 求 行.
-### day-before, I RI want go.
+# Perton.
+## 悔.
+### sorry.
