@@ -40,23 +40,23 @@
 ## 体玩
 ### body-play
 ===
-# Alice: Cash — here's 10 dollars.
----
-# Aras: Manumoni. Tis ri 10 moni.
-## Aras: 手贝. 此 ⊢ 10 贝.
-### Alice: hand-money. this RI 10 money.
-===
 # You killed my father.
 ---
 # Tu ri nonviva a eko viropari vin.
 ## 尔 ⊢ 不生 ⇒ 己 男亲 閉.
 ### you RI not-life A I man-parent finish.
 ===
-# I live near the sea.
+# Can you give me a hand?
 ---
-# Eko ri viva nir mekaaku.
-## 己 ⊢ 生 近 大水.
-### I RI life near big-water.
+# Tu ri kan manutonar ver eko, ker?
+## 尔 ⊢ 能 手与 向 己, 何?
+### you RI can hand-give to me, what?
+===
+# Alice: Cash — here's 10 dollars.
+---
+# Aras: Manumoni. Tis ri 10 moni.
+## Aras: 手贝. 此 ⊢ 10 贝.
+### Alice: hand-money. this RI 10 money.
 ===
 # tired; weary
 ---
@@ -244,17 +244,17 @@
 ## 油白米
 ### oil-white-grain
 ===
-# Is it spicy?
+# And I'll have the fish, please.
 ---
-# Tis ri wosapor, ker?
-## 此 ⊢ 火味, 何?
-### this RI hot-taste, what?
+# Kum eko ri vori a akupeste, pam.
+## 并 己 ⊢ 求 ⇒ 水匹, 乞.
+### and I RI want A water-animal, please.
 ===
-# This fish is good, right?
+# The station is near, isn't it?
 ---
-# Tis akupeste ri pona, si?
-## 此 水匹 ⊢ 好, 是?
-### this water-animal RI good, yes?
+# Karoroko ri nir, non?
+## 车所 ⊢ 近, 不?
+### vehicle-place RI near, not?
 ===
 # Please don't change it.
 ---
@@ -382,11 +382,11 @@
 ## 婚人
 ### marry-person
 ===
-# Did you ever travel abroad by ship?
+# Our wedding anniversary is next month.
 ---
-# Tu ri veniire ver eksenasyon in akukaro moto vin, ker?
-## 尔 ⊢ 来行 向 外国 内 水车 方 閉, 何?
-### you RI come-go to out-country in water-vehicle manner finish, what?
+# Ekomen maris anyoyan ri in tar mese.
+## 己众 婚 年日 ⊢ 内 后 月.
+### I-group marry year-day RI in after month.
 ===
 # Is this allowed?
 ---
@@ -610,11 +610,17 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# I hope I can find it, or else I'll have to buy a new one.
+# Do you have a reservation?
 ---
-# Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.
-## 己 ⊢ 求 ⇒ 己 ⊢ 能 又取 ⇒ 此; 或 己 ⊢ 要 買 ⇒ 初 物.
-### I RI want A I RI can again-get A this; or I RI must buy A new thing.
+# Tu ri tene a yerakor, ker?
+## 尔 ⊢ 有 ⇒ 前約, 何?
+### you RI have A before-agree, what?
+===
+# I don't want to think about the past.
+---
+# Eko ri non vori pensa a yertempo.
+## 己 ⊢ 不 求 思 ⇒ 前时.
+### I RI not want think A before-time.
 ===
 # I was told this.
 ---
@@ -622,23 +628,23 @@
 ## ⊢ 言 ⇒ 此 向 己.
 ### RI say A this to me.
 ===
-# Little by little.
+# Things change.
 ---
-# Piko tar piko.
-## 小 后 小.
-### small after small.
+# Kosa ri artiven.
+## 物 ⊢ 別成.
+### thing RI other-become.
 ===
-# Here's two hundred.
+# What's new?
 ---
-# Tis ri 200.
-## 此 ⊢ 200.
-### this RI 200.
+# Ker ri nova?
+## 何 ⊢ 初?
+### what RI new?
 ===
-# You see the dog, right?
+# Send me what you have.
 ---
-# Tu ri vite a kanis, si?
-## 尔 ⊢ 見 ⇒ 犬, 是?
-### you RI see A dog, yes?
+# Pam tonar a tu ri tene rite kosa ver eko.
+## 乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己.
+### please give A you RI have RI-TE thing to me.
 ===
 # How much are the bananas?
 ---

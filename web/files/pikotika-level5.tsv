@@ -8,9 +8,9 @@ life; alive	viva<br>生<br><i>viva</i> la vida!	pikotika level5 root
 ear	otiparte<br>耳分<br>hear-part	pikotika level5 compound
 lend a hand; help out	manutonar<br>手与<br>hand-give	pikotika level5 compound
 sport; athletics	korpoyu<br>体玩<br>body-play	pikotika level5 compound
-Alice: Cash — here's 10 dollars.	Aras: Manumoni. Tis ri 10 moni.<br>Aras: 手贝. 此 ⊢ 10 贝.<br>Alice: hand-money. this RI 10 money.	pikotika level5 sentence
 You killed my father.	Tu ri nonviva a eko viropari vin.<br>尔 ⊢ 不生 ⇒ 己 男亲 閉.<br>you RI not-life A I man-parent finish.	pikotika level5 sentence
-I live near the sea.	Eko ri viva nir mekaaku.<br>己 ⊢ 生 近 大水.<br>I RI life near big-water.	pikotika level5 sentence
+Can you give me a hand?	Tu ri kan manutonar ver eko, ker?<br>尔 ⊢ 能 手与 向 己, 何?<br>you RI can hand-give to me, what?	pikotika level5 sentence
+Alice: Cash — here's 10 dollars.	Aras: Manumoni. Tis ri 10 moni.<br>Aras: 手贝. 此 ⊢ 10 贝.<br>Alice: hand-money. this RI 10 money.	pikotika level5 sentence
 tired; weary	kansa<br>疲<br>too tired — I <i>can'</i>t	pikotika level5 root
 anger; angry	raye<br>怒<br>a <i>rag</i>ing <i>ray</i> of fury	pikotika level5 root
 surprise; unexpected	sorpe<br>奇<br><i>sorp</i>rise!	pikotika level5 root
@@ -42,8 +42,8 @@ salt; salty	sares<br>塩<br><i>sa</i>lty <i>res</i>idue left after seawater evap
 museum	artikase<br>芸户<br>art-home	pikotika level5 compound
 fried	orenvake<br>油作<br>oil-make	pikotika level5 compound
 fried rice	orenankariso<br>油白米<br>oil-white-grain	pikotika level5 compound
-Is it spicy?	Tis ri wosapor, ker?<br>此 ⊢ 火味, 何?<br>this RI hot-taste, what?	pikotika level5 sentence
-This fish is good, right?	Tis akupeste ri pona, si?<br>此 水匹 ⊢ 好, 是?<br>this water-animal RI good, yes?	pikotika level5 sentence
+And I'll have the fish, please.	Kum eko ri vori a akupeste, pam.<br>并 己 ⊢ 求 ⇒ 水匹, 乞.<br>and I RI want A water-animal, please.	pikotika level5 sentence
+The station is near, isn't it?	Karoroko ri nir, non?<br>车所 ⊢ 近, 不?<br>vehicle-place RI near, not?	pikotika level5 sentence
 Please don't change it.	Pam non arvake a tis.<br>乞 不 別作 ⇒ 此.<br>please not other-make A this.	pikotika level5 sentence
 bird	avis<br>鳥<br><i>avi</i>ary, <i>avi</i>ation — birds	pikotika level5 root
 bug; worm	inses<br>虫<br><i>inse</i>ct	pikotika level5 root
@@ -65,7 +65,7 @@ abroad; foreign; overseas	eksenasyon<br>外国<br>out-country	pikotika level5 co
 enemy	nonami<br>不朋<br>not-friend	pikotika level5 compound
 illegal	nonreke<br>不法<br>not-law	pikotika level5 compound
 spouse	marisomo<br>婚人<br>marry-person	pikotika level5 compound
-Did you ever travel abroad by ship?	Tu ri veniire ver eksenasyon in akukaro moto vin, ker?<br>尔 ⊢ 来行 向 外国 内 水车 方 閉, 何?<br>you RI come-go to out-country in water-vehicle manner finish, what?	pikotika level5 sentence
+Our wedding anniversary is next month.	Ekomen maris anyoyan ri in tar mese.<br>己众 婚 年日 ⊢ 内 后 月.<br>I-group marry year-day RI in after month.	pikotika level5 sentence
 Is this allowed?	Ri reke a tis, ker?<br>⊢ 法 ⇒ 此, 何?<br>RI law A this, what?	pikotika level5 sentence
 It's not allowed.	Ri non reke.<br>⊢ 不 法.<br>RI not law.	pikotika level5 sentence
 key; lock	yave<br>錠<br><i>shove</i> the key into the lock	pikotika level5 root
@@ -103,10 +103,11 @@ elevator; lift	surtunkamar<br>上下室<br>up-down-room	pikotika level5 compound
 The party starts at 7 PM.	Yumen ri apa in tunyan 7 ora.<br>玩众 ⊢ 开 内 下日 7 刻.<br>play-group RI begin in down-sun 7 hour.	pikotika level5 sentence
 Go straight to that big tree, then turn left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.<br>乞 直 行 向 不此 大 木, 后 乞 弓 向 左.<br>please straight go to not-this big plant, after please bend to left.	pikotika level5 sentence
 Turn left at the next corner.	Pam kurva ver sini in tarorten kurvaroko.<br>乞 弓 向 左 内 后序 弓所.<br>please bend to left in after-sequence bend-place.	pikotika level5 sentence
-I hope I can find it, or else I'll have to buy a new one.	Eko ri vori a eko ri kan repetoma a tis; sive eko ri neses kompar a nova kosa.<br>己 ⊢ 求 ⇒ 己 ⊢ 能 又取 ⇒ 此; 或 己 ⊢ 要 買 ⇒ 初 物.<br>I RI want A I RI can again-get A this; or I RI must buy A new thing.	pikotika level5 sentence
+Do you have a reservation?	Tu ri tene a yerakor, ker?<br>尔 ⊢ 有 ⇒ 前約, 何?<br>you RI have A before-agree, what?	pikotika level5 sentence
+I don't want to think about the past.	Eko ri non vori pensa a yertempo.<br>己 ⊢ 不 求 思 ⇒ 前时.<br>I RI not want think A before-time.	pikotika level5 sentence
 I was told this.	Ri tika a tis ver eko.<br>⊢ 言 ⇒ 此 向 己.<br>RI say A this to me.	pikotika level5 sentence
-Little by little.	Piko tar piko.<br>小 后 小.<br>small after small.	pikotika level5 sentence
-Here's two hundred.	Tis ri 200.<br>此 ⊢ 200.<br>this RI 200.	pikotika level5 sentence
-You see the dog, right?	Tu ri vite a kanis, si?<br>尔 ⊢ 見 ⇒ 犬, 是?<br>you RI see A dog, yes?	pikotika level5 sentence
+Things change.	Kosa ri artiven.<br>物 ⊢ 別成.<br>thing RI other-become.	pikotika level5 sentence
+What's new?	Ker ri nova?<br>何 ⊢ 初?<br>what RI new?	pikotika level5 sentence
+Send me what you have.	Pam tonar a tu ri tene rite kosa ver eko.<br>乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己.<br>please give A you RI have RI-TE thing to me.	pikotika level5 sentence
 How much are the bananas?	Ronkayoropomo ri ker moni?<br>长黄果 ⊢ 何 贝?<br>long-yellow-fruit RI what money?	pikotika level5 sentence
 Payment is required.	Ri neses tonar a moni.<br>⊢ 要 与 ⇒ 贝.<br>RI must give A money.	pikotika level5 sentence

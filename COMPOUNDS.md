@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-851 terms
+857 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -38,6 +38,7 @@
 | alter | other-make | arvake | 別作 |
 | alternative | choose-thing | erikekosa | 选物 |
 | always | every-time | pantempo | 全时 |
+| anniversary | year-day | anyoyan | 年日 |
 | annoyance | small-anger | pikoraye | 小怒 |
 | another person | other-person | aromo | 別人 |
 | answer | back-say | retsetika | 反言 |
@@ -88,6 +89,7 @@
 | beholder | see-person | viteomo | 見人 |
 | beige | grain-color | risokoror | 米色 |
 | bicycle | leg-vehicle | kampakaro | 足车 |
+| birthday | life-day | vivayan | 生日 |
 | black market | black-buy-place | nerokomparroko | 黒買所 |
 | blanket | sleep-cloth | tormiropa | 床衣 |
 | blunt | straight-say | retotika | 直言 |
@@ -816,6 +818,10 @@
 | we | I-group | ekomen | 己众 |
 | wear | cloth-have | ropatene | 衣有 |
 | weather | air-manner | ventomoto | 风方 |
+| wedding | marry-day | marisyan | 婚日 |
+| wedding day | marry-day | marisyan | 婚日 |
+| wedding party | marry-play-group | marisyumen | 婚玩众 |
+| wedding reception | marry-play-group | marisyumen | 婚玩众 |
 | Wednesday | water-weekday | akuyom | 水曜 |
 | week | seven-day | senseyan | 7日 |
 | weekend | seven-day-finish | senseyanvin | 7日閉 |

@@ -219,6 +219,7 @@ school	learn-place	Places, arts, appearance	4	4
 curriculum; syllabus; course of study	learn-sequence	General heads;Verbs	4	
 jump; leap	leg-up-go	Verbs;Body and life	4	
 bicycle	leg-vehicle	Made things	4	
+birthday	life-day	Time direction;Body and life	5	
 public transit; transit	line-vehicle	Made things	4	4
 transit station (bus/train)	line-vehicle-place	Places, arts, appearance	4	
 thief	long-hand	People and society	5	
@@ -239,7 +240,9 @@ south	map-down	Space and direction	5	5
 west	map-left	Space and direction	5	5
 east	map-right	Space and direction	5	5
 north	map-up	Space and direction	3	5
+wedding; wedding day	marry-day	People and society;Time direction	5	
 spouse	marry-person	People and society	5	5
+wedding reception; wedding party	marry-play-group	People and society;Verbs	5	
 shame	me-bad-feel	Feelings	3	5
 pride	me-good-feel	Feelings	3	5
 train	metal-line-vehicle	Made things	4	4
@@ -480,6 +483,7 @@ read	writing-see	Verbs	2	2
 reader	writing-see-person	People and society;Verbs	2	2
 text; writing (text)	writing-word	Made things;Verbs	2	
 old (in years); aged	year-big	Qualities	3	3
+anniversary	year-day	Time direction	3	
 age	year-duration	Time direction;Quantity	3	4
 season	year-part	Time direction	3	4
 young	year-small	Qualities	3	4
