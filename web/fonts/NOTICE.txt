@@ -28,3 +28,16 @@ License, version 3, reproduced in GPL-3.0.txt beside this file.  This file is
 the original Lavi.ttf converted to WOFF2 with fontTools, unchanged otherwise;
 the conversion is lossless, so the WOFF2 decompresses to the font's own
 outlines and tables.
+
+
+Fondamento
+----------
+
+fondamento-regular.woff2
+
+The face of the posters and signs in Pepper&Carrot, used for the comic pages
+under /comics/.  Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic
+(AOETI), with Reserved Font Name "Fondamento".  Licensed under the SIL Open
+Font License, Version 1.1, reproduced in OFL.txt beside this file.  This file
+is the original Fondamento.ttf converted to WOFF2 with fontTools, its
+outlines and tables unchanged, so it keeps its name.

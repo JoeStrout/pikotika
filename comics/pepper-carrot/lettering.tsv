@@ -1,18 +1,32 @@
 text	match	note
 05/2014	word	date on the last page of episode 1
+3.0	word	license version, part of the license name
+Attribution	word	license name
+Commons	word	license name
+Creative	word	license name
+David	word	person credited
+G'MIC	word	software credit
 GNU/Linux	word	software credit
+Joe	word	person credited
 Koku	word	sound effect
 Krita	word	software credit
 Kuru	word	sound effect
 M	word	letter of a spelled-out sound effect
+Mmm	word	interjection
 P	word	letter of a spelled-out sound effect
 PORO	word	sound effect
+Rrr	word	growl
 S	word	letter of a spelled-out sound effect
 SSS	word	sound effect
 SUPURAS	word	sound effect
+Strout	word	person credited
+Tschumperlé	word	person credited
 U	word	letter of a spelled-out sound effect
+Unported	word	license name
 WWW.PEPPERCARROT.COM	word	URL
+Xubuntu	word	software credit
 a	box	letter of a spelled-out sound effect; a real word, so matched only as a whole box
+https://www.patreon.com/davidrevoy	word	URL
 m	word	letter of a spelled-out sound effect
 mmm	word	interjection
 pu	word	piece of a spelled-out sound effect

@@ -344,6 +344,11 @@ msgstr "Akuventorotun"
 msgid "DragonCow"
 msgstr "Torakan ratenpeste"
 
+# (EP3) The word on its own, so torakan has an English meaning in the
+# comic's popovers: gen_comics reads single-word entries as the jargon.
+msgid "Dragon"
+msgstr "Torakan"
+
 #. (Episode 13) Name of the board game. (A reference to Dungeons & Dragons)
 msgid "Citadels & Phoenixes"
 msgstr "Sitater kum Viniks"

@@ -17,6 +17,17 @@
   font-display: swap;
 }
 
+/* Fondamento is the face of the posters and signs, OFL -- see fonts/NOTICE.txt.
+   Arial, which a few credits lines use, is not shipped: it is on nearly every
+   system, and falls back to sans-serif where it is not. */
+@font-face {
+  font-family: "Fondamento";
+  src: url("/fonts/fondamento-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .comic-kicker { margin: 0 0 .3rem; font-size: .95rem; }
 .comic-title  { margin-bottom: .15em; }
 .comic-sub    { margin: 0 0 .3rem; color: var(--text-muted); font-size: 1.1rem; }
@@ -43,14 +54,20 @@
 }
 .comic-page img { width: 100%; height: auto; }
 
+/* A box is its whole flow rectangle, usually far bigger than its words, and
+   boxes overlap: a later one's empty corner sat over half of E03P03's
+   "Eko ri ponapos!" balloon and swallowed its taps.  So a box lets clicks
+   through, and only the words themselves -- the chips -- catch them. */
 .comic-text {
   position: absolute;
   transform-origin: 0 0;
   color: #000;
   overflow-wrap: normal;
   hyphens: none;
+  pointer-events: none;
 }
 .comic-text .ln { display: block; }
+.comic-text .pk { pointer-events: auto; }
 
 /* Sitewide .pk is a touch heavier and larger than the prose around it; here
    the lettering is the prose, and the SVG has already sized it. */

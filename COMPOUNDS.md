@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-857 terms
+869 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -151,6 +151,7 @@
 | choice | choose-thing | erikekosa | 选物 |
 | cinema | picture-home | piturkase | 画户 |
 | circle | round-line | rotunrine | 丸糸 |
+| city center | city-middle | sitasmets | 市中 |
 | cleaner | clean-person | puruomo | 清人 |
 | clever | fast-understand | verosvite | 早見 |
 | clock time | hour-say | oratika | 刻言 |
@@ -177,6 +178,7 @@
 | cost | money-amount | monimesur | 贝寸 |
 | costly | big-money | mekamoni | 大贝 |
 | council | choose-group | erikemen | 选众 |
+| countryside | not-city | nonsitas | 不市 |
 | course of study | learn-sequence | imparorten | 学序 |
 | courtesy | please-manner | pammoto | 乞方 |
 | cow | milk-animal | ratenpeste | 乳匹 |
@@ -222,6 +224,7 @@
 | easy | not-hard | nonsorin | 不硬 |
 | eatery | food-place | komiroko | 食所 |
 | egg | bird-offspring | avisnino | 鳥子 |
+| eggshell | bird-offspring-box | avisninovaso | 鳥子皿 |
 | eighth (in a series) | eight-sequence | otsorten | 8序 |
 | election | all-choose | panerike | 全选 |
 | electric light | electric-sun | vortoyan | 電日 |
@@ -258,6 +261,7 @@
 | father | man-parent | viropari | 男亲 |
 | fee | money-amount | monimesur | 贝寸 |
 | fetch | get-go | tomaire | 取行 |
+| few | not-many | nonmur | 不多 |
 | fewer | not-more | nonmas | 不更 |
 | fifth (in a series) | five-sequence | kinsorten | 5序 |
 | fighter | fight-person | pataromo | 争人 |
@@ -362,6 +366,7 @@
 | incidentally | other-about | artopi | 別件 |
 | indoors | in-place | inroko | 内所 |
 | inexpensive | small-money | pikomoni | 小贝 |
+| ingredient | make-part | vakeparte | 作分 |
 | inquire | what-say | kertika | 何言 |
 | inside | in-place | inroko | 内所 |
 | instruct | learn-give | impartonar | 学与 |
@@ -428,6 +433,7 @@
 | make up one's mind | choose-finish | erikevin | 选閉 |
 | manga | picture-many-page | piturmurkarta | 画多片 |
 | margin (of a page) | page-edge | kartarante | 片边 |
+| market day | buy-day | komparyan | 買日 |
 | mat | earth-cloth | teraropa | 土衣 |
 | match | play-fight | yupatar | 玩争 |
 | meal (a sitting) | food-time | komitempo | 食时 |
@@ -523,6 +529,7 @@
 | planted ground | plant-place | arporoko | 木所 |
 | playground | play-place | yuroko | 玩所 |
 | playhouse | play-home | yukase | 玩户 |
+| plaza | city-middle | sitasmets | 市中 |
 | politeness (verbal) | please-say | pamtika | 乞言 |
 | polygon | many-bend | murkurva | 多弓 |
 | pork | red-white-animal-meat | rusankapestekarne | 赤白匹肉 |
@@ -635,6 +642,7 @@
 | seat | sit-place | setaroko | 坐所 |
 | second (in a series) | two-sequence | pitsorten | 2序 |
 | second (of time) | small-part | pikoparte | 小分 |
+| secret | not-say | nontika | 不言 |
 | see you later | after-meet | tarsarve | 后会 |
 | seek | try-see | tentarvite | 試見 |
 | seldom | not-many-time | nonmurtempo | 不多时 |
@@ -731,6 +739,7 @@
 | text | writing-word | kitatika | 写言 |
 | that | not-this | nontis | 不此 |
 | that's why | this-reason | tisrason | 此故 |
+| the country | not-city | nonsitas | 不市 |
 | the end (of a series) | finish-sequence | vinorten | 閉序 |
 | the holidays | not-work-time | nonopustempo | 不力时 |
 | the one after | after-sequence | tarorten | 后序 |
@@ -764,6 +773,7 @@
 | too [much] | up-degree | surmesur | 上寸 |
 | tooth | mouth-stone | pukarapis | 口岩 |
 | towel | clean-cloth | pururopa | 清衣 |
+| town square | city-middle | sitasmets | 市中 |
 | toy | play-thing | yukosa | 玩物 |
 | train | metal-line-vehicle | metarrinekaro | 金糸车 |
 | transit | line-vehicle | rinekaro | 糸车 |
@@ -795,12 +805,14 @@
 | up to (in time) | straight-to | retover | 直向 |
 | us | I-group | ekomen | 己众 |
 | vacation | play-come-go | yuveniire | 玩来行 |
+| valley | down-place | tunroko | 下所 |
 | vegetables | green-food | vertekomi | 緑食 |
 | vegetarian | not-meat-food-person | nonkarnekomiomo | 不肉食人 |
 | vendor | buy-person | komparomo | 買人 |
 | verify | try-true | tentarves | 試真 |
 | viewer | see-person | viteomo | 見人 |
 | visitor | come-person | veniomo | 来人 |
+| volcano | fire-up-earth | wosurtera | 火上土 |
 | vote | choose-say | eriketika | 选言 |
 | voyage | far-come-go | ronveniire | 遠来行 |
 | wait a while | time-remain | temposista | 时止 |

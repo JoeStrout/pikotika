@@ -470,6 +470,21 @@
     en.textContent = entry.en;
     el.appendChild(en);
 
+    /* A root's other senses: the two glosses above only ever point at part
+       of its range (pan is "every; all", and also "whole").  Only on roots --
+       a compound's roots are tappable in the parse below, and each opens with
+       its own senses. */
+    if (entry.also) {
+      var also = document.createElement('p');
+      also.className = 'wordpop-also';
+      var label = document.createElement('span');
+      label.className = 'wordpop-also-label';
+      label.textContent = 'also ';
+      also.appendChild(label);
+      also.appendChild(document.createTextNode(entry.also));
+      el.appendChild(also);
+    }
+
     if (entry.parts) {
       /* The literal parse, with every root tappable in place: a compound is
          the one place a learner most wants to step sideways into its pieces. */
@@ -511,11 +526,14 @@
       foot.appendChild(level);
     }
 
-    var link = document.createElement('a');
-    link.className = 'wordpop-link';
-    link.href = '/vocab/#' + encodeURIComponent(entry.form.toLowerCase());
-    link.textContent = 'Full entry';
-    foot.appendChild(link);
+    /* A comic's jargon has no Vocab entry to go to -- that is the point. */
+    if (entry.kind !== 'comic') {
+      var link = document.createElement('a');
+      link.className = 'wordpop-link';
+      link.href = '/vocab/#' + encodeURIComponent(entry.form.toLowerCase());
+      link.textContent = 'Full entry';
+      foot.appendChild(link);
+    }
 
     el.appendChild(foot);
   }
@@ -540,10 +558,18 @@
   /* Show `form` in the popover anchored at `anchor`.  Stepping from a compound
      into one of its roots keeps the anchor -- the box stays where the reader is
      already looking, and the chip that opened it stays the one marked open. */
+  /* Words a page defines for itself: a comic's jargon, which build.py keeps out
+     of lexicon.json so it never turns up in Vocab.  They are looked up first. */
+  var PAGE_WORDS = (function () {
+    var el = document.getElementById('page-words');
+    if (!el) return {};
+    try { return JSON.parse(el.textContent); } catch (e) { return {}; }
+  })();
+
   function showFor(form, anchor) {
     loadLexicon().then(function (data) {
       if (openFor !== anchor) return;
-      fill(data && data.words && data.words[form], form);
+      fill(PAGE_WORDS[form] || (data && data.words && data.words[form]), form);
       place(anchor);
     });
   }

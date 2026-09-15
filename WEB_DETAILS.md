@@ -153,7 +153,13 @@ still there and still reads.
   compounds — the parsed roots. The parse is precomputed on purpose: `segment()`
   has real linking-`e` and name-matching rules, and a JavaScript port would be a
   second implementation to keep honest.
-- **The popover's third line is the parse for a compound and the mnemonic for a
+- **A root's popover also lists its other senses** (decided 2026-09-15), on
+  an *also* line under the glosses: the bare `covers` column, shipped as
+  `also` in `lexicon.json`, since the glosses are already on screen one line
+  up. **pan** reads *every; all* and then *also whole, total, complete,
+  enough* — which is what a reader of **wun pan yan** 'one whole day' needs.
+  Compounds get no such line; each root in the parse opens with its own.
+- **The popover's next line is the parse for a compound and the mnemonic for a
   root** — never both, since a root has no parse and a compound has no mnemonic
   of its own. The parse reads **piko** *(small)* + **tempo** *(time)*, and each
   root in it is itself tappable: the box refills in place, keeping the original
@@ -1742,6 +1748,13 @@ the lettering scales with the image and never reflows against it. The
 render only needs rerunning when the art or the balloons change; retyping a
 line is a build.
 
+- **Text that wraps past the bottom of its box** is hidden by Inkscape but
+  spills out of the balloon on the site. The build warns, naming the hidden
+  line, and `python3 gen_comics.py --check ep03` prints every box of an
+  episode in reading order with its full text and whether it all fits. The
+  fit is estimated from Lavi's advance widths (no kerning), with the last
+  line counted as one em -- calibrated on episode 2's one-letter sound
+  effects, which Inkscape shows in boxes 1.14 em tall.
 - **Only `flowRoot` is overlaid.** A plain `<text>` (the potion labels in
   episode 2) is rendered into the image. Episodes from about 20 on letter
   balloons in plain `<text>` or SVG 2 `shape-inside`, and need that read
@@ -1750,15 +1763,36 @@ line is a build.
   `.pk` span. One listed in `lettering.tsv` stays plain. Anything else fails
   the build, so a typo in a balloon cannot ship as a dead chip. A `box` row
   matches only a whole box, for a real word set as lettering (the lone `a`
-  of a sound effect spelled out one letter per box).
+  of a sound effect spelled out one letter per box). A box whose Inkscape
+  label is `lettering` is plain as a whole, for a list of real names such as
+  a credits page's patrons.
 - **Kept out of `authored_pages`**, which would queue every balloon for
   audio; the comic pages go to `check_forms` alongside it instead.
 - P00 (the title strip) becomes the `<h1>`; a page under 100 units tall (a
   spacer) is dropped.
 - Lavi, the lettering face, is GPL 3 and ships as `web/fonts/lavi-regular.woff2`
   with its license; see `web/fonts/NOTICE.txt`.
-- Names are not handled yet: episodes 1–2 have none that the roots cannot
-  spell. When one turns up it should resolve from `pk.po`, not `names.tsv`.
+- **Names come from `pk.po`, not `names.tsv`**, and render as plain text
+  with no chip, like sound effects (decided 2026-09-15). Only the
+  capitalized words of each `msgstr` count, since `Sitas Komona` also
+  holds **sitas**. The roots are tried first, as in `pikotika.name_wins`,
+  so a name the roots can spell chips as that compound.
+- **A comic's jargon gets its popover from the page, not `lexicon.json`**
+  (decided 2026-09-15). A single-word `pk.po` term the roots can spell but
+  the dictionary does not record -- **akuventorotun** *water-air-round*
+  'pearls of mist' -- still chips, but its English comes from `pk.po` and its
+  entry ships in a `<script id="page-words">` on the episode page, which
+  site.js reads before the lexicon. `build.py` keeps these forms out of
+  `lexicon.json`, so they never turn up in Vocab: as ordinary page prose
+  they had been filed there as compounds, English and all being the gloss.
+  A term whose parse runs through a name (**Torakan**, read as Tora + kan)
+  gets its English but no parse, and a jargon popover has no *Full entry*.
+  A multi-word `pk.po` translation gives its words no English on their own;
+  list the word separately, as `Dragon` = **Torakan** is.
+- **`"draft": true` in an episode's `pk/info.json`** keeps it off the site
+  while it is being translated, so its English does not fail the build.
+  `gen_comics.py` still fetches and renders its art. Delete the key to
+  publish.
 
 ## Twemoji
 

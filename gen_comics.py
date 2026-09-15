@@ -37,7 +37,7 @@ import shutil
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 
 import pikotika
@@ -68,6 +68,10 @@ SPACER_HEIGHT = 100
 
 SVG = "{http://www.w3.org/2000/svg}"
 XLINK_HREF = "{http://www.w3.org/1999/xlink}href"
+# A box labeled `lettering` in Inkscape (Object Properties > Label) is plain
+# text as a whole -- for a list of real people's names, like a credits page's
+# patrons, which would otherwise be a hundred rows in lettering.tsv.
+INKSCAPE_LABEL = "{http://www.inkscape.org/namespaces/inkscape}label"
 IDENTITY = (1.0, 0.0, 0.0, 1.0, 0.0, 0.0)
 
 
@@ -76,6 +80,14 @@ IDENTITY = (1.0, 0.0, 0.0, 1.0, 0.0, 0.0)
 def episode_dirs() -> list:
     """Every episode with a translation, in order."""
     return [d for d in sorted(SOURCE.glob("ep[0-9][0-9]_*")) if (d / "pk").is_dir()]
+
+
+def is_draft(ep_dir: Path) -> bool:
+    """An episode mid-translation: `"draft": true` in its pk/info.json keeps
+    it off the site, so its untranslated English does not fail the build,
+    while gen_comics still fetches and renders its artwork."""
+    info = json.loads((ep_dir / "pk" / "info.json").read_text(encoding="utf-8"))
+    return bool(info.get("draft"))
 
 
 def slug_of(ep_dir: Path) -> str:
@@ -203,9 +215,16 @@ def paragraphs(flow_root) -> list:
     base = parse_style(flow_root.get("style"))
     out = []
     for para in flow_root.iter(SVG + "flowPara"):
+        text = "".join(para.itertext())
+        # Inkscape gives a flowPara with no text at all no line: a blank line
+        # has to hold a space or a no-break space, as the upstream files'
+        # do.  Counted as a line, an empty one Inkscape left behind after
+        # an edit pushed the rest of its box down (E03P01's `komparyan`).
+        if text == "":
+            continue
         style = dict(base)
         style.update(parse_style(para.get("style")))
-        out.append((style, "".join(para.itertext())))
+        out.append((style, text))
     return out
 
 
@@ -296,15 +315,102 @@ def load_lettering():
     return words, boxes
 
 
-EDGE_PUNCT = "".join(pikotika.PUNCT) + "\"“”'()"
+def load_names() -> frozenset:
+    """The capitalized words of every translation in pk.po: the characters and
+    places, which CLAUDE.md keeps out of names.tsv.  They render as plain text,
+    with no chip, like the sound effects.  Only capitalized words, since
+    `Sitas Komona` also holds the ordinary word **sitas**."""
+    names = set()
+    text = (SOURCE / "pk.po").read_text(encoding="utf-8")
+    for value in re.findall(r'^msgstr "(.*)"$', text, re.M):
+        for word in value.split():
+            word = word.strip(EDGE_PUNCT)
+            if word[:1].isupper():
+                names.add(word)
+    return frozenset(names)
 
 
-def pk_html(text, t, lettering_words, where, problems, attrs="") -> str:
+# `*` is a footnote mark (`60 Ko.*`), punctuation here though not to pikotika.
+EDGE_PUNCT = "".join(pikotika.PUNCT) + "\"“”'()*"
+
+
+def load_jargon(t) -> dict:
+    """The comic's jargon: pk.po terms the roots can spell but the dictionary
+    does not record, keyed by lower-case form, as (headword, English, the
+    pk.po spelling).  The spelling is kept because case can decide the parse:
+    **Torakan** reads as the name Tora + kan, and lower-case *torakan* does
+    not parse at all.
+
+    **akuventorotun** parses as *water-air-round*, so it chips -- but the
+    lexicon would give it nothing better than that gloss for English, and as
+    page prose it would be filed in Vocab as a compound.  So these ship in
+    each episode page's own word list instead (page_words), which the popover
+    reads first, and build.py keeps them out of lexicon.json.  A term the
+    dictionary already records (**Wosapor**, *hot-taste* 'spicy') keeps its
+    standing entry.  Only single-word translations count: a multi-word one
+    (`Torakan ratenpeste`) needs its words given entries of their own, as
+    `Dragon` is."""
+    recorded = {form.lower() for form in t.form2gloss}
+    for gloss in t.compound_by_gloss:
+        words = pikotika.parse_gloss(gloss, t)
+        if words:
+            recorded.add(pikotika.render_latin(words, t).lower())
+    text = (SOURCE / "pk.po").read_text(encoding="utf-8")
+    out = {}
+    for english, pk in re.findall(r'^msgid "(.+)"\nmsgstr "(.+)"$', text, re.M):
+        form = pk.strip(EDGE_PUNCT)
+        if len(pk.split()) != 1 or form.lower() in recorded:
+            continue
+        words = pikotika.parse_latin(form, t)
+        if words is None or len(words) != 1:
+            continue                  # renders plain, like Savuran: no chip
+        if len(words[0]) == 1 and pikotika.is_name(words[0][0]):
+            continue                  # an ordinary name from names.tsv
+        headword = form if english[:1].isupper() else form.lower()
+        out[form.lower()] = (headword, english, form)
+    return out
+
+
+def jargon_forms(t) -> set:
+    return set(load_jargon(t))
+
+
+def page_words(html, t, jargon) -> dict:
+    """Popover entries for the jargon a page uses, keyed as its chips are.
+    Shipped in the page as `<script id="page-words">`, read by site.js."""
+    import gen_lexicon
+
+    used = set()
+    for span in re.findall(r'<span class="pk"[^>]*>(.*?)</span>', html, re.S):
+        for word in re.sub(r"<[^>]+>", " ", span).split():
+            word = unescape(word).strip(EDGE_PUNCT).lower()
+            if word in jargon:
+                used.add(word)
+    out = {}
+    for form in sorted(used):
+        headword, english, spelling = jargon[form]
+        words = pikotika.parse_latin(spelling, t)
+        entry = None
+        # A name hiding in the parse -- **Torakan** reads as Tora + kan,
+        # *Dora-can* -- is an accident of the parser, not a derivation, so
+        # that entry gets its English and no parse.
+        if not any(pikotika.is_name(part) for part in words[0]):
+            entry = gen_lexicon.entry_for(pikotika.render_gloss(words, t), t, "comic")
+        entry = entry or {}
+        entry.update(form=headword, kind="comic", en=english)
+        out[form] = entry
+    return out
+
+
+def pk_html(text, t, lettering_words, where, problems, attrs="",
+            names=frozenset()) -> str:
     """One line of lettering as HTML: Pikotika in .pk spans, lettering bare.
 
     Words are judged one at a time rather than the line as a whole, so that a
     balloon reading `...mmm tis ri pos` still chips the three words it can.
-    A run of Pikotika stays one span, which is what check_forms re-parses."""
+    A run of Pikotika stays one span, which is what check_forms re-parses.
+    A name is tried only after the roots, as in pikotika.name_wins: one the
+    roots can spell (a compound coined as a name) chips as that compound."""
     items = []
     for piece in re.split(r"(\s+)", text):
         if not piece:
@@ -317,6 +423,8 @@ def pk_html(text, t, lettering_words, where, problems, attrs="") -> str:
         elif (pikotika.is_filler(core, piece[piece.index(core) + len(core):])
               or pikotika.parse_latin(core, t) is not None):
             items.append(("pk", piece))
+        elif core in names:
+            items.append(("plain", piece))
         else:
             problems.append(f"{where}: {core!r} in {text!r}")
             items.append(("plain", piece))
@@ -349,14 +457,20 @@ def pk_html(text, t, lettering_words, where, problems, attrs="") -> str:
 
 # --- lines that overrun their box -------------------------------------------------
 
-# The faces the site ships, which are the only ones a line can be measured in.
-FACE_FILES = {"Lavi": ROOT / "web" / "fonts" / "lavi-regular.woff2"}
+# The faces a line can be measured in: the ones the site ships, plus Arial,
+# which a few credits lines use and which the site leaves to the reader's own
+# system.  Arial is measured from the copy macOS installs, where there is one;
+# elsewhere its boxes simply go unmeasured.
+FACE_FILES = {"Lavi": ROOT / "web" / "fonts" / "lavi-regular.woff2",
+              "Fondamento": ROOT / "web" / "fonts" / "fondamento-regular.woff2",
+              "Arial": Path("/System/Library/Fonts/Supplemental/Arial.ttf")}
 _advances = {}
 
 
 def advances(family):
-    """Advance width of each character in ems, or None for a face not shipped."""
-    if family not in FACE_FILES:
+    """Advance width of each character in ems, or None for a face we cannot
+    measure."""
+    if family not in FACE_FILES or not FACE_FILES[family].exists():
         return None
     if family not in _advances:
         from fontTools.ttLib import TTFont
@@ -367,30 +481,81 @@ def advances(family):
     return _advances[family]
 
 
-def overrun(style: dict, text: str, box_width: float) -> float:
-    """How far one line runs past its box, as a fraction of the box; 0 if it fits.
+def line_height(style: dict, size: float) -> float:
+    lh = style.get("line-height", "")
+    if lh.endswith("%"):
+        return float(lh[:-1]) / 100 * size
+    if lh.endswith("px") and length(lh) is not None:
+        return length(lh)
+    if length(lh) is not None:
+        return length(lh) * size
+    return 1.25 * size
+
+
+def wrap(paras, box_width: float):
+    """Each paragraph word-wrapped to the box's width, as (text, line height,
+    font size) per line, or None if it is set in a face the site does not ship.
 
     Inkscape wraps a flowed line that is too long, and then *drops* whatever
-    wrapped past the bottom of the box -- so in Inkscape the last word simply
-    vanishes, while the browser shows it, wrapped onto the balloon below.
-    Estimated from advance widths without kerning, which is close enough to
-    catch a line that is a few percent over, as the one that prompted this was."""
-    widths = advances(style.get("font-family", "").strip("'\""))
-    size = length(style.get("font-size"))
-    if widths is None or not size or not text.strip():
-        return 0.0
-    spacing = length(style.get("letter-spacing")) or 0.0
-    word = length(style.get("word-spacing")) or 0.0
-    total = sum(widths.get(ord(ch), 0.5) * size + spacing
-                + (word if ch == " " else 0.0) for ch in text.strip())
-    return max(0.0, total / box_width - 1)
+    wrapped past the bottom of the box -- so in Inkscape the last words simply
+    vanish, while the browser shows them, spilling out of the balloon.  A line
+    that wraps but still fits is no problem in either.  Estimated from advance
+    widths without kerning, which is close enough to catch a box that is a few
+    percent short, as the one that prompted this was.
+
+    The last line counts one em rather than a full line height: Inkscape
+    shows episode 2's one-letter sound effects in boxes 1.14 em tall, where
+    a 1.25 line height would say they could not fit.  Trailing empty
+    paragraphs are ignored, since a hidden empty line loses nothing."""
+    paras = list(paras)
+    while paras and not paras[-1][1].strip():
+        paras.pop()
+    out = []
+    for style, text in paras:
+        widths = advances(style.get("font-family", "").strip("'\""))
+        size = length(style.get("font-size"))
+        if widths is None or not size:
+            return None
+        spacing = length(style.get("letter-spacing")) or 0.0
+        word_gap = length(style.get("word-spacing")) or 0.0
+
+        def measure(s):
+            return sum(widths.get(ord(ch), 0.5) * size + spacing for ch in s)
+
+        space = measure(" ") + word_gap
+        lines, run = [[]], 0.0
+        for word in text.split():
+            w = measure(word)
+            if run and run + space + w > box_width:
+                lines.append([word])
+                run = w
+            else:
+                lines[-1].append(word)
+                run += (space if run else 0.0) + w
+        lh = line_height(style, size)
+        out += [(" ".join(line), lh, size) for line in lines]
+    return out
+
+
+def hidden_lines(paras, box_width: float, box_height: float):
+    """The wrapped lines that fall past the bottom of the box -- what Inkscape
+    hides -- or None if the face cannot be measured."""
+    lines = wrap(paras, box_width)
+    if lines is None:
+        return None
+    used = 0.0
+    for i, (_text, lh, size) in enumerate(lines):
+        if used + size > box_height * 1.02:
+            return [text for text, _lh, _size in lines[i:]]
+        used += lh
+    return []
 
 
 # --- reading a page -------------------------------------------------------------
 
 def read_page(svg: Path, t, lettering, problems) -> dict:
     """A page's size and its lettering, as HTML boxes and as plain lines."""
-    words, boxes = lettering
+    words, boxes, names = lettering
     root = ET.parse(svg).getroot()
     _x, _y, width, height = page_box(root, svg)
     s = 100 / width
@@ -402,19 +567,20 @@ def read_page(svg: Path, t, lettering, problems) -> dict:
         if not whole:
             continue                  # Inkscape leaves empty flowRoots behind
         lines.append(whole)
+        plain = whole in boxes or flow_root.get(INKSCAPE_LABEL) == "lettering"
         spans = []
         for style, text in paras:
-            inner = (escape(text) if whole in boxes
-                     else pk_html(text, t, words, where, problems))
+            inner = (escape(text) if plain
+                     else pk_html(text, t, words, where, problems, names=names))
             spans.append(f'<span class="ln" style="{escape(line_css(style, s))}">'
                          f'{inner or "&nbsp;"}</span>')
         region = flow_region(flow_root, where)
-        for style, text in paras:
-            over = overrun(style, text, region[3])
-            if over:
-                print(f"  warning: {where}: {text.strip()!r} is {over:.1%} wider "
-                      f"than its box, so it wraps on the site -- and in Inkscape "
-                      f"its last words are hidden.  Widen the box in Inkscape.")
+        hidden = hidden_lines(paras, region[3], region[4])
+        if hidden:
+            print(f"  warning: {where}: {whole[:40]!r}... runs past the bottom "
+                  f"of its box, so Inkscape hides {' / '.join(hidden)!r} and the "
+                  f"site spills it out of the balloon.  Resize the box in "
+                  f"Inkscape; `gen_comics.py --check` lists every box.")
         # One line span per paragraph, newline-separated: check_forms joins a
         # span's text without a separator, and the newline is what keeps the
         # last word of one line off the first word of the next.
@@ -422,6 +588,55 @@ def read_page(svg: Path, t, lettering, problems) -> dict:
                           + "\n".join(spans) + "</div>")
     return {"svg": svg, "name": svg.stem, "width": width, "height": height,
             "boxes": html_boxes, "lines": lines}
+
+
+def check_sheet(ep_dir: Path) -> str:
+    """Markdown: every text box of an episode, page by page in reading order,
+    with its full text and whether all of it fits.  For going over the pages
+    in Inkscape, where a line wrapped past the bottom of its box is simply
+    not drawn, and so is easy to miss."""
+    out, short = [], 0
+    for svg in page_svgs(ep_dir):
+        root = ET.parse(svg).getroot()
+        _x, _y, width, height = page_box(root, svg)
+        rows = []
+        for ctm, flow_root in flow_roots(root):
+            paras = paragraphs(flow_root)
+            text = " / ".join(t.strip() for _s, t in paras if t.strip())
+            if not text:
+                continue
+            m, x, y, w, h = flow_region(flow_root, svg)
+            a, b, c, d, e, f = multiply(ctm, m)
+            left, top = a * x + c * y + e, b * x + d * y + f
+            if flow_root.get(INKSCAPE_LABEL) == "lettering":
+                text = f"*(lettering)* {text[:60]}…"
+            hidden = hidden_lines(paras, w, h)
+            if hidden is None:
+                fit = "? (font not measured)"
+            elif hidden:
+                fit = "**✗ hides:** " + " / ".join(hidden)
+                short += 1
+            else:
+                fit = "✓"
+            rows.append((top, left, text, fit))
+        out += ["", f"## {svg.stem}", ""]
+        if not rows:
+            out.append("No text.")
+            continue
+        out += ["| # | where | text | all visible? |", "|---|---|---|---|"]
+        # Reading order: rows first, then left to right.  Balloons side by side
+        # rarely share an exact top, so tops are banded to 5% of the page.
+        rows.sort(key=lambda r: (round(r[0] / height * 20), r[1]))
+        for i, (top, left, text, fit) in enumerate(rows, 1):
+            cell = text.replace("|", "\\|")
+            out.append(f"| {i} | {top / height:.0%} down, {left / width:.0%} "
+                       f"across | {cell} | {fit} |")
+    head = [f"# {ep_dir.name}: text boxes", "",
+            f"{short} box{'es' if short != 1 else ''} with hidden text. "
+            "Positions are each box's top-left corner as a share of the page; "
+            "the fit is estimated from the font's metrics, so trust Inkscape "
+            "where they disagree."]
+    return "\n".join(head + out)
 
 
 def shown(page: dict) -> bool:
@@ -545,9 +760,10 @@ def read_episode(ep_dir: Path, t, lettering, problems) -> dict:
         "dir": ep_dir, "slug": slug, "number": int(slug[2:]),
         "url": EPISODE_URL.format(slug=slug), "english": english_title(ep_dir),
         "title": title or f"Episode {int(slug[2:])}",
-        "title_html": pk_html(title, t, lettering[0], where, problems),
+        "title_html": pk_html(title, t, lettering[0], where, problems,
+                              names=lettering[2]),
         "title_link_html": pk_html(title, t, lettering[0], where, [],
-                                   attrs=' data-chip="off"'),
+                                   attrs=' data-chip="off"', names=lettering[2]),
         "pages": [p for p in pages if shown(p)],
         "info": info, "translation": translation,
     }
@@ -638,24 +854,33 @@ def pages(t) -> list:
     Kept out of build.authored_pages on purpose: a page there has its
     sentences queued for audio, and a comic's lines are not course material."""
     problems = []
-    lettering = load_lettering()
-    episodes = [read_episode(d, t, lettering, problems) for d in episode_dirs()]
+    lettering = load_lettering() + (load_names(),)
+    episodes = [read_episode(d, t, lettering, problems)
+                for d in episode_dirs() if not is_draft(d)]
     out = []
     index = INDEX_FRAGMENT.read_text(encoding="utf-8")
     out.append((INDEX_URL, index.replace(INDEX_MARK, index_list(episodes)),
                 "Comics — Pikotika",
                 "Pepper&Carrot, David Revoy's open-source webcomic, translated "
                 "into Pikotika."))
+    jargon = load_jargon(t)
     for i, ep in enumerate(episodes):
         prev = episodes[i - 1] if i > 0 else None
         nxt = episodes[i + 1] if i + 1 < len(episodes) else None
-        out.append((ep["url"], episode_fragment(ep, prev, nxt, problems),
+        fragment = episode_fragment(ep, prev, nxt, problems)
+        words = page_words(fragment, t, jargon)
+        if words:
+            data = json.dumps(words, ensure_ascii=False).replace("</", "<\\/")
+            fragment += (f'\n<script type="application/json" id="page-words">'
+                         f'{data}</script>')
+        out.append((ep["url"], fragment,
                     f"{ep['title']} — Pepper&Carrot in Pikotika",
                     f"Pepper&Carrot episode {ep['number']}, {ep['english']}, "
                     f"translated into Pikotika. Tap any word for its meaning."))
     if problems:
         raise SystemExit(
-            "comic lettering that is neither Pikotika nor listed lettering:\n  "
+            "comic lettering that is not Pikotika, a name in pk.po, or listed "
+            "lettering:\n  "
             + "\n  ".join(problems)
             + f"\n(fix the SVG, or add the token to "
               f"{LETTERING.relative_to(ROOT)} if it is lettering)")
@@ -667,4 +892,15 @@ if __name__ == "__main__":
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--force", action="store_true",
                     help="re-render every page, not just the stale ones")
-    render_all(ap.parse_args().force)
+    ap.add_argument("--check", metavar="EPISODE",
+                    help="instead of rendering, print a table of every text box "
+                         "in EPISODE (ep03, or its folder name) and whether its "
+                         "text fits")
+    args = ap.parse_args()
+    if args.check:
+        found = [d for d in episode_dirs() if args.check in (slug_of(d), d.name)]
+        if not found:
+            raise SystemExit(f"no translated episode {args.check!r}")
+        print(check_sheet(found[0]))
+    else:
+        render_all(args.force)

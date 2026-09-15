@@ -492,6 +492,10 @@ ul > li + li { margin-top: .4em; }
 .wordpop-form { font-size: 1.1rem; }
 .wordpop-han { font-family: var(--font-han); color: var(--text-muted); }
 .wordpop-en { margin: .25rem 0 0; }
+/* Meaning, like the gloss above it, so it keeps the text color; a size down,
+   so the two glosses stay the headline. */
+.wordpop-also { margin: .15rem 0 0; font-size: .88rem; }
+.wordpop-also-label { color: var(--text-muted); font-style: italic; }
 .wordpop-parse { margin: .3rem 0 0; font-size: .9rem; }
 .wordpop-partgloss { font-size: .95em; }
 

@@ -1691,7 +1691,15 @@ def build() -> None:
         if url != gen_comics.INDEX_URL:
             MAIN_CLASS[url] = "wide"
     forms = check_forms(tables, [(url, content)
-                                 for url, content, _t, _d in authored + comics])
+                                 for url, content, _t, _d in authored])
+    # A comic's jargon -- pk.po terms the dictionary does not record, like
+    # akuventorotun 'pearls of mist' -- is checked like any word but kept out
+    # of lexicon.json, which Vocab lists in full; each episode page carries
+    # its own entries instead.  See gen_comics.load_jargon.
+    jargon = gen_comics.jargon_forms(tables)
+    forms += [form for form in check_forms(tables, [(url, content)
+                                                   for url, content, _t, _d in comics])
+              if form.lower() not in jargon]
     lexicon, unresolved = gen_lexicon.build(tables, forms)
     if unresolved:
         raise SystemExit(f"cannot build a lexicon entry for: {unresolved}")

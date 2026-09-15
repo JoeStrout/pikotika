@@ -127,6 +127,13 @@ def entry_for(gloss, t, kind, usage=None):
         # see pikotika.root_covers.
         if row:
             entry["covers"] = P.root_covers(row)
+            # The popover shows the glosses already, one line up, so what it
+            # wants is only the senses they do not name -- the bare column,
+            # which is right exactly where the glosses are on screen beside it.
+            # **pan** reads *every; all*, and without this the reader never
+            # learns it also means 'whole' (decided 2026-09-15).
+            if (row.get("covers") or "").strip():
+                entry["also"] = row["covers"].strip()
             for key, out in (("strokes", "strokes"), ("gloss2", "gloss2")):
                 if row.get(key):
                     entry[out] = row[key]
