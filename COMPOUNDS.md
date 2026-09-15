@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-869 terms
+871 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -436,6 +436,7 @@
 | market day | buy-day | komparyan | 買日 |
 | mat | earth-cloth | teraropa | 土衣 |
 | match | play-fight | yupatar | 玩争 |
+| mayor | city-head | sitastesta | 市头 |
 | meal (a sitting) | food-time | komitempo | 食时 |
 | mealtime | food-time | komitempo | 食时 |
 | measure the weight of | weight-amount | pesamesur | 重寸 |
@@ -462,6 +463,7 @@
 | narrator | say-thing-person | tikakosaomo | 言物人 |
 | network | electric-join | vortoyunta | 電合 |
 | never | no-time | nemtempo | 无时 |
+| newspaper | new-page | novakarta | 初片 |
 | next | after-sequence | tarorten | 后序 |
 | night | no-sun | nemyan | 无日 |
 | ninth (in a series) | nine-sequence | noksorten | 9序 |

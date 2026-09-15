@@ -1789,6 +1789,14 @@ line is a build.
   gets its English but no parse, and a jargon popover has no *Full entry*.
   A multi-word `pk.po` translation gives its words no English on their own;
   list the word separately, as `Dragon` = **Torakan** is.
+- **A `# name` comment in `pk.po` marks a plain name** (decided 2026-09-15):
+  a character's name the roots happen to spell, like **Kumin** 'Cumin',
+  which parses as *kum* + *in*. It renders plain, like **Savuran**, with no
+  chip and no popover. No rule separates these from real coinages --
+  **Nasyontesta** 'King' is *country-head* on purpose, in the same
+  CHARACTERS section of the catalog -- so the translator marks them. A plain
+  `#` comment is the translator's and survives catalog updates; `#.` lines
+  are the catalog's and get overwritten.
 - **`"draft": true` in an episode's `pk/info.json`** keeps it off the site
   while it is being translated, so its English does not fail the build.
   `gen_comics.py` still fetches and renders its art. Delete the key to

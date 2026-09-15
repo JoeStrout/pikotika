@@ -334,6 +334,44 @@ def load_names() -> frozenset:
 EDGE_PUNCT = "".join(pikotika.PUNCT) + "\"“”'()*"
 
 
+def po_entries() -> list:
+    """(comments, English, Pikotika) for each pk.po entry, `comments` being
+    the `#` lines just above it."""
+    entries, comments = [], []
+    lines = (SOURCE / "pk.po").read_text(encoding="utf-8").splitlines()
+    for i, line in enumerate(lines):
+        if line.startswith("#"):
+            comments.append(line)
+        elif line.startswith("msgid "):
+            english = re.fullmatch(r'msgid "(.*)"', line)
+            pk = (re.fullmatch(r'msgstr "(.*)"', lines[i + 1])
+                  if i + 1 < len(lines) else None)
+            if english and pk and english.group(1):
+                entries.append((comments, english.group(1), pk.group(1)))
+            comments = []
+    return entries
+
+
+def is_plain_name(comments) -> bool:
+    """Marked `# name` by the translator.  A plain `#` comment is the
+    translator's own and survives catalog updates; `#.` lines do not."""
+    return any(re.match(r"# name\b", c) for c in comments)
+
+
+def plain_names() -> frozenset:
+    """The words of pk.po entries marked `# name`: plain names the roots
+    happen to spell -- **Kumin** 'Cumin' reads as *kum* + *in*, 'and in'.
+    No rule can tell those from real coinages (**Nasyontesta** 'King' is
+    *country-head* on purpose, and sits in the same CHARACTERS section), so
+    the translator says which.  They are checked before the roots, as
+    lettering, and render plain like any other name: no chip, no popover."""
+    out = set()
+    for comments, _english, pk in po_entries():
+        if is_plain_name(comments):
+            out.update(w.strip(EDGE_PUNCT) for w in pk.split() if w[:1].isupper())
+    return frozenset(out)
+
+
 def load_jargon(t) -> dict:
     """The comic's jargon: pk.po terms the roots can spell but the dictionary
     does not record, keyed by lower-case form, as (headword, English, the
@@ -355,12 +393,13 @@ def load_jargon(t) -> dict:
         words = pikotika.parse_gloss(gloss, t)
         if words:
             recorded.add(pikotika.render_latin(words, t).lower())
-    text = (SOURCE / "pk.po").read_text(encoding="utf-8")
     out = {}
-    for english, pk in re.findall(r'^msgid "(.+)"\nmsgstr "(.+)"$', text, re.M):
+    for comments, english, pk in po_entries():
         form = pk.strip(EDGE_PUNCT)
         if len(pk.split()) != 1 or form.lower() in recorded:
             continue
+        if is_plain_name(comments):
+            continue                  # never chips; see plain_names
         words = pikotika.parse_latin(form, t)
         if words is None or len(words) != 1:
             continue                  # renders plain, like Savuran: no chip
@@ -854,7 +893,10 @@ def pages(t) -> list:
     Kept out of build.authored_pages on purpose: a page there has its
     sentences queued for audio, and a comic's lines are not course material."""
     problems = []
-    lettering = load_lettering() + (load_names(),)
+    words, boxes = load_lettering()
+    # A name marked `# name` in pk.po counts as lettering outright -- checked
+    # before the roots get their try, so an accidental parse never chips.
+    lettering = (words | plain_names(), boxes, load_names())
     episodes = [read_episode(d, t, lettering, problems)
                 for d in episode_dirs() if not is_draft(d)]
     out = []

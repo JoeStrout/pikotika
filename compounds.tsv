@@ -75,6 +75,7 @@ ballot	choose-page	People and society;Made things	4
 vote; cast a ballot	choose-say	Verbs;People and society	4	
 option; alternative; choice	choose-thing	General heads;Verbs	4	
 outskirts	city-edge	Places, arts, appearance;Space and direction	4	
+mayor	city-head	People and society;Places, arts, appearance	4	
 town square; plaza; city center	city-middle	Places, arts, appearance;Space and direction	4	
 bath; bathtub	clean-box	Made things	5	
 towel; washcloth	clean-cloth	Made things	5	
@@ -275,6 +276,7 @@ business card	name-card	Made things	3
 list; roster; register	name-sequence	General heads	3	
 on that note; relatedly; speaking of which	near-about	Grammar and logic	2	
 hello (someone new)	new-meet	People and society;Verbs	1	1
+newspaper	new-page	Made things	3	
 discover; find something new	new-see	Verbs	2	2
 ninth (in a series); 9th	nine-sequence	Quantity	3	
 peace	no-fight	People and society	4	

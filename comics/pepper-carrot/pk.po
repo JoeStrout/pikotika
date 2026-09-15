@@ -96,6 +96,7 @@ msgid "Monster"
 msgstr "Sorpepeste"
 
 #. (Episode 11) The bon-vivant or happy-go-lucky witch who is one of Pepper's three godmothers. (EP11, 14, 17, 19, 24, 29)
+# name -- a plain name; the roots only spell it by accident (kum + in)
 msgid "Cumin"
 msgstr "Kumin"
 
@@ -252,6 +253,11 @@ msgstr "Uteromen"
 msgid "the lands of the setting moons"
 msgstr "Tunmese tera"
 
+# The word on its own, so tunmese has an English meaning in the
+# comic's popovers: gen_comics reads single-word entries as the jargon.
+msgid "setting moons"
+msgstr "Tunmese"
+
 #. (Episode 16) The name of the planet and general setting of Pepper&Carrot.
 msgid "Hereva"
 msgstr "Ereva"
@@ -377,6 +383,11 @@ msgstr "Komona novakarta"
 #. (Episode 24) Name for the moonlit meeting of Chaosah for big decisions and exams.
 msgid "council of The Three Moons"
 msgstr "Tetsemese erikemen"
+
+# The word on its own, so tetsemese has an English meaning in the
+# comic's popovers: gen_comics reads single-word entries as the jargon.
+msgid "The Three Moons"
+msgstr "Tetsemese"
 
 #. (Episode 26) Name for a small sacred tree in the bottom of an abandoned castle, generating a continuous stream of water.
 msgid "Water-Tree"
