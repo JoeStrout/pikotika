@@ -1,0 +1,378 @@
+#. ~~~~~~ NOTICE: The primary purpose of this file is to help your translations to be consistent across episodes, and as a guide when multiple translators work on the same language. The secondary purpose is for generating transcripts. Comments starting by #. are coming from the _catalog.pot file, and will always be overwritten if you edit them. To write your own comments, please start them simply with # (no period) and they'll stay around. You can read more about PO reference files in the translation documentation repository.
+msgid ""
+msgstr ""
+"Translator: Joe Strout <https://framagit.org/JoeStrout>\n"
+"Language: pk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. ~~~~~~ TRANSCRIPT SPECIFICS: Title of the episode
+msgid "Title"
+msgstr "Nomen"
+
+#. Used for the sound effects ('SFX', onomatopoeia)
+msgid "Sound"
+msgstr "Oti"
+
+#. For anything written on a wall, a sign, a paper, etc.
+msgid "Writing"
+msgstr "Kita"
+
+#. For speech bubbles of the narrator
+msgid "Narrator"
+msgstr "Tikakosaomo"
+
+#. For notes that appear under panels. (Like what "Ko" means or "See Episode")
+msgid "Note"
+msgstr "Pikokita"
+
+#. For the credits at the end of each episode.
+msgid "Credits"
+msgstr "Vakeomen"
+
+#. ~~~~~~ CHARACTERS (Episode 1)
+msgid "Pepper"
+msgstr "Wosapor"
+
+#. (Episode 38) Pepper's secret identity.
+msgid "Peph'Ra"
+msgstr "Saporwo"
+
+#. How the 'Pepper' & 'Carrot' words are connected in the title.
+#. Used to name more than one person saying the same phrase. (EP9, 13, 22)
+msgid "&"
+msgstr "kum"
+
+msgid "Carrot"
+msgstr "Rusyoro"
+
+#. (Episode 3, Episode 37) A male vendor at the market.
+msgid "Vendor"
+msgstr "Komparomo"
+
+#. A red-haired witch wearing luxurious jewels.
+msgid "(Miss) Saffron"
+msgstr "Savuran"
+
+#. Saffron's pet, a white female cat.
+msgid "Truffel"
+msgstr "Turuver"
+
+#. (Episode 6) A witch with curly black hair who is a princess and later a queen.
+msgid "Coriander"
+msgstr "Koriantar"
+
+#. Coriander's pet, a male black cockerel.
+msgid "Mango"
+msgstr "Manko"
+
+#. A witch: blonde, with pink- or red-irised eyes, in a kimono.
+msgid "Shichimi"
+msgstr "Sitimi"
+
+#. Shichimi's pet, a male fox with multiple tails.
+msgid "Yuzu"
+msgstr "Yusu"
+
+#. Also known as Mayor Bramble, he is a man with a 'van Dyke' beard, a brown suit and a hat; he presents the potion and magic contests. (EP6, 21, 22)
+msgid "Mayor of Komona"
+msgstr "Komona sitastesta"
+
+#. Generic term for audiences. (Group of people in EP6, 21, 22)
+msgid "Audience"
+msgstr "Vitemen"
+
+#. Generic term for any bird. (EP6, 14, 16, 23) (Includes DragonDuck, rooster, DragonChick, pidgeon)
+msgid "Bird"
+msgstr "Avis"
+
+#. (Episode 7) Generic term for any fairy.
+msgid "Fairies"
+msgstr "Pikosorpeomo"
+
+#. (Episode 8, 13, 17, 29, 38) Generic term for any monster.
+msgid "Monster"
+msgstr "Sorpepeste"
+
+#. (Episode 11) The bon-vivant or happy-go-lucky witch who is one of Pepper's three godmothers. (EP11, 14, 17, 19, 24, 29)
+msgid "Cumin"
+msgstr "Kumin"
+
+#. The tall, thin, and behaviourally-rigid witch who is one of Pepper's three godmothers.
+msgid "Cayenne"
+msgstr "Kaien"
+
+#. The ancient, small, and wise leader witch who is one of Pepper's three godmothers.
+msgid "Thyme"
+msgstr "Taim"
+
+#. Name of the young blond haired prince (as-yet-uncrowned king) of Acren.
+msgid "(Prince) Acren"
+msgstr "Akuren"
+
+#. Generic term used by Pepper to refer to the three witches who raised her. Not used in transcripts.
+#. Some languages have decided to use this as a general term and let Pepper use a different (more personal) form.
+msgid "godmothers"
+msgstr "Sorpepari"
+
+#. (Episode 18) Master and teacher of Hippiah, an elf with blond curly hair.
+msgid "Basilic"
+msgstr "Pasiriko"
+
+#. A student witch of Hippiah, with long dark hair.
+msgid "Oregano"
+msgstr "Orekano"
+
+#. A student witch of Hippiah, with short blond hair and freckles.
+msgid "Cardamom"
+msgstr "Kartamam"
+
+#. A student witch of Hippiah and also an elf, with red hair.
+msgid "Cinnamon"
+msgstr "Sinaman"
+
+#. The main recurrent witch of Hippiah, a human with raccoon ears and a tail.
+msgid "Camomile"
+msgstr "Kamomir"
+
+#. (Episode 21) A witch of Aquah, living in water, with a long white hair crest.
+msgid "Spirulina"
+msgstr "Supirurina"
+
+#. Spirulina's pet, a male _Betta splendens_ fish.
+msgid "Durian"
+msgstr "Turian"
+
+#. (Episode 22) One of the jury members, he wears a white beard, a monocle, and a wide-brimmed hat. His name references Frieza from Dragon Ball.
+msgid "Lord Azeirf"
+msgstr "Asiriva"
+
+#. One of the jury members, she is a queen. Her name and hairstyle reference Leia Organa from Star Wars. (EP21 - writing only)
+msgid "Queen Aiel"
+msgstr "Aier"
+
+#. (Episode 23) The big and muscular golden walrus genie.
+msgid "Genie of Success"
+msgstr "Surtiven Yini"
+
+#. (Episode 27) The royal tailor of Coriander.
+msgid "Tailor"
+msgstr "Ropavakeomo"
+
+#. The robotic invention of Coriander. (EP27)
+msgid "Psychologist-Bot"
+msgstr "Pensasanauter"
+
+#. (Episode 28) Generic term for any/all of the journalists asking questions at the coronation party.
+msgid "Journalist"
+msgstr "Novakitaomo"
+
+#. (Episode 32) A bearded king wearing golden armour. (EP32, 33, 36)
+msgid "King"
+msgstr "Nasyontesta"
+
+#. The officer of the bearded king, with a long blond mustache. (EP32, 36)
+msgid "Officer"
+msgstr "Patartesta"
+
+#. Generic label used for all sounds produced by the armies. (EP32, 33, 36)
+msgid "Army"
+msgstr "Patarmen"
+
+#. (Episode 33, 36) The name of the king with a hunting horn, leading the opposing ('dark') army
+msgid "Enemy"
+msgstr "Nonami"
+
+#. (Episode 34) A witch and knight of Ah, an elf from a desert. She is also the teacher of Shichimi.
+msgid "Hibiscus"
+msgstr "Ipisukas"
+
+#. The supreme leader witch of Ah, with green hair.
+msgid "Wasabi"
+msgstr "Wasapi"
+
+#. (Episode 35) A witch of Ah who pilots a dragon, with a spiky haircut and aviator goggles. She is Shichimi's girlfriend.
+msgid "Torreya"
+msgstr "Toreya"
+
+#. Torreya's pet, a white dragon.
+msgid "Arra"
+msgstr "Ara"
+
+#. (Episode 36) A rat appearing in the prison.
+msgid "Rat"
+msgstr "Rata"
+
+#. Generic terms for guards. (EP36)
+msgid "Guard"
+msgstr "Rekeomo"
+
+#. (Episode 37) The giant Phoenix
+msgid "Phoenix"
+msgstr "Viniks"
+
+#. (Episode 38) The green haired archer (Group of adventurers), Like "Vigne"(fr) or Vine(en), the plant related to her green hair.
+msgid "Vinya"
+msgstr "Vinya"
+
+#. (Episode 38) The halfing white wolf (Group of adventurers), a bit neighbor of "fright", it also mean in [en] a state of disorder or disrepair.
+msgid "Fritz"
+msgstr "Vurits"
+
+#. (Episode 38) The warrior/tank (Group of adventurers), contains or sound alike "Basic".
+msgid "Brasic"
+msgstr "Purasiko"
+
+#. (Episode 39) The minotaur (Group of noisy adventurers in the tavern).
+msgid "Minotaur-Warrior"
+msgstr "Minotaur pataromo"
+
+#. (Episode 39) The hyena (Group of noisy adventurers in the tavern).
+msgid "Hyena-Warrior"
+msgstr "Aiina pataromo"
+
+#. (Episode 39) The reptile (Group of noisy adventurers in the tavern).
+msgid "Reptile-Warrior"
+msgstr "Reputair pataromo"
+
+#. ~~~~~~ PLACES: (Episode 3) The flying city with the giant tree of Komona at the centre.
+msgid "Komona City"
+msgstr "Sitas Komona"
+
+#. (Episode 6) The name of the village near Pepper's house.
+msgid "Squirrel's End"
+msgstr "Arpopeste Vin"
+
+#. A region of the world (Hereva) that federates many cities including that ruled by Coriander, Qualicity.
+msgid "Technologist's Union"
+msgstr "Uteromen"
+
+#. A large region of the world (Hereva) also known as land of Ah, Shichimi's land.
+msgid "the lands of the setting moons"
+msgstr "Tunmese tera"
+
+#. (Episode 16) The name of the planet and general setting of Pepper&Carrot.
+msgid "Hereva"
+msgstr "Ereva"
+
+#. (Episode 27) Coriander's city, a large industrial city standing alone in the middle of a desert on a rocky bluff.
+msgid "Qualicity"
+msgstr "Kuarisitas"
+
+#. (Episode 31) A hill or small mountain sacred to the school of Chaosah.
+msgid "Tenebrume"
+msgstr "Tenepurume"
+
+#. ~~~~~~ MAGIC: (Episode 8) The magic of chaos; that which Pepper now practices.
+msgid "Chaosah"
+msgstr "Kaosa"
+
+#. (Episode 18) The magic of plants and living creatures; that which Camomile practices and Pepper used to.
+msgid "Hippiah"
+msgstr "Ipia"
+
+#. (Episode 21) The magic of giving life to dead things including machines; that which Coriander practices.
+msgid "Zombiah"
+msgstr "Sompia"
+
+#. The magic of fire, melting metals and cooking; that which Saffron practices.
+msgid "Magmah"
+msgstr "Makuma"
+
+#. The magic of ghost and spirits; that which Shichimi practices.
+msgid "Ah"
+msgstr "Aa"
+
+#. The magic of water, rain, and oceans; that which Spirulina practices.
+msgid "Aquah"
+msgstr "Akua"
+
+#. (Episode 24) The substance or unit of magic, the name of which is derived from "reality".
+msgid "Rea"
+msgstr "Rea"
+
+#. ~~~~~~ TIME SYSTEM: Weekday 1 − A day of recreation or rest, similar to Sunday; associated with Chaosah, derived from the French word 'hazard'.
+msgid "Azarday"
+msgstr "Kaosayom"
+
+#. Weekday 2 - associated with Magmah, from babka, a sweet brioche cake.
+msgid "Babkaday"
+msgstr "Makumayom"
+
+#. Weekday 3 - associated with Aquah, from Ceto, a Greek mythological goddess and sea monster.
+msgid "Cetoday"
+msgstr "Akuayom"
+
+#. Weekday 4 - associated with Zombiah, from Donn, the lord of the dead in Irish myth.
+msgid "Donday"
+msgstr "Sompiayom"
+
+#. Weekday 5 - associated with Hippiah, egg = life.
+msgid "Eggday"
+msgstr "Ipiayom"
+
+#. Weekday 6 - associated with Ah, from the Japanese mythological god Fukurokuju, fuku meaning "happiness".
+msgid "Fookuday"
+msgstr "Aayom"
+
+#. Weekday 7 - associated with all of the schools of Hereva.
+msgid "Zero's Day"
+msgstr "Nemyom"
+
+#. Time - PM (afternoon)
+msgid "Pinkmoon"
+msgstr "Pomomese"
+
+#. Time - AM (morning)
+msgid "Airmoon"
+msgstr "Asurmese"
+
+#. ~~~~~~ MISC: (Episode 3) A vegetable at the market, a sort of squash shaped like a yellow star. Used as an ingredient in potions.
+msgid "pumpkinstar"
+msgstr "Ronyanpomo"
+
+#. The monetary unit of Komona city (and pun off of 'kilo-octets', a French version of kilobytes).
+msgid "Ko"
+msgstr "Ko"
+
+#. (EP3) A potion ingredient, obtained from clouds.
+msgid "pearls of mist"
+msgstr "Akuventorotun"
+
+#. (EP3) A large, docile creature: half-dragon, half-cow.
+msgid "DragonCow"
+msgstr "Torakan ratenpeste"
+
+#. (Episode 13) Name of the board game. (A reference to Dungeons & Dragons)
+msgid "Citadels & Phoenixes"
+msgstr "Sitater kum Viniks"
+
+#. (Episode 14) A potion ingredient, a plant.
+#. (Inspired by the dandelion flower in French; "dent-de-lion" literally means "lion's tooth".)
+msgid "Dragon's Tooth"
+msgstr "Torakan pukarapis"
+
+#. Name for a kind of dragon, blue and flying at high altitude.
+msgid "Air Dragon"
+msgstr "Vento torakan"
+
+#. Name for a kind of dragon, covered with mud from the swamps.
+msgid "Swamp Dragon"
+msgstr "Akutera torakan"
+
+#. Name for a kind of dragon with a body made of electricity.
+msgid "Lighting Dragon"
+msgstr "Vorto torakan"
+
+#. (Episode 21, 24) Name of the newspaper published in Komona city and distributed across Hereva.
+msgid "The Komonan"
+msgstr "Komona novakarta"
+
+#. (Episode 24) Name for the moonlit meeting of Chaosah for big decisions and exams.
+msgid "council of The Three Moons"
+msgstr "Tetsemese erikemen"
+
+#. (Episode 26) Name for a small sacred tree in the bottom of an abandoned castle, generating a continuous stream of water.
+msgid "Water-Tree"
+msgstr "Akuarpo"

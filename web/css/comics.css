@@ -1,0 +1,83 @@
+/* ---------------------------------------------------------------------------
+   Comics (/comics/) -- gen_comics.py
+
+   Each page is its painted image with the lettering laid over it as real text.
+   Every length in a .comic-text box is in cqw, set inline by the generator,
+   and .comic-page is the container they resolve against, so the lettering
+   scales with the page image and never reflows against it.  The colors come
+   from the SVG and ignore the theme: they are printed on the art.
+   --------------------------------------------------------------------------- */
+
+/* Lavi is Pepper&Carrot's lettering face, GPL 3 -- see fonts/NOTICE.txt. */
+@font-face {
+  font-family: "Lavi";
+  src: url("/fonts/lavi-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.comic-kicker { margin: 0 0 .3rem; font-size: .95rem; }
+.comic-title  { margin-bottom: .15em; }
+.comic-sub    { margin: 0 0 .3rem; color: var(--text-muted); font-size: 1.1rem; }
+.comic-hint   { margin: 0; color: var(--text-muted); font-size: .9rem; }
+
+.comic-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  font-size: .95rem;
+}
+.comic-nav-off { color: var(--text-muted); opacity: .6; }
+
+.comic-pages { display: grid; gap: 1rem; }
+
+.comic-page {
+  position: relative;
+  margin: 0;
+  container-type: inline-size;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.comic-page img { width: 100%; height: auto; }
+
+.comic-text {
+  position: absolute;
+  transform-origin: 0 0;
+  color: #000;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+.comic-text .ln { display: block; }
+
+/* Sitewide .pk is a touch heavier and larger than the prose around it; here
+   the lettering is the prose, and the SVG has already sized it. */
+.comic-text .pk { font-weight: inherit; font-size: inherit; letter-spacing: inherit; }
+.comic-text .pk .w {
+  text-underline-offset: .15em;
+  text-decoration-thickness: max(1px, .05em);
+}
+
+.comic-credits { max-width: var(--measure); margin-top: 3rem; font-size: .95rem; }
+.comic-credits h2 { margin-top: 0; }
+
+/* --- the episode list ---------------------------------------------------- */
+
+.comic-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+.comic-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .2rem .75rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.comic-list-num {
+  display: inline-block;
+  min-width: 1.4rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.comic-list-en { color: var(--text-muted); font-size: .95rem; }

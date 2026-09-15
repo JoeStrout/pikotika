@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.4.4 (dcaf3e7d, 2026-05-05)"
+   width="2481"
+   height="3503"
+   sodipodi:docname="E02P01.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1792"
+     inkscape:window-height="955"
+     id="namedview70"
+     showgrid="false"
+     inkscape:zoom="0.60835"
+     inkscape:cx="1264.8969"
+     inkscape:cy="3188.9537"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="false"
+     inkscape:window-x="0"
+     inkscape:window-y="178"
+     inkscape:window-maximized="0"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4398"
+       x="-0.0065884165"
+       width="1.0131768"
+       y="-0.04629163"
+       height="1.0925833">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.11702162"
+         id="feGaussianBlur4400" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4402"
+       x="-0.0043841045"
+       width="1.0087682"
+       y="-0.03435243"
+       height="1.0687049">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.082595546"
+         id="feGaussianBlur4404" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4406"
+       x="-0.0069578624"
+       width="1.0139157"
+       y="-0.052339674"
+       height="1.1046793">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.13376918"
+         id="feGaussianBlur4408" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1063-6-8-8"
+       id="linearGradient1057"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1175.5162,1405.4356)"
+       x1="1847.7394"
+       y1="416.16275"
+       x2="1874.1125"
+       y2="437.57367" />
+    <linearGradient
+       id="linearGradient1063-6-8-8"
+       inkscape:collect="always">
+      <stop
+         id="stop1059"
+         offset="0"
+         style="stop-color:#b18f85;stop-opacity:1" />
+      <stop
+         id="stop1061"
+         offset="1"
+         style="stop-color:#a27671;stop-opacity:1" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter864"
+       x="-0.066360308"
+       width="1.1327206"
+       y="-0.11534532"
+       height="1.2306906"
+       inkscape:label="PepperGrain"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Adds a small scale graininess">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.9155206"
+         id="feGaussianBlur866"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix868" />
+      <feTurbulence
+         id="feTurbulence870"
+         type="turbulence"
+         numOctaves="5"
+         baseFrequency="0.29599999999999999"
+         seed="77"
+         result="result0" />
+      <feColorMatrix
+         id="feColorMatrix872"
+         result="result4"
+         values="0"
+         type="saturate" />
+      <feComposite
+         in2="result4"
+         id="feComposite874"
+         in="fbSourceGraphic"
+         operator="arithmetic"
+         k1="-0.35"
+         k2="0.24"
+         k3="0.5"
+         result="result2"
+         baseFrequency="0.54700000000000004"
+         k4="-0.25182778"
+         numOctaves="3" />
+      <feBlend
+         in2="fbSourceGraphic"
+         id="feBlend876"
+         result="result5"
+         mode="overlay"
+         in="result2"
+         k4="-0.25" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite878"
+         in="result5"
+         operator="in"
+         result="result3" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1389"
+       x="-0.41419624"
+       width="1.8257008"
+       y="-0.052467879"
+       height="1.1066317">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0255595"
+         id="feGaussianBlur1391" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1389-3"
+       x="-1.1999196"
+       width="3.4012678"
+       y="-0.11139963"
+       height="1.221384">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0255595"
+         id="feGaussianBlur1391-6" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1389-3-5"
+       x="-1.1999196"
+       width="3.4012678"
+       y="-0.11139963"
+       height="1.221384">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0255595"
+         id="feGaussianBlur1391-6-3" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1389-3-5-6"
+       x="-1.1999196"
+       width="3.4012678"
+       y="-0.11139963"
+       height="1.221384">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0255595"
+         id="feGaussianBlur1391-6-3-2" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1389-3-5-6-1"
+       x="-1.1999196"
+       width="3.4012678"
+       y="-0.11139963"
+       height="1.221384">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0255595"
+         id="feGaussianBlur1391-6-3-2-2" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1523"
+       x="-0.043017282"
+       width="1.0860346"
+       y="-0.060292612"
+       height="1.1205852">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.082295226"
+         id="feGaussianBlur1525" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1063-6-8-8"
+       id="linearGradient1057-2"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1175.5162,1405.4356)"
+       x1="1833.3468"
+       y1="408.49603"
+       x2="1839.3806"
+       y2="419.64142" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter864-8"
+       x="-0.066360308"
+       width="1.1327206"
+       y="-0.11534532"
+       height="1.2306906"
+       inkscape:label="PepperGrain"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Adds a small scale graininess">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.9155206"
+         id="feGaussianBlur866-7"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix868-9" />
+      <feTurbulence
+         id="feTurbulence870-2"
+         type="turbulence"
+         numOctaves="5"
+         baseFrequency="0.218"
+         seed="77"
+         result="result0" />
+      <feColorMatrix
+         id="feColorMatrix872-0"
+         result="result4"
+         values="0"
+         type="saturate" />
+      <feComposite
+         in2="result4"
+         id="feComposite874-2"
+         in="fbSourceGraphic"
+         operator="arithmetic"
+         k1="-0.35"
+         k2="0.24"
+         k3="0.5"
+         result="result2"
+         baseFrequency="0.54700000000000004"
+         k4="-0.25182778"
+         numOctaves="3" />
+      <feBlend
+         in2="fbSourceGraphic"
+         id="feBlend876-3"
+         result="result5"
+         mode="overlay"
+         in="result2"
+         k4="-0.25" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite878-7"
+         in="result5"
+         operator="in"
+         result="result3" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="0.25606623"
+     inkscape:cx="1240.5"
+     inkscape:cy="1751.5"
+     inkscape:window-x="1920"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="artwork"
+     sodipodi:insensitive="true">
+    <image
+       xlink:href="../gfx_Pepper-and-Carrot_by-David-Revoy_E02P01.jpg"
+       y="0"
+       x="-1.6728083e-06"
+       id="image10"
+       height="3503"
+       width="2481" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="text"
+     style="display:inline;opacity:1">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3063-8"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:4.38198;stroke-opacity:1;marker:none;enable-background:accumulate"
+       transform="matrix(1.2520739,0,0,1.4888503,428.67723,2289.3202)"><flowRegion
+         id="flowRegion3065-8"
+         style="stroke-width:4.38198"><rect
+           id="rect3067-6"
+           width="153.02928"
+           height="91.750099"
+           x="92.642677"
+           y="425.30325"
+           style="color:#000000;font-size:72px;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:4.3819828;stroke-opacity:1;marker:none;enable-background:accumulate" /></flowRegion><flowPara
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.25;font-family:Lavi;-inkscape-font-specification:Lavi;text-align:center;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:3.45423;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+         id="flowPara3188">Kuru</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3063-8-9"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:5.32206;stroke-opacity:1;marker:none;enable-background:accumulate"
+       transform="matrix(0.98088993,0,0,1.2883768,485.17347,2473.8791)"><flowRegion
+         id="flowRegion3065-8-8"
+         style="stroke-width:5.32206"><rect
+           id="rect3067-6-6"
+           width="153.02928"
+           height="91.750099"
+           x="92.642677"
+           y="425.30325"
+           style="color:#000000;font-size:72px;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:5.32205772;stroke-opacity:1;marker:none;enable-background:accumulate" /></flowRegion><flowPara
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.25;font-family:Lavi;-inkscape-font-specification:Lavi;text-align:center;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:4.19527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+         id="flowPara3188-0">Kuru</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3063-8-9-4"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:6.78111;stroke-opacity:1;marker:none;enable-background:accumulate"
+       transform="matrix(0.79802617,-0.15255664,0.15501413,0.94581203,486.16776,2739.8997)"><flowRegion
+         id="flowRegion3065-8-8-2"
+         style="stroke-width:6.78111"><rect
+           id="rect3067-6-6-0"
+           width="153.02928"
+           height="91.750099"
+           x="92.642677"
+           y="425.30325"
+           style="color:#000000;font-size:72px;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:6.7811141;stroke-opacity:1;marker:none;enable-background:accumulate" /></flowRegion><flowPara
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.25;font-family:Lavi;-inkscape-font-specification:Lavi;text-align:center;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#e69d76;fill-opacity:1;fill-rule:nonzero;stroke:#e99f77;stroke-width:5.34542;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+         id="flowPara3188-0-7">Kuru</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4325"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;opacity:0.901;fill:#2d1a1c;fill-opacity:1;stroke:#000000;stroke-width:0.286735;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4398)"
+       transform="matrix(2.4962261,-0.35316532,0.53901745,3.8520573,-2487.5116,-4936.6516)"><flowRegion
+         id="flowRegion4327"><rect
+           id="rect4329"
+           width="131.93344"
+           height="14.722872"
+           x="841.07574"
+           y="1755.9342"
+           style="fill:#2d1a1c;fill-opacity:1;stroke:#000000;stroke-width:0.28673479;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+         id="flowPara4335"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Fondamento;-inkscape-font-specification:Fondamento;text-align:center;text-anchor:middle;fill:#2d1a1c;fill-opacity:1;stroke:#000000;stroke-width:0.286735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">TIMOTIKA</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4325-5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;opacity:0.878;fill:#221415;fill-opacity:1;stroke:#000000;stroke-width:0.317196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4406)"
+       transform="matrix(2.1401853,-0.20455526,0.28305419,2.9562988,-1680.4301,-3406.861)"><flowRegion
+         id="flowRegion4327-2"><rect
+           id="rect4329-1"
+           width="110.97581"
+           height="15.861448"
+           x="841.07574"
+           y="1755.9342"
+           style="fill:#221415;fill-opacity:1;stroke:#000000;stroke-width:0.3171955;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+         id="flowPara4335-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Fondamento;-inkscape-font-specification:Fondamento;text-align:center;text-anchor:middle;fill:#221415;fill-opacity:1;stroke:#000000;stroke-width:0.317196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">TENEROKO</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4325-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;opacity:0.92;fill:#241516;fill-opacity:1;stroke:#000000;stroke-width:0.233157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4402)"
+       transform="matrix(2.2422319,-0.33804697,0.4269933,4.1639697,-2055.0748,-5454.5498)"><flowRegion
+         id="flowRegion4327-0"><rect
+           id="rect4329-16"
+           width="131.93344"
+           height="14.722872"
+           x="841.07574"
+           y="1755.9342"
+           style="fill:#241516;fill-opacity:1;stroke:#000000;stroke-width:0.23315693;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+         id="flowPara4335-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Fondamento;-inkscape-font-specification:Fondamento;text-align:center;text-anchor:middle;fill:#241516;fill-opacity:1;stroke:#000000;stroke-width:0.233157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">SORPEOMO</flowPara></flowRoot>
+    <path
+       style="display:inline;opacity:1;vector-effect:none;fill:url(#linearGradient1057);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.85843062px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter864)"
+       d="m 647.59652,1812.7791 c 6.3735,0.7499 49.8283,3.5627 55.8269,2.063 0,0 15.99949,35.3258 -17.621,37.7934 l -30.7429,-0.6769 -14.6217,-6.7484 -2.48686,-19.8957 z"
+       id="path1004"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       transform="matrix(0.98775018,-0.21175583,0.15604354,1.340407,-272.8508,-489.82126)" />
+    <path
+       style="display:inline;opacity:0.86799999;vector-effect:none;fill:url(#linearGradient1057-2);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.36884165px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter864-8)"
+       d="m 647.59652,1812.7791 c 6.3735,0.7499 49.8283,3.5627 55.8269,2.063 0,0 15.99949,35.3258 -17.621,37.7934 l -30.7429,-0.6769 -14.6217,-6.7484 -2.48686,-19.8957 z"
+       id="path1004-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       transform="matrix(0.61136876,-0.13454985,0.09658327,0.85169586,81.018234,351.13818)" />
+    <path
+       style="opacity:0.48900003;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter1389)"
+       d="m 683.42172,1797.0129 c 1.61667,10.9855 3.54263,37.2533 3.54263,37.2533 l 3.59412,11.0456"
+       id="path875"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.48900003;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1389-3)"
+       d="m 675.02291,1799.4475 c 1.61667,10.9855 2.38106,22.6175 2.38106,22.6175"
+       id="path875-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.48900003;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1389-3-5)"
+       d="m 674.61299,1827.3886 c 1.61667,10.9855 2.38106,22.6175 2.38106,22.6175"
+       id="path875-7-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.48900003;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1389-3-5-6)"
+       d="m 656.49244,1799.5108 c 1.61667,10.9855 2.38106,22.6175 2.38106,22.6175"
+       id="path875-7-5-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.48900003;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1389-3-5-6-1)"
+       d="m 700.98393,1819.016 c 1.61667,10.9855 2.38106,22.6175 2.38106,22.6175"
+       id="path875-7-5-9-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4325-9-3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;opacity:0.647;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.671173;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1523)"
+       transform="matrix(3.6906788,-0.20226875,0.11864504,3.648253,-2885.7772,-4426.8303)"><flowRegion
+         id="flowRegion4327-0-6"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.671173;stroke-miterlimit:4;stroke-dasharray:none"><rect
+           id="rect4329-16-0"
+           width="131.93344"
+           height="14.722872"
+           x="841.07574"
+           y="1755.9342"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.67117327;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+         id="flowPara4335-0-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Fondamento;-inkscape-font-specification:Fondamento;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.671173;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">33</flowPara></flowRoot>
+  </g>
+</svg>

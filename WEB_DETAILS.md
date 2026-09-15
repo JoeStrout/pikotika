@@ -1714,6 +1714,52 @@ character.  So taking a pair is one retrieval, and a board is 96 of them.
   otherwise pay for it.  `main_class` became a `MAIN_CLASS` table at the same
   time, rather than a second special case beside the topic index.
 
+## Comics (`/comics/`)
+
+Pepper&Carrot, David Revoy's CC BY 4.0 webcomic, in Pikotika (added
+2026-09-15). The upstream project declined the translation, so it lives here.
+**Not a nav tab** (decided 2026-09-15): `/comics/` is linked from the
+"Also here" list on `/learn/`.
+
+| path | what |
+|---|---|
+| `comics/pepper-carrot/<episode>/pk/*.svg` | the translation: one Inkscape SVG per page, **the source of truth** |
+| `comics/pepper-carrot/<episode>/info.json` | upstream's episode metadata (date, credits), copied as-is |
+| `comics/pepper-carrot/lettering.tsv` | lettering that is not Pikotika: sound effects, URLs, interjections |
+| `comics/pepper-carrot/pk.po` | the character and place names, with their English |
+| `comics/**/gfx_*.jpg` | hi-res artwork from peppercarrot.com, **gitignored**, fetched on demand |
+| `web/comics/pepper-carrot/<slug>/*.webp` | rendered pages, committed; 900 and 1800 wide |
+| `gen_comics.py` | both halves below |
+
+**The balloons' text is HTML over the image, not part of it**, so every word
+is a chip. `python3 gen_comics.py` renders each page with its flowed text
+removed (rsvg-convert, then cwebp). The build calls `gen_comics.pages()`,
+which reads the same `flowRoot`s back out and places each as an absolutely
+positioned box: the flow rectangle's corner carried through the full
+transform, its size and every font length in `cqw`, and the rest of the
+transform as a CSS `matrix()`. `.comic-page` is the query container, so
+the lettering scales with the image and never reflows against it. The
+render only needs rerunning when the art or the balloons change; retyping a
+line is a build.
+
+- **Only `flowRoot` is overlaid.** A plain `<text>` (the potion labels in
+  episode 2) is rendered into the image. Episodes from about 20 on letter
+  balloons in plain `<text>` or SVG 2 `shape-inside`, and need that read
+  before they can be added.
+- **Lettering is judged a word at a time.** A token that parses goes in a
+  `.pk` span. One listed in `lettering.tsv` stays plain. Anything else fails
+  the build, so a typo in a balloon cannot ship as a dead chip. A `box` row
+  matches only a whole box, for a real word set as lettering (the lone `a`
+  of a sound effect spelled out one letter per box).
+- **Kept out of `authored_pages`**, which would queue every balloon for
+  audio; the comic pages go to `check_forms` alongside it instead.
+- P00 (the title strip) becomes the `<h1>`; a page under 100 units tall (a
+  spacer) is dropped.
+- Lavi, the lettering face, is GPL 3 and ships as `web/fonts/lavi-regular.woff2`
+  with its license; see `web/fonts/NOTICE.txt`.
+- Names are not handled yet: episodes 1–2 have none that the roots cannot
+  spell. When one turns up it should resolve from `pk.po`, not `names.tsv`.
+
 ## Twemoji
 
 Many of the icons used on the site (for example, on the topic cards) are Twemoji, sourced from: https://twemoji-cheatsheet.vercel.app/

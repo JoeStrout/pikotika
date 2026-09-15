@@ -704,7 +704,8 @@ for _row in lessons_plan():
 PAGE_CSS[LEARN_URL] = "css/learn.css"
 PAGE_JS[LEARN_URL] = ["js/learn.js"]
 
-STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio", "files"]
+STATIC_DIRS = ["css", "js", "images", "fonts", "data", "audio", "files",
+               "comics"]
 
 # Loose files copied to the output root.  CNAME is what keeps the custom domain
 # attached across a redeploy; .nojekyll turns off the Jekyll pass that branch
@@ -1664,6 +1665,7 @@ def check_fonts() -> None:
 
 def build() -> None:
     import gen_cards
+    import gen_comics
     import gen_convert
     import gen_lexicon
     import pikotika
@@ -1680,8 +1682,16 @@ def build() -> None:
     check_dialog_rows([(url, content)
                        for url, content, _t, _d in authored_pages()])
     authored = authored_pages()
+    # The comics are checked like any page but kept out of authored_pages,
+    # which would queue every balloon for audio.  gen_comics fails on its own
+    # for lettering that is neither Pikotika nor listed as lettering.
+    comics = gen_comics.pages(tables)
+    for url, *_ in comics:
+        PAGE_CSS[url] = "css/comics.css"
+        if url != gen_comics.INDEX_URL:
+            MAIN_CLASS[url] = "wide"
     forms = check_forms(tables, [(url, content)
-                                 for url, content, _t, _d in authored])
+                                 for url, content, _t, _d in authored + comics])
     lexicon, unresolved = gen_lexicon.build(tables, forms)
     if unresolved:
         raise SystemExit(f"cannot build a lexicon entry for: {unresolved}")
@@ -1743,7 +1753,7 @@ def build() -> None:
 
     import importlib
 
-    pages = list(authored)
+    pages = list(authored) + comics
     pages += [(url, importlib.import_module(module).fragment(),
                title_tag, description)
               for url, module, title_tag, description in UNLISTED]
