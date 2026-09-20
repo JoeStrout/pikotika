@@ -20,8 +20,8 @@ everyone; everybody	panomo<br>全人<br>every-person	pikotika level3 compound
 everywhere	panroko<br>全所<br>every-place	pikotika level3 compound
 everything	pankosa<br>全物<br>every-thing	pikotika level3 compound
 always	pantempo<br>全时<br>every-time	pikotika level3 compound
-Everybody says that.	Panomo ri tika a tis.<br>全人 ⊢ 言 ⇒ 此.<br>every-person RI say A this.	pikotika level3 sentence
 All is good.	Pan ri pona.<br>全 ⊢ 好.<br>all RI good.	pikotika level3 sentence
+I hope everyone has a good day.	Eko ri vori a pona yan por panomo.<br>己 ⊢ 求 ⇒ 好 日 為 全人.<br>I RI want A good day for every-person.	pikotika level3 sentence
 Always.	Pantempo.<br>全时.<br>every-time.	pikotika level3 sentence
 hot; fire	wo<br>火<br><i>whoa</i>, that fire is hot!	pikotika level3 root
 air; wind	vento<br>风<br><i>vent</i>ilate the air	pikotika level3 root
@@ -35,7 +35,7 @@ airplane	ventokaro<br>风车<br>air-vehicle	pikotika level3 compound
 airport	ventokaroroko<br>风车所<br>air-vehicle-place	pikotika level3 compound
 You're talking.	Tu ri tika.<br>尔 ⊢ 言.<br>you RI say.	pikotika level3 sentence
 And you?	Kum tu, ker?<br>并 尔, 何?<br>and you, what?	pikotika level3 sentence
-Can I call you next week?	Eko ri kan tika ver tu in tar senseyan, ker?<br>己 ⊢ 能 言 向 尔 内 后 7日, 何?<br>I RI can say to you in after seven-day, what?	pikotika level3 sentence
+You make me happy.	Tu ri konten a eko.<br>尔 ⊢ 楽 ⇒ 己.<br>you RI happy A I.	pikotika level3 sentence
 weekday	yom<br>曜<br><i>Yom</i> Kippur — a named day	pikotika level3 root
 month; moon	mese<br>月<br>you <i>may say</i> the moon phases take a month	pikotika level3 root
 year	anyo<br>年<br>Spanish <i>año</i> (year); <i>annu</i>al	pikotika level3 root
@@ -116,4 +116,3 @@ Hello!	Novasarve!<br>初会!<br>new-meet!	pikotika level3 sentence
 Can we meet?	Ekomen ri kan sarve, ker?<br>己众 ⊢ 能 会, 何?<br>I-group RI can meet, what?	pikotika level3 sentence
 I'm thirsty, but I don't want tea.	Eko ri pipevori, sets eko ri non vori a arpoaku.<br>己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.<br>I RI drink-want, but I RI not want A plant-water.	pikotika level3 sentence
 Can I have some water?	Eko ri kan toma a aku, ker?<br>己 ⊢ 能 取 ⇒ 水, 何?<br>I RI can get A water, what?	pikotika level3 sentence
-I prefer tea to coffee.	Eko ri mas kusta a arpoaku vons neropipe.<br>己 ⊢ 更 愛 ⇒ 木水 从 黒飲.<br>I RI more like A plant-water than black-drink.	pikotika level3 sentence

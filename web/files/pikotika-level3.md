@@ -112,17 +112,17 @@
 ## 全时
 ### every-time
 ===
-# Everybody says that.
----
-# Panomo ri tika a tis.
-## 全人 ⊢ 言 ⇒ 此.
-### every-person RI say A this.
-===
 # All is good.
 ---
 # Pan ri pona.
 ## 全 ⊢ 好.
 ### all RI good.
+===
+# I hope everyone has a good day.
+---
+# Eko ri vori a pona yan por panomo.
+## 己 ⊢ 求 ⇒ 好 日 為 全人.
+### I RI want A good day for every-person.
 ===
 # Always.
 ---
@@ -202,11 +202,11 @@
 ## 并 尔, 何?
 ### and you, what?
 ===
-# Can I call you next week?
+# You make me happy.
 ---
-# Eko ri kan tika ver tu in tar senseyan, ker?
-## 己 ⊢ 能 言 向 尔 内 后 7日, 何?
-### I RI can say to you in after seven-day, what?
+# Tu ri konten a eko.
+## 尔 ⊢ 楽 ⇒ 己.
+### you RI happy A I.
 ===
 # weekday
 ---
@@ -687,9 +687,3 @@
 # Eko ri kan toma a aku, ker?
 ## 己 ⊢ 能 取 ⇒ 水, 何?
 ### I RI can get A water, what?
-===
-# I prefer tea to coffee.
----
-# Eko ri mas kusta a arpoaku vons neropipe.
-## 己 ⊢ 更 愛 ⇒ 木水 从 黒飲.
-### I RI more like A plant-water than black-drink.

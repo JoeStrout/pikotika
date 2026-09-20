@@ -658,11 +658,11 @@
 ## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
 ### this-day, I RI meet A you parent-group.
 ===
-# I'm sorry to hear that.
+# We should eat together sometime.
 ---
-# Eko ri perton oti a tis.
-## 己 ⊢ 悔 耳 ⇒ 此.
-### I RI sorry sound A this.
+# Ekomen ri pospona yunta komi in tar tempo.
+## 己众 ⊢ 可好 合 食 内 后 时.
+### I-group RI if-good join food in after time.
 ===
 # I'll meet you at the door.
 ---
@@ -682,11 +682,17 @@
 ## 此 ⊢ 更 好 从 力.
 ### this RI more good than work.
 ===
-# The man is sick.
+# The teacher said Mary was a well-balanced child who got on well at school.
 ---
-# Viro ri mara.
-## 男 ⊢ 病.
-### man RI sick.
+# Impartonaromo ri tika a Meri ri sanapensa nino, kum tisomo ri pona opus in imparroko.
+## 学与人 ⊢ 言 ⇒ Meri ⊢ 医思 子, 并 此人 ⊢ 好 力 内 学所.
+### learn-give-person RI say A Mary RI heal-think child, and this-person RI good work in learn-place.
+===
+# I see a small fish.
+---
+# Eko ri vite a piko akupeste.
+## 己 ⊢ 見 ⇒ 小 水匹.
+### I RI see A small water-animal.
 ===
 # Sorry/oops/excuse me.
 ---

@@ -36,6 +36,7 @@ reservation; booking	before-agree	Verbs	5
 ready; prepared	before-finish	Qualities	1	1
 prepare; get ready; arrange	before-make	Verbs	2	2
 previous; preceding; former; the one before	before-sequence	General heads	3	3
+the way it was before; the earlier state	before-thing	Grammar and logic;Time direction	1	
 in the past	before-time	Time direction	1	4
 corner (of a street); turn (in a road)	bend-place	Space and direction;Places, arts, appearance	4	
 rage	big-anger	Feelings	5	
@@ -109,6 +110,8 @@ door handle	door-hand	Made things	5
 valley	down-place	Nature	5	
 root	down-plant	Nature	5	
 evening; afternoon	down-sun	Time direction	5	5
+dinner; supper	down-sun-food	Food	5	
+bar; cafe; pub	drink-place	Food;Places, arts, appearance	2	
 thirsty	drink-want	Body and life;Food	2	2
 rug; mat; carpet	earth-cloth	Made things	4	
 brown	earth-color	Color	3	3
@@ -134,13 +137,20 @@ facial expression; look on one's face	feel-picture	Body and life;Feelings	4
 army	fight-group	People and society	4	
 fighter; soldier	fight-person	People and society	4	
 last; final; the end (of a series)	finish-sequence	General heads;Time direction	3	
+baked; roasted; grilled	fire-make	Food	3	
 volcano	fire-up-earth	Nature	3	
 alcohol (usually wine)	fire-water	Food	3	
 Tuesday	fire-weekday	Time direction	3	3
 fifth (in a series); 5th	five-sequence	Quantity	3	
 flat bread	flat-grain-food	Food	5	
 disk	flat-round	Shape	5	
+bowl	food-box	Made things;Food	4	
+food market; grocery store	food-buy-place	Food;Places, arts, appearance	4	
+napkin	food-cloth	Made things;Food	4	
+plate	food-flat	Made things;Food	5	
+cook (prepare food)	food-make	Verbs;Food	2	
 cook (person)	food-make-person	People and society;Food	2	2
+kitchen	food-make-place	Food;Places, arts, appearance	2	
 restaurant; eatery; diner	food-place	Food;Places, arts, appearance	1	
 menu	food-sequence	Food	3	
 meal (a sitting); mealtime	food-time	Food;Time direction	1	2
@@ -151,12 +161,14 @@ quadrilateral; rectangle; square	four-bend	Shape	4
 fourth (in a series); 4th	four-sequence	Quantity	3	
 wine	fruit-fire-water	Food	3	
 autumn; fall	fruit-time	Time direction	1	4
+juice	fruit-water	Food	1	
 fetch; go and get	get-go	Verbs	2	2
 luggage; suitcase; baggage	go-box	Made things	4	4
 hallway; corridor	go-room	Made things;Places, arts, appearance	3	
 kind (good-hearted); good-hearted; kindness	good-feel	Qualities;Feelings	3	5
 lucky; good luck	good-if	Qualities	4	
 beautiful; pretty; good-looking; beauty	good-see	Qualities;Places, arts, appearance	2	2
+delicious; tasty	good-taste	Food;Qualities	4	
 wise; sensible; wisdom	good-think	Qualities	4	
 sage; wise person	good-think-person	People and society;Qualities	4	
 tan; beige	grain-color	Color	3	3
@@ -175,6 +187,7 @@ smile	happy-mouth	Feelings;Body and life	4	5
 nut	hard-fruit	Food	4	
 squirrel	hard-fruit-animal	Nature	4	
 stubborn	hard-head	Qualities;People and society	4	
+cheese	hard-milk	Food	4	
 bring	have-come	Verbs	2	2
 food supplies; provisions; stores	have-food	Food	2	
 carry; take along; transport	have-go	Verbs	2	2
@@ -226,6 +239,7 @@ curriculum; syllabus; course of study	learn-sequence	General heads;Verbs	4
 jump; leap	leg-up-go	Verbs;Body and life	4	
 bicycle	leg-vehicle	Made things	4	
 birthday	life-day	Time direction;Body and life	5	
+fork	line-tool	Made things;Food	4	
 public transit; transit	line-vehicle	Made things	4	4
 transit station (bus/train)	line-vehicle-place	Places, arts, appearance	4	
 thief	long-hand	People and society	5	
@@ -256,8 +270,10 @@ train	metal-line-vehicle	Made things	4	4
 coin	metal-money	People and society;Material	3	
 Friday	metal-weekday	Time direction	3	3
 midday; noon	middle-sun	Time direction	2	2
+lunch	middle-sun-food	Food	2	
 cow	milk-animal	Nature	4	
 beef	milk-animal-meat	Food	4	
+butter	milk-oil	Food	5	
 millionth (in a series); 1000000th	million-sequence	Quantity	3	
 price; fee; cost	money-amount	People and society;Quantity	3	
 wallet; purse	money-box	Made things	4	
@@ -266,6 +282,7 @@ turnstile; ticket gate	money-door	Made things	4
 earn	money-get	Verbs;People and society	3	
 patron; donor; sponsor	money-give-person	People and society	4	
 bank	money-home	Places, arts, appearance;People and society	3	
+bill; check; invoice; receipt	money-sequence	Made things;People and society	3	
 silver	moon-metal	Material	3	
 Monday	moon-weekday	Time direction	3	3
 tooth	mouth-stone	Body and life	4	
@@ -314,6 +331,7 @@ expect; anticipate	not-surprise	Verbs	5	5
 sour	not-sweet	Food;Qualities	3	
 lemon	not-sweet-yellow-fruit	Food	3	
 that; those	not-this	Grammar and logic	1	1
+the other person; they (people in general)	not-this-person	Grammar and logic;People and society	1	
 false; untrue; if (counterfactual)	not-true	Grammar and logic	1	2
 lie; lying; dishonesty	not-true-say	Qualities;People and society	1	
 be defeated; lose a contest; lose a game	not-up-become	Verbs	4	
@@ -373,7 +391,9 @@ orange (fruit)	red-yellow-fruit	Food	3
 patience; patient	remain-ability	Feelings;Qualities	4	
 junction; intersection; crossroads	road-join	Space and direction;Places, arts, appearance	2	
 road map; roadmap	road-map	Made things	3	
+apple	round-fruit	Food	4	
 circle; ring; hoop	round-line	Shape	4	
+spoon	round-tool	Made things;Food	4	
 tie; draw (in a contest)	same-become	Verbs	4	
 uniform	same-cloth	Made things	4	
 likewise; similarly	same-manner	Grammar and logic	3	
@@ -398,7 +418,10 @@ chair	sit-tool	Made things	4
 sixth (in a series); 6th	six-sequence	Quantity	3	
 blanket; bedding	sleep-cloth	Made things	4	
 hotel	sleep-home	Places, arts, appearance	4	
+bedroom	sleep-room	Made things;Places, arts, appearance	4	
 annoyance	small-anger	Feelings	5	5
+small business	small-commerce-group	People and society	4	
+snack	small-food	Food	1	
 serene; relaxed; peaceful	small-happy	Feelings	1	
 goat; sheep	small-milk-animal	Nature	4	
 lamb	small-milk-animal-meat	Food	4	
@@ -410,6 +433,7 @@ sand; gravel	small-stone	Nature;Material	3
 moment	small-time	Time direction	1	1
 bye	sorry-go	People and society;Verbs	1	1
 goodbye	sorry-out-go	People and society;Verbs	1	1
+full; sated	stomach-every	Body and life;Food	5	
 grey	stone-color	Color	3	3
 frank; blunt; direct	straight-say	Qualities;People and society	4	
 until; till; up to (in time)	straight-to	Time direction;Grammar and logic	4	5
@@ -419,13 +443,16 @@ mythical beast; monster; legendary creature	surprise-animal	Nature	5
 magic; witchcraft; sorcery	surprise-art	Places, arts, appearance	5	
 potion; magic potion	surprise-drink	Food;Places, arts, appearance	5	
 witch; wizard; magician; sorcerer	surprise-person	People and society	5	
+dessert	sweet-food	Food	3	
 flatterer; smooth talker	sweet-mouth	People and society	4	
+chopsticks	take-tool	Made things;Food	3	
 spice	taste-thing	Food	4	
 tenth (in a series); 10th	ten-sequence	Quantity	3	
 attention; pay attention; attend to; attentive	think-give	Verbs	4	
 today	this-day	Time direction	1	2
 tonight	this-no-sun	Time direction	2	2
 he; she; him; her; they (people); them (people)	this-person	Grammar and logic;People and society	1	1
+here	this-place	Grammar and logic;Space and direction	1	
 therefore; that's why; for this reason	this-reason	Grammar and logic	4	4
 now; at present	this-time	Time direction	1	1
 kilometer	thousand-meter	Quantity;Space and direction	3	
@@ -466,6 +493,7 @@ shore; coast; riverbank	water-edge	Nature;Space and direction	4
 soup	water-food	Food	1	2
 swim	water-go	Verbs	1	2
 porridge; congee	water-grain	Food	3	
+boiled	water-make	Food	2	
 ship; boat	water-vehicle	Made things	1	2
 Wednesday	water-weekday	Time direction	3	3
 weigh; measure the weight of	weight-amount	Verbs;Quantity	4	
