@@ -35,7 +35,9 @@ fool; idiot	bad-think-person	People and society;Qualities	4
 reservation; booking	before-agree	Verbs	5	
 ready; prepared	before-finish	Qualities	1	1
 prepare; get ready; arrange	before-make	Verbs	2	2
+the night before; eve	before-no-sun	Time direction	2	
 previous; preceding; former; the one before	before-sequence	General heads	3	3
+the day before	before-sun	Time direction	1	
 the way it was before; the earlier state	before-thing	Grammar and logic;Time direction	1	
 in the past	before-time	Time direction	1	4
 corner (of a street); turn (in a road)	bend-place	Space and direction;Places, arts, appearance	4	

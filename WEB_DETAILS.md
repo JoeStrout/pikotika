@@ -1755,6 +1755,13 @@ line is a build.
   fit is estimated from Lavi's advance widths (no kerning), with the last
   line counted as one em -- calibrated on episode 2's one-letter sound
   effects, which Inkscape shows in boxes 1.14 em tall.
+- **An outline filter becomes a halo** (added 2026-09-24). Episode 4's sound
+  effects are black text with a white outline, which Inkscape does as a
+  filter ("deevad outline effect": `feFlood` then `feMorphology` dilate).
+  `gen_comics.outline_filters` recognizes that pattern and renders it as a
+  ring of sixteen unblurred `text-shadow`s, the dilate radius scaled like any
+  other length. Any other filter (the faint blurs on episode 2's bottle
+  labels, E04P02's cat-food bag) is still dropped.
 - **Only `flowRoot` is overlaid.** A plain `<text>` (the potion labels in
   episode 2) is rendered into the image. Episodes from about 20 on letter
   balloons in plain `<text>` or SVG 2 `shape-inside`, and need that read

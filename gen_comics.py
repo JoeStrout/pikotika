@@ -242,7 +242,38 @@ def plain_color(value, fallback):
     return value
 
 
-def line_css(style: dict, s: float) -> str:
+def outline_filters(root) -> dict:
+    """{filter id: (color, radius)} for every outline filter on the page.
+
+    Some sound effects are black lettering with a white halo, which Inkscape
+    does as a filter ("deevad outline effect"): flood the text's shape with a
+    color, dilate it, and lay the text back over it.  Only that pattern is
+    read; any other filter (the faint blurs on episode 2's bottle labels)
+    is left out of the CSS, as before."""
+    out = {}
+    for f in root.iter(SVG + "filter"):
+        flood = f.find(SVG + "feFlood")
+        grow = f.find(SVG + "feMorphology")
+        if flood is None or grow is None or grow.get("operator") != "dilate":
+            continue
+        # `radius` may be one number or an x-y pair; the first stands for both
+        radius = length((grow.get("radius") or "0").split()[0])
+        if radius:
+            out[f.get("id")] = (flood.get("flood-color", "#ffffff"), radius)
+    return out
+
+
+def halo_css(color: str, radius: float) -> str:
+    """A solid halo as a ring of unblurred text-shadows -- the nearest CSS
+    has to dilating the glyphs.  `radius` is already in cqw."""
+    steps = 16
+    ring = [f"{num(radius * math.cos(2 * math.pi * i / steps))}cqw "
+            f"{num(radius * math.sin(2 * math.pi * i / steps))}cqw 0 {color}"
+            for i in range(steps)]
+    return "text-shadow:" + ",".join(ring)
+
+
+def line_css(style: dict, s: float, outlines: dict = None) -> str:
     """Inline CSS for one line, with lengths in cqw: `s` is cqw per user unit,
     so the lettering scales with the page image it sits on."""
     css = []
@@ -273,6 +304,10 @@ def line_css(style: dict, s: float) -> str:
     if stroke != "none" and not stroke.startswith("url("):
         width = length(style.get("stroke-width")) or 1.0
         css.append(f"-webkit-text-stroke:{num(width * s)}cqw {stroke}")
+    m = re.fullmatch(r"url\(#([^)]+)\)", style.get("filter", "").strip())
+    if m and outlines and m.group(1) in outlines:
+        color, radius = outlines[m.group(1)]
+        css.append(halo_css(color, radius * s))
     for prop in ("letter-spacing", "word-spacing"):
         v = length(style.get(prop))
         if v and abs(v * s) >= 0.001:
@@ -599,6 +634,7 @@ def read_page(svg: Path, t, lettering, problems) -> dict:
     _x, _y, width, height = page_box(root, svg)
     s = 100 / width
     where = svg.relative_to(ROOT)
+    outlines = outline_filters(root)
     html_boxes, lines = [], []
     for ctm, flow_root in flow_roots(root):
         paras = paragraphs(flow_root)
@@ -611,7 +647,7 @@ def read_page(svg: Path, t, lettering, problems) -> dict:
         for style, text in paras:
             inner = (escape(text) if plain
                      else pk_html(text, t, words, where, problems, names=names))
-            spans.append(f'<span class="ln" style="{escape(line_css(style, s))}">'
+            spans.append(f'<span class="ln" style="{escape(line_css(style, s, outlines))}">'
                          f'{inner or "&nbsp;"}</span>')
         region = flow_region(flow_root, where)
         hidden = hidden_lines(paras, region[3], region[4])

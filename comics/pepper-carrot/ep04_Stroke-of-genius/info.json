@@ -1,0 +1,47 @@
+{
+   "id": 4,
+   "original-language": "en",
+   "supporters": 156,
+   "published": "2014-11-21",
+   "pluxmlID": 243,
+   "background-color": "#FFFFFF",
+   "public": 1,
+   "related-urls": [
+        "https://www.davidrevoy.com/article259/making-of-episode-4",
+        "https://peertube.touhoppai.moe/w/nqqJJcgZe9W9q3KfnzPFQJ"
+   ],
+   "credits": {
+      "art":[
+         "David Revoy <https://framagit.org/Deevad>"
+      ],
+      "scenario":[
+         "David Revoy <https://framagit.org/Deevad>"
+      ]
+   },
+   "software":[
+      {
+         "name": "Krita",
+         "version": "2.8.6"
+      },
+      {
+         "name": "Inkscape",
+         "version": "0.91"
+      },
+      {
+         "name": "G'MIC",
+         "version": "1.6.1"
+      },
+      {
+         "name": "GIMP",
+         "version": "2.8"
+      },
+      {
+         "name": "Blender",
+         "version": "2.72"
+      },
+      {
+         "name": "Ubuntu GNOME",
+         "version": "14.04 LTS"
+      }
+   ]
+}

@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-912 terms
+915 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -252,6 +252,7 @@
 | erudition | many-know | mursape | 多知 |
 | escalator | electric-up-road | vortosurmoto | 電上方 |
 | essential | heavy-necessary | pesaneses | 重要 |
+| eve | before-no-sun | yernemyan | 前无日 |
 | evening | down-sun | tunyan | 下日 |
 | eventually | in-finish | invin | 内閉 |
 | everybody | every-person | panomo | 全人 |
@@ -779,9 +780,11 @@
 | that | not-this | nontis | 不此 |
 | that's why | this-reason | tisrason | 此故 |
 | the country | not-city | nonsitas | 不市 |
+| the day before | before-sun | yeryan | 前日 |
 | the earlier state | before-thing | yerkosa | 前物 |
 | the end (of a series) | finish-sequence | vinorten | 閉序 |
 | the holidays | not-work-time | nonopustempo | 不力时 |
+| the night before | before-no-sun | yernemyan | 前无日 |
 | the one after | after-sequence | tarorten | 后序 |
 | the one before | before-sequence | yerorten | 前序 |
 | the other person | not-this-person | nontisomo | 不此人 |
