@@ -412,23 +412,23 @@
 ## 7日閉
 ### seven-day-finish
 ===
-# Same as always.
+# Please try again.
 ---
-# Sam vons pantempo.
-## 同 从 全时.
-### same from every-time.
+# Pam repe tentar.
+## 乞 又 試.
+### please again try.
+===
+# Do you know my relative, Mary? She's my cousin.
+---
+# Tu ri sape a eko parimen Meri, ker? Tisomo ri eko pari sampariomo te nino.
+## 尔 ⊢ 知 ⇒ 己 亲众 Meri, 何? 此人 ⊢ 己 亲 同亲人 > 子.
+### you RI know A I parent-group Mary, what? this-person RI I parent same-parent-person TE child.
 ===
 # It's as good as it was.
 ---
 # Tis ri sam pona vons yerkosa.
 ## 此 ⊢ 同 好 从 前物.
 ### this RI same good than before-thing.
-===
-# Please try again.
----
-# Pam repe tentar.
-## 乞 又 試.
-### please again try.
 ===
 # grain; rice
 ---
@@ -658,32 +658,44 @@
 ## 恩.
 ### thank.
 ===
-# Nice to meet you.
+# Are you free on Saturday?
 ---
-# Eko ri konten sarve a tu.
-## 己 ⊢ 楽 会 ⇒ 尔.
-### I RI happy meet A you.
+# In terayom, tu ri non opus, ker?
+## 内 土曜, 尔 ⊢ 不 力, 何?
+### in earth-weekday, you RI not work, what?
 ===
-# Hello!
+# I like music and reading.
 ---
-# Novasarve!
-## 初会!
-### new-meet!
+# Eko ri kusta a musi kum kitavite.
+## 己 ⊢ 愛 ⇒ 曲 并 写見.
+### I RI like A music and writing-see.
 ===
-# Can we meet?
+# Everybody says that.
 ---
-# Ekomen ri kan sarve, ker?
-## 己众 ⊢ 能 会, 何?
-### I-group RI can meet, what?
+# Panomo ri tika a tis.
+## 全人 ⊢ 言 ⇒ 此.
+### every-person RI say A this.
 ===
-# I'm thirsty, but I don't want tea.
+# I'm Alice.
 ---
-# Eko ri pipevori, sets eko ri non vori a arpoaku.
-## 己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.
-### I RI drink-want, but I RI not want A plant-water.
+# Eko ri Aras.
+## 己 ⊢ Aras.
+### I RI Alice.
 ===
-# Can I have some water?
+# You're close.
 ---
-# Eko ri kan toma a aku, ker?
-## 己 ⊢ 能 取 ⇒ 水, 何?
-### I RI can get A water, what?
+# Tu ri nir.
+## 尔 ⊢ 近.
+### you RI near.
+===
+# Hal is coming.
+---
+# Omo Ar ri veni.
+## 人 Ar ⊢ 来.
+### person Hal RI come.
+===
+# About the big fish!
+---
+# Topi meka akupeste!
+## 件 大 水匹!
+### about big water-animal!

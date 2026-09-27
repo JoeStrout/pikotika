@@ -80,7 +80,7 @@ She's my sister.	this-person RI me same-parent-woman.	Tisomo ri eko samparivema.
 Really?	true, what?	Ves, ker?	真, 何?	1	smalltalk
 You don't look alike!	two you RI not same-see!	Pits tu ri non samvite!	2 尔 ⊢ 不 同見!	3	family;smalltalk
 Everybody says that.	every-person RI say A this.	Panomo ri tika a tis.	全人 ⊢ 言 ⇒ 此.	3	smalltalk
-She looks like our father, and I look like our mother.	this-person RI same-see A I-group man-parent, but I RI same-see A I-group woman-parent.	Tisomo ri samvite a ekomen viropari, sets eko ri samvite a ekomen vemapari.	此人 ⊢ 同見 ⇒ 己众 男亲, 但 己 ⊢ 同見 ⇒ 己众 女亲.	3	family
+She looks like our father, and I look like our mother.	this-person RI same-see A I-group man-parent, but I RI same-see A woman-parent.	Tisomo ri samvite a ekomen viropari, sets eko ri samvite a vemapari.	此人 ⊢ 同見 ⇒ 己众 男亲, 但 己 ⊢ 同見 ⇒ 女亲.	3	family
 That explains it.	this RI reason.	Tis ri rason.	此 ⊢ 故.	4	smalltalk
 Do you live here in the city?	you RI life in this city, what?	Tu ri viva in tis sitas, ker?	尔 ⊢ 生 内 此 市, 何?	5	meeting;smalltalk
 No, I live about two hours north. I came just for the party.	not. I RI life in two hour interval to up. I RI come only for play-group.	Non. Eko ri viva in pits ora turan ver sur. Eko ri veni son por yumen.	不. 己 ⊢ 生 内 2 刻 間 向 上. 己 ⊢ 来 只 為 玩众.	5	smalltalk;travel
@@ -498,3 +498,4 @@ Prepare to die.	before-make for not-life!	Yervake por nonviva!	前作 為 不生
 Tom wasn't wearing his uniform when I saw him today.	this-sun, I RI see A Tom in what-time, this-person RI not cloth-have A same-cloth.	Tisyan, eko ri vite a Tom in kertempo, tisomo ri non ropatene a samropa.	此日, 己 ⊢ 見 ⇒ Tom 内 何时, 此人 ⊢ 不 衣有 ⇒ 同衣.	4	
 Last night I went to my friend's wedding.	before no-sun, I RI go to I friend marry-sun.	Yer nemyan, eko ri ire ver eko ami marisyan.	前 无日, 己 ⊢ 行 向 己 朋 婚日.	5	family;dates
 I hope everyone has a good day.	I RI want A good day for every-person.	Eko ri vori a pona yan por panomo.	己 ⊢ 求 ⇒ 好 日 為 全人.	3	pleasantries
+Do you know my relative, Mary? She's my cousin.	you RI know A I parent-group Mary, what? this-person RI I parent same-parent-person TE child.	Tu ri sape a eko parimen Meri, ker? Tisomo ri eko pari sampariomo te nino.	尔 ⊢ 知 ⇒ 己 亲众 Meri, 何? 此人 ⊢ 己 亲 同亲人 > 子.	3	family

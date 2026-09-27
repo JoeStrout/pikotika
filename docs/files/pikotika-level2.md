@@ -82,7 +82,7 @@
 ## ⊢ 来.
 ### RI come.
 ===
-# parent; ancestor
+# parent
 ---
 # pari
 ## 亲
@@ -118,7 +118,7 @@
 ## 男亲
 ### man-parent
 ===
-# relative (kin)
+# family; relative; kin
 ---
 # parimen
 ## 亲众

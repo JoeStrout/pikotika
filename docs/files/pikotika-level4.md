@@ -652,47 +652,47 @@
 ## 言物人: Aras ⊢ 見 内 贝皿.
 ### say-thing-person: Alice RI see in money-box.
 ===
-# Today I'm meeting your relatives.
+# I like my present job.
 ---
-# Tisyan, eko ri sarve a tu parimen.
-## 此日, 己 ⊢ 会 ⇒ 尔 亲众.
-### this-day, I RI meet A you parent-group.
+# Eko ri kusta a eko tis opus.
+## 己 ⊢ 愛 ⇒ 己 此 力.
+### I RI like A me this work.
 ===
-# We should eat together sometime.
+# Do you have a minute?
 ---
-# Ekomen ri pospona yunta komi in tar tempo.
-## 己众 ⊢ 可好 合 食 内 后 时.
-### I-group RI if-good join food in after time.
+# Tu ri tene a wun parte turan, ker?
+## 尔 ⊢ 有 ⇒ 1 分 間, 何?
+### you RI have A one part interval, what?
 ===
-# I'll meet you at the door.
+# Nine in the morning.
 ---
-# Eko ri sarve a tu in porta.
-## 己 ⊢ 会 ⇒ 尔 内 門.
-### I RI meet A you in door.
+# Suryan 9 ora.
+## 上日 9 刻.
+### up-sun 9 hour.
 ===
-# Yes, I see.
+# No, I don't see.
 ---
-# Si, vite.
-## 是, 見.
-### yes, see.
+# Non vite.
+## 不 見.
+### not see.
 ===
-# That sounds better than working.
+# Yesterday I wanted to go.
 ---
-# Tis ri mas pona vons opus.
-## 此 ⊢ 更 好 从 力.
-### this RI more good than work.
+# Yanyer, eko ri vori ire.
+## 日前, 己 ⊢ 求 行.
+### day-before, I RI want go.
 ===
-# The teacher said Mary was a well-balanced child who got on well at school.
+# Already?
 ---
-# Impartonaromo ri tika a Meri ri sanapensa nino, kum tisomo ri pona opus in imparroko.
-## 学与人 ⊢ 言 ⇒ Meri ⊢ 医思 子, 并 此人 ⊢ 好 力 内 学所.
-### learn-give-person RI say A Mary RI heal-think child, and this-person RI good work in learn-place.
+# Meka yer, ker?
+## 大 前, 何?
+### big before, what?
 ===
-# I see a small fish.
+# This is a sea creature.
 ---
-# Eko ri vite a piko akupeste.
-## 己 ⊢ 見 ⇒ 小 水匹.
-### I RI see A small water-animal.
+# Tis ri meka aku te peste.
+## 此 ⊢ 大 水 > 匹.
+### this RI big water TE animal.
 ===
 # Sorry/oops/excuse me.
 ---

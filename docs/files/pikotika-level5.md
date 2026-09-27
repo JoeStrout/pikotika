@@ -250,17 +250,17 @@
 ## 20 贝 為 1, 或 100 贝 為 6.
 ### 20 money for one, or 100 money for 6.
 ===
-# If I had a car, I would drive.
+# If I had eaten, I wouldn't be hungry now.
 ---
-# Nonves eko ri tene a karo, tisrason eko ri karoire.
-## 不真 己 ⊢ 有 ⇒ 车, 此故 己 ⊢ 车行.
-### not-true I RI have A vehicle, this-reason I RI vehicle-go.
+# Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.
+## 不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.
+### not-true I RI food finish, this-reason I RI not food-want this-time.
 ===
-# For three hours.
+# Ten minutes.
 ---
-# 3 ora turan.
-## 3 刻 間.
-### 3 hour interval.
+# 10 parte turan.
+## 10 分 間.
+### 10 part interval.
 ===
 # bird
 ---
@@ -610,11 +610,29 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# The food you made is very good.
+# We're leaving.
 ---
-# Tu ri vake rite komi ri meka pona.
-## 尔 ⊢ 作 ⊢> 食 ⊢ 大 好.
-### you RI make RI-TE food RI big good.
+# Ekomen ri eksire.
+## 己众 ⊢ 外行.
+### I-group RI out-go.
+===
+# Six bananas and four apples — one hundred sixty.
+---
+# 6 ronkayoropomo kum 4 rotunpomo: 160 moni.
+## 6 长黄果 并 4 丸果: 160 贝.
+### 6 long-yellow-fruit and 4 round-fruit: 160 money.
+===
+# Little by little.
+---
+# Piko tar piko.
+## 小 后 小.
+### small after small.
+===
+# I think you would like it.
+---
+# Eko ri pensa a tu ri kusta a tis.
+## 己 ⊢ 思 ⇒ 尔 ⊢ 愛 ⇒ 此.
+### I RI think A you RI like A this.
 ===
 # Apples. From the mountains. They're not sweet; they're a little sour.
 ---
@@ -622,38 +640,20 @@
 ## 丸果, 从 上土. 此 ⊢ 不 甘; 此 ⊢ 小 不甘.
 ### round-fruit, from up-earth. this RI not sweet; this RI small not-sweet.
 ===
-# Good luck!
+# Have fun (parting).
 ---
-# Ponapos!
-## 好可!
-### good-if!
+# Pona yu.
+## 好 玩.
+### good play.
 ===
-# Go get some coffee.
+# What is your new job?
 ---
-# Pam ire toma a neropipe.
-## 乞 行 取 ⇒ 黒飲.
-### please go get A black-drink.
+# Tu nova opus ri ker?
+## 尔 初 力 ⊢ 何?
+### you new work RI what?
 ===
-# I must have gone.
+# I love the sea, but I can't swim.
 ---
-# Eko ri neses ire vin.
-## 己 ⊢ 要 行 閉.
-### I RI must go finish.
-===
-# What's good tonight?
----
-# Tisnemyan, ker komi ri pona?
-## 此无日, 何 食 ⊢ 好?
-### this-no-sun, what food RI good?
-===
-# How are you?
----
-# Tu ri pona, ker?
-## 尔 ⊢ 好, 何?
-### you RI good, what?
-===
-# Iced tea, please.
----
-# Rikusarpoaku, pam.
-## 冷木水, 乞.
-### cold-plant-water, please.
+# Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.
+## 己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.
+### I RI big-like A big-water, but I RI not can water-go.

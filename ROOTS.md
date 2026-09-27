@@ -153,7 +153,7 @@
 | man; male | viro | 男 |  |
 | marry; spouse | maris | 婚 | wedded |
 | money; price | moni | 贝 | cost, value, payment |
-| parent; ancestor | pari | 亲 |  |
+| parent | pari | 亲 |  |
 | woman; female | vema | 女 |  |
 | you | tu | 尔 | addressee |
 

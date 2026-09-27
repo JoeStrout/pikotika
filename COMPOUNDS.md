@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-915 terms
+919 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -38,6 +38,7 @@
 | alter | other-make | arvake | 別作 |
 | alternative | choose-thing | erikekosa | 选物 |
 | always | every-time | pantempo | 全时 |
+| ancestor | old-parent | vetuspari | 古亲 |
 | anniversary | year-day | anyoyan | 年日 |
 | annoyance | small-anger | pikoraye | 小怒 |
 | another person | other-person | aromo | 別人 |
@@ -275,6 +276,7 @@
 | facial expression | feel-picture | sentipitur | 心画 |
 | fall | fruit-time | pomotempo | 果时 |
 | false | not-true | nonves | 不真 |
+| family | parent-group | parimen | 亲众 |
 | father | man-parent | viropari | 男亲 |
 | fee | money-amount | monimesur | 贝寸 |
 | fetch | get-go | tomaire | 取行 |
@@ -301,6 +303,7 @@
 | food supplies | have-food | tenekomi | 有食 |
 | fool | bad-think-person | marumpensaomo | 悪思人 |
 | for this reason | this-reason | tisrason | 此故 |
+| forebear | old-parent | vetuspari | 古亲 |
 | foreign | out-country | eksenasyon | 外国 |
 | forest | big-plant-place | mekaarporoko | 大木所 |
 | forget | know-lose | sapeperti | 知失 |
@@ -406,6 +409,7 @@
 | junction | road-join | motoyunta | 方合 |
 | keep in mind | know-have | sapetene | 知有 |
 | kilometer | thousand-meter | kirumitar | 千mitar |
+| kin | parent-group | parimen | 亲众 |
 | kind (good-hearted) | good-feel | ponasenti | 好心 |
 | kindness | good-feel | ponasenti | 好心 |
 | kitchen | food-make-place | komivakeroko | 食作所 |
@@ -622,7 +626,7 @@
 | rehearsal | try-learn | tentarimpar | 試学 |
 | rehearse | try-learn | tentarimpar | 試学 |
 | relatedly | near-about | nirtopi | 近件 |
-| relative (kin) | parent-group | parimen | 亲众 |
+| relative | parent-group | parimen | 亲众 |
 | relative clause marker | RI-TE | rite | ⊢> |
 | relaxed | small-happy | pikokonten | 小楽 |
 | relearn | again-learn | repeimpar | 又学 |
