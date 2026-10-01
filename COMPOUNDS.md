@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-919 terms
+921 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -777,6 +777,7 @@
 | tears | see-water | viteaku | 見水 |
 | telephone | electric-say | vortotika | 電言 |
 | television | electric-see | vortovite | 電見 |
+| temperature | hot-amount | womesur | 火寸 |
 | tent | cloth-home | ropakase | 衣户 |
 | tenth (in a series) | ten-sequence | tekasorten | 十序 |
 | test (of knowledge) | know-test | sapetentar | 知試 |
@@ -805,6 +806,7 @@
 | thirsty | drink-want | pipevori | 飲求 |
 | those | not-this | nontis | 不此 |
 | thousandth (in a series) | thousand-sequence | kiruorten | 千序 |
+| thunder | air-electric | ventovorto | 风電 |
 | Thursday | plant-weekday | arpoyom | 木曜 |
 | ticket gate | money-door | moniporta | 贝門 |
 | tie | same-become | samtiven | 同成 |

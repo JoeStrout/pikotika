@@ -13,7 +13,7 @@ redo; remake; do again	again-make	Verbs	3
 repeat; say again	again-say	Verbs	3	3
 review; re-examine; look over again	again-see	Verbs	3	
 reconsider; rethink; think over	again-think	Verbs	4	
-lightning	air-electric	Nature	4	
+lightning; thunder	air-electric	Nature	4	
 fly; flight	air-go	Verbs	3	
 weather	air-manner	Nature	3	
 smell	air-taste	Body and life	4	
@@ -211,6 +211,7 @@ burrowing animal	hole-animal	Nature	5
 cat; pet	home-animal	Nature	3	4
 pet dog	home-dog	Nature	5	5
 floor (of a building); storey	home-sequence	Places, arts, appearance;Space and direction	3	
+temperature	hot-amount	Nature;Quantity	3	
 spicy	hot-taste	Food;Qualities	4	4
 chili pepper	hot-taste-thing	Food	4	
 summer	hot-time	Time direction	3	4
