@@ -33,9 +33,9 @@ brown	terakoror<br>土色<br>earth-color	pikotika level3 compound
 grey	rapiskoror<br>岩色<br>stone-color	pikotika level3 compound
 airplane	ventokaro<br>风车<br>air-vehicle	pikotika level3 compound
 airport	ventokaroroko<br>风车所<br>air-vehicle-place	pikotika level3 compound
-You're talking.	Tu ri tika.<br>尔 ⊢ 言.<br>you RI say.	pikotika level3 sentence
-And you?	Kum tu, ker?<br>并 尔, 何?<br>and you, what?	pikotika level3 sentence
-You make me happy.	Tu ri konten a eko.<br>尔 ⊢ 楽 ⇒ 己.<br>you RI happy A I.	pikotika level3 sentence
+Will you tell me a story?	Tu ri tika a tikakosa ver eko, ker?<br>尔 ⊢ 言 ⇒ 言物 向 己, 何?<br>you RI say A say-thing to me, what?	pikotika level3 sentence
+How is your mother?	Tu vemapari ri kermoto?<br>尔 女亲 ⊢ 何方?<br>you woman-parent RI what-manner?	pikotika level3 sentence
+What does the label say?	Nomen ri tika a ker?<br>名 ⊢ 言 ⇒ 何?<br>label RI say A what?	pikotika level3 sentence
 weekday	yom<br>曜<br><i>Yom</i> Kippur — a named day	pikotika level3 root
 month; moon	mese<br>月<br>you <i>may say</i> the moon phases take a month	pikotika level3 root
 year	anyo<br>年<br>Spanish <i>año</i> (year); <i>annu</i>al	pikotika level3 root
@@ -110,11 +110,11 @@ banana	ronkayoropomo<br>长黄果<br>long-yellow-fruit	pikotika level3 compound
 Do you have a pet?	Tu ri tene a kasepeste, ker?<br>尔 ⊢ 有 ⇒ 户匹, 何?<br>you RI have A home-animal, what?	pikotika level3 sentence
 I work at a bank.	Eko ri opus in monikase.<br>己 ⊢ 力 内 贝户.<br>I RI work in money-home.	pikotika level3 sentence
 Is there hot water in the morning?	In suryan, wo aku ri in kamar, ker?<br>内 上日, 火 水 ⊢ 内 室, 何?<br>in up-sun, hot water RI in room, what?	pikotika level3 sentence
-Thank you.	Mersi.<br>恩.<br>thank.	pikotika level3 sentence
-Are you free on Saturday?	In terayom, tu ri non opus, ker?<br>内 土曜, 尔 ⊢ 不 力, 何?<br>in earth-weekday, you RI not work, what?	pikotika level3 sentence
-I like music and reading.	Eko ri kusta a musi kum kitavite.<br>己 ⊢ 愛 ⇒ 曲 并 写見.<br>I RI like A music and writing-see.	pikotika level3 sentence
-Everybody says that.	Panomo ri tika a tis.<br>全人 ⊢ 言 ⇒ 此.<br>every-person RI say A this.	pikotika level3 sentence
-I'm Alice.	Eko ri Aras.<br>己 ⊢ Aras.<br>I RI Alice.	pikotika level3 sentence
-You're close.	Tu ri nir.<br>尔 ⊢ 近.<br>you RI near.	pikotika level3 sentence
-Hal is coming.	Omo Ar ri veni.<br>人 Ar ⊢ 来.<br>person Hal RI come.	pikotika level3 sentence
-About the big fish!	Topi meka akupeste!<br>件 大 水匹!<br>about big water-animal!	pikotika level3 sentence
+Yes.	Si.<br>是.<br>yes.	pikotika level3 sentence
+Nothing new.	Nem nova.<br>无 初.<br>no new.	pikotika level3 sentence
+I'll have that.	Eko ri vori a tis.<br>己 ⊢ 求 ⇒ 此.<br>I RI want A this.	pikotika level3 sentence
+It's good to see you.	Eko ri konten sarve a tu vin.<br>己 ⊢ 楽 会 ⇒ 尔 閉.<br>I RI happy meet A you finish.	pikotika level3 sentence
+Sorry/oops/excuse me.	Perton.<br>悔.<br>sorry.	pikotika level3 sentence
+Alice: Yes please.	Aras: Si, pam.<br>Aras: 是, 乞.<br>Alice: yes, please.	pikotika level3 sentence
+The music makes the children happy.	Musi ri konten a nino.<br>曲 ⊢ 楽 ⇒ 子.<br>music RI happy A child.	pikotika level3 sentence
+Tomorrow my mother is coming, but my father isn't.	Yantar, eko vemapari ri veni, sets eko viropari ri non veni.<br>日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.<br>day-after, me woman-parent RI come, but me man-parent RI not come.	pikotika level3 sentence

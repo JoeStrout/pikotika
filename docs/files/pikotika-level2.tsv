@@ -12,7 +12,7 @@ fetch; go and get	tomaire<br>取行<br>get-go	pikotika level2 compound
 ship; boat	akukaro<br>水车<br>water-vehicle	pikotika level2 compound
 manner; road	moto<br>方<br>the <i>moto</i>rway is a road	pikotika level2 root
 how	kermoto<br>何方<br>what-manner	pikotika level2 compound
-How have you been?	Tu ri kermoto?<br>尔 ⊢ 何方?<br>you RI what-manner?	pikotika level2 sentence
+Hal is coming.	Omo Ar ri veni.<br>人 Ar ⊢ 来.<br>person Hal RI come.	pikotika level2 sentence
 The road has been closed.	Ri vin a moto.<br>⊢ 閉 ⇒ 方.<br>RI close A road.	pikotika level2 sentence
 Someone is coming.	Ri veni.<br>⊢ 来.<br>RI come.	pikotika level2 sentence
 parent	pari<br>亲<br><i>par</i>ent	pikotika level2 root
@@ -38,9 +38,9 @@ never	nemtempo<br>无时<br>no-time	pikotika level2 compound
 night	nemyan<br>无日<br>no-sun	pikotika level2 compound
 problem; trouble	marumkosa<br>悪物<br>bad-thing	pikotika level2 compound
 false; untrue; if (counterfactual)	nonves<br>不真<br>not-true	pikotika level2 compound
-I don't want to make trouble.	Eko ri non vori vake a marumkosa.<br>己 ⊢ 不 求 作 ⇒ 悪物.<br>I RI not want make A bad-thing.	pikotika level2 sentence
-Good night.	Pona nemyan.<br>好 无日.<br>good no-sun.	pikotika level2 sentence
-I did nothing.	Eko ri vake a nem.<br>己 ⊢ 作 ⇒ 无.<br>I RI make A no.	pikotika level2 sentence
+The story is beautiful, but it isn't true.	Tikakosa ri ponavite, sets tis ri non ves.<br>言物 ⊢ 好見, 但 此 ⊢ 不 真.<br>say-thing RI good-see, but this RI not true.	pikotika level2 sentence
+No problem.	Nem marumkosa.<br>无 悪物.<br>no bad-thing.	pikotika level2 sentence
+What's wrong?	Marumkosa ri ker?<br>悪物 ⊢ 何?<br>bad-thing RI what?	pikotika level2 sentence
 up; on	sur<br>上<br>the <i>sur</i>face is on top	pikotika level2 root
 fast; soon	veros<br>早<br><i>ver</i>y fast, <i>veloc</i>ity	pikotika level2 root
 near; almost	nir<br>近<br><i>near</i>	pikotika level2 root
@@ -81,9 +81,9 @@ where	kerroko<br>何所<br>what-place	pikotika level2 compound
 when; on what occasion	kertempo<br>何时<br>what-time	pikotika level2 compound
 what time; at what o'clock	kerora<br>何刻<br>what-hour	pikotika level2 compound
 question; ask; inquire	kertika<br>何言<br>what-say	pikotika level2 compound
-I see a small fish.	Eko ri vite a piko akupeste.<br>己 ⊢ 見 ⇒ 小 水匹.<br>I RI see A small water-animal.	pikotika level2 sentence
 And I'll have the fish, please.	Kum eko ri vori a akupeste, pam.<br>并 己 ⊢ 求 ⇒ 水匹, 乞.<br>and I RI want A water-animal, please.	pikotika level2 sentence
-I drink tea with my father.	Eko ri pipe a arpoaku kum eko viropari.<br>己 ⊢ 飲 ⇒ 木水 并 己 男亲.<br>I RI drink A plant-water and me man-parent.	pikotika level2 sentence
+I'm thirsty, but I don't want tea.	Eko ri pipevori, sets eko ri non vori a arpoaku.<br>己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.<br>I RI drink-want, but I RI not want A plant-water.	pikotika level2 sentence
+I see a small fish.	Eko ri vite a piko akupeste.<br>己 ⊢ 見 ⇒ 小 水匹.<br>I RI see A small water-animal.	pikotika level2 sentence
 thank; gratitude	mersi<br>恩<br>French <i>merci</i>!	pikotika level2 root
 for; in order to	por<br>為<br><i>pour</i> a drink for me	pikotika level2 root
 about; regarding	topi<br>件<br>on the <i>topi</i>c of	pikotika level2 root
@@ -92,18 +92,18 @@ beautiful; pretty; good-looking	ponavite<br>好見<br>good-see	pikotika level2 c
 welcome	kontenveni<br>楽来<br>happy-come	pikotika level2 compound
 tears; cry	viteaku<br>見水<br>see-water	pikotika level2 compound
 discover; find something new	novavite<br>初見<br>new-see	pikotika level2 compound
-About the big fish!	Topi meka akupeste!<br>件 大 水匹!<br>about big water-animal!	pikotika level2 sentence
-No, thank you.	Non, mersi.<br>不, 恩.<br>not, thank.	pikotika level2 sentence
+Thank you very much. You make me happy.	Meka mersi. Tu ri konten a eko.<br>大 恩. 尔 ⊢ 楽 ⇒ 己.<br>big thank. you RI happy A me.	pikotika level2 sentence
 I would like to thank the person who brought us here today.	Eko ri vori mersi a ri tisyan teneveni a ekomen ver tisroko rite omo.<br>己 ⊢ 求 恩 ⇒ ⊢ 此日 有来 ⇒ 己众 向 此所 ⊢> 人.<br>I RI want thank A RI this-sun have-come A I-group to this-place RI-TE person.	pikotika level2 sentence
+About the big fish!	Topi meka akupeste!<br>件 大 水匹!<br>about big water-animal!	pikotika level2 sentence
 write; writing	kita<br>写<br>I can write with my writing <i>kit</i>	pikotika level2 root
 work; job	opus<br>力<br>your magnum <i>opus</i> — life's work	pikotika level2 root
 can; ability	kan<br>能<br><i>can</i>	pikotika level2 root
 join; connect	yunta<br>合<br><i>you 'n' ta</i> others are now joined!	pikotika level2 root
 read	kitavite<br>写見<br>writing-see	pikotika level2 compound
 writer; author	kitaomo<br>写人<br>write-person	pikotika level2 compound
-I love the sea, but I can't swim.	Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.<br>己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.<br>I RI big-like A big-water, but I RI not can water-go.	pikotika level2 sentence
-You can do it.	Tu ri kan vake a tis.<br>尔 ⊢ 能 作 ⇒ 此.<br>you RI can do A this.	pikotika level2 sentence
+What is your new job?	Tu nova opus ri ker?<br>尔 初 力 ⊢ 何?<br>you new work RI what?	pikotika level2 sentence
 You work well.	Tu ri pona opus.<br>尔 ⊢ 好 力.<br>you RI good work.	pikotika level2 sentence
+We work together.	Ekomen ri yunta opus.<br>己众 ⊢ 合 力.<br>I-group RI join work.	pikotika level2 sentence
 more; extra	mas<br>更<br><i>mas</i>sive means more	pikotika level2 root
 interval; duration	turan<br>間<br>the <i>dur</i>ation you need <i>to run</i>	pikotika level2 root
 music; song	musi<br>曲<br><i>musi</i>c	pikotika level2 root
@@ -113,13 +113,14 @@ prepare; get ready; arrange	yervake<br>前作<br>before-make	pikotika level2 com
 politeness (verbal)	pamtika<br>乞言<br>please-say	pikotika level2 compound
 reader	kitaviteomo<br>写見人<br>writing-see-person	pikotika level2 compound
 trip; journey	veniire<br>来行<br>come-go	pikotika level2 compound
-I enjoy dancing tango.	Eko ri kusta a tanko musiire.<br>己 ⊢ 愛 ⇒ tanko 曲行.<br>I RI like A tanko music-go.	pikotika level2 sentence
-That sounds better than working.	Tis ri mas pona vons opus.<br>此 ⊢ 更 好 从 力.<br>this RI more good than work.	pikotika level2 sentence
-From now on, please tell me sooner.	Vons tistempo, pam mas veros tika ver eko.<br>从 此时, 乞 更 早 言 向 己.<br>from this-time, please more fast say to me.	pikotika level2 sentence
-Can we meet?	Ekomen ri kan sarve, ker?<br>己众 ⊢ 能 会, 何?<br>I-group RI can meet, what?	pikotika level2 sentence
-You will see it.	Tu ri vite a tis.<br>尔 ⊢ 見 ⇒ 此.<br>you RI see A this.	pikotika level2 sentence
-I see.	Eko ri vite.<br>己 ⊢ 見.<br>I RI see.	pikotika level2 sentence
-Thank you.	Meka mersi.<br>大 恩.<br>big thank.	pikotika level2 sentence
-Of course!	Ves!<br>真!<br>true!	pikotika level2 sentence
-Time goes fast.	Tempo ri veros ire.<br>时 ⊢ 早 行.<br>time RI fast go.	pikotika level2 sentence
-It's worse than that one.	Tis ri mas marum vons nontis.<br>此 ⊢ 更 悪 从 不此.<br>this RI more bad than not-this.	pikotika level2 sentence
+I hope you're better soon.	Eko ri vori a tu ri veros mas pona.<br>己 ⊢ 求 ⇒ 尔 ⊢ 早 更 好.<br>I RI want A you RI soon more good.	pikotika level2 sentence
+Ten minutes.	10 parte turan.<br>10 分 間.<br>10 part interval.	pikotika level2 sentence
+For three hours.	3 ora turan.<br>3 刻 間.<br>3 hour interval.	pikotika level2 sentence
+Take care (parting).	Pona ire.<br>好 行.<br>good go.	pikotika level2 sentence
+Here's two hundred.	Tis ri 200.<br>此 ⊢ 200.<br>this RI 200.	pikotika level2 sentence
+Nice day, isn't it?	Tis ri pona yan, non?<br>此 ⊢ 好 日, 不?<br>this RI good sun, not?	pikotika level2 sentence
+I'm not working right now.	Eko ri non opus in tistempo.<br>己 ⊢ 不 力 内 此时.<br>I RI not work in this-time.	pikotika level2 sentence
+The vehicle is new.	Karo ri nova.<br>车 ⊢ 初.<br>vehicle RI new.	pikotika level2 sentence
+I'm very happy.	Eko ri meka konten.<br>己 ⊢ 大 楽.<br>I RI very happy.	pikotika level2 sentence
+I wanted to go (but didn't).	Eko ri vori ire vin.<br>己 ⊢ 求 行 閉.<br>I RI want go finish.	pikotika level2 sentence
+Hello	Kontensarve.<br>楽会.<br>happy-meet.	pikotika level2 sentence

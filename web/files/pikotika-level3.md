@@ -190,23 +190,23 @@
 ## 风车所
 ### air-vehicle-place
 ===
-# You're talking.
+# Will you tell me a story?
 ---
-# Tu ri tika.
-## 尔 ⊢ 言.
-### you RI say.
+# Tu ri tika a tikakosa ver eko, ker?
+## 尔 ⊢ 言 ⇒ 言物 向 己, 何?
+### you RI say A say-thing to me, what?
 ===
-# And you?
+# How is your mother?
 ---
-# Kum tu, ker?
-## 并 尔, 何?
-### and you, what?
+# Tu vemapari ri kermoto?
+## 尔 女亲 ⊢ 何方?
+### you woman-parent RI what-manner?
 ===
-# You make me happy.
+# What does the label say?
 ---
-# Tu ri konten a eko.
-## 尔 ⊢ 楽 ⇒ 己.
-### you RI happy A I.
+# Nomen ri tika a ker?
+## 名 ⊢ 言 ⇒ 何?
+### label RI say A what?
 ===
 # weekday
 ---
@@ -652,50 +652,50 @@
 ## 内 上日, 火 水 ⊢ 内 室, 何?
 ### in up-sun, hot water RI in room, what?
 ===
-# Thank you.
+# Yes.
 ---
-# Mersi.
-## 恩.
-### thank.
+# Si.
+## 是.
+### yes.
 ===
-# Are you free on Saturday?
+# Nothing new.
 ---
-# In terayom, tu ri non opus, ker?
-## 内 土曜, 尔 ⊢ 不 力, 何?
-### in earth-weekday, you RI not work, what?
+# Nem nova.
+## 无 初.
+### no new.
 ===
-# I like music and reading.
+# I'll have that.
 ---
-# Eko ri kusta a musi kum kitavite.
-## 己 ⊢ 愛 ⇒ 曲 并 写見.
-### I RI like A music and writing-see.
+# Eko ri vori a tis.
+## 己 ⊢ 求 ⇒ 此.
+### I RI want A this.
 ===
-# Everybody says that.
+# It's good to see you.
 ---
-# Panomo ri tika a tis.
-## 全人 ⊢ 言 ⇒ 此.
-### every-person RI say A this.
+# Eko ri konten sarve a tu vin.
+## 己 ⊢ 楽 会 ⇒ 尔 閉.
+### I RI happy meet A you finish.
 ===
-# I'm Alice.
+# Sorry/oops/excuse me.
 ---
-# Eko ri Aras.
-## 己 ⊢ Aras.
-### I RI Alice.
+# Perton.
+## 悔.
+### sorry.
 ===
-# You're close.
+# Alice: Yes please.
 ---
-# Tu ri nir.
-## 尔 ⊢ 近.
-### you RI near.
+# Aras: Si, pam.
+## Aras: 是, 乞.
+### Alice: yes, please.
 ===
-# Hal is coming.
+# The music makes the children happy.
 ---
-# Omo Ar ri veni.
-## 人 Ar ⊢ 来.
-### person Hal RI come.
+# Musi ri konten a nino.
+## 曲 ⊢ 楽 ⇒ 子.
+### music RI happy A child.
 ===
-# About the big fish!
+# Tomorrow my mother is coming, but my father isn't.
 ---
-# Topi meka akupeste!
-## 件 大 水匹!
-### about big water-animal!
+# Yantar, eko vemapari ri veni, sets eko viropari ri non veni.
+## 日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.
+### day-after, me woman-parent RI come, but me man-parent RI not come.

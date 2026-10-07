@@ -40,23 +40,23 @@
 ## 不
 ### *non*-, *no*, *n*ot
 ===
-# Okay, okay.
----
-# Pona, pona.
-## 好, 好.
-### good, good.
-===
 # Yes.
 ---
 # Si.
 ## 是.
 ### yes.
 ===
-# I'm Bob.
+# You are happy.
 ---
-# Eko ri Popu.
-## 己 ⊢ Popu.
-### I RI Bob.
+# Tu ri konten.
+## 尔 ⊢ 楽.
+### you RI happy.
+===
+# I'm sad.
+---
+# Eko ri nonkonten.
+## 己 ⊢ 不楽.
+### I RI not-happy.
 ===
 # this; current
 ---
@@ -100,11 +100,11 @@
 ## 真
 ### truly *ves*ted in the truth
 ===
-# Big!
+# No. I'm a little sad.
 ---
-# Meka!
-## 大!
-### big!
+# Non. Eko ri piko nonkonten.
+## 不. 己 ⊢ 小 不楽.
+### not. I RI slight not-happy.
 ===
 # The food is fresh.
 ---
@@ -112,11 +112,11 @@
 ## 食 ⊢ 初.
 ### food RI new.
 ===
-# Of course!
+# Big!
 ---
-# Ves!
-## 真!
-### true!
+# Meka!
+## 大!
+### big!
 ===
 # meet; encounter
 ---
@@ -346,11 +346,11 @@
 ## 好, 内真.
 ### good, in-true.
 ===
-# You are right.
+# Please leave.
 ---
-# Tu ri ves.
-## 尔 ⊢ 真.
-### you RI true.
+# Pam eksire.
+## 乞 外行.
+### please out-go.
 ===
 # I'm here.
 ---
@@ -526,47 +526,29 @@
 ## 小言
 ### small-say
 ===
-# A short one.
----
-# Piko tikakosa.
-## 小 言物.
-### small say-thing.
-===
 # Ask inside the station.
 ---
 # Pam voritika in karoroko.
 ## 乞 求言 内 车所.
 ### please want-say in vehicle-place.
 ===
-# Really?
+# A short one.
 ---
-# Ves, ker?
-## 真, 何?
-### true, what?
+# Piko tikakosa.
+## 小 言物.
+### small say-thing.
 ===
-# All right, a little.
+# Where are you going?
 ---
-# Pona, piko.
-## 好, 小.
-### good, small.
+# Tu ri ire ver kerroko?
+## 尔 ⊢ 行 向 何所?
+### you RI go to what-place?
 ===
-# Take care (parting).
+# You are right.
 ---
-# Pona ire.
-## 好 行.
-### good go.
-===
-# Is that right?
----
-# Tis ri ves, si?
-## 此 ⊢ 真, 是?
-### this RI true, yes?
-===
-# I'm Alice.
----
-# Eko ri Aras.
-## 己 ⊢ Aras.
-### I RI Alice.
+# Tu ri ves.
+## 尔 ⊢ 真.
+### you RI true.
 ===
 # No!
 ---
@@ -574,11 +556,23 @@
 ## 不!
 ### not!
 ===
-# Please leave.
+# I have eaten.
 ---
-# Pam eksire.
-## 乞 外行.
-### please out-go.
+# Eko ri komi vin.
+## 己 ⊢ 食 閉.
+### I RI food finish.
+===
+# Okay, okay.
+---
+# Pona, pona.
+## 好, 好.
+### good, good.
+===
+# Take care (parting).
+---
+# Pona ire.
+## 好 行.
+### good go.
 ===
 # see; understand
 ---
@@ -646,11 +640,11 @@
 ## 何方
 ### what-manner
 ===
-# How have you been?
+# Hal is coming.
 ---
-# Tu ri kermoto?
-## 尔 ⊢ 何方?
-### you RI what-manner?
+# Omo Ar ri veni.
+## 人 Ar ⊢ 来.
+### person Hal RI come.
 ===
 # The road has been closed.
 ---
@@ -802,23 +796,23 @@
 ## 不真
 ### not-true
 ===
-# I don't want to make trouble.
+# The story is beautiful, but it isn't true.
 ---
-# Eko ri non vori vake a marumkosa.
-## 己 ⊢ 不 求 作 ⇒ 悪物.
-### I RI not want make A bad-thing.
+# Tikakosa ri ponavite, sets tis ri non ves.
+## 言物 ⊢ 好見, 但 此 ⊢ 不 真.
+### say-thing RI good-see, but this RI not true.
 ===
-# Good night.
+# No problem.
 ---
-# Pona nemyan.
-## 好 无日.
-### good no-sun.
+# Nem marumkosa.
+## 无 悪物.
+### no bad-thing.
 ===
-# I did nothing.
+# What's wrong?
 ---
-# Eko ri vake a nem.
-## 己 ⊢ 作 ⇒ 无.
-### I RI make A no.
+# Marumkosa ri ker?
+## 悪物 ⊢ 何?
+### bad-thing RI what?
 ===
 # up; on
 ---
@@ -1060,23 +1054,23 @@
 ## 何言
 ### what-say
 ===
-# I see a small fish.
----
-# Eko ri vite a piko akupeste.
-## 己 ⊢ 見 ⇒ 小 水匹.
-### I RI see A small water-animal.
-===
 # And I'll have the fish, please.
 ---
 # Kum eko ri vori a akupeste, pam.
 ## 并 己 ⊢ 求 ⇒ 水匹, 乞.
 ### and I RI want A water-animal, please.
 ===
-# I drink tea with my father.
+# I'm thirsty, but I don't want tea.
 ---
-# Eko ri pipe a arpoaku kum eko viropari.
-## 己 ⊢ 飲 ⇒ 木水 并 己 男亲.
-### I RI drink A plant-water and me man-parent.
+# Eko ri pipevori, sets eko ri non vori a arpoaku.
+## 己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.
+### I RI drink-want, but I RI not want A plant-water.
+===
+# I see a small fish.
+---
+# Eko ri vite a piko akupeste.
+## 己 ⊢ 見 ⇒ 小 水匹.
+### I RI see A small water-animal.
 ===
 # thank; gratitude
 ---
@@ -1126,23 +1120,23 @@
 ## 初見
 ### new-see
 ===
-# About the big fish!
+# Thank you very much. You make me happy.
 ---
-# Topi meka akupeste!
-## 件 大 水匹!
-### about big water-animal!
-===
-# No, thank you.
----
-# Non, mersi.
-## 不, 恩.
-### not, thank.
+# Meka mersi. Tu ri konten a eko.
+## 大 恩. 尔 ⊢ 楽 ⇒ 己.
+### big thank. you RI happy A me.
 ===
 # I would like to thank the person who brought us here today.
 ---
 # Eko ri vori mersi a ri tisyan teneveni a ekomen ver tisroko rite omo.
 ## 己 ⊢ 求 恩 ⇒ ⊢ 此日 有来 ⇒ 己众 向 此所 ⊢> 人.
 ### I RI want thank A RI this-sun have-come A I-group to this-place RI-TE person.
+===
+# About the big fish!
+---
+# Topi meka akupeste!
+## 件 大 水匹!
+### about big water-animal!
 ===
 # write; writing
 ---
@@ -1180,23 +1174,23 @@
 ## 写人
 ### write-person
 ===
-# I love the sea, but I can't swim.
+# What is your new job?
 ---
-# Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.
-## 己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.
-### I RI big-like A big-water, but I RI not can water-go.
-===
-# You can do it.
----
-# Tu ri kan vake a tis.
-## 尔 ⊢ 能 作 ⇒ 此.
-### you RI can do A this.
+# Tu nova opus ri ker?
+## 尔 初 力 ⊢ 何?
+### you new work RI what?
 ===
 # You work well.
 ---
 # Tu ri pona opus.
 ## 尔 ⊢ 好 力.
 ### you RI good work.
+===
+# We work together.
+---
+# Ekomen ri yunta opus.
+## 己众 ⊢ 合 力.
+### I-group RI join work.
 ===
 # more; extra
 ---
@@ -1252,59 +1246,59 @@
 ## 来行
 ### come-go
 ===
-# I enjoy dancing tango.
+# I hope you're better soon.
 ---
-# Eko ri kusta a tanko musiire.
-## 己 ⊢ 愛 ⇒ tanko 曲行.
-### I RI like A tanko music-go.
+# Eko ri vori a tu ri veros mas pona.
+## 己 ⊢ 求 ⇒ 尔 ⊢ 早 更 好.
+### I RI want A you RI soon more good.
 ===
-# That sounds better than working.
+# Ten minutes.
 ---
-# Tis ri mas pona vons opus.
-## 此 ⊢ 更 好 从 力.
-### this RI more good than work.
+# 10 parte turan.
+## 10 分 間.
+### 10 part interval.
 ===
-# From now on, please tell me sooner.
+# For three hours.
 ---
-# Vons tistempo, pam mas veros tika ver eko.
-## 从 此时, 乞 更 早 言 向 己.
-### from this-time, please more fast say to me.
+# 3 ora turan.
+## 3 刻 間.
+### 3 hour interval.
 ===
-# Can we meet?
+# Here's two hundred.
 ---
-# Ekomen ri kan sarve, ker?
-## 己众 ⊢ 能 会, 何?
-### I-group RI can meet, what?
+# Tis ri 200.
+## 此 ⊢ 200.
+### this RI 200.
 ===
-# You will see it.
+# Nice day, isn't it?
 ---
-# Tu ri vite a tis.
-## 尔 ⊢ 見 ⇒ 此.
-### you RI see A this.
+# Tis ri pona yan, non?
+## 此 ⊢ 好 日, 不?
+### this RI good sun, not?
 ===
-# I see.
+# I'm not working right now.
 ---
-# Eko ri vite.
-## 己 ⊢ 見.
-### I RI see.
+# Eko ri non opus in tistempo.
+## 己 ⊢ 不 力 内 此时.
+### I RI not work in this-time.
 ===
-# Thank you.
+# The vehicle is new.
 ---
-# Meka mersi.
-## 大 恩.
-### big thank.
+# Karo ri nova.
+## 车 ⊢ 初.
+### vehicle RI new.
 ===
-# Time goes fast.
+# I'm very happy.
 ---
-# Tempo ri veros ire.
-## 时 ⊢ 早 行.
-### time RI fast go.
+# Eko ri meka konten.
+## 己 ⊢ 大 楽.
+### I RI very happy.
 ===
-# It's worse than that one.
+# Hello
 ---
-# Tis ri mas marum vons nontis.
-## 此 ⊢ 更 悪 从 不此.
-### this RI more bad than not-this.
+# Kontensarve.
+## 楽会.
+### happy-meet.
 ===
 # color; hue
 ---
@@ -1498,17 +1492,23 @@
 ## 风车所
 ### air-vehicle-place
 ===
-# You're talking.
+# Will you tell me a story?
 ---
-# Tu ri tika.
-## 尔 ⊢ 言.
-### you RI say.
+# Tu ri tika a tikakosa ver eko, ker?
+## 尔 ⊢ 言 ⇒ 言物 向 己, 何?
+### you RI say A say-thing to me, what?
 ===
-# And you?
+# How is your mother?
 ---
-# Kum tu, ker?
-## 并 尔, 何?
-### and you, what?
+# Tu vemapari ri kermoto?
+## 尔 女亲 ⊢ 何方?
+### you woman-parent RI what-manner?
+===
+# What does the label say?
+---
+# Nomen ri tika a ker?
+## 名 ⊢ 言 ⇒ 何?
+### label RI say A what?
 ===
 # weekday
 ---
@@ -1954,41 +1954,47 @@
 ## 内 上日, 火 水 ⊢ 内 室, 何?
 ### in up-sun, hot water RI in room, what?
 ===
-# Thank you.
+# Nothing new.
 ---
-# Mersi.
-## 恩.
-### thank.
+# Nem nova.
+## 无 初.
+### no new.
 ===
-# Are you free on Saturday?
+# I'll have that.
 ---
-# In terayom, tu ri non opus, ker?
-## 内 土曜, 尔 ⊢ 不 力, 何?
-### in earth-weekday, you RI not work, what?
+# Eko ri vori a tis.
+## 己 ⊢ 求 ⇒ 此.
+### I RI want A this.
 ===
-# I like music and reading.
+# It's good to see you.
 ---
-# Eko ri kusta a musi kum kitavite.
-## 己 ⊢ 愛 ⇒ 曲 并 写見.
-### I RI like A music and writing-see.
+# Eko ri konten sarve a tu vin.
+## 己 ⊢ 楽 会 ⇒ 尔 閉.
+### I RI happy meet A you finish.
 ===
-# Everybody says that.
+# Sorry/oops/excuse me.
 ---
-# Panomo ri tika a tis.
-## 全人 ⊢ 言 ⇒ 此.
-### every-person RI say A this.
+# Perton.
+## 悔.
+### sorry.
 ===
-# You're close.
+# Alice: Yes please.
 ---
-# Tu ri nir.
-## 尔 ⊢ 近.
-### you RI near.
+# Aras: Si, pam.
+## Aras: 是, 乞.
+### Alice: yes, please.
 ===
-# Hal is coming.
+# The music makes the children happy.
 ---
-# Omo Ar ri veni.
-## 人 Ar ⊢ 来.
-### person Hal RI come.
+# Musi ri konten a nino.
+## 曲 ⊢ 楽 ⇒ 子.
+### music RI happy A child.
+===
+# Tomorrow my mother is coming, but my father isn't.
+---
+# Yantar, eko vemapari ri veni, sets eko viropari ri non veni.
+## 日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.
+### day-after, me woman-parent RI come, but me man-parent RI not come.
 ===
 # begin; open
 ---
@@ -2044,17 +2050,17 @@
 ## 乞 止 并 己众.
 ### please remain and I-group.
 ===
-# I'm sorry — I should have started earlier.
----
-# Eko ri perton: eko ri pospona apa yer vin.
-## 己 ⊢ 悔: 己 ⊢ 可好 开 前 閉.
-### I RI sorry: I RI if-good begin before finish.
-===
 # I am still here.
 ---
 # Eko ri in tisroko sista.
 ## 己 ⊢ 内 此所 止.
 ### I RI in this-place remain.
+===
+# I am still eating.
+---
+# Eko ri komi sista.
+## 己 ⊢ 食 止.
+### I RI food remain.
 ===
 # head; chief
 ---
@@ -2122,23 +2128,23 @@
 ## 头病
 ### head-sick
 ===
-# My boss is younger than me.
+# Get well.
 ---
-# Eko opustesta ri mas anyopiko vons eko.
-## 己 力头 ⊢ 更 年小 从 己.
-### me work-head RI more year-small than me.
+# Pona sana.
+## 好 医.
+### good heal.
 ===
-# I ask the cook to make it not spicy.
+# The boss gave us the green light.
 ---
-# Eko ri voritika ver komivakeomo a tis ri tiven non wosapor.
-## 己 ⊢ 求言 向 食作人 ⇒ 此 ⊢ 成 不 火味.
-### I RI want-say to food-make-person A this RI become not hot-taste.
+# Opustesta ri vertetika ver ekomen.
+## 力头 ⊢ 緑言 向 己众.
+### work-head RI green-say to I-group.
 ===
-# Walk five minutes.
+# A man will come tomorrow to fix it.
 ---
-# Pam 5 parte turan kampaire.
-## 乞 5 分 間 足行.
-### please 5 part interval foot-go.
+# Yantar, wun omo ri veni por sana a tis.
+## 日后, 1 人 ⊢ 来 為 医 ⇒ 此.
+### day-after, one person RI come for heal A this.
 ===
 # meat
 ---
@@ -2188,17 +2194,17 @@
 ## 尔 ⊢ 有 ⇒ 不 肉 食, 何?
 ### you RI have A not meat food, what?
 ===
-# Not cold, please.
----
-# Non rikus, pam.
-## 不 冷, 乞.
-### not cold, please.
-===
 # The children want ice cream.
 ---
 # Nino ri vori a rikusraten.
 ## 子 ⊢ 求 ⇒ 冷乳.
 ### child RI want A ice-milk.
+===
+# Do you hear that?
+---
+# Tu ri oti a tis, ker?
+## 尔 ⊢ 耳 ⇒ 此, 何?
+### you RI hear A this, what?
 ===
 # bend; turn
 ---
@@ -2296,11 +2302,11 @@
 ## 電言
 ### electric-say
 ===
-# I have a black-and-white picture.
+# Apples. From the mountains. They're not sweet; they're a little sour.
 ---
-# Eko ri tene a nero kum anka pitur.
-## 己 ⊢ 有 ⇒ 黒 并 白 画.
-### I RI have A black and white picture.
+# Rotunpomo, vons surtera. Tis ri non tuke; tis ri piko nontuke.
+## 丸果, 从 上土. 此 ⊢ 不 甘; 此 ⊢ 小 不甘.
+### round-fruit, from up-earth. this RI not sweet; this RI small not-sweet.
 ===
 # I'll drive back tomorrow.
 ---
@@ -2308,11 +2314,11 @@
 ## 日后, 己 ⊢ 车行 反.
 ### day-after, I RI vehicle-go back.
 ===
-# And forty back.
+# I have a black-and-white picture.
 ---
-# Kum 40 retsemoni.
-## 并 40 反贝.
-### and 40 back-money.
+# Eko ri tene a nero kum anka pitur.
+## 己 ⊢ 有 ⇒ 黒 并 白 画.
+### I RI have A black and white picture.
 ===
 # rain
 ---
@@ -2554,23 +2560,23 @@
 ## 此故
 ### this-reason
 ===
-# If it isn't spicy, the child will eat it.
+# I'm nervous speaking Pikotika.
 ---
-# Pos tis ri non wosapor, tisrason nino ri komi a tis.
-## 可 此 ⊢ 不 火味, 此故 子 ⊢ 食 ⇒ 此.
-### if this RI not hot-taste, this-reason child RI food A this.
+# Eko ri pikotimo tika a pikotika.
+## 己 ⊢ 小危 言 ⇒ 小言.
+### I RI small-fear say A small-say.
 ===
-# If I had the money, I would buy it.
+# If you build it, they will come.
 ---
-# Nonves eko ri tene a moni, tisrason eko ri kompar a tis.
-## 不真 己 ⊢ 有 ⇒ 贝, 此故 己 ⊢ 買 ⇒ 此.
-### not-true I RI have A money, this-reason I RI buy A this.
+# Pos tu ri vake a tis, tisrason nontisomo ri veni.
+## 可 尔 ⊢ 作 ⇒ 此, 此故 不此人 ⊢ 来.
+### if you RI make A this, this-reason not-this-person RI come.
 ===
-# That explains it.
+# If it's too expensive, I won't buy it.
 ---
-# Tis ri rason.
-## 此 ⊢ 故.
-### this RI reason.
+# Pos tis ri surmesur moni, tisrason eko ri non kompar a tis.
+## 可 此 ⊢ 上寸 贝, 此故 己 ⊢ 不 買 ⇒ 此.
+### if this RI up-degree money, this-reason I RI not buy A this.
 ===
 # hard; difficult
 ---
@@ -2626,11 +2632,11 @@
 ## 重要
 ### heavy-necessary
 ===
-# In the future, everything will be easier.
+# Narrator: Alice looks in her wallet.
 ---
-# Tartempo, pan ri mas nonsorin.
-## 后时, 全 ⊢ 更 不硬.
-### after-time, all RI more not-hard.
+# Tikakosaomo: Aras ri vite in monivaso.
+## 言物人: Aras ⊢ 見 内 贝皿.
+### say-thing-person: Alice RI see in money-box.
 ===
 # It becomes easier.
 ---
@@ -2638,53 +2644,35 @@
 ## 此 ⊢ 成 更 不硬.
 ### this RI become more not-hard.
 ===
-# Narrator: Alice looks in her wallet.
+# Shopkeeper: Thank you...  three dollars change.  Do you need a bag?
 ---
-# Tikakosaomo: Aras ri vite in monivaso.
-## 言物人: Aras ⊢ 見 内 贝皿.
-### say-thing-person: Alice RI see in money-box.
+# Komparomo: Mersi... 3 retsemoni. Tu ri neses a komparvaso, ker?
+## 買人: 恩... 3 反贝. 尔 ⊢ 要 ⇒ 買皿, 何?
+### buy-person: thank... 3 back-money. you RI must A buy-box, what?
 ===
-# I like my present job.
+# I see the fish in the water.
 ---
-# Eko ri kusta a eko tis opus.
-## 己 ⊢ 愛 ⇒ 己 此 力.
-### I RI like A me this work.
+# Eko ri vite a akupeste in aku.
+## 己 ⊢ 見 ⇒ 水匹 内 水.
+### I RI see A water-animal in water.
 ===
-# Do you have a minute?
+# There is a problem.
 ---
-# Tu ri tene a wun parte turan, ker?
-## 尔 ⊢ 有 ⇒ 1 分 間, 何?
-### you RI have A one part interval, what?
+# Ri marumkosa.
+## ⊢ 悪物.
+### RI bad-thing.
 ===
-# No, I don't see.
+# How's the new job?
 ---
-# Non vite.
-## 不 見.
-### not see.
+# Tu nova opus ri kermoto?
+## 尔 初 力 ⊢ 何方?
+### you new work RI what-manner?
 ===
-# Yesterday I wanted to go.
+# It's late.
 ---
-# Yanyer, eko ri vori ire.
-## 日前, 己 ⊢ 求 行.
-### day-before, I RI want go.
-===
-# Already?
----
-# Meka yer, ker?
-## 大 前, 何?
-### big before, what?
-===
-# This is a sea creature.
----
-# Tis ri meka aku te peste.
-## 此 ⊢ 大 水 > 匹.
-### this RI big water TE animal.
-===
-# Sorry/oops/excuse me.
----
-# Perton.
-## 悔.
-### sorry.
+# Ora ri tar.
+## 刻 ⊢ 后.
+### hour RI after.
 ===
 # body; physical
 ---
@@ -2812,23 +2800,23 @@
 ## 己悪心
 ### me-bad-feel
 ===
-# I'm a little tired.
+# I'm surprised and happy — and a little embarrassed.
 ---
-# Eko ri piko kansa.
-## 己 ⊢ 小 疲.
-### I RI slight tired.
+# Eko ri sorpe kum konten — kum piko ekomarumsenti.
+## 己 ⊢ 奇 并 楽 — 并 小 己悪心.
+### I RI surprise and happy — and slight I-bad-feel.
 ===
-# I am tired. I need to go to bed!
+# The anger has passed.
 ---
-# Eko ri kansa. Eko ri neses tormi!
-## 己 ⊢ 疲. 己 ⊢ 要 床!
-### I RI tired. I RI must sleep!
+# Raye ri vin.
+## 怒 ⊢ 閉.
+### anger RI finish.
 ===
-# If you're tired, we can go back.
+# I'm not tired.
 ---
-# Pos tu ri kansa, tisrason ekomen ri kan retsire.
-## 可 尔 ⊢ 疲, 此故 己众 ⊢ 能 反行.
-### if you RI tired, this-reason I-group RI can back-go.
+# Eko ri non kansa.
+## 己 ⊢ 不 疲.
+### I RI not tired.
 ===
 # or; otherwise
 ---
@@ -2932,23 +2920,23 @@
 ## 油白米
 ### oil-white-grain
 ===
-# Twenty each, or a hundred for six.
+# I'm eating with you.
 ---
-# 20 moni por wun, sive 100 moni por 6.
-## 20 贝 為 1, 或 100 贝 為 6.
-### 20 money for one, or 100 money for 6.
+# Eko ri komi kum tu.
+## 己 ⊢ 食 并 尔.
+### I RI food and you.
 ===
-# If I had eaten, I wouldn't be hungry now.
+# For a week.
 ---
-# Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.
-## 不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.
-### not-true I RI food finish, this-reason I RI not food-want this-time.
+# 1 senseyan turan.
+## 1 7日 間.
+### 1 seven-day interval.
 ===
-# Ten minutes.
+# Why?
 ---
-# 10 parte turan.
-## 10 分 間.
-### 10 part interval.
+# Kerrason?
+## 何故?
+### what-reason?
 ===
 # bird
 ---
@@ -2998,11 +2986,11 @@
 ## 日前, 己 ⊢ 見 ⇒ 犬.
 ### day-before, I RI see A dog.
 ===
-# The flock is flying over the sea.
+# Tomorrow I will see the dog.
 ---
-# Avismen ri ventoire sur mekaaku.
-## 鳥众 ⊢ 风行 上 大水.
-### bird-group RI air-go up big-water.
+# Yantar, eko ri vite a kanis.
+## 日后, 己 ⊢ 見 ⇒ 犬.
+### day-after, I RI see A dog.
 ===
 # You see the dog, don't you?
 ---
@@ -3184,17 +3172,17 @@
 ## 切工
 ### cut-tool
 ===
-# Leave now, or you'll miss the train.
----
-# Pam eksire in tistempo, sive tu ri perti a metarrinekaro.
-## 乞 外行 内 此时, 或 尔 ⊢ 失 ⇒ 金糸车.
-### please out-go in this-time, or you RI lose A metal-line-vehicle.
-===
 # Please clean the room.
 ---
 # Pam puru a kamar.
 ## 乞 清 ⇒ 室.
 ### please clean A room.
+===
+# I lost my phone on the bus.
+---
+# Eko ri perti a eko vortotika in muromokaro.
+## 己 ⊢ 失 ⇒ 己 電言 内 多人车.
+### I RI lose A me electric-say in many-person-vehicle.
 ===
 # One thing — the light in the hall is broken.
 ---
@@ -3298,38 +3286,26 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# We're leaving.
+# This changes everything.
 ---
-# Ekomen ri eksire.
-## 己众 ⊢ 外行.
-### I-group RI out-go.
+# Tis ri arvake a pankosa.
+## 此 ⊢ 別作 ⇒ 全物.
+### this RI other-make A every-thing.
 ===
-# Six bananas and four apples — one hundred sixty.
+# Yesterday I read a good story.
 ---
-# 6 ronkayoropomo kum 4 rotunpomo: 160 moni.
-## 6 长黄果 并 4 丸果: 160 贝.
-### 6 long-yellow-fruit and 4 round-fruit: 160 money.
+# Yanyer, eko ri kitavite a pona tikakosa.
+## 日前, 己 ⊢ 写見 ⇒ 好 言物.
+### day-before, I RI writing-see A good say-thing.
 ===
-# I think you would like it.
+# If I had eaten, I wouldn't be hungry now.
 ---
-# Eko ri pensa a tu ri kusta a tis.
-## 己 ⊢ 思 ⇒ 尔 ⊢ 愛 ⇒ 此.
-### I RI think A you RI like A this.
+# Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.
+## 不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.
+### not-true I RI food finish, this-reason I RI not food-want this-time.
 ===
-# Apples. From the mountains. They're not sweet; they're a little sour.
+# Try one.
 ---
-# Rotunpomo, vons surtera. Tis ri non tuke; tis ri piko nontuke.
-## 丸果, 从 上土. 此 ⊢ 不 甘; 此 ⊢ 小 不甘.
-### round-fruit, from up-earth. this RI not sweet; this RI small not-sweet.
-===
-# Have fun (parting).
----
-# Pona yu.
-## 好 玩.
-### good play.
-===
-# What is your new job?
----
-# Tu nova opus ri ker?
-## 尔 初 力 ⊢ 何?
-### you new work RI what?
+# Pam sapor a wun.
+## 乞 味 ⇒ 1.
+### please taste A one.

@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-921 terms
+924 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -44,6 +44,7 @@
 | another person | other-person | aromo | 別人 |
 | answer | back-say | retsetika | 反言 |
 | anticipate | not-surprise | nonsorpe | 不奇 |
+| anxious | small-fear | pikotimo | 小危 |
 | anything else | other-thing | arkosa | 別物 |
 | anyway | other-about | artopi | 別件 |
 | apple | round-fruit | rotunpomo | 丸果 |
@@ -493,6 +494,7 @@
 | mythical beast | surprise-animal | sorpepeste | 奇匹 |
 | napkin | food-cloth | komiropa | 食衣 |
 | narrator | say-thing-person | tikakosaomo | 言物人 |
+| nervous | small-fear | pikotimo | 小危 |
 | network | electric-join | vortoyunta | 電合 |
 | never | no-time | nemtempo | 无时 |
 | newspaper | new-page | novakarta | 初片 |
@@ -844,6 +846,7 @@
 | turnstile | money-door | moniporta | 贝門 |
 | ugly | bad-see | marumvite | 悪見 |
 | umbrella | rain-tool | ruvauter | 雨工 |
+| uneasy | small-fear | pikotimo | 小危 |
 | unfortunate | bad-if | marumpos | 悪可 |
 | unfortunately | bad-if | marumpos | 悪可 |
 | unfriendly person | cold-person | rikusomo | 冷人 |

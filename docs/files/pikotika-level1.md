@@ -40,23 +40,23 @@
 ## 不
 ### *non*-, *no*, *n*ot
 ===
-# Okay, okay.
----
-# Pona, pona.
-## 好, 好.
-### good, good.
-===
 # Yes.
 ---
 # Si.
 ## 是.
 ### yes.
 ===
-# I'm Bob.
+# You are happy.
 ---
-# Eko ri Popu.
-## 己 ⊢ Popu.
-### I RI Bob.
+# Tu ri konten.
+## 尔 ⊢ 楽.
+### you RI happy.
+===
+# I'm sad.
+---
+# Eko ri nonkonten.
+## 己 ⊢ 不楽.
+### I RI not-happy.
 ===
 # this; current
 ---
@@ -100,11 +100,11 @@
 ## 真
 ### truly *ves*ted in the truth
 ===
-# Big!
+# No. I'm a little sad.
 ---
-# Meka!
-## 大!
-### big!
+# Non. Eko ri piko nonkonten.
+## 不. 己 ⊢ 小 不楽.
+### not. I RI slight not-happy.
 ===
 # The food is fresh.
 ---
@@ -112,11 +112,11 @@
 ## 食 ⊢ 初.
 ### food RI new.
 ===
-# Of course!
+# Big!
 ---
-# Ves!
-## 真!
-### true!
+# Meka!
+## 大!
+### big!
 ===
 # meet; encounter
 ---
@@ -346,11 +346,11 @@
 ## 好, 内真.
 ### good, in-true.
 ===
-# You are right.
+# Please leave.
 ---
-# Tu ri ves.
-## 尔 ⊢ 真.
-### you RI true.
+# Pam eksire.
+## 乞 外行.
+### please out-go.
 ===
 # I'm here.
 ---
@@ -526,47 +526,29 @@
 ## 小言
 ### small-say
 ===
-# A short one.
----
-# Piko tikakosa.
-## 小 言物.
-### small say-thing.
-===
 # Ask inside the station.
 ---
 # Pam voritika in karoroko.
 ## 乞 求言 内 车所.
 ### please want-say in vehicle-place.
 ===
-# Really?
+# A short one.
 ---
-# Ves, ker?
-## 真, 何?
-### true, what?
+# Piko tikakosa.
+## 小 言物.
+### small say-thing.
 ===
-# All right, a little.
+# Where are you going?
 ---
-# Pona, piko.
-## 好, 小.
-### good, small.
+# Tu ri ire ver kerroko?
+## 尔 ⊢ 行 向 何所?
+### you RI go to what-place?
 ===
-# Take care (parting).
+# You are right.
 ---
-# Pona ire.
-## 好 行.
-### good go.
-===
-# Is that right?
----
-# Tis ri ves, si?
-## 此 ⊢ 真, 是?
-### this RI true, yes?
-===
-# I'm Alice.
----
-# Eko ri Aras.
-## 己 ⊢ Aras.
-### I RI Alice.
+# Tu ri ves.
+## 尔 ⊢ 真.
+### you RI true.
 ===
 # No!
 ---
@@ -574,8 +556,20 @@
 ## 不!
 ### not!
 ===
-# Please leave.
+# I have eaten.
 ---
-# Pam eksire.
-## 乞 外行.
-### please out-go.
+# Eko ri komi vin.
+## 己 ⊢ 食 閉.
+### I RI food finish.
+===
+# Okay, okay.
+---
+# Pona, pona.
+## 好, 好.
+### good, good.
+===
+# Take care (parting).
+---
+# Pona ire.
+## 好 行.
+### good go.

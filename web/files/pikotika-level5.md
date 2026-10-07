@@ -124,23 +124,23 @@
 ## 己悪心
 ### me-bad-feel
 ===
-# I'm a little tired.
+# I'm surprised and happy — and a little embarrassed.
 ---
-# Eko ri piko kansa.
-## 己 ⊢ 小 疲.
-### I RI slight tired.
+# Eko ri sorpe kum konten — kum piko ekomarumsenti.
+## 己 ⊢ 奇 并 楽 — 并 小 己悪心.
+### I RI surprise and happy — and slight I-bad-feel.
 ===
-# I am tired. I need to go to bed!
+# The anger has passed.
 ---
-# Eko ri kansa. Eko ri neses tormi!
-## 己 ⊢ 疲. 己 ⊢ 要 床!
-### I RI tired. I RI must sleep!
+# Raye ri vin.
+## 怒 ⊢ 閉.
+### anger RI finish.
 ===
-# If you're tired, we can go back.
+# I'm not tired.
 ---
-# Pos tu ri kansa, tisrason ekomen ri kan retsire.
-## 可 尔 ⊢ 疲, 此故 己众 ⊢ 能 反行.
-### if you RI tired, this-reason I-group RI can back-go.
+# Eko ri non kansa.
+## 己 ⊢ 不 疲.
+### I RI not tired.
 ===
 # or; otherwise
 ---
@@ -244,23 +244,23 @@
 ## 油白米
 ### oil-white-grain
 ===
-# Twenty each, or a hundred for six.
+# I'm eating with you.
 ---
-# 20 moni por wun, sive 100 moni por 6.
-## 20 贝 為 1, 或 100 贝 為 6.
-### 20 money for one, or 100 money for 6.
+# Eko ri komi kum tu.
+## 己 ⊢ 食 并 尔.
+### I RI food and you.
 ===
-# If I had eaten, I wouldn't be hungry now.
+# For a week.
 ---
-# Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.
-## 不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.
-### not-true I RI food finish, this-reason I RI not food-want this-time.
+# 1 senseyan turan.
+## 1 7日 間.
+### 1 seven-day interval.
 ===
-# Ten minutes.
+# Why?
 ---
-# 10 parte turan.
-## 10 分 間.
-### 10 part interval.
+# Kerrason?
+## 何故?
+### what-reason?
 ===
 # bird
 ---
@@ -310,11 +310,11 @@
 ## 日前, 己 ⊢ 見 ⇒ 犬.
 ### day-before, I RI see A dog.
 ===
-# The flock is flying over the sea.
+# Tomorrow I will see the dog.
 ---
-# Avismen ri ventoire sur mekaaku.
-## 鳥众 ⊢ 风行 上 大水.
-### bird-group RI air-go up big-water.
+# Yantar, eko ri vite a kanis.
+## 日后, 己 ⊢ 見 ⇒ 犬.
+### day-after, I RI see A dog.
 ===
 # You see the dog, don't you?
 ---
@@ -496,17 +496,17 @@
 ## 切工
 ### cut-tool
 ===
-# Leave now, or you'll miss the train.
----
-# Pam eksire in tistempo, sive tu ri perti a metarrinekaro.
-## 乞 外行 内 此时, 或 尔 ⊢ 失 ⇒ 金糸车.
-### please out-go in this-time, or you RI lose A metal-line-vehicle.
-===
 # Please clean the room.
 ---
 # Pam puru a kamar.
 ## 乞 清 ⇒ 室.
 ### please clean A room.
+===
+# I lost my phone on the bus.
+---
+# Eko ri perti a eko vortotika in muromokaro.
+## 己 ⊢ 失 ⇒ 己 電言 内 多人车.
+### I RI lose A me electric-say in many-person-vehicle.
 ===
 # One thing — the light in the hall is broken.
 ---
@@ -610,50 +610,44 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# We're leaving.
+# This changes everything.
 ---
-# Ekomen ri eksire.
-## 己众 ⊢ 外行.
-### I-group RI out-go.
+# Tis ri arvake a pankosa.
+## 此 ⊢ 別作 ⇒ 全物.
+### this RI other-make A every-thing.
 ===
-# Six bananas and four apples — one hundred sixty.
+# Please try again.
 ---
-# 6 ronkayoropomo kum 4 rotunpomo: 160 moni.
-## 6 长黄果 并 4 丸果: 160 贝.
-### 6 long-yellow-fruit and 4 round-fruit: 160 money.
+# Pam repe tentar.
+## 乞 又 試.
+### please again try.
 ===
-# Little by little.
+# Hello
 ---
-# Piko tar piko.
-## 小 后 小.
-### small after small.
+# Kontensarve.
+## 楽会.
+### happy-meet.
 ===
-# I think you would like it.
+# Yesterday I read a good story.
 ---
-# Eko ri pensa a tu ri kusta a tis.
-## 己 ⊢ 思 ⇒ 尔 ⊢ 愛 ⇒ 此.
-### I RI think A you RI like A this.
+# Yanyer, eko ri kitavite a pona tikakosa.
+## 日前, 己 ⊢ 写見 ⇒ 好 言物.
+### day-before, I RI writing-see A good say-thing.
 ===
-# Apples. From the mountains. They're not sweet; they're a little sour.
+# If I had eaten, I wouldn't be hungry now.
 ---
-# Rotunpomo, vons surtera. Tis ri non tuke; tis ri piko nontuke.
-## 丸果, 从 上土. 此 ⊢ 不 甘; 此 ⊢ 小 不甘.
-### round-fruit, from up-earth. this RI not sweet; this RI small not-sweet.
+# Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.
+## 不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.
+### not-true I RI food finish, this-reason I RI not food-want this-time.
 ===
-# Have fun (parting).
+# I'm 34 years old.
 ---
-# Pona yu.
-## 好 玩.
-### good play.
+# Eko anyoturan ri 34.
+## 己 年間 ⊢ 34.
+### me year-duration RI 34.
 ===
-# What is your new job?
+# Try one.
 ---
-# Tu nova opus ri ker?
-## 尔 初 力 ⊢ 何?
-### you new work RI what?
-===
-# I love the sea, but I can't swim.
----
-# Eko ri mekakusta a mekaaku, sets eko ri non kan akuire.
-## 己 ⊢ 大愛 ⇒ 大水, 但 己 ⊢ 不 能 水行.
-### I RI big-like A big-water, but I RI not can water-go.
+# Pam sapor a wun.
+## 乞 味 ⇒ 1.
+### please taste A one.

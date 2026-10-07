@@ -499,3 +499,44 @@ Tom wasn't wearing his uniform when I saw him today.	this-sun, I RI see A Tom in
 Last night I went to my friend's wedding.	before no-sun, I RI go to I friend marry-sun.	Yer nemyan, eko ri ire ver eko ami marisyan.	前 无日, 己 ⊢ 行 向 己 朋 婚日.	5	family;dates
 I hope everyone has a good day.	I RI want A good day for every-person.	Eko ri vori a pona yan por panomo.	己 ⊢ 求 ⇒ 好 日 為 全人.	3	pleasantries
 Do you know my relative, Mary? She's my cousin.	you RI know A I parent-group Mary, what? this-person RI I parent same-parent-person TE child.	Tu ri sape a eko parimen Meri, ker? Tisomo ri eko pari sampariomo te nino.	尔 ⊢ 知 ⇒ 己 亲众 Meri, 何? 此人 ⊢ 己 亲 同亲人 > 子.	3	family
+I'm happy.	I RI happy.	Eko ri konten.	己 ⊢ 楽.	1	feelings
+She's angry.	this-person RI angry.	Tisomo ri raye.	此人 ⊢ 怒.	5	feelings
+The child is scared.	child RI fear.	Nino ri timo.	子 ⊢ 危.	4	feelings
+We're surprised!	I-group RI surprise!	Ekomen ri sorpe!	己众 ⊢ 奇!	5	feelings
+I'm sad.	I RI not-happy.	Eko ri nonkonten.	己 ⊢ 不楽.	1	feelings
+I like it.	I RI like A this.	Eko ri kusta a tis.	己 ⊢ 愛 ⇒ 此.	2	feelings
+I'm very happy.	I RI very happy.	Eko ri meka konten.	己 ⊢ 大 楽.	1	feelings
+I'm too tired.	I RI up-amount tired.	Eko ri surmesur kansa.	己 ⊢ 上寸 疲.	5	feelings
+I'm not afraid.	I RI not fear.	Eko ri non timo.	己 ⊢ 不 危.	4	feelings
+I'm happier now.	I RI more happy in this-time.	Eko ri mas konten in tistempo.	己 ⊢ 更 楽 内 此时.	2	feelings
+I love the sea.	I RI big-like A big-water.	Eko ri mekakusta a mekaaku.	己 ⊢ 大愛 ⇒ 大水.	2	feelings
+We love you.	I-group RI big-like A you.	Ekomen ri mekakusta a tu.	己众 ⊢ 大愛 ⇒ 尔.	2	feelings
+At night I'm at peace.	in no-sun, I RI small-happy.	In nemyan, eko ri pikokonten.	内 无日, 己 ⊢ 小楽.	2	feelings;time
+The dog frightens me.	dog RI fear A me.	Kanis ri timo a eko.	犬 ⊢ 危 ⇒ 己.	5	feelings
+I'm worried about you.	I RI fear about you.	Eko ri timo topi tu.	己 ⊢ 危 件 尔.	4	feelings
+I'm afraid of the dog.	I RI fear about dog.	Eko ri timo topi kanis.	己 ⊢ 危 件 犬.	5	feelings
+I'm happy about your new job.	I RI happy about you new work.	Eko ri konten topi tu nova opus.	己 ⊢ 楽 件 尔 初 力.	2	feelings
+What are you angry about?	you RI angry about what?	Tu ri raye topi ker?	尔 ⊢ 怒 件 何?	5	feelings
+I'm nervous speaking Pikotika.	I RI small-fear say A small-say.	Eko ri pikotimo tika a pikotika.	己 ⊢ 小危 言 ⇒ 小言.	4	feelings
+I'm getting tired.	I RI tired begin.	Eko ri kansa apa.	己 ⊢ 疲 开.	5	feelings
+She got angry.	this-person RI become angry.	Tisomo ri tiven raye.	此人 ⊢ 成 怒.	5	feelings
+I'm still sad.	I RI not-happy remain.	Eko ri nonkonten sista.	己 ⊢ 不楽 止.	4	feelings
+The anger has passed.	anger RI finish.	Raye ri vin.	怒 ⊢ 閉.	5	feelings
+She's smiling.	this-person RI happy-mouth.	Tisomo ri kontenpuka.	此人 ⊢ 楽口.	4	feelings
+The child is crying.	child RI see-water.	Nino ri viteaku.	子 ⊢ 見水.	2	feelings
+That makes me laugh.	this RI big-happy-mouth A me.	Tis ri mekakontenpuka a eko.	此 ⊢ 大楽口 ⇒ 己.	4	feelings
+The look on your face says it all.	you feel-picture RI say A all.	Tu sentipitur ri tika a pan.	尔 心画 ⊢ 言 ⇒ 全.	4	feelings
+Please stay calm.	please not-anger.	Pam nonraye.	乞 不怒.	5	feelings
+I'm proud of you.	I RI I-good-feel about you.	Eko ri ekoponasenti topi tu.	己 ⊢ 己好心 件 尔.	3	feelings
+What's wrong?	bad-thing RI what?	Marumkosa ri ker?	悪物 ⊢ 何?	2	feelings
+You're sad, aren't you?	you RI not-happy, not?	Tu ri nonkonten, non?	尔 ⊢ 不楽, 不?	1	feelings
+Can I help?	I RI can help, what?	Eko ri kan servi, ker?	己 ⊢ 能 助, 何?	4	feelings
+Bob, are you all right?	Bob, you RI good, what?	Popu, tu ri pona, ker?	Popu, 尔 ⊢ 好, 何?	1	feelings
+No. I'm a little sad.	not. I RI slight not-happy.	Non. Eko ri piko nonkonten.	不. 己 ⊢ 小 不楽.	1	feelings
+I lost my phone on the bus.	I RI lose A me electric-say in many-person-vehicle.	Eko ri perti a eko vortotika in muromokaro.	己 ⊢ 失 ⇒ 己 電言 内 多人车.	5	feelings
+I'm really angry at myself.	I RI very angry about me.	Eko ri meka raye topi eko.	己 ⊢ 大 怒 件 己.	5	feelings
+Don't worry. I'll call your phone.	please not fear. I RI say to you electric-say.	Pam non timo. Eko ri tika ver tu vortotika.	乞 不 危. 己 ⊢ 言 向 尔 電言.	4	feelings
+Do you hear that?	you RI hear A this, what?	Tu ri oti a tis, ker?	尔 ⊢ 耳 ⇒ 此, 何?	4	feelings
+It's in my bag!	this RI in me go-box!	Tis ri in eko irevaso!	此 ⊢ 内 己 行皿!	4	feelings
+I'm surprised and happy — and a little embarrassed.	I RI surprise and happy — and slight I-bad-feel.	Eko ri sorpe kum konten — kum piko ekomarumsenti.	己 ⊢ 奇 并 楽 — 并 小 己悪心.	5	feelings
+Thank you very much. You make me happy.	big thank. you RI happy A me.	Meka mersi. Tu ri konten a eko.	大 恩. 尔 ⊢ 楽 ⇒ 己.	2	feelings
