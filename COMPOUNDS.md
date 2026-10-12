@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-924 terms
+935 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -38,6 +38,7 @@
 | alter | other-make | arvake | 別作 |
 | alternative | choose-thing | erikekosa | 选物 |
 | always | every-time | pantempo | 全时 |
+| ambulance | heal-vehicle | sanakaro | 医车 |
 | ancestor | old-parent | vetuspari | 古亲 |
 | anniversary | year-day | anyoyan | 年日 |
 | annoyance | small-anger | pikoraye | 小怒 |
@@ -75,6 +76,7 @@
 | ballot | choose-page | erikekarta | 选片 |
 | balm | heal-oil | sanaoren | 医油 |
 | banana | long-yellow-fruit | ronkayoropomo | 长黄果 |
+| bandage | heal-cloth | sanaropa | 医衣 |
 | bank | money-home | monikase | 贝户 |
 | bank card | money-card | monikarta | 贝片 |
 | bar | drink-place | piperoko | 飲所 |
@@ -99,6 +101,8 @@
 | birthday | life-day | vivayan | 生日 |
 | black market | black-buy-place | nerokomparroko | 黒買所 |
 | blanket | sleep-cloth | tormiropa | 床衣 |
+| bleed | red-water | rusaku | 赤水 |
+| blood | red-water | rusaku | 赤水 |
 | blunt | straight-say | retotika | 直言 |
 | board | choose-group | erikemen | 选众 |
 | boat | water-vehicle | akukaro | 水车 |
@@ -159,6 +163,7 @@
 | check | money-sequence | moniorten | 贝序 |
 | checkup | heal-test | sanatentar | 医試 |
 | cheese | hard-milk | sorinraten | 硬乳 |
+| chemist's | heal-buy-place | sanakomparroko | 医買所 |
 | chicken (meat) | bird-meat | aviskarne | 鳥肉 |
 | chili pepper | hot-taste-thing | wosaporkosa | 火味物 |
 | choice | choose-thing | erikekosa | 选物 |
@@ -235,6 +240,7 @@
 | downpour | big-rain | mekaruva | 大雨 |
 | draw (in a contest) | same-become | samtiven | 同成 |
 | drive | vehicle-go | karoire | 车行 |
+| drugstore | heal-buy-place | sanakomparroko | 医買所 |
 | dry season | not-rain-time | nonruvatempo | 不雨时 |
 | ear | hear-part | otiparte | 耳分 |
 | earn | money-get | monitoma | 贝取 |
@@ -281,6 +287,7 @@
 | father | man-parent | viropari | 男亲 |
 | fee | money-amount | monimesur | 贝寸 |
 | fetch | get-go | tomaire | 取行 |
+| fever | body-hot | korpowo | 体火 |
 | few | not-many | nonmur | 不多 |
 | fewer | not-more | nonmas | 不更 |
 | fifth (in a series) | five-sequence | kinsorten | 5序 |
@@ -505,6 +512,7 @@
 | nobody | no-person | nemomo | 无人 |
 | noon | middle-sun | metseyan | 中日 |
 | north | map-up | mapasur | 図上 |
+| nose | air-taste-part | ventosaporparte | 风味分 |
 | not enough | not-all | nonpan | 不全 |
 | not the same | not-same | nonsam | 不同 |
 | nothing | no-thing | nemkosa | 无物 |
@@ -558,6 +566,7 @@
 | perfect | every-good | panpona | 全好 |
 | pet | home-animal | kasepeste | 户匹 |
 | pet dog | home-dog | kasekanis | 户犬 |
+| pharmacy | heal-buy-place | sanakomparroko | 医買所 |
 | phone | electric-say | vortotika | 電言 |
 | pig | red-white-animal | rusankapeste | 赤白匹 |
 | Pikotika (the language) | small-say | pikotika | 小言 |
@@ -808,6 +817,7 @@
 | thirsty | drink-want | pipevori | 飲求 |
 | those | not-this | nontis | 不此 |
 | thousandth (in a series) | thousand-sequence | kiruorten | 千序 |
+| throw up | back-food | retsekomi | 反食 |
 | thunder | air-electric | ventovorto | 风電 |
 | Thursday | plant-weekday | arpoyom | 木曜 |
 | ticket gate | money-door | moniporta | 贝門 |
@@ -868,6 +878,7 @@
 | viewer | see-person | viteomo | 見人 |
 | visitor | come-person | veniomo | 来人 |
 | volcano | fire-up-earth | wosurtera | 火上土 |
+| vomit | back-food | retsekomi | 反食 |
 | vote | choose-say | eriketika | 选言 |
 | voyage | far-come-go | ronveniire | 遠来行 |
 | wait a while | time-remain | temposista | 时止 |

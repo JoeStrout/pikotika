@@ -540,3 +540,44 @@ Do you hear that?	you RI hear A this, what?	Tu ri oti a tis, ker?	尔 ⊢ 耳 �
 It's in my bag!	this RI in me go-box!	Tis ri in eko irevaso!	此 ⊢ 内 己 行皿!	4	feelings
 I'm surprised and happy — and a little embarrassed.	I RI surprise and happy — and slight I-bad-feel.	Eko ri sorpe kum konten — kum piko ekomarumsenti.	己 ⊢ 奇 并 楽 — 并 小 己悪心.	5	feelings
 Thank you very much. You make me happy.	big thank. you RI happy A me.	Meka mersi. Tu ri konten a eko.	大 恩. 尔 ⊢ 楽 ⇒ 己.	2	feelings
+My head hurts.	I head RI hurt-feel.	Eko testa ri marasenti.	己 头 ⊢ 病心.	4	health
+I have a stomachache.	I stomach RI hurt-feel.	Eko venter ri marasenti.	己 胃 ⊢ 病心.	5	health
+My tooth really hurts.	I mouth-stone RI very hurt-feel.	Eko pukarapis ri meka marasenti.	己 口岩 ⊢ 大 病心.	4	health
+My back hurts a little.	I back RI small hurt-feel.	Eko rets ri piko marasenti.	己 反 ⊢ 小 病心.	4	health
+Where does it hurt?	RI hurt-feel in what-place?	Ri marasenti in kerroko?	⊢ 病心 内 何所?	4	health
+It hurts here.	RI hurt-feel in this-place.	Ri marasenti in tisroko.	⊢ 病心 内 此所.	4	health
+I'm sick.	I RI sick.	Eko ri mara.	己 ⊢ 病.	4	health
+I got sick yesterday.	day-before, I RI become sick.	Yanyer, eko ri tiven mara.	日前, 己 ⊢ 成 病.	4	health
+I have a fever.	I RI have A body-hot.	Eko ri tene a korpowo.	己 ⊢ 有 ⇒ 体火.	5	health
+I threw up.	I RI back-food finish.	Eko ri retsekomi vin.	己 ⊢ 反食 閉.	4	health
+I have allergies.	I RI have A body-not-agree.	Eko ri tene a korpononakor.	己 ⊢ 有 ⇒ 体不約.	5	health
+That food made me sick.	this food RI sick A I finish.	Tis komi ri mara a eko vin.	此 食 ⊢ 病 ⇒ 己 閉.	4	health
+I'm allergic to milk.	milk RI body-not-agree A I.	Raten ri korpononakor a eko.	乳 ⊢ 体不約 ⇒ 己.	5	health
+What are you allergic to?	what RI body-not-agree A you?	Ker ri korpononakor a tu?	何 ⊢ 体不約 ⇒ 尔?	5	health
+My leg is broken.	I leg RI break.	Eko kampa ri rompe.	己 足 ⊢ 切.	5	health
+My hand is bleeding.	I hand RI red-water.	Eko manu ri rusaku.	己 手 ⊢ 赤水.	5	health
+There's blood!	RI red-water!	Ri rusaku!	⊢ 赤水!	3	health
+Don't worry. It's nothing serious.	please not fear. this RI not heavy-necessary.	Pam non timo. Tis ri non pesaneses.	乞 不 危. 此 ⊢ 不 重要.	4	health
+Do you have a bandage?	you RI have A heal-cloth, what?	Tu ri tene a sanaropa, ker?	尔 ⊢ 有 ⇒ 医衣, 何?	4	health
+I need a doctor.	I RI necessary A heal-person.	Eko ri neses a sanaomo.	己 ⊢ 要 ⇒ 医人.	4	health
+Call an ambulance!	please say to heal-vehicle!	Pam tika ver sanakaro!	乞 言 向 医车!	4	health
+Where's the hospital?	heal-home RI what-place?	Sanakase ri kerroko?	医户 ⊢ 何所?	4	health
+Is there a pharmacy near here?	RI heal-buy-place near this-place, what?	Ri sanakomparroko nir tisroko, ker?	⊢ 医買所 近 此所, 何?	4	health
+Do you have anything for a headache?	you RI have A heal for head-sick, what?	Tu ri tene a sana por testamara, ker?	尔 ⊢ 有 ⇒ 医 為 头病, 何?	4	health
+When did it start?	this RI begin in what-time?	Tis ri apa in kertempo?	此 ⊢ 开 内 何时?	4	health
+Eat, then take this medicine.	please eat, after get A this heal.	Pam komi, tar toma a tis sana.	乞 食, 后 取 ⇒ 此 医.	4	health
+Rest, and drink lots of water.	please sleep, and drink A many water.	Pam tormi, kum pipe a mur aku.	乞 床, 并 飲 ⇒ 多 水.	4	health
+I exercise every morning.	in every up-sun, I RI heal-movement.	In pan suryan, eko ri sanaire.	内 全 上日, 己 ⊢ 医行.	4	health
+I walk to work.	I RI foot-go to work.	Eko ri kampaire ver opus.	己 ⊢ 足行 向 力.	4	health
+What sports do you like?	you RI like A what body-play?	Tu ri kusta a ker korpoyu?	尔 ⊢ 愛 ⇒ 何 体玩?	5	health
+Bob: Can you help me? My stomach hurts.	Bob: please help. I stomach RI hurt-feel.	Popu: Pam servi. Eko venter ri marasenti.	Popu: 乞 助. 己 胃 ⊢ 病心.	5	health
+Pharmacist: When did it start?	buy-person: this RI begin in what-time?	Komparomo: Tis ri apa in kertempo?	買人: 此 ⊢ 开 内 何时?	4	health
+Bob: Last night. I had fish at a restaurant.	Bob: before no-sun. I RI eat A water-animal in food-place.	Popu: Yer nemyan. Eko ri komi a akupeste in komiroko.	Popu: 前 无日. 己 ⊢ 食 ⇒ 水匹 内 食所.	2	health
+Pharmacist: Have you thrown up?	buy-person: you RI back-food finish, what?	Komparomo: Tu ri retsekomi vin, ker?	買人: 尔 ⊢ 反食 閉, 何?	4	health
+Bob: No. But I'm not hungry.	Bob: not. but I RI not food-want.	Popu: Non. Sets eko ri non komivori.	Popu: 不. 但 己 ⊢ 不 食求.	2	health
+Pharmacist: Do you have a fever?	buy-person: you RI have A body-hot, what?	Komparomo: Tu ri tene a korpowo, ker?	買人: 尔 ⊢ 有 ⇒ 体火, 何?	5	health
+Bob: I don't think so.	Bob: I RI think A not.	Popu: Eko ri pensa a non.	Popu: 己 ⊢ 思 ⇒ 不.	4	health
+Pharmacist: This medicine is good. Eat something, then take it.	buy-person: this heal RI good. please eat, after get A this.	Komparomo: Tis sana ri pona. Pam komi, tar toma a tis.	買人: 此 医 ⊢ 好. 乞 食, 后 取 ⇒ 此.	4	health
+Pharmacist: If you're not better tomorrow, go to a doctor.	buy-person: if you RI not more good in day-after, this-reason please go to heal-person.	Komparomo: Pos tu ri non mas pona in yantar, tisrason pam ire ver sanaomo.	買人: 可 尔 ⊢ 不 更 好 内 日后, 此故 乞 行 向 医人.	4	health
+Bob: Thank you very much.	Bob: big thank.	Popu: Meka mersi.	Popu: 大 恩.	2	health
+Pharmacist: Get well!	buy-person: good heal!	Komparomo: Pona sana!	買人: 好 医!	4	health

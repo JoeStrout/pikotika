@@ -759,7 +759,11 @@ def segment(form, t, raw=None):
 
     def prior(j, piece):
         """The segmentation `piece` continues, over a linking `e` if there is one."""
-        if best[j] is not None:
+        # a join that needs the `e` and lacks it is misspelled, not a compound:
+        # **retskomi** is not **retsekomi**
+        if best[j] is not None and not (
+                best[j] and not isinstance(best[j][-1], tuple)
+                and links(t.form_of(best[j][-1]), piece)):
             return best[j]
         # form[j-1] is an `e` belonging to neither root: `tets` + e + `kurva`
         if j and form[j - 1] == LINK and best[j - 1]:

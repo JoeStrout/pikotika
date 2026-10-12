@@ -46,23 +46,23 @@
 ## 悪可
 ### bad-if
 ===
-# Stay with us.
+# I'm sorry — I should have started earlier.
 ---
-# Pam sista kum ekomen.
-## 乞 止 并 己众.
-### please remain and I-group.
+# Eko ri perton: eko ri pospona apa yer vin.
+## 己 ⊢ 悔: 己 ⊢ 可好 开 前 閉.
+### I RI sorry: I RI if-good begin before finish.
 ===
-# I am still here.
+# When did it start?
 ---
-# Eko ri in tisroko sista.
-## 己 ⊢ 内 此所 止.
-### I RI in this-place remain.
+# Tis ri apa in kertempo?
+## 此 ⊢ 开 内 何时?
+### this RI begin in what-time?
 ===
-# I am still eating.
+# What time does the music start?
 ---
-# Eko ri komi sista.
-## 己 ⊢ 食 止.
-### I RI food remain.
+# Musi ri apa in kerora?
+## 曲 ⊢ 开 内 何刻?
+### music RI begin in what-hour?
 ===
 # head; chief
 ---
@@ -130,23 +130,23 @@
 ## 头病
 ### head-sick
 ===
-# Get well.
+# The man is sick.
 ---
-# Pona sana.
-## 好 医.
-### good heal.
+# Viro ri mara.
+## 男 ⊢ 病.
+### man RI sick.
 ===
-# The boss gave us the green light.
+# My head hurts.
 ---
-# Opustesta ri vertetika ver ekomen.
-## 力头 ⊢ 緑言 向 己众.
-### work-head RI green-say to I-group.
+# Eko testa ri marasenti.
+## 己 头 ⊢ 病心.
+### I head RI hurt-feel.
 ===
-# A man will come tomorrow to fix it.
+# The child jumped into the water.
 ---
-# Yantar, wun omo ri veni por sana a tis.
-## 日后, 1 人 ⊢ 来 為 医 ⇒ 此.
-### day-after, one person RI come for heal A this.
+# Nino ri kampasurire ver aku.
+## 子 ⊢ 足上行 向 水.
+### child RI leg-up-go to water.
 ===
 # meat
 ---
@@ -310,17 +310,17 @@
 ## 丸果, 从 上土. 此 ⊢ 不 甘; 此 ⊢ 小 不甘.
 ### round-fruit, from up-earth. this RI not sweet; this RI small not-sweet.
 ===
-# I'll drive back tomorrow.
+# The look on your face says it all.
 ---
-# Yantar, eko ri karoire rets.
-## 日后, 己 ⊢ 车行 反.
-### day-after, I RI vehicle-go back.
+# Tu sentipitur ri tika a pan.
+## 尔 心画 ⊢ 言 ⇒ 全.
+### you feel-picture RI say A all.
 ===
-# I have a black-and-white picture.
+# My back hurts a little.
 ---
-# Eko ri tene a nero kum anka pitur.
-## 己 ⊢ 有 ⇒ 黒 并 白 画.
-### I RI have A black and white picture.
+# Eko rets ri piko marasenti.
+## 己 反 ⊢ 小 病心.
+### I back RI small hurt-feel.
 ===
 # rain
 ---
@@ -454,23 +454,23 @@
 ## 買众
 ### commerce-group
 ===
-# The station is between the shop and the river.
+# She's a small-business owner.
 ---
-# Karoroko ri mets komparroko kum ronkaaku.
-## 车所 ⊢ 中 買所 并 长水.
-### vehicle-place RI middle buy-place and long-water.
+# Tisomo ri piko komparmen te teneomo.
+## 此人 ⊢ 小 買众 > 有人.
+### this-person RI small commerce-group TE own-person.
+===
+# The shop that sells tea is closed.
+---
+# Ri kompar a arpoaku rite komparroko ri vin.
+## ⊢ 買 ⇒ 木水 ⊢> 買所 ⊢ 閉.
+### RI buy A plant-water RI-TE buy-place RI close.
 ===
 # Send me what you have.
 ---
 # Pam tonar a tu ri tene rite kosa ver eko.
 ## 乞 与 ⇒ 尔 ⊢ 有 ⊢> 物 向 己.
 ### please give A you RI have RI-TE thing to me.
-===
-# Give me four.
----
-# Pam tonar a 4.
-## 乞 与 ⇒ 4.
-### please give A 4.
 ===
 # necessary; must
 ---
@@ -508,23 +508,23 @@
 ## 学所
 ### learn-place
 ===
-# One room, one bed.
+# Think about the future.
 ---
-# 1 kamar, 1 tormi.
-## 1 室, 1 床.
-### 1 room, 1 sleep.
-===
-# The older child is studying at university.
----
-# Mas anyomeka nino ri impar in mekaimparroko.
-## 更 年大 子 ⊢ 学 内 大学所.
-### more year-big child RI learn in big-learn-place.
+# Pam pensa a tartempo.
+## 乞 思 ⇒ 后时.
+### please think A after-time.
 ===
 # Beauty is in the mind of the beholder.
 ---
 # Ponavite ri in viteomo pensa.
 ## 好見 ⊢ 内 見人 思.
 ### good-see RI in see-person think.
+===
+# I slept, I ate, I watched three movies.
+---
+# Eko ri tormi, komi, kum vite a 3 pitur.
+## 己 ⊢ 床, 食, 并 見 ⇒ 3 画.
+### I RI sleep, food, and see A 3 picture.
 ===
 # reason; because
 ---
@@ -562,23 +562,23 @@
 ## 此故
 ### this-reason
 ===
-# I'm nervous speaking Pikotika.
+# I'm not afraid.
 ---
-# Eko ri pikotimo tika a pikotika.
-## 己 ⊢ 小危 言 ⇒ 小言.
-### I RI small-fear say A small-say.
+# Eko ri non timo.
+## 己 ⊢ 不 危.
+### I RI not fear.
 ===
-# If you build it, they will come.
+# Pharmacist: If you're not better tomorrow, go to a doctor.
 ---
-# Pos tu ri vake a tis, tisrason nontisomo ri veni.
-## 可 尔 ⊢ 作 ⇒ 此, 此故 不此人 ⊢ 来.
-### if you RI make A this, this-reason not-this-person RI come.
+# Komparomo: Pos tu ri non mas pona in yantar, tisrason pam ire ver sanaomo.
+## 買人: 可 尔 ⊢ 不 更 好 内 日后, 此故 乞 行 向 医人.
+### buy-person: if you RI not more good in day-after, this-reason please go to heal-person.
 ===
-# If it's too expensive, I won't buy it.
+# If you come tomorrow, we can eat together.
 ---
-# Pos tis ri surmesur moni, tisrason eko ri non kompar a tis.
-## 可 此 ⊢ 上寸 贝, 此故 己 ⊢ 不 買 ⇒ 此.
-### if this RI up-degree money, this-reason I RI not buy A this.
+# Pos tu ri veni yantar, tisrason ekomen ri kan yunta komi.
+## 可 尔 ⊢ 来 日后, 此故 己众 ⊢ 能 合 食.
+### if you RI come day-after, this-reason I-group RI can join food.
 ===
 # hard; difficult
 ---
@@ -634,68 +634,68 @@
 ## 重要
 ### heavy-necessary
 ===
+# Tom wasn't wearing his uniform when I saw him today.
+---
+# Tisyan, eko ri vite a Tom in kertempo, tisomo ri non ropatene a samropa.
+## 此日, 己 ⊢ 見 ⇒ Tom 内 何时, 此人 ⊢ 不 衣有 ⇒ 同衣.
+### this-sun, I RI see A Tom in what-time, this-person RI not cloth-have A same-cloth.
+===
+# It's not more important than that one.
+---
+# Tis ri non mas pesaneses vons nontis.
+## 此 ⊢ 不 更 重要 从 不此.
+### this RI not more heavy-necessary than not-this.
+===
 # Narrator: Alice looks in her wallet.
 ---
 # Tikakosaomo: Aras ri vite in monivaso.
 ## 言物人: Aras ⊢ 見 内 贝皿.
 ### say-thing-person: Alice RI see in money-box.
 ===
-# It becomes easier.
+# That sounds better than working.
 ---
-# Tis ri tiven mas nonsorin.
-## 此 ⊢ 成 更 不硬.
-### this RI become more not-hard.
+# Tis ri mas pona vons opus.
+## 此 ⊢ 更 好 从 力.
+### this RI more good than work.
 ===
-# Shopkeeper: Thank you...  three dollars change.  Do you need a bag?
+# There's blood!
 ---
-# Komparomo: Mersi... 3 retsemoni. Tu ri neses a komparvaso, ker?
-## 買人: 恩... 3 反贝. 尔 ⊢ 要 ⇒ 買皿, 何?
-### buy-person: thank... 3 back-money. you RI must A buy-box, what?
+# Ri rusaku!
+## ⊢ 赤水!
+### RI red-water!
 ===
-# Hello
+# Nice day, isn't it?
 ---
-# Kontensarve.
-## 楽会.
-### happy-meet.
+# Tis ri pona yan, non?
+## 此 ⊢ 好 日, 不?
+### this RI good sun, not?
 ===
-# Can we go to the park sometime?
+# I'm worried about you.
 ---
-# Ekomen ri kan ire ver verteroko in tar tempo, ker?
-## 己众 ⊢ 能 行 向 緑所 内 后 时, 何?
-### I-group RI can go to green-place in after time, what?
+# Eko ri timo topi tu.
+## 己 ⊢ 危 件 尔.
+### I RI fear about you.
 ===
-# Goodbye.
+# Get well.
 ---
-# Pertoneksire.
-## 悔外行.
-### sorry-out-go.
+# Pona sana.
+## 好 医.
+### good heal.
 ===
-# I see the fish in the water.
+# Very good.
 ---
-# Eko ri vite a akupeste in aku.
-## 己 ⊢ 見 ⇒ 水匹 内 水.
-### I RI see A water-animal in water.
+# Meka pona.
+## 大 好.
+### big good.
 ===
-# I have eaten.
+# Everybody says that.
 ---
-# Eko ri komi vin.
-## 己 ⊢ 食 閉.
-### I RI food finish.
+# Panomo ri tika a tis.
+## 全人 ⊢ 言 ⇒ 此.
+### every-person RI say A this.
 ===
-# There is a problem.
+# When Tom eats, he watches TV.
 ---
-# Ri marumkosa.
-## ⊢ 悪物.
-### RI bad-thing.
-===
-# How's the new job?
----
-# Tu nova opus ri kermoto?
-## 尔 初 力 ⊢ 何方?
-### you new work RI what-manner?
-===
-# It's late.
----
-# Ora ri tar.
-## 刻 ⊢ 后.
-### hour RI after.
+# Tom ri komi in kertempo, tisomo ri vortovite.
+## Tom ⊢ 食 内 何时, 此人 ⊢ 電見.
+### Tom RI food in what-time, this-person RI electric-see.

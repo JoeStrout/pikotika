@@ -8,9 +8,9 @@ life; alive	viva<br>生<br><i>viva</i> la vida!	pikotika level5 root
 ear	otiparte<br>耳分<br>hear-part	pikotika level5 compound
 lend a hand; help out	manutonar<br>手与<br>hand-give	pikotika level5 compound
 sport; athletics	korpoyu<br>体玩<br>body-play	pikotika level5 compound
-You killed my father.	Tu ri nonviva a eko viropari vin.<br>尔 ⊢ 不生 ⇒ 己 男亲 閉.<br>you RI not-life A I man-parent finish.	pikotika level5 sentence
-Can you give me a hand?	Tu ri kan manutonar ver eko, ker?<br>尔 ⊢ 能 手与 向 己, 何?<br>you RI can hand-give to me, what?	pikotika level5 sentence
-Alice: Cash — here's 10 dollars.	Aras: Manumoni. Tis ri 10 moni.<br>Aras: 手贝. 此 ⊢ 10 贝.<br>Alice: hand-money. this RI 10 money.	pikotika level5 sentence
+I live near the sea.	Eko ri viva nir mekaaku.<br>己 ⊢ 生 近 大水.<br>I RI life near big-water.	pikotika level5 sentence
+Bob: Can you help me? My stomach hurts.	Popu: Pam servi. Eko venter ri marasenti.<br>Popu: 乞 助. 己 胃 ⊢ 病心.<br>Bob: please help. I stomach RI hurt-feel.	pikotika level5 sentence
+I have a stomachache.	Eko venter ri marasenti.<br>己 胃 ⊢ 病心.<br>I stomach RI hurt-feel.	pikotika level5 sentence
 tired; weary	kansa<br>疲<br>too tired — I <i>can'</i>t	pikotika level5 root
 anger; angry	raye<br>怒<br>a <i>rag</i>ing <i>ray</i> of fury	pikotika level5 root
 surprise; unexpected	sorpe<br>奇<br><i>sorp</i>rise!	pikotika level5 root
@@ -32,9 +32,9 @@ something else; anything else	arkosa<br>別物<br>other-thing	pikotika level5 co
 someone else; another person; others	aromo<br>別人<br>other-person	pikotika level5 compound
 somewhere else; elsewhere	arroko<br>別所<br>other-place	pikotika level5 compound
 anyway; by the way; incidentally	artopi<br>別件<br>other-about	pikotika level5 compound
-Nothing has changed.	Nemkosa ri artiven vin.<br>无物 ⊢ 別成 閉.<br>no-thing RI other-become finish.	pikotika level5 sentence
+It's changing!	Ri artiven!<br>⊢ 別成!<br>RI other-become!	pikotika level5 sentence
+Can I change my reservation?	Eko ri kan arvake a eko yerakor, ker?<br>己 ⊢ 能 別作 ⇒ 己 前約, 何?<br>I RI can other-make A I before-agree, what?	pikotika level5 sentence
 Someone else is coming.	Ar ri veni.<br>別 ⊢ 来.<br>other RI come.	pikotika level5 sentence
-I changed my mind.	Eko ri arvake a eko pensa.<br>己 ⊢ 別作 ⇒ 己 思.<br>I RI other-make A I think.	pikotika level5 sentence
 art; craft	arti<br>芸<br>an <i>arti</i>st makes <i>art</i>	pikotika level5 root
 temple; church	temper<br>寺<br>a <i>temp</i>le <i>temper</i>s the soul	pikotika level5 root
 oil; grease	oren<br>油<br>digging for <i>ore 'n'</i> oil	pikotika level5 root
@@ -42,9 +42,9 @@ salt; salty	sares<br>塩<br><i>sa</i>lty <i>res</i>idue left after seawater evap
 museum	artikase<br>芸户<br>art-home	pikotika level5 compound
 fried	orenvake<br>油作<br>oil-make	pikotika level5 compound
 fried rice	orenankariso<br>油白米<br>oil-white-grain	pikotika level5 compound
-I'm eating with you.	Eko ri komi kum tu.<br>己 ⊢ 食 并 尔.<br>I RI food and you.	pikotika level5 sentence
-For a week.	1 senseyan turan.<br>1 7日 間.<br>1 seven-day interval.	pikotika level5 sentence
-Why?	Kerrason?<br>何故?<br>what-reason?	pikotika level5 sentence
+I'm driving.	Eko ri karoire.<br>己 ⊢ 车行.<br>I RI vehicle-go.	pikotika level5 sentence
+You had water five minutes ago.	5 parte yer, tu ri pipe a aku.<br>5 分 前, 尔 ⊢ 飲 ⇒ 水.<br>5 part before, you RI drink A water.	pikotika level5 sentence
+Really?	Ves, ker?<br>真, 何?<br>true, what?	pikotika level5 sentence
 bird	avis<br>鳥<br><i>avi</i>ary, <i>avi</i>ation — birds	pikotika level5 root
 bug; worm	inses<br>虫<br><i>inse</i>ct	pikotika level5 root
 dog; canine	kanis<br>犬<br><i>canis</i>, <i>canin</i>e, dog	pikotika level5 root
@@ -84,9 +84,9 @@ break; cut	rompe<br>切<br><i>romp</i>ing kids break things	pikotika level5 root
 lose; misplace	perti<br>失<br>you <i>part</i>ed with it, now it's lost	pikotika level5 root
 forget	sapeperti<br>知失<br>know-lose	pikotika level5 compound
 knife (knife or scissors)	rompeuter<br>切工<br>cut-tool	pikotika level5 compound
-Please clean the room.	Pam puru a kamar.<br>乞 清 ⇒ 室.<br>please clean A room.	pikotika level5 sentence
+The one that's been broken since spring?	Tis ri rompe vin in mur mese turan, non?<br>此 ⊢ 切 閉 内 多 月 間, 不?<br>this RI break finish in many month interval, not?	pikotika level5 sentence
+My leg is broken.	Eko kampa ri rompe.<br>己 足 ⊢ 切.<br>I leg RI break.	pikotika level5 sentence
 I lost my phone on the bus.	Eko ri perti a eko vortotika in muromokaro.<br>己 ⊢ 失 ⇒ 己 電言 内 多人车.<br>I RI lose A me electric-say in many-person-vehicle.	pikotika level5 sentence
-One thing — the light in the hall is broken.	Wun kosa: vortoyan in irekamar ri rompe vin.<br>1 物: 電日 内 行室 ⊢ 切 閉.<br>one thing: electric-sun in go-room RI break finish.	pikotika level5 sentence
 left	sini<br>左<br>have you <i>seen</i> my left hand?	pikotika level5 root
 right	rem<br>右<br><i>rem</i>ember: <i>r</i> is for <i>r</i>ight	pikotika level5 root
 down; below	tun<br>下<br>a <i>tun</i>nel goes down	pikotika level5 root
@@ -103,10 +103,11 @@ elevator; lift	surtunkamar<br>上下室<br>up-down-room	pikotika level5 compound
 The party starts at 7 PM.	Yumen ri apa in tunyan 7 ora.<br>玩众 ⊢ 开 内 下日 7 刻.<br>play-group RI begin in down-sun 7 hour.	pikotika level5 sentence
 Go straight to that big tree, then turn left.	Pam reto ire ver nontis meka arpo, tar pam kurva ver sini.<br>乞 直 行 向 不此 大 木, 后 乞 弓 向 左.<br>please straight go to not-this big plant, after please bend to left.	pikotika level5 sentence
 Turn left at the next corner.	Pam kurva ver sini in tarorten kurvaroko.<br>乞 弓 向 左 内 后序 弓所.<br>please bend to left in after-sequence bend-place.	pikotika level5 sentence
-This changes everything.	Tis ri arvake a pankosa.<br>此 ⊢ 別作 ⇒ 全物.<br>this RI other-make A every-thing.	pikotika level5 sentence
-Please try again.	Pam repe tentar.<br>乞 又 試.<br>please again try.	pikotika level5 sentence
-Hello	Kontensarve.<br>楽会.<br>happy-meet.	pikotika level5 sentence
-Yesterday I read a good story.	Yanyer, eko ri kitavite a pona tikakosa.<br>日前, 己 ⊢ 写見 ⇒ 好 言物.<br>day-before, I RI writing-see A good say-thing.	pikotika level5 sentence
-If I had eaten, I wouldn't be hungry now.	Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.<br>不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.<br>not-true I RI food finish, this-reason I RI not food-want this-time.	pikotika level5 sentence
-I'm 34 years old.	Eko anyoturan ri 34.<br>己 年間 ⊢ 34.<br>me year-duration RI 34.	pikotika level5 sentence
-Try one.	Pam sapor a wun.<br>乞 味 ⇒ 1.<br>please taste A one.	pikotika level5 sentence
+Room twelve, up the stairs, on the right.	Kamar 12, sur in surmoto, in rem.<br>室 12, 上 内 上方, 内 右.<br>room 12, up in up-road, in right.	pikotika level5 sentence
+But the last part isn't written.	Sets vin parte ri non kita vin.<br>但 閉 分 ⊢ 不 写 閉.<br>but finish part RI not write finish.	pikotika level5 sentence
+I want you to come.	Eko ri vori a tu ri veni.<br>己 ⊢ 求 ⇒ 尔 ⊢ 来.<br>I RI want A you RI come.	pikotika level5 sentence
+I'm going to Lisbon.	Eko ri ire ver sitas Rispan.<br>己 ⊢ 行 向 市 Rispan.<br>I RI go to city Lisbon.	pikotika level5 sentence
+I like music and reading.	Eko ri kusta a musi kum kitavite.<br>己 ⊢ 愛 ⇒ 曲 并 写見.<br>I RI like A music and writing-see.	pikotika level5 sentence
+Please drive.	Pam karoire.<br>乞 车行.<br>please vehicle-go.	pikotika level5 sentence
+Can we meet?	Ekomen ri kan sarve, ker?<br>己众 ⊢ 能 会, 何?<br>I-group RI can meet, what?	pikotika level5 sentence
+Six bananas and four apples — one hundred sixty.	6 ronkayoropomo kum 4 rotunpomo: 160 moni.<br>6 长黄果 并 4 丸果: 160 贝.<br>6 long-yellow-fruit and 4 round-fruit: 160 money.	pikotika level5 sentence

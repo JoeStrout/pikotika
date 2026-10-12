@@ -12,9 +12,9 @@ cyan	asurverte<br>青緑<br>blue-green	pikotika level3 compound
 purple	rusasur<br>赤青<br>red-blue	pikotika level3 compound
 pink	rusanka<br>赤白<br>red-white	pikotika level3 compound
 orange	rusyoro<br>赤黄<br>red-yellow	pikotika level3 compound
-This is a yellow fruit.	Tis ri yoro pomo.<br>此 ⊢ 黄 果.<br>this RI yellow fruit.	pikotika level3 sentence
-And these red ones — what are they?	Kum tis rus kosa ri ker?<br>并 此 赤 物 ⊢ 何?<br>and this red thing RI what?	pikotika level3 sentence
 Can we go to the park sometime?	Ekomen ri kan ire ver verteroko in tar tempo, ker?<br>己众 ⊢ 能 行 向 緑所 内 后 时, 何?<br>I-group RI can go to green-place in after time, what?	pikotika level3 sentence
+What color is it?	Tis ri ker koror?<br>此 ⊢ 何 色?<br>this RI what color?	pikotika level3 sentence
+And these red ones — what are they?	Kum tis rus kosa ri ker?<br>并 此 赤 物 ⊢ 何?<br>and this red thing RI what?	pikotika level3 sentence
 every; all	pan<br>全<br>a <i>pan</i>demic hits everyone	pikotika level3 root
 everyone; everybody	panomo<br>全人<br>every-person	pikotika level3 compound
 everywhere	panroko<br>全所<br>every-place	pikotika level3 compound
@@ -33,9 +33,9 @@ brown	terakoror<br>土色<br>earth-color	pikotika level3 compound
 grey	rapiskoror<br>岩色<br>stone-color	pikotika level3 compound
 airplane	ventokaro<br>风车<br>air-vehicle	pikotika level3 compound
 airport	ventokaroroko<br>风车所<br>air-vehicle-place	pikotika level3 compound
-Will you tell me a story?	Tu ri tika a tikakosa ver eko, ker?<br>尔 ⊢ 言 ⇒ 言物 向 己, 何?<br>you RI say A say-thing to me, what?	pikotika level3 sentence
-How is your mother?	Tu vemapari ri kermoto?<br>尔 女亲 ⊢ 何方?<br>you woman-parent RI what-manner?	pikotika level3 sentence
-What does the label say?	Nomen ri tika a ker?<br>名 ⊢ 言 ⇒ 何?<br>label RI say A what?	pikotika level3 sentence
+Nothing new.	Nem nova.<br>无 初.<br>no new.	pikotika level3 sentence
+Time goes fast.	Tempo ri veros ire.<br>时 ⊢ 早 行.<br>time RI fast go.	pikotika level3 sentence
+Please bring the water to the child.	Pam teneveni a aku ver nino.<br>乞 有来 ⇒ 水 向 子.<br>please have-come A water to child.	pikotika level3 sentence
 weekday	yom<br>曜<br><i>Yom</i> Kippur — a named day	pikotika level3 root
 month; moon	mese<br>月<br>you <i>may say</i> the moon phases take a month	pikotika level3 root
 year	anyo<br>年<br>Spanish <i>año</i> (year); <i>annu</i>al	pikotika level3 root
@@ -110,11 +110,9 @@ banana	ronkayoropomo<br>长黄果<br>long-yellow-fruit	pikotika level3 compound
 Do you have a pet?	Tu ri tene a kasepeste, ker?<br>尔 ⊢ 有 ⇒ 户匹, 何?<br>you RI have A home-animal, what?	pikotika level3 sentence
 I work at a bank.	Eko ri opus in monikase.<br>己 ⊢ 力 内 贝户.<br>I RI work in money-home.	pikotika level3 sentence
 Is there hot water in the morning?	In suryan, wo aku ri in kamar, ker?<br>内 上日, 火 水 ⊢ 内 室, 何?<br>in up-sun, hot water RI in room, what?	pikotika level3 sentence
-Yes.	Si.<br>是.<br>yes.	pikotika level3 sentence
-Nothing new.	Nem nova.<br>无 初.<br>no new.	pikotika level3 sentence
-I'll have that.	Eko ri vori a tis.<br>己 ⊢ 求 ⇒ 此.<br>I RI want A this.	pikotika level3 sentence
-It's good to see you.	Eko ri konten sarve a tu vin.<br>己 ⊢ 楽 会 ⇒ 尔 閉.<br>I RI happy meet A you finish.	pikotika level3 sentence
+Good afternoon.	Pona yan.<br>好 日.<br>good sun.	pikotika level3 sentence
+I'm happy.	Eko ri konten.<br>己 ⊢ 楽.<br>I RI happy.	pikotika level3 sentence
+For three hours.	3 ora turan.<br>3 刻 間.<br>3 hour interval.	pikotika level3 sentence
 Sorry/oops/excuse me.	Perton.<br>悔.<br>sorry.	pikotika level3 sentence
-Alice: Yes please.	Aras: Si, pam.<br>Aras: 是, 乞.<br>Alice: yes, please.	pikotika level3 sentence
-The music makes the children happy.	Musi ri konten a nino.<br>曲 ⊢ 楽 ⇒ 子.<br>music RI happy A child.	pikotika level3 sentence
-Tomorrow my mother is coming, but my father isn't.	Yantar, eko vemapari ri veni, sets eko viropari ri non veni.<br>日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.<br>day-after, me woman-parent RI come, but me man-parent RI not come.	pikotika level3 sentence
+I did nothing.	Eko ri vake a nem.<br>己 ⊢ 作 ⇒ 无.<br>I RI make A no.	pikotika level3 sentence
+But the last part isn't written.	Sets vin parte ri non kita vin.<br>但 閉 分 ⊢ 不 写 閉.<br>but finish part RI not write finish.	pikotika level3 sentence

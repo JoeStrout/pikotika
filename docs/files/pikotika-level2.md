@@ -220,23 +220,23 @@
 ## 不真
 ### not-true
 ===
-# The story is beautiful, but it isn't true.
+# I told you that one last night.
 ---
-# Tikakosa ri ponavite, sets tis ri non ves.
-## 言物 ⊢ 好見, 但 此 ⊢ 不 真.
-### say-thing RI good-see, but this RI not true.
-===
-# No problem.
----
-# Nem marumkosa.
-## 无 悪物.
-### no bad-thing.
+# 1 nemyan yer, eko ri tika a tis ver tu.
+## 1 无日 前, 己 ⊢ 言 ⇒ 此 向 尔.
+### 1 no-sun before, I RI say A this to you.
 ===
 # What's wrong?
 ---
 # Marumkosa ri ker?
 ## 悪物 ⊢ 何?
 ### bad-thing RI what?
+===
+# No problem.
+---
+# Nem marumkosa.
+## 无 悪物.
+### no bad-thing.
 ===
 # up; on
 ---
@@ -376,11 +376,11 @@
 ## 中日
 ### middle-sun
 ===
-# You make me happy.
+# This makes me sad.
 ---
-# Tu ri konten a eko.
-## 尔 ⊢ 楽 ⇒ 己.
-### you RI happy A I.
+# Tis ri nonkonten a eko.
+## 此 ⊢ 不楽 ⇒ 己.
+### this RI not-happy A I.
 ===
 # Please come at seven.
 ---
@@ -478,23 +478,23 @@
 ## 何言
 ### what-say
 ===
-# And I'll have the fish, please.
----
-# Kum eko ri vori a akupeste, pam.
-## 并 己 ⊢ 求 ⇒ 水匹, 乞.
-### and I RI want A water-animal, please.
-===
-# I'm thirsty, but I don't want tea.
----
-# Eko ri pipevori, sets eko ri non vori a arpoaku.
-## 己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.
-### I RI drink-want, but I RI not want A plant-water.
-===
 # I see a small fish.
 ---
 # Eko ri vite a piko akupeste.
 ## 己 ⊢ 見 ⇒ 小 水匹.
 ### I RI see A small water-animal.
+===
+# This is a sea creature.
+---
+# Tis ri meka aku te peste.
+## 此 ⊢ 大 水 > 匹.
+### this RI big water TE animal.
+===
+# the animal the person ate
+---
+# Omo ri komi rite peste.
+## 人 ⊢ 食 ⊢> 匹.
+### person RI food RI-TE animal.
 ===
 # thank; gratitude
 ---
@@ -688,50 +688,44 @@
 ## 3 刻 間.
 ### 3 hour interval.
 ===
-# Take care (parting).
+# There is no problem.
 ---
-# Pona ire.
-## 好 行.
-### good go.
+# Ri nem marumkosa.
+## ⊢ 无 悪物.
+### RI no bad-thing.
 ===
-# Here's two hundred.
+# Good, actually.
 ---
-# Tis ri 200.
-## 此 ⊢ 200.
-### this RI 200.
+# Pona, inves.
+## 好, 内真.
+### good, in-true.
 ===
-# Nice day, isn't it?
+# No, thank you.
 ---
-# Tis ri pona yan, non?
-## 此 ⊢ 好 日, 不?
-### this RI good sun, not?
+# Non, mersi.
+## 不, 恩.
+### not, thank.
 ===
-# I'm not working right now.
+# Please come with me.
 ---
-# Eko ri non opus in tistempo.
-## 己 ⊢ 不 力 内 此时.
-### I RI not work in this-time.
-===
-# The vehicle is new.
----
-# Karo ri nova.
-## 车 ⊢ 初.
-### vehicle RI new.
-===
-# I'm very happy.
----
-# Eko ri meka konten.
-## 己 ⊢ 大 楽.
-### I RI very happy.
-===
-# I wanted to go (but didn't).
----
-# Eko ri vori ire vin.
-## 己 ⊢ 求 行 閉.
-### I RI want go finish.
+# Pam veni kum eko.
+## 乞 来 并 己.
+### please come and me.
 ===
 # Hello
 ---
 # Kontensarve.
 ## 楽会.
 ### happy-meet.
+===
+# Nice.
+---
+# Pona.
+## 好.
+### good.
+===
+# You are happy.
+---
+# Tu ri konten.
+## 尔 ⊢ 楽.
+### you RI happy.

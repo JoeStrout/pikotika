@@ -38,9 +38,9 @@ never	nemtempo<br>无时<br>no-time	pikotika level2 compound
 night	nemyan<br>无日<br>no-sun	pikotika level2 compound
 problem; trouble	marumkosa<br>悪物<br>bad-thing	pikotika level2 compound
 false; untrue; if (counterfactual)	nonves<br>不真<br>not-true	pikotika level2 compound
-The story is beautiful, but it isn't true.	Tikakosa ri ponavite, sets tis ri non ves.<br>言物 ⊢ 好見, 但 此 ⊢ 不 真.<br>say-thing RI good-see, but this RI not true.	pikotika level2 sentence
-No problem.	Nem marumkosa.<br>无 悪物.<br>no bad-thing.	pikotika level2 sentence
+I told you that one last night.	1 nemyan yer, eko ri tika a tis ver tu.<br>1 无日 前, 己 ⊢ 言 ⇒ 此 向 尔.<br>1 no-sun before, I RI say A this to you.	pikotika level2 sentence
 What's wrong?	Marumkosa ri ker?<br>悪物 ⊢ 何?<br>bad-thing RI what?	pikotika level2 sentence
+No problem.	Nem marumkosa.<br>无 悪物.<br>no bad-thing.	pikotika level2 sentence
 up; on	sur<br>上<br>the <i>sur</i>face is on top	pikotika level2 root
 fast; soon	veros<br>早<br><i>ver</i>y fast, <i>veloc</i>ity	pikotika level2 root
 near; almost	nir<br>近<br><i>near</i>	pikotika level2 root
@@ -64,7 +64,7 @@ nine; 9	noks<br>9<br>nine <i>knocks</i> on the door	pikotika level2 root
 ten; 10	tekas<br>十<br>a <i>deca</i>de is ten years	pikotika level2 root
 middle; among	mets<br>中<br>the <i>Mets</i> are in the middle of the league this year	pikotika level2 root
 midday; noon	metseyan<br>中日<br>middle-sun	pikotika level2 compound
-You make me happy.	Tu ri konten a eko.<br>尔 ⊢ 楽 ⇒ 己.<br>you RI happy A I.	pikotika level2 sentence
+This makes me sad.	Tis ri nonkonten a eko.<br>此 ⊢ 不楽 ⇒ 己.<br>this RI not-happy A I.	pikotika level2 sentence
 Please come at seven.	Pam veni in sens ora.<br>乞 来 内 7 刻.<br>please come in seven hour.	pikotika level2 sentence
 How was your weekend?	Tu senseyanvin ri kermoto?<br>尔 7日閉 ⊢ 何方?<br>you seven-day-finish RI what-manner?	pikotika level2 sentence
 drink; beverage	pipe<br>飲<br>drink now, <i>pee-pay</i> for it later!	pikotika level2 root
@@ -81,9 +81,9 @@ where	kerroko<br>何所<br>what-place	pikotika level2 compound
 when; on what occasion	kertempo<br>何时<br>what-time	pikotika level2 compound
 what time; at what o'clock	kerora<br>何刻<br>what-hour	pikotika level2 compound
 question; ask; inquire	kertika<br>何言<br>what-say	pikotika level2 compound
-And I'll have the fish, please.	Kum eko ri vori a akupeste, pam.<br>并 己 ⊢ 求 ⇒ 水匹, 乞.<br>and I RI want A water-animal, please.	pikotika level2 sentence
-I'm thirsty, but I don't want tea.	Eko ri pipevori, sets eko ri non vori a arpoaku.<br>己 ⊢ 飲求, 但 己 ⊢ 不 求 ⇒ 木水.<br>I RI drink-want, but I RI not want A plant-water.	pikotika level2 sentence
 I see a small fish.	Eko ri vite a piko akupeste.<br>己 ⊢ 見 ⇒ 小 水匹.<br>I RI see A small water-animal.	pikotika level2 sentence
+This is a sea creature.	Tis ri meka aku te peste.<br>此 ⊢ 大 水 > 匹.<br>this RI big water TE animal.	pikotika level2 sentence
+the animal the person ate	Omo ri komi rite peste.<br>人 ⊢ 食 ⊢> 匹.<br>person RI food RI-TE animal.	pikotika level2 sentence
 thank; gratitude	mersi<br>恩<br>French <i>merci</i>!	pikotika level2 root
 for; in order to	por<br>為<br><i>pour</i> a drink for me	pikotika level2 root
 about; regarding	topi<br>件<br>on the <i>topi</i>c of	pikotika level2 root
@@ -116,11 +116,10 @@ trip; journey	veniire<br>来行<br>come-go	pikotika level2 compound
 I hope you're better soon.	Eko ri vori a tu ri veros mas pona.<br>己 ⊢ 求 ⇒ 尔 ⊢ 早 更 好.<br>I RI want A you RI soon more good.	pikotika level2 sentence
 Ten minutes.	10 parte turan.<br>10 分 間.<br>10 part interval.	pikotika level2 sentence
 For three hours.	3 ora turan.<br>3 刻 間.<br>3 hour interval.	pikotika level2 sentence
-Take care (parting).	Pona ire.<br>好 行.<br>good go.	pikotika level2 sentence
-Here's two hundred.	Tis ri 200.<br>此 ⊢ 200.<br>this RI 200.	pikotika level2 sentence
-Nice day, isn't it?	Tis ri pona yan, non?<br>此 ⊢ 好 日, 不?<br>this RI good sun, not?	pikotika level2 sentence
-I'm not working right now.	Eko ri non opus in tistempo.<br>己 ⊢ 不 力 内 此时.<br>I RI not work in this-time.	pikotika level2 sentence
-The vehicle is new.	Karo ri nova.<br>车 ⊢ 初.<br>vehicle RI new.	pikotika level2 sentence
-I'm very happy.	Eko ri meka konten.<br>己 ⊢ 大 楽.<br>I RI very happy.	pikotika level2 sentence
-I wanted to go (but didn't).	Eko ri vori ire vin.<br>己 ⊢ 求 行 閉.<br>I RI want go finish.	pikotika level2 sentence
+There is no problem.	Ri nem marumkosa.<br>⊢ 无 悪物.<br>RI no bad-thing.	pikotika level2 sentence
+Good, actually.	Pona, inves.<br>好, 内真.<br>good, in-true.	pikotika level2 sentence
+No, thank you.	Non, mersi.<br>不, 恩.<br>not, thank.	pikotika level2 sentence
+Please come with me.	Pam veni kum eko.<br>乞 来 并 己.<br>please come and me.	pikotika level2 sentence
 Hello	Kontensarve.<br>楽会.<br>happy-meet.	pikotika level2 sentence
+Nice.	Pona.<br>好.<br>good.	pikotika level2 sentence
+You are happy.	Tu ri konten.<br>尔 ⊢ 楽.<br>you RI happy.	pikotika level2 sentence

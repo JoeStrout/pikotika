@@ -17,12 +17,14 @@ lightning; thunder	air-electric	Nature	4
 fly; flight	air-go	Verbs	3	
 weather	air-manner	Nature	3	
 smell	air-taste	Body and life	4	
+nose	air-taste-part	Body and life	4	
 airplane	air-vehicle	Made things	3	3
 airport	air-vehicle-place	Places, arts, appearance	3	3
 election	all-choose	People and society;Verbs	4	
 number; numeral; digit	amount-word	Quantity	3	4
 museum	art-home	Places, arts, appearance	5	5
 return; come back	back-come	Verbs;Space and direction	4	5
+vomit; throw up	back-food	Body and life;Verbs	4	
 return (something); give back; hand back	back-give	Verbs	4	
 return; go back	back-go	Verbs;Space and direction	4	4
 change (money returned)	back-money	People and society;Quantity	4	
@@ -65,6 +67,7 @@ coffee	black-drink	Food	3	3
 pepper (spice)	black-taste-thing	Food	4	
 cyan	blue-green	Color	3	3
 strength; strong (physically)	body-ability	Qualities;Body and life	5	
+fever	body-hot	Body and life	5	
 allergy	body-not-agree	Body and life	5	
 sport; athletics	body-play	Verbs;Body and life	5	5
 bone	body-stone	Body and life	5	
@@ -195,6 +198,8 @@ food supplies; provisions; stores	have-food	Food	2
 carry; take along; transport	have-go	Verbs	2	2
 property; premises; a place one owns	have-place	Places, arts, appearance;People and society	2	
 headache; nuisance	head-sick	Body and life	4	4
+pharmacy; drugstore; chemist's	heal-buy-place	Places, arts, appearance;Body and life	4	
+bandage	heal-cloth	Body and life;Made things	4	
 hospital	heal-home	Places, arts, appearance;Body and life	4	
 exercise	heal-movement	Body and life;Verbs	4	
 gym	heal-movement-place	Places, arts, appearance;Body and life	4	
@@ -202,6 +207,7 @@ ointment; salve; balm	heal-oil	Body and life;Made things	5
 doctor	heal-person	People and society;Body and life	4	4
 medical test; checkup; examination (medical)	heal-test	Body and life	4	
 well-balanced; well-adjusted; sane	heal-think	Qualities;Body and life	4	
+ambulance	heal-vehicle	Made things;Body and life	4	
 ear	hear-part	Body and life	4	5
 important; significant; essential; major	heavy-necessary	Qualities	4	4
 helpful	help-give	Qualities;Verbs	4	
@@ -386,6 +392,7 @@ umbrella	rain-tool	Made things	4
 purple	red-blue	Color	3	3
 tomato sauce	red-food	Food	3	
 tomato	red-fruit	Food	3	
+blood; bleed	red-water	Body and life	3	
 pink	red-white	Color	3	3
 pig	red-white-animal	Nature	3	3
 pork	red-white-animal-meat	Food	4	

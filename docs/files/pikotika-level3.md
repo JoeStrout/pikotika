@@ -64,23 +64,23 @@
 ## 赤黄
 ### red-yellow
 ===
-# This is a yellow fruit.
+# Can we go to the park sometime?
 ---
-# Tis ri yoro pomo.
-## 此 ⊢ 黄 果.
-### this RI yellow fruit.
+# Ekomen ri kan ire ver verteroko in tar tempo, ker?
+## 己众 ⊢ 能 行 向 緑所 内 后 时, 何?
+### I-group RI can go to green-place in after time, what?
+===
+# What color is it?
+---
+# Tis ri ker koror?
+## 此 ⊢ 何 色?
+### this RI what color?
 ===
 # And these red ones — what are they?
 ---
 # Kum tis rus kosa ri ker?
 ## 并 此 赤 物 ⊢ 何?
 ### and this red thing RI what?
-===
-# Can we go to the park sometime?
----
-# Ekomen ri kan ire ver verteroko in tar tempo, ker?
-## 己众 ⊢ 能 行 向 緑所 内 后 时, 何?
-### I-group RI can go to green-place in after time, what?
 ===
 # every; all
 ---
@@ -190,23 +190,23 @@
 ## 风车所
 ### air-vehicle-place
 ===
-# Will you tell me a story?
+# Nothing new.
 ---
-# Tu ri tika a tikakosa ver eko, ker?
-## 尔 ⊢ 言 ⇒ 言物 向 己, 何?
-### you RI say A say-thing to me, what?
+# Nem nova.
+## 无 初.
+### no new.
 ===
-# How is your mother?
+# Time goes fast.
 ---
-# Tu vemapari ri kermoto?
-## 尔 女亲 ⊢ 何方?
-### you woman-parent RI what-manner?
+# Tempo ri veros ire.
+## 时 ⊢ 早 行.
+### time RI fast go.
 ===
-# What does the label say?
+# Please bring the water to the child.
 ---
-# Nomen ri tika a ker?
-## 名 ⊢ 言 ⇒ 何?
-### label RI say A what?
+# Pam teneveni a aku ver nino.
+## 乞 有来 ⇒ 水 向 子.
+### please have-come A water to child.
 ===
 # weekday
 ---
@@ -652,29 +652,23 @@
 ## 内 上日, 火 水 ⊢ 内 室, 何?
 ### in up-sun, hot water RI in room, what?
 ===
-# Yes.
+# Good afternoon.
 ---
-# Si.
-## 是.
-### yes.
+# Pona yan.
+## 好 日.
+### good sun.
 ===
-# Nothing new.
+# I'm happy.
 ---
-# Nem nova.
-## 无 初.
-### no new.
+# Eko ri konten.
+## 己 ⊢ 楽.
+### I RI happy.
 ===
-# I'll have that.
+# For three hours.
 ---
-# Eko ri vori a tis.
-## 己 ⊢ 求 ⇒ 此.
-### I RI want A this.
-===
-# It's good to see you.
----
-# Eko ri konten sarve a tu vin.
-## 己 ⊢ 楽 会 ⇒ 尔 閉.
-### I RI happy meet A you finish.
+# 3 ora turan.
+## 3 刻 間.
+### 3 hour interval.
 ===
 # Sorry/oops/excuse me.
 ---
@@ -682,20 +676,14 @@
 ## 悔.
 ### sorry.
 ===
-# Alice: Yes please.
+# I did nothing.
 ---
-# Aras: Si, pam.
-## Aras: 是, 乞.
-### Alice: yes, please.
+# Eko ri vake a nem.
+## 己 ⊢ 作 ⇒ 无.
+### I RI make A no.
 ===
-# The music makes the children happy.
+# But the last part isn't written.
 ---
-# Musi ri konten a nino.
-## 曲 ⊢ 楽 ⇒ 子.
-### music RI happy A child.
-===
-# Tomorrow my mother is coming, but my father isn't.
----
-# Yantar, eko vemapari ri veni, sets eko viropari ri non veni.
-## 日后, 己 女亲 ⊢ 来, 但 己 男亲 ⊢ 不 来.
-### day-after, me woman-parent RI come, but me man-parent RI not come.
+# Sets vin parte ri non kita vin.
+## 但 閉 分 ⊢ 不 写 閉.
+### but finish part RI not write finish.

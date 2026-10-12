@@ -40,23 +40,23 @@
 ## 体玩
 ### body-play
 ===
-# You killed my father.
+# I live near the sea.
 ---
-# Tu ri nonviva a eko viropari vin.
-## 尔 ⊢ 不生 ⇒ 己 男亲 閉.
-### you RI not-life A I man-parent finish.
+# Eko ri viva nir mekaaku.
+## 己 ⊢ 生 近 大水.
+### I RI life near big-water.
 ===
-# Can you give me a hand?
+# Bob: Can you help me? My stomach hurts.
 ---
-# Tu ri kan manutonar ver eko, ker?
-## 尔 ⊢ 能 手与 向 己, 何?
-### you RI can hand-give to me, what?
+# Popu: Pam servi. Eko venter ri marasenti.
+## Popu: 乞 助. 己 胃 ⊢ 病心.
+### Bob: please help. I stomach RI hurt-feel.
 ===
-# Alice: Cash — here's 10 dollars.
+# I have a stomachache.
 ---
-# Aras: Manumoni. Tis ri 10 moni.
-## Aras: 手贝. 此 ⊢ 10 贝.
-### Alice: hand-money. this RI 10 money.
+# Eko venter ri marasenti.
+## 己 胃 ⊢ 病心.
+### I stomach RI hurt-feel.
 ===
 # tired; weary
 ---
@@ -184,23 +184,23 @@
 ## 別件
 ### other-about
 ===
-# Nothing has changed.
+# It's changing!
 ---
-# Nemkosa ri artiven vin.
-## 无物 ⊢ 別成 閉.
-### no-thing RI other-become finish.
+# Ri artiven!
+## ⊢ 別成!
+### RI other-become!
+===
+# Can I change my reservation?
+---
+# Eko ri kan arvake a eko yerakor, ker?
+## 己 ⊢ 能 別作 ⇒ 己 前約, 何?
+### I RI can other-make A I before-agree, what?
 ===
 # Someone else is coming.
 ---
 # Ar ri veni.
 ## 別 ⊢ 来.
 ### other RI come.
-===
-# I changed my mind.
----
-# Eko ri arvake a eko pensa.
-## 己 ⊢ 別作 ⇒ 己 思.
-### I RI other-make A I think.
 ===
 # art; craft
 ---
@@ -244,23 +244,23 @@
 ## 油白米
 ### oil-white-grain
 ===
-# I'm eating with you.
+# I'm driving.
 ---
-# Eko ri komi kum tu.
-## 己 ⊢ 食 并 尔.
-### I RI food and you.
+# Eko ri karoire.
+## 己 ⊢ 车行.
+### I RI vehicle-go.
 ===
-# For a week.
+# You had water five minutes ago.
 ---
-# 1 senseyan turan.
-## 1 7日 間.
-### 1 seven-day interval.
+# 5 parte yer, tu ri pipe a aku.
+## 5 分 前, 尔 ⊢ 飲 ⇒ 水.
+### 5 part before, you RI drink A water.
 ===
-# Why?
+# Really?
 ---
-# Kerrason?
-## 何故?
-### what-reason?
+# Ves, ker?
+## 真, 何?
+### true, what?
 ===
 # bird
 ---
@@ -496,23 +496,23 @@
 ## 切工
 ### cut-tool
 ===
-# Please clean the room.
+# The one that's been broken since spring?
 ---
-# Pam puru a kamar.
-## 乞 清 ⇒ 室.
-### please clean A room.
+# Tis ri rompe vin in mur mese turan, non?
+## 此 ⊢ 切 閉 内 多 月 間, 不?
+### this RI break finish in many month interval, not?
+===
+# My leg is broken.
+---
+# Eko kampa ri rompe.
+## 己 足 ⊢ 切.
+### I leg RI break.
 ===
 # I lost my phone on the bus.
 ---
 # Eko ri perti a eko vortotika in muromokaro.
 ## 己 ⊢ 失 ⇒ 己 電言 内 多人车.
 ### I RI lose A me electric-say in many-person-vehicle.
-===
-# One thing — the light in the hall is broken.
----
-# Wun kosa: vortoyan in irekamar ri rompe vin.
-## 1 物: 電日 内 行室 ⊢ 切 閉.
-### one thing: electric-sun in go-room RI break finish.
 ===
 # left
 ---
@@ -610,44 +610,50 @@
 ## 乞 弓 向 左 内 后序 弓所.
 ### please bend to left in after-sequence bend-place.
 ===
-# This changes everything.
+# Room twelve, up the stairs, on the right.
 ---
-# Tis ri arvake a pankosa.
-## 此 ⊢ 別作 ⇒ 全物.
-### this RI other-make A every-thing.
+# Kamar 12, sur in surmoto, in rem.
+## 室 12, 上 内 上方, 内 右.
+### room 12, up in up-road, in right.
 ===
-# Please try again.
+# But the last part isn't written.
 ---
-# Pam repe tentar.
-## 乞 又 試.
-### please again try.
+# Sets vin parte ri non kita vin.
+## 但 閉 分 ⊢ 不 写 閉.
+### but finish part RI not write finish.
 ===
-# Hello
+# I want you to come.
 ---
-# Kontensarve.
-## 楽会.
-### happy-meet.
+# Eko ri vori a tu ri veni.
+## 己 ⊢ 求 ⇒ 尔 ⊢ 来.
+### I RI want A you RI come.
 ===
-# Yesterday I read a good story.
+# I'm going to Lisbon.
 ---
-# Yanyer, eko ri kitavite a pona tikakosa.
-## 日前, 己 ⊢ 写見 ⇒ 好 言物.
-### day-before, I RI writing-see A good say-thing.
+# Eko ri ire ver sitas Rispan.
+## 己 ⊢ 行 向 市 Rispan.
+### I RI go to city Lisbon.
 ===
-# If I had eaten, I wouldn't be hungry now.
+# I like music and reading.
 ---
-# Nonves eko ri komi vin, tisrason eko ri non komivori tistempo.
-## 不真 己 ⊢ 食 閉, 此故 己 ⊢ 不 食求 此时.
-### not-true I RI food finish, this-reason I RI not food-want this-time.
+# Eko ri kusta a musi kum kitavite.
+## 己 ⊢ 愛 ⇒ 曲 并 写見.
+### I RI like A music and writing-see.
 ===
-# I'm 34 years old.
+# Please drive.
 ---
-# Eko anyoturan ri 34.
-## 己 年間 ⊢ 34.
-### me year-duration RI 34.
+# Pam karoire.
+## 乞 车行.
+### please vehicle-go.
 ===
-# Try one.
+# Can we meet?
 ---
-# Pam sapor a wun.
-## 乞 味 ⇒ 1.
-### please taste A one.
+# Ekomen ri kan sarve, ker?
+## 己众 ⊢ 能 会, 何?
+### I-group RI can meet, what?
+===
+# Six bananas and four apples — one hundred sixty.
+---
+# 6 ronkayoropomo kum 4 rotunpomo: 160 moni.
+## 6 长黄果 并 4 丸果: 160 贝.
+### 6 long-yellow-fruit and 4 round-fruit: 160 money.
