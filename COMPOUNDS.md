@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-935 terms
+945 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -56,6 +56,7 @@
 | army | fight-group | patarmen | 争众 |
 | arrange | before-make | yervake | 前作 |
 | arrange | sequence-put | ortenseta | 序坐 |
+| article | writing-page | kitakarta | 写片 |
 | ascend | up-go | surire | 上行 |
 | ask | what-say | kertika | 何言 |
 | ask for | want-say | voritika | 求言 |
@@ -207,6 +208,7 @@
 | crime | not-law-work | nonrekeopus | 不法力 |
 | crossroads | road-join | motoyunta | 方合 |
 | cry | see-water | viteaku | 見水 |
+| culture | life-manner | vivamoto | 生方 |
 | curriculum | learn-sequence | imparorten | 学序 |
 | customer | come-person | veniomo | 来人 |
 | cutlery | food-tool | komiuter | 食工 |
@@ -375,6 +377,7 @@
 | hire | interval-buy | turankompar | 間買 |
 | holiday | not-work-day | nonopusyan | 不力日 |
 | holiday | play-come-go | yuveniire | 玩来行 |
+| home page | home-page | kasekarta | 户片 |
 | honesty | true-say | vestika | 真言 |
 | hoop | round-line | rotunrine | 丸糸 |
 | horse | vehicle-animal | karopeste | 车匹 |
@@ -468,6 +471,7 @@
 | magic | surprise-art | sorpearti | 奇芸 |
 | magic potion | surprise-drink | sorpepipe | 奇飲 |
 | magician | surprise-person | sorpeomo | 奇人 |
+| main page | home-page | kasekarta | 户片 |
 | major | heavy-necessary | pesaneses | 重要 |
 | make up one's mind | choose-finish | erikevin | 选閉 |
 | manga | picture-many-page | piturmurkarta | 画多片 |
@@ -685,6 +689,8 @@
 | say again | again-say | repetika | 又言 |
 | schedule | time-sequence | tempoorten | 时序 |
 | school | learn-place | imparroko | 学所 |
+| science | know-manner | sapemoto | 知方 |
+| scientist | know-manner-person | sapemotoomo | 知方人 |
 | sea | big-water | mekaaku | 大水 |
 | search | try-see | tentarvite | 試見 |
 | seashore | big-water-edge | mekaakurante | 大水边 |
@@ -729,6 +735,8 @@
 | snack | small-food | pikokomi | 小食 |
 | snow | cold-rain | rikusruva | 冷雨 |
 | soap | clean-thing | purukosa | 清物 |
+| social science | person-know-manner | omosapemoto | 人知方 |
+| social sciences | person-know-manner | omosapemoto | 人知方 |
 | soft (sound) | small-sound | pikooti | 小耳 |
 | soldier | fight-person | pataromo | 争人 |
 | someone else | other-person | aromo | 別人 |
@@ -786,6 +794,7 @@
 | teach | learn-give | impartonar | 学与 |
 | teacher | learn-give-person | impartonaromo | 学与人 |
 | tears | see-water | viteaku | 見水 |
+| technology | tool-know | utersape | 工知 |
 | telephone | electric-say | vortotika | 電言 |
 | television | electric-see | vortovite | 電見 |
 | temperature | hot-amount | womesur | 火寸 |
@@ -892,6 +901,7 @@
 | washcloth | clean-cloth | pururopa | 清衣 |
 | watch out | danger-see | timovite | 危見 |
 | watch TV | electric-see | vortovite | 電見 |
+| way of life | life-manner | vivamoto | 生方 |
 | way up | up-road | surmoto | 上方 |
 | we | I-group | ekomen | 己众 |
 | wear | cloth-have | ropatene | 衣有 |

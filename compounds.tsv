@@ -216,6 +216,7 @@ helper; waiter; attendant; servant; staff (person)	help-person	People and societ
 burrowing animal	hole-animal	Nature	5	
 cat; pet	home-animal	Nature	3	4
 pet dog	home-dog	Nature	5	5
+home page; main page	home-page	Made things;Places, arts, appearance	3	
 floor (of a building); storey	home-sequence	Places, arts, appearance;Space and direction	3	
 temperature	hot-amount	Nature;Quantity	3	
 spicy	hot-taste	Food;Qualities	4	4
@@ -238,6 +239,8 @@ remember; retain; keep in mind; memory	know-have	Verbs	3
 forget	know-lose	Verbs	5	5
 apply knowledge; act on what one knows	know-make	Verbs	3	
 practitioner; expert	know-make-person	People and society;Verbs	3	
+science	know-manner	Verbs;People and society	3	
+scientist	know-manner-person	People and society;Verbs	3	
 test (of knowledge); exam; quiz	know-test	Verbs	3	
 intelligence; aptitude; intelligent	learn-ability	Qualities	4	
 teach; instruct	learn-give	Verbs	4	
@@ -248,6 +251,7 @@ curriculum; syllabus; course of study	learn-sequence	General heads;Verbs	4
 jump; leap	leg-up-go	Verbs;Body and life	4	
 bicycle	leg-vehicle	Made things	4	
 birthday	life-day	Time direction;Body and life	5	
+culture; way of life	life-manner	People and society;Body and life	5	
 fork	line-tool	Made things;Food	4	
 public transit; transit	line-vehicle	Made things	4	4
 transit station (bus/train)	line-vehicle-place	Places, arts, appearance	4	
@@ -366,6 +370,7 @@ campsite; campground	out-sleep-place	Places, arts, appearance	4
 owner; proprietor	own-person	People and society	2	3
 margin (of a page)	page-edge	Made things;Space and direction	4	
 family; relative; kin	parent-group	People and society	2	2
+social sciences; social science	person-know-manner	People and society;Verbs	3	
 queue; line (of people)	person-sequence	People and society;General heads	3	
 cinema; movie theater	picture-home	Places, arts, appearance	4	
 comic book; comics; manga	picture-many-page	Made things;Places, arts, appearance	4	5
@@ -475,6 +480,7 @@ calendar	time-page	Time direction;Made things	3
 wait a while; wait around	time-remain	Verbs;Time direction	4	
 schedule; timetable	time-sequence	General heads;Time direction	3	
 toilet paper	toilet-page	Made things	5	
+technology	tool-know	Made things;Verbs	3	
 honesty; truthfulness	true-say	Qualities;People and society	1	
 experience; experienced	try-know	Verbs;Qualities	3	
 practice; rehearse; rehearsal	try-learn	Verbs	4	
@@ -529,7 +535,7 @@ boss	work-head	People and society	4	4
 office	work-room	Made things;Places, arts, appearance	3	
 writer; author	write-person	People and society;Verbs	2	2
 pen (pen or pencil)	write-tool	Made things	3	
-report; document (written)	writing-page	Made things	3	
+report; document (written); article	writing-page	Made things	3	
 read	writing-see	Verbs	2	2
 reader	writing-see-person	People and society;Verbs	2	2
 text; writing (text)	writing-word	Made things;Verbs	2	
