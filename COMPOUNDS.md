@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-945 terms
+950 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -99,6 +99,7 @@
 | beige | grain-color | risokoror | 米色 |
 | bicycle | leg-vehicle | kampakaro | 足车 |
 | bill | money-sequence | moniorten | 贝序 |
+| biology | life-know-manner | vivasapemoto | 生知方 |
 | birthday | life-day | vivayan | 生日 |
 | black market | black-buy-place | nerokomparroko | 黒買所 |
 | blanket | sleep-cloth | tormiropa | 床衣 |
@@ -165,6 +166,7 @@
 | checkup | heal-test | sanatentar | 医試 |
 | cheese | hard-milk | sorinraten | 硬乳 |
 | chemist's | heal-buy-place | sanakomparroko | 医買所 |
+| chemistry | join-know-manner | yuntasapemoto | 合知方 |
 | chicken (meat) | bird-meat | aviskarne | 鳥肉 |
 | chili pepper | hot-taste-thing | wosaporkosa | 火味物 |
 | choice | choose-thing | erikekosa | 选物 |
@@ -483,7 +485,9 @@
 | meal (a sitting) | food-time | komitempo | 食时 |
 | mealtime | food-time | komitempo | 食时 |
 | measure the weight of | weight-amount | pesamesur | 重寸 |
+| medical science | heal-know-manner | sanasapemoto | 医知方 |
 | medical test | heal-test | sanatentar | 医試 |
+| medicine (field) | heal-know-manner | sanasapemoto | 医知方 |
 | memory | know-have | sapetene | 知有 |
 | menu | food-sequence | komiorten | 食序 |
 | messy | not-sequence | nonorten | 不序 |
@@ -572,6 +576,7 @@
 | pet dog | home-dog | kasekanis | 户犬 |
 | pharmacy | heal-buy-place | sanakomparroko | 医買所 |
 | phone | electric-say | vortotika | 電言 |
+| physics | matter-know-manner | kosasapemoto | 物知方 |
 | pig | red-white-animal | rusankapeste | 赤白匹 |
 | Pikotika (the language) | small-say | pikotika | 小言 |
 | pink | red-white | rusanka | 赤白 |

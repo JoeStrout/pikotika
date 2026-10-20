@@ -798,9 +798,10 @@
       return hits.map(function (h) { return h[1]; });
     }
 
-    /* Every kind of word carries categories now -- roots one apiece from
+    /* Every kind of word may carry categories -- roots one apiece from
        roots.tsv, compounds and names a semicolon list of their own -- so the
-       filter is the same question for all of them. */
+       filter is the same question for all of them.  An untagged compound has
+       no `cats` and simply fails every category but All. */
     function inCategory(entry) {
       if (!category) return true;
       return !!entry.cats && entry.cats.indexOf(category) >= 0;
