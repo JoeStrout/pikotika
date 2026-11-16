@@ -22,6 +22,7 @@ airplane	air-vehicle	Made things	3	3
 airport	air-vehicle-place	Places, arts, appearance	3	3
 election	all-choose	People and society	4	
 number; numeral; digit	amount-word	Quantity	3	4
+hug; embrace	arm-have	Verbs	5	
 museum	art-home	Places, arts, appearance	5	5
 return; come back	back-come	Verbs;Space and direction	4	5
 vomit; throw up	back-food	Body and life;Verbs	4	
@@ -131,6 +132,7 @@ television; watch TV	electric-see	Made things	4
 lamp; electric light	electric-sun	Made things	4	4
 escalator	electric-up-road	Made things;Space and direction	4	
 perfect; flawless	every-good	Qualities	3	
+God; the Creator	every-make-person		3	
 everyone; everybody	every-person	Grammar and logic;People and society	3	3
 everywhere	every-place	Grammar and logic;Space and direction	3	3
 everything	every-thing	Grammar and logic	3	3
@@ -168,6 +170,7 @@ wine	fruit-fire-water	Food	3
 autumn; fall	fruit-time	Time direction	1	4
 juice	fruit-water	Food	1	
 fetch; go and get	get-go	Verbs	2	2
+gift; present	give-thing		4	
 luggage; suitcase; baggage	go-box	Made things	4	4
 hallway; corridor	go-room	Made things;Places, arts, appearance	3	
 kind (good-hearted); good-hearted; kindness	good-feel	Qualities;Feelings	3	5
@@ -197,7 +200,9 @@ bring	have-come	Verbs	2	2
 food supplies; provisions; stores	have-food	Food	2	
 carry; take along; transport	have-go	Verbs	2	2
 property; premises; a place one owns	have-place	Places, arts, appearance;People and society	2	
+hat; cap	head-cloth	Made things	4	
 headache; nuisance	head-sick	Body and life	4	4
+hair	head-thread	Body and life	4	
 pharmacy; drugstore; chemist's	heal-buy-place	Places, arts, appearance;Body and life	4	
 bandage	heal-cloth	Body and life;Made things	4	
 hospital	heal-home	Places, arts, appearance;Body and life	4	
@@ -224,12 +229,14 @@ spicy	hot-taste	Food;Qualities	4	4
 chili pepper	hot-taste-thing	Food	4	
 summer	hot-time	Time direction	3	4
 clock time; time of day	hour-say	Time direction	1	
+clock; watch; timepiece	hour-tool	Made things	3	
 hundredth (in a series); 100th	hundred-sequence	Quantity	3	
 pain; hurt; ache	hurt-feel	Body and life	4	4
 ice cream	ice-milk	Food	4	
 should	if-good	Grammar and logic	4	4
 finally; at last; in the end; eventually	in-finish	Time direction	1	1
 percent; per cent; %	in-hundred	Quantity	3	
+cent (hundredth of a currency unit)	in-hundred-money	Quantity;People and society	3	
 indoors; inside	in-place	Space and direction;Places, arts, appearance	1	
 actually; in truth	in-true	Grammar and logic	1	1
 hire; lease; rent	interval-buy	Verbs;People and society	4	
@@ -261,6 +268,7 @@ transit station (bus/train)	line-vehicle-place	Places, arts, appearance	4
 thief	long-hand	People and society	5	
 rabbit; hare	long-hear-animal	Nature	4	
 oval; ellipse	long-round	Shape	4	
+couch; sofa	long-sit-tool	Made things	4	
 river	long-water	Nature	3	4
 banana	long-yellow-fruit	Food	3	3
 know-how; practical knowledge	make-know	Qualities	3	
@@ -283,6 +291,7 @@ wedding reception; wedding party	marry-play-group	People and society	5
 physics	matter-know-manner	Nature;Material	3	
 shame	me-bad-feel	Feelings	3	5
 pride	me-good-feel	Feelings	3	5
+mirror	me-see-tool	Made things	3	
 train	metal-line-vehicle	Made things	4	4
 coin	metal-money	People and society;Material	3	
 Friday	metal-weekday	Time direction	3	3

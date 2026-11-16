@@ -1,6 +1,6 @@
 # Pikotika Compounds
 
-950 terms
+966 terms
 
 | English | Gloss | Latin | Han |
 |---|---|---|---|
@@ -146,6 +146,7 @@
 | campground | out-sleep-place | eksetormiroko | 外床所 |
 | camping | out-sleep | eksetormi | 外床 |
 | campsite | out-sleep-place | eksetormiroko | 外床所 |
+| cap | head-cloth | testaropa | 头衣 |
 | careful | danger-see | timovite | 危見 |
 | carpet | earth-cloth | teraropa | 土衣 |
 | carrot | red-yellow-down-plant | rusyorotunarpo | 赤黄下木 |
@@ -155,6 +156,7 @@
 | cat | home-animal | kasepeste | 户匹 |
 | caution | danger-see | timovite | 危見 |
 | cautious | danger-see | timovite | 危見 |
+| cent (hundredth of a currency unit) | in-hundred-money | inkatonmoni | 内百贝 |
 | chair | sit-tool | setauter | 坐工 |
 | change | other-become | artiven | 別成 |
 | change | other-make | arvake | 別作 |
@@ -176,6 +178,7 @@
 | city center | city-middle | sitasmets | 市中 |
 | cleaner | clean-person | puruomo | 清人 |
 | clever | fast-understand | verosvite | 早見 |
+| clock | hour-tool | orauter | 刻工 |
 | clock time | hour-say | oratika | 刻言 |
 | cloud | rain-air | ruvavento | 雨风 |
 | cloudy | rain-air | ruvavento | 雨风 |
@@ -200,6 +203,7 @@
 | corridor | go-room | irekamar | 行室 |
 | cost | money-amount | monimesur | 贝寸 |
 | costly | big-money | mekamoni | 大贝 |
+| couch | long-sit-tool | ronkasetauter | 长坐工 |
 | council | choose-group | erikemen | 选众 |
 | countryside | not-city | nonsitas | 不市 |
 | course of study | learn-sequence | imparorten | 学序 |
@@ -260,6 +264,7 @@
 | elevator | up-down-room | surtunkamar | 上下室 |
 | ellipse | long-round | ronkarotun | 长丸 |
 | elsewhere | other-place | arroko | 別所 |
+| embrace | arm-have | manutene | 手有 |
 | enemy | not-friend | nonami | 不朋 |
 | erudition | many-know | mursape | 多知 |
 | escalator | electric-up-road | vortosurmoto | 電上方 |
@@ -336,6 +341,7 @@
 | gather | group-join | menyunta | 众合 |
 | get back | again-get | repetoma | 又取 |
 | get ready | before-make | yervake | 前作 |
+| gift | give-thing | tonarkosa | 与物 |
 | give back | back-give | retsetonar | 反与 |
 | glass (drinking vessel) | water-box | akuvaso | 水皿 |
 | glossary | word-sequence | tikaorten | 言序 |
@@ -346,6 +352,7 @@
 | go up | up-go | surire | 上行 |
 | go-ahead | green-say | vertetika | 緑言 |
 | goat | small-milk-animal | pikoratenpeste | 小乳匹 |
+| God | every-make-person | panvakeomo | 全作人 |
 | gold | yellow-metal | yorometar | 黄金 |
 | good luck | good-if | ponapos | 好可 |
 | good-hearted | good-feel | ponasenti | 好心 |
@@ -360,10 +367,12 @@
 | grocery store | food-buy-place | komikomparroko | 食買所 |
 | guest | come-person | veniomo | 来人 |
 | gym | heal-movement-place | sanaireroko | 医行所 |
+| hair | head-thread | testarine | 头糸 |
 | hallway | go-room | irekamar | 行室 |
 | hand back | back-give | retsetonar | 反与 |
 | hare | long-hear-animal | ronkaotipeste | 长耳匹 |
 | harvest | plant-get | arpotoma | 木取 |
+| hat | head-cloth | testaropa | 头衣 |
 | have on | cloth-have | ropatene | 衣有 |
 | he | this-person | tisomo | 此人 |
 | headache | head-sick | testamara | 头病 |
@@ -387,6 +396,7 @@
 | hotel | sleep-home | tormikase | 床户 |
 | housekeeper | clean-person | puruomo | 清人 |
 | how | what-manner | kermoto | 何方 |
+| hug | arm-have | manutene | 手有 |
 | hundredth (in a series) | hundred-sequence | katonorten | 百序 |
 | hungry | food-want | komivori | 食求 |
 | hurt | hurt-feel | marasenti | 病心 |
@@ -493,6 +503,7 @@
 | messy | not-sequence | nonorten | 不序 |
 | midday | middle-sun | metseyan | 中日 |
 | millionth (in a series) | million-sequence | mironorten | 兆序 |
+| mirror | me-see-tool | ekoviteuter | 己見工 |
 | mist | water-air | akuvento | 水风 |
 | modify | other-make | arvake | 別作 |
 | moment | small-time | pikotempo | 小时 |
@@ -599,6 +610,7 @@
 | premises | have-place | teneroko | 有所 |
 | prepare | before-make | yervake | 前作 |
 | prepared | before-finish | yervin | 前閉 |
+| present | give-thing | tonarkosa | 与物 |
 | pretty | good-see | ponavite | 好見 |
 | prevail | up-become | surtiven | 上成 |
 | previous | before-sequence | yerorten | 前序 |
@@ -742,6 +754,7 @@
 | soap | clean-thing | purukosa | 清物 |
 | social science | person-know-manner | omosapemoto | 人知方 |
 | social sciences | person-know-manner | omosapemoto | 人知方 |
+| sofa | long-sit-tool | ronkasetauter | 长坐工 |
 | soft (sound) | small-sound | pikooti | 小耳 |
 | soldier | fight-person | pataromo | 争人 |
 | someone else | other-person | aromo | 別人 |
@@ -810,6 +823,7 @@
 | that | not-this | nontis | 不此 |
 | that's why | this-reason | tisrason | 此故 |
 | the country | not-city | nonsitas | 不市 |
+| the Creator | every-make-person | panvakeomo | 全作人 |
 | the day before | before-sun | yeryan | 前日 |
 | the earlier state | before-thing | yerkosa | 前物 |
 | the end (of a series) | finish-sequence | vinorten | 閉序 |
@@ -840,6 +854,7 @@
 | till | straight-to | retover | 直向 |
 | time of day | hour-say | oratika | 刻言 |
 | time off | not-work-time | nonopustempo | 不力时 |
+| timepiece | hour-tool | orauter | 刻工 |
 | timetable | time-sequence | tempoorten | 时序 |
 | today | this-day | tisyan | 此日 |
 | toilet paper | toilet-page | toretakarta | 便片 |
@@ -904,6 +919,7 @@
 | warn | danger-say | timotika | 危言 |
 | warning | danger-say | timotika | 危言 |
 | washcloth | clean-cloth | pururopa | 清衣 |
+| watch | hour-tool | orauter | 刻工 |
 | watch out | danger-see | timovite | 危見 |
 | watch TV | electric-see | vortovite | 電見 |
 | way of life | life-manner | vivamoto | 生方 |

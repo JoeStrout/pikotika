@@ -17,7 +17,7 @@ penicillin	penasiran	loan	Body and life	P EH2 N AH0 S IH1 L AH0 N
 Strout	Sutorauto	name	People and society	S T R AW1 T	str- onset cluster resolved by epenthesis	
 Peper	Pepar	name	People and society	P EH1 P ER0		
 Pavel	Pavar	name	People and society	P AE1 V AH0 L		
-Jan	Yan	name	People and society	JH AE1 N		
+Jan; Young	Yan	name	People and society	JH AE1 N		
 Italia	Itaria	name	Places, arts, appearance	IY0 T AE1 L IY0 AH0		
 Alice	Aras	name	People and society	AE1 L AH0 S	the second vowel is a schwa, not the i of the spelling	
 Bob	Popu	name	People and society	B AA1 B	no b; b -> p, and bare final stop not licensed, vowel added	
@@ -49,6 +49,8 @@ Mandarin	Putonwa	name	Places, arts, appearance	P UW0 T OW1 NG HH W AA0	from the 
 Japan	Nion	name	Places, arts, appearance	N IY0 HH OW1 N	from the endonym Nihon, not English Japan	
 Japanese	Nionko	name	Places, arts, appearance	N IY0 HH OW1 N G OW0	from the endonym Nihongo	
 Italian	Itariano	name	Places, arts, appearance	IY0 T AA0 L IY0 AA1 N OW0	from the endonym italiano, not English Italian	
+Christmas	Kurismas	name	Time direction	K R IH1 S M AH0 S		
+Dillingham	Tirinam	name	People and society	D IH1 L IH0 NG HH AE2 M		
 Aharon	Aaron	name	People and society	AE1 HH ER0 AA0 N		cmudict
 Hy	Ai	name	People and society	HH AY1		cmudict
 Hyacintha	Aiasinta	name	People and society	HH AY2 AH0 S IH1 N TH AH0		cmudict

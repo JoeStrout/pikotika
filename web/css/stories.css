@@ -1,0 +1,59 @@
+/* Stories (/stories/<slug>/): a translated short story, read as prose.
+
+   The Pikotika is running text, a little larger than body copy, with every
+   word a chip.  Each paragraph's English sits closed under it in a native
+   <details>, the same disclosure the grammar pages use for practice answers:
+   it works without JavaScript, and only the English is hidden -- the
+   Pikotika is always on the page. */
+
+.story-sub {
+  margin: -.2em 0 1.2em;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.story-para { margin: 0 0 1.6rem; }
+
+.story-para > p {
+  margin: 0 0 .6rem;
+  font-size: 1.12rem;
+  line-height: 1.75;
+}
+
+/* A picture of one of the story's objects, beside the paragraph it belongs
+   to, using the sitewide .beside row (which stacks below 32rem).  The text
+   column takes the slack; the figure keeps its width. */
+.story-para .beside { margin: 0; }
+.story-para .beside > div { flex: 1; min-width: 0; }
+.story-fig {
+  flex: none;
+  width: 180px;
+  margin: .3rem 0 0;
+}
+.story-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.story-fig figcaption {
+  margin-top: .4rem;
+  font-size: .78rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.story-para details { font-size: .95rem; }
+.story-para summary {
+  cursor: pointer;
+  width: fit-content;
+  color: var(--link);
+  font-size: .85rem;
+}
+.story-para summary:hover { color: var(--link-hover); }
+.story-para details p {
+  margin: .35rem 0 0;
+  padding-left: .8rem;
+  border-left: 3px solid var(--border-strong);
+  color: var(--text-muted);
+}

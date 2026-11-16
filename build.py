@@ -681,13 +681,56 @@ UNLISTED_PAGES = [
      "meanings to its written form."),
 ]
 
+# Stories: a translated short story, one hand-written page each, linked from
+# /learn/ rather than the nav.  Checked like any page, but -- like the comics --
+# kept out of authored_pages(), which would queue every sentence for audio; a
+# story is for reading.  There is no /stories/ index until there is a second
+# story.  A story's character names are listed in the page itself, as
+# data-names on its <article>; see story_names().
+STORY_PAGES = [
+    ("/stories/gift-of-the-magi/", "stories/gift-of-the-magi.html",
+     "The Gift of the Magi — Pikotika",
+     "O. Henry's Christmas story, retold in plain Pikotika, with every word "
+     "tappable and an English translation under each paragraph."),
+]
+
+STORY_NAMES = re.compile(r'data-names="([^"]*)"')
+
+
+def story_names(content: str) -> set:
+    """The character names a story page declares in data-names.
+
+    A translated work's invented names do not belong in names.tsv (see
+    CLAUDE.md), so the page carries them: the build accepts them without a
+    table entry, and site.js leaves them as plain text, not chips -- the same
+    treatment comic names get from pk.po."""
+    return {name for m in STORY_NAMES.finditer(content) for name in m.group(1).split()}
+
+
+def story_pages() -> list:
+    """(url, content, <title>, description) for every story page."""
+    return [(url, (WEB / "pages" / fragment).read_text(encoding="utf-8"),
+             title_tag, description)
+            for url, fragment, title_tag, description in STORY_PAGES]
+
+
+def without_names(content: str) -> str:
+    """A story page with its declared names deleted, for the form check alone.
+
+    The names are not Pikotika words, and dropping one leaves the rest of the
+    sentence parsing exactly as it did -- the check is per word, not a grammar."""
+    for name in story_names(content):
+        content = re.sub(rf"\b{re.escape(name)}\b", "", content)
+    return content
+
 # The measure column is for prose.  The topic index is a card grid and the
 # tile game is a board; both want the wide column.
 MAIN_CLASS = {"/topics/": "wide", "/games/tilematch/": "wide"}
 
 # Per-page css and js, linked only on the page that needs them.  The board game
 # is 500 lines of neither, and every other page would otherwise pay for it.
-PAGE_CSS = {"/games/tilematch/": "css/tilematch.css"}
+PAGE_CSS = {"/games/tilematch/": "css/tilematch.css",
+            **{url: "css/stories.css" for url, *_ in STORY_PAGES}}
 # A page may want more than one script: the Tools converter is the ported
 # conversion core plus the wiring that drives the box, and the core is loaded
 # here rather than sitewide because only this page uses it.
@@ -1700,6 +1743,9 @@ def build() -> None:
     forms += [form for form in check_forms(tables, [(url, content)
                                                    for url, content, _t, _d in comics])
               if form.lower() not in jargon]
+    stories = story_pages()
+    forms += check_forms(tables, [(url, without_names(content))
+                                  for url, content, _t, _d in stories])
     lexicon, unresolved = gen_lexicon.build(tables, forms)
     if unresolved:
         raise SystemExit(f"cannot build a lexicon entry for: {unresolved}")
@@ -1761,7 +1807,7 @@ def build() -> None:
 
     import importlib
 
-    pages = list(authored) + comics
+    pages = list(authored) + comics + stories
     pages += [(url, importlib.import_module(module).fragment(),
                title_tag, description)
               for url, module, title_tag, description in UNLISTED]

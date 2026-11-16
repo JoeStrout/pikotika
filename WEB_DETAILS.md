@@ -1809,6 +1809,57 @@ line is a build.
   `gen_comics.py` still fetches and renders its art. Delete the key to
   publish.
 
+## Stories (`/stories/`)
+
+A translated short story, one hand-written page each (added 2026-11-16). The
+first is O. Henry's *The Gift of the Magi*, **Ponapensaomo tonarkosa**, at
+`/stories/gift-of-the-magi/`. **Not a nav tab, and no `/stories/` index yet**:
+the story is linked from the "Also here" list on `/learn/`, as Comics is, and
+an index waits for a second story.
+
+| path | what |
+|---|---|
+| `web/pages/stories/<slug>.html` | the story: Pikotika prose, English under each paragraph |
+| `web/css/stories.css` | its styles, linked only on story pages (`PAGE_CSS`) |
+| `build.py:STORY_PAGES` | the routing, `<title>` and description |
+
+- **A retelling, not a gloss of the original.** The narrator's ornament is
+  dropped and the events kept, because Pikotika speaks plainly. So the English
+  under each paragraph is a **back-translation of the Pikotika**, not
+  O. Henry's text, which says far more; the page links the original at Project
+  Gutenberg instead. This is the corpus rule (the English must stand for what
+  the Pikotika says) applied to prose.
+- **A paragraph is `<section class="story-para">`**: a `<p>` of `.pk` spans,
+  one per sentence, then a closed `<details>` holding the English. Quotation
+  marks sit *outside* the spans, since `pikotika.PUNCT` has no quote
+  characters and a quoted span would not parse; a non-Pikotika interjection
+  (**"O, o!"**) sits outside too, as plain text, like a comic's sound effect.
+- **No audio, deliberately.** Stories are checked like any page but kept out
+  of `authored_pages()`, as the comics are, so their sentences are never queued
+  for `gen_audio`. Word chips still play their word clips where one exists.
+- **Character names are declared on the page**, as
+  `<article class="story" data-names="Sovuroni">`. A translated work's
+  invented names do not go in `names.tsv` (see `CLAUDE.md`), so the page
+  carries them: `build.py:without_names` deletes them before `check_forms`
+  parses the page, and `site.js:chipify` leaves any listed word as plain text
+  rather than a chip that would open nothing -- the treatment comic names get
+  from `pk.po`. A *real* name the story uses (Della, Jim, Christmas) goes in
+  `names.tsv` as usual and chips like any other.
+- **Han is not offered** (decided 2026-11-16).
+- **Pictures are of the story's objects, not scenes from it.** No
+  public-domain illustration of *The Gift of the Magi* turned up (the 1906
+  first edition has none; the 1905 *Sunday World* printing's art, if any, is
+  undigitized), so a paragraph may carry a photo of the thing it is about: a
+  `<figure class="story-fig">` beside the text inside the sitewide `.beside`
+  row. Images live in `web/images/stories/`, 360 px wide for a 180 px slot.
+  **The caption carries the credit and license**, which is what CC BY-SA
+  requires; public-domain sources are credited anyway.
+  - `magi-watch.jpg`: Waltham hunting-case watch, 14k gold, c. 1903, photo by
+    Joe Haupt via Wikimedia Commons, **CC BY-SA 2.0**. Resized only; if it is
+    ever cropped or edited, the edited file is under CC BY-SA too.
+  - `magi-comb.jpg`: tortoiseshell comb, American, 19th c., the Met (object
+    78940, 02.21), **public domain** (Met Open Access).
+
 ## Twemoji
 
 Many of the icons used on the site (for example, on the topic cards) are Twemoji, sourced from: https://twemoji-cheatsheet.vercel.app/

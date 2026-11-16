@@ -127,6 +127,14 @@
       root.setAttribute('aria-label', root.textContent.trim());
     }
 
+    /* A story declares its characters' names on an enclosing element, as
+       data-names="Sovuroni".  They are not in the lexicon -- a translated
+       work's names live with the translation -- so they stay plain text, as
+       comic names do, rather than becoming chips that open nothing.  The build
+       accepts the same list (build.py:story_names). */
+    var named = root.closest('[data-names]');
+    var names = named ? named.dataset.names.split(/\s+/) : [];
+
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     var texts = [];
     while (walker.nextNode()) texts.push(walker.currentNode);
@@ -138,6 +146,10 @@
       tokens.forEach(function (t) {
         if (t.gap !== undefined) {
           frag.appendChild(document.createTextNode(t.gap));
+          return;
+        }
+        if (names.indexOf(t.word) >= 0) {
+          frag.appendChild(document.createTextNode(t.word));
           return;
         }
         /* A span, not a <button>.  Mousedown on a real button starts a button
